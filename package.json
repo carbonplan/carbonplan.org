@@ -1,0 +1,27 @@
+{
+  "name": "carbonplan.org",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carbonplan/carbonplan.org.git"
+  },
+  "author": "freeman-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carbonplan/carbonplan.org/issues"
+  },
+  "homepage": "https://github.com/carbonplan/carbonplan.org#readme",
+  "dependencies": {
+    "next": "^9.1.2",
+    "next-fonts": "^0.19.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}
