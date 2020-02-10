@@ -36,8 +36,9 @@ export default function Index() {
           padding-left: 26px;
           padding-right: 30px;
           font-size: 2.7em;
-          color: rgb(255,255,255);
-          background: rgb(35,31,32);
+          color: rgb(26,26,24);
+          background: rgb(255,255,255);
+          border: rgb(26,26,24) solid 2px;
         }
 
         .contact {
@@ -50,7 +51,7 @@ export default function Index() {
 
         a {
           text-decoration: underline;
-          color: rgb(93, 93, 93);
+          color: rgb(26, 26, 24);
         }
 
         @media (min-width: 320px) and (max-width: 550px) {
@@ -79,10 +80,10 @@ export default function Index() {
       `}</style>
       <style global jsx>{`
         body {
-          background: rgb(240,240,240);
+          background: rgb(217,217,217);
           font-family: 'LeagueSpartan';
           font-size: 0.7vw;
-          color: rgb(93, 93, 93);
+          color: rgb(26, 26, 24);
           padding-left: 100px;
           padding-right: 100px;
           padding-top: 80px;
