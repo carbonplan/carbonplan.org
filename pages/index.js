@@ -41,6 +41,11 @@ export default function Index() {
           border: rgb(26,26,24) solid 2px;
         }
 
+        .callout:hover {
+          background: rgb(26,26,24);
+          color: rgb(255,255,255);
+        }
+
         .contact {
           display: block;
           margin-top: 0px;
@@ -56,7 +61,7 @@ export default function Index() {
 
         @media (min-width: 320px) and (max-width: 550px) {
           .logo {
-            width: calc(70vw);
+            width: calc(87vw);
             margin-left: auto;
             margin-right: auto;
           }
@@ -65,11 +70,13 @@ export default function Index() {
             margin-left: auto;
             margin-right: auto;
             width: 70%;
+            font-size: 3.5em;
           }
 
           .callout, .contact {
             margin-left: auto;
             margin-right: auto;
+            font-size: 2.7em;
           }
 
           .contact {
