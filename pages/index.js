@@ -79,6 +79,15 @@ export default function Index() {
             font-size: 2.7em;
           }
 
+          .callout {
+            border: rgb(26,26,24) solid 1px;
+          }
+
+          .callout:hover {
+            background: rgb(255,255,255);
+            color: rgb(26,26,24);
+          }
+
           .contact {
             margin-bottom: 60px;
           }
@@ -93,7 +102,7 @@ export default function Index() {
           color: rgb(26, 26, 24);
           padding-left: 100px;
           padding-right: 100px;
-          padding-top: 80px;
+          padding-top: 40px;
           padding-bottom: 40px;
           margin: 0px auto;
         }
@@ -106,7 +115,7 @@ export default function Index() {
         @media (min-width: 320px) and (max-width: 575px) {
           body {
             margin: 0px auto;
-            margin-top: calc(10vh);
+            margin-top: calc(7vh);
             padding: 0px;
             text-align: center;
             font-size: 1.75vw;
