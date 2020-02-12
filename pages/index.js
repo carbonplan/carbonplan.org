@@ -102,7 +102,7 @@ export default function Index() {
           color: rgb(26, 26, 24);
           padding-left: 100px;
           padding-right: 100px;
-          padding-top: 40px;
+          padding-top: 80px;
           padding-bottom: 40px;
           margin: 0px auto;
         }
