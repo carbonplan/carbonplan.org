@@ -10,7 +10,7 @@ export default function Index() {
         <link rel='icon' href='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/medium-black-circle_26ab.png'/>
       </Head>
       <img className='logo' src="/logo.svg" alt="logo" />
-      <p className='headline'>we're using science and data to help optimize the deploymemt of carbon removal</p>
+      <p className='headline'>we're using science and data to help optimize the deployment of carbon removal</p>
       <a href='mailto:info@carbonplan.org'><p className='callout'>email us for more info</p></a>
       <p className='contact'>we're just getting started</p>
       <div id='left'></div>
