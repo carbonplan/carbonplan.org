@@ -1,3 +1,6 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
+import { Box, Card, Grid, Button } from 'theme-ui'
 import Head from 'next/head'
 
 export default function Index() {
@@ -9,120 +12,16 @@ export default function Index() {
         <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
         <link rel='icon' href='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/medium-black-circle_26ab.png'/>
       </Head>
-      <img className='logo' src="/logo.svg" alt="logo" />
-      <p className='headline'>we're using science and data to help optimize the deploymemt of carbon removal</p>
-      <a href='mailto:info@carbonplan.org'><p className='callout'>email us for more info</p></a>
-      <p className='contact'>we're just getting started</p>
-      <div id='left'></div>
-      <div id='right'></div>
-      <div id='top'></div>
-      <div id='bottom'></div>
-      <style jsx>{`
-        .logo {
-          width: calc(41vw);
-        }
+      <div>
+      <img sx={{ width: 1200 }} src="/logo-thin.svg" alt="logo" />
+      </div>
+      <Button>about</Button>
+      <Button>reports</Button>
+      <Button>tools</Button>
+      <div>
+      We aim to provide scientifically-grounded, unbiased, and transparent data and analytics on climate solutions.
+      </div>
 
-        .headline {
-          font-size: 4.5em;
-          width: 60%;
-          margin-left: 20px;
-        }
-
-        .callout {
-          display: inline-block;
-          margin-left: 20px;
-          padding-top: 18px;
-          padding-bottom: 14px;
-          padding-left: 26px;
-          padding-right: 30px;
-          font-size: 2.7em;
-          color: rgb(26,26,24);
-          background: rgb(255,255,255);
-          border: rgb(26,26,24) solid 2px;
-        }
-
-        .callout:hover {
-          background: rgb(26,26,24);
-          color: rgb(255,255,255);
-        }
-
-        .contact {
-          display: block;
-          margin-top: 0px;
-          margin-left: 15px;
-          padding: 10px;
-          font-size: 2.7em;
-        }
-
-        a {
-          text-decoration: underline;
-          color: rgb(26, 26, 24);
-        }
-
-        @media (min-width: 320px) and (max-width: 550px) {
-          .logo {
-            width: calc(87vw);
-            margin-left: auto;
-            margin-right: auto;
-          }
-
-          .headline {
-            margin-left: auto;
-            margin-right: auto;
-            width: 70%;
-            font-size: 3.5em;
-          }
-
-          .callout, .contact {
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 2.7em;
-          }
-
-          .callout {
-            border: rgb(26,26,24) solid 1px;
-          }
-
-          .callout:hover {
-            background: rgb(255,255,255);
-            color: rgb(26,26,24);
-          }
-
-          .contact {
-            margin-bottom: 60px;
-          }
-        }
-
-      `}</style>
-      <style global jsx>{`
-        body {
-          background: rgb(217,217,217);
-          font-family: 'LeagueSpartan';
-          font-size: 0.7vw;
-          color: rgb(26, 26, 24);
-          padding-left: 100px;
-          padding-right: 100px;
-          padding-top: 80px;
-          padding-bottom: 40px;
-          margin: 0px auto;
-        }
-
-        @font-face {
-          font-family: 'LeagueSpartan';
-          src: url('/fonts/leaguespartan-bold.ttf');
-        }
-
-        @media (min-width: 320px) and (max-width: 575px) {
-          body {
-            margin: 0px auto;
-            margin-top: calc(7vh);
-            padding: 0px;
-            text-align: center;
-            font-size: 1.75vw;
-          }
-        }
-
-      `}</style>
     </div>
   )
 }
