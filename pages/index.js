@@ -1,27 +1,53 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Box, Card, Grid, Button } from 'theme-ui'
-import Head from 'next/head'
+import { Styled, Box, Card, Grid, Text, Button, Heading } from 'theme-ui'
+import Link from 'next/link'
+import Layout from '../components/layout'
 
-export default function Index() {
+const Index = () => {
   return (
-    <div className='container'>
-      <Head>
-        <title>carbonplan</title>
-        <meta name='google-site-verification' content='gV6IXRYI2iw66by7r5poh1-MmzOuxCfxwC0E5FjR5-M'/>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
-        <link rel='icon' href='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/medium-black-circle_26ab.png'/>
-      </Head>
-      <div>
-      <img sx={{ width: 1200 }} src="/logo-thin.svg" alt="logo" />
-      </div>
-      <Button>about</Button>
-      <Button>reports</Button>
-      <Button>tools</Button>
-      <div>
-      We aim to provide scientifically-grounded, unbiased, and transparent data and analytics on climate solutions.
-      </div>
-
-    </div>
+    <Layout>
+      <Heading as='h1' sx={{ my: [5], fontSize: [7] }}>
+        Optimizing carbon removal
+      </Heading>
+      <Box sx={{ maxWidth: '40em', my: [4] }}>
+         <Heading as='h3' sx={{ my: [4], fontSize: [4] }}>
+          CarbonPlan analyzes carbon removal oppurtunities and 
+          helps deploy funding to the best projects.
+        </Heading>
+        <Text sx={{ mb: [3] }}>
+          Solving the climate crisis now requires both critical reductions in emissions and
+          large-scale deployment of carbon removal — natural or technological 
+          means to remove carbon dioxide from the atmosphere. Many approaches exist, 
+          and effective decision making will require granular, 
+          unbiased evaluation of the options.
+        </Text>
+      </Box>
+      <Box>
+        <Heading as='h3' sx={{ fontSize: [4], fontWeight: 'bold', my: [4] }}>
+          What we do.
+        </Heading>
+      </Box>
+      <Grid gap={5} columns={[1, 2, 2]} sx={{ my: [3] }}>
+        <Box>
+          <Text sx={{ fontSize: 2, fontWeight: 'bold', my: 2 }}>Reports</Text>
+          <Text>
+            We help companies, non-profits, and governments evaluate and compare
+            carbon removal projects. Our reports help guide funding programs, 
+            and bring accountability and transparency to the process.
+          </Text>
+        </Box>
+        <Box>
+          <Text sx={{ fontSize: 2, fontWeight: 'bold', my: 2 }}>Data and tools</Text>
+          <Text>
+            We are building open source data products and tools to enable project evaluation
+            across a range of technologies. For every scientific domain, 
+            we work closely with academic collaborators.
+          </Text>
+        </Box>
+      </Grid>
+    </Layout>
   )
 }
+
+export default Index
