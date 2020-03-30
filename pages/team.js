@@ -4,28 +4,34 @@ import { Styled, Box, Card, Grid, Text, Button, Heading } from 'theme-ui'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-const About = () => {
+const Team = () => {
   return (
     <Layout>
       <Heading as='h1' sx={{ my: [5], fontSize: [7] }}>
-        About
+        Team
       </Heading>
       <Box sx={{ maxWidth: '40em', my: [5] }}>
         <Heading as='h3' sx={{ my: [4], fontSize: [4] }}>
-          Heading
+          Core team
         </Heading>
         <Text sx={{ mb: [3] }}>
-          Text text text
+          Jeremy Freeman, Danny Cullenward, Joe Hamman
         </Text>
          <Heading as='h3' sx={{ my: [4], fontSize: [4] }}>
-          Heading
+          Board
         </Heading>
         <Text sx={{ mb: [3] }}>
-          Text text text
+          Zeke Hausfather, Kelly Gannon
+        </Text>
+        <Heading as='h3' sx={{ my: [4], fontSize: [4] }}>
+          Collaborators
+        </Heading>
+        <Text sx={{ mb: [3] }}>
+          Bill Anderegg, Jennifer Wilcox
         </Text>
       </Box>
     </Layout>
   )
 }
 
-export default About
+export default Team

@@ -25,6 +25,16 @@ class MyApp extends App {
               font-family: 'LeagueMonoBold';
               src: url('/fonts/LeagueMono-Bold.ttf');
             }
+
+            @font-face {
+              font-family: 'Fanwood';
+              src: url('/fonts/fanwood_text-webfont.ttf');
+            }
+
+            @font-face {
+              font-family: 'FanwoodItalic';
+              src: url('/fonts/fanwood_text_italic-webfont.ttf');
+            }
           `}
         </style>
       </ThemeProvider>

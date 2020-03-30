@@ -3,9 +3,9 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { InitializeColorMode } from 'theme-ui'
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+  static async getStaticProps(ctx) {
+    const staticProps = await Document.getStaticProps(ctx)
+    return { ...staticProps }
   }
 
   render() {
