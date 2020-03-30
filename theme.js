@@ -21,14 +21,14 @@ export default {
     background: 'rgb(245,245,245)',
     primary: 'rgb(0,0,0)',
     secondary: 'rgb(53,53,53)',
-    muted: '#f6f6f6',
+    muted: 'rgb(80,80,80)',
     modes: {
       dark: {
         text: 'rgb(245,245,245)',
         background: 'rgb(31,31,31)',
         primary: 'rgb(230,230,230)',
         secondary: 'rgb(224, 224, 224)',
-        muted: '#f6f6f6',
+        muted: 'rgb(200,200,200)',
       }
     }
   },
@@ -67,8 +67,10 @@ export default {
         color: "primary",
       },
       "&:hover": {
-        color: "secondary"
+        color: "muted"
       },
+      borderBottom: 'solid',
+      borderWidth: [2],
       textDecoration: "none",
       fontWeight: "bold",
       cursor: "pointer"

@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Styled, Box, Card, Grid, Text, Button, Heading } from 'theme-ui'
-import Link from 'next/link'
+import { Styled, Box, Card, Grid, Text, Button, Heading, Link } from 'theme-ui'
 import Layout from '../components/layout'
 
 const Index = () => {
@@ -31,7 +30,7 @@ const Index = () => {
         What we do.
       </Heading>
       </Box>
-      <Grid gap={5} columns={[1, 2, 2]} sx={{ my: [3] }}>
+      <Grid gap={5} columns={[1, 2, 2]} sx={{ my: [4] }}>
         <Box sx={{borderColor: 'secondary', borderWidth: [2], borderStyle: 'solid', borderRadius: [2], p: [3]}}>
           <Heading as='h6' sx={{ fontSize: 2, fontWeight: 'bold', my: 2 }}>Reports</Heading>
           <Text>
@@ -49,6 +48,12 @@ const Index = () => {
           </Text>
         </Box>
       </Grid>
+      <Heading as='h3' sx={{ fontSize: [4], fontWeight: 'bold', my: [4] }}>
+        Follow us <Link href='https://twitter.com/carbonplanorg'>@carbonplanorg</Link>
+      </Heading>
+      <Heading as='h3' sx={{ fontSize: [4], fontWeight: 'bold', my: [4] }}>
+        Find us on <Link href='https://github.com/carbonplan'>Github</Link>
+      </Heading>
     </Layout>
   )
 }
