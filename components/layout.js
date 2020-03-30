@@ -1,6 +1,6 @@
 import Header from './header'
 import Footer from './footer'
-import Seo from './Seo'
+import Seo from './seo'
 import { Box } from 'theme-ui'
 
 const Layout = ({ children }) => {
