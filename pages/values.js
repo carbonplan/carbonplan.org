@@ -40,7 +40,7 @@ const Values = () => {
         <Text sx={{ mb: [3] }}>
           We will push for a collective and participatory process, and incorporate, as much as possible, 
           the perspectives of environmental justice and the needs and experiences 
-          of frontline communities in implementing climate solutions
+          of frontline communities in implementing climate solutions.
         </Text>
       </Box>
     </Layout>
