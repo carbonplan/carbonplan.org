@@ -12,13 +12,13 @@ const About = () => {
       </Heading>
       <Box sx={{ maxWidth: '40em', my: [5] }}>
         <Heading as='h3' sx={{ my: [4], fontSize: [4] }}>
-          Heading
+          Mission
         </Heading>
         <Text sx={{ mb: [3] }}>
           Text text text
         </Text>
          <Heading as='h3' sx={{ my: [4], fontSize: [4] }}>
-          Heading
+          Funding
         </Heading>
         <Text sx={{ mb: [3] }}>
           Text text text

@@ -24,10 +24,12 @@ const Team = () => {
           Zeke Hausfather, Kelly Gannon
         </Text>
         <Heading as='h3' sx={{ my: [4], fontSize: [4] }}>
-          Collaborators
+          Collaborators and advisors
         </Heading>
         <Text sx={{ mb: [3] }}>
-          Bill Anderegg, Jennifer Wilcox
+          Bill Anderegg, Grayson Badgley, Jennifer Wilcox, Jane Zelikova, Helene
+          Pilorge, Ben Kolosz, Grace Wu, Jennifer Pett-Ridge, Andrew Bergman, Toly
+          Rinberg, Eugene Wan 
         </Text>
       </Box>
     </Layout>

@@ -27,7 +27,7 @@ const Header = () => {
             }}
             sx={{
               mx: [2], 
-              borderColor: 'primary', borderWidth: [2], borderStyle: 'solid', p: [2]}}
+              borderColor: 'primary', borderWidth: [2], borderStyle: 'solid', p: [2], pb: [1]}}
             >
             {colorMode === 'default' ? 'Dark' : 'Light'}
           </Link>

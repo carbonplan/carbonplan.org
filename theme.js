@@ -19,16 +19,16 @@ export default {
   colors: {
     text: 'rgb(10,10,10)',
     background: 'rgb(245,245,245)',
-    primary: 'rgb(0,0,0)',
-    secondary: 'rgb(53,53,53)',
-    muted: 'rgb(80,80,80)',
+    primary: 'rgb(53,53,53)',
+    secondary: 'rgb(80,80,80)',
+    muted: 'rgb(0,0,0)',
     modes: {
       dark: {
         text: 'rgb(245,245,245)',
         background: 'rgb(31,31,31)',
         primary: 'rgb(230,230,230)',
         secondary: 'rgb(224, 224, 224)',
-        muted: 'rgb(200,200,200)',
+        muted: 'rgb(255,255,255)',
       }
     }
   },
@@ -45,14 +45,16 @@ export default {
       },
       "&:hover": {
         color: "background",
-        backgroundColor: "secondary"
+        backgroundColor: "primary"
       },
+      fontFamily: 'heading',
       borderRadius: [2],
       textDecoration: "none",
       fontSize: [2],
       fontWeight: "bold",
       cursor: "pointer",
-      p: [2]
+      p: [2],
+      pb: [1]
     }
   },
   styles: {
@@ -62,15 +64,15 @@ export default {
       fontWeight: 'body',
     },
     a: {
-      color: "primary",
+      color: "text",
       "&:active": {
-        color: "primary",
+        color: "text",
       },
       "&:hover": {
-        color: "muted"
+        color: "muted",
+        borderBottom: 'solid',
+        borderWidth: [2]
       },
-      borderBottom: 'solid',
-      borderWidth: [2],
       textDecoration: "none",
       fontWeight: "bold",
       cursor: "pointer"

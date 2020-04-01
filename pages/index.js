@@ -11,7 +11,7 @@ const Index = () => {
       </Heading>
       <Box sx={{ maxWidth: '40em', my: [4] }}>
          <Heading as='h3' sx={{ my: [4], fontSize: [4] }}>
-          CarbonPlan uses science and data to find the best
+          CarbonPlan uses science and data to evaluate
           carbon removal opportunities.
         </Heading>
         <Text sx={{ mb: [3] }}>
@@ -35,16 +35,17 @@ const Index = () => {
           <Heading as='h6' sx={{ fontSize: 2, fontWeight: 'bold', my: 2 }}>Reports</Heading>
           <Text>
             We help companies, non-profits, and governments evaluate and compare
-            carbon removal projects. Our public reports help guide funding programs, 
+            carbon removal projects and other climate solutions. Our decision tools help guide funding programs, 
             and bring accountability and transparency to the process.
           </Text>
         </Box>
         <Box sx={{borderColor: 'secondary', borderWidth: [2], borderStyle: 'solid', borderRadius: [2], p: [3]}}>
           <Heading as='h6' sx={{ fontSize: 2, fontWeight: 'bold', my: 2 }}>Data and tools</Heading>
           <Text>
-            We are building open source data products and tools to enable project evaluation
+            We are building open data products and tools to enable project evaluation
             across a range of technologies. For every scientific domain, 
-            we work closely with academic collaborators.
+            we work closely with academic collaborators, and contribute to open data,
+            open source software, and open standards.
           </Text>
         </Box>
       </Grid>
