@@ -7,26 +7,19 @@ function Resources (props) {
     <Layout>
       <Box sx={{ maxWidth: '700px' }}>
         <Heading sx={{ my: [5], fontSize: [6] }}>
-          Team
+          Resources
         </Heading>
         <Heading sx={{ my: [3], fontSize: [4] }}>
-          Core team
+          Research
         </Heading>
         <Text>
-          Jeremy Freeman, Joe Hamman, Danny Cullenward
+          Browse our datasets, models, primers, and notes.
         </Text>
         <Heading sx={{ my: [3], fontSize: [4] }}>
-          Board
+          Reports
         </Heading>
         <Text>
-          Kelly Gannon, Zeke Hausfather
-        </Text>
-        <Heading sx={{ my: [3], fontSize: [4] }}>
-          Collaborators
-        </Heading>
-        <Text>
-          Bill Anderegg, Grayson Badgley, Anna Trugman, Jennifer Wilcox, Helene Pilgore, 
-          Noah McQueen, Caleb Woodall, Andrew Bergman, Toly Rinberg, Jane Zelikova
+          View our public database of reports on specific carbon removal projects.
         </Text>
       </Box>
     </Layout>

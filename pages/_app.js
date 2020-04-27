@@ -4,6 +4,8 @@ import { ThemeProvider } from 'theme-ui'
 
 import theme from '../theme'
 
+const prefix = 'https://the-freeman-files.s3.amazonaws.com/fonts/'
+
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
@@ -11,30 +13,50 @@ class MyApp extends App {
       <ThemeProvider theme={theme}>
           <Component {...pageProps} />
           <style jsx global>{`
-            @font-face {
-              font-family: 'LeagueSpartan';
-              src: url('/fonts/leaguespartan-bold.ttf');
+            body {
+              overscroll-behavior: none;
+            }
+
+            .no-focus-outline a:focus,
+            .no-focus-outline button:focus,
+            .no-focus-outline input:focus,
+            .no-focus-outline select:focus {
+              outline: none !important;
             }
 
             @font-face {
-              font-family: 'LeagueMonoRegular';
-              src: url('/fonts/LeagueMono-Regular.ttf');
+              font-family: 'relative-medium-pro';
+              src: url('${prefix}relative-medium-pro.eot');
+              src: url('${prefix}relative-medium-pro.eot?#iefix') format('embedded-opentype'),
+                   url('${prefix}relative-medium-pro.woff2') format('woff2'),
+                   url('${prefix}relative-medium-pro.woff') format('woff'),
+                   url('${prefix}relative-medium-pro.ttf') format('truetype');
+              font-weight: normal;
+              font-style: normal;
             }
 
             @font-face {
-              font-family: 'LeagueMonoBold';
-              src: url('/fonts/LeagueMono-Bold.ttf');
+              font-family: 'relative-mono-11-pitch-pro';
+              src: url('${prefix}relative-mono-11-pitch-pro.eot');
+              src: url('${prefix}relative-mono-11-pitch-pro.eot?#iefix') format('embedded-opentype'),
+                   url('${prefix}relative-mono-11-pitch-pro.woff2') format('woff2'),
+                   url('${prefix}relative-mono-11-pitch-pro.woff') format('woff'),
+                   url('${prefix}relative-mono-11-pitch-pro.ttf') format('truetype');
+              font-weight: normal;
+              font-style: normal;
             }
 
             @font-face {
-              font-family: 'Fanwood';
-              src: url('/fonts/fanwood_text-webfont.ttf');
+              font-family: 'relative-faux-book-pro';
+              src: url('${prefix}relative-faux-book-pro.eot');
+              src: url('${prefix}relative-faux-book-pro.eot?#iefix') format('embedded-opentype'),
+                   url('${prefix}relative-faux-book-pro.woff2') format('woff2'),
+                   url('${prefix}relative-faux-book-pro.woff') format('woff'),
+                   url('${prefix}relative-faux-book-pro.ttf') format('truetype');
+              font-weight: normal;
+              font-style: normal;
             }
 
-            @font-face {
-              font-family: 'FanwoodItalic';
-              src: url('/fonts/fanwood_text_italic-webfont.ttf');
-            }
           `}
         </style>
       </ThemeProvider>
