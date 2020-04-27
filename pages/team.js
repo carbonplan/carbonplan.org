@@ -24,6 +24,10 @@ function Resources (props) {
         <Heading sx={{ my: [3], fontSize: [4] }}>
           Collaborators
         </Heading>
+        <Text sx={{ mb: [3] }}>
+          We collaborate closely with a community of experts. Our growing list is here. 
+          Interested in working together? Email us <Link href='mailto:research@carbonplan.org'>research@carbonplan.org</Link>
+        </Text>
         <Text>
           Bill Anderegg, Grayson Badgley, Anna Trugman, Jennifer Wilcox, Helene Pilgore, 
           Noah McQueen, Caleb Woodall, Andrew Bergman, Toly Rinberg, Jane Zelikova

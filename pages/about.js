@@ -9,7 +9,7 @@ function About (props) {
       <Heading sx={{ my: [5], fontSize: [6] }}>
         About
       </Heading>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
+      <Heading sx={{ my: [3], fontSize: [5] }}>
         Mission
       </Heading>
       <Text>
@@ -18,7 +18,7 @@ function About (props) {
         We work collaboratively with the scientific community to build open tools and 
         resources for the evaluation and deployment of carbon removal and other climate solutions.
       </Text>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
+      <Heading sx={{ my: [3], fontSize: [5] }}>
         Our work
       </Heading>
        <Heading sx={{ my: [3], fontSize: [4] }}>
@@ -45,7 +45,7 @@ function About (props) {
       <Text>
         Read more about our <NextLink href='/research'><Link>research</Link></NextLink>
       </Text>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
+      <Heading sx={{ my: [3], fontSize: [5] }}>
         Technologies
       </Heading>
       <Text>

@@ -11,7 +11,7 @@ const Header = () => {
       pb: [3]
     }}
   >
-    <Box sx={{ fontSize: [3] }}>
+    <Box>
       <Logo></Logo>
     </Box>
     <Box>
