@@ -45,7 +45,7 @@ function About () {
         <Text sx={{ fontSize: [3], mb: [3] }}>
           We collaborate with academic researchers to build open source data and tools
           for carbon removal and climate solutions. Through this work we produce datasets, models, 
-          interactive research articles, and commentary on our work and the field at large.
+          interactive articles, and commentary on climate policies and programs.
         </Text>
         <Text>
           <NextLink href='/research'>
@@ -60,7 +60,7 @@ function About () {
       </Heading>
       <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [5] }}>
         Carbon removal spans a range of technologies for removing carbon dioxide from the atmosphere.
-        Here are some of the ones we analyze.
+        Here are some of the project areas we analyze.
       </Text>
       <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '1fr 2fr']} sx={{ mb: [5] }}>
         <Heading>

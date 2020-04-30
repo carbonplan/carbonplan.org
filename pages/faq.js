@@ -11,19 +11,29 @@ function FAQ () {
       </Heading>
       <Box sx={{ my: [5] }}>
         <Heading sx={{ my: [3], fontSize: [5] }}>
-          How are you funded?
+          Are you a nonprofit?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
-          Our current funding comes from a Carbon180 Entrepreneur in Residence Fellowship and 
-          individual donations. Some grants and donations are pending.
+          Yes. We are a registered non-profit public benefit corporation in California. Our 501(3)(c) status is pending.
         </Text>
       </Box>
       <Box sx={{ my: [5] }}>
         <Heading sx={{ my: [3], fontSize: [5] }}>
-          Are you a nonprofit?
+          Why are you a nonprofit?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
-          Yes.
+          Because our commitment and responsability is completely to the climate and to the public, not to shareholders.
+        </Text>
+      </Box>
+      <Box sx={{ my: [5] }}>
+        <Heading sx={{ my: [3], fontSize: [5] }}>
+          How are you funded?
+        </Heading>
+        <Text sx={{ fontSize: [3] }}>
+          Our immediate funding comes from a Carbon180 Entrepreneur in Residence Fellowship and 
+          the generosity of individual donations. Some grants and donations are pending. If you are interested
+          in supporting our work, please reach out to{' '}
+          <Link sx={{ pb: [1] }} href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>.
         </Text>
       </Box>
       <Box sx={{ my: [5] }}>
@@ -31,21 +41,13 @@ function FAQ () {
           Are you a verifier?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
-          Not really. There are several organizations currently acting as third-party verifiers
-          in the space of carbon removal and carbon offsets, and we aim to complement them. 
+          There are several organizations currently acting as third-party verifiers
+          in the space of carbon removal and carbon offsets. We are different, and aim to complement them. 
           We do project and technology evaluation, but our focus is understanding, 
           quantifying, and clarifying the underlying data and scientific integrity, and helping guide
           future procurement and deployment. Especially in the the case of proprietary 
           industrial processes, we still see a critical role for third-party verfiers
           so long as they act with neutrality and transparency.
-        </Text>
-      </Box>
-      <Box sx={{ my: [5] }}>
-        <Heading sx={{ my: [3], fontSize: [5] }}>
-          How do you structure engagements?
-        </Heading>
-        <Text sx={{ fontSize: [3] }}>
-          Good question...
         </Text>
       </Box>
       <Box sx={{ my: [5] }}>
