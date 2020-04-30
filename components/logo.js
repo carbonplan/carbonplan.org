@@ -6,7 +6,7 @@ const Logo = () => {
   const context = useThemeUI()
   const theme = context.theme
 
-  return <NextLink href='/'><Box sx={{ width: '150px', fill: theme.colors.primary, cursor: 'pointer' }}>
+  return <NextLink href='/'><Box sx={{ width: '150px', fill: theme.colors.text, cursor: 'pointer' }}>
   <svg version="1.1" x="0px" y="0px" viewBox="0 0 151.1 28.8">
   <g>
     <g>

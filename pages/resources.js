@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import { Box, Text, Heading, Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
-function Resources (props) {
+function Resources () {
   return (
     <Layout>
       <Box sx={{ maxWidth: '700px' }}>

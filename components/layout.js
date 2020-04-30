@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
             bottom: '0px',
             display: ['none', 'none', 'inherit']
           }}>
-          <Container sx={{ px: [4] }}>
+          <Container sx={{ px: [4], maxWidth: '100%' }}>
             <Footer/>
           </Container>
         </Box>

@@ -20,10 +20,15 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
+    "@mdx-js/loader": "^1.6.0",
+    "@next/mdx": "^9.3.6",
+    "gray-matter": "^4.0.2",
     "isomorphic-unfetch": "^3.0.0",
+    "mdx": "^0.3.1",
     "next": "^9.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {

@@ -1,87 +1,145 @@
 import Layout from '../components/layout'
-import { Box, Text, Heading, Link } from 'theme-ui'
+import { Divider, Grid, Box, Text, Heading, Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
-function About (props) {
+function About () {
   return (
     <Layout>
-      <Box sx={{ maxWidth: '700px' }}>
-      <Heading sx={{ my: [5], fontSize: [6] }}>
+      <Box>
+      <Heading sx={{ my: [5], fontSize: [7] }}>
         About
       </Heading>
-      <Heading sx={{ my: [3], fontSize: [5] }}>
+      <Heading sx={{ mb: [3], fontSize: [5] }}>
         Mission
       </Heading>
-      <Text>
+      <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [5] }}>
         We analyze carbon removal opportunities based on the best available science and data.
-        We help companies, governments, non-profits, and the public make specific decisions towards carbon removal goals.
-        We work collaboratively with the scientific community to build open tools and 
+        We help organizations make specific decisions towards carbon removal goals. 
+        And we work collaboratively with the scientific community to build open tools and 
         resources for the evaluation and deployment of carbon removal and other climate solutions.
       </Text>
-      <Heading sx={{ my: [3], fontSize: [5] }}>
+      <Divider></Divider>
+      <Heading sx={{ mb: [1], mt: [4], fontSize: [5]}}>
         Our work
       </Heading>
-       <Heading sx={{ my: [3], fontSize: [4] }}>
-        1
-      </Heading>
-      <Text sx={{ mb: [2] }}>
-        We engage with companies, non-profits, and government organizations to help
-        analyze climate programs and projects. A core focus in these engagements is transparency
-        and aggregation of information: by making the output of our analyses public, we
-        hope to prevent duplication of effort and bring standards and shared concepts to complex technical problems.
-      </Text>
-      <Text>
-        Browse our <NextLink href='/reports'><Link>reports</Link></NextLink>
-      </Text>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
-        2
-      </Heading>
-      <Text sx={{ mb: [2] }}>
-        We collaborate with academic researchers to build open source data and tools
-        for carbon removal and climate solutions. Examples include statistical models for forest carbon
-        quantification and wildfire risk estimation, methods for costing and siting direct air capture facilities,
-        and data science and economics around carbon accounting. Through this work we produce datasets, models, primers, and notes.
-      </Text>
-      <Text>
-        Read more about our <NextLink href='/research'><Link>research</Link></NextLink>
-      </Text>
-      <Heading sx={{ my: [3], fontSize: [5] }}>
+      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [5] }}>
+        <Box>
+        <Text sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: '0.05em'}}>
+          / REPORTS
+        </Text>
+        <Text sx={{ fontSize: [3], mb: [3] }}>
+          We engage with companies, non-profits, and government organizations to help
+          analyze climate programs and projects. We focus on transparency and reproducibility, 
+          bringing standards and shared concepts to complex technical problems.
+        </Text>
+        <Text>
+          <Link sx={{ fontSize: [1], letterSpacing: '0.05em', pb: [1] }} href='https://reports.carbonplan.now.sh/'>
+            VIEW OUR REPORTS
+          </Link>
+        </Text>
+        </Box>
+        <Box>
+        <Text sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: '0.05em'}}>
+          / RESEARCH
+        </Text>
+        <Text sx={{ fontSize: [3], mb: [3] }}>
+          We collaborate with academic researchers to build open source data and tools
+          for carbon removal and climate solutions. Through this work we produce datasets, models, 
+          interactive research articles, and commentary on our work and the field at large.
+        </Text>
+        <Text>
+          <NextLink href='/research'>
+            <Link sx={{ fontSize: [1], letterSpacing: '0.05em', pb: [1] }}>BROWSE OUR RESEARCH</Link>
+          </NextLink>
+        </Text>
+        </Box>
+      </Grid>
+      <Divider></Divider>
+      <Heading sx={{ my: [3], mt: [4], fontSize: [5] }}>
         Technologies
       </Heading>
-      <Text>
+      <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [5] }}>
         Carbon removal spans a range of technologies for removing carbon dioxide from the atmosphere.
-        Here are some of the ones we are working on.
+        Here are some of the ones we analyze.
       </Text>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
-        Forests
-      </Heading>
-      <Text>
-        What we're doing...
-      </Text>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
-        Soil
-      </Heading>
-      <Text>
-        What we're doing...
-      </Text>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
-        Biomass
-      </Heading>
-      <Text>
-        What we're doing...
-      </Text>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
-        Direct air capture
-      </Heading>
-      <Text>
-        What we're doing...
-      </Text>
-      <Heading sx={{ my: [3], fontSize: [4] }}>
-        Mineralization
-      </Heading>
-      <Text>
-        What we're doing...
-      </Text>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '1fr 2fr']} sx={{ mb: [5] }}>
+        <Heading>
+          Image
+        </Heading>
+        <Box>
+          <Text sx={{ color: 'green', fontFamily: 'heading', letterSpacing: '0.07em' }}>
+            FORESTS
+          </Text>
+           <Text sx={{ fontSize: [3] }}>
+            Description of forest projects
+          </Text>
+        </Box>
+      </Grid>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '1fr 2fr']} sx={{ mb: [5] }}>
+        <Heading>
+          Image
+        </Heading>
+        <Box>
+          <Text sx={{ color: 'orange', fontFamily: 'heading', letterSpacing: '0.07em' }}>
+            SOIL
+          </Text>
+           <Text sx={{ fontSize: [3] }}>
+            Description of soil projects
+          </Text>
+        </Box>
+      </Grid>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '1fr 2fr']} sx={{ mb: [5] }}>
+        <Heading>
+          Image
+        </Heading>
+        <Box>
+          <Text sx={{ color: 'yellow', fontFamily: 'heading', letterSpacing: '0.07em' }}>
+            BIOMASS
+          </Text>
+           <Text sx={{ fontSize: [3] }}>
+            Description of biomass projects
+          </Text>
+        </Box>
+      </Grid>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '1fr 2fr']} sx={{ mb: [5] }}>
+        <Heading>
+          Image
+        </Heading>
+        <Box>
+          <Text sx={{ color: 'purple', fontFamily: 'heading', letterSpacing: '0.07em' }}>
+            DIRECT AIR CAPTURE
+          </Text>
+           <Text sx={{ fontSize: [3] }}>
+            Description of air capture projects
+          </Text>
+        </Box>
+      </Grid>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '1fr 2fr']} sx={{ mb: [5] }}>
+        <Heading>
+          Image
+        </Heading>
+        <Box>
+          <Text sx={{ color: 'grey', fontFamily: 'heading', letterSpacing: '0.07em' }}>
+            MINERALIZATION
+          </Text>
+           <Text sx={{ fontSize: [3] }}>
+            Description of mineralization projects
+          </Text>
+        </Box>
+      </Grid>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '1fr 2fr']} sx={{ mb: [5] }}>
+        <Heading>
+          Image
+        </Heading>
+        <Box>
+          <Text sx={{ color: 'teal', fontFamily: 'heading', letterSpacing: '0.07em' }}>
+            OCEAN
+          </Text>
+           <Text sx={{ fontSize: [3] }}>
+            Description of ocean projects
+          </Text>
+        </Box>
+      </Grid>
       </Box>
     </Layout>
   )

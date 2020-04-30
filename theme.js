@@ -162,7 +162,6 @@ export default {
     }
   },
   links: {
-
     nav: {
       color: "primary",
       "&:active": {
@@ -202,12 +201,17 @@ export default {
       fontWeight: 'body',
     },
     a: {
-      color: 'secondary',
+      color: 'text',
+      borderStyle: 'solid',
+      borderColor: 'text',
+      borderWidth: '0px',
+      borderBottomWidth: '1px',
       '&:active': {
         color: 'text',
       },
       '&:hover': {
-        color: 'text'
+        color: 'secondary',
+        borderColor: 'secondary'
       },
       textDecoration: 'none',
       cursor: 'pointer'

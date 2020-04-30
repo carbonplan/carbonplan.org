@@ -93,12 +93,14 @@ const Carbon = () => {
       borderStyle: 'solid', 
       borderColor: 'primary', 
       borderWidth: '0px', 
-      borderBottomWidth: '2px', 
+      borderTopWidth: '2px', 
       textAlign: 'left', 
       fontSize: [6], 
       fontFamily: 'monospace',
       width: 'fit-content',
-      mb: [4]
+      mt: [3],
+      pt: [1],
+      ml: [2]
     }}>{ format(total) }
       <Text sx={{ display: 'inline-block', color: 'secondary', fontSize: [4], ml: [3] }}>tCO2 / year</Text>
     </Box>
