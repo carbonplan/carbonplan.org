@@ -14,7 +14,7 @@ const Seo = () => (
     <meta property="og:url" content="https://carbonplan.org"/>
     <meta name="twitter:title" content="(carbon)plan"/>
     <meta name="twitter:description" content="Data and science for carbon removal."/>
-    <meta name="twitter:image" content=" https://carbonplan-assets.s3.amazonaws.com/images/social.png"/>
+    <meta name="twitter:image" content="https://carbonplan-assets.s3.amazonaws.com/images/social.png"/>
     <meta name="twitter:card" content="summary_large_image"/>
   </Head>
 )
