@@ -33,7 +33,7 @@ function About () {
           bringing standards and shared concepts to complex technical problems.
         </Text>
         <Text>
-          <Link sx={{ fontSize: [1], letterSpacing: '0.05em', pb: [1] }} href='https://reports.carbonplan.now.sh/'>
+          <Link sx={{ fontSize: [2], letterSpacing: '0.05em', pb: [1] }} href='https://reports.carbonplan.now.sh/'>
             VIEW OUR REPORTS
           </Link>
         </Text>
@@ -49,7 +49,7 @@ function About () {
         </Text>
         <Text>
           <NextLink href='/research'>
-            <Link sx={{ fontSize: [1], letterSpacing: '0.05em', pb: [1] }}>BROWSE OUR RESEARCH</Link>
+            <Link sx={{ fontSize: [2], letterSpacing: '0.05em', pb: [1] }}>BROWSE OUR RESEARCH</Link>
           </NextLink>
         </Text>
         </Box>

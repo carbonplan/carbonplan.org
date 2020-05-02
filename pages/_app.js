@@ -4,7 +4,7 @@ import { ThemeProvider } from 'theme-ui'
 
 import theme from '../theme'
 
-const prefix = 'https://the-freeman-files.s3.amazonaws.com/fonts/'
+const prefix = 'https://carbonplan-assets.s3.amazonaws.com/fonts/relative/'
 
 class MyApp extends App {
   render() {
