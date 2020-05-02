@@ -14,12 +14,12 @@ const Footer = (props) => {
   }
 
   useEffect(() => {
-    const setFromEvent = e => setCoords({ x: e.clientX, y: e.clientY });
-    window.addEventListener("mousemove", setFromEvent);
+    const setFromEvent = e => setCoords({ x: e.clientX, y: e.clientY })
+    window.addEventListener("mousemove", setFromEvent)
     return () => {
-      window.removeEventListener("mousemove", setFromEvent);
-    };
-  }, []);
+      window.removeEventListener("mousemove", setFromEvent)
+    }
+  }, [])
 
   const color = '#7eb36a'  // TODO: Get from pointer
 
@@ -51,7 +51,7 @@ const Footer = (props) => {
           stroke: 'secondary', 
           cursor: 'pointer',
           position: 'relative', 
-          top: '7px', 
+          top: '8px', 
           left: '7px',
           transition: '0.25s all',
           '&:hover': {
@@ -66,15 +66,15 @@ const Footer = (props) => {
           height='24'
           strokeWidth='2'
         >
-          <circle cx="12.1" cy="12" r="5.2"/>
-          <line x1="12.1" y1="0.9" x2="12.1" y2="4.3"/>
-          <line x1="12.1" y1="19.8" x2="12.1" y2="23.2"/>
-          <line x1="23.2" y1="12" x2="19.8" y2="12"/>
-          <line x1="4.3" y1="12" x2="0.9" y2="12"/>
-          <line x1="20" y1="19.9" x2="17.5" y2="17.5"/>
-          <line x1="6.6" y1="6.6" x2="4.2" y2="4.1"/>
-          <line x1="4.2" y1="19.9" x2="6.6" y2="17.5"/>
-          <line x1="17.5" y1="6.6" x2="20" y2="4.1"/>
+          <circle class="cls-1" cx="12" cy="12" r="4.77"/>
+          <line class="cls-1" x1="12" x2="12" y2="4.06"/>
+          <line class="cls-1" x1="12" y1="19.94" x2="12" y2="24"/>
+          <line class="cls-1" x1="20.49" y1="3.51" x2="17.61" y2="6.39"/>
+          <line class="cls-1" x1="6.39" y1="17.61" x2="3.51" y2="20.49"/>
+          <line class="cls-1" x1="20.49" y1="20.49" x2="17.61" y2="17.61"/>
+          <line class="cls-1" x1="6.39" y1="6.39" x2="3.51" y2="3.51"/>
+          <line class="cls-1" x1="24" y1="12" x2="19.94" y2="12"/>
+          <line class="cls-1" x1="4.06" y1="12" y2="12"/>
         </svg>
       </IconButton>
     </Box>
