@@ -34,7 +34,7 @@ function Index () {
           <NextLink href='/about'><Link sx={link}>About</Link></NextLink>
           <NextLink href='/team'><Link sx={link}>Team</Link></NextLink>
           <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
-          <Link href='https://reports.carbonplan.now.sh/' sx={link}>Reports</Link>
+          <NextLink href='/reports'><Link sx={link}>Reports</Link></NextLink>
           <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
         </Box>
         <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>

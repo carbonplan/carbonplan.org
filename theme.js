@@ -4,6 +4,7 @@ export default {
     body: 'relative-faux-book-pro, Roboto, system-ui, -apple-system, BlinkMacSystemFont',
     heading: 'relative-medium-pro, Roboto, system-ui, -apple-system, BlinkMacSystemFont',
     monospace: 'relative-mono-11-pitch-pro, Menlo, monospace',
+    mad: 'MAD Serif Fill Trial'
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
   fontWeights: {
