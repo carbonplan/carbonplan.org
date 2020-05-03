@@ -33,8 +33,8 @@ function Index () {
           </Heading>
           <NextLink href='/about'><Link sx={link}>About</Link></NextLink>
           <NextLink href='/team'><Link sx={link}>Team</Link></NextLink>
-          <Link href='/research' sx={link}>Research</Link>
-          <Link href='/reports' sx={link}>Reports</Link>
+          <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
+          <NextLink href='/reports'><Link sx={link}>Reports</Link></NextLink>
           <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
         </Box>
         <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
