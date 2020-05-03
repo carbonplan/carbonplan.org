@@ -1,6 +1,6 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/reports", "dest": "https://reports.carbonplan.now.sh"}
+    { "src": "/reports", "status": 200, "dest": "https://reports.carbonplan.now.sh"}
   ]
 }
