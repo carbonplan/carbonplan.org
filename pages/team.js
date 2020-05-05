@@ -66,7 +66,7 @@ function Resources () {
           Interested in working together? Email us{' '}
           <Link href='mailto:research@carbonplan.org' sx={{ pb: [1] }}>research@carbonplan.org</Link>
         </Text>
-        <Box sx={{ fontSize: [2], mb: [3] }}>
+        <Box sx={{ fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: '0.07em' }}>
             <span sx={{ color: 'green' }}>BILL ANDEREGG</span>
             {' '}/{' '} 
@@ -76,7 +76,7 @@ function Resources () {
             University of Utah
           </Text>
         </Box>
-        <Box sx={{ color: 'green', fontSize: [2], mb: [3] }}>
+        <Box sx={{ color: 'green', fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: '0.07em' }}>
             ANNA TRUGMAN
           </Text>
@@ -84,7 +84,7 @@ function Resources () {
             UCSB
           </Text>
         </Box>
-        <Box sx={{ fontSize: [2], mb: [3] }}>
+        <Box sx={{ fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: '0.07em' }}>
             <span sx={{ color: 'purple' }}>JENNIFER WILCOX</span>
             {' '}/{' '} 
@@ -100,7 +100,7 @@ function Resources () {
             Worcester Polytechnic Institute
           </Text>
         </Box>
-        <Box sx={{ fontSize: [2], mb: [3] }}>
+        <Box sx={{ fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: '0.07em' }}>
             <span sx={{ color: 'purple' }}>ANDREW BERGMAN</span>
             {' '}/{' '} 
@@ -110,7 +110,7 @@ function Resources () {
             Harvard University
           </Text>
         </Box>
-        <Box sx={{ fontSize: [2], mb: [3] }}>
+        <Box sx={{ fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: '0.07em' }}>
             <span sx={{ color: 'orange' }}>JANE ZELIKOVA</span>
           </Text>
