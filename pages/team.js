@@ -6,7 +6,7 @@ import { default as NextLink } from 'next/link'
 function Resources () {
   return (
     <Layout>
-      <Box>
+      <Box sx={{ width: '100%' }}>
         <Heading sx={{ my: [5], fontSize: [7] }}>
           Team
         </Heading>
@@ -62,12 +62,13 @@ function Resources () {
           Collaborators
         </Heading>
         <Text sx={{ mb: [4], fontSize: [3], maxWidth: '700px' }}>
-          We collaborate closely with a community of experts and advisors. 
+          We collaborate closely with a community of experts and advisors. We will also
+          be expanding our core team in the near future.
           Interested in working together? Email us{' '}
-          <Link href='mailto:research@carbonplan.org' sx={{ pb: [1] }}>research@carbonplan.org</Link>
+          <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
         </Text>
         <Box sx={{ fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em' }}>
+          <Text sx={{ letterSpacing: 'wide' }}>
             <span sx={{ color: 'green' }}>BILL ANDEREGG</span>
             {' '}/{' '} 
             <span sx={{ color: 'green' }}>GRAYSON BADGLEY</span>
@@ -77,15 +78,15 @@ function Resources () {
           </Text>
         </Box>
         <Box sx={{ color: 'green', fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em' }}>
+          <Text sx={{ letterSpacing: 'wide' }}>
             ANNA TRUGMAN
           </Text>
           <Text sx={{ color: 'secondary' }}>
-            UCSB
+            UC Santa Barbara
           </Text>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em' }}>
+          <Text sx={{ letterSpacing: 'wide' }}>
             <span sx={{ color: 'purple' }}>JENNIFER WILCOX</span>
             {' '}/{' '} 
             <span sx={{ color: 'purple' }}>NOAH MCQUEEN</span>
@@ -101,7 +102,7 @@ function Resources () {
           </Text>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em' }}>
+          <Text sx={{ letterSpacing: 'wide' }}>
             <span sx={{ color: 'purple' }}>ANDREW BERGMAN</span>
             {' '}/{' '} 
             <span sx={{ color: 'purple' }}>TOLY RINBERG</span>
@@ -110,8 +111,8 @@ function Resources () {
             Harvard University
           </Text>
         </Box>
-        <Box sx={{ fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em' }}>
+        <Box sx={{ fontSize: [3], mb: [5] }}>
+          <Text sx={{ letterSpacing: 'wide' }}>
             <span sx={{ color: 'orange' }}>JANE ZELIKOVA</span>
           </Text>
           <Text sx={{ color: 'secondary' }}>

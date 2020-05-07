@@ -7,6 +7,7 @@ const link = {
   width: 'fit-content',
   color: 'text',
   fontSize: [4],
+  pb: [0],
   borderStyle: 'solid',
   borderColor: 'primary',
   borderWidth: '0px',
@@ -21,7 +22,7 @@ const link = {
 
 function Index () {
   return (
-    <Layout>
+    <Layout hideFooter={true}>
       <Grid gap={['12px', '16px', '64px']} columns={[1, null, '400px 1fr']}>
         <Box>
           <Heading sx={{ my: [5], fontSize: [6] }}>

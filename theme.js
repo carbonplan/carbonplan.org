@@ -16,6 +16,10 @@ export default {
     body: 1.45,
     heading: 1.125,
   },
+  letterSpacings: {
+    medium: '0.02em',
+    wide: '0.05em'
+  },
   colors: {
     text: '#ebebec',
     background: '#1b1e23',
@@ -207,6 +211,7 @@ export default {
       borderColor: 'text',
       borderWidth: '0px',
       borderBottomWidth: '1px',
+      pb: [1],
       '&:active': {
         color: 'text',
       },

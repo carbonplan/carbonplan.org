@@ -1,9 +1,10 @@
 import Seo from './seo'
 import Header from './header'
 import Footer from './footer'
+import Switch from './switch'
 import { Container, Flex, Box, Text } from 'theme-ui'
 
-const Layout = ({ children }) => {
+const Layout = ({ hideFooter, children }) => {
   return (
     <>
       <Seo/>
@@ -42,6 +43,21 @@ const Layout = ({ children }) => {
             </Flex>
           </Container>
         </Box>
+        {!hideFooter && <Box 
+          sx={{
+            width: '100%',
+            borderStyle: 'solid',
+            borderColor: 'muted',
+            borderWidth: '0px',
+            borderTopWidth: '1px',
+          }}>
+          <Container sx={{
+            px: [4]
+          }}>
+            <Footer/>
+          </Container>
+        </Box>
+        }
         <Box
           sx={{
             width: '100%',
@@ -49,9 +65,9 @@ const Layout = ({ children }) => {
             bottom: '0px',
             display: ['none', 'none', 'inherit']
           }}>
-          <Container sx={{ px: [4], maxWidth: '100%' }}>
-            <Footer/>
-          </Container>
+          <Box sx={{ px: [4], width: '100%' }}>
+            <Switch/>
+          </Box>
         </Box>
       </Flex>
     </>
