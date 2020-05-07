@@ -25,7 +25,7 @@ function About () {
       <Heading sx={{ mb: [1], mt: [4], fontSize: [5]}}>
         Our work
       </Heading>
-      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [5] }}>
+      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [4] }}>
         <Box>
           <Text sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: 'wide'}}>
             / RESEARCH
@@ -35,11 +35,13 @@ function About () {
             for carbon removal and climate solutions. Through this work we produce datasets, models, 
             interactive articles, and commentary on climate policies and programs.
           </Text>
+          {/*
           <Text>
             <NextLink href='/research'>
               <Link sx={{ fontSize: [2], letterSpacing: 'wide' }}>BROWSE OUR RESEARCH</Link>
             </NextLink>
           </Text>
+          */}
         </Box>
         <Box>
           <Text sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: 'wide'}}>
@@ -50,14 +52,13 @@ function About () {
             analyze climate programs and projects. We focus on transparency and reproducibility, 
             bringing standards and shared concepts to complex technical problems.
           </Text>
+          {/*
           <Text>
-            <Link sx={{ 
-              fontSize: [2], 
-              letterSpacing: '0.05em'
-            }} href='https://reports.carbonplan.now.sh/'>
-              VIEW OUR PROJECT REPORTS
-            </Link>
+            <NextLink href='/reports'>
+              <Link sx={{ fontSize: [2], letterSpacing: 'wide'}}>VIEW OUR PROJECT REPORTS</Link>
+            </NextLink>
           </Text>
+          */}
         </Box>
       </Grid>
       <Divider></Divider>

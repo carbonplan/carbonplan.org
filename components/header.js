@@ -46,10 +46,10 @@ const Header = () => {
         strokeWidth: '2px', 
         stroke: 'text', 
         '.paren': {
-          stroke: 'background'
+          opacity: '0'
         },
         '&:hover .paren': {
-          stroke: 'text'
+          opacity: '1'
         }
       }} aria-label='Toggle Menu'>
         {!expanded && <svg sx={{ width: '50px', height: '30px', transform: 'scale(2)', mt: ['-3px'] }}
@@ -94,13 +94,15 @@ const Header = () => {
         borderWidth: '0px',
         borderLeftWidth: '1px'
       }}>
-      <Box sx={{ textAlign: '-webkit-right', width: 'fit-content' }}> 
-      <NextLink href='/about'><Link sx={link}>About</Link></NextLink>
-      <NextLink href='/team'><Link sx={link}>Team</Link></NextLink>
-      <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
-      <Link href='https://reports.carbonplan.now.sh/' sx={link}>Reports</Link>
-      <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
-      </Box>
+        <Box sx={{ textAlign: '-webkit-right', width: 'fit-content' }}> 
+          <NextLink href='/about'><Link sx={link}>About</Link></NextLink>
+          <NextLink href='/team'><Link sx={link}>Team</Link></NextLink>
+          {/*
+          <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
+          <NextLink href='/reports'><Link sx={link}>Reports</Link></NextLink>
+          */}
+          <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
+        </Box>
       </Box>
     }
     </Box>
