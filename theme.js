@@ -207,6 +207,7 @@ export default {
     },
     a: {
       color: 'text',
+      cursor: 'pointer',
       borderStyle: 'solid',
       borderColor: 'text',
       borderWidth: '0px',
@@ -219,8 +220,7 @@ export default {
         color: 'secondary',
         borderColor: 'secondary'
       },
-      textDecoration: 'none',
-      cursor: 'pointer'
+      textDecoration: 'none'
     },
     hr: {
       border: 'none',

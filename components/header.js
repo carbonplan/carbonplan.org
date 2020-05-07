@@ -8,6 +8,7 @@ const link = {
   width: 'fit-content',
   color: 'text',
   fontSize: [4],
+  pb: [0],
   borderStyle: 'solid',
   borderColor: 'primary',
   borderWidth: '0px',

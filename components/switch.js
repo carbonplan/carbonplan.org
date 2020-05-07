@@ -28,7 +28,7 @@ const Switch = (props) => {
       float: 'right', 
       transformOrigin: 'right', 
       transform: 'rotate(90deg)',
-      paddingBottom: '5px',
+      paddingBottom: '10px',
       backgroundColor: 'background'
     }}>
       <Text variant='metric.units' sx={{ whiteSpace: 'nowrap', display: 'inline-block', leftMargin: '15px' }}>
