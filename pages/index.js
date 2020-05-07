@@ -1,5 +1,5 @@
 import Layout from '../components/layout'
-import Carbon from '../components/carbon'
+import Splash from '../components/splash'
 import { Box, Text, Heading, Link, Grid } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
@@ -39,7 +39,7 @@ function Index () {
           <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
         </Box>
         <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
-          <Carbon></Carbon>
+          <Splash/>
         </Box>
       </Grid>
     </Layout>
