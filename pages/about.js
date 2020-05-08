@@ -16,13 +16,13 @@ function About () {
       <Heading sx={{ mb: [3], fontSize: [5] }}>
         Mission
       </Heading>
-      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '2fr 1fr']} sx={{ mb: [4] }}>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '800px 1fr']} sx={{ mb: [4] }}>
         <Box>
           <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [3]}}>
             Addressing the crisis of climate change requires action on several fronts. 
-            Alongside critical reductions in emissions, we now need large-scale deployment 
-            of carbon removal — natural or technological means to remove 
-            carbon dioxide from the atmosphere.
+            We now need large-scale deployment of carbon removal alongside critical 
+            reductions in emissions. Carbon removal refers to natural or technological 
+            approaches for removing carbon dioxide from the atmosphere.
           </Text>
           <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [3] }}>
             We analyze carbon removal opportunities based on the best available science and data.
@@ -63,7 +63,7 @@ function About () {
           </Text>
           <Text sx={{ fontSize: [3], mb: [3] }}>
             We engage with companies, non-profits, and government organizations to help
-            analyze climate programs and projects. We focus on transparency and reproducibility, 
+            analyze climate programs and projects. We focus on transparency and quality, 
             bringing standards and shared concepts to complex technical problems.
           </Text>
           {/*
@@ -108,7 +108,7 @@ function About () {
       </Technology>
       <Technology name={'DAC'} color={'purple'}>
         Direct air capture is a class of technologies that use 
-        synthetic sorbents or solvents selective to carbon dioxide. 
+        synthetic sorbents or solvents that selectively bind carbon dioxide. 
         Large contactors housing these chemicals use fans to expose them to carbon dioxide,
         and chemical separation is then used to recover the carbon dioxide in pure form. 
         The resulting stream can be combined with 

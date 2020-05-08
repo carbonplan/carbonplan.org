@@ -18,7 +18,7 @@ function Resources () {
             JEREMY FREEMAN
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Founder / CEO
+            Founder / Executive Director
           </Text>
         </Box>
         <Box sx={{ fontSize: [3] }}>

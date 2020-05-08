@@ -25,7 +25,7 @@ function FAQ () {
         </Heading>
         <Text sx={{ fontSize: [3] }}>
           Our current list of support over $5k includes seed funding from a 
-          Carbon180 Entrepreneur in Residence Fellowship to our founder, 
+          Carbon180 Entrepreneur in Residence Fellowship, 
           a donation from Hampus Jakobsson, and a donation from a private individual 
           who has a personal connection to our founder and would prefer to remain anonymous 
           but whom is not known publicly and has no business interests in carbon removal or climate policy. 
@@ -51,7 +51,19 @@ function FAQ () {
           What are your qualifications?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
-          Our team...
+          Our team has a deep background in open science, climate change science, 
+          and climate policy. Executive Director Jeremy Freeman completed a PhD 
+          in neuroscience, developed open science software tools, and helped build a 
+          science philanthropy program before starting CarbonPlan. 
+          Technology Director Joe Hamman completed a PhD in Civil & Environmental Engineering,
+          is a project scientist at the National Center for Atmospheric Research,
+          and contributes to several climate science and software efforts. 
+          Policy Director Danny Cullenward completed a JD-PhD in energy economics 
+          and teaches energy and climate policy at Stanford Law School. 
+          We work closely with an amazing group of {' '}
+          <NextLink href='/team'><Link>collaborators</Link></NextLink>{' '}
+          to develop our methods and ensure our work is grounded 
+          in the best available science and data.
         </Text>
       </Box>
       <Box sx={{ my: [5] }}>
