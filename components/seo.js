@@ -4,7 +4,7 @@ const Seo = () => (
   <Head>
     <title>(carbon)plan</title>
     <meta name='description' content='Data and science for carbon removal.'/>
-    <meta name='viewport' content='initial-scale=1.0, minimum-scale=1, height=device-height, width=device-width'/>
+    <meta name='viewport' content='initial-scale=1.0, minimum-scale=1.0, height=device-height, width=device-width'/>
     <link rel='canonical' content='https://carbonplan.org/'/>
     <link rel='icon' href='https://carbonplan-assets.s3.amazonaws.com/images/favicon.svg'/>
     <link rel='apple-touch-icon' href='https://carbonplan-assets.s3.amazonaws.com/images/favicon.png'/>
