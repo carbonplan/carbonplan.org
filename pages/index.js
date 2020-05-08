@@ -23,7 +23,11 @@ const link = {
 function Index () {
   return (
     <Layout hideFooter={true}>
-      <Grid gap={['12px', '16px', '64px']} columns={[1, null, '400px 1fr']}>
+      <Grid 
+        gap={['12px', '16px', '64px']} 
+        columns={[1, null, '400px 1fr']}
+        sx={{ mb: [6, 0, 0] }}
+      >
         <Box>
           <Heading sx={{ my: [5], fontSize: [6] }}>
             Data and science for carbon removal

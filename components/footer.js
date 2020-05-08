@@ -5,7 +5,8 @@ import { useThemeUI } from 'theme-ui'
 const Footer = () => {
   return <Box sx={{
       mt: [4],
-      pt: [4]
+      pt: [4],
+      mb: [5, 0, 0]
     }}>
     <Grid columns={[1, 1, 3]} sx={{ mb: [3] }}>
       <Box sx={{ fontFamily: 'heading' }}>
@@ -36,7 +37,8 @@ const Footer = () => {
           borderTopWidth: '1px',
           color: 'secondary',
           fontSize: [1],
-          pt: [2]
+          pt: [2],
+          display: ['none', 'none', 'inherit']
         }}>
           <Text>(c) 2020 CARBONPLAN, SAN FRANCISCO, CA</Text>
         </Box>
@@ -52,7 +54,8 @@ const Footer = () => {
           borderTopWidth: '1px',
           color: 'secondary',
           fontSize: [1],
-          pt: [2]
+          pt: [2],
+          display: ['none', 'none', 'inherit']
         }}>
           <Text>INSERT METADATA HERE</Text>
         </Box>
