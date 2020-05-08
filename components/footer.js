@@ -44,6 +44,7 @@ const Footer = () => {
         </Box>
       </Box>
       <Box sx={{ position: 'relative' }}>
+        {/*
         <Box sx={{ 
           fontFamily: 'monospace', 
           position: 'absolute', 
@@ -59,6 +60,7 @@ const Footer = () => {
         }}>
           <Text>INSERT METADATA HERE</Text>
         </Box>
+        */}
       </Box>
       <Box>
         <Monogram/>
