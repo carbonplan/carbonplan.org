@@ -1,128 +1,55 @@
-import Head from 'next/head'
+import Layout from '../components/layout'
+import Splash from '../components/splash'
+import { Box, Text, Heading, Link, Grid } from 'theme-ui'
+import { default as NextLink } from 'next/link'
 
-export default function Index() {
+const link = {
+  width: 'fit-content',
+  color: 'text',
+  fontSize: [4],
+  pb: [0],
+  borderStyle: 'solid',
+  borderColor: 'primary',
+  borderWidth: '0px',
+  borderBottomWidth: '1px',
+  display: 'block',
+  '&:hover': {
+    color: 'secondary',
+    borderBottomWidth: '1px',
+    borderColor: 'secondary'
+  }
+}
+
+function Index () {
   return (
-    <div className='container'>
-      <Head>
-        <title>carbonplan</title>
-        <meta name='google-site-verification' content='gV6IXRYI2iw66by7r5poh1-MmzOuxCfxwC0E5FjR5-M'/>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
-        <link rel='icon' href='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/medium-black-circle_26ab.png'/>
-      </Head>
-      <img className='logo' src="/logo.svg" alt="logo" />
-      <p className='headline'>we're using science and data to help optimize the deployment of carbon removal</p>
-      <a href='mailto:info@carbonplan.org'><p className='callout'>email us for more info</p></a>
-      <p className='contact'>we're just getting started</p>
-      <div id='left'></div>
-      <div id='right'></div>
-      <div id='top'></div>
-      <div id='bottom'></div>
-      <style jsx>{`
-        .logo {
-          width: calc(41vw);
-        }
-
-        .headline {
-          font-size: 4.5em;
-          width: 60%;
-          margin-left: 20px;
-        }
-
-        .callout {
-          display: inline-block;
-          margin-left: 20px;
-          padding-top: 18px;
-          padding-bottom: 14px;
-          padding-left: 26px;
-          padding-right: 30px;
-          font-size: 2.7em;
-          color: rgb(26,26,24);
-          background: rgb(255,255,255);
-          border: rgb(26,26,24) solid 2px;
-        }
-
-        .callout:hover {
-          background: rgb(26,26,24);
-          color: rgb(255,255,255);
-        }
-
-        .contact {
-          display: block;
-          margin-top: 0px;
-          margin-left: 15px;
-          padding: 10px;
-          font-size: 2.7em;
-        }
-
-        a {
-          text-decoration: underline;
-          color: rgb(26, 26, 24);
-        }
-
-        @media (min-width: 320px) and (max-width: 550px) {
-          .logo {
-            width: calc(87vw);
-            margin-left: auto;
-            margin-right: auto;
-          }
-
-          .headline {
-            margin-left: auto;
-            margin-right: auto;
-            width: 70%;
-            font-size: 3.5em;
-          }
-
-          .callout, .contact {
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 2.7em;
-          }
-
-          .callout {
-            border: rgb(26,26,24) solid 1px;
-          }
-
-          .callout:hover {
-            background: rgb(255,255,255);
-            color: rgb(26,26,24);
-          }
-
-          .contact {
-            margin-bottom: 60px;
-          }
-        }
-
-      `}</style>
-      <style global jsx>{`
-        body {
-          background: rgb(217,217,217);
-          font-family: 'LeagueSpartan';
-          font-size: 0.7vw;
-          color: rgb(26, 26, 24);
-          padding-left: 100px;
-          padding-right: 100px;
-          padding-top: 80px;
-          padding-bottom: 40px;
-          margin: 0px auto;
-        }
-
-        @font-face {
-          font-family: 'LeagueSpartan';
-          src: url('/fonts/leaguespartan-bold.ttf');
-        }
-
-        @media (min-width: 320px) and (max-width: 575px) {
-          body {
-            margin: 0px auto;
-            margin-top: calc(7vh);
-            padding: 0px;
-            text-align: center;
-            font-size: 1.75vw;
-          }
-        }
-
-      `}</style>
-    </div>
+    <Layout hideFooter={true}>
+      <Grid 
+        gap={['12px', '16px', '64px']} 
+        columns={[1, null, '400px 1fr']}
+        sx={{ mb: [6, 0, 0] }}
+      >
+        <Box>
+          <Heading sx={{ my: [5], fontSize: [6] }}>
+            Data and science for carbon removal
+          </Heading>
+          <Heading sx={{ my: [5], fontSize: [4] }}>
+            Improving the transparency and scientific integrity of carbon removal 
+            and climate solutions through open data and tools
+          </Heading>
+          <NextLink href='/about'><Link sx={link}>About</Link></NextLink>
+          <NextLink href='/team'><Link sx={link}>Team</Link></NextLink>
+          {/*
+          <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
+          <NextLink href='/reports'><Link sx={link}>Reports</Link></NextLink>
+          */}
+          <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
+        </Box>
+        <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
+          <Splash/>
+        </Box>
+      </Grid>
+    </Layout>
   )
 }
+
+export default Index
