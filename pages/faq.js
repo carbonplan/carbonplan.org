@@ -43,7 +43,7 @@ function FAQ () {
           in the space of carbon removal and carbon offsets. We play a different role.
           We validate the scientific integrity of projects and technologies.
           Our focus is understanding, quantifying, and clarifying the underlying data and science. 
-          Using this information, we help guide future procurement and deployment.
+          Using this information, we help guide future procurement and deployment decisions.
         </Text>
       </Box>
       <Box sx={{ my: [5] }}>
@@ -59,7 +59,7 @@ function FAQ () {
           is a project scientist at the National Center for Atmospheric Research,
           and contributes to several climate science and software efforts. 
           Policy Director Danny Cullenward completed a JD-PhD in energy economics 
-          and teaches energy and climate policy at Stanford Law School. 
+          and teaches energy law and climate policy at Stanford Law School. 
           We work closely with an amazing group of {' '}
           <NextLink href='/team'><Link>collaborators</Link></NextLink>{' '}
           to develop our methods and ensure our work is grounded 
