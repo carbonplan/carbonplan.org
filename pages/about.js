@@ -1,4 +1,5 @@
 import Layout from '../components/layout'
+import Arrow from '../components/arrow'
 import Technology from '../components/technology'
 import { Divider, Grid, Box, Text, Heading, Link, Image } from 'theme-ui'
 import { default as NextLink } from 'next/link'
@@ -15,12 +16,25 @@ function About () {
       <Heading sx={{ mb: [3], fontSize: [5] }}>
         Mission
       </Heading>
-      <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [5] }}>
-        We analyze carbon removal opportunities based on the best available science and data.
-        We help organizations make specific decisions towards carbon removal goals. 
-        And we work collaboratively with the scientific community to build open tools and 
-        resources for the evaluation and deployment of carbon removal and other climate solutions.
-      </Text>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '2fr 1fr']} sx={{ mb: [4] }}>
+        <Box>
+          <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [3]}}>
+            Addressing the crisis of climate change requires action on several fronts. 
+            Alongside critical reductions in emissions, we now need large-scale deployment 
+            of carbon removal — natural or technological means to remove 
+            carbon dioxide from the atmosphere.
+          </Text>
+          <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [3] }}>
+            We analyze carbon removal opportunities based on the best available science and data.
+            We help organizations make specific decisions towards carbon removal goals. 
+            And we work collaboratively with the scientific community to build open tools and 
+            resources for the evaluation and deployment of carbon removal and other climate solutions.
+          </Text>
+        </Box>
+        <Box sx={{ display: ['none', 'none', 'inherit'], ml: ['100px'], mt: ['-10px'] }}>
+          <Arrow/>
+        </Box>
+      </Grid>
       <Divider></Divider>
       <Heading sx={{ mb: [1], mt: [4], fontSize: [5]}}>
         Our work
@@ -73,35 +87,40 @@ function About () {
         through the chemical reactions of photosynthesis and storing it in their
         biomass, about half of which is carbon. Carbon removal projects with forests can include
         planting trees or other vegetation to restore existing forests, or preventing
-        deforestation, which enhanced the natural carbon sink. 
+        deforestation, which enhances the natural carbon sink — but all remain
+        at risk to natural or human disturbance.
       </Technology>
       <Technology name={'soil'} color={'orange'}>
-        Forests are natural carbon sinks, capturing carbon dioxide from the atmosphere
-        through the chemical reactions of photosynthesis and storing it in their
-        biomass, about half of which is carbon. Carbon removal projects with forests can include
-        planting trees or other vegetation to restore existing forests, or preventing
-        deforestation, which enhanced the natural carbon sink. 
+        Soil carbon sequestration occurs when changes to land management practices increase
+        the storage of carbon in soils. Practices include the addition of cover crops, 
+        changes from conventional tillage to no tillage, and applying soil amendments. 
+        In theory, these practices can both increase soil storage and crop health, but they
+        must be maintained over time for effective carbon removal.
       </Technology>
       <Technology name={'biomass'} color={'yellow'}>
-        Forests are natural carbon sinks, capturing carbon dioxide from the atmosphere
-        through the chemical reactions of photosynthesis and storing it in their
-        biomass, about half of which is carbon. Carbon removal projects with forests can include
-        planting trees or other vegetation to restore existing forests, or preventing
-        deforestation, which enhanced the natural carbon sink. 
+        When biological systems sequester carbon, it ends up in a form that will
+        eventually decompose and result in carbon dioxide emissions. It is possible to
+        take biomass and convert it to some more durable form, 
+        such as building materials or biochar. While 
+        producing these materials on its own is not carbon removal, 
+        the complete system of biomass production and carbon storage removes carbon
+        dioxide from the atmosphere.
       </Technology>
       <Technology name={'DAC'} color={'purple'}>
-        Forests are natural carbon sinks, capturing carbon dioxide from the atmosphere
-        through the chemical reactions of photosynthesis and storing it in their
-        biomass, about half of which is carbon. Carbon removal projects with forests can include
-        planting trees or other vegetation to restore existing forests, or preventing
-        deforestation, which enhanced the natural carbon sink. 
+        Direct air capture is a class of technologies that use 
+        synthetic sorbents or solvents selective to carbon dioxide. 
+        Large contactors housing these chemicals use fans to expose them to carbon dioxide,
+        and chemical separation is then used to recover the carbon dioxide in pure form. 
+        The resulting stream can be combined with 
+        mineralization or geological injection to achieve permanent carbon removal.
       </Technology>
       <Technology name={'mineralization'} color={'grey'}>
-        Forests are natural carbon sinks, capturing carbon dioxide from the atmosphere
-        through the chemical reactions of photosynthesis and storing it in their
-        biomass, about half of which is carbon. Carbon removal projects with forests can include
-        planting trees or other vegetation to restore existing forests, or preventing
-        deforestation, which enhanced the natural carbon sink. 
+        When alkaline materials react with carbon dioxide they form solid carbonate minerals
+        that can achieve effective permanent carbon removal. Source materials include 
+        naturally occurring silicates like olivine and serpentine, or wastes
+        from mining operations. Specific implementations can include grinding minerals
+        for reaction with carbon dioxide in ambient air, or injection of pure carbon dioxide
+        into alkaline-rich geological formations.
       </Technology>
       <Technology name={'ocean'} color={'teal'}>
         Forests are natural carbon sinks, capturing carbon dioxide from the atmosphere
