@@ -26,13 +26,13 @@ function Index () {
       <Grid 
         gap={['12px', '16px', '64px']} 
         columns={[1, null, '400px 1fr']}
-        sx={{ mb: [6, 0, 0] }}
+        sx={{ mb: [5, 0, 0] }}
       >
         <Box>
-          <Heading sx={{ my: [5], fontSize: [6] }}>
+          <Heading sx={{ my: [4, 4, 5], fontSize: [6] }}>
             Data and science for carbon removal
           </Heading>
-          <Heading sx={{ my: [5], fontSize: [4] }}>
+          <Heading sx={{ my: [4, 4, 5], fontSize: [4] }}>
             Improving the transparency and scientific integrity of carbon removal 
             and climate solutions through open data and tools
           </Heading>

@@ -6,10 +6,10 @@ function FAQ () {
   return (
     <Layout>
       <Box sx={{ maxWidth: '700px', mb: [3] }}>
-      <Heading sx={{ my: [5], fontSize: [7] }}>
+      <Heading sx={{ my: [4, 4, 5], fontSize: [7] }}>
         FAQ
       </Heading>
-      <Box sx={{ my: [5] }}>
+      <Box sx={{ my: [4, 4, 5] }}>
         <Heading sx={{ my: [3], fontSize: [5] }}>
           Are you a nonprofit?
         </Heading>

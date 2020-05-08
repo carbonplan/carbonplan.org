@@ -2,21 +2,11 @@
 import { jsx, Box, Text } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 import { useState, useEffect } from 'react'
+import seed from 'math-random-seed'
 
 let index = []
 for (let i=0; i < 12*14; i++) {
   index.push(i)
-}
-
-let positions = []
-let categories = []
-let selected = []
-for (let i=0; i<14; i++) {
-  for (let j=0; j<12; j++) {
-    positions.push([i, j])
-    categories.push(i % 6)
-    selected.push((((i % 6) >= 0) && (j > 8)) || (((i % 6) >= 3) && (j > 6)))
-  }
 }
 
 const tags = {
@@ -30,11 +20,24 @@ const tags = {
 
 const values = {
   0: 60000,
-  1: 50,
-  2: 60000,
-  3: 400000,
+  1: 30000,
+  2: 20000,
+  3: 40000,
   4: 50000,
-  5: 693
+  5: 10000
+}
+
+var random = seed('1')
+
+let positions = []
+let categories = []
+let selected = []
+for (let i=0; i<14; i++) {
+  for (let j=0; j<12; j++) {
+    positions.push([i, j])
+    categories.push(Math.floor(random() * 6))
+    selected.push(random() > 0.8)
+  }
 }
 
 const Carbon = () => {
@@ -61,7 +64,7 @@ const Carbon = () => {
   }, [active])
 
   const format = (x) => {
-    if ((x >= 1000) && (x < 1000000)) return (x/1000).toFixed(2) + 'k'
+    if ((x >= 1000) && (x < 1000000)) return (x/1000).toFixed(0) + 'k'
     if ((x >= 1000000) && (x < 1000000000)) return (x/1000000).toFixed(2) + 'M'
     else return x
   }
