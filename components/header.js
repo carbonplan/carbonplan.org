@@ -83,7 +83,11 @@ const Header = () => {
         minWidth: '0px',
         maxHeight: '100vh',
         width: '100vw',
-        backgroundColor: alpha('background', 0.9),
+        backgroundColor: [
+          'background', 
+          alpha('background', 0.9), 
+          alpha('background', 0.9)
+        ],
         opacity: 1,
         textAlign: '-webkit-right',
         zIndex: 1000,
