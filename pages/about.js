@@ -119,15 +119,18 @@ function About () {
         that can achieve effective permanent carbon removal. Source materials include 
         naturally occurring silicates like olivine and serpentine, or wastes
         from mining operations. Specific implementations can include grinding minerals
-        for reaction with carbon dioxide in ambient air, or injection of pure carbon dioxide
+        for reaction with carbon dioxide in ambient air, or injecting pure carbon dioxide
         into alkaline-rich geological formations.
       </Technology>
       <Technology name={'ocean'} color={'teal'}>
-        Forests are natural carbon sinks, capturing carbon dioxide from the atmosphere
-        through the chemical reactions of photosynthesis and storing it in their
-        biomass, about half of which is carbon. Carbon removal projects with forests can include
-        planting trees or other vegetation to restore existing forests, or preventing
-        deforestation, which enhanced the natural carbon sink. 
+        The world's oceans are vast carbon sinks with a critical role in the carbon cycle.
+        At least two pathways may accelerate uptake and storage 
+        of carbon in the ocean. The first is to enhance the productivity of organisms
+        in the ocean, such as phytoplankton. 
+        The second is to increase the store of inorganic carbon 
+        in the ocean through the extraction, processing, and dissolution of minerals. 
+        Both have enormous potential scale, but require
+        significant research and testing.
       </Technology>
       </Box>
     </Layout>

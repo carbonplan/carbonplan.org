@@ -12,7 +12,13 @@ const Technology = ({ color, name, children }) => {
       borderWidth: '1px'
     }} src={prefix + name + '.png'} />
     <Box>
-      <Text sx={{ color: color, textTransform: 'uppercase', fontFamily: 'heading', letterSpacing: '0.07em' }}>
+      <Text sx={{ 
+        fontSize: [3],
+        color: color, 
+        textTransform: 'uppercase', 
+        fontFamily: 'heading', 
+        letterSpacing: '0.07em' 
+      }}>
         { name }
       </Text>
        <Text sx={{ fontSize: [3], maxWidth: '500px' }}>

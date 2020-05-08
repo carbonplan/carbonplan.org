@@ -5,7 +5,7 @@ import { default as NextLink } from 'next/link'
 function FAQ () {
   return (
     <Layout>
-      <Box sx={{ maxWidth: '700px' }}>
+      <Box sx={{ maxWidth: '700px', mb: [3] }}>
       <Heading sx={{ my: [5], fontSize: [7] }}>
         FAQ
       </Heading>
@@ -18,6 +18,7 @@ function FAQ () {
           Our commitment and responsability is to the public's interest in a safe and stable climate, not to shareholders.
         </Text>
       </Box>
+      {/*
       <Box sx={{ my: [5] }}>
         <Heading sx={{ my: [3], fontSize: [5] }}>
           How are you funded?
@@ -32,6 +33,7 @@ function FAQ () {
           pending IRS approval of our 501(c)(3) status.
         </Text>
       </Box>
+      */}
       <Box sx={{ my: [5] }}>
         <Heading sx={{ my: [3], fontSize: [5] }}>
           Are you a verifier?
