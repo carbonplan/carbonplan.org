@@ -92,11 +92,7 @@ const Header = () => {
         textAlign: '-webkit-right',
         zIndex: 1000,
         mt: ['56px'],
-        pt: [3],
-        borderStyle: 'solid',
-        borderColor: 'muted',
-        borderWidth: '0px',
-        borderLeftWidth: '1px'
+        pt: [3]
       }}>
         <Container>
         <Box sx={{ 
