@@ -1,6 +1,16 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/reports/(.*)", "dest": "https://reports.carbonplan.now.sh/$1"}
+    { "src": "/reports/(.*)", "dest": "https://reports.carbonplan.now.sh/$1"},
+    {
+      "src": "/reports",
+      "status": 302,
+      "headers": { "Location": "/reports/" }
+    },
+    {
+      "src": "/reports/([^/]+)",
+      "status": 302,
+      "headers": { "Location": "/reports/$1/" }
+    },
   ]
 }
