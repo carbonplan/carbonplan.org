@@ -11,6 +11,6 @@
       "src": "/reports/([^/]+)",
       "status": 302,
       "headers": { "Location": "/reports/$1/" }
-    },
+    }
   ]
 }
