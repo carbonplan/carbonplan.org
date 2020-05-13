@@ -11,6 +11,17 @@
       "src": "/reports/([^/]+)",
       "status": 302,
       "headers": { "Location": "/reports/$1/" }
+    },
+    { "src": "/research/(.*)", "dest": "https://staging.research.carbonplan.org/$1"},
+    {
+      "src": "/research",
+      "status": 302,
+      "headers": { "Location": "/research/" }
+    },
+    {
+      "src": "/research/([^/]+)",
+      "status": 302,
+      "headers": { "Location": "/research/$1/" }
     }
   ]
 }
