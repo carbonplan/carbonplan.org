@@ -1,7 +1,7 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/reports/(.*)", "dest": "https://reports.carbonplan.now.sh/$1"},
+    { "src": "/reports/(.*)", "dest": "https://staging.reports.carbonplan.org/$1"},
     {
       "src": "/reports",
       "status": 302,
