@@ -5,11 +5,6 @@ import { InitializeColorMode } from 'theme-ui'
 import { GA_TRACKING_ID } from '../lib/gtag'
 
 class MyDocument extends Document {
-  static async getStaticProps(ctx) {
-    const staticProps = await Document.getStaticProps(ctx)
-    return { ...staticProps }
-  }
-
   render() {
     return (
       <Html className='no-focus-outline'>

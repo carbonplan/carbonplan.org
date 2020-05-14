@@ -36,13 +36,13 @@ function Index () {
             Improving the transparency and scientific integrity of carbon removal 
             and climate solutions through open data and tools
           </Heading>
-          <NextLink href='/about'><Link sx={link}>About</Link></NextLink>
-          <NextLink href='/team'><Link sx={link}>Team</Link></NextLink>
+          <NextLink href='/about'><a><Text sx={link}>About</Text></a></NextLink>
+          <NextLink href='/team'><a><Text sx={link}>Team</Text></a></NextLink>
+          <Link sx={link} href='/reports'>Reports</Link>
           {/*
           <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
-          <NextLink href='/reports'><Link sx={link}>Reports</Link></NextLink>
           */}
-          <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
+          <NextLink href='/faq'><a><Text sx={link}>FAQ</Text></a></NextLink>
         </Box>
         <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
           <Splash/>
