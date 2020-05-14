@@ -6,7 +6,7 @@ const Footer = () => {
   return <Box sx={{
       mt: [4],
       pt: [4],
-      mb: [5, 0, 0]
+      mb: [4, 0, 0]
     }}>
     <Grid columns={[1, 1, 3]} sx={{ mb: [3] }}>
       <Box sx={{ fontFamily: 'heading' }}>

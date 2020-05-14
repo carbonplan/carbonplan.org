@@ -1,8 +1,9 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, IconButton, Link, Image } from 'theme-ui'
+import { jsx, Box, Flex, Text, Container, IconButton, Link, Image } from 'theme-ui'
 import Logo from './logo'
 import { useState } from 'react'
 import { default as NextLink } from 'next/link'
+import { alpha } from '@theme-ui/color'
 
 const link = {
   width: 'fit-content',
@@ -66,8 +67,8 @@ const Header = () => {
         {expanded && <svg sx={{ width: '50px', height: '30px', transform: 'scale(2)', mt: ['-3px'] }}
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 68 36">
-          <line class="cls-1" x1="50.85" y1="29.79" x2="17.15" y2="6.21"/>
-          <line class="cls-1" x1="17.15" y1="29.79" x2="50.85" y2="6.21"/>
+          <line x1="50.85" y1="29.79" x2="17.15" y2="6.21"/>
+          <line x1="17.15" y1="29.79" x2="50.85" y2="6.21"/>
           <path sx={{ transition: 'all 0.25s' }} className='paren' d="M6.4,1.2c-6.3,10.3-6.3,23.3,0,33.6"/>
           <path sx={{ transition: 'all 0.25s' }} className='paren' d="M61.6,34.8c6.3-10.3,6.3-23.3,0-33.6"/>
           </svg>
@@ -81,29 +82,32 @@ const Header = () => {
         bottom: '0px',
         minWidth: '0px',
         maxHeight: '100vh',
-        width: '300px',
-        backgroundColor: 'background',
+        width: '100vw',
+        backgroundColor: [
+          'background', 
+          alpha('background', 0.9), 
+          alpha('background', 0.9)
+        ],
         opacity: 1,
         textAlign: '-webkit-right',
         zIndex: 1000,
         mt: ['56px'],
-        pt: [3],
-        pr: ['270px'],
-        pl: ['100px'],
-        borderStyle: 'solid',
-        borderColor: 'muted',
-        borderWidth: '0px',
-        borderLeftWidth: '1px'
+        pt: [3]
       }}>
-        <Box sx={{ textAlign: '-webkit-right', width: 'fit-content' }}> 
-          <NextLink href='/about'><Link sx={link}>About</Link></NextLink>
-          <NextLink href='/team'><Link sx={link}>Team</Link></NextLink>
-          {/*
-          <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
-          <NextLink href='/reports'><Link sx={link}>Reports</Link></NextLink>
-          */}
-          <NextLink href='/faq'><Link sx={link}>FAQ</Link></NextLink>
+        <Container>
+        <Box sx={{ 
+          textAlign: '-webkit-right', 
+          width: 'fit-content',
+          mr: [4]
+
+        }}> 
+          <NextLink href='/about'><a><Text sx={link}>About</Text></a></NextLink>
+          <NextLink href='/team'><a><Text sx={link}>Team</Text></a></NextLink>
+          <Link href='/research' sx={link}>Research</Link>
+          <Link href='/reports' sx={link}>Reports</Link>
+          <NextLink href='/faq'><a><Text sx={link}>FAQ</Text></a></NextLink>
         </Box>
+        </Container>
       </Box>
     }
     </Box>

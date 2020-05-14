@@ -26,22 +26,20 @@ function Index () {
       <Grid 
         gap={['12px', '16px', '64px']} 
         columns={[1, null, '400px 1fr']}
-        sx={{ mb: [6, 0, 0] }}
+        sx={{ mb: [5, 0, 0] }}
       >
         <Box>
-          <Heading sx={{ my: [5], fontSize: [6] }}>
+          <Heading sx={{ my: [4, 4, 5], fontSize: [6] }}>
             Data and science for carbon removal
           </Heading>
-          <Heading sx={{ my: [5], fontSize: [4] }}>
+          <Heading sx={{ my: [4, 4, 5], fontSize: [4] }}>
             Improving the transparency and scientific integrity of carbon removal 
             and climate solutions through open data and tools
           </Heading>
           <NextLink href='/about'><a><Text sx={link}>About</Text></a></NextLink>
           <NextLink href='/team'><a><Text sx={link}>Team</Text></a></NextLink>
+          <Link sx={link} href='/research'>Research</Link>
           <Link sx={link} href='/reports'>Reports</Link>
-          {/*
-          <NextLink href='/research'><Link sx={link}>Research</Link></NextLink>
-          */}
           <NextLink href='/faq'><a><Text sx={link}>FAQ</Text></a></NextLink>
         </Box>
         <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>

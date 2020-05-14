@@ -212,7 +212,6 @@ export default {
       borderColor: 'text',
       borderWidth: '0px',
       borderBottomWidth: '1px',
-      pb: ['3px'],
       '&:active': {
         color: 'text',
       },

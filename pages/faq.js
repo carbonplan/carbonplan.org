@@ -6,10 +6,10 @@ function FAQ () {
   return (
     <Layout>
       <Box sx={{ maxWidth: '700px', mb: [3] }}>
-      <Heading sx={{ my: [5], fontSize: [7] }}>
+      <Heading sx={{ my: [4, 4, 5], fontSize: [7] }}>
         FAQ
       </Heading>
-      <Box sx={{ my: [5] }}>
+      <Box sx={{ my: [4, 4, 5] }}>
         <Heading sx={{ my: [3], fontSize: [5] }}>
           Are you a nonprofit?
         </Heading>
@@ -71,7 +71,7 @@ function FAQ () {
           Who designed this website?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
-          We've been working with <Link href='https://cidsgn.co'>Cast Iron Design</Link>. They are incredible. 
+          We've been working with <Link href='https://castirondesign.com/'>Cast Iron Design</Link>. They are incredible. 
           They developed the brand and design system and we've worked collaboratively 
           on the site design and implementation. Talk to them about your next project. Seriously.
         </Text>

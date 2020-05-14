@@ -16,7 +16,11 @@ class MyApp extends App {
             body {
               overscroll-behavior: none;
             }
-            
+
+            a {
+              text-decoration: none;
+            }
+
             .no-focus-outline a:focus,
             .no-focus-outline button:focus,
             .no-focus-outline input:focus,
