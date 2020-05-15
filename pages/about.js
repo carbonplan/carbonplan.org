@@ -13,7 +13,7 @@ function About () {
       <Heading sx={{ my: [4, 4, 5], letterSpacing: 'heading', fontSize: [7] }}>
         About
       </Heading>
-      <Heading sx={{ mb: [3], letterSpacing: 'heading', fontSize: [5] }}>
+      <Heading sx={{ mb: [4], letterSpacing: 'heading', fontSize: [5] }}>
         Mission
       </Heading>
       <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '800px 1fr']} sx={{ mb: [2] }}>
@@ -82,7 +82,7 @@ function About () {
         </Box>
       </Grid>
       <Divider></Divider>
-      <Heading sx={{ my: [3], mt: [4], fontSize: [5] }}>
+      <Heading sx={{ mb: [4], mt: [4], fontSize: [5] }}>
         Technologies and sectors
       </Heading>
       <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [5] }}>

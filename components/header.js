@@ -8,7 +8,7 @@ import { alpha } from '@theme-ui/color'
 const link = {
   width: 'fit-content',
   color: 'text',
-  fontSize: [4],
+  fontSize: [5, 5, 7],
   pb: [0],
   borderStyle: 'solid',
   borderColor: 'primary',
@@ -75,8 +75,9 @@ const Header = () => {
           </svg>
         }
       </IconButton>
-      {expanded && 
       <Box sx={{
+        opacity: expanded ? 1 : 0,
+        pointerEvents: expanded ? 'all' : 'none',
         position: 'fixed', 
         top: '0px',
         right: '0px',
@@ -84,23 +85,19 @@ const Header = () => {
         minWidth: '0px',
         maxHeight: '100vh',
         width: '100vw',
-        backgroundColor: [
-          'background', 
-          alpha('background', 0.9), 
-          alpha('background', 0.9)
-        ],
-        opacity: 1,
+        backgroundColor: 'background',
         textAlign: '-webkit-right',
         zIndex: 1000,
         mt: ['56px'],
-        pt: [3]
+        pt: [3],
+        transition: '0.25s'
       }}>
         <Container>
         <Box sx={{ 
           textAlign: '-webkit-right', 
           width: 'fit-content',
-          mr: [4]
-
+          mr: [4],
+          fontSize: ['92px']
         }}> 
           <NextLink href='/about'><a><Text sx={link}>About</Text></a></NextLink>
           <NextLink href='/team'><a><Text sx={link}>Team</Text></a></NextLink>
@@ -110,7 +107,6 @@ const Header = () => {
         </Box>
         </Container>
       </Box>
-      }
     </Box>
   </Flex>
   

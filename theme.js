@@ -290,8 +290,8 @@ export default {
       fontFamily: 'heading',
       fontSize: [5],
       fontWeight: 'heading',
-      mt: [4],
-      mb: [3]
+      mt: [5],
+      mb: [4]
     },
     h3: {
       fontFamily: 'heading',
