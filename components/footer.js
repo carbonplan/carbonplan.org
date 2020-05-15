@@ -9,12 +9,12 @@ const Footer = () => {
       mb: [4, 0, 0]
     }}>
     <Grid columns={[1, 1, 3]} sx={{ mb: [4] }}>
-      <Box sx={{ fontFamily: 'heading' }}>
-        <Text sx={{ letterSpacing: 'wide', mb: [2] }}>EMAIL</Text>
+      <Box>
+        <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [2] }}>EMAIL</Text>
         <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
       </Box>
-      <Box sx={{ fontFamily: 'heading' }}>
-        <Text sx={{ letterSpacing: 'wide', mb: [2] }}>MAIL</Text>
+      <Box>
+        <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [2] }}>MAIL</Text>
         <Text>2443 Fillmore St #380-6048</Text>
         <Text>San Francisco, CA 94115</Text>
       </Box>

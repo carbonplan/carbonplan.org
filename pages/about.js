@@ -56,7 +56,7 @@ function About () {
               fontSize: [2], 
               letterSpacing: 'wide' 
             }}>BROWSE OUR RESEARCH
-            <NextLink href='/research'><a><Text variant='arrow'>↗</Text></a></NextLink>
+            <Link href='/research'><Text variant='arrow'>↗</Text></Link>
             </Text>
           </Text>
         </Box>
@@ -76,7 +76,7 @@ function About () {
               fontSize: [2], 
               letterSpacing: 'wide' 
             }}>VIEW OUR PROJECT REPORTS
-            <NextLink href='/reports'><a><Text variant='arrow'>↗</Text></a></NextLink>
+            <Link href='/reports'><Text variant='arrow'>↗</Text></Link>
             </Text>
           </Text>
         </Box>

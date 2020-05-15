@@ -189,7 +189,7 @@ export default {
   },
   badges: {
     primary: {
-      letterSpacing: 'extra',
+      letterSpacing: 'wide',
       cursor: 'pointer', 
       color: 'primary',
       borderStyle: 'solid',
@@ -251,6 +251,7 @@ export default {
       fontFamily: 'body',
       lineHeight: 'body',
       fontWeight: 'body',
+      letterSpacing: 'body'
     },
     a: {
       color: 'text',
@@ -289,8 +290,8 @@ export default {
       fontFamily: 'heading',
       fontSize: [5],
       fontWeight: 'heading',
-      mt: [5],
-      mb: [4]
+      mt: [4],
+      mb: [3]
     },
     h3: {
       fontFamily: 'heading',
