@@ -13,7 +13,7 @@ function Resources () {
         <Heading sx={{ my: [4], fontSize: [5] }}>
           Core team
         </Heading>
-        <Box sx={{ fontSize: [3], mb: [3, 0, 0] }}>
+        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
           <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             JEREMY FREEMAN
           </Text>
@@ -21,7 +21,7 @@ function Resources () {
             Founder / Executive Director
           </Text>
         </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 0, 0] }}>
+        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
           <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             JOE HAMMAN
           </Text>
@@ -29,7 +29,7 @@ function Resources () {
             Technology Director
           </Text>
         </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 0, 0] }}>
+        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
           <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             DANNY CULLENWARD
           </Text>
@@ -41,7 +41,7 @@ function Resources () {
         <Heading sx={{ my: [4], fontSize: [5] }}>
           Board
         </Heading>
-        <Box sx={{ fontSize: [3], mb: [3, 0, 0] }}>
+        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
           <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             KELLY GANNON
           </Text>
@@ -49,7 +49,7 @@ function Resources () {
             Global Fund for Women
           </Text>
         </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 0, 0] }}>
+        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
           <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             ZEKE HAUSFATHER
           </Text>
@@ -111,7 +111,7 @@ function Resources () {
             Harvard University
           </Text>
         </Box>
-        <Box sx={{ fontSize: [3], mb: [5] }}>
+        <Box sx={{ fontSize: [3], mb: [6] }}>
           <Text sx={{ letterSpacing: 'wide' }}>
             <span sx={{ color: 'orange' }}>JANE ZELIKOVA</span>
           </Text>

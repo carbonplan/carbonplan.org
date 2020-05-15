@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import seed from 'math-random-seed'
 
 let index = []
-for (let i=0; i < 12*14; i++) {
+for (let i=0; i < 20*14; i++) {
   index.push(i)
 }
 
@@ -33,7 +33,7 @@ let positions = []
 let categories = []
 let selected = []
 for (let i=0; i<14; i++) {
-  for (let j=0; j<12; j++) {
+  for (let j=0; j<20; j++) {
     positions.push([i, j])
     categories.push(Math.floor(random() * 6))
     selected.push(random() > 0.8)
@@ -71,7 +71,7 @@ const Carbon = () => {
 
   return <Box sx={{ width: '100%', pt: [2] }}>
     <svg sx={{ width: '100%', maxWidth: '100%', height: 'auto' }}
-      version="1.1" viewBox="0 0 32 24" width="1024" height="768" >
+      version="1.1" viewBox="0 0 32 32" width="1024" height="1024" >
       {index.map((i) => {
         return <circle 
           sx={{ 

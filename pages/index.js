@@ -25,15 +25,15 @@ function Index () {
   return (
     <Layout hideFooter={true}>
       <Grid 
-        gap={['12px', '16px', '64px']} 
-        columns={[1, null, '400px 1fr']}
+        gap={['12px', '16px', '100px']} 
+        columns={[1, null, '480px 1fr']}
         sx={{ mb: [5, 0, 0] }}
       >
         <Box>
-          <Heading sx={{ my: [4, 4, 5], letterSpacing: 'heading', fontSize: [6] }}>
+          <Heading sx={{ my: [4, 4, 5], letterSpacing: 'heading', fontSize: [7] }}>
             Data and science for carbon removal
           </Heading>
-          <Heading sx={{ my: [4, 4, 5], fontSize: [4] }}>
+          <Heading sx={{ my: [4, 4, 5], fontSize: [4], fontFamily: 'body', lineHeight: 1.25 }}>
             Improving the transparency and scientific integrity of carbon removal 
             and climate solutions through open data and tools
           </Heading>
