@@ -18,7 +18,7 @@ const Footer = () => {
         <Text>2443 Fillmore St #380-6048</Text>
         <Text>San Francisco, CA 94115</Text>
       </Box>
-      <Box sx={{ fontFamily: 'body' }}>
+      <Box sx={{ fontFamily: 'body', letterSpacing: 'body' }}>
         <Text sx={{ color: 'secondary' }}>
         CarbonPlan is a registered non-profit public benefit corporation in California
         with 501(3)(c) status pending.

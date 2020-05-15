@@ -5,12 +5,12 @@ import { default as NextLink } from 'next/link'
 function FAQ () {
   return (
     <Layout>
-      <Box sx={{ maxWidth: '700px', mb: [3] }}>
-      <Heading sx={{ my: [4, 4, 5], fontSize: [7] }}>
+      <Box sx={{ maxWidth: '700px', mb: [6] }}>
+      <Heading sx={{ my: [4, 4, 5], fontSize: [6, 7, 7] }}>
         FAQ
       </Heading>
-      <Box sx={{ my: [4, 4, 5] }}>
-        <Heading sx={{ my: [3], fontSize: [5] }}>
+      <Box>
+        <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
           Are you a nonprofit?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
@@ -34,8 +34,8 @@ function FAQ () {
         </Text>
       </Box>
       */}
-      <Box sx={{ my: [5] }}>
-        <Heading sx={{ my: [3], fontSize: [5] }}>
+      <Box>
+        <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
           Are you a verifier?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
@@ -46,8 +46,8 @@ function FAQ () {
           Using this information, we help guide future procurement and deployment decisions.
         </Text>
       </Box>
-      <Box sx={{ my: [5] }}>
-        <Heading sx={{ my: [3], fontSize: [5] }}>
+      <Box>
+        <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
           What are your qualifications?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
@@ -66,8 +66,8 @@ function FAQ () {
           in the best available science and data.
         </Text>
       </Box>
-      <Box sx={{ my: [5] }}>
-        <Heading sx={{ my: [3], fontSize: [5] }}>
+      <Box>
+        <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
           Who designed this website?
         </Heading>
         <Text sx={{ fontSize: [3] }}>

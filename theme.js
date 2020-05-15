@@ -9,6 +9,7 @@ export default {
   fontSizes: [12, 14, 16, 18, 24, 34, 48, 64, 96],
   letterSpacings: {
     body: '0.01em',
+    mono: '0.02em',
     faux: '0.05em',
     heading: '-0.015em',
     wide: '0.07em',
@@ -22,7 +23,7 @@ export default {
   lineHeights: {
     body: 1.35,
     small: 1.3,
-    heading: 1.125,
+    heading: 1.05,
   },
   colors: {
     text: '#ebebec',
@@ -188,7 +189,7 @@ export default {
   },
   badges: {
     primary: {
-      letterSpacing: '0.05em',
+      letterSpacing: 'extra',
       cursor: 'pointer', 
       color: 'primary',
       borderStyle: 'solid',
@@ -204,7 +205,6 @@ export default {
       pl: [0],
       pr: [0],
       fontSize: [1],
-      fontWeight: 'body',
       fontFamily: 'monospace'
     }
   },
@@ -269,6 +269,35 @@ export default {
       borderWidth: '0px',
       borderTopWidth: '1px',
       borderColor: 'muted'
+    },
+    p: {
+      fontFamily: 'body',
+      fontSize: [2],
+      fontWeight: 'body',
+      letterSpacing: 'body'
+    },
+    h1: {
+      fontFamily: 'heading',
+      letterSpacing: 'heading',
+      fontSize: [6, 7, 7],
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+      mt: [6],
+      mb: [5]
+    },
+    h2: {
+      fontFamily: 'heading',
+      fontSize: [5],
+      fontWeight: 'heading',
+      mt: [5],
+      mb: [4]
+    },
+    h3: {
+      fontFamily: 'heading',
+      fontSize: [4],
+      fontWeight: 'heading',
+      mt: [4],
+      mb: [3],
     }
   },
   tags: {
