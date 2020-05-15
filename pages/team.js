@@ -14,7 +14,7 @@ function Resources () {
           Core team
         </Heading>
         <Box sx={{ fontSize: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em', display: 'inline-block', mr: [2] }}>
+          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             JEREMY FREEMAN
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
@@ -22,7 +22,7 @@ function Resources () {
           </Text>
         </Box>
         <Box sx={{ fontSize: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em', display: 'inline-block', mr: [2] }}>
+          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             JOE HAMMAN
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
@@ -30,7 +30,7 @@ function Resources () {
           </Text>
         </Box>
         <Box sx={{ fontSize: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em', display: 'inline-block', mr: [2] }}>
+          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             DANNY CULLENWARD
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
@@ -42,7 +42,7 @@ function Resources () {
           Board
         </Heading>
         <Box sx={{ fontSize: [3] }}>
-          <Text sx={{ letterSpacing: '0.07em', display: 'inline-block', mr: [2] }}>
+          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             KELLY GANNON
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
@@ -50,7 +50,7 @@ function Resources () {
           </Text>
         </Box>
         <Box sx={{ fontSize: [3], }}>
-          <Text sx={{ letterSpacing: '0.07em', display: 'inline-block', mr: [2] }}>
+          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
             ZEKE HAUSFATHER
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
@@ -64,7 +64,7 @@ function Resources () {
         <Text sx={{ mb: [4], fontSize: [3], maxWidth: '700px' }}>
           We collaborate closely with a community of experts and advisors. We will also
           be expanding our core team in the near future.
-          Interested in working together? Email us{' '}
+          Interested in working together? <br/>Email us{' '}
           <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
         </Text>
         <Box sx={{ fontSize: [3], mb: [3] }}>

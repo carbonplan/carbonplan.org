@@ -1,24 +1,28 @@
 export default {
   space: [0, 4, 8, 16, 32, 48, 64, 128, 256, 512],
   fonts: {
-    body: 'relative-faux-book-pro, Roboto, system-ui, -apple-system, BlinkMacSystemFont',
+    body: 'relative-book-pro, Roboto, system-ui, -apple-system, BlinkMacSystemFont',
+    faux: 'relative-faux-book-pro, Roboto, system-ui, -apple-system, BlinkMacSystemFont',
     heading: 'relative-medium-pro, Roboto, system-ui, -apple-system, BlinkMacSystemFont',
     monospace: 'relative-mono-11-pitch-pro, Menlo, monospace',
-    mad: 'MAD Serif Fill Trial'
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [12, 14, 16, 18, 24, 34, 48, 64, 96],
+  letterSpacings: {
+    body: '0.01em',
+    faux: '0.05em',
+    heading: '-0.015em',
+    wide: '0.07em',
+    extra: '0.13em'
+  },
   fontWeights: {
     body: 400,
     heading: 400,
     bold: 400,
   },
   lineHeights: {
-    body: 1.45,
+    body: 1.35,
+    small: 1.3,
     heading: 1.125,
-  },
-  letterSpacings: {
-    medium: '0.02em',
-    wide: '0.05em'
   },
   colors: {
     text: '#ebebec',
@@ -55,6 +59,22 @@ export default {
     }
   },
   text: {
+    default: {
+      color: 'text',
+      fontFamily: 'body',
+      letterSpacing: 'body'
+    },
+    link: {
+      color: 'text',
+      '&:active': {
+        color: 'text',
+      },
+      '&:hover': {
+        color: 'secondary',
+      },
+      textDecoration: 'underline',
+      cursor: 'pointer'
+    },
     description: {
       fontSize: [2],
       marginBlockStart: '0.3em',
@@ -71,14 +91,16 @@ export default {
         fontFamily: 'monospace',
         fontSize: [2, 2, 2],
         mt: ['6px'],
-        textTransform: 'uppercase',
+        textTransform: 'capitalize',
       },
       comment: {
-        fontFamily: 'monospace',
+        fontFamily: 'body',
         fontSize: [1],
         color: 'secondary',
+        letterSpacing: 'body',
+        lineHeight: 'small',
         mt: [0],
-        mb: [3]
+        mb: [2]
       },
       units: {
         fontFamily: 'monospace',
@@ -86,10 +108,29 @@ export default {
         fontSize: [1],
         ml: [2],
         textTransform: 'normal'
+      },
+      rating: {
+        display: 'inline-block',
+        ml: [3],
+        fontSize: ['18px']
       }
     },
-    link: {
-      cursor: 'pointer'
+    arrow: {
+      ml: [2], 
+      color: 'text',
+      fontSize: [4], 
+      position: 'relative', 
+      top: '4px', 
+      display: 'inline-block',
+      textDecoration: 'none',
+      lineHeight: 0,
+      '&:active': {
+        color: 'text',
+      },
+      '&:hover': {
+        color: 'secondary',
+        borderColor: 'secondary'
+      }
     }
   },
   forms: {
@@ -122,7 +163,7 @@ export default {
       borderBottomWidth: '1px',
       borderBottomColor: 'text',
       borderRadius: '0px',
-      fontFamily: 'monospace',
+      fontFamily: 'heading',
       fontSize: [1]
     },
     radio: {
@@ -147,12 +188,13 @@ export default {
   },
   badges: {
     primary: {
+      letterSpacing: '0.05em',
       cursor: 'pointer', 
       color: 'primary',
       borderStyle: 'solid',
       borderColor: 'primary',
       borderWidth: '0px',
-      borderBottomWidth: '2px',
+      borderBottomWidth: '1px',
       bg: 'background',
       borderRadius: '0px',
       textTransform: 'uppercase',
@@ -186,7 +228,6 @@ export default {
       pb: [1]
     },
     arrow: {
-      color: 'secondary',
       ml: [2], 
       fontSize: [4], 
       position: 'relative', 
@@ -194,8 +235,14 @@ export default {
       display: 'inline-block',
       textDecoration: 'none',
       lineHeight: 0,
+      cursor: 'pointer',
+      color: 'text',
+      '&:active': {
+        color: 'text',
+      },
       '&:hover': {
-        color: "primary",
+        color: 'secondary',
+        borderColor: 'secondary'
       }
     }
   },
@@ -207,19 +254,14 @@ export default {
     },
     a: {
       color: 'text',
-      cursor: 'pointer',
-      borderStyle: 'solid',
-      borderColor: 'text',
-      borderWidth: '0px',
-      borderBottomWidth: '1px',
       '&:active': {
         color: 'text',
       },
       '&:hover': {
         color: 'secondary',
-        borderColor: 'secondary'
       },
-      textDecoration: 'none'
+      textDecoration: 'underline',
+      cursor: 'pointer'
     },
     hr: {
       border: 'none',
@@ -237,13 +279,14 @@ export default {
     ocean: 'teal',
     dac: 'purple',
     biochar: 'yellow',
-    'building materials': 'yellow',
+    materials: 'yellow',
     broker: 'grey',
     beccs: 'yellow',
     reforestation: 'green',
     'avoided conversion': 'green',
     agroforestry: 'green',
     burial: 'yellow',
-    phytoplankton: 'teal'
+    phytoplankton: 'teal',
+    injection: 'grey'
   }
 }

@@ -10,28 +10,28 @@ function About () {
   return (
     <Layout>
       <Box sx={{ width: '100%' }}>
-      <Heading sx={{ my: [4, 4, 5], fontSize: [7] }}>
+      <Heading sx={{ my: [4, 4, 5], letterSpacing: 'heading', fontSize: [7] }}>
         About
       </Heading>
-      <Heading sx={{ mb: [3], fontSize: [5] }}>
+      <Heading sx={{ mb: [3], letterSpacing: 'heading', fontSize: [5] }}>
         Mission
       </Heading>
-      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '800px 1fr']} sx={{ mb: [4] }}>
+      <Grid gap={['16px', '16px', '32px']} columns={[1, 1, '800px 1fr']} sx={{ mb: [2] }}>
         <Box>
-          <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [3]}}>
+          <Text sx={{ fontSize: [3], maxWidth: '750px', mb: [3]}}>
             Addressing the crisis of climate change requires action on several fronts. 
             We now need large-scale deployment of carbon removal alongside critical 
             reductions in emissions. Carbon removal refers to natural or technological 
             approaches for removing carbon dioxide from the atmosphere.
           </Text>
-          <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [3] }}>
+          <Text sx={{ fontSize: [3], maxWidth: '750px', mb: [3] }}>
             We analyze carbon removal opportunities based on the best available science and data.
             We help organizations make specific decisions towards carbon removal goals. 
             And we work collaboratively with the scientific community to build open tools and 
             resources for the evaluation and deployment of carbon removal and other climate solutions.
           </Text>
         </Box>
-        <Box sx={{ display: ['none', 'none', 'inherit'], ml: ['100px'], mt: ['-10px'] }}>
+        <Box sx={{ display: ['none', 'none', 'inherit'], ml: ['75px'], mt: ['-10px'] }}>
           <Arrow/>
         </Box>
       </Grid>
@@ -39,40 +39,46 @@ function About () {
       <Heading sx={{ mb: [1], mt: [4], fontSize: [5]}}>
         Our work
       </Heading>
-      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [4] }}>
+      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [5] }}>
         <Box>
-          <Text sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: 'wide'}}>
+          <Heading sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: 'wide'}}>
             / RESEARCH
-          </Text>
+          </Heading>
           <Text sx={{ fontSize: [3], mb: [3] }}>
-            We collaborate with academic researchers to build open source data and tools
+            We collaborate with researchers to build open source data and tools
             for carbon removal and climate solutions. Through this work we produce datasets, models, 
             interactive articles, and commentary on climate policies and programs.
           </Text>
-          {/*
           <Text>
-            <NextLink href='/research'>
-              <Link sx={{ fontSize: [2], letterSpacing: 'wide' }}>BROWSE OUR RESEARCH</Link>
-            </NextLink>
+            <Text sx={{ 
+              color: 'text', 
+              mt: [2],
+              fontSize: [2], 
+              letterSpacing: 'wide' 
+            }}>BROWSE OUR RESEARCH
+            <NextLink href='/research'><a><Text variant='arrow'>↗</Text></a></NextLink>
+            </Text>
           </Text>
-          */}
         </Box>
         <Box>
-          <Text sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: 'wide'}}>
+          <Heading sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: 'wide'}}>
             / REPORTS
-          </Text>
+          </Heading>
           <Text sx={{ fontSize: [3], mb: [3] }}>
             We engage with companies, non-profits, and government organizations to help
             analyze climate programs and projects. We focus on transparency and quality, 
             bringing standards and shared concepts to complex technical problems.
           </Text>
-          {/*
           <Text>
-            <NextLink href='/reports'>
-              <Link sx={{ fontSize: [2], letterSpacing: 'wide'}}>VIEW OUR PROJECT REPORTS</Link>
-            </NextLink>
+            <Text sx={{ 
+              color: 'text', 
+              mt: [2],
+              fontSize: [2], 
+              letterSpacing: 'wide' 
+            }}>VIEW OUR PROJECT REPORTS
+            <NextLink href='/reports'><a><Text variant='arrow'>↗</Text></a></NextLink>
+            </Text>
           </Text>
-          */}
         </Box>
       </Grid>
       <Divider></Divider>

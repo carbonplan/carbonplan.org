@@ -12,6 +12,7 @@ const link = {
   borderColor: 'primary',
   borderWidth: '0px',
   borderBottomWidth: '1px',
+  textDecoration: 'none',
   display: 'block',
   '&:hover': {
     color: 'secondary',
@@ -29,7 +30,7 @@ function Index () {
         sx={{ mb: [5, 0, 0] }}
       >
         <Box>
-          <Heading sx={{ my: [4, 4, 5], fontSize: [6] }}>
+          <Heading sx={{ my: [4, 4, 5], letterSpacing: 'heading', fontSize: [6] }}>
             Data and science for carbon removal
           </Heading>
           <Heading sx={{ my: [4, 4, 5], fontSize: [4] }}>

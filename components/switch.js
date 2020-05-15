@@ -32,7 +32,7 @@ const Switch = (props) => {
       backgroundColor: 'background'
     }}>
       <Text variant='metric.units' sx={{ whiteSpace: 'nowrap', display: 'inline-block', leftMargin: '15px' }}>
-        {coords.x.toString().padStart(4, '0')},{coords.y.toString().padStart(4, '0')} X,Y 
+        X,Y: {coords.x.toString().padStart(4, '0')},{coords.y.toString().padStart(4, '0')}
       </Text>
       <IconButton aria-label='Current Color' sx={{ fill: 'secondary' }} >
         <svg

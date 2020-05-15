@@ -8,7 +8,7 @@ const Footer = () => {
       pt: [4],
       mb: [4, 0, 0]
     }}>
-    <Grid columns={[1, 1, 3]} sx={{ mb: [3] }}>
+    <Grid columns={[1, 1, 3]} sx={{ mb: [4] }}>
       <Box sx={{ fontFamily: 'heading' }}>
         <Text sx={{ letterSpacing: 'wide', mb: [2] }}>EMAIL</Text>
         <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
