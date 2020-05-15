@@ -30,10 +30,10 @@ function Index () {
         sx={{ mb: [5, 0, 0] }}
       >
         <Box>
-          <Heading sx={{ my: [4, 4, 5], letterSpacing: 'heading', fontSize: [7] }}>
+          <Heading sx={{ my: [4, 5, 5], letterSpacing: 'heading', fontSize: [6, 7, 7] }}>
             Data and science for carbon removal
           </Heading>
-          <Heading sx={{ my: [4, 4, 5], fontSize: [4], fontFamily: 'body', lineHeight: 1.25 }}>
+          <Heading sx={{ my: [4, 5, 5], fontSize: [3, 4, 4], fontFamily: 'body', lineHeight: 1.25 }}>
             Improving the transparency and scientific integrity of carbon removal 
             and climate solutions through open data and tools
           </Heading>

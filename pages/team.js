@@ -7,7 +7,7 @@ function Resources () {
   return (
     <Layout>
       <Box sx={{ width: '100%' }}>
-        <Heading sx={{ my: [4, 4, 5], fontSize: [7] }}>
+        <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>
           Team
         </Heading>
         <Heading sx={{ my: [4], fontSize: [5] }}>

@@ -10,7 +10,7 @@ function About () {
   return (
     <Layout>
       <Box sx={{ width: '100%' }}>
-      <Heading sx={{ my: [4, 4, 5], letterSpacing: 'heading', fontSize: [7] }}>
+      <Heading sx={{ my: [4, 5, 5], letterSpacing: 'heading', fontSize: [6, 7, 7] }}>
         About
       </Heading>
       <Heading sx={{ mb: [4], letterSpacing: 'heading', fontSize: [5] }}>
