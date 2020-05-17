@@ -27,7 +27,7 @@ and then visit `http://localhost:3000/` in your browser.
 
 ## license
 
-All the code in this repository is MIT licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, copy, etc.).
+All the code in this repository is [MIT](https://choosealicense.com/licenses/mit/) licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, copy, etc.).
 
 ## about us
 
