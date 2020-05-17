@@ -11,8 +11,8 @@ function FAQ () {
       </Heading>
       <Text sx={{ fontSize: [3], mb: [3] }}>
         All code powering this website is{' '} 
-        <Link href='https://choosealicense.com/licenses/mit/'>MIT licensed</Link>
-        and available on <Link href='https://github.com/carbonplan'>Github</Link>.
+        <Link href='https://choosealicense.com/licenses/mit/'>MIT</Link>{' '}
+        licensed and available on <Link href='https://github.com/carbonplan'>Github</Link>.
       </Text>
       <Text sx={{ fontSize: [3], mb: [3] }}>
         Consistent with our charitable mission to build open tools and 
@@ -29,7 +29,7 @@ function FAQ () {
         Some of the data made available on parts of this 
         website or through our APIs, such as our project reports,
         is sourced from content made available under a{' '}
-        <Link href='https://choosealicense.com/licenses/cc-by-4.0/'>CC-BY license</Link>. 
+        <Link href='https://choosealicense.com/licenses/cc-by-4.0/'>CC-BY</Link> license. 
         We include attribution for this content, and we please request that you also 
         maintain that attribution if using this data.
       </Text>
