@@ -10,7 +10,8 @@ function FAQ () {
         Terms
       </Heading>
       <Text sx={{ fontSize: [3], mb: [3] }}>
-        All code powering this website is MIT licensed 
+        All code powering this website is{' '} 
+        <Link href='https://choosealicense.com/licenses/mit/'>MIT licensed</Link>
         and available on <Link href='https://github.com/carbonplan'>Github</Link>.
       </Text>
       <Text sx={{ fontSize: [3], mb: [3] }}>
@@ -27,7 +28,8 @@ function FAQ () {
       <Text sx={{ fontSize: [3], mb: [3] }}>
         Some of the data made available on parts of this 
         website or through our APIs, such as our project reports,
-        is sourced from content made available under a CC-BY license. 
+        is sourced from content made available under a{' '}
+        <Link href='https://choosealicense.com/licenses/cc-by-4.0/'>CC-BY license</Link>. 
         We include attribution for this content, and we please request that you also 
         maintain that attribution if using this data.
       </Text>
