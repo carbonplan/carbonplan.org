@@ -84,21 +84,21 @@ export default {
     metric: {
       value: {
         fontFamily: 'monospace',
-        fontSize: [2, 2, 3],
+        fontSize: [3],
         textAlign: 'right',
-        mt: ['6px', '6px', '6px']
+        mt: ['6px']
       },
       label: {
         fontFamily: 'monospace',
-        fontSize: [2, 2, 2],
+        fontSize: [2],
         mt: ['6px'],
         textTransform: 'capitalize',
       },
       comment: {
-        fontFamily: 'body',
+        fontFamily: 'faux',
         fontSize: [1],
         color: 'secondary',
-        letterSpacing: 'body',
+        letterSpacing: 'faux',
         lineHeight: 'small',
         mt: [0],
         mb: [2]
