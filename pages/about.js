@@ -53,6 +53,9 @@ function About () {
             <Link sx={{ textDecoration: 'none' }} href='/research'>
               <Text sx={{ 
                 color: 'text',
+                '&:hover': {
+                  color: 'secondary'
+                },
                 '&:hover > #arrow': {
                   color: 'secondary'
                 },
@@ -78,6 +81,9 @@ function About () {
             <Link sx={{ textDecoration: 'none' }} href='/reports'>
               <Text sx={{ 
                 color: 'text',
+                '&:hover': {
+                  color: 'secondary'
+                },
                 '&:hover > #arrow': {
                   color: 'secondary'
                 },
