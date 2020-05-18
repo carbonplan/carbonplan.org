@@ -1,6 +1,7 @@
 import Monogram from './monogram'
 import { Box, Text, Grid, Link } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
+import { default as NextLink } from 'next/link'
 
 const Footer = () => {
   return <Box sx={{
@@ -8,17 +9,16 @@ const Footer = () => {
       pt: [4],
       mb: [4, 0, 0]
     }}>
-    <Grid columns={[1, 1, 3]} sx={{ mb: [3] }}>
-      <Box sx={{ fontFamily: 'heading' }}>
-        <Text sx={{ letterSpacing: 'wide', mb: [2] }}>EMAIL</Text>
-        <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
+    <Grid columns={[1, 1, 3]} sx={{ mb: [4] }}>
+      <Box>
+        <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [2] }}>EMAIL</Text>
+        <Link href='mailto:hello@carbonplan.org' sx={{ textDecoration: 'none' }}>hello@carbonplan.org</Link>
       </Box>
-      <Box sx={{ fontFamily: 'heading' }}>
-        <Text sx={{ letterSpacing: 'wide', mb: [2] }}>MAIL</Text>
-        <Text>2443 Fillmore St #380-6048</Text>
-        <Text>San Francisco, CA 94115</Text>
+      <Box>
+        <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [2] }}>FOLLOW</Text>
+        <Link href='https://twitter.com/carbonplanorg' sx={{ textDecoration: 'none' }}>@carbonplanorg</Link>
       </Box>
-      <Box sx={{ fontFamily: 'body' }}>
+      <Box sx={{ fontFamily: 'body', letterSpacing: 'body' }}>
         <Text sx={{ color: 'secondary' }}>
         CarbonPlan is a registered non-profit public benefit corporation in California
         with 501(3)(c) status pending.
@@ -44,7 +44,6 @@ const Footer = () => {
         </Box>
       </Box>
       <Box sx={{ position: 'relative' }}>
-        {/*
         <Box sx={{ 
           fontFamily: 'monospace', 
           position: 'absolute', 
@@ -58,9 +57,10 @@ const Footer = () => {
           pt: [2],
           display: ['none', 'none', 'inherit']
         }}>
-          <Text>INSERT METADATA HERE</Text>
+          <Text><NextLink href='/terms'>
+            <a><Text sx={{color: 'secondary'}}>READ OUR TERMS</Text></a>
+          </NextLink></Text>
         </Box>
-        */}
       </Box>
       <Box>
         <Monogram/>

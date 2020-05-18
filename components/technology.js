@@ -5,7 +5,7 @@ const prefix = 'https://carbonplan-assets.s3.amazonaws.com/images/'
 const Technology = ({ color, name, children }) => {
   return <Grid gap={['16px', '16px', '64px']} columns={[1, 1, '1fr 3fr']} sx={{ mb: [6] }}>
     <Image sx={{
-      width: '95%',
+      width: '85%',
       borderRadius: '256px', 
       borderStyle: 'solid',
       borderColor: 'primary',
@@ -17,7 +17,7 @@ const Technology = ({ color, name, children }) => {
         color: color, 
         textTransform: 'uppercase', 
         fontFamily: 'heading', 
-        letterSpacing: '0.07em' 
+        letterSpacing: 'wide' 
       }}>
         { name }
       </Text>
