@@ -1,9 +1,9 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/reports/_next(.*)", "dest": "https://staging.reports.carbonplan.org/_next$1" },
-    { "src": "/reports(.*)", "dest": "https://staging.reports.carbonplan.org/reports$1"},
-    { "src": "/research/_next(.*)", "dest": "https://staging.research.carbonplan.org/_next$1" },
-    { "src": "/research(.*)", "dest": "https://staging.research.carbonplan.org/research$1"}
+    { "src": "/reports/_next(.*)", "dest": "https://reports.carbonplan.org/_next$1" },
+    { "src": "/reports(.*)", "dest": "https://reports.carbonplan.org/reports$1"},
+    { "src": "/research/_next(.*)", "dest": "https://research.carbonplan.org/_next$1" },
+    { "src": "/research(.*)", "dest": "https://research.carbonplan.org/research$1"}
   ]
 }
