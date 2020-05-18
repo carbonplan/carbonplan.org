@@ -27,7 +27,7 @@ function Index () {
       <Grid 
         gap={['12px', '16px', '100px']} 
         columns={[1, null, '480px 1fr']}
-        sx={{ mb: [5, 0, 0] }}
+        sx={{ mb: [5, 0, 0], width: '100%' }}
       >
         <Box>
           <Heading sx={{ my: [4, 5, 5], letterSpacing: 'heading', fontSize: [6, 7, 7] }}>

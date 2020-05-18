@@ -79,7 +79,8 @@ const Carbon = () => {
 
   return <Box sx={{ width: '100%', pt: [2] }}>
     <svg sx={{ width: '100%', maxWidth: '100%', height: 'auto' }}
-      version="1.1" viewBox="0 0 32 32" width="1024" height="1024" >
+      version="1.1" viewBox="0 0 32 32" preserveAspectRatio="xMinYMin meet"
+      >
       {index.map((i) => {
         return <circle 
           sx={{ 
