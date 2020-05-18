@@ -20,10 +20,10 @@ const tags = {
 
 const values = {
   0: 60000,
-  1: 30000,
+  1: 10000,
   2: 20000,
   3: 40000,
-  4: 50000,
+  4: 80000,
   5: 10000
 }
 
@@ -36,7 +36,7 @@ for (let i=0; i<12; i++) {
   for (let j=0; j<14; j++) {
     positions.push([i, j])
     categories.push(Math.floor(random() * 6))
-    selected.push(random() > 0.8)
+    selected.push(random() > 0.7)
   }
 }
 
@@ -53,7 +53,7 @@ const Carbon = () => {
   )
 
   const onClick = (e) => {
-    setActive(active.map((x, i) => (i == e.target.id) ? !x : x))
+    setActive(active.map((x, i) => (i == e.target.id) ? true : x))
   }
 
   useEffect(() => {
@@ -62,6 +62,14 @@ const Carbon = () => {
       .reduce((x, y) => x + y, 0)
     )
   }, [active])
+
+  useEffect(() => {
+    let frac1, frac2
+    setInterval(() => {
+      frac1 = 0.5
+      setActive(active.map((x, i) => x ? (random() > frac1) : false))
+    }, 5000)
+  }, [])
 
   const format = (x) => {
     if ((x >= 1000) && (x < 1000000)) return (x/1000).toFixed(0) + 'k'
@@ -78,9 +86,11 @@ const Carbon = () => {
             fill: active[i] ? theme.tags[tags[categories[i]]] : theme.colors.primary, 
             opacity: active[i] ? 1 : 0.2,
             cursor: 'pointer',
+            WebkitTransition: '1s',
             '&:hover': {
               opacity: 1,
-              fill: theme.tags[tags[categories[i]]]
+              fill: theme.tags[tags[categories[i]]],
+              WebkitTransition: '.25s',
             }
           }} 
           key={i} 
