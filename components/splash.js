@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import seed from 'math-random-seed'
 
 let index = []
-for (let i=0; i < 20*14; i++) {
+for (let i=0; i < 14*12; i++) {
   index.push(i)
 }
 
@@ -32,8 +32,8 @@ var random = seed('1')
 let positions = []
 let categories = []
 let selected = []
-for (let i=0; i<14; i++) {
-  for (let j=0; j<20; j++) {
+for (let i=0; i<12; i++) {
+  for (let j=0; j<14; j++) {
     positions.push([i, j])
     categories.push(Math.floor(random() * 6))
     selected.push(random() > 0.8)
@@ -86,9 +86,9 @@ const Carbon = () => {
           key={i} 
           id={i} 
           onClick={onClick} 
-          cx={positions[i][0] * 2 + 1} 
-          cy={positions[i][1] * 2 + 1} 
-          r='0.75'
+          cx={positions[i][0] * 2.5 + 1} 
+          cy={positions[i][1] * 2.5 + 1} 
+          r='0.9'
         />
       })}
     </svg>

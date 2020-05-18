@@ -38,7 +38,8 @@ function FAQ () {
         Please check back here for updates.
       </Text>
       <Text sx={{ fontSize: [3], mb: [3] }}>
-        If you have any questions, please contact us at <Link href='mailto:hello@carbonplan.org'></Link>.
+        If you have any questions, please contact us at{' '}
+        <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>.
       </Text>
       </Box>
     </Layout>
