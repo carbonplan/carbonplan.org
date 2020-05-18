@@ -115,7 +115,7 @@ const Carbon = () => {
       pt: [1],
       ml: [2]
     }}>{ format(total) }
-      <Text sx={{ display: 'inline-block', color: 'secondary', fontSize: [4], ml: [3] }}>tCO2 / year</Text>
+      <Text sx={{ display: 'inline-block', color: 'secondary', fontSize: [4], ml: [3] }}>tCO<sub>2</sub> / year</Text>
     </Box>
   </Box>
 }

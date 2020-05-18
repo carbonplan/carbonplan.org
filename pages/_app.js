@@ -21,6 +21,17 @@ class MyApp extends App {
               text-decoration: none;
             }
 
+            sup, sub {
+              vertical-align: baseline;
+              position: relative;
+              top: -0.4em;
+            }
+
+            sub { 
+              top: 0.4em; 
+              font-size: small;
+            }
+
             .no-focus-outline a:focus,
             .no-focus-outline button:focus,
             .no-focus-outline input:focus,
