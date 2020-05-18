@@ -15,9 +15,8 @@ const Footer = () => {
         <Link href='mailto:hello@carbonplan.org' sx={{ textDecoration: 'none' }}>hello@carbonplan.org</Link>
       </Box>
       <Box>
-        <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [2] }}>MAIL</Text>
-        <Text>2443 Fillmore St #380-6048</Text>
-        <Text>San Francisco, CA 94115</Text>
+        <Text sx={{ fontFamily: 'heading', letterSpacing: 'wide', mb: [2] }}>FOLLOW</Text>
+        <Link href='https://twitter.com/carbonplanorg' sx={{ textDecoration: 'none' }}>@carbonplanorg</Link>
       </Box>
       <Box sx={{ fontFamily: 'body', letterSpacing: 'body' }}>
         <Text sx={{ color: 'secondary' }}>
