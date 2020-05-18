@@ -18,22 +18,6 @@ function FAQ () {
           Our commitment and responsability is to the public's interest in a safe and stable climate, not to shareholders.
         </Text>
       </Box>
-      {/*
-      <Box sx={{ my: [5] }}>
-        <Heading sx={{ my: [3], fontSize: [5] }}>
-          How are you funded?
-        </Heading>
-        <Text sx={{ fontSize: [3] }}>
-          Our current list of support over $5k includes seed funding from a 
-          Carbon180 Entrepreneur in Residence Fellowship, 
-          a donation from Hampus Jakobsson, and a donation from a private individual 
-          who has a personal connection to our founder and would prefer to remain anonymous 
-          but whom is not known publicly and has no business interests in carbon removal or climate policy. 
-          We also have support committed from Incite Labs, 
-          pending IRS approval of our 501(c)(3) status.
-        </Text>
-      </Box>
-      */}
       <Box>
         <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
           Are you a verifier?

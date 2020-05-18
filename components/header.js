@@ -10,10 +10,6 @@ const link = {
   color: 'text',
   fontSize: [5, 5, 7],
   pb: [0],
-  borderStyle: 'solid',
-  borderColor: 'primary',
-  borderWidth: '0px',
-  borderBottomWidth: '1px',
   textDecoration: 'none',
   display: 'block',
   '&:hover': {

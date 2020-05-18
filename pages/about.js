@@ -50,14 +50,19 @@ function About () {
             interactive articles, and commentary on climate policies and programs.
           </Text>
           <Text>
-            <Text sx={{ 
-              color: 'text', 
-              mt: [2],
-              fontSize: [2], 
-              letterSpacing: 'wide' 
-            }}>BROWSE OUR RESEARCH
-            <Link href='/research'><Text variant='arrow'>↗</Text></Link>
-            </Text>
+            <Link sx={{ textDecoration: 'none' }} href='/research'>
+              <Text sx={{ 
+                color: 'text',
+                '&:hover > #arrow': {
+                  color: 'secondary'
+                },
+                mt: [2],
+                fontSize: [2], 
+                letterSpacing: 'wide' 
+              }}>BROWSE OUR RESEARCH
+              <Text id='arrow' variant='arrow'>↗</Text>
+              </Text>
+            </Link>
           </Text>
         </Box>
         <Box>
@@ -70,14 +75,19 @@ function About () {
             bringing standards and shared concepts to complex technical problems.
           </Text>
           <Text>
-            <Text sx={{ 
-              color: 'text', 
-              mt: [2],
-              fontSize: [2], 
-              letterSpacing: 'wide' 
-            }}>VIEW OUR PROJECT REPORTS
-            <Link href='/reports'><Text variant='arrow'>↗</Text></Link>
-            </Text>
+            <Link sx={{ textDecoration: 'none' }} href='/reports'>
+              <Text sx={{ 
+                color: 'text',
+                '&:hover > #arrow': {
+                  color: 'secondary'
+                },
+                mt: [2],
+                fontSize: [2], 
+                letterSpacing: 'wide' 
+              }}>VIEW OUR PROJECT REPORTS
+              <Text id='arrow' variant='arrow'>↗</Text>
+              </Text>
+            </Link>
           </Text>
         </Box>
       </Grid>
