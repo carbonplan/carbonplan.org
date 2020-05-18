@@ -37,6 +37,9 @@ function FAQ () {
         We're just getting started and may change some of these terms in the future. 
         Please check back here for updates.
       </Text>
+      <Text sx={{ fontSize: [3], mb: [3] }}>
+        If you have any questions, please contact us at <Link href='mailto:hello@carbonplan.org'></Link>.
+      </Text>
       </Box>
     </Layout>
   )
