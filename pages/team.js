@@ -58,7 +58,7 @@ function Resources () {
           </Text>
         </Box>
         <Divider sx={{ mt: [5] }}/>
-        <Heading sx={{ my: [4], fontSize: [5] }}>
+        <Heading id='collaborators' sx={{ my: [4], fontSize: [5] }}>
           Collaborators
         </Heading>
         <Text sx={{ mb: [4], fontSize: [3], maxWidth: '700px' }}>

@@ -98,7 +98,7 @@ function About () {
         </Box>
       </Grid>
       <Divider></Divider>
-      <Heading sx={{ mb: [4], mt: [4], fontSize: [5] }}>
+      <Heading id='technologies' sx={{ mb: [4], mt: [4], fontSize: [5] }}>
         Technologies and sectors
       </Heading>
       <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [5] }}>

@@ -20,6 +20,29 @@ function FAQ () {
       </Box>
       <Box>
         <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
+          What is carbon removal?
+        </Heading>
+        <Text sx={{ fontSize: [3] }}>
+          Good question! Carbon removal is removing carbon
+          dioxide from the atmosphere and storing it in a durable, ideally permanent,
+          form. It's a nascent field, and several methods are being explored and
+          developed, including natural or biological solutions (e.g. forests, soil),
+          engineered systems (e.g. direct air capture, enhanced mineralization), and{' '}
+          <NextLink href='/about#technologies'><a>
+          <Text variant='link' sx={{ display: 'inline-block'}}>more</Text></a></NextLink>.
+          Note that some technologies can play a role  in carbon removal but are not, on
+          their own, carbon removal systems. For example, sourcing carbon dioxide from an
+          industrial waste stream and storing it in a stable form is an avoided emission,
+          not carbon removal. The same technology could source its CO<sub>2</sub>{' '}
+          from direct air capture, however, and would then remove carbon from the atmosphere.
+          In some places carbon removal is referred to as "Carbon
+          Dioxide Removal" or CDR. Also note that the phrase "Negative Emissions
+          Technologies" or NETs is sometimes used to describe technologies that
+          implement carbon removal. 
+        </Text>
+      </Box>
+      <Box>
+        <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
           Are you a verifier?
         </Heading>
         <Text sx={{ fontSize: [3] }}>
@@ -45,7 +68,7 @@ function FAQ () {
           Policy Director Danny Cullenward completed a JD-PhD in energy economics 
           and teaches energy law and climate policy at Stanford Law School. 
           We work closely with an amazing group of {' '}
-          <NextLink href='/team'><Link>collaborators</Link></NextLink>{' '}
+          <NextLink href='/team#collaborators'><Link>collaborators</Link></NextLink>{' '}
           to develop our methods and ensure our work is grounded 
           in the best available science and data.
         </Text>
