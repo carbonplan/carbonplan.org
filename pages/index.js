@@ -38,9 +38,9 @@ function Index () {
             and climate solutions through open data and tools
           </Heading>
           <NextLink href='/about'><a><Text sx={link}>About</Text></a></NextLink>
-          <NextLink href='/team'><a><Text sx={link}>Team</Text></a></NextLink>
-          <Link sx={link} href='/research'>Research</Link>
           <Link sx={link} href='/reports'>Reports</Link>
+          <Link sx={link} href='/research'>Research</Link>
+          <NextLink href='/team'><a><Text sx={link}>Team</Text></a></NextLink>
           <NextLink href='/faq'><a><Text sx={link}>FAQ</Text></a></NextLink>
         </Box>
         <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
