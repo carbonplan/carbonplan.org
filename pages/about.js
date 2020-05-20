@@ -25,9 +25,9 @@ function About () {
             approaches for removing carbon dioxide from the atmosphere.
           </Text>
           <Text sx={{ fontSize: [3], maxWidth: '750px', mb: [3] }}>
-            We analyze carbon removal opportunities based on the best available science and data.
-            We help organizations make specific decisions towards carbon removal goals. 
-            And we work collaboratively with the scientific community to build open tools and 
+            We're a non-profit that analyzes carbon removal opportunities based on the best available science and data.
+            We help organizations make specific decisions towards their carbon removal goals. 
+            And we work collaboratively to build open tools and 
             resources for the evaluation and deployment of carbon removal and other climate solutions.
           </Text>
         </Box>
