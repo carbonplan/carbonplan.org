@@ -68,7 +68,7 @@ const Carbon = () => {
     setInterval(() => {
       frac1 = 0.5
       setActive(active.map((x, i) => x ? (random() > frac1) : false))
-    }, 5000)
+    }, 3000)
   }, [])
 
   const format = (x) => {

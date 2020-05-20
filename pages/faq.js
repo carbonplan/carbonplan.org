@@ -15,7 +15,7 @@ function FAQ () {
         </Heading>
         <Text sx={{ fontSize: [3] }}>
           Yes. We are a registered non-profit public benefit corporation in California. Our 501(3)(c) status is pending.
-          Our commitment and responsability is to the public's interest in a safe and stable climate, not to shareholders.
+          Our commitment and responsibility is to the public's interest in a safe and stable climate, not to shareholders.
         </Text>
       </Box>
       <Box>
