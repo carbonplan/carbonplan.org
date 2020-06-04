@@ -3,18 +3,16 @@ import Layout from '../components/layout'
 import { jsx, Box, Divider, Text, Heading, Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
-function Resources () {
+function Resources() {
   return (
     <Layout>
       <Box sx={{ width: '100%' }}>
-        <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>
-          Team
-        </Heading>
-        <Heading sx={{ my: [4], fontSize: [5] }}>
-          Core team
-        </Heading>
+        <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>Team</Heading>
+        <Heading sx={{ my: [4], fontSize: [5] }}>Core team</Heading>
         <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
+          <Text
+            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
+          >
             JEREMY FREEMAN
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
@@ -22,7 +20,9 @@ function Resources () {
           </Text>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
+          <Text
+            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
+          >
             JOE HAMMAN
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
@@ -30,19 +30,21 @@ function Resources () {
           </Text>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
+          <Text
+            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
+          >
             DANNY CULLENWARD
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
             Policy Director
           </Text>
         </Box>
-        <Divider sx={{ mt: [5] }}/>
-        <Heading sx={{ my: [4], fontSize: [5] }}>
-          Board
-        </Heading>
+        <Divider sx={{ mt: [5] }} />
+        <Heading sx={{ my: [4], fontSize: [5] }}>Board</Heading>
         <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
+          <Text
+            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
+          >
             KELLY GANNON
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
@@ -50,51 +52,43 @@ function Resources () {
           </Text>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}>
+          <Text
+            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
+          >
             ZEKE HAUSFATHER
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
             Breakthrough Institute / Carbon Brief
           </Text>
         </Box>
-        <Divider sx={{ mt: [5] }}/>
+        <Divider sx={{ mt: [5] }} />
         <Heading id='collaborators' sx={{ my: [4], fontSize: [5] }}>
           Collaborators
         </Heading>
         <Text sx={{ mb: [4], fontSize: [3], maxWidth: '700px' }}>
-          We collaborate closely with a community of experts and advisors. We will also
-          be expanding our core team in the near future.
-          Interested in working together? <br/>Email us{' '}
+          We collaborate closely with a community of experts and advisors. We
+          will also be expanding our core team in the near future. Interested in
+          working together? <br />
+          Email us{' '}
           <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
         </Text>
         <Box sx={{ fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'green' }}>BILL ANDEREGG</span>
-            {' '}/{' '} 
+            <span sx={{ color: 'green' }}>BILL ANDEREGG</span> /{' '}
             <span sx={{ color: 'green' }}>GRAYSON BADGLEY</span>
           </Text>
-          <Text sx={{ color: 'secondary' }}>
-            University of Utah
-          </Text>
+          <Text sx={{ color: 'secondary' }}>University of Utah</Text>
         </Box>
         <Box sx={{ color: 'green', fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: 'wide' }}>
-            ANNA TRUGMAN
-          </Text>
-          <Text sx={{ color: 'secondary' }}>
-            UC Santa Barbara
-          </Text>
+          <Text sx={{ letterSpacing: 'wide' }}>ANNA TRUGMAN</Text>
+          <Text sx={{ color: 'secondary' }}>UC Santa Barbara</Text>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'purple' }}>JENNIFER WILCOX</span>
-            {' '}/{' '} 
-            <span sx={{ color: 'purple' }}>NOAH MCQUEEN</span>
-            {' '}/{' '} 
-            <span sx={{ color: 'purple' }}>CALEB WOODALL</span>
-            {' '}/{' '} 
-            <span sx={{ color: 'purple' }}>HELENE PILGORE</span>
-            {' '}/{' '} 
+            <span sx={{ color: 'purple' }}>JENNIFER WILCOX</span> /{' '}
+            <span sx={{ color: 'purple' }}>NOAH MCQUEEN</span> /{' '}
+            <span sx={{ color: 'purple' }}>CALEB WOODALL</span> /{' '}
+            <span sx={{ color: 'purple' }}>HELENE PILGORE</span> /{' '}
             <span sx={{ color: 'purple' }}>BEN KOLOSZ</span>
           </Text>
           <Text sx={{ color: 'secondary' }}>
@@ -103,21 +97,16 @@ function Resources () {
         </Box>
         <Box sx={{ fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'purple' }}>ANDREW BERGMAN</span>
-            {' '}/{' '} 
+            <span sx={{ color: 'purple' }}>ANDREW BERGMAN</span> /{' '}
             <span sx={{ color: 'purple' }}>TOLY RINBERG</span>
           </Text>
-          <Text sx={{ color: 'secondary' }}>
-            Harvard University
-          </Text>
+          <Text sx={{ color: 'secondary' }}>Harvard University</Text>
         </Box>
         <Box sx={{ fontSize: [3], mb: [6] }}>
           <Text sx={{ letterSpacing: 'wide' }}>
             <span sx={{ color: 'orange' }}>JANE ZELIKOVA</span>
           </Text>
-          <Text sx={{ color: 'secondary' }}>
-            Carbon180
-          </Text>
+          <Text sx={{ color: 'secondary' }}>Carbon180</Text>
         </Box>
       </Box>
     </Layout>
