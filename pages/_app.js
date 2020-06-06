@@ -11,8 +11,9 @@ class MyApp extends App {
     const { Component, pageProps } = this.props
     return (
       <ThemeProvider theme={theme}>
-          <Component {...pageProps} />
-          <style jsx global>{`
+        <Component {...pageProps} />
+        <style jsx global>
+          {`
             body {
               overscroll-behavior: none;
             }

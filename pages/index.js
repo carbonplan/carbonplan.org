@@ -17,34 +17,63 @@ const link = {
   '&:hover': {
     color: 'secondary',
     borderBottomWidth: '1px',
-    borderColor: 'secondary'
-  }
+    borderColor: 'secondary',
+  },
 }
 
-function Index () {
+function Index() {
   return (
     <Layout hideFooter={true}>
-      <Grid 
-        gap={['12px', '16px', '100px']} 
+      <Grid
+        gap={['12px', '16px', '100px']}
         columns={[1, null, '480px 1fr']}
         sx={{ mb: [5, 0, 0], width: '100%' }}
       >
         <Box>
-          <Heading sx={{ my: [4, 5, 5], letterSpacing: 'heading', fontSize: [6, 7, 7] }}>
+          <Heading
+            sx={{
+              my: [4, 5, 5],
+              letterSpacing: 'heading',
+              fontSize: [6, 7, 7],
+            }}
+          >
             Data and science for carbon removal
           </Heading>
-          <Heading sx={{ my: [4, 5, 5], fontSize: [3, 4, 4], fontFamily: 'body', lineHeight: 1.25 }}>
-            Improving the transparency and scientific integrity of carbon removal 
-            and climate solutions through open data and tools
+          <Heading
+            sx={{
+              my: [4, 5, 5],
+              fontSize: [3, 4, 4],
+              fontFamily: 'body',
+              lineHeight: 1.25,
+            }}
+          >
+            Improving the transparency and scientific integrity of carbon
+            removal and climate solutions through open data and tools
           </Heading>
-          <NextLink href='/about'><a><Text sx={link}>About</Text></a></NextLink>
-          <Link sx={link} href='/reports'>Reports</Link>
-          <Link sx={link} href='/research'>Research</Link>
-          <NextLink href='/team'><a><Text sx={link}>Team</Text></a></NextLink>
-          <NextLink href='/faq'><a><Text sx={link}>FAQ</Text></a></NextLink>
+          <NextLink href='/about'>
+            <a>
+              <Text sx={link}>About</Text>
+            </a>
+          </NextLink>
+          <Link sx={link} href='/reports'>
+            Reports
+          </Link>
+          <Link sx={link} href='/research'>
+            Research
+          </Link>
+          <NextLink href='/team'>
+            <a>
+              <Text sx={link}>Team</Text>
+            </a>
+          </NextLink>
+          <NextLink href='/faq'>
+            <a>
+              <Text sx={link}>FAQ</Text>
+            </a>
+          </NextLink>
         </Box>
         <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
-          <Splash/>
+          <Splash />
         </Box>
       </Grid>
     </Layout>
