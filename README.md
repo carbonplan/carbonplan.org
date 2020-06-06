@@ -1,4 +1,4 @@
-# (carbon)plan / landing page
+# carbonplan / landing page
 
 # landing page
 
