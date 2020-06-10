@@ -63,6 +63,23 @@ function FAQ() {
         </Box>
         <Box>
           <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
+            How are you funded?
+          </Heading>
+          <Text sx={{ fontSize: [3] }}>
+            We receive a mix of unrestricted funding through donations and
+            grants, and project-specific funding through contracts and grants.
+            In both cases we list publicly all sources of funding greater than
+            $1000. For project-specific funding, we list as soon as the project,
+            or our involvement in the project, becomes public. We also include
+            the terms and conditions of our engagements. View{' '}
+            <NextLink href='/funding'>
+              <Link>our list</Link>
+            </NextLink>{' '}
+            of funding sources.
+          </Text>
+        </Box>
+        <Box>
+          <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
             What are your qualifications?
           </Heading>
           <Text sx={{ fontSize: [3] }}>
