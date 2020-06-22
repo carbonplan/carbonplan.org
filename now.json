@@ -17,5 +17,8 @@
       "src": "/research(.*)",
       "dest": "https://research.carbonplan.org/research$1"
     }
+  ],
+  "redirects": [
+    { "source": "/jobs", "destination": "https://apply.workable.com/carbonplan/" }
   ]
 }
