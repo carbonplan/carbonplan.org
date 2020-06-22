@@ -9,6 +9,13 @@ function Resources() {
       <Box sx={{ width: '100%' }}>
         <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>Team</Heading>
         <Heading sx={{ my: [4], fontSize: [5] }}>Core team</Heading>
+        <Text sx={{ mb: [4], fontSize: [3], maxWidth: '700px' }}>
+          Interested in joining our team? Check out our{' '}
+          <Link href='https://apply.workable.com/carbonplan/'>
+            job openings
+          </Link>
+          .
+        </Text>
         <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
           <Text
             sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
@@ -66,18 +73,21 @@ function Resources() {
           Collaborators
         </Heading>
         <Text sx={{ mb: [4], fontSize: [3], maxWidth: '700px' }}>
-          We collaborate closely with a community of experts and advisors. We
-          will also be expanding our core team in the near future. Interested in
-          working together? <br />
-          Email us{' '}
+          We collaborate closely with a community of experts and advisors.
+          Interested in working together? Email us{' '}
           <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
         </Text>
         <Box sx={{ fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'green' }}>BILL ANDEREGG</span> /{' '}
-            <span sx={{ color: 'green' }}>GRAYSON BADGLEY</span>
+            <span sx={{ color: 'green' }}>BILL ANDEREGG</span>
           </Text>
           <Text sx={{ color: 'secondary' }}>University of Utah</Text>
+        </Box>
+        <Box sx={{ fontSize: [3], mb: [3] }}>
+          <Text sx={{ letterSpacing: 'wide' }}>
+            <span sx={{ color: 'green' }}>GRAYSON BADGLEY</span>
+          </Text>
+          <Text sx={{ color: 'secondary' }}>Black Rock Forest Consortium / Columbia University</Text>
         </Box>
         <Box sx={{ color: 'green', fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: 'wide' }}>ANNA TRUGMAN</Text>
