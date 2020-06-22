@@ -16,9 +16,13 @@
     {
       "src": "/research(.*)",
       "dest": "https://research.carbonplan.org/research$1"
+    },
+    {
+      "src": "/jobs",
+      "status": 307,
+      "headers": {
+        "Location": "https://apply.workable.com/carbonplan/"
+      }
     }
-  ],
-  "redirects": [
-    { "source": "/jobs", "destination": "https://apply.workable.com/carbonplan/" }
   ]
 }
