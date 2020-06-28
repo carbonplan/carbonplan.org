@@ -33,11 +33,14 @@ const Switch = (props) => {
       }}
     >
       <Text
-        variant='metric.units'
         sx={{
           whiteSpace: 'nowrap',
           display: 'inline-block',
-          leftMargin: '15px',
+          ml: '15px',
+          fontFamily: 'monospace',
+          color: 'secondary',
+          fontSize: [1],
+          textTransform: 'normal',
         }}
       >
         X,Y: {coords.x.toString().padStart(4, '0')},
@@ -55,7 +58,15 @@ const Switch = (props) => {
       </IconButton>
       <Text
         variant='metric.units'
-        sx={{ whiteSpace: 'nowrap', display: 'inline-block' }}
+        sx={{ 
+          whiteSpace: 'nowrap', 
+          display: 'inline-block' ,
+          ml: [2],
+          fontFamily: 'monospace',
+          color: 'secondary',
+          fontSize: [1],
+          textTransform: 'normal',
+        }}
       >
         {color}
       </Text>

@@ -31,9 +31,7 @@ function FAQ() {
             mineralization), and{' '}
             <NextLink href='/about#technologies'>
               <a>
-                <Text variant='link' sx={{ display: 'inline-block' }}>
-                  more
-                </Text>
+                <Link>more</Link>
               </a>
             </NextLink>
             . Note that some technologies can play a role in carbon removal but
@@ -73,7 +71,9 @@ function FAQ() {
             or our involvement in the project, becomes public. We also include
             the terms and conditions of our engagements. View{' '}
             <NextLink href='/funding'>
-              <Link>our list</Link>
+              <a>
+                <Link>our list</Link>
+              </a>
             </NextLink>{' '}
             of funding sources.
           </Text>
@@ -95,7 +95,9 @@ function FAQ() {
             law and climate policy at Stanford Law School. We work closely with
             an amazing group of{' '}
             <NextLink href='/team#collaborators'>
-              <Link>collaborators</Link>
+              <a>
+                <Link>collaborators</Link>
+              </a>
             </NextLink>{' '}
             to develop our methods and ensure our work is grounded in the best
             available science and data.

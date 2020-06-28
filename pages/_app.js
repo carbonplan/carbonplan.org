@@ -1,8 +1,7 @@
 import React from 'react'
 import App from 'next/app'
 import { ThemeProvider } from 'theme-ui'
-
-import theme from '../theme'
+import theme from '@carbonplan/theme'
 
 const prefix = 'https://carbonplan-assets.s3.amazonaws.com/fonts/relative/'
 
