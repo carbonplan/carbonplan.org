@@ -75,16 +75,22 @@ function About() {
                     '&:hover': {
                       color: 'secondary',
                     },
-                    '&:hover > #arrow': {
-                      color: 'secondary',
-                    },
                     mt: [2],
                     fontSize: [2],
                     letterSpacing: 'wide',
                   }}
                 >
                   BROWSE OUR RESEARCH
-                  <Text id='arrow' variant='arrow'>
+                  <Text
+                    sx={{
+                      ml: [2],
+                      fontSize: [4],
+                      position: 'relative',
+                      top: '4px',
+                      display: 'inline-block',
+                      lineHeight: 0,
+                    }}
+                  >
                     ↗
                   </Text>
                 </Text>
@@ -111,16 +117,22 @@ function About() {
                     '&:hover': {
                       color: 'secondary',
                     },
-                    '&:hover > #arrow': {
-                      color: 'secondary',
-                    },
                     mt: [2],
                     fontSize: [2],
                     letterSpacing: 'wide',
                   }}
                 >
                   VIEW OUR PROJECT REPORTS
-                  <Text id='arrow' variant='arrow'>
+                  <Text
+                    sx={{
+                      ml: [2],
+                      fontSize: [4],
+                      position: 'relative',
+                      top: '4px',
+                      display: 'inline-block',
+                      lineHeight: 0,
+                    }}
+                  >
                     ↗
                   </Text>
                 </Text>

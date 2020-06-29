@@ -58,9 +58,9 @@ const Switch = (props) => {
       </IconButton>
       <Text
         variant='metric.units'
-        sx={{ 
-          whiteSpace: 'nowrap', 
-          display: 'inline-block' ,
+        sx={{
+          whiteSpace: 'nowrap',
+          display: 'inline-block',
           ml: [2],
           fontFamily: 'monospace',
           color: 'secondary',

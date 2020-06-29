@@ -87,7 +87,9 @@ function Resources() {
           <Text sx={{ letterSpacing: 'wide' }}>
             <span sx={{ color: 'green' }}>GRAYSON BADGLEY</span>
           </Text>
-          <Text sx={{ color: 'secondary' }}>Black Rock Forest Consortium / Columbia University</Text>
+          <Text sx={{ color: 'secondary' }}>
+            Black Rock Forest Consortium / Columbia University
+          </Text>
         </Box>
         <Box sx={{ color: 'green', fontSize: [3], mb: [3] }}>
           <Text sx={{ letterSpacing: 'wide' }}>ANNA TRUGMAN</Text>
