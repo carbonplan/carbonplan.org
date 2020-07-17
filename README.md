@@ -2,7 +2,7 @@
 
 [![Build](https://github.com/carbonplan/carbonplan.org/workflows/CI/badge.svg)](https://github.com/carbonplan/carbonplan.org/actions)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=carbonplan/carbonplan.org&identifier=226764770)](https://dependabot.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/carbonplan/carbonplan.org/blob/master/LICENSE)
 
 This repository includes the source code for the [carbonplan.org](https://carbonplan.org/) landing page. The site is a [Next.js](https://nextjs.org/) project, deployed on [Vercel](https://vercel.com/). The reports and research pages referenced here are built and deployed separately and can be found in separate repositories:
 
