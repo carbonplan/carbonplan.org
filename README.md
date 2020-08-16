@@ -1,6 +1,20 @@
-# carbonplan / landing page
+<img
+  src='https://carbonplan-assets.s3.amazonaws.com/monogram/dark-small.png'
+  height='48'
+/>
 
-# landing page
+# carbonplan / carbonplan.org
+
+**main carbonplan website**
+
+[![GitHub][github-badge]][github]
+![Build Status][]
+![MIT License][]
+
+[github]: https://github.com/carbonplan/carbonplan&#46org
+[github-badge]: https://flat.badgen.net/badge/-/github?icon=github&label
+[build status]: https://flat.badgen.net/github/checks/carbonplan/carbonplan&#46org
+[mit license]: https://flat.badgen.net/badge/license/MIT/blue
 
 This repository includes the source code for the [carbonplan.org](https://carbonplan.org/) landing page. The site is a [Next.js](https://nextjs.org/) project, deployed on [Vercel](https://vercel.com/). The reports and research pages referenced here are built and deployed separately and can be found in separate repositories:
 
