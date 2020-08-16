@@ -35,11 +35,9 @@ function FAQ() {
               </a>
             </NextLink>
             . Note that some technologies can play a role in carbon removal but
-            are not, on their own, carbon removal systems. For example, sourcing
-            carbon dioxide from an industrial waste stream and storing it in a
-            stable form is an avoided emission, not carbon removal. The same
-            technology could source its CO<sub>2</sub> from direct air capture,
-            however, and would then remove carbon from the atmosphere. In some
+            are not, on their own, carbon removal systems — you can read more
+            about this distinction in an <Link href='/research/carbon-removal-mechanisms'>article</Link>{' '}
+            we wrote. In some
             places carbon removal is referred to as "Carbon Dioxide Removal" or
             CDR. Also note that the phrase "Negative Emissions Technologies" or
             NETs is sometimes used to describe technologies that implement
