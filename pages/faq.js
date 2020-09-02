@@ -36,12 +36,12 @@ function FAQ() {
             </NextLink>
             . Note that some technologies can play a role in carbon removal but
             are not, on their own, carbon removal systems — you can read more
-            about this distinction in an <Link href='/research/carbon-removal-mechanisms'>article</Link>{' '}
-            we wrote. In some
-            places carbon removal is referred to as "Carbon Dioxide Removal" or
-            CDR. Also note that the phrase "Negative Emissions Technologies" or
-            NETs is sometimes used to describe technologies that implement
-            carbon removal.
+            about this distinction in an{' '}
+            <Link href='/research/carbon-removal-mechanisms'>article</Link> we
+            wrote. In some places carbon removal is referred to as "Carbon
+            Dioxide Removal" or CDR. Also note that the phrase "Negative
+            Emissions Technologies" or NETs is sometimes used to describe
+            technologies that implement carbon removal.
           </Text>
         </Box>
         <Box>
