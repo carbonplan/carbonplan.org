@@ -18,16 +18,16 @@
       "dest": "https://research.carbonplan.org/research$1"
     },
     {
+      "src": "/data/api(.*)",
+      "dest": "https://data.carbonplan.org/api$1"
+    },
+    {
       "src": "/data/_next(.*)",
       "dest": "https://data.carbonplan.org/_next$1"
     },
     {
       "src": "/data(.*)",
       "dest": "https://data.carbonplan.org/data$1"
-    },
-    {
-      "src": "/data/api(.*)",
-      "dest": "https://data.carbonplan.org/api$1"
     },
     {
       "src": "/jobs",
