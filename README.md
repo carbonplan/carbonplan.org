@@ -22,7 +22,7 @@ This repository includes the source code for the [carbonplan.org](https://carbon
 | -------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | reports  | [https://github.com/carbonplan/reports/](https://github.com/carbonplan/reports/)   | [carbonplan.org/reports](https://carbonplan.org/reports)   |
 | research | [https://github.com/carbonplan/research/](https://github.com/carbonplan/research/) | [carbonplan.org/research](https://carbonplan.org/research) |
-| data     | [https://github.com/carbonplan/data/](https://github.com/carbonplan/data/) | [carbonplan.org/data](https://carbonplan.org/data) |
+| data     | [https://github.com/carbonplan/data/](https://github.com/carbonplan/data/)         | [carbonplan.org/data](https://carbonplan.org/data)         |
 
 ## to build the site locally
 
