@@ -29,10 +29,8 @@ function FAQ() {
             developed, including natural or biological solutions (e.g. forests,
             soil), engineered systems (e.g. direct air capture, enhanced
             mineralization), and{' '}
-            <NextLink href='/about#technologies'>
-              <a>
-                <Link>more</Link>
-              </a>
+            <NextLink href='/about#technologies' passHref={true}>
+              <Link>more</Link>
             </NextLink>
             . Note that some technologies can play a role in carbon removal but
             are not, on their own, carbon removal systems — you can read more
@@ -68,10 +66,8 @@ function FAQ() {
             $1000. For project-specific funding, we list as soon as the project,
             or our involvement in the project, becomes public. We also include
             the terms and conditions of our engagements. View{' '}
-            <NextLink href='/funding'>
-              <a>
-                <Link>our list</Link>
-              </a>
+            <NextLink href='/funding' passHref={true}>
+              <Link>our list</Link>
             </NextLink>{' '}
             of funding sources.
           </Text>
@@ -94,10 +90,8 @@ function FAQ() {
             will be expanding, strengthening, and diversifying our skills,
             expertise, and perspective. We also work closely with an amazing
             group of{' '}
-            <NextLink href='/team#collaborators'>
-              <a>
-                <Link>collaborators</Link>
-              </a>
+            <NextLink href='/team#collaborators' passHref={true}>
+              <Link>collaborators</Link>
             </NextLink>{' '}
             to develop our methods and ensure our work is grounded in the best
             available science and data.

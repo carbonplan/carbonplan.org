@@ -141,7 +141,7 @@ const Header = () => {
               sx={{
                 textAlign: '-webkit-right',
                 width: 'fit-content',
-                mr: [4],
+                mr: [3, 3, 4],
                 fontSize: ['92px'],
               }}
             >
