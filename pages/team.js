@@ -50,7 +50,7 @@ function Resources() {
           <Text
             sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
           >
-            Oriana Chegwidden
+            ORIANA CHEGWIDDEN
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
             Research Scientist
