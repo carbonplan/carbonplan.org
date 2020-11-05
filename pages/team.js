@@ -120,7 +120,7 @@ function Resources() {
             <span sx={{ color: 'purple' }}>JENNIFER WILCOX</span> /{' '}
             <span sx={{ color: 'purple' }}>NOAH MCQUEEN</span> /{' '}
             <span sx={{ color: 'purple' }}>CALEB WOODALL</span> /{' '}
-            <span sx={{ color: 'purple' }}>HELENE PILGORE</span> /{' '}
+            <span sx={{ color: 'purple' }}>HELENE PILORGE</span> /{' '}
             <span sx={{ color: 'purple' }}>BEN KOLOSZ</span>
           </Text>
           <Text sx={{ color: 'secondary' }}>
