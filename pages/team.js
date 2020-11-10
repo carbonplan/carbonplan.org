@@ -56,16 +56,6 @@ function Resources() {
             Research Scientist
           </Text>
         </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text
-            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
-          >
-            CELINA SCOTT-BUECHLER
-          </Text>
-          <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Policy Fellow
-          </Text>
-        </Box>
         <Divider sx={{ mt: [5] }} />
         <Heading sx={{ my: [4], fontSize: [5] }}>Board</Heading>
         <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
