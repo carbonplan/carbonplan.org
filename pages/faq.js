@@ -103,10 +103,10 @@ function FAQ() {
           </Heading>
           <Text sx={{ fontSize: [3] }}>
             We've been working with{' '}
-            <Link href='https://castirondesign.com/'>Cast Iron Design</Link>.
-            They are incredible. They developed the brand and design system and
-            we've worked collaboratively on the site design and implementation.
-            Talk to them about your next project. Seriously.
+            <Link href='https://ot.studio/'>Ordinary Things</Link> (formerly
+            known as Cast Iron Design). They are incredible. They developed the
+            brand and design system and we work collaboratively on site design
+            and implementation. Talk to them about your next project. Seriously.
           </Text>
         </Box>
       </Box>
