@@ -35,9 +35,9 @@ const Footer = () => {
           </Link>
         </Box>
         <Box sx={{ fontFamily: 'body', letterSpacing: 'body' }}>
-          <Text sx={{ color: 'secondary' }}>
+          <Text sx={{ color: 'secondary', maxWidth: '90%' }}>
             CarbonPlan is a registered non-profit public benefit corporation in
-            California with 501(3)(c) status pending.
+            California with 501(3)(c) status.
           </Text>
         </Box>
       </Grid>

@@ -49,10 +49,10 @@ function Resources() {
           <Text
             sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
           >
-            CELINA SCOTT-BUECHLER
+            ORIANA CHEGWIDDEN
           </Text>
           <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Policy Fellow
+            Research Scientist
           </Text>
         </Box>
         <Divider sx={{ mt: [5] }} />
@@ -109,7 +109,7 @@ function Resources() {
             <span sx={{ color: 'purple' }}>JENNIFER WILCOX</span> /{' '}
             <span sx={{ color: 'purple' }}>NOAH MCQUEEN</span> /{' '}
             <span sx={{ color: 'purple' }}>CALEB WOODALL</span> /{' '}
-            <span sx={{ color: 'purple' }}>HELENE PILGORE</span> /{' '}
+            <span sx={{ color: 'purple' }}>HÉLÈNE PILORGÉ</span> /{' '}
             <span sx={{ color: 'purple' }}>BEN KOLOSZ</span>
           </Text>
           <Text sx={{ color: 'secondary' }}>
