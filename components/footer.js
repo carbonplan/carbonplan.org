@@ -1,6 +1,5 @@
 import Monogram from './monogram'
 import { Box, Text, Grid, Link } from 'theme-ui'
-import { useThemeUI } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 
 const Footer = () => {

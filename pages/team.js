@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import Layout from '../components/layout'
 import { jsx, Box, Divider, Text, Heading, Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
 
 function Resources() {
   return (
