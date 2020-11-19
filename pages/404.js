@@ -7,7 +7,7 @@ function Custom404() {
       <Grid
         gap={['12px', '16px', '100px']}
         columns={[1, null, '480px 1fr']}
-        sx={{ mb: [5, 0, 0], width: '50%', padding: '70px' }}
+        sx={{ mb: [5, 0, 0], width: '100%', paddingTop: '70px' }}
       >
         <Box>
           <Heading
@@ -41,7 +41,7 @@ function Custom404() {
             Error code: 404
           </Text>
         </Box>
-        <Box>
+        <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
           <Text
             sx={{
               fontSize: 180,
