@@ -1,6 +1,6 @@
 repos:
-  - repo: https://github.com/prettier/prettier
-    rev: 2.1.1
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: 'v2.2.0'
     hooks:
       - id: prettier
         files: "\\.(\
@@ -13,8 +13,8 @@ repos:
           |vue\
           |yaml|yml\
           )$"
-  - repo: https://github.com/prettier/prettier
-    rev: 2.1.1
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: 'v2.2.0'
     hooks:
       - id: prettier
         name: prettier-markdown
