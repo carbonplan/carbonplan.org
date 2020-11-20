@@ -30,7 +30,7 @@ const Layout = ({ hideFooter, children }) => {
         >
           <Container
             sx={{
-              px: [4],
+              px: [3, 3, 4],
             }}
           >
             <Header />
@@ -42,7 +42,7 @@ const Layout = ({ hideFooter, children }) => {
             flex: '1 1 auto',
           }}
         >
-          <Container sx={{ px: [4] }}>
+          <Container sx={{ px: [3, 3, 4] }}>
             <Flex sx={{ flexWrap: 'wrap' }}>{children}</Flex>
           </Container>
         </Box>
@@ -58,7 +58,7 @@ const Layout = ({ hideFooter, children }) => {
           >
             <Container
               sx={{
-                px: [4],
+                px: [3, 3, 4],
               }}
             >
               <Footer />
