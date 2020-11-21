@@ -12,7 +12,6 @@ const Custom404 = () => {
       >
         <Box>
           <Heading
-            as='h1'
             sx={{
               my: [4, 5, 5],
               letterSpacing: 'heading',
@@ -42,15 +41,17 @@ const Custom404 = () => {
             ERROR CODE 404
           </Text>
         </Box>
-        <Box sx={{ 
-          display: ['none', 'none', 'inherit'], 
-          width: '450px', 
-          mr: [4], 
-          mt: [5],
-          ml: [3],
-          fill: 'primary' 
-        }}>
-          <PoopSad/>
+        <Box
+          sx={{
+            display: ['none', 'none', 'inherit'],
+            width: '450px',
+            mr: [4],
+            mt: [5],
+            ml: [3],
+            fill: 'primary',
+          }}
+        >
+          <PoopSad />
         </Box>
       </Grid>
     </Layout>
