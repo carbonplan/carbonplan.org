@@ -43,10 +43,9 @@ const Custom404 = () => {
         </Box>
         <Box
           sx={{
-            display: ['none', 'none', 'inherit'],
-            width: '450px',
+            width: ['70%', '70%', '450px'],
             mr: [4],
-            mt: [5],
+            mt: [2, 2, 5],
             ml: [3],
             fill: 'primary',
           }}
