@@ -1,14 +1,14 @@
-import Layout from '../components/layout'
 import { Box, Text, Heading, Grid } from 'theme-ui'
-import PoopHappy from '../components/emoji/poop-happy'
+import PoopSad from '../components/emoji/poop-sad'
+import Layout from '../components/layout'
 
 const Custom404 = () => {
   return (
     <Layout hideFooter={true}>
       <Grid
         gap={['12px', '16px', '16px']}
-        columns={[1, null, '450px 1fr']}
-        sx={{ mb: [5, 0, 0], width: '100%', paddingTop: '70px' }}
+        columns={[1, 1, '480px 1fr']}
+        sx={{ mb: [5, 0, 0], width: ['90%', '90%', '50%'], pt: [2, 2, 5] }}
       >
         <Box>
           <Heading
@@ -44,12 +44,13 @@ const Custom404 = () => {
         </Box>
         <Box sx={{ 
           display: ['none', 'none', 'inherit'], 
-          width: '500px', 
-          pr: [4], 
-          pt: [5],
+          width: '450px', 
+          mr: [4], 
+          mt: [5],
+          ml: [3],
           fill: 'primary' 
         }}>
-          <PoopHappy/>
+          <PoopSad/>
         </Box>
       </Grid>
     </Layout>
