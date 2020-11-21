@@ -1,12 +1,13 @@
 import Layout from '../components/layout'
 import { Box, Text, Heading, Grid } from 'theme-ui'
+import PoopHappy from '../components/emoji/poop-happy'
 
-function Custom404() {
+const Custom404 = () => {
   return (
     <Layout hideFooter={true}>
       <Grid
-        gap={['12px', '16px', '100px']}
-        columns={[1, null, '480px 1fr']}
+        gap={['12px', '16px', '16px']}
+        columns={[1, null, '450px 1fr']}
         sx={{ mb: [5, 0, 0], width: '100%', paddingTop: '70px' }}
       >
         <Box>
@@ -19,7 +20,7 @@ function Custom404() {
             }}
           >
             {' '}
-            Ooops!{' '}
+            Oops!{' '}
           </Heading>
           <Heading
             sx={{
@@ -29,7 +30,7 @@ function Custom404() {
               lineHeight: 1.25,
             }}
           >
-            We can't seem to find the page you are looking for.
+            Sorry but we can't seem to find the page you are looking for.
           </Heading>
           <Text
             sx={{
@@ -38,17 +39,17 @@ function Custom404() {
               letterSpacing: 'monospace',
             }}
           >
-            Error code: 404
+            ERROR CODE 404
           </Text>
         </Box>
-        <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
-          <Text
-            sx={{
-              fontSize: 180,
-            }}
-          >
-            💩
-          </Text>
+        <Box sx={{ 
+          display: ['none', 'none', 'inherit'], 
+          width: '500px', 
+          pr: [4], 
+          pt: [5],
+          fill: 'primary' 
+        }}>
+          <PoopHappy/>
         </Box>
       </Grid>
     </Layout>
