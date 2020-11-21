@@ -1,6 +1,5 @@
 import { Box } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
-import { default as NextLink } from 'next/link'
 
 const Monogram = () => {
   const context = useThemeUI()
