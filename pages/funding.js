@@ -106,7 +106,7 @@ function Funding() {
           <Row>
             <Text sx={header}>WattTime</Text>
             <Text sx={entry}>
-              <Link href='https://www.climatetrace.org/s'>
+              <Link href='https://www.climatetrace.org'>
                 Climate TRACE
               </Link>
             </Text>
