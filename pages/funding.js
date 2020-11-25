@@ -44,8 +44,7 @@ function Funding() {
           and project-specific funding through contracts and grants. We are
           incredibly grateful to all of our donors, funders, and partners. Here
           we list all sources of funding greater than $1000 in either category.
-          Completion of some donations and grants are pending IRS approval of
-          our 501(c)(3) status.
+          Funding for additional, ongoing projects will be listed in the future.
         </Text>
         <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
           Unrestricted donations and funding
@@ -71,6 +70,10 @@ function Funding() {
             <Text sx={header}>Incite Labs</Text>
             <Text sx={entry}>Grant</Text>
           </Row>
+          <Row>
+            <Text sx={header}>Eutopia Foundation</Text>
+            <Text sx={entry}>Grant</Text>
+          </Row>
         </Box>
         <Heading sx={{ mt: [5], mb: [4], fontSize: [5] }}>
           Project-specific funding
@@ -88,7 +91,7 @@ function Funding() {
             <Text sx={header}>Carbon 180</Text>
             <Text sx={entry}>
               <Link href='https://medium.com/@carbon180/all-star-fellows-join-carbon180-7fdbd00eae3b'>
-                Entreuprneur in Residence Fellowship
+                Entrepreneur in Residence Fellowship
               </Link>
             </Text>
           </Row>
@@ -97,6 +100,14 @@ function Funding() {
             <Text sx={entry}>
               <Link href='/research/stripe-reports-insights'>
                 Negative Emissions Purchase 2020
+              </Link>
+            </Text>
+          </Row>
+          <Row>
+            <Text sx={header}>WattTime</Text>
+            <Text sx={entry}>
+              <Link href='https://www.climatetrace.org/s'>
+                Climate TRACE
               </Link>
             </Text>
           </Row>
