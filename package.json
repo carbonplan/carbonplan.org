@@ -31,7 +31,7 @@
     "theme-ui": "^0.3.3"
   },
   "devDependencies": {
-    "prettier": "2.2.0",
+    "prettier": "2.2.1",
     "redux-devtools-extension": "^2.13.8"
   }
 }
