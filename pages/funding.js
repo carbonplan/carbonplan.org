@@ -109,6 +109,12 @@ function Funding() {
               <Link href='https://www.climatetrace.org'>Climate TRACE</Link>
             </Text>
           </Row>
+          <Row>
+            <Text sx={header}>Generation IM</Text>
+            <Text sx={entry}>
+              Guidance on evaluating climate benefits from investments
+            </Text>
+          </Row>
         </Box>
       </Box>
     </Layout>
