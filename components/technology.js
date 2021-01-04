@@ -13,11 +13,13 @@ const Technology = ({ color, name, children }) => {
         sx={{
           userSelect: 'none',
           width: '85%',
+          height: 'fit-contents',
           borderRadius: '256px',
           borderStyle: 'solid',
           borderColor: 'primary',
           borderWidth: '1px',
         }}
+        alt={name}
         src={prefix + name + '.png'}
       />
       <Box sx={{ maxWidth: '500px' }}>

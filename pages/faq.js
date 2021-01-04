@@ -18,19 +18,18 @@ const FAQ = () => {
         <Styled.p>
           Good question! Carbon removal is removing carbon dioxide from the
           atmosphere and storing it in a durable, ideally permanent, form. It's
-          a nascent field, and several methods are being explored and developed,
-          including natural or biological solutions (e.g. forests, soil),
-          engineered systems (e.g. direct air capture, enhanced mineralization),
-          and{' '}
+          a nascent field, and{' '}
           <NextLink href='/about#technologies' passHref>
-            <Link>more</Link>
-          </NextLink>
-          . Note that some technologies can play a role in carbon removal but
-          are not, on their own, carbon removal systems — you can read more
-          about this distinction in an{' '}
-          <Link href='/research/carbon-removal-mechanisms'>article</Link> we
-          wrote. In some places carbon removal is referred to as "Carbon Dioxide
-          Removal" or CDR. Also note that the phrase "Negative Emissions
+            <Link>several methods</Link>
+          </NextLink>{' '}
+          are being explored and developed, including natural or biological
+          solutions (e.g. forests, soil), engineered systems (e.g. direct air
+          capture, enhanced mineralization), and more . Note that some
+          technologies can play a role in carbon removal but are not, on their
+          own, carbon removal systems — you can read more about this distinction
+          in an <Link href='/research/carbon-removal-mechanisms'>article</Link>{' '}
+          we wrote. In some places carbon removal is referred to as "Carbon
+          Dioxide Removal" or CDR. Also note that the phrase "Negative Emissions
           Technologies" or NETs is sometimes used to describe technologies that
           implement carbon removal.
         </Styled.p>

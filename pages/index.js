@@ -1,4 +1,4 @@
-import { Box, Text, Styled, Heading, Link, Grid, Container } from 'theme-ui'
+import { Box, Text, Styled, Link, Grid, Container } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import { Layout } from '@carbonplan/components'
 import Splash from '../components/splash'
@@ -36,10 +36,10 @@ function Index() {
         <Box>
           <Styled.h1>Data and science for carbon removal</Styled.h1>
           <Box sx={{ mb: [4, 5, 5] }}>
-            <Styled.h3>
+            <Text as='h2' variant='styles.h3'>
               Improving the transparency and scientific integrity of carbon
               removal and climate solutions through open data and tools
-            </Styled.h3>
+            </Text>
           </Box>
           <NextLink href='/about'>
             <a>
