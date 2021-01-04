@@ -1,147 +1,150 @@
-/** @jsx jsx */
-import Layout from '../components/layout'
-import { jsx, Box, Divider, Text, Heading, Link } from 'theme-ui'
+import { Box, Divider, Styled, Text, Heading, Link } from 'theme-ui'
+import { Layout } from '@carbonplan/components'
 
-function Resources() {
+const Team = () => {
   return (
-    <Layout>
+    <Layout local>
       <Box sx={{ width: '100%' }}>
-        <Heading sx={{ my: [4, 5, 5], fontSize: [6, 7, 7] }}>Team</Heading>
-        <Heading sx={{ my: [4], fontSize: [5] }}>Core team</Heading>
-        <Text sx={{ mb: [4], fontSize: [3], maxWidth: '700px' }}>
-          Interested in joining our team? Check out our{' '}
-          <Link href='https://apply.workable.com/carbonplan/'>
-            job openings
-          </Link>
-          .
-        </Text>
-        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text
-            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
-          >
-            JEREMY FREEMAN
+        <Styled.h1>Team</Styled.h1>
+        <Styled.h2>Core team</Styled.h2>
+        <Box sx={{ fontSize: [3], pt: [2, 0, 0], pb: [1] }}>
+          <Text as='p' sx={{ mb: [4, 4, 4], maxWidth: '700px' }}>
+            Interested in joining our team? Check out our{' '}
+            <Link href='https://apply.workable.com/carbonplan/'>
+              job openings
+            </Link>
+            .
           </Text>
-          <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Founder / Executive Director
-          </Text>
+          <Person name='Jeremy Freeman' role='Founder / Executive Director' />
+          <Person name='Joe Hamman' role='Technology Director' />
+          <Person name='Danny Cullenward' role='Policy Director' />
+          <Person name='Oriana Chegwidden' role='Research Scientist' />
+          <Person name='Freya Chay' role='Policy Analyst' />
         </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text
-            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
-          >
-            JOE HAMMAN
-          </Text>
-          <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Technology Director
-          </Text>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text
-            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
-          >
-            DANNY CULLENWARD
-          </Text>
-          <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Policy Director
-          </Text>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text
-            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
-          >
-            ORIANA CHEGWIDDEN
-          </Text>
-          <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Research Scientist
-          </Text>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text
-            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
-          >
-            FREYA CHAY
-          </Text>
-          <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Policy Analyst
-          </Text>
-        </Box>
-        <Divider sx={{ mt: [5] }} />
-        <Heading sx={{ my: [4], fontSize: [5] }}>Board</Heading>
-        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text
-            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
-          >
-            KELLY GANNON
-          </Text>
-          <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Global Fund for Women
-          </Text>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 2, 2] }}>
-          <Text
-            sx={{ letterSpacing: 'wide', display: 'inline-block', mr: [2] }}
-          >
-            ZEKE HAUSFATHER
-          </Text>
-          <Text sx={{ color: 'secondary', display: 'inline-block' }}>
-            Breakthrough Institute / Carbon Brief
-          </Text>
-        </Box>
-        <Divider sx={{ mt: [5] }} />
-        <Heading id='collaborators' sx={{ my: [4], fontSize: [5] }}>
-          Collaborators
+        <Divider sx={{ mt: [4] }} />
+        <Heading as='h2' variant='styles.h2' sx={{ my: [4, 4, 4] }}>
+          Board
         </Heading>
-        <Text sx={{ mb: [4], fontSize: [3], maxWidth: '700px' }}>
-          We collaborate closely with a community of experts and advisors.
-          Interested in working together? Email us{' '}
-          <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
+        <Box sx={{ fontSize: [3], pb: [1] }}>
+          <Person name='Kelly Gannon' role='Global Fund for Women' />
+          <Person
+            name='Zeke Hausfather'
+            role='Breakthrough Institute / Carbon Brief'
+          />
+        </Box>
+        <Divider sx={{ mt: [4] }} />
+        <Text as='h2' variant='styles.h2' sx={{ my: [4, 4, 4] }}>
+          Collaborators
         </Text>
-        <Box sx={{ fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'green' }}>BILL ANDEREGG</span>
+        <Box sx={{ fontSize: [3] }}>
+          <Text as='p' sx={{ mb: [4], maxWidth: '700px' }}>
+            We collaborate closely with a community of experts and advisors.
+            Interested in working together? Email us{' '}
+            <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
           </Text>
-          <Text sx={{ color: 'secondary' }}>University of Utah</Text>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'green' }}>GRAYSON BADGLEY</span>
-          </Text>
-          <Text sx={{ color: 'secondary' }}>
-            Black Rock Forest Consortium / Columbia University
-          </Text>
-        </Box>
-        <Box sx={{ color: 'green', fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: 'wide' }}>ANNA TRUGMAN</Text>
-          <Text sx={{ color: 'secondary' }}>UC Santa Barbara</Text>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'purple' }}>JENNIFER WILCOX</span> /{' '}
-            <span sx={{ color: 'purple' }}>NOAH MCQUEEN</span> /{' '}
-            <span sx={{ color: 'purple' }}>CALEB WOODALL</span> /{' '}
-            <span sx={{ color: 'purple' }}>HÉLÈNE PILORGÉ</span> /{' '}
-            <span sx={{ color: 'purple' }}>BEN KOLOSZ</span>
-          </Text>
-          <Text sx={{ color: 'secondary' }}>
-            Worcester Polytechnic Institute
-          </Text>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [3] }}>
-          <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'purple' }}>ANDREW BERGMAN</span> /{' '}
-            <span sx={{ color: 'purple' }}>TOLY RINBERG</span>
-          </Text>
-          <Text sx={{ color: 'secondary' }}>Harvard University</Text>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [6] }}>
-          <Text sx={{ letterSpacing: 'wide' }}>
-            <span sx={{ color: 'orange' }}>JANE ZELIKOVA</span>
-          </Text>
-          <Text sx={{ color: 'secondary' }}>Carbon180</Text>
+          <Box sx={{ mb: [3] }}>
+            <Span sx={{ color: 'green' }}>BILL ANDEREGG</Span>
+            <Text as='p' sx={{ color: 'secondary' }}>
+              University of Utah
+            </Text>
+          </Box>
+          <Box sx={{ mb: [3] }}>
+            <Span sx={{ color: 'green' }}>GRAYSON BADGLEY</Span>
+            <Text as='p' sx={{ color: 'secondary' }}>
+              Black Rock Forest Consortium / Columbia University
+            </Text>
+          </Box>
+          <Box sx={{ mb: [3] }}>
+            <Span sx={{ color: 'green' }}>ANNA TRUGMAN</Span>
+            <Text sx={{ color: 'secondary' }}>UC Santa Barbara</Text>
+          </Box>
+          <Box sx={{ mb: [3] }}>
+            <Span sx={{ color: 'green' }}>BARBARA HAYA</Span>
+            <Text sx={{ color: 'secondary' }}>UC Berkeley</Text>
+          </Box>
+          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+            <Span sx={{ color: 'purple' }}>JENNIFER WILCOX</Span> /{' '}
+            <Span sx={{ color: 'purple' }}>NOAH MCQUEEN</Span> /{' '}
+            <Span sx={{ color: 'purple' }}>CALEB WOODALL</Span> /{' '}
+            <Span sx={{ color: 'purple' }}>HÉLÈNE PILORGÉ</Span> /{' '}
+            <Span sx={{ color: 'purple' }}>BEN KOLOSZ</Span>
+            <Text as='p' sx={{ color: 'secondary' }}>
+              Worcester Polytechnic Institute
+            </Text>
+          </Box>
+          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+            <Span sx={{ color: 'purple' }}>ANDREW BERGMAN</Span> /{' '}
+            <Span sx={{ color: 'purple' }}>TOLY RINBERG</Span>
+            <Text as='p' sx={{ color: 'secondary' }}>
+              Harvard University
+            </Text>
+          </Box>
+          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+            <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span>
+            <Text as='p' sx={{ color: 'secondary' }}>
+              Lawrence Livermore National Laboratory
+            </Text>
+          </Box>
+          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+            <Span sx={{ color: 'orange' }}>ERIC SLESSAREV</Span>
+            <Text as='p' sx={{ color: 'secondary' }}>
+              Lawrence Livermore National Laboratory
+            </Text>
+          </Box>
+          <Box sx={{ mb: [6] }}>
+            <Span sx={{ color: 'orange' }}>JANE ZELIKOVA</Span>
+            <Text as='p' sx={{ color: 'secondary' }}>
+              Carbon180
+            </Text>
+          </Box>
         </Box>
       </Box>
     </Layout>
   )
 }
 
-export default Resources
+function Span({ sx, children }) {
+  return (
+    <Text
+      as='span'
+      sx={{
+        display: 'inline-block',
+        letterSpacing: 'smallcaps',
+        fontFamily: 'heading',
+        ...sx,
+      }}
+    >
+      {children}
+    </Text>
+  )
+}
+
+function Person({ name, role }) {
+  return (
+    <Box sx={{ mb: [3, 2, 2] }}>
+      <Text
+        as='span'
+        sx={{
+          fontFamily: 'heading',
+          textTransform: 'uppercase',
+          letterSpacing: 'smallcaps',
+          display: 'inline-block',
+          mr: [2],
+        }}
+      >
+        {name}
+      </Text>
+      <Text
+        as='span'
+        sx={{
+          color: 'secondary',
+          display: ['block', 'inline-block', 'inline-block'],
+        }}
+      >
+        {role}
+      </Text>
+    </Box>
+  )
+}
+
+export default Team

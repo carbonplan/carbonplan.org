@@ -1,4 +1,4 @@
-import { Divider, Grid, Box, Text, Heading, Link, Image } from 'theme-ui'
+import { Divider, Grid, Box, Text, Link, Image } from 'theme-ui'
 
 const prefix = 'https://carbonplan-assets.s3.amazonaws.com/images/'
 
@@ -11,6 +11,7 @@ const Technology = ({ color, name, children }) => {
     >
       <Image
         sx={{
+          userSelect: 'none',
           width: '85%',
           borderRadius: '256px',
           borderStyle: 'solid',
@@ -19,19 +20,20 @@ const Technology = ({ color, name, children }) => {
         }}
         src={prefix + name + '.png'}
       />
-      <Box>
+      <Box sx={{ maxWidth: '500px' }}>
         <Text
+          as='h3'
           sx={{
-            fontSize: [3],
             color: color,
             textTransform: 'uppercase',
             fontFamily: 'heading',
-            letterSpacing: 'wide',
+            letterSpacing: 'smallcaps',
+            fontSize: [3],
           }}
         >
           {name}
         </Text>
-        <Text sx={{ fontSize: [3], maxWidth: '500px' }}>{children}</Text>
+        <Text as='p'>{children}</Text>
       </Box>
     </Grid>
   )

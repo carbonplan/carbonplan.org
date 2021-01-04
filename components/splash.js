@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Box, Text } from 'theme-ui'
+import { Box, Text } from 'theme-ui'
 import { useThemeUI } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import seed from 'math-random-seed'
@@ -9,13 +8,13 @@ for (let i = 0; i < 14 * 12; i++) {
   index.push(i)
 }
 
-const tags = {
-  0: 'forests',
-  1: 'dac',
-  2: 'mineralization',
-  3: 'soil',
-  4: 'biomass',
-  5: 'ocean',
+const colors = {
+  0: 'green',
+  1: 'purple',
+  2: 'grey',
+  3: 'orange',
+  4: 'yellow',
+  5: 'teal',
 }
 
 const values = {
@@ -81,7 +80,7 @@ const Carbon = () => {
   return (
     <Box sx={{ width: '100%', pt: [2] }}>
       <svg
-        sx={{ width: '100%', maxWidth: '100%', height: 'auto' }}
+        style={{ width: '100%', maxWidth: '100%', height: 'auto' }}
         version='1.1'
         viewBox='0 0 32 32'
         preserveAspectRatio='xMinYMin meet'
@@ -89,16 +88,16 @@ const Carbon = () => {
         {index.map((i) => {
           return (
             <circle
-              sx={{
+              style={{
                 fill: active[i]
-                  ? theme.tags[tags[categories[i]]]
+                  ? theme.colors[colors[categories[i]]]
                   : theme.colors.primary,
                 opacity: active[i] ? 1 : 0.2,
                 cursor: 'pointer',
                 WebkitTransition: '1s',
                 '&:hover': {
                   opacity: 1,
-                  fill: theme.tags[tags[categories[i]]],
+                  fill: theme.colors[colors[categories[i]]],
                   WebkitTransition: '.25s',
                 },
               }}
@@ -120,7 +119,7 @@ const Carbon = () => {
           borderTopWidth: '2px',
           textAlign: 'left',
           fontSize: [6],
-          fontFamily: 'monospace',
+          fontFamily: 'mono',
           width: 'fit-content',
           mt: [3],
           pt: [1],

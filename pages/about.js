@@ -1,150 +1,163 @@
-import Layout from '../components/layout'
+import { Divider, Styled, Grid, Box, Text, Link, Image } from 'theme-ui'
+import { Layout } from '@carbonplan/components'
 import Arrow from '../components/arrow'
 import Technology from '../components/technology'
-import { Divider, Grid, Box, Text, Heading, Link, Image } from 'theme-ui'
-import { default as NextLink } from 'next/link'
+import Metadata from '../components/metadata'
 
-function About() {
+const About = () => {
   return (
-    <Layout>
-      <Box sx={{ width: '100%' }}>
-        <Heading
-          sx={{ my: [4, 5, 5], letterSpacing: 'heading', fontSize: [6, 7, 7] }}
+    <Layout local>
+      <Metadata />
+      <Styled.h1>About</Styled.h1>
+      <Styled.h2>Mission</Styled.h2>
+      <Grid
+        gap={['16px', '16px', '32px']}
+        columns={[1, 1, '800px 1fr']}
+        sx={{ mb: [4, 4, 0] }}
+      >
+        <Box sx={{ maxWidth: '750px' }}>
+          <Text as='p' variant='styles.p' sx={{ mt: [0] }}>
+            Addressing the crisis of climate change requires action on several
+            fronts. We now need large-scale deployment of carbon removal
+            alongside critical reductions in emissions. Carbon removal refers to
+            natural or technological approaches for removing carbon dioxide from
+            the atmosphere.
+          </Text>
+          <Text as='p' variant='styles.p' sx={{ mb: [1] }}>
+            We're a non-profit that analyzes carbon removal opportunities based
+            on the best available science and data. We help organizations make
+            specific decisions towards their carbon removal goals. And we work
+            collaboratively to build open tools and resources for the evaluation
+            and deployment of carbon removal and other climate solutions.
+          </Text>
+        </Box>
+        <Box
+          sx={{
+            display: ['none', 'none', 'inherit'],
+            ml: ['75px'],
+            mt: ['-10px'],
+          }}
         >
-          About
-        </Heading>
-        <Heading sx={{ mb: [4], letterSpacing: 'heading', fontSize: [5] }}>
-          Mission
-        </Heading>
-        <Grid
-          gap={['16px', '16px', '32px']}
-          columns={[1, 1, '800px 1fr']}
-          sx={{ mb: [2] }}
-        >
-          <Box>
-            <Text sx={{ fontSize: [3], maxWidth: '750px', mb: [3] }}>
-              Addressing the crisis of climate change requires action on several
-              fronts. We now need large-scale deployment of carbon removal
-              alongside critical reductions in emissions. Carbon removal refers
-              to natural or technological approaches for removing carbon dioxide
-              from the atmosphere.
-            </Text>
-            <Text sx={{ fontSize: [3], maxWidth: '750px', mb: [3] }}>
-              We're a non-profit that analyzes carbon removal opportunities
-              based on the best available science and data. We help
-              organizations make specific decisions towards their carbon removal
-              goals. And we work collaboratively to build open tools and
-              resources for the evaluation and deployment of carbon removal and
-              other climate solutions.
-            </Text>
-          </Box>
-          <Box
+          <Arrow />
+        </Box>
+      </Grid>
+      <Divider></Divider>
+      <Text as='h2' variant='styles.h2' sx={{ mt: [4, 4, 4], mb: [4, 4, 4] }}>
+        Our work
+      </Text>
+      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [4] }}>
+        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
+          <Text
+            as='h3'
             sx={{
-              display: ['none', 'none', 'inherit'],
-              ml: ['75px'],
-              mt: ['-10px'],
+              mb: [3],
+              fontSize: [3],
+              fontFamily: 'heading',
+              letterSpacing: 'smallcaps',
             }}
           >
-            <Arrow />
-          </Box>
-        </Grid>
-        <Divider></Divider>
-        <Heading sx={{ mb: [1], mt: [4], fontSize: [5] }}>Our work</Heading>
-        <Grid
-          gap={['16px', '16px', '64px']}
-          columns={[1, 1, 2]}
-          sx={{ mb: [5] }}
+            / RESEARCH
+          </Text>
+          <Text as='p' sx={{ mb: [3] }}>
+            We collaborate with researchers to build open source data and tools
+            for carbon removal and climate solutions. Through this work we
+            produce datasets, models, interactive articles, and commentary on
+            climate policies and programs.
+          </Text>
+          <Link sx={{ textDecoration: 'none' }} href='/research'>
+            <Box
+              sx={{
+                display: 'inline-block',
+                color: 'text',
+                '&:hover': {
+                  color: 'secondary',
+                },
+                mt: [2],
+                mb: [1],
+                fontSize: [2],
+                letterSpacing: 'smallcaps',
+              }}
+            >
+              BROWSE OUR RESEARCH
+              <Text
+                as='span'
+                sx={{
+                  ml: [2],
+                  fontSize: [4],
+                  position: 'relative',
+                  top: '4px',
+                  display: 'inline-block',
+                  lineHeight: 0,
+                }}
+              >
+                ↗
+              </Text>
+            </Box>
+          </Link>
+        </Box>
+        <Box sx={{ fontSize: [3] }}>
+          <Text
+            as='h3'
+            sx={{
+              mb: [3],
+              fontSize: [3],
+              fontFamily: 'heading',
+              letterSpacing: 'smallcaps',
+            }}
+          >
+            / REPORTS
+          </Text>
+          <Text sx={{ mb: [3] }}>
+            We engage with companies, non-profits, and government organizations
+            to help analyze climate programs and projects. We focus on
+            transparency and quality, bringing standards and shared concepts to
+            complex problems.
+          </Text>
+          <Text>
+            <Link sx={{ textDecoration: 'none' }} href='/reports'>
+              <Box
+                sx={{
+                  display: 'inline-block',
+                  color: 'text',
+                  '&:hover': {
+                    color: 'secondary',
+                  },
+                  mt: [2],
+                  mb: [1],
+                  fontSize: [2],
+                  letterSpacing: 'smallcaps',
+                }}
+              >
+                VIEW OUR PROJECT REPORTS
+                <Text
+                  as='span'
+                  sx={{
+                    ml: [2],
+                    fontSize: [4],
+                    position: 'relative',
+                    top: '4px',
+                    display: 'inline-block',
+                    lineHeight: 0,
+                  }}
+                >
+                  ↗
+                </Text>
+              </Box>
+            </Link>
+          </Text>
+        </Box>
+      </Grid>
+      <Divider></Divider>
+      <Box sx={{ fontSize: [3] }}>
+        <Text
+          as='h2'
+          variant='styles.h2'
+          id='technologies'
+          sx={{ mb: [4, 4, 4], mt: [4, 4, 4] }}
         >
-          <Box>
-            <Heading
-              sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: 'wide' }}
-            >
-              / RESEARCH
-            </Heading>
-            <Text sx={{ fontSize: [3], mb: [3] }}>
-              We collaborate with researchers to build open source data and
-              tools for carbon removal and climate solutions. Through this work
-              we produce datasets, models, interactive articles, and commentary
-              on climate policies and programs.
-            </Text>
-            <Text>
-              <Link sx={{ textDecoration: 'none' }} href='/research'>
-                <Text
-                  sx={{
-                    color: 'text',
-                    '&:hover': {
-                      color: 'secondary',
-                    },
-                    mt: [2],
-                    fontSize: [2],
-                    letterSpacing: 'wide',
-                  }}
-                >
-                  BROWSE OUR RESEARCH
-                  <Text
-                    sx={{
-                      ml: [2],
-                      fontSize: [4],
-                      position: 'relative',
-                      top: '4px',
-                      display: 'inline-block',
-                      lineHeight: 0,
-                    }}
-                  >
-                    ↗
-                  </Text>
-                </Text>
-              </Link>
-            </Text>
-          </Box>
-          <Box>
-            <Heading
-              sx={{ mb: [3], mt: [4], fontSize: [3], letterSpacing: 'wide' }}
-            >
-              / REPORTS
-            </Heading>
-            <Text sx={{ fontSize: [3], mb: [3] }}>
-              We engage with companies, non-profits, and government
-              organizations to help analyze climate programs and projects. We
-              focus on transparency and quality, bringing standards and shared
-              concepts to complex technical problems.
-            </Text>
-            <Text>
-              <Link sx={{ textDecoration: 'none' }} href='/reports'>
-                <Text
-                  sx={{
-                    color: 'text',
-                    '&:hover': {
-                      color: 'secondary',
-                    },
-                    mt: [2],
-                    fontSize: [2],
-                    letterSpacing: 'wide',
-                  }}
-                >
-                  VIEW OUR PROJECT REPORTS
-                  <Text
-                    sx={{
-                      ml: [2],
-                      fontSize: [4],
-                      position: 'relative',
-                      top: '4px',
-                      display: 'inline-block',
-                      lineHeight: 0,
-                    }}
-                  >
-                    ↗
-                  </Text>
-                </Text>
-              </Link>
-            </Text>
-          </Box>
-        </Grid>
-        <Divider></Divider>
-        <Heading id='technologies' sx={{ mb: [4], mt: [4], fontSize: [5] }}>
           Technologies and sectors
-        </Heading>
-        <Text sx={{ fontSize: [3], maxWidth: '800px', mb: [5] }}>
+        </Text>
+        <Text as='p' sx={{ maxWidth: '800px', mt: [0], mb: [5] }}>
           We work across a range of strategies that remove carbon dioxide from
           the atmosphere.
         </Text>
