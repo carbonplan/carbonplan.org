@@ -34,7 +34,7 @@ function Index() {
         <Box>
           <Styled.h1>Data and science for carbon removal</Styled.h1>
           <Box sx={{ mb: [4, 5, 5] }}>
-            <Text as='h2' variant='styles.h3' sx={{fontSize: [3, 4, 4]}}>
+            <Text as='h2' variant='styles.h3' sx={{ fontSize: [3, 4, 4] }}>
               Improving the transparency and scientific integrity of carbon
               removal and climate solutions through open data and tools
             </Text>
