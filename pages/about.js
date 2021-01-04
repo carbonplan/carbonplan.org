@@ -2,12 +2,10 @@ import { Divider, Styled, Grid, Box, Text, Link, Image } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 import Arrow from '../components/arrow'
 import Technology from '../components/technology'
-import Metadata from '../components/metadata'
 
 const About = () => {
   return (
     <Layout local>
-      <Metadata />
       <Styled.h1>About</Styled.h1>
       <Styled.h2>Mission</Styled.h2>
       <Grid
