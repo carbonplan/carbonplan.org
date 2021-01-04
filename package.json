@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/theme": "^1.0.0",
+    "@carbonplan/theme": "^2.3.0",
     "@theme-ui/color": "^0.3.3",
     "@theme-ui/css": "^0.6.0-alpha.1",
     "math-random-seed": "^2.0.0",
