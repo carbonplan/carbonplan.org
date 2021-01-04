@@ -13,7 +13,7 @@ const Technology = ({ color, name, children }) => {
         sx={{
           userSelect: 'none',
           width: '85%',
-          height: 'fit-contents',
+          height: 'auto',
           borderRadius: '256px',
           borderStyle: 'solid',
           borderColor: 'primary',
