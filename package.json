@@ -20,9 +20,8 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/components": "^2.1.7",
+    "@carbonplan/components": "^2.1.10",
     "@carbonplan/theme": "^2.3.0",
-    "@theme-ui/color": "^0.3.5",
     "@theme-ui/css": "^0.3.5",
     "math-random-seed": "^2.0.0",
     "next": "^10.0.4",
