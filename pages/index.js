@@ -25,7 +25,7 @@ const sx = {
 
 function Index() {
   return (
-    <Layout local footer={false}>
+    <Layout links={'homepage'} footer={false}>
       <Grid
         gap={['12px', '16px', '100px']}
         columns={[1, null, '480px 1fr']}

@@ -3,7 +3,7 @@ import { Layout } from '@carbonplan/components'
 
 const FAQ = () => {
   return (
-    <Layout local>
+    <Layout links={'homepage'}>
       <Box sx={{ maxWidth: '700px', mb: [6] }}>
         <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>Terms</Text>
         <Styled.p>

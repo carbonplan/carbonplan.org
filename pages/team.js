@@ -3,7 +3,7 @@ import { Layout } from '@carbonplan/components'
 
 const Team = () => {
   return (
-    <Layout local>
+    <Layout links={'homepage'}>
       <Box sx={{ width: '100%' }}>
         <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>Team</Text>
         <Styled.h2>Core team</Styled.h2>
