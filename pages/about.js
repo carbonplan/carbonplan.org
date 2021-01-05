@@ -6,7 +6,7 @@ import Technology from '../components/technology'
 const About = () => {
   return (
     <Layout local>
-      <Styled.h1>About</Styled.h1>
+      <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>About</Text>
       <Styled.h2>Mission</Styled.h2>
       <Grid
         gap={['16px', '16px', '32px']}

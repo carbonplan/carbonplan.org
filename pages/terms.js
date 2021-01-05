@@ -1,11 +1,11 @@
-import { Box, Styled, Link } from 'theme-ui'
+import { Box, Styled, Text, Link } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 
 const FAQ = () => {
   return (
     <Layout local>
       <Box sx={{ maxWidth: '700px', mb: [6] }}>
-        <Styled.h1>Terms</Styled.h1>
+        <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>Terms</Text>
         <Styled.p>
           All code powering this website is{' '}
           <Link href='https://choosealicense.com/licenses/mit/'>MIT</Link>{' '}

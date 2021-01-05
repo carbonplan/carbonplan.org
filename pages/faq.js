@@ -1,4 +1,4 @@
-import { Box, Styled, Link } from 'theme-ui'
+import { Box, Styled, Text, Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import { Layout } from '@carbonplan/components'
 
@@ -6,7 +6,7 @@ const FAQ = () => {
   return (
     <Layout local>
       <Box sx={{ maxWidth: '700px', mb: [6] }}>
-        <Styled.h1>FAQ</Styled.h1>
+        <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>FAQ</Text>
         <Styled.h2>Are you a nonprofit?</Styled.h2>
         <Styled.p>
           Yes. We are a registered non-profit public benefit corporation in

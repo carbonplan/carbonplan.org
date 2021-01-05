@@ -1,5 +1,5 @@
-import { Box, Text } from 'theme-ui'
-import { useThemeUI } from 'theme-ui'
+/** @jsx jsx */
+import { jsx, Box, Text } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import seed from 'math-random-seed'
 
@@ -40,9 +40,6 @@ for (let i = 0; i < 12; i++) {
 }
 
 const Carbon = () => {
-  const context = useThemeUI()
-  const theme = context.theme
-
   const [active, setActive] = useState(selected)
 
   const [total, setTotal] = useState(
@@ -88,17 +85,17 @@ const Carbon = () => {
         {index.map((i) => {
           return (
             <circle
-              style={{
+              sx={{
                 fill: active[i]
-                  ? theme.colors[colors[categories[i]]]
-                  : theme.colors.primary,
+                  ? colors[categories[i]]
+                  : 'primary',
                 opacity: active[i] ? 1 : 0.2,
                 cursor: 'pointer',
-                WebkitTransition: '1s',
+                transition: '1s',
                 '&:hover': {
                   opacity: 1,
-                  fill: theme.colors[colors[categories[i]]],
-                  WebkitTransition: '.25s',
+                  fill: colors[categories[i]],
+                  transition: '.25s',
                 },
               }}
               key={i}
