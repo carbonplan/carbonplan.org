@@ -5,7 +5,9 @@ const Team = () => {
   return (
     <Layout links={'homepage'}>
       <Box sx={{ width: '100%' }}>
-        <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>Team</Text>
+        <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+          Team
+        </Text>
         <Styled.h2>Core team</Styled.h2>
         <Box sx={{ fontSize: [3], pt: [2, 0, 0], pb: [1] }}>
           <Text as='p' sx={{ mb: [4, 4, 4], maxWidth: '700px' }}>

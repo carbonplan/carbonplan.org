@@ -86,9 +86,7 @@ const Carbon = () => {
           return (
             <circle
               sx={{
-                fill: active[i]
-                  ? colors[categories[i]]
-                  : 'primary',
+                fill: active[i] ? colors[categories[i]] : 'primary',
                 opacity: active[i] ? 1 : 0.2,
                 cursor: 'pointer',
                 transition: '1s',

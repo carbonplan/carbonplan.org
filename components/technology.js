@@ -1,4 +1,4 @@
-import { Divider, Grid, Box, Text, Link, Image } from 'theme-ui'
+import { Grid, Box, Text, Image } from 'theme-ui'
 
 const prefix = 'https://carbonplan-assets.s3.amazonaws.com/images/'
 

@@ -1,4 +1,4 @@
-import { Divider, Styled, Grid, Box, Text, Link, Image } from 'theme-ui'
+import { Divider, Styled, Grid, Box, Text, Link } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 import Arrow from '../components/arrow'
 import Technology from '../components/technology'
@@ -6,7 +6,9 @@ import Technology from '../components/technology'
 const About = () => {
   return (
     <Layout links={'homepage'}>
-      <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>About</Text>
+      <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+        About
+      </Text>
       <Styled.h2>Mission</Styled.h2>
       <Grid
         gap={['16px', '16px', '32px']}
