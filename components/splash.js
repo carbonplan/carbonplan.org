@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box, Text } from 'theme-ui'
-import { useThemeUI } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import seed from 'math-random-seed'
 
@@ -9,13 +8,13 @@ for (let i = 0; i < 14 * 12; i++) {
   index.push(i)
 }
 
-const tags = {
-  0: 'forests',
-  1: 'dac',
-  2: 'mineralization',
-  3: 'soil',
-  4: 'biomass',
-  5: 'ocean',
+const colors = {
+  0: 'green',
+  1: 'purple',
+  2: 'grey',
+  3: 'orange',
+  4: 'yellow',
+  5: 'teal',
 }
 
 const values = {
@@ -41,9 +40,6 @@ for (let i = 0; i < 12; i++) {
 }
 
 const Carbon = () => {
-  const context = useThemeUI()
-  const theme = context.theme
-
   const [active, setActive] = useState(selected)
 
   const [total, setTotal] = useState(
@@ -81,7 +77,7 @@ const Carbon = () => {
   return (
     <Box sx={{ width: '100%', pt: [2] }}>
       <svg
-        sx={{ width: '100%', maxWidth: '100%', height: 'auto' }}
+        style={{ width: '100%', maxWidth: '100%', height: 'auto' }}
         version='1.1'
         viewBox='0 0 32 32'
         preserveAspectRatio='xMinYMin meet'
@@ -90,16 +86,14 @@ const Carbon = () => {
           return (
             <circle
               sx={{
-                fill: active[i]
-                  ? theme.tags[tags[categories[i]]]
-                  : theme.colors.primary,
+                fill: active[i] ? colors[categories[i]] : 'primary',
                 opacity: active[i] ? 1 : 0.2,
                 cursor: 'pointer',
-                WebkitTransition: '1s',
+                transition: '1s',
                 '&:hover': {
                   opacity: 1,
-                  fill: theme.tags[tags[categories[i]]],
-                  WebkitTransition: '.25s',
+                  fill: colors[categories[i]],
+                  transition: '.25s',
                 },
               }}
               key={i}
@@ -120,7 +114,7 @@ const Carbon = () => {
           borderTopWidth: '2px',
           textAlign: 'left',
           fontSize: [6],
-          fontFamily: 'monospace',
+          fontFamily: 'mono',
           width: 'fit-content',
           mt: [3],
           pt: [1],
