@@ -41,13 +41,17 @@ const About = () => {
           <Arrow />
         </Box>
       </Grid>
-      <Divider sx={{my: [0]}}></Divider>
-      <Box sx={{pt: [1]}}>
-      <Text as='h2' variant='styles.h2' sx={{ mt: [4, 4, 4], mb: [4, 4, 4] }}>
-        Our work
-      </Text>
+      <Divider sx={{ my: [0] }}></Divider>
+      <Box sx={{ pt: [1] }}>
+        <Text as='h2' variant='styles.h2' sx={{ mt: [4, 4, 4], mb: [4, 4, 4] }}>
+          Our work
+        </Text>
       </Box>
-      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [4], pb: [2] }}>
+      <Grid
+        gap={['16px', '16px', '64px']}
+        columns={[1, 1, 2]}
+        sx={{ mb: [4], pb: [2] }}
+      >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <Text
             as='h3'
@@ -149,7 +153,7 @@ const About = () => {
           </Text>
         </Box>
       </Grid>
-      <Divider sx={{my: [0]}}></Divider>
+      <Divider sx={{ my: [0] }}></Divider>
       <Box sx={{ fontSize: [3], pt: [1] }}>
         <Text
           as='h2'
