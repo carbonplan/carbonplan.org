@@ -22,6 +22,7 @@
   "dependencies": {
     "@carbonplan/components": "^2.2.1",
     "@carbonplan/theme": "^2.3.0",
+    "@theme-ui/css": "^0.3.5",
     "math-random-seed": "^2.0.0",
     "next": "^10.0.4",
     "react": "^16.14.0",

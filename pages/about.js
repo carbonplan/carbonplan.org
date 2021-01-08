@@ -1,4 +1,4 @@
-import { Divider, Styled, Grid, Box, Text, Link, Image } from 'theme-ui'
+import { Divider, Styled, Grid, Box, Text, Link } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 import Arrow from '../components/arrow'
 import Technology from '../components/technology'

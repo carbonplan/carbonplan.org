@@ -1,4 +1,4 @@
-import { Box, Text, Styled, Grid, Heading, Link } from 'theme-ui'
+import { Box, Text, Styled, Grid, Link } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 
 const sx = {

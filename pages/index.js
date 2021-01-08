@@ -1,4 +1,4 @@
-import { Box, Text, Styled, Link, Grid, Container } from 'theme-ui'
+import { Box, Text, Link, Grid } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import { Layout } from '@carbonplan/components'
 import Splash from '../components/splash'
