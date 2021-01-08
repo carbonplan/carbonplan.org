@@ -20,7 +20,9 @@ const Funding = () => {
   return (
     <Layout links={'homepage'}>
       <Box sx={{ maxWidth: '700px', mb: [6] }}>
-        <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>Funding</Text>
+        <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+          Funding
+        </Text>
         <Styled.p>
           We receive a mix of unrestricted funding through donations and grants,
           and project-specific funding through contracts and grants. We are

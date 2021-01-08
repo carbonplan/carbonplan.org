@@ -32,7 +32,9 @@ function Index() {
         sx={{ mb: [5, 0, 0], width: '100%' }}
       >
         <Box>
-          <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>Data and science for carbon removal</Text>
+          <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+            Data and science for carbon removal
+          </Text>
           <Box sx={{ mb: [4, 5, 5] }}>
             <Text as='h2' variant='styles.h3' sx={{ fontSize: [3, 4, 4] }}>
               Improving the transparency and scientific integrity of carbon

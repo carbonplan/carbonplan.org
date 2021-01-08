@@ -6,7 +6,9 @@ const FAQ = () => {
   return (
     <Layout links={'homepage'}>
       <Box sx={{ maxWidth: '700px', mb: [6] }}>
-        <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>FAQ</Text>
+        <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+          FAQ
+        </Text>
         <Styled.h2>Are you a nonprofit?</Styled.h2>
         <Styled.p>
           Yes. We are a registered non-profit public benefit corporation in

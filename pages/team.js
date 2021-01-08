@@ -5,7 +5,9 @@ const Team = () => {
   return (
     <Layout links={'homepage'}>
       <Box sx={{ width: '100%' }}>
-        <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>Team</Text>
+        <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+          Team
+        </Text>
         <Styled.h2>Core team</Styled.h2>
         <Box sx={{ fontSize: [3], pt: [2, 0, 0], pb: [1] }}>
           <Text as='p' sx={{ mb: [4, 4, 4], maxWidth: '700px' }}>
@@ -22,7 +24,7 @@ const Team = () => {
           <Person name='Freya Chay' role='Policy Analyst' />
         </Box>
         <Divider sx={{ mt: [4] }} />
-        <Heading as='h2' variant='styles.h2' sx={{ my: [4, 4, 4] }}>
+        <Heading as='h2' variant='styles.h2' sx={{ my: [4, 4, 4], pt: [1] }}>
           Board
         </Heading>
         <Box sx={{ fontSize: [3], pb: [1] }}>
@@ -33,7 +35,7 @@ const Team = () => {
           />
         </Box>
         <Divider sx={{ mt: [4] }} />
-        <Text as='h2' variant='styles.h2' sx={{ my: [4, 4, 4] }}>
+        <Text as='h2' variant='styles.h2' sx={{ my: [4, 4, 4], pt: [1] }}>
           Collaborators
         </Text>
         <Box sx={{ fontSize: [3] }}>

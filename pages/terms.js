@@ -5,7 +5,9 @@ const FAQ = () => {
   return (
     <Layout links={'homepage'}>
       <Box sx={{ maxWidth: '700px', mb: [6] }}>
-        <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>Terms</Text>
+        <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+          Terms
+        </Text>
         <Styled.p>
           All code powering this website is{' '}
           <Link href='https://choosealicense.com/licenses/mit/'>MIT</Link>{' '}

@@ -6,12 +6,14 @@ import Technology from '../components/technology'
 const About = () => {
   return (
     <Layout links={'homepage'}>
-      <Text as='h1' variant='styles.h1' sx={{mt: [4, 5, 5]}}>About</Text>
+      <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+        About
+      </Text>
       <Styled.h2>Mission</Styled.h2>
       <Grid
         gap={['16px', '16px', '32px']}
         columns={[1, 1, '800px 1fr']}
-        sx={{ mb: [4, 4, 0] }}
+        sx={{ mb: [4, 4, 3] }}
       >
         <Box sx={{ maxWidth: '750px' }}>
           <Text as='p' variant='styles.p' sx={{ mt: [0] }}>
@@ -39,11 +41,13 @@ const About = () => {
           <Arrow />
         </Box>
       </Grid>
-      <Divider></Divider>
+      <Divider sx={{my: [0]}}></Divider>
+      <Box sx={{pt: [1]}}>
       <Text as='h2' variant='styles.h2' sx={{ mt: [4, 4, 4], mb: [4, 4, 4] }}>
         Our work
       </Text>
-      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [4] }}>
+      </Box>
+      <Grid gap={['16px', '16px', '64px']} columns={[1, 1, 2]} sx={{ mb: [4], pb: [2] }}>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <Text
             as='h3'
@@ -145,8 +149,8 @@ const About = () => {
           </Text>
         </Box>
       </Grid>
-      <Divider></Divider>
-      <Box sx={{ fontSize: [3] }}>
+      <Divider sx={{my: [0]}}></Divider>
+      <Box sx={{ fontSize: [3], pt: [1] }}>
         <Text
           as='h2'
           variant='styles.h2'
