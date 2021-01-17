@@ -7,7 +7,6 @@ const sx = {
     letterSpacing: 'smallcaps',
     fontFamily: 'heading',
     fontSize: [2],
-    mt: ['3px'],
   },
   entry: {
     fontSize: [2],
