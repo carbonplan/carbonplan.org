@@ -12,6 +12,7 @@ const sx = {
     fontSize: [2],
     fontFamily: 'faux',
     letterSpacing: 'faux',
+    mb: ['1px'],
   },
 }
 
@@ -104,6 +105,7 @@ function Row({ children }) {
   return (
     <Grid
       columns={[1, '250px 1fr', '250px 1fr']}
+      gap={[1, 4, 4]}
       sx={{
         borderStyle: 'solid',
         borderWidth: '0px',

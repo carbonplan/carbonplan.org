@@ -36,7 +36,16 @@ function Index() {
             Data and science for carbon removal
           </Text>
           <Box sx={{ mb: [4, 5, 5] }}>
-            <Text as='h2' variant='styles.h3' sx={{ lineHeight: 1.25, fontFamily: 'body', fontWeight: 'body', fontSize: [3, 4, 4] }}>
+            <Text
+              as='h2'
+              variant='styles.h3'
+              sx={{
+                lineHeight: 1.25,
+                fontFamily: 'body',
+                fontWeight: 'body',
+                fontSize: [3, 4, 4],
+              }}
+            >
               Improving the transparency and scientific integrity of carbon
               removal and climate solutions through open data and tools
             </Text>
