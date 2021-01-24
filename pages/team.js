@@ -3,7 +3,7 @@ import { Layout } from '@carbonplan/components'
 
 const Team = () => {
   return (
-    <Layout links={'homepage'}>
+    <Layout links={'homepage'} title={'team / carbonplan'}>
       <Box sx={{ width: '100%' }}>
         <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
           Team
@@ -21,6 +21,7 @@ const Team = () => {
           <Person name='Joe Hamman' role='Technology Director' />
           <Person name='Danny Cullenward' role='Policy Director' />
           <Person name='Oriana Chegwidden' role='Research Scientist' />
+          <Person name='Cindy Chiao' role='Data Scientist' />
           <Person name='Freya Chay' role='Policy Analyst' />
         </Box>
         <Divider sx={{ mt: [4] }} />

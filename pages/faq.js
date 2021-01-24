@@ -4,7 +4,7 @@ import { Layout } from '@carbonplan/components'
 
 const FAQ = () => {
   return (
-    <Layout links={'homepage'}>
+    <Layout links={'homepage'} title={'faq / carbonplan'}>
       <Box sx={{ maxWidth: '700px', mb: [6] }}>
         <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
           FAQ

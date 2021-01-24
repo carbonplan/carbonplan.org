@@ -5,7 +5,7 @@ import Technology from '../components/technology'
 
 const About = () => {
   return (
-    <Layout links={'homepage'}>
+    <Layout links={'homepage'} title={'about / carbonplan'}>
       <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
         About
       </Text>
