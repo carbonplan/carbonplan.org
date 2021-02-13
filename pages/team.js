@@ -167,24 +167,20 @@ function Span({ sx, children }) {
 }
 
 function Bio({ text }) {
-  if (text) {
-    return (
-      <Box>
-        <Divider sx={{ my: [3] }}></Divider>
-        <Text
-          sx={{
-            color: 'primary',
-            fontSize: [2],
-            mt: [3],
-          }}
-        >
-          {text}
-        </Text>
-      </Box>
-    )
-  } else {
-    return <></>
-  }
+  return (
+    <Box>
+      <Divider sx={{ my: [3] }}></Divider>
+      <Text
+        sx={{
+          color: 'primary',
+          fontSize: [2],
+          mt: [3],
+        }}
+      >
+        {text}
+      </Text>
+    </Box>
+  )
 }
 
 function Person({ name, role, bio }) {
@@ -211,7 +207,7 @@ function Person({ name, role, bio }) {
       >
         {role}
       </Text>
-      <Bio text={bio} />
+      {bio && <Bio text={bio} />}
     </Box>
   )
 }
