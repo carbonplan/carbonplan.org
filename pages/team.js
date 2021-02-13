@@ -1,5 +1,44 @@
-import { Box, Divider, Styled, Text, Heading, Link } from 'theme-ui'
+import { Box, Divider, Styled, Text, Heading, Link, Grid } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
+
+const coreTeam = [
+  {
+    name: 'Jeremy Freeman',
+    role: 'Founder / Executive Director',
+    bio:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+  },
+  {
+    name: 'Joe Hamman',
+    role: 'Technology Director',
+    bio:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+  },
+  {
+    name: 'Danny Cullenward',
+    role: 'Policy Director',
+    bio:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+  },
+  {
+    name: 'Oriana Chegwidden',
+    role: 'Research Scientist',
+    bio:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+  },
+  {
+    name: 'Cindy Chiao',
+    role: 'Data Scientist',
+    bio:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+  },
+  {
+    name: 'Freya Chay',
+    role: 'Policy Analyst',
+    bio:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+  },
+]
 
 const Team = () => {
   return (
@@ -17,12 +56,17 @@ const Team = () => {
             </Link>
             .
           </Text>
-          <Person name='Jeremy Freeman' role='Founder / Executive Director' />
-          <Person name='Joe Hamman' role='Technology Director' />
-          <Person name='Danny Cullenward' role='Policy Director' />
-          <Person name='Oriana Chegwidden' role='Research Scientist' />
-          <Person name='Cindy Chiao' role='Data Scientist' />
-          <Person name='Freya Chay' role='Policy Analyst' />
+          <Grid
+            columns={[1, 1, 2]}
+            sx={{
+              gridColumnGap: ['16px', '16px', '64px'],
+              gridRowGap: ['16px', '16px', '32px'],
+            }}
+          >
+            {coreTeam.map((p) => (
+              <Person key={p.name} name={p.name} role={p.role} bio={p.bio} />
+            ))}
+          </Grid>
         </Box>
         <Divider sx={{ mt: [4] }} />
         <Heading as='h2' variant='styles.h2' sx={{ my: [4, 4, 4], pt: [1] }}>
@@ -122,7 +166,28 @@ function Span({ sx, children }) {
   )
 }
 
-function Person({ name, role }) {
+function Bio({ text }) {
+  if (text) {
+    return (
+      <Box>
+        <Divider sx={{ my: [3] }}></Divider>
+        <Text
+          sx={{
+            color: 'primary',
+            fontSize: [2],
+            mt: [3],
+          }}
+        >
+          {text}
+        </Text>
+      </Box>
+    )
+  } else {
+    return <></>
+  }
+}
+
+function Person({ name, role, bio }) {
   return (
     <Box sx={{ mb: [3, 2, 2] }}>
       <Text
@@ -146,6 +211,7 @@ function Person({ name, role }) {
       >
         {role}
       </Text>
+      <Bio text={bio} />
     </Box>
   )
 }
