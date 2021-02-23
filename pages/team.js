@@ -6,37 +6,37 @@ const coreTeam = [
     name: 'Jeremy Freeman',
     role: 'Founder / Executive Director',
     bio:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
   },
   {
     name: 'Joe Hamman',
     role: 'Technology Director',
     bio:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+      'Joe is a climate scientist and engineer. He is passionate about open science and his work has long focused on the development of open data and software tools for basic and applied research. He holds a MS and PhD in Civil Engineering from the University of Washington and a PE in Washington State.',
   },
   {
     name: 'Danny Cullenward',
     role: 'Policy Director',
     bio:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+      'Danny is an energy economist and lawyer focused on the design and implementation of scientifically grounded climate policy. He holds a JD and PhD from Stanford University, where he teaches classes on energy law and climate policy.',
   },
   {
     name: 'Oriana Chegwidden',
     role: 'Research Scientist',
     bio:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+      'Oriana is a climate scientist committed to conducting impactful, equitable science. She is an AmeriCorps alum where she worked to support immigrant rights. She holds a PhD in civil and environmental engineering from the University of Washington and a BS in Chemistry from Haverford College.',
   },
   {
     name: 'Cindy Chiao',
     role: 'Data Scientist',
     bio:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+      'Cindy is a data and environmental scientist. She is passionate about sustainable development and is excited to contribute via data analysis and machine learning. She holds a MSE in Environmental Engineering and a MS in Sustainable Systems from the University of Michigan.',
   },
   {
     name: 'Freya Chay',
     role: 'Policy Analyst',
     bio:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.',
+      'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University. ',
   },
 ]
 
@@ -73,6 +73,7 @@ const Team = () => {
           Board
         </Heading>
         <Box sx={{ fontSize: [3], pb: [1] }}>
+          <Person name='Jeremy Freeman' role='CarbonPlan' />
           <Person name='Kelly Gannon' role='Global Fund for Women' />
           <Person
             name='Zeke Hausfather'
@@ -116,7 +117,7 @@ const Team = () => {
             <Span sx={{ color: 'purple' }}>HÉLÈNE PILORGÉ</Span> /{' '}
             <Span sx={{ color: 'purple' }}>BEN KOLOSZ</Span>
             <Text as='p' sx={{ color: 'secondary' }}>
-              Worcester Polytechnic Institute
+              University of Pennsylvania
             </Text>
           </Box>
           <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
@@ -127,21 +128,10 @@ const Team = () => {
             </Text>
           </Box>
           <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
-            <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              Lawrence Livermore National Laboratory
-            </Text>
-          </Box>
-          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+            <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span> /{' '}
             <Span sx={{ color: 'orange' }}>ERIC SLESSAREV</Span>
             <Text as='p' sx={{ color: 'secondary' }}>
               Lawrence Livermore National Laboratory
-            </Text>
-          </Box>
-          <Box sx={{ mb: [6] }}>
-            <Span sx={{ color: 'orange' }}>JANE ZELIKOVA</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              Carbon180
             </Text>
           </Box>
         </Box>
@@ -172,7 +162,7 @@ function Bio({ text }) {
       <Divider sx={{ my: [3] }}></Divider>
       <Text
         sx={{
-          color: 'primary',
+          color: 'secondary',
           fontSize: [2],
           mt: [3],
         }}
