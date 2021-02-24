@@ -1,5 +1,44 @@
-import { Box, Divider, Styled, Text, Heading, Link } from 'theme-ui'
+import { Box, Divider, Styled, Text, Heading, Link, Grid } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
+
+const coreTeam = [
+  {
+    name: 'Jeremy Freeman',
+    role: 'Executive Director',
+    bio:
+      'Jeremy is a scientist with a passion for open science, open source software, and bringing cross-disciplinary teams together to tackle big problems. He holds a PhD in Neural Science from New York University and a BA in Biology, Psychology, and Mathematics from Swarthmore College.',
+  },
+  {
+    name: 'Joe Hamman',
+    role: 'Technology Director',
+    bio:
+      'Joe is a climate scientist and engineer. He is passionate about open science and his work has long focused on the development of open data and software tools for basic and applied research. He holds a MS and PhD in Civil Engineering from the University of Washington and a PE in Washington State.',
+  },
+  {
+    name: 'Danny Cullenward',
+    role: 'Policy Director',
+    bio:
+      'Danny is an energy economist and lawyer focused on the design and implementation of scientifically grounded climate policy. He holds a JD and PhD from Stanford University, where he teaches classes on energy law and climate policy.',
+  },
+  {
+    name: 'Oriana Chegwidden',
+    role: 'Research Scientist',
+    bio:
+      'Oriana is a climate scientist committed to conducting impactful, equitable science. She is an alum of AmeriCorps, where she worked to support immigrant rights. She holds a PhD in Civil and Environmental Engineering from the University of Washington and a BS in Chemistry from Haverford College.',
+  },
+  {
+    name: 'Cindy Chiao',
+    role: 'Data Scientist',
+    bio:
+      'Cindy is a data and environmental scientist. She is passionate about sustainable development and is excited to contribute via data analysis and machine learning. She holds a MSE in Environmental Engineering and a MS in Sustainable Systems from the University of Michigan.',
+  },
+  {
+    name: 'Freya Chay',
+    role: 'Policy Analyst',
+    bio:
+      'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University.',
+  },
+]
 
 const Team = () => {
   return (
@@ -17,18 +56,24 @@ const Team = () => {
             </Link>
             .
           </Text>
-          <Person name='Jeremy Freeman' role='Founder / Executive Director' />
-          <Person name='Joe Hamman' role='Technology Director' />
-          <Person name='Danny Cullenward' role='Policy Director' />
-          <Person name='Oriana Chegwidden' role='Research Scientist' />
-          <Person name='Cindy Chiao' role='Data Scientist' />
-          <Person name='Freya Chay' role='Policy Analyst' />
+          <Grid
+            columns={[1, 1, 2]}
+            sx={{
+              gridColumnGap: ['16px', '16px', '64px'],
+              gridRowGap: ['16px', '16px', '32px'],
+            }}
+          >
+            {coreTeam.map((p) => (
+              <Person key={p.name} name={p.name} role={p.role} bio={p.bio} />
+            ))}
+          </Grid>
         </Box>
         <Divider sx={{ mt: [4] }} />
         <Heading as='h2' variant='styles.h2' sx={{ my: [4, 4, 4], pt: [1] }}>
           Board
         </Heading>
         <Box sx={{ fontSize: [3], pb: [1] }}>
+          <Person name='Jeremy Freeman' role='CarbonPlan' />
           <Person name='Kelly Gannon' role='Global Fund for Women' />
           <Person
             name='Zeke Hausfather'
@@ -72,7 +117,7 @@ const Team = () => {
             <Span sx={{ color: 'purple' }}>HÉLÈNE PILORGÉ</Span> /{' '}
             <Span sx={{ color: 'purple' }}>BEN KOLOSZ</Span>
             <Text as='p' sx={{ color: 'secondary' }}>
-              Worcester Polytechnic Institute
+              University of Pennsylvania
             </Text>
           </Box>
           <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
@@ -83,12 +128,7 @@ const Team = () => {
             </Text>
           </Box>
           <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
-            <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              Lawrence Livermore National Laboratory
-            </Text>
-          </Box>
-          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+            <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span> /{' '}
             <Span sx={{ color: 'orange' }}>ERIC SLESSAREV</Span>
             <Text as='p' sx={{ color: 'secondary' }}>
               Lawrence Livermore National Laboratory
@@ -97,7 +137,7 @@ const Team = () => {
           <Box sx={{ mb: [6] }}>
             <Span sx={{ color: 'orange' }}>JANE ZELIKOVA</Span>
             <Text as='p' sx={{ color: 'secondary' }}>
-              Carbon180
+              University of Wyoming
             </Text>
           </Box>
         </Box>
@@ -122,7 +162,24 @@ function Span({ sx, children }) {
   )
 }
 
-function Person({ name, role }) {
+function Bio({ text }) {
+  return (
+    <Box>
+      <Divider sx={{ my: [3] }}></Divider>
+      <Text
+        sx={{
+          color: 'secondary',
+          fontSize: [2],
+          mt: [3],
+        }}
+      >
+        {text}
+      </Text>
+    </Box>
+  )
+}
+
+function Person({ name, role, bio }) {
   return (
     <Box sx={{ mb: [3, 2, 2] }}>
       <Text
@@ -146,6 +203,7 @@ function Person({ name, role }) {
       >
         {role}
       </Text>
+      {bio && <Bio text={bio} />}
     </Box>
   )
 }
