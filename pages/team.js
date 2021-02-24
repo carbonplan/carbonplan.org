@@ -4,7 +4,7 @@ import { Layout } from '@carbonplan/components'
 const coreTeam = [
   {
     name: 'Jeremy Freeman',
-    role: 'Founder / Executive Director',
+    role: 'Executive Director',
     bio:
       'Jeremy is a scientist with a passion for open science, open source software, and bringing cross-disciplinary teams together to tackle big problems. He holds a PhD in Neural Science from New York University and a BA in Biology, Psychology, and Mathematics from Swarthmore College.',
   },
@@ -132,6 +132,12 @@ const Team = () => {
             <Span sx={{ color: 'orange' }}>ERIC SLESSAREV</Span>
             <Text as='p' sx={{ color: 'secondary' }}>
               Lawrence Livermore National Laboratory
+            </Text>
+          </Box>
+          <Box sx={{ mb: [6] }}>
+            <Span sx={{ color: 'orange' }}>JANE ZELIKOVA</Span>
+            <Text as='p' sx={{ color: 'secondary' }}>
+              University of Wyoming
             </Text>
           </Box>
         </Box>
