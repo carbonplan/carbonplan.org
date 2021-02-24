@@ -6,7 +6,7 @@ const coreTeam = [
     name: 'Jeremy Freeman',
     role: 'Founder / Executive Director',
     bio:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+      'Jeremy is a scientist with a passion for open science, open source software, and bringing cross-disciplinary teams together to tackle big problems. He holds a PhD in Neural Science from New York University and a BA in Biology, Psychology, and Mathematics from Swarthmore College.',
   },
   {
     name: 'Joe Hamman',
@@ -24,7 +24,7 @@ const coreTeam = [
     name: 'Oriana Chegwidden',
     role: 'Research Scientist',
     bio:
-      'Oriana is a climate scientist committed to conducting impactful, equitable science. She is an AmeriCorps alum where she worked to support immigrant rights. She holds a PhD in civil and environmental engineering from the University of Washington and a BS in Chemistry from Haverford College.',
+      'Oriana is a climate scientist committed to conducting impactful, equitable science. She is an alum of AmeriCorps, where she worked to support immigrant rights. She holds a PhD in Civil and Environmental Engineering from the University of Washington and a BS in Chemistry from Haverford College.',
   },
   {
     name: 'Cindy Chiao',
@@ -36,7 +36,7 @@ const coreTeam = [
     name: 'Freya Chay',
     role: 'Policy Analyst',
     bio:
-      'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University. ',
+      'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University.',
   },
 ]
 
