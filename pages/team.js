@@ -168,7 +168,6 @@ function Bio({ text }) {
       <Divider sx={{ my: [3] }}></Divider>
       <Text
         sx={{
-          color: 'secondary',
           fontSize: [2],
           mt: [3],
         }}
