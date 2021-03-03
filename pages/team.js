@@ -1,7 +1,7 @@
 import { Box, Divider, Styled, Text, Heading, Link, Grid } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 
-const coreTeam = [
+const data = [
   {
     name: 'Jeremy Freeman',
     role: 'Executive Director',
@@ -63,7 +63,7 @@ const Team = () => {
               gridRowGap: ['16px', '16px', '32px'],
             }}
           >
-            {coreTeam.map((p) => (
+            {data.map((p) => (
               <Person key={p.name} name={p.name} role={p.role} bio={p.bio} />
             ))}
           </Grid>
