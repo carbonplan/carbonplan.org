@@ -100,7 +100,6 @@ function Item({ data }) {
             sx={{
               fontSize: [2],
               my: [2],
-              fontFamily: 'heading',
               color: 'secondary',
             }}
           >

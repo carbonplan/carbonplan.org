@@ -12,7 +12,7 @@ const About = () => {
       </Text>
       <Styled.h2>Mission</Styled.h2>
       <Box sx={{ mb: [4, 4, 3] }}>
-        <Grid columns={['1fr 210px']} sx={{ mb: [4], pb: [2] }}>
+        <Grid columns={[1, 1, '1fr 210px']} sx={{ mb: [4], pb: [2] }}>
           <Box sx={{ maxWidth: '750px', display: 'inline-block' }}>
             <Text as='p' variant='styles.p' sx={{ mt: [0] }}>
               Addressing the climate crisis requires action on several fronts.
