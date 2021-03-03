@@ -125,10 +125,10 @@ const About = () => {
             mb: [2, 0, 0],
           }}
         >
-          <BigLink sx={{ color: 'red' }}>Browse our latest research</BigLink>
+          <BigLink href={'/research'} sx={{ color: 'red' }}>Browse our latest research</BigLink>
         </Box>
         <Box sx={{ fontSize: [6], maxWidth: '450px', lineHeight: 'heading' }}>
-          <BigLink sx={{ color: 'yellow' }}>
+          <BigLink href={'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-2020-Annual-Report.pdf'} sx={{ color: 'yellow' }}>
             Download our 2020 annual report
           </BigLink>
         </Box>
