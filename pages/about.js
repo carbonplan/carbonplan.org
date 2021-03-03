@@ -11,29 +11,36 @@ const About = () => {
         About
       </Text>
       <Styled.h2>Mission</Styled.h2>
-      <Box
-        sx={{ mb: [4, 4, 3] }}
-      >
-        <Grid columns={['1fr 210px']} sx={{mb: [4], pb: [2]}}>
-          <Box sx={{maxWidth: '750px', display: 'inline-block', }}>
-          <Text as='p' variant='styles.p' sx={{ mt: [0] }}>
-            Addressing the climate crisis requires action on several fronts. We need critical reductions in emissions. We also need large-scale deployment of carbon removal. Our solutions need to respect science and support just outcomes. And we no longer have time for approaches that don't work.
-          </Text>
-          <Text as='p' variant='styles.p' sx={{ mb: [1] }}>
-            We're a non-profit that analyzes climate solutions based on the best available science and data. We work collaboratively to build open tools and resources for the evaluation and deployment of robust climate programs. We share what we have learned through public communication and collaboration with journalists. And we help organizations in the public and private sector make better decisions to advance their climate goals. 
-          </Text>
+      <Box sx={{ mb: [4, 4, 3] }}>
+        <Grid columns={['1fr 210px']} sx={{ mb: [4], pb: [2] }}>
+          <Box sx={{ maxWidth: '750px', display: 'inline-block' }}>
+            <Text as='p' variant='styles.p' sx={{ mt: [0] }}>
+              Addressing the climate crisis requires action on several fronts.
+              We need critical reductions in emissions. We also need large-scale
+              deployment of carbon removal. Our solutions need to respect
+              science and support just outcomes. And we no longer have time for
+              approaches that don't work.
+            </Text>
+            <Text as='p' variant='styles.p' sx={{ mb: [1] }}>
+              We're a non-profit that analyzes climate solutions based on the
+              best available science and data. We work collaboratively to build
+              open tools and resources for the evaluation and deployment of
+              robust climate programs. We share what we have learned through
+              public communication and collaboration with journalists. And we
+              help organizations in the public and private sector make better
+              decisions to advance their climate goals.
+            </Text>
           </Box>
           <Box
-          sx={{
-            display: ['none', 'none', 'inline-block'],
-            mt: ['-10px'],
-            ml: ['30px']
-          }}
-        >
-          <Arrow />
-        </Box>
+            sx={{
+              display: ['none', 'none', 'inline-block'],
+              mt: ['-10px'],
+              ml: ['30px'],
+            }}
+          >
+            <Arrow />
+          </Box>
         </Grid>
-        
       </Box>
       <Divider sx={{ width: '100%', my: [0] }}></Divider>
       <Box sx={{ pt: [1] }}>
@@ -54,13 +61,15 @@ const About = () => {
               fontSize: [3],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
-              color: 'red'
+              color: 'red',
             }}
           >
             RESEARCH
           </Text>
           <Text as='p' sx={{ mb: [3] }}>
-            We collaborate with researchers to build open source data and tools. Through this work we produce datasets and models that directly inform decision making across a range of sectors.
+            We collaborate with researchers to build open source data and tools.
+            Through this work we produce datasets and models that directly
+            inform decision making across a range of sectors.
           </Text>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
@@ -71,13 +80,15 @@ const About = () => {
               fontSize: [3],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
-              color: 'yellow'
+              color: 'yellow',
             }}
           >
             COMMUNICATION
           </Text>
           <Text as='p' sx={{ mb: [3] }}>
-            We combine scientific storytelling and modern web technology to explain complex climate concepts with interactive data and visuals, and provide timely commentary on newsworthy events.
+            We combine scientific storytelling and modern web technology to
+            explain complex climate concepts with interactive data and visuals,
+            and provide timely commentary on newsworthy events.
           </Text>
         </Box>
         <Box sx={{ fontSize: [3] }}>
@@ -88,13 +99,15 @@ const About = () => {
               fontSize: [3],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
-              color: 'teal'
+              color: 'teal',
             }}
           >
             ENGAGEMENT
           </Text>
           <Text sx={{ mb: [3] }}>
-            We work with companies, non-profits, and government organizations to help analyze climate programs and projects. We focus on transparency and quality, bringing rigorous science to complex problems.
+            We work with companies, non-profits, and government organizations to
+            help analyze climate programs and projects. We focus on transparency
+            and quality, bringing rigorous science to complex problems.
           </Text>
         </Box>
       </Grid>
@@ -102,13 +115,22 @@ const About = () => {
       <Grid
         gap={['16px', '16px', '64px']}
         columns={[1, 1, 2]}
-        sx={{ my: [4], pb: [2], }}
+        sx={{ my: [4], pb: [2] }}
       >
-        <Box sx={{fontSize: [6], maxWidth: '450px', lineHeight: 'heading', mb: [2, 0, 0]}}>
-          <BigLink sx={{color: 'red'}}>Browse our latest research</BigLink>
+        <Box
+          sx={{
+            fontSize: [6],
+            maxWidth: '450px',
+            lineHeight: 'heading',
+            mb: [2, 0, 0],
+          }}
+        >
+          <BigLink sx={{ color: 'red' }}>Browse our latest research</BigLink>
         </Box>
-        <Box sx={{fontSize: [6], maxWidth: '450px', lineHeight: 'heading'}}>
-          <BigLink sx={{color: 'yellow'}}>Download our 2020 annual report</BigLink>
+        <Box sx={{ fontSize: [6], maxWidth: '450px', lineHeight: 'heading' }}>
+          <BigLink sx={{ color: 'yellow' }}>
+            Download our 2020 annual report
+          </BigLink>
         </Box>
       </Grid>
       <Divider sx={{ my: [0] }}></Divider>
@@ -125,17 +147,23 @@ const About = () => {
               fontSize: [3],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
-              color: 'red'
+              color: 'red',
             }}
           >
             RECENT HIGHLIGHTS
           </Text>
           <SmallLink href='https://cdrprimer.org/'>CDR Primer</SmallLink>
-          <SmallLink href='/research/dac-calculator'>Direct air capture calculator</SmallLink>
-          <SmallLink href='/permanence/dac-calculator'>Permanence calculator</SmallLink>
-          <SmallLink href='https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf'>Taskforce letter</SmallLink>
+          <SmallLink href='/research/dac-calculator'>
+            Direct air capture calculator
+          </SmallLink>
+          <SmallLink href='/permanence/dac-calculator'>
+            Permanence calculator
+          </SmallLink>
+          <SmallLink href='https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf'>
+            Taskforce letter
+          </SmallLink>
         </Box>
-        <Box sx={{ fontSize: [3]}}>
+        <Box sx={{ fontSize: [3] }}>
           <Text
             as='h3'
             sx={{
@@ -143,15 +171,23 @@ const About = () => {
               fontSize: [3],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
-              color: 'yellow'
+              color: 'yellow',
             }}
           >
             RECENT PRESS
           </Text>
-          <SmallLink href='https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8'>Financial Times</SmallLink>
-          <SmallLink href='https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/'>Bloomberg</SmallLink>
-          <SmallLink href='https://arstechnica.com/science/2020/11/want-to-offset-your-carbon-footprint-heres-what-you-need-to-know/'>Ars Technica</SmallLink>
-          <SmallLink href='https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/'>Grist</SmallLink>
+          <SmallLink href='https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8'>
+            Financial Times
+          </SmallLink>
+          <SmallLink href='https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/'>
+            Bloomberg
+          </SmallLink>
+          <SmallLink href='https://arstechnica.com/science/2020/11/want-to-offset-your-carbon-footprint-heres-what-you-need-to-know/'>
+            Ars Technica
+          </SmallLink>
+          <SmallLink href='https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/'>
+            Grist
+          </SmallLink>
         </Box>
       </Grid>
       <Divider sx={{ my: [0] }}></Divider>
@@ -184,7 +220,7 @@ const About = () => {
           <SmallerLink href='/press'>PRESS</SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <Text as='p' sx={{ maxWidth: '200px', color: 'text',  mb: [2],}}>
+          <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
             View our sources of funding.
           </Text>
           <SmallerLink href='/funding'>FUNDING</SmallerLink>
@@ -196,19 +232,25 @@ const About = () => {
 
 function BigLink({ sx, href, children }) {
   return (
-    <Box sx={{
-      fontSize: [6], 
-      lineHeight: 'heading',
-      width: 'fit-content',
-    }}>
-    <Link id='link' sx={{ 
-      textDecoration: 'none', 
-      transition: '0.15s',
-      '&:hover > #arrow': {
-        transform: 'rotate(45deg)',
-      },
-    }} href={href}>
-      {children}
+    <Box
+      sx={{
+        fontSize: [6],
+        lineHeight: 'heading',
+        width: 'fit-content',
+      }}
+    >
+      <Link
+        id='link'
+        sx={{
+          textDecoration: 'none',
+          transition: '0.15s',
+          '&:hover > #arrow': {
+            transform: 'rotate(45deg)',
+          },
+        }}
+        href={href}
+      >
+        {children}
         <Box
           as='span'
           id='arrow'
@@ -221,7 +263,7 @@ function BigLink({ sx, href, children }) {
             lineHeight: 0,
             left: '0px',
             transition: '0.15s',
-            ...sx
+            ...sx,
           }}
         >
           ↗
@@ -233,25 +275,33 @@ function BigLink({ sx, href, children }) {
 
 function SmallLink({ sx, href, children }) {
   return (
-    <Box sx={{
-      fontSize: [4], 
-      lineHeight: 'heading',
-      width: 'fit-content',
-      mb: [1]
-    }}>
-    <Link id='link' sx={{ 
-      textDecoration: 'none', 
-      '&:hover > #arrow': {
-        transform: 'rotate(45deg)',
-      },
-    }} href={href}>
-      <Box sx={{
-        transition: '0.15s',
-        display: 'inline-block',
-        ...sx
-      }}>
-      {children}
-      </Box>
+    <Box
+      sx={{
+        fontSize: [4],
+        lineHeight: 'heading',
+        width: 'fit-content',
+        mb: [1],
+      }}
+    >
+      <Link
+        id='link'
+        sx={{
+          textDecoration: 'none',
+          '&:hover > #arrow': {
+            transform: 'rotate(45deg)',
+          },
+        }}
+        href={href}
+      >
+        <Box
+          sx={{
+            transition: '0.15s',
+            display: 'inline-block',
+            ...sx,
+          }}
+        >
+          {children}
+        </Box>
         <Box
           as='span'
           id='arrow'
@@ -264,7 +314,7 @@ function SmallLink({ sx, href, children }) {
             lineHeight: 0,
             left: '0px',
             transition: '0.15s',
-            ...sx
+            ...sx,
           }}
         >
           ↗
@@ -276,48 +326,55 @@ function SmallLink({ sx, href, children }) {
 
 function SmallerLink({ sx, href, children }) {
   return (
-    <Box sx={{
-      fontSize: [3], 
-      lineHeight: 'heading',
-      width: 'fit-content',
-      mb: [1]
-    }}>
-    <NextLink href={href} passHref>
-    <Link id='link' sx={{ 
-      textDecoration: 'none', 
-      '&:hover > #arrow': {
-        transform: 'rotate(45deg)',
-      },
-    }}>
-      <Box sx={{
-        transition: '0.15s',
-        display: 'inline-block',
-        textTransform: 'uppercase',
-        letterSpacing: 'smallcaps',
-        fontFamily: 'heading',
-        fontSize: [2],
-        ...sx
-      }}>
-      {children}
-      </Box>
-        <Box
-          as='span'
-          id='arrow'
+    <Box
+      sx={{
+        fontSize: [3],
+        lineHeight: 'heading',
+        width: 'fit-content',
+        mb: [1],
+      }}
+    >
+      <NextLink href={href} passHref>
+        <Link
+          id='link'
           sx={{
-            ml: [2],
-            fontSize: [4],
-            position: 'relative',
-            top: '3px',
-            display: 'inline-block',
-            lineHeight: 0,
-            left: '0px',
-            transition: '0.15s',
-            ...sx
+            textDecoration: 'none',
+            '&:hover > #arrow': {
+              transform: 'rotate(45deg)',
+            },
           }}
         >
-          ↗
-        </Box>
-      </Link>
+          <Box
+            sx={{
+              transition: '0.15s',
+              display: 'inline-block',
+              textTransform: 'uppercase',
+              letterSpacing: 'smallcaps',
+              fontFamily: 'heading',
+              fontSize: [2],
+              ...sx,
+            }}
+          >
+            {children}
+          </Box>
+          <Box
+            as='span'
+            id='arrow'
+            sx={{
+              ml: [2],
+              fontSize: [4],
+              position: 'relative',
+              top: '3px',
+              display: 'inline-block',
+              lineHeight: 0,
+              left: '0px',
+              transition: '0.15s',
+              ...sx,
+            }}
+          >
+            ↗
+          </Box>
+        </Link>
       </NextLink>
     </Box>
   )
