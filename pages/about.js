@@ -203,25 +203,25 @@ const About = () => {
       >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
-            Read our frequently asked questions.
+            Read our frequently asked questions
           </Text>
           <SmallerLink href='/faq'>FAQ</SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
-            Read about our team and collaborators.
+            Read about our team and collaborators
           </Text>
           <SmallerLink href='/team'>TEAM</SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
-            View a full list of press about our work.
+            View a full list of press about our work
           </Text>
           <SmallerLink href='/press'>PRESS</SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
-            View our sources of funding.
+            View our sources of funding
           </Text>
           <SmallerLink href='/funding'>FUNDING</SmallerLink>
         </Box>
