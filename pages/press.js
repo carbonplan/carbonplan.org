@@ -21,7 +21,7 @@ const data = [
     source: 'E&E News',
     href: 'https://www.eenews.net/climatewire/stories/1063723085/',
     date: '01-21-2021',
-    title: 'Does carbon pricing work? Researchers are skeptical',
+    title: ['Does carbon pricing work?', 'Researchers are skeptical'],
     authors: ['Chelsea Harvey']
   },
   {
@@ -59,7 +59,7 @@ const data = [
     source: 'GreenBiz',
     href: 'https://www.greenbiz.com/article/quest-carbon-offsets-almost-anything-goes',
     date: '11-30-2020',
-    title: 'In the quest for carbon offsets, (almost) anything goes',
+    title: ['In the quest for carbon offsets,','(almost) anything goes'],
     authors: ['Jesse Klein']
   },
   {
@@ -74,7 +74,7 @@ const data = [
     source: 'Time Magazine',
     href: 'https://time.com/collection/best-inventions-2020/5911362/climate-trace/',
     date: '11-19-2020',
-    title: 'The best inventions of 2020: The climate cop',
+    title: ['The best inventions of 2020:','The climate cop'],
     authors: [],
   },
   {
@@ -173,7 +173,8 @@ function Item({ data }) {
             }}
           >
             <Box as='span' sx={{ transition: '0.15s' }}>
-              {title}
+              {typeof title === 'string' && title}
+              {typeof title !== 'string' && <span>{title[0]}<br/>{title[1]}</span>}
             </Box>
             <Box
               as='span'
