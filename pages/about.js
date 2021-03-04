@@ -126,7 +126,9 @@ const About = () => {
           }}
         >
           <ArrowLink big={true} href={'/research'} color={'red'}>
-            Browse our latest<br/>research
+            Browse our latest
+            <br />
+            research
           </ArrowLink>
         </Box>
         <Box sx={{ fontSize: [6], maxWidth: ['400px', '450px', '450px'] }}>

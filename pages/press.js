@@ -8,7 +8,7 @@ const data = [
     href: 'https://www.eenews.net/climatewire/stories/1063723981/',
     date: '02-02-2021',
     title: 'Burned by carbon pricing, Dems chart new course on climate',
-    authors: ['Benjamin Storrow', 'Adam Aton']
+    authors: ['Benjamin Storrow', 'Adam Aton'],
   },
   {
     source: 'Financial Times',
@@ -22,7 +22,7 @@ const data = [
     href: 'https://www.eenews.net/climatewire/stories/1063723085/',
     date: '01-21-2021',
     title: ['Does carbon pricing work?', 'Researchers are skeptical'],
-    authors: ['Chelsea Harvey']
+    authors: ['Chelsea Harvey'],
   },
   {
     source: 'Bloomberg',
@@ -42,10 +42,11 @@ const data = [
   },
   {
     source: 'New York Times',
-    href: 'https://www.nytimes.com/2020/12/12/opinion/sunday/biden-climate-change-al-gore.html',
+    href:
+      'https://www.nytimes.com/2020/12/12/opinion/sunday/biden-climate-change-al-gore.html',
     date: '12-12-2020',
     title: 'Where I find hope',
-    authors: ['Al Gore']
+    authors: ['Al Gore'],
   },
   {
     source: 'Bloomberg Green',
@@ -57,10 +58,11 @@ const data = [
   },
   {
     source: 'GreenBiz',
-    href: 'https://www.greenbiz.com/article/quest-carbon-offsets-almost-anything-goes',
+    href:
+      'https://www.greenbiz.com/article/quest-carbon-offsets-almost-anything-goes',
     date: '11-30-2020',
-    title: ['In the quest for carbon offsets,','(almost) anything goes'],
-    authors: ['Jesse Klein']
+    title: ['In the quest for carbon offsets,', '(almost) anything goes'],
+    authors: ['Jesse Klein'],
   },
   {
     source: 'Ars Technica',
@@ -72,9 +74,10 @@ const data = [
   },
   {
     source: 'Time Magazine',
-    href: 'https://time.com/collection/best-inventions-2020/5911362/climate-trace/',
+    href:
+      'https://time.com/collection/best-inventions-2020/5911362/climate-trace/',
     date: '11-19-2020',
-    title: ['The best inventions of 2020:','The climate cop'],
+    title: ['The best inventions of 2020:', 'The climate cop'],
     authors: [],
   },
   {
@@ -88,25 +91,27 @@ const data = [
   },
   {
     source: 'Rolling Stone',
-    href: 'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
+    href:
+      'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
     date: '06-25-2020',
     title: 'Why planting trees won’t save us',
-    authors: ['Jeff Goodell']
+    authors: ['Jeff Goodell'],
   },
   {
     source: 'E&E News',
     href: 'https://www.eenews.net/climatewire/stories/1063394847/',
     date: '06-16-2020',
     title: 'Bleak cap-and-trade results raise doubts about program',
-    authors: ['Anne C. Mulkern']
+    authors: ['Anne C. Mulkern'],
   },
   {
     source: 'MIT Technology Review',
-    href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
+    href:
+      'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
     date: '06-03-2020',
     title: 'Why we can’t count on carbon-sucking farms to slow climate change',
-    authors: ['James Temple']
-  }
+    authors: ['James Temple'],
+  },
 ]
 
 const Press = () => {
@@ -174,7 +179,13 @@ function Item({ data }) {
           >
             <Box as='span' sx={{ transition: '0.15s' }}>
               {typeof title === 'string' && title}
-              {typeof title !== 'string' && <span>{title[0]}<br/>{title[1]}</span>}
+              {typeof title !== 'string' && (
+                <span>
+                  {title[0]}
+                  <br />
+                  {title[1]}
+                </span>
+              )}
             </Box>
             <Box
               as='span'
@@ -194,31 +205,41 @@ function Item({ data }) {
             </Box>
           </Box>
         </Link>
-        {(authors.length > 0) && <Box
-          id='authors'
-          sx={{
-            fontSize: [2],
-            mt: [0],
-            mb: [2],
-            pb: [1],
-            color: 'text',
-          }}
-        >
+        {authors.length > 0 && (
           <Box
-            as='span'
-            id='authors-span'
+            id='authors'
             sx={{
-              textTransform: 'uppercase',
-              letterSpacing: 'smallcaps',
-              fontFamily: 'heading',
-              transition: '0.15s',
+              fontSize: [2],
+              mt: [0],
+              mb: [2],
+              pb: [1],
+              color: 'text',
             }}
           >
-            by {authors.join(' + ')}
+            <Box
+              as='span'
+              id='authors-span'
+              sx={{
+                textTransform: 'uppercase',
+                letterSpacing: 'smallcaps',
+                fontFamily: 'heading',
+                transition: '0.15s',
+              }}
+            >
+              by {authors.join(' + ')}
+            </Box>
           </Box>
+        )}
+        <Box
+          sx={{
+            fontSize: [3],
+            mt: authors.length > 0 ? [2] : [1],
+            mb: [2],
+            color: 'secondary',
+          }}
+        >
+          {source}
         </Box>
-        }
-        <Box sx={{ fontSize: [3], mt: authors.length > 0 ? [2] : [1], mb: [2], color: 'secondary' }}>{source}</Box>
       </Box>
     </Box>
   )
