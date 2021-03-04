@@ -334,7 +334,7 @@ function SmallerLink({ sx, label, href, children }) {
     <Box
       sx={{
         fontSize: [3],
-        lineHeight: 'heading',
+        lineHeight: '1.2em',
         width: 'fit-content',
         mb: [1],
       }}
