@@ -66,7 +66,10 @@ const Press = () => {
             featured members of our team.
           </Styled.p>
         </Box>
-        <Grid columns={[1, 1, 2]} sx={{ rowGap: '16px', columnGap: [0, 0, '64px'], mb: [4, 4, 5] }}>
+        <Grid
+          columns={[1, 1, 2]}
+          sx={{ rowGap: '16px', columnGap: [0, 0, '64px'], mb: [4, 4, 5] }}
+        >
           {data.map((d) => {
             return <Item data={d} />
           })}
