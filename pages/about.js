@@ -210,12 +210,12 @@ const About = () => {
         sx={{ mb: [4], pb: [3, 3, 4] }}
       >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <LearnMoreLink label={'TEAM'} href='/team'>
+          <LearnMoreLink internal={true} label={'TEAM'} href='/team'>
             Read about our team and collaborators
           </LearnMoreLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <LearnMoreLink label={'PRESS'} href='/press'>
+          <LearnMoreLink internal={true} label={'PRESS'} href='/press'>
             View a list of press about our work
           </LearnMoreLink>
         </Box>
@@ -225,7 +225,7 @@ const About = () => {
           </LearnMoreLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <LearnMoreLink label={'FUNDING'} href='/funding'>
+          <LearnMoreLink internal={true} label={'FUNDING'} href='/funding'>
             View our sources of funding
           </LearnMoreLink>
         </Box>

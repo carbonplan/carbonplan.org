@@ -4,6 +4,13 @@ import { Layout } from '@carbonplan/components'
 
 const data = [
   {
+    source: 'E&E News',
+    href: 'https://www.eenews.net/climatewire/stories/1063723981/',
+    date: '02-02-2021',
+    title: 'Burned by carbon pricing, Dems chart new course on climate',
+    authors: ['Benjamin Storrow', 'Adam Aton']
+  },
+  {
     source: 'Financial Times',
     href: 'https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8',
     date: '01-27-2021',
@@ -11,12 +18,19 @@ const data = [
     authors: ['Camilla Hodgson'],
   },
   {
+    source: 'E&E News',
+    href: 'https://www.eenews.net/climatewire/stories/1063723085/',
+    date: '01-21-2021',
+    title: 'Does carbon pricing work? Researchers are skeptical',
+    authors: ['Chelsea Harvey']
+  },
+  {
     source: 'Bloomberg',
     href:
       'https://www.bloomberg.com/news/audio/2020-12-21/cullenward-the-jury-is-still-out-on-carbon-credits',
     date: '12-21-2020',
     title: 'The jury is still out on carbon credits',
-    authors: ['Ben Elgin'],
+    authors: [],
   },
   {
     source: 'Bloomberg',
@@ -27,12 +41,26 @@ const data = [
     authors: ['Ben Elgin', 'Zachary Mider'],
   },
   {
+    source: 'New York Times',
+    href: 'https://www.nytimes.com/2020/12/12/opinion/sunday/biden-climate-change-al-gore.html',
+    date: '12-12-2020',
+    title: 'Where I find hope',
+    authors: ['Al Gore']
+  },
+  {
     source: 'Bloomberg Green',
     href:
       'https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/',
     date: '12-09-2020',
     title: 'These trees are not what they seem',
     authors: ['Ben Elgin'],
+  },
+  {
+    source: 'GreenBiz',
+    href: 'https://www.greenbiz.com/article/quest-carbon-offsets-almost-anything-goes',
+    date: '11-30-2020',
+    title: 'In the quest for carbon offsets, (almost) anything goes',
+    authors: ['Jesse Klein']
   },
   {
     source: 'Ars Technica',
@@ -43,6 +71,13 @@ const data = [
     authors: ['Scott K. Johnson'],
   },
   {
+    source: 'Time Magazine',
+    href: 'https://time.com/collection/best-inventions-2020/5911362/climate-trace/',
+    date: '11-19-2020',
+    title: 'The best inventions of 2020: The climate cop',
+    authors: [],
+  },
+  {
     source: 'Grist',
     href:
       'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
@@ -51,6 +86,27 @@ const data = [
       'This Oregon forest was supposed to store carbon for 100 years. Now it’s on fire.',
     authors: ['Emily Pontecorvo', 'Shannon Osaka'],
   },
+  {
+    source: 'Rolling Stone',
+    href: 'https://www.rollingstone.com/politics/politics-features/tree-planting-wont-stop-climate-crisis-1020500/',
+    date: '06-25-2020',
+    title: 'Why planting trees won’t save us',
+    authors: ['Jeff Goodell']
+  },
+  {
+    source: 'E&E News',
+    href: 'https://www.eenews.net/climatewire/stories/1063394847/',
+    date: '06-16-2020',
+    title: 'Bleak cap-and-trade results raise doubts about program',
+    authors: ['Anne C. Mulkern']
+  },
+  {
+    source: 'MIT Technology Review',
+    href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
+    date: '06-03-2020',
+    title: 'Why we can’t count on carbon-sucking farms to slow climate change',
+    authors: ['James Temple']
+  }
 ]
 
 const Press = () => {
@@ -70,8 +126,8 @@ const Press = () => {
           columns={[1, 1, 2]}
           sx={{ rowGap: '16px', columnGap: [0, 0, '64px'], mb: [4, 4, 5] }}
         >
-          {data.map((d) => {
-            return <Item data={d} />
+          {data.map((d, i) => {
+            return <Item key={'press-' + i} data={d} />
           })}
         </Grid>
       </Box>
@@ -111,7 +167,7 @@ function Item({ data }) {
               maxWidth: '500px',
               fontSize: [4],
               mt: [2],
-              mb: [2],
+              mb: authors.length > 0 ? [2] : [1],
               pb: [1],
               lineHeight: '1.2em',
             }}
@@ -137,7 +193,7 @@ function Item({ data }) {
             </Box>
           </Box>
         </Link>
-        <Box
+        {(authors.length > 0) && <Box
           id='authors'
           sx={{
             fontSize: [2],
@@ -160,7 +216,8 @@ function Item({ data }) {
             by {authors.join(' + ')}
           </Box>
         </Box>
-        <Box sx={{ fontSize: [3], my: [2], color: 'secondary' }}>{source}</Box>
+        }
+        <Box sx={{ fontSize: [3], mt: authors.length > 0 ? [2] : [1], mb: [2], color: 'secondary' }}>{source}</Box>
       </Box>
     </Box>
   )
