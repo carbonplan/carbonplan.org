@@ -6,7 +6,7 @@ function ArrowLink({ href, children, big = false, color = 'text' }) {
     <Box
       sx={{
         fontSize: big ? [5, 5, 6] : [4],
-        lineHeight: ['1.25em', '1.25em', 'heading'],
+        lineHeight: ['1.2em', '1.25em', 'heading'],
         width: 'fit-content',
         mb: big ? [0] : [1],
       }}
