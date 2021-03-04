@@ -109,6 +109,7 @@ function Item({ data }) {
               fontSize: [4],
               mt: [2],
               mb: [2],
+              pb: [1],
               lineHeight: '1.2em',
             }}
           >
@@ -139,6 +140,7 @@ function Item({ data }) {
             fontSize: [2],
             mt: [0],
             mb: [2],
+            pb: [1],
             color: 'text',
           }}
         >
