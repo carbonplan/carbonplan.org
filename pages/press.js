@@ -153,6 +153,7 @@ function Item({ data }) {
             sx={{
               textTransform: 'uppercase',
               letterSpacing: 'smallcaps',
+              fontFamily: 'heading',
               transition: '0.15s',
             }}
           >
