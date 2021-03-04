@@ -57,26 +57,6 @@ const FAQ = () => {
           </NextLink>{' '}
           of funding sources.
         </Styled.p>
-        <Styled.h2>What are your qualifications?</Styled.h2>
-        <Styled.p>
-          Our founding team has a deep background in open science, climate
-          change science, and climate policy. Executive Director Jeremy Freeman
-          completed a PhD in neuroscience, developed open science software
-          tools, and helped build a science philanthropy program before starting
-          CarbonPlan. Technology Director Joe Hamman completed a PhD in Civil &
-          Environmental Engineering, is a project scientist at the National
-          Center for Atmospheric Research, and contributes to several climate
-          science and software efforts. Policy Director Danny Cullenward
-          completed a JD-PhD in energy economics and teaches energy law and
-          climate policy at Stanford Law School. As our team grows we will be
-          expanding, strengthening, and diversifying our skills, expertise, and
-          perspective. We also work closely with an amazing group of{' '}
-          <NextLink href='/team#collaborators' passHref>
-            <Link>collaborators</Link>
-          </NextLink>{' '}
-          to develop our methods and ensure our work is grounded in the best
-          available science and data.
-        </Styled.p>
         <Styled.h2>Who designed this website?</Styled.h2>
         <Styled.p>
           We've been working with{' '}

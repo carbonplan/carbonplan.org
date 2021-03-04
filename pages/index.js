@@ -48,7 +48,7 @@ function Index() {
               }}
             >
               Improving the transparency and scientific integrity of carbon
-              removal and climate solutions with open data and tools
+              removal and climate solutions through open data and tools
             </Text>
           </Box>
           <NextLink href='/about'>
