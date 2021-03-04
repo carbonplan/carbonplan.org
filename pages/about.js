@@ -120,14 +120,13 @@ const About = () => {
         <Box
           sx={{
             fontSize: [6],
-            maxWidth: '450px',
-            lineHeight: 'heading',
+            maxWidth: ['100%', '100%', '450px'],
             mb: [2, 0, 0],
           }}
         >
           <BigLink href={'/research'} sx={{ color: 'red' }}>Browse our latest research</BigLink>
         </Box>
-        <Box sx={{ fontSize: [6], maxWidth: '450px', lineHeight: 'heading' }}>
+        <Box sx={{ fontSize: [6], maxWidth: ['100%', '100%', '450px'], }}>
           <BigLink href={'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-2020-Annual-Report.pdf'} sx={{ color: 'yellow' }}>
             Download our 2020 annual report
           </BigLink>
@@ -222,8 +221,8 @@ function BigLink({ sx, href, children }) {
   return (
     <Box
       sx={{
-        fontSize: [6],
-        lineHeight: 'heading',
+        fontSize: [5, 5, 6],
+        lineHeight: ['1.15em', '1.15em', 'heading'],
         width: 'fit-content',
       }}
     >

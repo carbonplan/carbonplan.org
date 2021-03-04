@@ -56,16 +56,18 @@ const data = [
 const Press = () => {
   return (
     <Layout links={'homepage'} title={'press / carbonplan'}>
-      <Box sx={{ maxWidth: '700px', mb: [6] }}>
+      <Box sx={{ mb: [6] }}>
         <Box as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
           Press
         </Box>
         <Box sx={{maxWidth: ['100%', '100%', '450px']}}>
         <Styled.p>A complete list of press that has either covered our work or featured members of our team.</Styled.p>
         </Box>
+        <Grid columns={[1, 1, 2]} sx={{ mb: [6] }}>
         {data.map((d) => {
           return <Item data={d} />
         })}
+        </Grid>
       </Box>
     </Layout>
   )

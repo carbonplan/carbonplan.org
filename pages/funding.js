@@ -30,10 +30,10 @@ const Funding = () => {
           we list all sources of funding greater than $1000 in either category.
           Funding for additional, ongoing projects will be listed in the future.
         </Styled.p>
-        <Styled.h2>Unrestricted donations and funding</Styled.h2>
+        <Styled.h2>Unrestricted donations</Styled.h2>
         <Box
           sx={{
-            maxWidth: '600px',
+            maxWidth: '700px',
             borderStyle: 'solid',
             borderWidth: '0px',
             borderBottomWidth: '1px',
@@ -42,25 +42,37 @@ const Funding = () => {
         >
           <Row>
             <Text sx={sx.header}>Pamela Mensch</Text>
-            <Text sx={sx.entry}>Individual donation</Text>
+            <Text sx={sx.entry}>Individual</Text>
           </Row>
           <Row>
             <Text sx={sx.header}>Hampus Jakobsson</Text>
-            <Text sx={sx.entry}>Individual donation</Text>
+            <Text sx={sx.entry}>Individual</Text>
           </Row>
           <Row>
-            <Text sx={sx.header}>Incite Labs</Text>
-            <Text sx={sx.entry}>Grant</Text>
+            <Text sx={sx.header}>Jason Jacobs + <br/>Allison Pincus-Jacobs</Text>
+            <Text sx={sx.entry}>Individual</Text>
+          </Row>
+          <Row>
+            <Text sx={sx.header}>Colin Rust + <br/>Jeannie Tseng</Text>
+            <Text sx={sx.entry}>Individual</Text>
+          </Row>
+          <Row>
+            <Text sx={sx.header}>Teach a Man to Fish Foundation</Text>
+            <Text sx={sx.entry}>Individual</Text>
           </Row>
           <Row>
             <Text sx={sx.header}>Eutopia Foundation</Text>
-            <Text sx={sx.entry}>Grant</Text>
+            <Text sx={sx.entry}>Individual</Text>
+          </Row>
+          <Row>
+            <Text sx={sx.header}>Incite Labs</Text>
+            <Text sx={sx.entry}>Corporate</Text>
           </Row>
         </Box>
         <Styled.h2>Project-specific funding</Styled.h2>
         <Box
           sx={{
-            maxWidth: '600px',
+            maxWidth: '700px',
             borderStyle: 'solid',
             borderWidth: '0px',
             borderBottomWidth: '1px',
@@ -95,6 +107,22 @@ const Funding = () => {
               Guidance on evaluating climate benefits from investments
             </Text>
           </Row>
+          <Row>
+            <Text sx={sx.header}>ClimateWorks</Text>
+            <Text sx={sx.entry}>
+              <Link href='/research/permanence-calculator'>
+                Permanence calculator
+              </Link>
+            </Text>
+          </Row>
+          <Row>
+            <Text sx={sx.header}>Lowercase Carbon +<br/>Rio Vista Foundation +<br/>Climateworks</Text>
+            <Text sx={sx.entry}>
+              <Link href='https://cdrprimer.org'>
+                CDR Primer
+              </Link>
+            </Text>
+          </Row>
         </Box>
       </Box>
     </Layout>
@@ -104,7 +132,7 @@ const Funding = () => {
 function Row({ children }) {
   return (
     <Grid
-      columns={[1, '250px 1fr', '250px 1fr']}
+      columns={[1, '350px 1fr', '350px 1fr']}
       gap={[1, 4, 4]}
       sx={{
         borderStyle: 'solid',
