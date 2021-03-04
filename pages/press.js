@@ -60,7 +60,9 @@ const Press = () => {
         <Box as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
           Press
         </Box>
-        <Styled.p>A complete list of press on our work.</Styled.p>
+        <Box sx={{maxWidth: ['100%', '100%', '450px']}}>
+        <Styled.p>A complete list of press that has either covered our work or featured members of our team.</Styled.p>
+        </Box>
         {data.map((d) => {
           return <Item data={d} />
         })}
@@ -100,14 +102,14 @@ function Item({ data }) {
             sx={{
               fontSize: [2],
               my: [2],
-              color: 'secondary',
+              color: 'text',
             }}
           >
             <Box
               as='span'
               sx={{ textTransform: 'uppercase', letterSpacing: 'smallcaps' }}
             >
-              {authors.join(' + ')}
+              by {authors.join(' + ')}
             </Box>
           </Box>
           <Box sx={{ fontSize: [3], my: [2], color: 'secondary' }}>

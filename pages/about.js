@@ -198,32 +198,20 @@ const About = () => {
       </Box>
       <Grid
         gap={['16px', '16px', '64px']}
-        columns={[1, 1, 4]}
+        columns={[2, 2, 4]}
         sx={{ mb: [4], pb: [2] }}
       >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
-            Read our frequently asked questions
-          </Text>
-          <SmallerLink href='/faq'>FAQ</SmallerLink>
+          <SmallerLink label={'FAQ'} href='/faq'>Read our frequently asked questions</SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
-            Read about our team and collaborators
-          </Text>
-          <SmallerLink href='/team'>TEAM</SmallerLink>
+          <SmallerLink label={'TEAM'} href='/team'>Read about our team and collaborators</SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
-            View a full list of press about our work
-          </Text>
-          <SmallerLink href='/press'>PRESS</SmallerLink>
+          <SmallerLink label={'PRESS'} href='/press'>View a list of press about our work</SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <Text as='p' sx={{ maxWidth: '200px', color: 'text', mb: [2] }}>
-            View our sources of funding
-          </Text>
-          <SmallerLink href='/funding'>FUNDING</SmallerLink>
+          <SmallerLink label={'FUNDING'} href='/funding'>View our sources of funding</SmallerLink>
         </Box>
       </Grid>
     </Layout>
@@ -324,7 +312,7 @@ function SmallLink({ sx, href, children }) {
   )
 }
 
-function SmallerLink({ sx, href, children }) {
+function SmallerLink({ sx, label, href, children }) {
   return (
     <Box
       sx={{
@@ -344,6 +332,9 @@ function SmallerLink({ sx, href, children }) {
             },
           }}
         >
+          <Box sx={{ transition: '0.15s', maxWidth: '200px', mb: [2] }}>
+            {children}
+          </Box>
           <Box
             sx={{
               transition: '0.15s',
@@ -355,7 +346,7 @@ function SmallerLink({ sx, href, children }) {
               ...sx,
             }}
           >
-            {children}
+            {label}
           </Box>
           <Box
             as='span'
