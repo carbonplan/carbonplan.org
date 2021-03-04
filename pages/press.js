@@ -60,13 +60,16 @@ const Press = () => {
         <Box as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
           Press
         </Box>
-        <Box sx={{maxWidth: ['100%', '100%', '450px']}}>
-        <Styled.p>A complete list of press that has either covered our work or featured members of our team.</Styled.p>
+        <Box sx={{ maxWidth: ['100%', '100%', '450px'], mb: [4] }}>
+          <Styled.p>
+            A complete list of press that has either covered our work or
+            featured members of our team.
+          </Styled.p>
         </Box>
         <Grid columns={[1, 1, 2]} sx={{ mb: [6] }}>
-        {data.map((d) => {
-          return <Item data={d} />
-        })}
+          {data.map((d) => {
+            return <Item data={d} />
+          })}
         </Grid>
       </Box>
     </Layout>
@@ -78,64 +81,79 @@ function Item({ data }) {
 
   return (
     <Box>
-      <Grid columns={['1fr 100px']}>
-        <Box sx={{ py: [3] }}>
+      <Box id='container' sx={{ py: [3] }}>
+        <Box
+          sx={{
+            color: 'secondary',
+            fontSize: [2],
+            fontFamily: 'mono',
+            letterSpacing: 'mono',
+          }}
+        >
+          {date}
+        </Box>
+        <Link
+          sx={{
+            textDecoration: 'none',
+
+            '&:hover > #container > #arrow': {
+              transform: 'rotate(45deg)',
+            },
+          }}
+          href={href}
+        >
           <Box
-            sx={{
-              color: 'secondary',
-              fontSize: [2],
-              fontFamily: 'mono',
-              letterSpacing: 'mono',
-            }}
-          >
-            {date}
-          </Box>
-          <Box
+            id='container'
             sx={{
               maxWidth: '500px',
               fontSize: [4],
               my: [3],
-              lineHeight: 'heading',
+              lineHeight: '1.2em',
             }}
           >
-            {title}
-          </Box>
-          <Box
-            sx={{
-              fontSize: [2],
-              my: [2],
-              color: 'text',
-            }}
-          >
+            <Box as='span' sx={{ transition: '0.15s' }}>
+              {title}
+            </Box>
             <Box
               as='span'
-              sx={{ textTransform: 'uppercase', letterSpacing: 'smallcaps' }}
+              id='arrow'
+              sx={{
+                ml: [2],
+                fontSize: [5],
+                position: 'relative',
+                top: '4px',
+                display: 'inline-block',
+                lineHeight: 0,
+                left: '0px',
+                transition: '0.15s',
+              }}
             >
-              by {authors.join(' + ')}
+              ↗
             </Box>
           </Box>
-          <Box sx={{ fontSize: [3], my: [2], color: 'secondary' }}>
-            {source}
-          </Box>
-        </Box>
+        </Link>
         <Box
-          as='span'
-          id='arrow'
+          id='authors'
           sx={{
-            ml: [2],
-            fontSize: [7],
-            position: 'relative',
-            top: '60px',
-            display: 'inline-block',
-            lineHeight: 0,
-            left: '0px',
-            transition: '0.15s',
+            fontSize: [2],
+            my: [2],
+            color: 'text',
           }}
         >
-          ↗
+          <Box
+            as='span'
+            id='authors-span'
+            sx={{
+              textTransform: 'uppercase',
+              letterSpacing: 'smallcaps',
+              transition: '0.15s',
+            }}
+          >
+            by {authors.join(' + ')}
+          </Box>
         </Box>
-      </Grid>
-      <Divider sx={{ my: [0] }} />
+        <Box sx={{ fontSize: [3], my: [2], color: 'secondary' }}>{source}</Box>
+      </Box>
     </Box>
   )
 }

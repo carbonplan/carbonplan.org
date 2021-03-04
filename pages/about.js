@@ -87,8 +87,8 @@ const About = () => {
           </Text>
           <Text as='p' sx={{ mb: [3] }}>
             We combine scientific storytelling and modern web technology to
-            explain complex concepts with interactive data and visuals,
-            and provide timely commentary on newsworthy events.
+            explain complex concepts with interactive data and visuals, and
+            provide timely commentary on newsworthy events.
           </Text>
         </Box>
         <Box sx={{ fontSize: [3] }}>
@@ -124,10 +124,17 @@ const About = () => {
             mb: [2, 0, 0],
           }}
         >
-          <BigLink href={'/research'} sx={{ color: 'red' }}>Browse our latest research</BigLink>
+          <BigLink href={'/research'} sx={{ color: 'red' }}>
+            Browse our latest research
+          </BigLink>
         </Box>
-        <Box sx={{ fontSize: [6], maxWidth: ['100%', '100%', '450px'], }}>
-          <BigLink href={'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'} sx={{ color: 'yellow' }}>
+        <Box sx={{ fontSize: [6], maxWidth: ['100%', '100%', '450px'] }}>
+          <BigLink
+            href={
+              'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'
+            }
+            sx={{ color: 'yellow' }}
+          >
             Download our 2020 annual report
           </BigLink>
         </Box>
@@ -201,16 +208,27 @@ const About = () => {
         sx={{ mb: [4], pb: [2] }}
       >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLink label={'TEAM'} href='/team'>Read about our team and collaborators</SmallerLink>
+          <SmallerLink label={'TEAM'} href='/team'>
+            Read about our team and collaborators
+          </SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLink label={'PRESS'} href='/press'>View a list of press about our work</SmallerLink>
+          <SmallerLink label={'PRESS'} href='/press'>
+            View a list of press about our work
+          </SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLinkExternal label={'GITHUB'} href='https://github.com/carbonplan'>Check out our open source code</SmallerLinkExternal>
+          <SmallerLinkExternal
+            label={'GITHUB'}
+            href='https://github.com/carbonplan'
+          >
+            Check out our open source code
+          </SmallerLinkExternal>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLink label={'FUNDING'} href='/funding'>View our sources of funding</SmallerLink>
+          <SmallerLink label={'FUNDING'} href='/funding'>
+            View our sources of funding
+          </SmallerLink>
         </Box>
       </Grid>
     </Layout>

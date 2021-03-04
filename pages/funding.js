@@ -49,11 +49,17 @@ const Funding = () => {
             <Text sx={sx.entry}>Individual</Text>
           </Row>
           <Row>
-            <Text sx={sx.header}>Jason Jacobs + <br/>Allison Pincus-Jacobs</Text>
+            <Text sx={sx.header}>
+              Jason Jacobs + <br />
+              Allison Pincus-Jacobs
+            </Text>
             <Text sx={sx.entry}>Individual</Text>
           </Row>
           <Row>
-            <Text sx={sx.header}>Colin Rust + <br/>Jeannie Tseng</Text>
+            <Text sx={sx.header}>
+              Colin Rust + <br />
+              Jeannie Tseng
+            </Text>
             <Text sx={sx.entry}>Individual</Text>
           </Row>
           <Row>
@@ -116,11 +122,13 @@ const Funding = () => {
             </Text>
           </Row>
           <Row>
-            <Text sx={sx.header}>Lowercase Carbon +<br/>Rio Vista Foundation +<br/>Climateworks</Text>
+            <Text sx={sx.header}>
+              Lowercase Carbon +<br />
+              Rio Vista Foundation +<br />
+              Climateworks
+            </Text>
             <Text sx={sx.entry}>
-              <Link href='https://cdrprimer.org'>
-                CDR Primer
-              </Link>
+              <Link href='https://cdrprimer.org'>CDR Primer</Link>
             </Text>
           </Row>
           <Row>
