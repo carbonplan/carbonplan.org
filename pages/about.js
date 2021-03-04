@@ -2,6 +2,7 @@ import { Divider, Styled, Grid, Box, Text, Link } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import { Layout } from '@carbonplan/components'
 import Arrow from '../components/arrow'
+import ArrowLink from '../components/arrow-link'
 import Technology from '../components/technology'
 
 const About = () => {
@@ -124,19 +125,20 @@ const About = () => {
             mb: [2, 0, 0],
           }}
         >
-          <BigLink href={'/research'} sx={{ color: 'red' }}>
+          <ArrowLink big={true} href={'/research'} color={'red'}>
             Browse our latest research
-          </BigLink>
+          </ArrowLink>
         </Box>
         <Box sx={{ fontSize: [6], maxWidth: ['100%', '100%', '450px'] }}>
-          <BigLink
+          <ArrowLink
+            big={true}
             href={
               'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'
             }
-            sx={{ color: 'yellow' }}
+            color={'yellow'}
           >
             Download our 2020 annual report
-          </BigLink>
+          </ArrowLink>
         </Box>
       </Grid>
       <Divider sx={{ my: [0] }}></Divider>
@@ -158,16 +160,16 @@ const About = () => {
           >
             RECENT HIGHLIGHTS
           </Text>
-          <SmallLink href='https://cdrprimer.org/'>CDR Primer</SmallLink>
-          <SmallLink href='/research/dac-calculator'>
+          <ArrowLink href='https://cdrprimer.org/'>CDR Primer</ArrowLink>
+          <ArrowLink href='/research/dac-calculator'>
             Direct air capture calculator
-          </SmallLink>
-          <SmallLink href='/permanence/dac-calculator'>
+          </ArrowLink>
+          <ArrowLink href='/permanence/dac-calculator'>
             Permanence calculator
-          </SmallLink>
-          <SmallLink href='https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf'>
+          </ArrowLink>
+          <ArrowLink href='https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf'>
             Taskforce letter
-          </SmallLink>
+          </ArrowLink>
         </Box>
         <Box sx={{ fontSize: [3] }}>
           <Text
@@ -182,18 +184,18 @@ const About = () => {
           >
             RECENT PRESS
           </Text>
-          <SmallLink href='https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8'>
+          <ArrowLink href='https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8'>
             Financial Times
-          </SmallLink>
-          <SmallLink href='https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/'>
+          </ArrowLink>
+          <ArrowLink href='https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/'>
             Bloomberg
-          </SmallLink>
-          <SmallLink href='https://arstechnica.com/science/2020/11/want-to-offset-your-carbon-footprint-heres-what-you-need-to-know/'>
+          </ArrowLink>
+          <ArrowLink href='https://arstechnica.com/science/2020/11/want-to-offset-your-carbon-footprint-heres-what-you-need-to-know/'>
             Ars Technica
-          </SmallLink>
-          <SmallLink href='https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/'>
+          </ArrowLink>
+          <ArrowLink href='https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/'>
             Grist
-          </SmallLink>
+          </ArrowLink>
         </Box>
       </Grid>
       <Divider sx={{ my: [0] }}></Divider>
@@ -208,130 +210,56 @@ const About = () => {
         sx={{ mb: [4], pb: [3, 3, 4] }}
       >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLink label={'TEAM'} href='/team'>
+          <LearnMoreLink label={'TEAM'} href='/team'>
             Read about our team and collaborators
-          </SmallerLink>
+          </LearnMoreLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLink label={'PRESS'} href='/press'>
+          <LearnMoreLink label={'PRESS'} href='/press'>
             View a list of press about our work
-          </SmallerLink>
+          </LearnMoreLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLinkExternal
-            label={'GITHUB'}
-            href='https://github.com/carbonplan'
-          >
+          <LearnMoreLink label={'GITHUB'} href='https://github.com/carbonplan'>
             Check out our open source code
-          </SmallerLinkExternal>
+          </LearnMoreLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLink label={'FUNDING'} href='/funding'>
+          <LearnMoreLink label={'FUNDING'} href='/funding'>
             View our sources of funding
-          </SmallerLink>
+          </LearnMoreLink>
         </Box>
       </Grid>
     </Layout>
   )
 }
 
-function BigLink({ sx, href, children }) {
-  return (
-    <Box
-      sx={{
-        fontSize: [5, 5, 6],
-        lineHeight: ['1.15em', '1.15em', 'heading'],
-        width: 'fit-content',
-      }}
-    >
-      <Link
-        id='link'
-        sx={{
-          textDecoration: 'none',
-          transition: '0.15s',
-          '&:hover > #arrow': {
-            transform: 'rotate(45deg)',
-            color: 'secondary'
-          },
-        }}
-        href={href}
-      >
-        {children}
-        <Box
-          as='span'
-          id='arrow'
-          sx={{
-            ml: [2],
-            fontSize: [7],
-            position: 'relative',
-            top: '9px',
-            display: 'inline-block',
-            lineHeight: 0,
-            left: '0px',
-            transition: '0.15s',
-            ...sx,
-          }}
-        >
-          ↗
-        </Box>
-      </Link>
-    </Box>
-  )
-}
+function LearnMoreLink({ label, href, children, internal = false }) {
+  const sx = {
+    link: {
+      textDecoration: 'none',
+      '&:hover > #arrow': {
+        transform: 'rotate(45deg)',
+      },
+    },
+  }
 
-function SmallLink({ sx, href, children }) {
-  return (
-    <Box
-      sx={{
-        fontSize: [4],
-        lineHeight: 'heading',
-        width: 'fit-content',
-        mb: [1],
-      }}
-    >
-      <Link
-        id='link'
-        sx={{
-          textDecoration: 'none',
-          '&:hover > #arrow': {
-            transform: 'rotate(45deg)',
-            color: 'secondary'
-          },
-        }}
-        href={href}
-      >
-        <Box
-          sx={{
-            transition: '0.15s',
-            display: 'inline-block',
-            ...sx,
-          }}
-        >
+  function Wrapper({ href, children }) {
+    if (internal) {
+      return (
+        <NextLink href={href} passHref>
+          <Link sx={sx.link}>{children}</Link>
+        </NextLink>
+      )
+    } else {
+      return (
+        <Link href={href} sx={sx.link}>
           {children}
-        </Box>
-        <Box
-          as='span'
-          id='arrow'
-          sx={{
-            ml: [2],
-            fontSize: [4],
-            position: 'relative',
-            top: '3px',
-            display: 'inline-block',
-            lineHeight: 0,
-            left: '0px',
-            transition: '0.15s',
-            ...sx,
-          }}
-        >
-          ↗
-        </Box>
-      </Link>
-    </Box>
-  )
-}
+        </Link>
+      )
+    }
+  }
 
-function SmallerLink({ sx, label, href, children }) {
   return (
     <Box
       sx={{
@@ -341,76 +269,8 @@ function SmallerLink({ sx, label, href, children }) {
         mb: [1],
       }}
     >
-      <NextLink href={href} passHref>
-        <Link
-          id='link'
-          sx={{
-            textDecoration: 'none',
-            '&:hover > #arrow': {
-              transform: 'rotate(45deg)',
-            },
-          }}
-        >
-          <Box sx={{ transition: '0.15s', maxWidth: '200px', mb: [2] }}>
-            {children}
-          </Box>
-          <Box
-            sx={{
-              transition: '0.15s',
-              display: 'inline-block',
-              textTransform: 'uppercase',
-              letterSpacing: 'smallcaps',
-              fontFamily: 'heading',
-              fontSize: [2],
-              ...sx,
-            }}
-          >
-            {label}
-          </Box>
-          <Box
-            as='span'
-            id='arrow'
-            sx={{
-              ml: [2],
-              fontSize: [4],
-              position: 'relative',
-              top: '3px',
-              display: 'inline-block',
-              lineHeight: 0,
-              left: '0px',
-              transition: '0.15s',
-              ...sx,
-            }}
-          >
-            ↗
-          </Box>
-        </Link>
-      </NextLink>
-    </Box>
-  )
-}
-
-function SmallerLinkExternal({ sx, label, href, children }) {
-  return (
-    <Box
-      sx={{
-        fontSize: [3],
-        lineHeight: 'heading',
-        width: 'fit-content',
-        mb: [1],
-      }}
-    >
-      <Link
-        id='link'
-        href={href}
-        sx={{
-          textDecoration: 'none',
-          '&:hover > #arrow': {
-            transform: 'rotate(45deg)',
-          },
-        }}
-      >
-        <Box sx={{ transition: '0.15s', maxWidth: '200px', mb: [2] }}>
+      <Wrapper href={href}>
+        <Box sx={{ transition: '0.15s', maxWidth: '200px', pb: [2] }}>
           {children}
         </Box>
         <Box
@@ -443,7 +303,8 @@ function SmallerLinkExternal({ sx, label, href, children }) {
         >
           ↗
         </Box>
-      </Link>
+        <Box as='span' sx={{ display: 'inline-block', width: ['12px'] }} />
+      </Wrapper>
     </Box>
   )
 }
