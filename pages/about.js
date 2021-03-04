@@ -126,10 +126,10 @@ const About = () => {
           }}
         >
           <ArrowLink big={true} href={'/research'} color={'red'}>
-            Browse our latest research
+            Browse our latest<br/>research
           </ArrowLink>
         </Box>
-        <Box sx={{ fontSize: [6], maxWidth: ['100%', '100%', '450px'] }}>
+        <Box sx={{ fontSize: [6], maxWidth: ['400px', '450px', '450px'] }}>
           <ArrowLink
             big={true}
             href={
@@ -164,7 +164,7 @@ const About = () => {
           <ArrowLink href='/research/dac-calculator'>
             Direct air capture calculator
           </ArrowLink>
-          <ArrowLink href='/permanence/dac-calculator'>
+          <ArrowLink href='/research/permanence-calculator'>
             Permanence calculator
           </ArrowLink>
           <ArrowLink href='https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf'>

@@ -6,7 +6,7 @@ function ArrowLink({ href, children, big = false, color = 'text' }) {
     <Box
       sx={{
         fontSize: big ? [5, 5, 6] : [4],
-        lineHeight: 'heading',
+        lineHeight: ['1.25em', '1.25em', 'heading'],
         width: 'fit-content',
         mb: big ? [0] : [1],
       }}
@@ -41,7 +41,7 @@ function ArrowLink({ href, children, big = false, color = 'text' }) {
         >
           ↗
         </Box>
-        <Box as='span' sx={{ display: 'inline-block', width: ['6px'] }} />
+        <Box as='span' sx={{ display: 'inline-block', width: ['1px'] }} />
       </Link>
     </Box>
   )
