@@ -251,6 +251,7 @@ function BigLink({ sx, href, children }) {
           transition: '0.15s',
           '&:hover > #arrow': {
             transform: 'rotate(45deg)',
+            color: 'secondary'
           },
         }}
         href={href}
@@ -294,6 +295,7 @@ function SmallLink({ sx, href, children }) {
           textDecoration: 'none',
           '&:hover > #arrow': {
             transform: 'rotate(45deg)',
+            color: 'secondary'
           },
         }}
         href={href}
