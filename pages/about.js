@@ -1,4 +1,5 @@
 import { Divider, Styled, Grid, Box, Text, Link } from 'theme-ui'
+import { default as NextLink } from 'next/link'
 import { Layout } from '@carbonplan/components'
 import Arrow from '../components/arrow'
 import Technology from '../components/technology'
@@ -10,38 +11,38 @@ const About = () => {
         About
       </Text>
       <Styled.h2>Mission</Styled.h2>
-      <Grid
-        gap={['16px', '16px', '32px']}
-        columns={[1, 1, '800px 1fr']}
-        sx={{ mb: [4, 4, 3] }}
-      >
-        <Box sx={{ maxWidth: '750px' }}>
-          <Text as='p' variant='styles.p' sx={{ mt: [0] }}>
-            Addressing the crisis of climate change requires action on several
-            fronts. We now need large-scale deployment of carbon removal
-            alongside critical reductions in emissions. Carbon removal refers to
-            natural or technological approaches for removing carbon dioxide from
-            the atmosphere.
-          </Text>
-          <Text as='p' variant='styles.p' sx={{ mb: [1] }}>
-            We're a non-profit that analyzes carbon removal opportunities based
-            on the best available science and data. We help organizations make
-            specific decisions towards their carbon removal goals. And we work
-            collaboratively to build open tools and resources for the evaluation
-            and deployment of carbon removal and other climate solutions.
-          </Text>
-        </Box>
-        <Box
-          sx={{
-            display: ['none', 'none', 'inherit'],
-            ml: ['75px'],
-            mt: ['-10px'],
-          }}
-        >
-          <Arrow />
-        </Box>
-      </Grid>
-      <Divider sx={{ my: [0] }}></Divider>
+      <Box sx={{ mb: [4, 4, 3] }}>
+        <Grid columns={[1, 1, '1fr 210px']} sx={{ mb: [4], pb: [2] }}>
+          <Box sx={{ maxWidth: '750px', display: 'inline-block' }}>
+            <Text as='p' variant='styles.p' sx={{ mt: [0] }}>
+              Addressing the climate crisis requires action on several fronts.
+              We need critical reductions in emissions. We also need large-scale
+              deployment of carbon removal. Our solutions need to respect
+              science and support just outcomes. And we no longer have time for
+              approaches that don't work.
+            </Text>
+            <Text as='p' variant='styles.p' sx={{ mb: [1] }}>
+              We're a non-profit that analyzes climate solutions based on the
+              best available science and data. We work collaboratively to build
+              open tools and resources for the evaluation and deployment of
+              robust climate programs. We share what we have learned through
+              public communication and collaboration with journalists. And we
+              help organizations in the public and private sector make better
+              decisions to advance their climate goals.
+            </Text>
+          </Box>
+          <Box
+            sx={{
+              display: ['none', 'none', 'inline-block'],
+              mt: ['-10px'],
+              ml: ['30px'],
+            }}
+          >
+            <Arrow />
+          </Box>
+        </Grid>
+      </Box>
+      <Divider sx={{ width: '100%', my: [0] }}></Divider>
       <Box sx={{ pt: [1] }}>
         <Text as='h2' variant='styles.h2' sx={{ mt: [4, 4, 4], mb: [4, 4, 4] }}>
           Our work
@@ -49,7 +50,7 @@ const About = () => {
       </Box>
       <Grid
         gap={['16px', '16px', '64px']}
-        columns={[1, 1, 2]}
+        columns={[1, 1, 3]}
         sx={{ mb: [4], pb: [2] }}
       >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
@@ -60,46 +61,35 @@ const About = () => {
               fontSize: [3],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
+              color: 'red',
             }}
           >
-            / RESEARCH
+            RESEARCH
           </Text>
           <Text as='p' sx={{ mb: [3] }}>
-            We collaborate with researchers to build open source data and tools
-            for carbon removal and climate solutions. Through this work we
-            produce datasets, models, interactive articles, and commentary on
-            climate policies and programs.
+            We collaborate with researchers to build open source data and tools.
+            Through this work we produce datasets and models that directly
+            inform decision making across a range of sectors.
           </Text>
-          <Link sx={{ textDecoration: 'none' }} href='/research'>
-            <Box
-              sx={{
-                display: 'inline-block',
-                color: 'text',
-                '&:hover': {
-                  color: 'secondary',
-                },
-                mt: [2],
-                mb: [1],
-                fontSize: [2],
-                letterSpacing: 'smallcaps',
-              }}
-            >
-              BROWSE OUR RESEARCH
-              <Text
-                as='span'
-                sx={{
-                  ml: [2],
-                  fontSize: [4],
-                  position: 'relative',
-                  top: '4px',
-                  display: 'inline-block',
-                  lineHeight: 0,
-                }}
-              >
-                ↗
-              </Text>
-            </Box>
-          </Link>
+        </Box>
+        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
+          <Text
+            as='h3'
+            sx={{
+              mb: [3],
+              fontSize: [3],
+              fontFamily: 'heading',
+              letterSpacing: 'smallcaps',
+              color: 'yellow',
+            }}
+          >
+            COMMUNICATION
+          </Text>
+          <Text as='p' sx={{ mb: [3] }}>
+            We combine scientific storytelling and modern web technology to
+            explain complex concepts with interactive data and visuals, and
+            provide timely commentary on newsworthy events.
+          </Text>
         </Box>
         <Box sx={{ fontSize: [3] }}>
           <Text
@@ -109,120 +99,350 @@ const About = () => {
               fontSize: [3],
               fontFamily: 'heading',
               letterSpacing: 'smallcaps',
+              color: 'teal',
             }}
           >
-            / REPORTS
+            ENGAGEMENT
           </Text>
           <Text sx={{ mb: [3] }}>
-            We engage with companies, non-profits, and government organizations
-            to help analyze climate programs and projects. We focus on
-            transparency and quality, bringing standards and shared concepts to
-            complex problems.
-          </Text>
-          <Text>
-            <Link sx={{ textDecoration: 'none' }} href='/reports'>
-              <Box
-                sx={{
-                  display: 'inline-block',
-                  color: 'text',
-                  '&:hover': {
-                    color: 'secondary',
-                  },
-                  mt: [2],
-                  mb: [1],
-                  fontSize: [2],
-                  letterSpacing: 'smallcaps',
-                }}
-              >
-                VIEW OUR PROJECT REPORTS
-                <Text
-                  as='span'
-                  sx={{
-                    ml: [2],
-                    fontSize: [4],
-                    position: 'relative',
-                    top: '4px',
-                    display: 'inline-block',
-                    lineHeight: 0,
-                  }}
-                >
-                  ↗
-                </Text>
-              </Box>
-            </Link>
+            We work with companies, non-profits, and government organizations to
+            help analyze climate programs and projects. We focus on transparency
+            and quality, bringing rigorous science to complex problems.
           </Text>
         </Box>
       </Grid>
       <Divider sx={{ my: [0] }}></Divider>
-      <Box sx={{ fontSize: [3], pt: [1] }}>
-        <Text
-          as='h2'
-          variant='styles.h2'
-          id='technologies'
-          sx={{ mb: [4, 4, 4], mt: [4, 4, 4] }}
+      <Grid
+        gap={['16px', '16px', '64px']}
+        columns={[1, 1, 2]}
+        sx={{ my: [4], pb: [2] }}
+      >
+        <Box
+          sx={{
+            fontSize: [6],
+            maxWidth: ['100%', '100%', '450px'],
+            mb: [2, 0, 0],
+          }}
         >
-          Technologies and sectors
+          <BigLink href={'/research'} sx={{ color: 'red' }}>
+            Browse our latest research
+          </BigLink>
+        </Box>
+        <Box sx={{ fontSize: [6], maxWidth: ['100%', '100%', '450px'] }}>
+          <BigLink
+            href={
+              'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'
+            }
+            sx={{ color: 'yellow' }}
+          >
+            Download our 2020 annual report
+          </BigLink>
+        </Box>
+      </Grid>
+      <Divider sx={{ my: [0] }}></Divider>
+      <Grid
+        gap={['16px', '16px', '64px']}
+        columns={[1, 1, 2]}
+        sx={{ my: [5], pb: [0, 2, 2] }}
+      >
+        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
+          <Text
+            as='h3'
+            sx={{
+              mb: [3],
+              fontSize: [3],
+              fontFamily: 'heading',
+              letterSpacing: 'smallcaps',
+              color: 'red',
+            }}
+          >
+            RECENT HIGHLIGHTS
+          </Text>
+          <SmallLink href='https://cdrprimer.org/'>CDR Primer</SmallLink>
+          <SmallLink href='/research/dac-calculator'>
+            Direct air capture calculator
+          </SmallLink>
+          <SmallLink href='/permanence/dac-calculator'>
+            Permanence calculator
+          </SmallLink>
+          <SmallLink href='https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf'>
+            Taskforce letter
+          </SmallLink>
+        </Box>
+        <Box sx={{ fontSize: [3] }}>
+          <Text
+            as='h3'
+            sx={{
+              mb: [3],
+              fontSize: [3],
+              fontFamily: 'heading',
+              letterSpacing: 'smallcaps',
+              color: 'yellow',
+            }}
+          >
+            RECENT PRESS
+          </Text>
+          <SmallLink href='https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8'>
+            Financial Times
+          </SmallLink>
+          <SmallLink href='https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/'>
+            Bloomberg
+          </SmallLink>
+          <SmallLink href='https://arstechnica.com/science/2020/11/want-to-offset-your-carbon-footprint-heres-what-you-need-to-know/'>
+            Ars Technica
+          </SmallLink>
+          <SmallLink href='https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/'>
+            Grist
+          </SmallLink>
+        </Box>
+      </Grid>
+      <Divider sx={{ my: [0] }}></Divider>
+      <Box sx={{ pt: [1] }}>
+        <Text as='h2' variant='styles.h2' sx={{ mt: [4, 4, 4], mb: [4, 4, 4] }}>
+          Learn more
         </Text>
-        <Text as='p' sx={{ maxWidth: '800px', mt: [0], mb: [5] }}>
-          We work across a range of strategies that remove carbon dioxide from
-          the atmosphere.
-        </Text>
-        <Technology name={'forests'} color={'green'}>
-          Forests are natural carbon sinks, capturing carbon dioxide from the
-          atmosphere through the chemical reactions of photosynthesis and
-          storing it in their biomass, about half of which is carbon. Carbon
-          removal projects with forests can include planting trees or other
-          vegetation to restore existing forests, or preventing deforestation,
-          which enhances the natural carbon sink — but all remain at risk to
-          natural or human disturbance.
-        </Technology>
-        <Technology name={'soil'} color={'orange'}>
-          Soil carbon sequestration occurs when changes to land management
-          practices increase the storage of carbon in soils. Practices include
-          the addition of cover crops, changes from conventional tillage to no
-          tillage, and applying soil amendments. In theory, these practices can
-          both increase soil storage and crop health, but they must be
-          maintained over time for effective carbon removal.
-        </Technology>
-        <Technology name={'biomass'} color={'yellow'}>
-          When biological systems sequester carbon, it ends up in a form that
-          will eventually decompose and result in carbon dioxide emissions. It
-          is possible to take biomass and convert it to some more durable form,
-          such as building materials or biochar. While producing these materials
-          on its own is not carbon removal, the complete system of biomass
-          production and carbon storage removes carbon dioxide from the
-          atmosphere.
-        </Technology>
-        <Technology name={'DAC'} color={'purple'}>
-          Direct air capture is a class of technologies that use synthetic
-          sorbents or solvents that selectively bind carbon dioxide. Large
-          contactors housing these chemicals use fans to expose them to carbon
-          dioxide, and chemical separation is then used to recover the carbon
-          dioxide in pure form. The resulting stream can be combined with
-          mineralization or geological injection to achieve permanent carbon
-          removal.
-        </Technology>
-        <Technology name={'mineralization'} color={'grey'}>
-          When alkaline materials react with carbon dioxide they form solid
-          carbonate minerals that can achieve effective permanent carbon
-          removal. Source materials include naturally occurring silicates like
-          olivine and serpentine, or wastes from mining operations. Specific
-          implementations can include grinding minerals for reaction with carbon
-          dioxide in ambient air, or injecting pure carbon dioxide into
-          alkaline-rich geological formations.
-        </Technology>
-        <Technology name={'ocean'} color={'teal'}>
-          The world's oceans are vast carbon sinks with a critical role in the
-          carbon cycle. At least two pathways may accelerate uptake and storage
-          of carbon in the ocean. The first is to enhance the productivity of
-          organisms in the ocean, such as phytoplankton. The second is to
-          increase the store of inorganic carbon in the ocean through the
-          extraction, processing, and dissolution of minerals. Both have
-          enormous potential scale, but require significant research and
-          testing.
-        </Technology>
       </Box>
+      <Grid
+        gap={['16px', '16px', '64px']}
+        columns={[2, 2, 4]}
+        sx={{ mb: [4], pb: [3, 3, 4] }}
+      >
+        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
+          <SmallerLink label={'TEAM'} href='/team'>
+            Read about our team and collaborators
+          </SmallerLink>
+        </Box>
+        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
+          <SmallerLink label={'PRESS'} href='/press'>
+            View a list of press about our work
+          </SmallerLink>
+        </Box>
+        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
+          <SmallerLinkExternal
+            label={'GITHUB'}
+            href='https://github.com/carbonplan'
+          >
+            Check out our open source code
+          </SmallerLinkExternal>
+        </Box>
+        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
+          <SmallerLink label={'FUNDING'} href='/funding'>
+            View our sources of funding
+          </SmallerLink>
+        </Box>
+      </Grid>
     </Layout>
+  )
+}
+
+function BigLink({ sx, href, children }) {
+  return (
+    <Box
+      sx={{
+        fontSize: [5, 5, 6],
+        lineHeight: ['1.15em', '1.15em', 'heading'],
+        width: 'fit-content',
+      }}
+    >
+      <Link
+        id='link'
+        sx={{
+          textDecoration: 'none',
+          transition: '0.15s',
+          '&:hover > #arrow': {
+            transform: 'rotate(45deg)',
+          },
+        }}
+        href={href}
+      >
+        {children}
+        <Box
+          as='span'
+          id='arrow'
+          sx={{
+            ml: [2],
+            fontSize: [7],
+            position: 'relative',
+            top: '9px',
+            display: 'inline-block',
+            lineHeight: 0,
+            left: '0px',
+            transition: '0.15s',
+            ...sx,
+          }}
+        >
+          ↗
+        </Box>
+      </Link>
+    </Box>
+  )
+}
+
+function SmallLink({ sx, href, children }) {
+  return (
+    <Box
+      sx={{
+        fontSize: [4],
+        lineHeight: 'heading',
+        width: 'fit-content',
+        mb: [1],
+      }}
+    >
+      <Link
+        id='link'
+        sx={{
+          textDecoration: 'none',
+          '&:hover > #arrow': {
+            transform: 'rotate(45deg)',
+          },
+        }}
+        href={href}
+      >
+        <Box
+          sx={{
+            transition: '0.15s',
+            display: 'inline-block',
+            ...sx,
+          }}
+        >
+          {children}
+        </Box>
+        <Box
+          as='span'
+          id='arrow'
+          sx={{
+            ml: [2],
+            fontSize: [4],
+            position: 'relative',
+            top: '3px',
+            display: 'inline-block',
+            lineHeight: 0,
+            left: '0px',
+            transition: '0.15s',
+            ...sx,
+          }}
+        >
+          ↗
+        </Box>
+      </Link>
+    </Box>
+  )
+}
+
+function SmallerLink({ sx, label, href, children }) {
+  return (
+    <Box
+      sx={{
+        fontSize: [3],
+        lineHeight: '1.2em',
+        width: 'fit-content',
+        mb: [1],
+      }}
+    >
+      <NextLink href={href} passHref>
+        <Link
+          id='link'
+          sx={{
+            textDecoration: 'none',
+            '&:hover > #arrow': {
+              transform: 'rotate(45deg)',
+            },
+          }}
+        >
+          <Box sx={{ transition: '0.15s', maxWidth: '200px', mb: [2] }}>
+            {children}
+          </Box>
+          <Box
+            sx={{
+              transition: '0.15s',
+              display: 'inline-block',
+              textTransform: 'uppercase',
+              letterSpacing: 'smallcaps',
+              fontFamily: 'heading',
+              fontSize: [2],
+              ...sx,
+            }}
+          >
+            {label}
+          </Box>
+          <Box
+            as='span'
+            id='arrow'
+            sx={{
+              ml: [2],
+              fontSize: [4],
+              position: 'relative',
+              top: '3px',
+              display: 'inline-block',
+              lineHeight: 0,
+              left: '0px',
+              transition: '0.15s',
+              ...sx,
+            }}
+          >
+            ↗
+          </Box>
+        </Link>
+      </NextLink>
+    </Box>
+  )
+}
+
+function SmallerLinkExternal({ sx, label, href, children }) {
+  return (
+    <Box
+      sx={{
+        fontSize: [3],
+        lineHeight: 'heading',
+        width: 'fit-content',
+        mb: [1],
+      }}
+    >
+      <Link
+        id='link'
+        href={href}
+        sx={{
+          textDecoration: 'none',
+          '&:hover > #arrow': {
+            transform: 'rotate(45deg)',
+          },
+        }}
+      >
+        <Box sx={{ transition: '0.15s', maxWidth: '200px', mb: [2] }}>
+          {children}
+        </Box>
+        <Box
+          sx={{
+            transition: '0.15s',
+            display: 'inline-block',
+            textTransform: 'uppercase',
+            letterSpacing: 'smallcaps',
+            fontFamily: 'heading',
+            fontSize: [2],
+            ...sx,
+          }}
+        >
+          {label}
+        </Box>
+        <Box
+          as='span'
+          id='arrow'
+          sx={{
+            ml: [2],
+            fontSize: [4],
+            position: 'relative',
+            top: '3px',
+            display: 'inline-block',
+            lineHeight: 0,
+            left: '0px',
+            transition: '0.15s',
+            ...sx,
+          }}
+        >
+          ↗
+        </Box>
+      </Link>
+    </Box>
   )
 }
 

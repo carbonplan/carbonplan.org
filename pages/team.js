@@ -1,7 +1,7 @@
 import { Box, Divider, Styled, Text, Heading, Link, Grid } from 'theme-ui'
 import { Layout } from '@carbonplan/components'
 
-const coreTeam = [
+const data = [
   {
     name: 'Jeremy Freeman',
     role: 'Executive Director',
@@ -63,7 +63,7 @@ const Team = () => {
               gridRowGap: ['16px', '16px', '32px'],
             }}
           >
-            {coreTeam.map((p) => (
+            {data.map((p) => (
               <Person key={p.name} name={p.name} role={p.role} bio={p.bio} />
             ))}
           </Grid>
@@ -110,7 +110,7 @@ const Team = () => {
             <Span sx={{ color: 'green' }}>BARBARA HAYA</Span>
             <Text sx={{ color: 'secondary' }}>UC Berkeley</Text>
           </Box>
-          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+          <Box sx={{ mb: [3], letterSpacing: 'smallcaps', color: 'secondary' }}>
             <Span sx={{ color: 'purple' }}>JENNIFER WILCOX</Span> /{' '}
             <Span sx={{ color: 'purple' }}>NOAH MCQUEEN</Span> /{' '}
             <Span sx={{ color: 'purple' }}>CALEB WOODALL</Span> /{' '}
@@ -120,19 +120,17 @@ const Team = () => {
               University of Pennsylvania
             </Text>
           </Box>
-          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+          <Box sx={{ mb: [3], letterSpacing: 'smallcaps', color: 'secondary' }}>
             <Span sx={{ color: 'purple' }}>ANDREW BERGMAN</Span> /{' '}
             <Span sx={{ color: 'purple' }}>TOLY RINBERG</Span>
             <Text as='p' sx={{ color: 'secondary' }}>
               Harvard University
             </Text>
           </Box>
-          <Box sx={{ mb: [3], letterSpacing: 'smallcaps' }}>
+          <Box sx={{ mb: [3], letterSpacing: 'smallcaps', color: 'secondary' }}>
             <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span> /{' '}
             <Span sx={{ color: 'orange' }}>ERIC SLESSAREV</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              Lawrence Livermore National Laboratory
-            </Text>
+            <Text as='p'>Lawrence Livermore National Laboratory</Text>
           </Box>
           <Box sx={{ mb: [6] }}>
             <Span sx={{ color: 'orange' }}>JANE ZELIKOVA</Span>

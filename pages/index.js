@@ -33,7 +33,8 @@ function Index() {
       >
         <Box>
           <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
-            Data and science for carbon removal
+            Data and <br />
+            science for climate action
           </Text>
           <Box sx={{ mb: [4, 5, 5] }}>
             <Text
@@ -47,7 +48,7 @@ function Index() {
               }}
             >
               Improving the transparency and scientific integrity of carbon
-              removal and climate solutions through open data and tools
+              removal and climate solutions with open data and tools
             </Text>
           </Box>
           <NextLink href='/about'>
