@@ -127,7 +127,7 @@ const About = () => {
           <BigLink href={'/research'} sx={{ color: 'red' }}>Browse our latest research</BigLink>
         </Box>
         <Box sx={{ fontSize: [6], maxWidth: ['100%', '100%', '450px'], }}>
-          <BigLink href={'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-2020-Annual-Report.pdf'} sx={{ color: 'yellow' }}>
+          <BigLink href={'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'} sx={{ color: 'yellow' }}>
             Download our 2020 annual report
           </BigLink>
         </Box>
