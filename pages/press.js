@@ -56,7 +56,7 @@ const data = [
 const Press = () => {
   return (
     <Layout links={'homepage'} title={'press / carbonplan'}>
-      <Box sx={{ mb: [6] }}>
+      <Box sx={{ mb: [5] }}>
         <Box as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
           Press
         </Box>
@@ -66,7 +66,7 @@ const Press = () => {
             featured members of our team.
           </Styled.p>
         </Box>
-        <Grid columns={[1, 1, 2]} sx={{ mb: [6] }}>
+        <Grid columns={[1, 1, 2]} sx={{ rowGap: '16px', columnGap: [0, 0, '64px'], mb: [4, 4, 5] }}>
           {data.map((d) => {
             return <Item data={d} />
           })}
@@ -107,7 +107,8 @@ function Item({ data }) {
             sx={{
               maxWidth: '500px',
               fontSize: [4],
-              my: [3],
+              mt: [2],
+              mb: [2],
               lineHeight: '1.2em',
             }}
           >
@@ -136,7 +137,8 @@ function Item({ data }) {
           id='authors'
           sx={{
             fontSize: [2],
-            my: [2],
+            mt: [0],
+            mb: [2],
             color: 'text',
           }}
         >

@@ -205,7 +205,7 @@ const About = () => {
       <Grid
         gap={['16px', '16px', '64px']}
         columns={[2, 2, 4]}
-        sx={{ mb: [4], pb: [2] }}
+        sx={{ mb: [4], pb: [3, 3, 4] }}
       >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <SmallerLink label={'TEAM'} href='/team'>
