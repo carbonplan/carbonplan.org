@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/components": "^2.5.9",
+    "@carbonplan/components": "^3.1.0",
     "@carbonplan/theme": "^2.3.1",
     "math-random-seed": "^2.0.0",
     "next": "^10.0.5",

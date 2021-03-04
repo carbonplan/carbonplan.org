@@ -87,7 +87,7 @@ const About = () => {
           </Text>
           <Text as='p' sx={{ mb: [3] }}>
             We combine scientific storytelling and modern web technology to
-            explain complex climate concepts with interactive data and visuals,
+            explain complex concepts with interactive data and visuals,
             and provide timely commentary on newsworthy events.
           </Text>
         </Box>
@@ -201,13 +201,13 @@ const About = () => {
         sx={{ mb: [4], pb: [2] }}
       >
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
-          <SmallerLink label={'FAQ'} href='/faq'>Read our frequently asked questions</SmallerLink>
-        </Box>
-        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <SmallerLink label={'TEAM'} href='/team'>Read about our team and collaborators</SmallerLink>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <SmallerLink label={'PRESS'} href='/press'>View a list of press about our work</SmallerLink>
+        </Box>
+        <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
+          <SmallerLinkExternal label={'GITHUB'} href='https://github.com/carbonplan'>Check out our open source code</SmallerLinkExternal>
         </Box>
         <Box sx={{ fontSize: [3], mb: [3, 3, 0] }}>
           <SmallerLink label={'FUNDING'} href='/funding'>View our sources of funding</SmallerLink>
@@ -366,6 +366,64 @@ function SmallerLink({ sx, label, href, children }) {
           </Box>
         </Link>
       </NextLink>
+    </Box>
+  )
+}
+
+function SmallerLinkExternal({ sx, label, href, children }) {
+  return (
+    <Box
+      sx={{
+        fontSize: [3],
+        lineHeight: 'heading',
+        width: 'fit-content',
+        mb: [1],
+      }}
+    >
+      <Link
+        id='link'
+        href={href}
+        sx={{
+          textDecoration: 'none',
+          '&:hover > #arrow': {
+            transform: 'rotate(45deg)',
+          },
+        }}
+      >
+        <Box sx={{ transition: '0.15s', maxWidth: '200px', mb: [2] }}>
+          {children}
+        </Box>
+        <Box
+          sx={{
+            transition: '0.15s',
+            display: 'inline-block',
+            textTransform: 'uppercase',
+            letterSpacing: 'smallcaps',
+            fontFamily: 'heading',
+            fontSize: [2],
+            ...sx,
+          }}
+        >
+          {label}
+        </Box>
+        <Box
+          as='span'
+          id='arrow'
+          sx={{
+            ml: [2],
+            fontSize: [4],
+            position: 'relative',
+            top: '3px',
+            display: 'inline-block',
+            lineHeight: 0,
+            left: '0px',
+            transition: '0.15s',
+            ...sx,
+          }}
+        >
+          ↗
+        </Box>
+      </Link>
     </Box>
   )
 }

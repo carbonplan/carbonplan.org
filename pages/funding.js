@@ -123,6 +123,14 @@ const Funding = () => {
               </Link>
             </Text>
           </Row>
+          <Row>
+            <Text sx={sx.header}>NASA</Text>
+            <Text sx={sx.entry}>
+              <Link href='https://earthdata.nasa.gov/esds/competitive-programs/access/pangeo-ml'>
+                Pangeo ML
+              </Link>
+            </Text>
+          </Row>
         </Box>
       </Box>
     </Layout>
