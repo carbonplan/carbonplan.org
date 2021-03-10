@@ -156,6 +156,7 @@ function Item({ data }) {
         >
           {date}
         </Box>
+        <Box sx={{mt: [2], pb: [1], mb: [1]}}>
         <Link
           sx={{
             textDecoration: 'none',
@@ -167,13 +168,12 @@ function Item({ data }) {
           href={href}
         >
           <Box
+            as='span'
             id='container'
             sx={{
               maxWidth: '500px',
               fontSize: [4],
-              mt: [2],
               mb: authors.length > 0 ? [2] : [1],
-              pb: [1],
               lineHeight: '1.2em',
             }}
           >
@@ -205,12 +205,13 @@ function Item({ data }) {
             </Box>
           </Box>
         </Link>
+        </Box>
         {authors.length > 0 && (
           <Box
             id='authors'
             sx={{
               fontSize: [2],
-              mt: [0],
+              mt: [2],
               mb: [2],
               pb: [1],
               color: 'text',

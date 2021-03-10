@@ -51,10 +51,8 @@ function Index() {
               removal and climate solutions through open data and tools
             </Text>
           </Box>
-          <NextLink href='/about'>
-            <a>
-              <Text sx={sx.nav}>About</Text>
-            </a>
+          <NextLink href='/about' passHref>
+            <Link sx={sx.nav}>About</Link>
           </NextLink>
           <Link sx={sx.nav} href='/reports'>
             Reports
@@ -62,15 +60,11 @@ function Index() {
           <Link sx={sx.nav} href='/research'>
             Research
           </Link>
-          <NextLink href='/team'>
-            <a>
-              <Text sx={sx.nav}>Team</Text>
-            </a>
+          <NextLink href='/team' passHref>
+            <Link sx={sx.nav}>Team</Link>
           </NextLink>
-          <NextLink href='/faq'>
-            <a>
-              <Text sx={sx.nav}>FAQ</Text>
-            </a>
+          <NextLink href='/faq' passHref>
+            <Link sx={sx.nav}>FAQ</Link>
           </NextLink>
         </Box>
         <Box sx={{ display: ['none', 'none', 'inherit'], pr: [4], pt: [5] }}>
