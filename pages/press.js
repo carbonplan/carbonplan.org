@@ -4,6 +4,15 @@ import { Layout } from '@carbonplan/components'
 
 const data = [
   {
+    source: 'GreenBiz',
+    href:
+      'https://www.greenbiz.com/article/digging-complex-confusing-and-contentious-world-soil-carbon-offsets',
+    date: '02-26-2021',
+    title:
+      'Digging into the complex, confusing and contentious world of soil carbon offsets',
+    authors: ['Jim Giles'],
+  },
+  {
     source: 'E&E News',
     href: 'https://www.eenews.net/climatewire/stories/1063723981/',
     date: '02-02-2021',
