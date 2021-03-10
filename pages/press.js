@@ -156,55 +156,55 @@ function Item({ data }) {
         >
           {date}
         </Box>
-        <Box sx={{mt: [2], pb: [1], mb: [1]}}>
-        <Link
-          sx={{
-            textDecoration: 'none',
-
-            '&:hover > #container > #arrow': {
-              transform: 'rotate(45deg)',
-            },
-          }}
-          href={href}
-        >
-          <Box
-            as='span'
-            id='container'
+        <Box sx={{ mt: [2], pb: [1], mb: [1] }}>
+          <Link
             sx={{
-              maxWidth: '500px',
-              fontSize: [4],
-              mb: authors.length > 0 ? [2] : [1],
-              lineHeight: '1.2em',
+              textDecoration: 'none',
+
+              '&:hover > #container > #arrow': {
+                transform: 'rotate(45deg)',
+              },
             }}
+            href={href}
           >
-            <Box as='span' sx={{ transition: '0.15s' }}>
-              {typeof title === 'string' && title}
-              {typeof title !== 'string' && (
-                <span>
-                  {title[0]}
-                  <br />
-                  {title[1]}
-                </span>
-              )}
-            </Box>
             <Box
               as='span'
-              id='arrow'
+              id='container'
               sx={{
-                ml: [2],
-                fontSize: [5],
-                position: 'relative',
-                top: '4px',
-                display: 'inline-block',
-                lineHeight: 0,
-                left: '0px',
-                transition: '0.15s',
+                maxWidth: '500px',
+                fontSize: [4],
+                mb: authors.length > 0 ? [2] : [1],
+                lineHeight: '1.2em',
               }}
             >
-              ↗
+              <Box as='span' sx={{ transition: '0.15s' }}>
+                {typeof title === 'string' && title}
+                {typeof title !== 'string' && (
+                  <span>
+                    {title[0]}
+                    <br />
+                    {title[1]}
+                  </span>
+                )}
+              </Box>
+              <Box
+                as='span'
+                id='arrow'
+                sx={{
+                  ml: [2],
+                  fontSize: [5],
+                  position: 'relative',
+                  top: '4px',
+                  display: 'inline-block',
+                  lineHeight: 0,
+                  left: '0px',
+                  transition: '0.15s',
+                }}
+              >
+                ↗
+              </Box>
             </Box>
-          </Box>
-        </Link>
+          </Link>
         </Box>
         {authors.length > 0 && (
           <Box
