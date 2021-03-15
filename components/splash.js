@@ -75,7 +75,16 @@ const Carbon = () => {
   }
 
   return (
-    <Box sx={{ width: '100%', pt: [2] }}>
+    <Box
+      sx={{
+        maxWidth: '475px',
+        width: '100%',
+        pt: [2],
+        '@media only screen and (min-width: 100em)': {
+          ml: [6],
+        },
+      }}
+    >
       <svg
         style={{ width: '100%', maxWidth: '100%', height: 'auto' }}
         version='1.1'
