@@ -139,6 +139,14 @@ const Funding = () => {
               </Link>
             </Text>
           </Row>
+          <Row>
+            <Text sx={sx.header}>Microsoft AI for Earth</Text>
+            <Text sx={sx.entry}>
+              Forest carbon risk mapping
+              <br />
+              (coming soon)
+            </Text>
+          </Row>
         </Box>
       </Box>
     </Layout>
