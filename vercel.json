@@ -10,6 +10,13 @@
       "dest": "https://cdr-database.carbonplan.org/research/cdr-database$1"
     },
     {
+      "src": "/research/stripe-reports-insights",
+      "status": 307,
+      "headers": {
+        "Location": "https://carbonplan.org/research/stripe-2020-insights"
+      }
+    },
+    {
       "src": "/research/_next(.*)",
       "dest": "https://research.carbonplan.org/_next$1"
     },
