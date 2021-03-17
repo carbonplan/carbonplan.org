@@ -1,30 +1,47 @@
 {
-  "rewrites": [
+  "version": 2,
+  "routes": [
     {
-      "source": "/research/cdr-database/:match*",
-      "destination": "https://cdr-database.carbonplan.org/research/cdr-database:match*"
+      "src": "/research/cdr-database_next(.*)",
+      "dest": "https://cdr-database.carbonplan.org/_next$1"
     },
     {
-      "source": "/research/microsoft-2021-insights:match*",
-      "destination": "https://research.carbonplan.org/research/microsoft-2021-insights:match*"
+      "src": "/research/cdr-database(.*)",
+      "dest": "https://cdr-database.carbonplan.org/research/cdr-database$1"
     },
     {
-      "source": "/research/:match*",
-      "destination": "https://research.carbonplan.org/research:match*"
+      "src": "/research/_next(.*)",
+      "dest": "https://research.carbonplan.org/_next$1"
     },
     {
-      "source": "/data/:match*",
-      "destination": "https://data.carbonplan.org/data:match*"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/jobs",
-      "destination": "https://apply.workable.com/carbonplan/"
+      "src": "/research(.*)",
+      "dest": "https://research.carbonplan.org/research$1"
     },
     {
-      "source": "/reports",
-      "destination": "/research/cdr-database"
+      "src": "/data/api(.*)",
+      "dest": "https://data.carbonplan.org/api$1"
+    },
+    {
+      "src": "/data/_next(.*)",
+      "dest": "https://data.carbonplan.org/_next$1"
+    },
+    {
+      "src": "/data(.*)",
+      "dest": "https://data.carbonplan.org/data$1"
+    },
+    {
+      "src": "/jobs",
+      "status": 307,
+      "headers": {
+        "Location": "https://apply.workable.com/carbonplan/"
+      }
+    },
+    {
+      "src": "/reports",
+      "status": 307,
+      "headers": {
+        "Location": "https://carbonplan.org/research/cdr-database"
+      }
     }
   ]
 }
