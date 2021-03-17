@@ -32,7 +32,11 @@ function Index() {
         sx={{ mb: [5, 0, 0], width: '100%' }}
       >
         <Box>
-          <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5], mb: [4, 5, 6] }}>
+          <Text
+            as='h1'
+            variant='styles.h1'
+            sx={{ mt: [4, 5, 5], mb: [4, 5, 6] }}
+          >
             Data and <br />
             science for climate action
           </Text>
