@@ -32,11 +32,11 @@ function Index() {
         sx={{ mb: [5, 0, 0], width: '100%' }}
       >
         <Box>
-          <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+          <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5], mb: [4, 5, 6] }}>
             Data and <br />
             science for climate action
           </Text>
-          <Box sx={{ mb: [4, 5, 5] }}>
+          <Box sx={{ mb: [4, 5, 6] }}>
             <Text
               as='h2'
               variant='styles.h3'
@@ -54,9 +54,6 @@ function Index() {
           <NextLink href='/about' passHref>
             <Link sx={sx.nav}>About</Link>
           </NextLink>
-          <Link sx={sx.nav} href='/reports'>
-            Reports
-          </Link>
           <Link sx={sx.nav} href='/research'>
             Research
           </Link>

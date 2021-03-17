@@ -162,15 +162,13 @@ const About = () => {
           >
             RECENT HIGHLIGHTS
           </Text>
+          <ArrowLink href='/research/cdr-database'>CDR Database</ArrowLink>
           <ArrowLink href='https://cdrprimer.org/'>CDR Primer</ArrowLink>
           <ArrowLink href='/research/dac-calculator'>
-            Direct air capture calculator
+            Direct Air Capture Calculator
           </ArrowLink>
           <ArrowLink href='/research/permanence-calculator'>
-            Permanence calculator
-          </ArrowLink>
-          <ArrowLink href='https://carbonplan-assets.s3.amazonaws.com/docs/Offset-Task-Force-Comment-Letter-01-05-2021.pdf'>
-            Taskforce letter
+            Permanence Calculator
           </ArrowLink>
         </Box>
         <Box sx={{ fontSize: [3] }}>

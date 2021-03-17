@@ -1,0 +1,26 @@
+{
+  "rewrites": [
+    {
+      "source": "/research/cdr-database/:match*",
+      "destination": "https://cdr-database.carbonplan.org/research/cdr-database:match*"
+    },
+    {
+      "source": "/research/:match*",
+      "destination": "https://research.carbonplan.org/research:match*"
+    },
+    {
+      "source": "/data/:match*",
+      "destination": "https://data.carbonplan.org/data:match*"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/jobs",
+      "destination": "https://apply.workable.com/carbonplan/"
+    },
+    {
+      "source": "/reports",
+      "destination": "/research/cdr-database"
+    }
+  ]
+}
