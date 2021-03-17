@@ -165,7 +165,7 @@ const About = () => {
           <ArrowLink href='/research/cdr-database'>CDR Database</ArrowLink>
           <ArrowLink href='https://cdrprimer.org/'>CDR Primer</ArrowLink>
           <ArrowLink href='/research/dac-calculator'>
-            Direct Air Capture Calculator
+            DAC Calculator
           </ArrowLink>
           <ArrowLink href='/research/permanence-calculator'>
             Permanence Calculator
