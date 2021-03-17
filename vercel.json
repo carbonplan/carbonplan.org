@@ -5,6 +5,10 @@
       "destination": "https://cdr-database.carbonplan.org/research/cdr-database:match*"
     },
     {
+      "source": "/research/microsoft-2021-insights:match*",
+      "destination": "https://research.carbonplan.org/research/microsoft-2021-insights:match*"
+    },
+    {
       "source": "/research/:match*",
       "destination": "https://research.carbonplan.org/research:match*"
     },
