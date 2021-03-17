@@ -40,6 +40,13 @@
       }
     },
     {
+      "src": "/reports/methods",
+      "status": 307,
+      "headers": {
+        "Location": "https://carbonplan.org/research/cdr-database/methods"
+      }
+    },
+    {
       "src": "/reports",
       "status": 307,
       "headers": {
