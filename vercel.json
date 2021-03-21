@@ -2,10 +2,6 @@
   "version": 2,
   "routes": [
     {
-      "src": "/research/cdr-database_next(.*)",
-      "dest": "https://cdr-database.carbonplan.org/_next$1"
-    },
-    {
       "src": "/research/cdr-database(.*)",
       "dest": "https://cdr-database.carbonplan.org/research/cdr-database$1"
     },
@@ -17,16 +13,8 @@
       }
     },
     {
-      "src": "/research/_next(.*)",
-      "dest": "https://research.carbonplan.org/_next$1"
-    },
-    {
       "src": "/research(.*)",
       "dest": "https://research.carbonplan.org/research$1"
-    },
-    {
-      "src": "/data/_next(.*)",
-      "dest": "https://data.carbonplan.org/_next$1"
     },
     {
       "src": "/data(.*)",
