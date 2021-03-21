@@ -1,45 +1,34 @@
 {
-  "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/research/cdr-database(.*)",
-      "dest": "https://cdr-database.carbonplan.org/research/cdr-database$1"
+      "source": "/research/cdr-database(.*)",
+      "destination": "https://cdr-database.carbonplan.org/research/cdr-database$1"
     },
     {
-      "src": "/research/stripe-reports-insights",
-      "status": 307,
-      "headers": {
-        "Location": "https://carbonplan.org/research/stripe-2020-insights"
-      }
+      "source": "/research(.*)",
+      "destination": "https://research.carbonplan.org/research$1"
     },
     {
-      "src": "/research(.*)",
-      "dest": "https://research.carbonplan.org/research$1"
+      "source": "/data(.*)",
+      "destination": "https://data.carbonplan.org/data$1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/research/stripe-reports-insights",
+      "destination": "https://carbonplan.org/research/stripe-2020-insights"
     },
     {
-      "src": "/data(.*)",
-      "dest": "https://data.carbonplan.org/data$1"
+      "source": "/jobs",
+      "destination": "https://apply.workable.com/carbonplan/"
     },
     {
-      "src": "/jobs",
-      "status": 307,
-      "headers": {
-        "Location": "https://apply.workable.com/carbonplan/"
-      }
+      "source": "/reports/methods",
+      "destination": "https://carbonplan.org/research/cdr-database/methods"
     },
     {
-      "src": "/reports/methods",
-      "status": 307,
-      "headers": {
-        "Location": "https://carbonplan.org/research/cdr-database/methods"
-      }
-    },
-    {
-      "src": "/reports",
-      "status": 307,
-      "headers": {
-        "Location": "https://carbonplan.org/research/cdr-database"
-      }
+      "source": "/reports",
+      "destination": "https://carbonplan.org/research/cdr-database"
     }
   ]
 }
