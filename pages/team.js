@@ -38,6 +38,12 @@ const data = [
     bio:
       'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University.',
   },
+  {
+    name: 'Jane Zelikova',
+    role: 'Senior Fellow',
+    bio:
+      'Jane is an ecosystem scientist working at the intersection of climate science and policy. Her work focuses on advancing the science of engineered and natural carbon sequestration. She earned a PhD from the University of Colorado, is a researcher at the University of Wyoming, and is the founder of 500 Women Scientists.',
+  },
 ]
 
 const Team = () => {
@@ -131,12 +137,6 @@ const Team = () => {
             <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span> /{' '}
             <Span sx={{ color: 'orange' }}>ERIC SLESSAREV</Span>
             <Text as='p'>Lawrence Livermore National Laboratory</Text>
-          </Box>
-          <Box sx={{ mb: [6] }}>
-            <Span sx={{ color: 'orange' }}>JANE ZELIKOVA</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              University of Wyoming
-            </Text>
           </Box>
         </Box>
       </Box>
