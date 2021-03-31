@@ -133,7 +133,7 @@ const Team = () => {
               Harvard University
             </Text>
           </Box>
-          <Box sx={{ mb: [3], letterSpacing: 'smallcaps', color: 'secondary' }}>
+          <Box sx={{ mb: [6], letterSpacing: 'smallcaps', color: 'secondary' }}>
             <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span> /{' '}
             <Span sx={{ color: 'orange' }}>ERIC SLESSAREV</Span>
             <Text as='p'>Lawrence Livermore National Laboratory</Text>
