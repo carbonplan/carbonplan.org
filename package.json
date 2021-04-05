@@ -21,7 +21,7 @@
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
     "@carbonplan/components": "^4.0.6",
-    "@carbonplan/theme": "^3.0.0",
+    "@carbonplan/theme": "^4.0.0",
     "math-random-seed": "^2.0.0",
     "next": "^10.0.5",
     "react": "^16.14.0",
