@@ -5,6 +5,10 @@
       "destination": "https://cdr-database.carbonplan.org/research/cdr-database$1"
     },
     {
+      "source": "/research/forest-risks(.*)",
+      "destination": "https://victorious-sky-0813bc21e.azurestaticapps.net/research/forest-risks$1"
+    },
+    {
       "source": "/research(.*)",
       "destination": "https://research.carbonplan.org/research$1"
     },
