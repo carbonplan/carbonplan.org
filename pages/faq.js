@@ -50,8 +50,8 @@ const FAQ = () => {
           project-specific funding, we list as soon as the project, or our
           involvement in the project, becomes public. We also include the terms
           and conditions of our engagements. View{' '}
-          <InternalLink href='/funding'>our list</InternalLink>
-          of funding sources.
+          <InternalLink href='/funding'>our list</InternalLink> of funding
+          sources.
         </Answer>
         <Question>Who designed this website?</Question>
         <Answer>

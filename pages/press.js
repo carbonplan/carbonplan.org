@@ -160,6 +160,11 @@ function Item({ data, final = false }) {
             ],
           },
         },
+        '@media (hover: none) and (pointer: coarse)': {
+          '&:hover': {
+            color: 'primary',
+          },
+        },
       }}
       href={href}
     >

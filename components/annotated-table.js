@@ -17,7 +17,6 @@ const AnnotatedTable = ({ heading, data, sidenote, children }) => {
         <Column start={[2, 3]} width={[5, 6, 6, 6]}>
           <Table
             data={data}
-            heading={heading}
             columns={[6]}
             start={[
               [1, 1, 1, 1],
