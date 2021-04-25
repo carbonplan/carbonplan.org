@@ -152,7 +152,9 @@ const Index = () => {
           </Box>
         </Column>
         <Column start={[1, 2, 4, 4]} width={[5]}>
-          <Box sx={{ fontSize: [2, 2, 2, 3] }}>{research.summary}</Box>
+          <Box sx={{ fontSize: [3, 3, 3, 4], lineHeight: 'h3' }}>
+            {research.summary}
+          </Box>
         </Column>
       </Row>
       <Figure />
