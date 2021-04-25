@@ -20,6 +20,11 @@ const sx = {
     textDecoration: 'none',
     display: 'block',
     width: 'fit-content',
+    '@media (hover: none) and (pointer: coarse)': {
+      '&:hover': {
+        color: 'primary',
+      },
+    },
   },
 }
 
