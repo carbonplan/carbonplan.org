@@ -7,7 +7,7 @@
     "dev": "next -p 3000",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write README.md '{components,lib,pages}/**/*.js'"
+    "format": "prettier --write README.md '{data,components,pages}/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -20,13 +20,17 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/components": "^4.0.6",
-    "@carbonplan/theme": "^3.0.0",
-    "math-random-seed": "^2.0.0",
-    "next": "^10.0.5",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "theme-ui": "^0.3.5"
+    "@carbonplan/components": "^7.1.1",
+    "@carbonplan/theme": "^5.0.0",
+    "@stripe/stripe-js": "^1.13.2",
+    "d3-array": "^2.12.1",
+    "d3-format": "^2.0.0",
+    "d3-scale": "^3.3.0",
+    "d3-shape": "^2.1.0",
+    "next": "^10.1.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "theme-ui": "^0.7.2"
   },
   "devDependencies": {
     "prettier": "2.2.1"

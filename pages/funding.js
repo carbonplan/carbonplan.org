@@ -1,174 +1,59 @@
-import { Box, Text, Styled, Grid, Link } from 'theme-ui'
-import { Layout } from '@carbonplan/components'
+import { Box, Text, Themed, Grid, Link } from 'theme-ui'
+import { default as NextLink } from 'next/link'
+import { Layout, Row, Column, Guide, Links } from '@carbonplan/components'
+import Heading from '../components/heading'
+import AnnotatedTable from '../components/annotated-table'
+import { unrestricted, projectSpecific } from '../data/funding'
 
-const sx = {
-  header: {
-    textTransform: 'uppercase',
-    letterSpacing: 'smallcaps',
-    fontFamily: 'heading',
-    fontSize: [2],
-  },
-  entry: {
-    fontSize: [2],
-    fontFamily: 'faux',
-    letterSpacing: 'faux',
-    mb: ['1px'],
-  },
-}
+const { InternalLink } = Links
 
 const Funding = () => {
   return (
     <Layout links={'homepage'} title={'funding / carbonplan'}>
-      <Box sx={{ maxWidth: '700px', mb: [6] }}>
-        <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
+      <Guide color='rainbow' />
+      <Box sx={{ mb: [8, 8, 9, 10] }}>
+        <Heading
+          sidenote={
+            <span>
+              Interested in supporting our work? Make a{' '}
+              <InternalLink href='/donate'>donation</InternalLink>.
+            </span>
+          }
+        >
           Funding
-        </Text>
-        <Styled.p>
-          We receive a mix of unrestricted funding through donations and grants,
-          and project-specific funding through contracts and grants. We are
-          incredibly grateful to all of our donors, funders, and partners. Here
-          we list all sources of funding greater than $1000 in either category.
-          Funding for additional, ongoing projects will be listed in the future.
-        </Styled.p>
-        <Styled.h2>Unrestricted donations</Styled.h2>
-        <Box
-          sx={{
-            maxWidth: '700px',
-            borderStyle: 'solid',
-            borderWidth: '0px',
-            borderBottomWidth: '1px',
-            borderColor: 'muted',
-          }}
-        >
-          <Row>
-            <Text sx={sx.header}>Pamela Mensch</Text>
-            <Text sx={sx.entry}>Individual</Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>Hampus Jakobsson</Text>
-            <Text sx={sx.entry}>Individual</Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>
-              Jason Jacobs + <br />
-              Allison Pincus-Jacobs
-            </Text>
-            <Text sx={sx.entry}>Individual</Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>
-              Colin Rust + <br />
-              Jeannie Tseng
-            </Text>
-            <Text sx={sx.entry}>Individual</Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>Teach a Man to Fish Foundation</Text>
-            <Text sx={sx.entry}>Individual</Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>Eutopia Foundation</Text>
-            <Text sx={sx.entry}>Individual</Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>Incite Labs</Text>
-            <Text sx={sx.entry}>Corporate</Text>
-          </Row>
+        </Heading>
+        <Row>
+          <Column start={[1, 1, 2, 2]} width={[6, 6, 6, 6]}>
+            <Box
+              sx={{
+                fontSize: [3, 3, 3, 4],
+                fontFamily: 'body',
+                lineHeight: 'body',
+                letterSpacing: 'body',
+              }}
+            >
+              We receive a mix of unrestricted funding through donations and
+              grants, and project-specific funding through contracts and grants.
+              We are incredibly grateful to all of our donors, funders, and
+              partners. Here we list all sources of funding greater than $1000
+              in either category. Funding for additional, ongoing projects will
+              be listed in the future.
+            </Box>
+          </Column>
+        </Row>
+        <Box sx={{ mb: [2, 3, 4, 5] }}>
+          <AnnotatedTable
+            heading='Unrestricted donations'
+            data={unrestricted}
+          />
         </Box>
-        <Styled.h2>Project-specific funding</Styled.h2>
-        <Box
-          sx={{
-            maxWidth: '700px',
-            borderStyle: 'solid',
-            borderWidth: '0px',
-            borderBottomWidth: '1px',
-            borderColor: 'muted',
-          }}
-        >
-          <Row>
-            <Text sx={sx.header}>Carbon 180</Text>
-            <Text sx={sx.entry}>
-              <Link href='https://medium.com/@carbon180/all-star-fellows-join-carbon180-7fdbd00eae3b'>
-                Entrepreneur in Residence Fellowship
-              </Link>
-            </Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>Stripe</Text>
-            <Text sx={sx.entry}>
-              <Link href='/research/stripe-reports-insights'>
-                Negative Emissions Purchase 2020
-              </Link>
-            </Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>WattTime</Text>
-            <Text sx={sx.entry}>
-              <Link href='https://www.climatetrace.org'>Climate TRACE</Link>
-            </Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>Generation IM</Text>
-            <Text sx={sx.entry}>
-              Guidance on evaluating climate benefits from investments
-            </Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>ClimateWorks</Text>
-            <Text sx={sx.entry}>
-              <Link href='/research/permanence-calculator'>
-                Permanence calculator
-              </Link>
-            </Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>
-              Lowercase Carbon +<br />
-              Rio Vista Foundation +<br />
-              Climateworks
-            </Text>
-            <Text sx={sx.entry}>
-              <Link href='https://cdrprimer.org'>CDR Primer</Link>
-            </Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>NASA</Text>
-            <Text sx={sx.entry}>
-              <Link href='https://earthdata.nasa.gov/esds/competitive-programs/access/pangeo-ml'>
-                Pangeo ML
-              </Link>
-            </Text>
-          </Row>
-          <Row>
-            <Text sx={sx.header}>Microsoft AI for Earth</Text>
-            <Text sx={sx.entry}>
-              Forest carbon risk mapping
-              <br />
-              (coming soon)
-            </Text>
-          </Row>
-        </Box>
+        <AnnotatedTable
+          heading='Project-specific funding'
+          data={projectSpecific}
+          variant='narrow'
+        />
       </Box>
     </Layout>
-  )
-}
-
-function Row({ children }) {
-  return (
-    <Grid
-      columns={[1, '350px 1fr', '350px 1fr']}
-      gap={[1, 4, 4]}
-      sx={{
-        borderStyle: 'solid',
-        borderWidth: '0px',
-        borderTopWidth: '1px',
-        borderColor: 'muted',
-        pt: [3],
-        pb: ['22px', 3, 3],
-      }}
-    >
-      {children}
-    </Grid>
   )
 }
 
