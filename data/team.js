@@ -50,57 +50,52 @@ const team = [
 ]
 
 const board = [
-  [
-    'Jeremy Freeman',
-    'CarbonPlan',
-  ],
-  [
-    'Kelly Gannon',
-    'Global Fund for Women',
-  ],
-  [
-    'Zeke Hausfather',
-    'CarbonBrief / Breakthrough Institute',
-  ],
+  ['Jeremy Freeman', 'CarbonPlan'],
+  ['Kelly Gannon', 'Global Fund for Women'],
+  ['Zeke Hausfather', 'CarbonBrief / Breakthrough Institute'],
 ]
 
 const collaborators = [
   [
     'Grayson Badgley',
-      <span>
-        Black Rock Forest Consortium + <br /> Columbia University
-      </span>
+    <span>
+      Black Rock Forest Consortium + <br /> Columbia University
+    </span>,
   ],
-  [
-    'Bill Anderegg',
-    'University of Utah',
-  ],
-  [
-    'Anna Trugman',
-    'UC Santa Barbara',
-  ],
-  [
-    'Barbara Haya',
-    'UC Berkeley',
-  ],
+  ['Bill Anderegg', 'University of Utah'],
+  ['Anna Trugman', 'UC Santa Barbara'],
+  ['Barbara Haya', 'UC Berkeley'],
   [
     <span>
-      Jennifer Wilcox<br/>
-      Noah McQueen<br/>
-      Caleb Woodall<br/>
-      HÉLÈNE PILORGÉ<br/>
-      Ben Kolosz<br/>
+      Jennifer Wilcox
+      <br />
+      Noah McQueen
+      <br />
+      Caleb Woodall
+      <br />
+      HÉLÈNE PILORGÉ
+      <br />
+      Ben Kolosz
+      <br />
     </span>,
     'University of Pennsylvania',
   ],
   [
-    <span>Andrew Bergman<br/>Toly Rinberg</span>,
+    <span>
+      Andrew Bergman
+      <br />
+      Toly Rinberg
+    </span>,
     'Harvard University',
   ],
   [
-    <span>Jennifer Pett-Ridge<br/>Eric Slessarev</span>,
+    <span>
+      Jennifer Pett-Ridge
+      <br />
+      Eric Slessarev
+    </span>,
     'Lawrence Livermore National Laboratory',
-  ]
+  ],
 ]
 
 export { team, board, collaborators }

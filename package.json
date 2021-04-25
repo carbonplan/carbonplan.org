@@ -7,7 +7,7 @@
     "dev": "next -p 3000",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write README.md '{components,lib,pages}/**/*.js'"
+    "format": "prettier --write README.md '{data,components,pages}/**/*.js'"
   },
   "repository": {
     "type": "git",
