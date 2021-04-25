@@ -42,7 +42,7 @@ const Index = () => {
       <Guide />
       <Box
         sx={{
-          mb: [3, 6, 7, 8],
+          mb: [-1, 6, 7, 8],
         }}
       >
         <Splash />
@@ -60,9 +60,11 @@ const Index = () => {
         </Column>
         <Column start={[1, 4, 6, 6]} width={[6, 5, 6, 6]}>
           <Box
+            as='h1'
             sx={{
               fontFamily: 'heading',
               lineHeight: 'heading',
+              fontWeight: 'heading',
               fontSize: [6, 6, 7, 8],
             }}
           >
@@ -71,6 +73,7 @@ const Index = () => {
           <Row columns={[6, 5, 6, 6]}>
             <Column start={[1]} width={[5, 4, 4, 4]}>
               <Box
+                as='p'
                 sx={{
                   fontSize: [3, 3, 3, 4],
                   lineHeight: 'h3',
@@ -84,7 +87,7 @@ const Index = () => {
               </Box>
             </Column>
           </Row>
-          <Box sx={{ mt: [3, 4, 4, 5] }}>
+          <Box sx={{ mt: ['12px', 4, 4, 5] }}>
             <Row columns={[6, 5, 6, 6]}>
               <Column as='nav' start={[1]} width={[4, 4, 4, 4]}>
                 <InternalNav href={'/about'}>About</InternalNav>
@@ -285,6 +288,11 @@ function InternalNav({ children, href, final = false }) {
             '&:hover': {
               borderColor: 'secondary',
               color: 'secondary',
+            },
+          },
+          '@media (hover: none) and (pointer: coarse)': {
+            '&:hover': {
+              color: 'primary',
             },
           },
         }}
