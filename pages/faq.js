@@ -62,7 +62,7 @@ const FAQ = () => {
           and implementation. Talk to them about your next project. Seriously.
           Our web development leverages great open-source tools like{' '}
           <Link href='https://github.com/system-ui/theme-ui'>Theme UI</Link> and{' '}
-          <Link href='https://github.com/vercel/next.js/'>Next.js</Link>, and
+          <Link href='https://github.com/vercel/next.js'>Next.js</Link>, and
           the code powering all of our sites is MIT licensed and on GitHub. If
           you want to learn more check out our{' '}
           <Link href='https://github.com/carbonplan/design'>design system</Link>{' '}
