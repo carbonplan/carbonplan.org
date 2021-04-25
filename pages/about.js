@@ -442,7 +442,7 @@ function WelcomeArrow() {
             'calc(100% + 32px)',
             'calc(100% + 42px)',
           ],
-          ml: '-3px',
+          ml: '-2px',
         }}
       >
         <Box
@@ -497,13 +497,14 @@ function WelcomeArrowMobile() {
         height: '100%',
         display: 'flex',
         animationDuration: '4000ms',
-        animationPlayState: 'paused',
+        animationPlayState: 'running',
         animationDelay: '1000ms',
         animationName: animateDown.toString(),
         animationIterationCount: 'infinite',
+        mt: '1px',
       }}
     >
-      <Box sx={{ width: '100%', height: '20px' }}>
+      <Box sx={{ flex: 0, width: '100%', height: '20px' }}>
         <Box
           sx={{
             display: 'flex',
@@ -513,39 +514,31 @@ function WelcomeArrowMobile() {
             fill: 'none',
           }}
         >
-          <svg x='0px' y='0px' width='20px' height='100%'>
-            <circle vectorEffect='non-scaling-stroke' cx='10' cy='10' r='9' />
+          <svg x='0px' y='0px' width='23px' height='22px'>
+            <circle vectorEffect='non-scaling-stroke' cx='11' cy='10' r='9' />
           </svg>
         </Box>
+      </Box>
+      <Box sx={{ height: '100%', transform: 'translateX(calc(50% - 1px))' }}>
+        <Box
+          sx={{
+            height: '100%',
+            width: '1px',
+            mt: '-1px',
+            pb: '5px',
+            bg: 'primary',
+          }}
+        />
       </Box>
       <Box
         sx={{
-          height: '100%',
+          position: 'relative',
+          top: '10px',
+          mt: '-21px',
           width: '100%',
-          flex: '1 1 auto',
-          stroke: 'primary',
-          strokeWidth: 1,
+          height: '20px',
         }}
       >
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-          <svg
-            x='0px'
-            y='0px'
-            width='30'
-            height='100%'
-            preserveAspectRatio='none'
-          >
-            <line
-              vectorEffect='non-scaling-stroke'
-              x1='50%'
-              x2='50%'
-              y1='0%'
-              y2='100%'
-            />
-          </svg>
-        </Box>
-      </Box>
-      <Box sx={{ width: '100%', height: '20px' }}>
         <Box
           sx={{
             display: 'flex',
@@ -553,21 +546,20 @@ function WelcomeArrowMobile() {
             stroke: 'primary',
             strokeWidth: 1,
             fill: 'none',
-            mt: ['-10px'],
           }}
         >
-          <svg x='0px' y='0px' width='20px' height='100%'>
+          <svg x='0px' y='0px' width='23px' height='22px'>
             <line
               vectorEffect='non-scaling-stroke'
-              x1='0'
-              x2='10'
+              x1='1'
+              x2='11'
               y1='0'
               y2='10'
             />
             <line
               vectorEffect='non-scaling-stroke'
-              x1='20'
-              x2='10'
+              x1='21'
+              x2='11'
               y1='0'
               y2='10'
             />
