@@ -100,7 +100,7 @@ const About = () => {
             </Box>
           </Column>
         </Row>
-        <Row sx={{ mb: [3, 5, 6, 7] }}>
+        <Row sx={{ mb: [5, 5, 6, 7], pb: [1, 0, 0, 0] }}>
           <Column start={[1, 2, 2, 2]} width={[1]}>
             <WelcomeArrowMobile />
           </Column>
