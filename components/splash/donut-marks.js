@@ -45,7 +45,7 @@ const Donut = ({ playState, start, end, color, i }) => {
           strokeDashoffset: dash(start) + '%',
           strokeDasharray: perimeter + '%',
           stroke: playState ? color : 'secondary',
-          strokeWidth: '9px',
+          strokeWidth: '4.4%',
           opacity: 1,
           vectorEffect: 'non-scaling-stroke',
           transition: 'stroke 0.5s ease-out',
@@ -63,7 +63,8 @@ const Donut = ({ playState, start, end, color, i }) => {
           strokeDashoffset: dash(100) + '%',
           strokeDasharray: perimeter + '%',
           stroke: playState ? color : 'secondary',
-          strokeWidth: '9px',
+          strokeWidth: '4.4%',
+          transition: 'stroke 0.5s ease-out',
           opacity: 0.2,
           vectorEffect: 'non-scaling-stroke',
         }}
