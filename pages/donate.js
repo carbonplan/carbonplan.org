@@ -7,7 +7,7 @@ import Heading from '../components/heading'
 const { ArrowButton } = Buttons
 
 const stripePromise = loadStripe(
-  'pk_test_51IhKHNKRZDalHX4oiolyojytGNViG2I0IIEDBbCZSc8C5Dlg2teqarxbJRIn7l36Ht7A36zNH3laLP96b2v1aHP700NwMiGXV5'
+  'pk_live_51IhKHNKRZDalHX4oADxXmtkSTQ45IlEKSQsr1fJPysjRPs3EZcm0u5CoqPF3QVqTHVygaFjhx7n2CTPdpFlwCuy800vm5I5c8j'
 )
 
 const priceIds = {
@@ -94,6 +94,7 @@ const Donate = () => {
         cancelUrl: 'https://redesign.carbonplan.org/donate',
       })
     } catch (err) {
+      console.log(err)
       setStatus('error')
       setTimeout(() => {
         setStatus(null)
