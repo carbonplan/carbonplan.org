@@ -90,8 +90,8 @@ const Donate = () => {
           },
         ],
         mode: 'payment',
-        successUrl: 'https://redesign.carbonplan.org/thanks',
-        cancelUrl: 'https://redesign.carbonplan.org/donate',
+        successUrl: 'https://carbonplan.org/thanks',
+        cancelUrl: 'https://carbonplan.org/donate',
       })
     } catch (err) {
       console.log(err)
