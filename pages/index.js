@@ -42,6 +42,7 @@ const Index = () => {
       <Guide />
       <Box
         sx={{
+          mt: [-1, 0, 0, 0],
           mb: [-1, 6, 7, 8],
         }}
       >
@@ -63,7 +64,7 @@ const Index = () => {
             as='h1'
             sx={{
               fontFamily: 'heading',
-              lineHeight: 'heading',
+              lineHeight: ['1.025', 'heading', 'heading', 'heading'],
               fontWeight: 'heading',
               fontSize: [6, 6, 7, 8],
             }}
@@ -77,7 +78,7 @@ const Index = () => {
                 sx={{
                   fontSize: [3, 3, 3, 4],
                   lineHeight: 'h3',
-                  pt: [1, 0, 0, 0],
+                  pt: ['2px', 0, 0, 0],
                   mb: [2, 3, 0, 0],
                   mt: [3, 4, 4, 5],
                 }}
