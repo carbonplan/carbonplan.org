@@ -1,144 +1,87 @@
-import { Box, Divider, Styled, Text, Heading, Link, Grid } from 'theme-ui'
-import { Layout } from '@carbonplan/components'
+import { Box, Image, Divider, Link, Grid } from 'theme-ui'
+import { Layout, Row, Column, Guide } from '@carbonplan/components'
+import Heading from '../components/heading'
+import AnnotatedTable from '../components/annotated-table'
+import { team, board, collaborators } from '../data/team'
 
-const data = [
-  {
-    name: 'Jeremy Freeman',
-    role: 'Executive Director',
-    bio:
-      'Jeremy is a scientist with a passion for open science, open source software, and bringing cross-disciplinary teams together to tackle big problems. He holds a PhD in Neural Science from New York University and a BA in Neuroscience from Swarthmore College.',
-  },
-  {
-    name: 'Joe Hamman',
-    role: 'Technology Director',
-    bio:
-      'Joe is a climate scientist and engineer. He is passionate about open science and his work has long focused on the development of open data and software tools for basic and applied research. He holds a MS and PhD in Civil Engineering from the University of Washington and a PE in Washington State.',
-  },
-  {
-    name: 'Danny Cullenward',
-    role: 'Policy Director',
-    bio:
-      'Danny is an energy economist and lawyer focused on the design and implementation of scientifically grounded climate policy. He holds a JD and PhD from Stanford University, where he teaches classes on energy law and climate policy.',
-  },
-  {
-    name: 'Oriana Chegwidden',
-    role: 'Research Scientist',
-    bio:
-      'Oriana is a climate scientist committed to conducting impactful, equitable science. She is an alum of AmeriCorps, where she worked to support immigrant rights. She holds a PhD in Civil and Environmental Engineering from the University of Washington and a BS in Chemistry from Haverford College.',
-  },
-  {
-    name: 'Cindy Chiao',
-    role: 'Data Scientist',
-    bio:
-      'Cindy is a data and environmental scientist. She is passionate about sustainable development and is excited to contribute via data analysis and machine learning. She holds a MSE in Environmental Engineering and a MS in Sustainable Systems from the University of Michigan.',
-  },
-  {
-    name: 'Freya Chay',
-    role: 'Program Analyst',
-    bio:
-      'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University.',
-  },
-  {
-    name: 'Jane Zelikova',
-    role: 'Senior Fellow',
-    bio:
-      'Jane is an ecosystem scientist working at the intersection of climate science and policy. Her work focuses on advancing the science of engineered and natural carbon sequestration. She earned a PhD from the University of Colorado, is a researcher at the University of Wyoming, and is the founder of 500 Women Scientists.',
-  },
-]
+const colors = ['red', 'orange', 'yellow', 'pink']
 
 const Team = () => {
   return (
-    <Layout links={'homepage'} title={'team / carbonplan'}>
-      <Box sx={{ width: '100%' }}>
-        <Text as='h1' variant='styles.h1' sx={{ mt: [4, 5, 5] }}>
-          Team
-        </Text>
-        <Styled.h2>Core team</Styled.h2>
-        <Box sx={{ fontSize: [3], pt: [2, 0, 0], pb: [1] }}>
-          <Text as='p' sx={{ mb: [4, 4, 4], maxWidth: '700px' }}>
+    <Layout links={'homepage'} title={'team / carbonplan'} nav={'team'}>
+      <Guide />
+      <Heading
+        sidenote={
+          <span>
             Interested in joining our team? Check out our{' '}
-            <Link href='https://apply.workable.com/carbonplan/'>
-              job openings
-            </Link>
-            .
-          </Text>
-          <Grid
-            columns={[1, 1, 2]}
-            sx={{
-              gridColumnGap: ['16px', '16px', '64px'],
-              gridRowGap: ['16px', '16px', '32px'],
-            }}
+            <Link href='https://carbonplan.org/jobs'>job openings</Link>.
+          </span>
+        }
+      >
+        Team
+      </Heading>
+      <Row>
+        <Column start={[1, 2]} width={[6, 3]}>
+          <Box
+            as='h2'
+            variant='styles.h2'
+            sx={{ mt: [0, 0, 0, 0], mb: [3, 4, 5, 6] }}
           >
-            {data.map((p) => (
-              <Person key={p.name} name={p.name} role={p.role} bio={p.bio} />
-            ))}
-          </Grid>
-        </Box>
-        <Divider sx={{ mt: [4] }} />
-        <Heading as='h2' variant='styles.h2' sx={{ my: [4, 4, 4], pt: [1] }}>
-          Board
-        </Heading>
-        <Box sx={{ fontSize: [3], pb: [1] }}>
-          <Person name='Jeremy Freeman' role='CarbonPlan' />
-          <Person name='Kelly Gannon' role='Global Fund for Women' />
-          <Person
-            name='Zeke Hausfather'
-            role='Breakthrough Institute / Carbon Brief'
-          />
-        </Box>
-        <Divider sx={{ mt: [4] }} />
-        <Text as='h2' variant='styles.h2' sx={{ my: [4, 4, 4], pt: [1] }}>
-          Collaborators
-        </Text>
-        <Box sx={{ fontSize: [3] }}>
-          <Text as='p' sx={{ mb: [4], maxWidth: '700px' }}>
-            We collaborate closely with a community of experts and advisors.
-            Interested in working together? Email us{' '}
-            <Link href='mailto:hello@carbonplan.org'>hello@carbonplan.org</Link>
-          </Text>
-          <Box sx={{ mb: [3] }}>
-            <Span sx={{ color: 'green' }}>BILL ANDEREGG</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              University of Utah
-            </Text>
+            Core team
           </Box>
-          <Box sx={{ mb: [3] }}>
-            <Span sx={{ color: 'green' }}>GRAYSON BADGLEY</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              Black Rock Forest Consortium / Columbia University
-            </Text>
+        </Column>
+      </Row>
+      <Row sx={{ mt: [2, 3, 4, 5], mb: [4, 5, 6, 7] }}>
+        <Column start={[1, 2]} width={[6, 8, 10, 10]}>
+          <Box sx={{ pt: [2, 0, 0], pb: [1] }}>
+            <Grid
+              columns={[1, 2, 2, 2]}
+              sx={{
+                gridColumnGap: [4, 5, 5, 6],
+                gridRowGap: [4, 5, 5, 6],
+              }}
+            >
+              {team
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((p, i) => (
+                  <Person
+                    key={p.name}
+                    name={p.name}
+                    role={p.role}
+                    bio={p.bio}
+                    final={i == team.length - 1}
+                    penultimate={i == team.length - 2}
+                    color={colors[i % 4]}
+                  />
+                ))}
+            </Grid>
           </Box>
-          <Box sx={{ mb: [3] }}>
-            <Span sx={{ color: 'green' }}>ANNA TRUGMAN</Span>
-            <Text sx={{ color: 'secondary' }}>UC Santa Barbara</Text>
-          </Box>
-          <Box sx={{ mb: [3] }}>
-            <Span sx={{ color: 'green' }}>BARBARA HAYA</Span>
-            <Text sx={{ color: 'secondary' }}>UC Berkeley</Text>
-          </Box>
-          <Box sx={{ mb: [3], letterSpacing: 'smallcaps', color: 'secondary' }}>
-            <Span sx={{ color: 'purple' }}>JENNIFER WILCOX</Span> /{' '}
-            <Span sx={{ color: 'purple' }}>NOAH MCQUEEN</Span> /{' '}
-            <Span sx={{ color: 'purple' }}>CALEB WOODALL</Span> /{' '}
-            <Span sx={{ color: 'purple' }}>HÉLÈNE PILORGÉ</Span> /{' '}
-            <Span sx={{ color: 'purple' }}>BEN KOLOSZ</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              University of Pennsylvania
-            </Text>
-          </Box>
-          <Box sx={{ mb: [3], letterSpacing: 'smallcaps', color: 'secondary' }}>
-            <Span sx={{ color: 'purple' }}>ANDREW BERGMAN</Span> /{' '}
-            <Span sx={{ color: 'purple' }}>TOLY RINBERG</Span>
-            <Text as='p' sx={{ color: 'secondary' }}>
-              Harvard University
-            </Text>
-          </Box>
-          <Box sx={{ mb: [6], letterSpacing: 'smallcaps', color: 'secondary' }}>
-            <Span sx={{ color: 'orange' }}>JENNIFER PETT-RIDGE</Span> /{' '}
-            <Span sx={{ color: 'orange' }}>ERIC SLESSAREV</Span>
-            <Text as='p'>Lawrence Livermore National Laboratory</Text>
-          </Box>
-        </Box>
+        </Column>
+      </Row>
+      <Row>
+        <Column start={[1, 2]} width={[6, 8, 9, 9]}>
+          <Divider sx={{ my: [0] }} />
+        </Column>
+      </Row>
+      <Box sx={{ mb: [3, 4, 5, 6] }}>
+        <AnnotatedTable heading='Board' data={board} />
+      </Box>
+      <Row>
+        <Column start={[1, 2]} width={[6, 8, 9, 9]}>
+          <Divider sx={{ my: [0] }} />
+        </Column>
+      </Row>
+      <Box sx={{ mb: [8, 8, 9, 8] }}>
+        <AnnotatedTable
+          heading='Collaborators'
+          data={collaborators}
+          sidenote={
+            <span>
+              Interested in working together?{' '}
+              <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
+            </span>
+          }
+        />
       </Box>
     </Layout>
   )
@@ -146,7 +89,7 @@ const Team = () => {
 
 function Span({ sx, children }) {
   return (
-    <Text
+    <Box
       as='span'
       sx={{
         display: 'inline-block',
@@ -156,52 +99,100 @@ function Span({ sx, children }) {
       }}
     >
       {children}
-    </Text>
+    </Box>
   )
 }
 
 function Bio({ text }) {
   return (
-    <Box>
-      <Divider sx={{ my: [3] }}></Divider>
-      <Text
+    <Box sx={{ mb: [2] }}>
+      <Box
         sx={{
-          fontSize: [2],
+          fontSize: [2, 2, 2, 3],
           mt: [3],
         }}
       >
         {text}
-      </Text>
+      </Box>
     </Box>
   )
 }
 
-function Person({ name, role, bio }) {
+function Person({ name, role, bio, penultimate, final, color }) {
   return (
-    <Box sx={{ mb: [3, 2, 2] }}>
-      <Text
-        as='span'
+    <Row columns={[6, 4, 5, 5]}>
+      <Column start={[1]} width={[2, 1, 1, 1]}>
+        <Box
+          sx={{
+            maxWidth: '100px',
+            width: '100%',
+            height: 'auto',
+            borderRadius: '50%',
+            position: 'relative',
+            bg: color,
+          }}
+        >
+          <Image
+            src={`https://images.carbonplan.org/team/${name
+              .toLowerCase()
+              .replace(' ', '-')}.png`}
+            sx={{
+              opacity: 0.25,
+              filter: 'contrast(200%) brightness(100%)',
+              width: '100%',
+              borderRadius: '50%',
+              display: 'block',
+            }}
+          ></Image>
+        </Box>
+      </Column>
+      <Column
+        start={[3, 2, 2, 2]}
+        width={[4, 3, 4, 4]}
         sx={{
-          fontFamily: 'heading',
-          textTransform: 'uppercase',
-          letterSpacing: 'smallcaps',
-          display: 'inline-block',
-          mr: [2],
+          borderStyle: 'solid',
+          borderWidth: '0px',
+          borderBottomWidth: [
+            final ? '0px' : '1px',
+            final || penultimate ? '0px' : '1px',
+            final || penultimate ? '0px' : '1px',
+            final || penultimate ? '0px' : '1px',
+          ],
+          pb: [
+            final ? 2 : 4,
+            final || penultimate ? 2 : 4,
+            final || penultimate ? 2 : 4,
+            final || penultimate ? 2 : 4,
+          ],
+          borderColor: 'muted',
         }}
       >
-        {name}
-      </Text>
-      <Text
-        as='span'
-        sx={{
-          color: 'secondary',
-          display: ['block', 'inline-block', 'inline-block'],
-        }}
-      >
-        {role}
-      </Text>
-      {bio && <Bio text={bio} />}
-    </Box>
+        <Box sx={{ mb: [3, 2, 2] }}>
+          <Box
+            sx={{
+              fontSize: [2, 2, 2, 3],
+              fontFamily: 'heading',
+              textTransform: 'uppercase',
+              letterSpacing: 'smallcaps',
+              mr: [2],
+              mb: [1],
+            }}
+          >
+            {name}
+          </Box>
+          <Box
+            sx={{
+              fontSize: [2, 2, 2, 3],
+              fontFamily: 'faux',
+              letterSpacing: 'faux',
+            }}
+          >
+            {role}
+          </Box>
+          {bio && <Bio text={bio} />}
+        </Box>
+      </Column>
+    </Row>
   )
 }
 
