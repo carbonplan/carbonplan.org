@@ -25,7 +25,7 @@ const animateOpacity = (start, end, enter, exit) => {
   return keyframes(keys)
 }
 
-const Check = ({ playState, start, end, enter, exit, color, i }) => {
+const Check = ({ playState, start, end, height, enter, exit, color, i }) => {
   const animation = animateOpacity(start, end, enter, exit)
 
   const sx = {
@@ -36,7 +36,7 @@ const Check = ({ playState, start, end, enter, exit, color, i }) => {
     animationPlayState: playState ? 'running' : 'paused',
     opacity: start,
     vectorEffect: 'non-scaling-stroke',
-    strokeWidth: '1px',
+    strokeWidth: '1.2px',
     stroke: playState ? color : 'secondary',
     fill: playState ? color : 'secondary',
     transition:
@@ -45,22 +45,18 @@ const Check = ({ playState, start, end, enter, exit, color, i }) => {
 
   return (
     <Box
-      as='g'
-      sx={{
-        transform: [
-          `translateX(${i * 20 - 1.5}%) translateY(0px) scaleX(1.1)`,
-          `translateX(${i * 20 - 1.5}%) translateY(0px) scaleX(1.1)`,
-          `translateX(${i * 20 - 1.5}%) translateY(0px) scaleX(1.1)`,
-          `translateX(${i * 20 - 1.5}%) translateY(0px) scaleX(1.1)`,
-        ],
-      }}
+      as='svg'
+      width='20%'
+      viewBox={`0 0 63 75`}
+      sx={{height: height}}
     >
+      <g transform='translate(-7 -1) scale(0.98 1.02)'>
       <Box
         as='polygon'
         points='31.41,47.16 21.29,37.04 19.8,38.53 31.41,50.14 55.2,26.35 53.71,24.86'
-        strokeWidth='50'
         sx={sx}
       />
+      </g>
     </Box>
   )
 }
@@ -75,12 +71,9 @@ const CheckMarks = ({ height, color, delay = 0 }) => {
 
   return (
     <Box
-      as='svg'
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
       width='100%'
-      viewBox='0 0 375 75'
-      preserveAspectRatio='none'
       sx={{ height: height }}
     >
       {Array(5)
@@ -94,6 +87,7 @@ const CheckMarks = ({ height, color, delay = 0 }) => {
               end={end[i]}
               enter={enter[i]}
               exit={exit[i]}
+              height={height}
               color={color}
               playState={playState}
             />

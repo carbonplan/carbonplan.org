@@ -71,7 +71,7 @@ const Team = () => {
           <Divider sx={{ my: [0] }} />
         </Column>
       </Row>
-      <Box sx={{ mb: [8, 8, 9, 8] }}>
+      <Box sx={{ mb: [8, 8, 9, 10] }}>
         <AnnotatedTable
           heading='Collaborators'
           data={collaborators}
