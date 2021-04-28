@@ -9,10 +9,13 @@ import {
   Arrow,
   Filter,
   Tray,
+  utils
 } from '@carbonplan/components'
 import { alpha } from '@theme-ui/color'
 import Heading from '../components/heading'
 import { press } from '../data/press'
+
+const { formatDate } = utils
 
 const sources = [...new Set(press.map((d) => d.source))].sort((a, b) =>
   a.localeCompare(b)
@@ -32,14 +35,6 @@ for (const key of sources) {
 const initYear = {
   2020: true,
   2021: true,
-}
-
-const formatDate = (date) => {
-  let d = new Date(date.replace(/-/g, '/'))
-  let month = d.toLocaleString('default', { month: 'short' })
-  let day = String(d.getDay()).padStart(2, '0')
-  let year = d.getFullYear()
-  return month + ' ' + day + ' ' + year
 }
 
 const Press = () => {
