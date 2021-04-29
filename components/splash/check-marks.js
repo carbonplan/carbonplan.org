@@ -44,18 +44,13 @@ const Check = ({ playState, start, end, height, enter, exit, color, i }) => {
   }
 
   return (
-    <Box
-      as='svg'
-      width='20%'
-      viewBox={`0 0 63 75`}
-      sx={{height: height}}
-    >
+    <Box as='svg' width='20%' viewBox={`0 0 63 75`} sx={{ height: height }}>
       <g transform='translate(-7 -1) scale(0.98 1.02)'>
-      <Box
-        as='polygon'
-        points='31.41,47.16 21.29,37.04 19.8,38.53 31.41,50.14 55.2,26.35 53.71,24.86'
-        sx={sx}
-      />
+        <Box
+          as='polygon'
+          points='31.41,47.16 21.29,37.04 19.8,38.53 31.41,50.14 55.2,26.35 53.71,24.86'
+          sx={sx}
+        />
       </g>
     </Box>
   )

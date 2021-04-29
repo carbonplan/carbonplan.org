@@ -9,7 +9,7 @@ import {
   Arrow,
   Filter,
   Tray,
-  utils
+  utils,
 } from '@carbonplan/components'
 import { alpha } from '@theme-ui/color'
 import Heading from '../components/heading'
