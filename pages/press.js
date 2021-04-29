@@ -149,12 +149,11 @@ function Item({ data, final = false }) {
           '&:hover > #container > #title > #span-1 > #span-2 > #arrow': {
             transform: 'rotate(45deg)',
           },
-          '&:hover > #container': {
-          },
+          '&:hover > #container': {},
           '&:hover': {
             opacity: 0.6,
-            color: 'primary'
-          }
+            color: 'primary',
+          },
         },
         '@media (hover: none) and (pointer: coarse)': {
           '&:hover': {
