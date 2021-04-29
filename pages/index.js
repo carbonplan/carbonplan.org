@@ -11,9 +11,11 @@ import {
 import { utils } from '@carbonplan/components'
 import { keyframes } from '@emotion/react'
 import Splash from '../components/splash'
-import Figure from '../components/figure'
+import Research1Figure from '../components/research-1-figure'
+import Research2Figure from '../components/research-2-figure'
+import Highlight from '../components/highlight'
 
-import { research, highlights, press } from '../data/recent'
+import { research1, research2, highlights, press } from '../data/recent'
 
 const { ArrowButton } = Buttons
 const { WrappedLink } = Links
@@ -77,7 +79,7 @@ const Index = () => {
                 as='p'
                 sx={{
                   fontSize: [3, 3, 3, 4],
-                  lineHeight: 'h3',
+                  lineHeight: '1.25',
                   pt: ['2px', 0, 0, 0],
                   mb: [2, 3, 0, 0],
                   mt: [3, 4, 4, 5],
@@ -113,51 +115,22 @@ const Index = () => {
           }}
         />
       </Row>
-      <Row>
-        <Column start={[1, 2, 4, 4]} width={[6, 7]}>
-          <Box
-            sx={{
-              ...sx.highlight,
-            }}
-          >
-            Recent research
-          </Box>
-          <WrappedLink
-            href={'/research/cdr-database'}
-            sx={{
-              textDecoration: 'none',
-              display: 'block',
-              width: 'fit-content',
-            }}
-          >
-            <ArrowButton label='CDR Database' size='lg' fill='purple' />
-          </WrappedLink>
+      <Row sx={{}}>
+        <Column
+          start={[1, 2, 2, 3]}
+          width={[6, 8, 10, 10]}
+          sx={{
+            ...sx.highlight,
+          }}
+        >
+          Recent Research
         </Column>
       </Row>
-      <Row sx={{ mt: [3] }}>
-        <Column start={[2]} width={[2]}>
-          <Box
-            sx={{
-              color: 'secondary',
-              fontFamily: 'mono',
-              letterSpacing: '0.05em',
-              fontSize: [1, 1, 1, 2],
-              mt: ['2px'],
-              userSelect: 'none',
-              textTransform: 'uppercase',
-              display: ['none', 'none', 'block', 'block'],
-            }}
-          >
-            {formatDate(research.date)}{' '}
-          </Box>
-        </Column>
-        <Column start={[1, 2, 4, 4]} width={[5]}>
-          <Box sx={{ fontSize: [3, 3, 3, 4], lineHeight: 'h3' }}>
-            {research.summary}
-          </Box>
-        </Column>
-      </Row>
-      <Figure />
+      <Highlight research={research2} />
+      <Research2Figure />
+      <Box sx={{ display: 'block', height: [4, 5, 6, 7] }} />
+      <Highlight research={research1} />
+      <Research1Figure />
       <Row as='section' sx={{ mt: [5, 6, 7, 8], mb: [8, 8, 9, 10], pb: [1] }}>
         <Column
           start={[1, 1, 2, 2]}
@@ -192,7 +165,7 @@ const Index = () => {
                     fontSize: [3, 3, 3, 4],
                     fontFamily: 'body',
                     letterSpacing: 'body',
-                    lineHeight: 'h3',
+                    lineHeight: '1.25',
                   }}
                 >
                   Read all about the work we did in our first year, and some of
@@ -329,7 +302,7 @@ function VerticalArrow() {
         alignContent: 'flex-end',
         display: 'flex',
         height: '100%',
-        mt: ['-8px', '-8px', '-8px', '-79px'],
+        mt: ['-7px', '-7px', '-7px', '-78px'],
         transform: ['none', 'none', 'none', 'scale(1.4)'],
       }}
     >
