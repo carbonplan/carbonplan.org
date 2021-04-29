@@ -43,7 +43,7 @@ const highlights = [
 const press = [
   {
     label: 'ProPublica / MIT TR',
-    href: '',
+    href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
   },
   {
     label: 'Financial Times',
