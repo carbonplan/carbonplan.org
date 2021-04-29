@@ -9,16 +9,22 @@ const research1 = {
 
 const research2 = {
   date: '04-29-2021',
-  title: <span>{'Systematic over' + '\u2011' + 'crediting'}<br/> of forest offsets</span>,
-  summary: "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
+  title: (
+    <span>
+      {'Systematic over' + '\u2011' + 'crediting'}
+      <br /> of forest offsets
+    </span>
+  ),
+  summary:
+    "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
   color: 'green',
-  href: '/research/forest-offsets-explainer'
+  href: '/research/forest-offsets-explainer',
 }
 
 const highlights = [
   {
     label: 'CA Forest Offsets',
-    href: '/research/forest-offsets-explainer'
+    href: '/research/forest-offsets-explainer',
   },
   {
     label: 'CDR Database',
@@ -37,7 +43,7 @@ const highlights = [
 const press = [
   {
     label: 'ProPublica / MIT TR',
-    href: ''
+    href: '',
   },
   {
     label: 'Financial Times',

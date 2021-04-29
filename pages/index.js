@@ -12,6 +12,7 @@ import { utils } from '@carbonplan/components'
 import { keyframes } from '@emotion/react'
 import Splash from '../components/splash'
 import Research1Figure from '../components/research-1-figure'
+import Research2Figure from '../components/research-2-figure'
 import Highlight from '../components/highlight'
 
 import { research1, research2, highlights, press } from '../data/recent'
@@ -78,7 +79,7 @@ const Index = () => {
                 as='p'
                 sx={{
                   fontSize: [3, 3, 3, 4],
-                  lineHeight: 'h3',
+                  lineHeight: '1.25',
                   pt: ['2px', 0, 0, 0],
                   mb: [2, 3, 0, 0],
                   mt: [3, 4, 4, 5],
@@ -114,7 +115,7 @@ const Index = () => {
           }}
         />
       </Row>
-      <Row sx={{ }}>
+      <Row sx={{}}>
         <Column
           start={[1, 2, 2, 3]}
           width={[6, 8, 10, 10]}
@@ -122,12 +123,12 @@ const Index = () => {
             ...sx.highlight,
           }}
         >
-          Recent highlights
+          Recent Research
         </Column>
       </Row>
       <Highlight research={research2} />
-      <Research1Figure />
-      <Box sx={{display: 'block', height: [4, 5, 6, 7]}}/>
+      <Research2Figure />
+      <Box sx={{ display: 'block', height: [4, 5, 6, 7] }} />
       <Highlight research={research1} />
       <Research1Figure />
       <Row as='section' sx={{ mt: [5, 6, 7, 8], mb: [8, 8, 9, 10], pb: [1] }}>
@@ -164,7 +165,7 @@ const Index = () => {
                     fontSize: [3, 3, 3, 4],
                     fontFamily: 'body',
                     letterSpacing: 'body',
-                    lineHeight: 'h3',
+                    lineHeight: '1.25',
                   }}
                 >
                   Read all about the work we did in our first year, and some of
@@ -301,7 +302,7 @@ function VerticalArrow() {
         alignContent: 'flex-end',
         display: 'flex',
         height: '100%',
-        mt: ['-8px', '-8px', '-8px', '-79px'],
+        mt: ['-7px', '-7px', '-7px', '-78px'],
         transform: ['none', 'none', 'none', 'scale(1.4)'],
       }}
     >
