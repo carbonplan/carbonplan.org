@@ -4,7 +4,7 @@ const press = [
     href:
       'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
     title:
-      'The Climate Solution Actually Adding Millions of Tons of CO2 Into the Atmosphere',
+      'The climate solution actually adding millions of tons of CO₂ into the atmosphere',
     authors: ['Lisa Song', 'James Temple'],
     date: '04-29-2021',
   },
