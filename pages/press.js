@@ -143,20 +143,18 @@ function Item({ data, final = false }) {
       sx={{
         textDecoration: 'none',
         display: 'block',
-        transition: 'color 0.15s',
+        transition: 'opacity 0.15s',
+        opacity: 1,
         '@media (hover: hover) and (pointer: fine)': {
           '&:hover > #container > #title > #span-1 > #span-2 > #arrow': {
             transform: 'rotate(45deg)',
-            fill: 'secondary',
           },
           '&:hover > #container': {
-            borderColor: [
-              'muted',
-              alpha('secondary', 0.5),
-              alpha('secondary', 0.5),
-              alpha('secondary', 0.5),
-            ],
           },
+          '&:hover': {
+            opacity: 0.6,
+            color: 'primary'
+          }
         },
         '@media (hover: none) and (pointer: coarse)': {
           '&:hover': {
