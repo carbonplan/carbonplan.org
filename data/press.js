@@ -1,5 +1,14 @@
 const press = [
   {
+    source: ['MIT Tech Review', 'ProPublica'],
+    href:
+      'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
+    title:
+      'The Climate Solution Actually Adding Millions of Tons of CO2 Into the Atmosphere',
+    authors: ['Lisa Song', 'James Temple'],
+    date: '04-29-2021',
+  },
+  {
     source: 'National Geographic',
     href:
       'https://www.nationalgeographic.com/environment/article/biden-wants-to-cut-us-climate-pollution-in-half-heres-how',

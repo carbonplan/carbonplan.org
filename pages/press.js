@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Box, Link } from 'theme-ui'
+import { Box, Grid, Link } from 'theme-ui'
 import {
   Tag,
   Row,
@@ -17,7 +17,7 @@ import { press } from '../data/press'
 
 const { formatDate } = utils
 
-const sources = [...new Set(press.map((d) => d.source))].sort((a, b) =>
+const sources = [...new Set(press.map((d) => d.source).flat())].sort((a, b) =>
   a.localeCompare(b)
 )
 
@@ -46,10 +46,11 @@ const Press = () => {
   useEffect(() => {
     setFiltered(
       press.filter((d) => {
-        return (
-          source[d.source] &&
-          year[new Date(d.date.replace(/-/g, '/')).getFullYear()]
-        )
+        const inYear = year[new Date(d.date.replace(/-/g, '/')).getFullYear()]
+        const inSource = Array.isArray(d.source)
+          ? d.source.filter((s) => source[s]).length > 0
+          : source[d.source]
+        return inYear && inSource
       })
     )
   }, [year, source])
@@ -135,6 +136,8 @@ const Press = () => {
 function Item({ data, final = false }) {
   const { source, description, title, href, date, authors } = data
 
+  const sources = Array.isArray(source) ? source : [source]
+
   return (
     <Link
       sx={{
@@ -181,31 +184,63 @@ function Item({ data, final = false }) {
           borderColor: 'muted',
         }}
       >
-        <Box
-          sx={{
-            color: 'secondary',
-            fontSize: [1, 1, 1, 2],
-            fontFamily: 'mono',
-            letterSpacing: 'mono',
-            textTransform: 'uppercase',
-            display: 'inline-block',
-          }}
+        <Grid
+          columns={['100px 1fr', '100px 1fr', '100px 1fr', '120px 1fr']}
+          gap={[0]}
+          sx={{ mt: ['-1px'] }}
         >
-          {formatDate(date)}
-        </Box>
-        <Box
-          sx={{
-            display: 'inline-block',
-            float: 'right',
-          }}
-        >
-          <Tag sx={{ color: sourceColors[source] }}>{source}</Tag>
-        </Box>
+          <Box
+            sx={{
+              color: 'secondary',
+              fontSize: [1, 1, 1, 2],
+              fontFamily: 'mono',
+              letterSpacing: 'mono',
+              textTransform: 'uppercase',
+              mt: '4px',
+            }}
+          >
+            {formatDate(date)}
+          </Box>
+          <Box
+            sx={{
+              mt: ['1px', '1px', '1px', '2px'],
+              textAlign: 'right',
+              width: '100%',
+            }}
+          >
+            {sources.map((d, i) => {
+              return (
+                <Box
+                  sx={{
+                    display: 'inline-block',
+                    ml: [3],
+                    mb: [1],
+                    mt: ['-1px'],
+                  }}
+                >
+                  <Tag
+                    key={i}
+                    sx={{
+                      pb: ['3px'],
+                      lineHeight: 1.8,
+                      textAlign: 'right',
+                      width: 'fit-content',
+                      display: 'initial',
+                      color: sourceColors[d],
+                    }}
+                  >
+                    {d}
+                  </Tag>
+                </Box>
+              )
+            })}
+          </Box>
+        </Grid>
         <Box
           id='title'
           sx={{
             fontSize: [2, 2, 2, 3],
-            mt: [3],
+            mt: ['9px', '9px', '9px', '12px'],
             pb: [2],
             mb: [1],
             lineHeight: 'body',
@@ -239,8 +274,7 @@ function Item({ data, final = false }) {
           <Box
             id='authors'
             sx={{
-              fontSize: [2],
-              mt: [2],
+              mt: [2, 2, 2, '10px'],
               mb: [2],
               pb: [1],
               color: 'text',
