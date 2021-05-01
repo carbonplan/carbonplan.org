@@ -5,8 +5,8 @@
       "destination": "https://cdr-database.carbonplan.org/research/cdr-database$1"
     },
     {
-      "source": "/research/forest-risks-map",
-      "destination": "https://victorious-sky-0813bc21e.azurestaticapps.net/research/forest-risks-map"
+      "source": "/research/forest-risks",
+      "destination": "https://victorious-sky-0813bc21e.azurestaticapps.net/research/forest-risks"
     },
     {
       "source": "/research/forest-offsets-map",
@@ -29,6 +29,10 @@
     {
       "source": "/jobs",
       "destination": "https://apply.workable.com/carbonplan/"
+    },
+    {
+      "source": "/research/forest-risks-map",
+      "destination": "https://carbonplan.org/research/forest-risks"
     },
     {
       "source": "/reports/methods",
