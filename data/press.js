@@ -1,17 +1,20 @@
 const press = [
   {
     source: 'Reuters',
-    href: 'https://www.reuters.com/business/environment/california-program-overestimates-climate-benefits-forest-offsets-study-2021-04-30/',
-    title: 'California program overestimates climate benefits of forest offsets',
+    href:
+      'https://www.reuters.com/business/environment/california-program-overestimates-climate-benefits-forest-offsets-study-2021-04-30/',
+    title:
+      'California program overestimates climate benefits of forest offsets',
     authors: ['Peter Henderson'],
-    date: '04-30-2021'
+    date: '04-30-2021',
   },
   {
     source: 'Earther',
-    href: 'https://earther.gizmodo.com/california-s-carbon-offset-program-is-a-complete-disast-1846791736',
+    href:
+      'https://earther.gizmodo.com/california-s-carbon-offset-program-is-a-complete-disast-1846791736',
     title: 'California’s carbon offset program is a complete disaster',
     authors: ['Molly Taft'],
-    date: '04-29-2021'
+    date: '04-29-2021',
   },
   {
     source: 'Verge',
