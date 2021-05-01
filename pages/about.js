@@ -31,7 +31,6 @@ const sx = {
 const About = () => {
   return (
     <Layout links={'homepage'} title={'about / carbonplan'} nav={'about'}>
-      <Guide />
       <Heading>About</Heading>
       <Box sx={{ display: ['none', 'none', 'initial', 'initial'] }}>
         <Row sx={{ mb: [5, 6, 7, 8] }}>

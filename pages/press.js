@@ -74,7 +74,6 @@ const Press = () => {
       dimmer={'bottom'}
       settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
     >
-      <Guide />
       <Heading
         description={
           <span>

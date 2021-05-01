@@ -28,7 +28,6 @@ const sx = {
 const Thanks = () => {
   return (
     <Layout links={'homepage'} title={'thanks / carbonplan'}>
-      <Guide />
       <Box sx={{ mb: [8, 8, 9, 10] }}>
         <Heading>Thank you</Heading>
         <Row>

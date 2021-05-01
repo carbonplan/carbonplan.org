@@ -9,7 +9,6 @@ const colors = ['red', 'orange', 'yellow', 'pink']
 const Team = () => {
   return (
     <Layout links={'homepage'} title={'team / carbonplan'} nav={'team'}>
-      <Guide />
       <Heading
         sidenote={
           <span>

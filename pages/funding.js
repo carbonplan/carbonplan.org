@@ -10,7 +10,6 @@ const { InternalLink } = Links
 const Funding = () => {
   return (
     <Layout links={'homepage'} title={'funding / carbonplan'}>
-      <Guide color='rainbow' />
       <Box sx={{ mb: [8, 8, 9, 10] }}>
         <Heading
           sidenote={

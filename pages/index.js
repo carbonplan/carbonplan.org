@@ -41,7 +41,6 @@ const sx = {
 const Index = () => {
   return (
     <Layout links={'homepage'} title={'carbonplan'}>
-      <Guide />
       <Box
         sx={{
           mt: [-1, 0, 0, 0],

@@ -104,7 +104,6 @@ const Donate = () => {
 
   return (
     <Layout links={'homepage'} title={'donate / carbonplan'} status={status}>
-      <Guide />
       <Box sx={{ mb: [8, 8, 9, 10] }}>
         <Heading sidenote={<Sidenote />}>Donate</Heading>
         <Row>

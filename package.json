@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/carbonplan/research#readme",
   "dependencies": {
-    "@carbonplan/components": "^7.3.3",
+    "@carbonplan/components": "^7.4.1",
     "@carbonplan/theme": "^5.0.0",
     "@stripe/stripe-js": "^1.13.2",
     "d3-array": "^2.12.1",
