@@ -9,8 +9,8 @@
       "destination": "https://victorious-sky-0813bc21e.azurestaticapps.net/research/forest-risks"
     },
     {
-      "source": "/research/forest-offsets-map",
-      "destination": "https://wonderful-river-0932dae1e.azurestaticapps.net/research/forest-offsets-map"
+      "source": "/research/forest-offsets",
+      "destination": "https://wonderful-river-0932dae1e.azurestaticapps.net/research/forest-offsets"
     },
     {
       "source": "/research(.*)",
@@ -31,8 +31,8 @@
       "destination": "https://apply.workable.com/carbonplan/"
     },
     {
-      "source": "/research/forest-risks-map",
-      "destination": "https://carbonplan.org/research/forest-risks"
+      "source": "/research/forest-offsets-map",
+      "destination": "https://carbonplan.org/research/forest-offsets"
     },
     {
       "source": "/reports/methods",
