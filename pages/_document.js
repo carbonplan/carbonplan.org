@@ -1,5 +1,5 @@
 import Document, { Html, Main, NextScript, Head } from 'next/document'
-import { Tracking } from '@carbonplan/components'
+import { Tracking, CustomScrollbar } from '@carbonplan/components'
 import { InitializeColorMode } from 'theme-ui'
 
 class MyDocument extends Document {
@@ -13,6 +13,7 @@ class MyDocument extends Document {
           <InitializeColorMode />
           <Main />
           <NextScript />
+          <CustomScrollbar />
         </body>
       </Html>
     )

@@ -72,7 +72,7 @@ const Chart = ({ data, field, domain, ticks, bandwidth, log = false }) => {
   return (
     <Box
       sx={{
-        width: '104.9%',
+        width: ['104.6%', '104.9%', '104.9%', '104.9%'],
         height: '100%',
         display: 'block',
         ml: ['-1.6%'],
