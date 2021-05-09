@@ -7,7 +7,7 @@ const press = [
     date: '05-07-2021',
   },
   {
-    source: 'New Republic',
+    source: 'The New Republic',
     href:
       'https://newrepublic.com/article/162313/bp-carbon-offsets-washington-finite-carbon-carlyle',
     title: 'BP’s Suspicious Support for a Carbon Market in Washington State',
