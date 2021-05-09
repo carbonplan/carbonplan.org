@@ -1,5 +1,20 @@
 const press = [
   {
+    source: 'NPR',
+    href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
+    title: 'Emission Impossible',
+    authors: ['Julia Simon', 'Amanda Aronczyk'],
+    date: '05-07-2021',
+  },
+  {
+    source: 'New Republic',
+    href:
+      'https://newrepublic.com/article/162313/bp-carbon-offsets-washington-finite-carbon-carlyle',
+    title: 'BP’s Suspicious Support for a Carbon Market in Washington State',
+    authors: ['Kate Aronoff'],
+    date: '05-06-2021',
+  },
+  {
     source: 'Reuters',
     href:
       'https://www.reuters.com/business/environment/california-program-overestimates-climate-benefits-forest-offsets-study-2021-04-30/',
