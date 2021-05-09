@@ -91,7 +91,7 @@ const Index = () => {
           </Row>
           <Box sx={{ mt: ['12px', 4, 4, 5] }}>
             <Row columns={[6, 5, 6, 6]}>
-              <Column as='nav' start={[1]} width={[4, 4, 4, 4]}>
+              <Column as='nav' start={[1]} width={[4, 6, 6, 6]}>
                 <InternalNav href={'/about'}>About</InternalNav>
                 <InternalNav href={'/research'}>Research</InternalNav>
                 <InternalNav href={'/team'}>Team</InternalNav>
