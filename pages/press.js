@@ -207,6 +207,7 @@ function Item({ data, final = false }) {
             {sources.map((d, i) => {
               return (
                 <Box
+                  key={i}
                   sx={{
                     display: 'inline-block',
                     ml: [3],
@@ -215,7 +216,6 @@ function Item({ data, final = false }) {
                   }}
                 >
                   <Tag
-                    key={i}
                     sx={{
                       pb: ['3px'],
                       lineHeight: 1.8,

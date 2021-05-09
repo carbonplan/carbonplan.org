@@ -1,6 +1,6 @@
 const press = [
   {
-    source: 'NPR',
+    source: 'Planet Money',
     href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
     title: 'Emission Impossible',
     authors: ['Julia Simon', 'Amanda Aronczyk'],
