@@ -96,6 +96,14 @@ const collaborators = [
     </span>,
     'Lawrence Livermore National Laboratory',
   ],
+  [
+    <span>
+      Jonny Black
+      <br />
+      Richard Roche
+    </span>,
+    'Ordinary Things',
+  ],
 ]
 
 export { team, board, collaborators }
