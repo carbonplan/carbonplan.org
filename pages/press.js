@@ -21,6 +21,8 @@ const sources = [...new Set(press.map((d) => d.source).flat())].sort((a, b) =>
   a.localeCompare(b)
 )
 
+const formats = ['print', 'audio', 'video']
+
 const sourceColors = {}
 const initSource = {}
 
@@ -32,13 +34,19 @@ for (const key of sources) {
   count += 1
 }
 
+const initFormat = {
+  print: true,
+  audio: true,
+  video: true,
+}
+
 const initYear = {
   2020: true,
   2021: true,
 }
 
 const Press = () => {
-  const [source, setSource] = useState(initSource)
+  const [format, setFormat] = useState(initFormat)
   const [year, setYear] = useState(initYear)
   const [filtered, setFiltered] = useState(press)
   const [expanded, setExpanded] = useState(false)
@@ -47,22 +55,19 @@ const Press = () => {
     setFiltered(
       press.filter((d) => {
         const inYear = year[new Date(d.date.replace(/-/g, '/')).getFullYear()]
-        const inSource = Array.isArray(d.source)
-          ? d.source.filter((s) => source[s]).length > 0
-          : source[d.source]
-        return inYear && inSource
+        const inFormat = format[d.format]
+        return inYear && inFormat
       })
     )
-  }, [year, source])
+  }, [year, format])
 
   const FilterContents = () => {
     return (
       <Filter
-        filters={{ source: source, year: year }}
-        setFilters={{ source: setSource, year: setYear }}
-        filterLabels={{ source: 'Source', year: 'Year' }}
-        filterColors={{ source: sourceColors }}
-        filterList={['year', 'source']}
+        filters={{ format: format, year: year }}
+        setFilters={{ format: setFormat, year: setYear }}
+        filterLabels={{ format: 'Format', year: 'Year' }}
+        filterList={['year', 'format']}
       />
     )
   }
