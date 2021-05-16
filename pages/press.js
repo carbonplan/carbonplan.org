@@ -140,7 +140,9 @@ const Press = () => {
             <Column
               start={[1 + (i % 2) * 3, 1 + i * 2, 2 + i * 2, 2 + i * 2]}
               width={[3, 2, 2, 2]}
-              sx={{display: i < 4 ? 'block' : ['none', 'none', 'block', 'block']}}
+              sx={{
+                display: i < 4 ? 'block' : ['none', 'none', 'block', 'block'],
+              }}
             >
               <Link
                 href={d.href}
@@ -148,11 +150,13 @@ const Press = () => {
                   display: 'block',
                   mb: [4, 0, 0, 0],
                   textDecoration: 'none',
-                  '&:hover > #logo': {
-                    opacity: 0.7,
-                  },
-                  '&:hover > #date': {
-                    opacity: 0.7,
+                  '@media (hover: hover) and (pointer: fine)': {
+                    '&:hover > #logo': {
+                      opacity: 0.7,
+                    },
+                    '&:hover > #date': {
+                      opacity: 0.7,
+                    },
                   },
                 }}
               >
