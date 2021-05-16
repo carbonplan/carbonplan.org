@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Box, Grid, Link } from 'theme-ui'
+import { Box, Grid, Link, Divider } from 'theme-ui'
 import {
   Tag,
   Row,
@@ -12,24 +12,56 @@ import {
   utils,
 } from '@carbonplan/components'
 import { alpha } from '@theme-ui/color'
+import { useBreakpointIndex } from '@theme-ui/match-media'
 import Heading from '../components/heading'
-import { press } from '../data/press'
-
+import { highlights, press } from '../data/press'
+import {
+  MITTechReview,
+  ProPublica,
+  TheNewRepublic,
+  NPR,
+  Bloomberg,
+} from '../components/press-logos'
 const { formatDate } = utils
+
+const sx = {
+  highlight: {
+    mb: [3, 3, 3, 4],
+    fontSize: [3, 3, 3, 4],
+    fontFamily: 'heading',
+    letterSpacing: 'smallcaps',
+    textTransform: 'uppercase',
+    color: 'secondary',
+  },
+  date: {
+    color: 'secondary',
+    fontSize: [1, 1, 1, 2],
+    fontFamily: 'mono',
+    letterSpacing: 'mono',
+    textTransform: 'uppercase',
+    transition: 'opacity 0.15s',
+  },
+}
 
 const sources = [...new Set(press.map((d) => d.source).flat())].sort((a, b) =>
   a.localeCompare(b)
 )
 
+const logos = {
+  ProPublica: <ProPublica />,
+  'The New Republic': <TheNewRepublic />,
+  'MIT Tech Review': <MITTechReview />,
+  'Planet Money': <NPR />,
+  Bloomberg: <Bloomberg />,
+}
+
 const formats = ['print', 'audio', 'video']
 
 const sourceColors = {}
-const initSource = {}
 
 let count = 0
 
 for (const key of sources) {
-  initSource[key] = true
   sourceColors[key] = ['green', 'teal', 'blue', 'purple'][count % 4]
   count += 1
 }
@@ -50,6 +82,8 @@ const Press = () => {
   const [year, setYear] = useState(initYear)
   const [filtered, setFiltered] = useState(press)
   const [expanded, setExpanded] = useState(false)
+
+  const breakpoint = useBreakpointIndex()
 
   useEffect(() => {
     setFiltered(
@@ -100,13 +134,88 @@ const Press = () => {
           </Column>
         </Row>
       </Tray>
+      <Row sx={{ mb: [4, 5, 6, 7] }}>
+        <Column start={[1, 1, 2, 2]} width={[5]}>
+          <Box sx={sx.highlight}>Press highlights</Box>
+        </Column>
+        {highlights.map((d, i) => {
+          if (breakpoint < 2 && i > 3) return null
+          return (
+            <Column
+              start={[1 + (i % 2) * 3, 1 + i * 2, 2 + i * 2, 2 + i * 2]}
+              width={[3, 2, 2, 2]}
+            >
+              <Link
+                href={d.href}
+                sx={{
+                  display: 'block',
+                  mb: [4, 0, 0, 0],
+                  textDecoration: 'none',
+                  '&:hover > #logo': {
+                    opacity: 0.7,
+                  },
+                  '&:hover > #date': {
+                    opacity: 0.7,
+                  },
+                }}
+              >
+                <Box
+                  id='logo'
+                  sx={{
+                    opacity: 1,
+                    position: 'relative',
+                    width: '100%',
+                    height: ['150px', '150px', '125px', '150px'],
+                    py: [2],
+                    px: [2],
+                    transition: 'opacity 0.15s',
+                  }}
+                >
+                  <Box
+                    sx={{
+                      opacity: 0.5,
+                      position: 'absolute',
+                      bg: sourceColors[d.source],
+                      left: 0,
+                      top: 0,
+                      width: '100%',
+                      height: '100%',
+                    }}
+                  />
+                  {logos[d.source]}
+                </Box>
+                <Box id='date' sx={{ ...sx.date, mt: [2, 2, 2, 3] }}>
+                  {formatDate(d.date)}
+                </Box>
+              </Link>
+            </Column>
+          )
+        })}
+      </Row>
+      <Row>
+        <Column start={[1, 1, 2, 2]} width={[6, 8, 10, 10]}>
+          <Divider
+            sx={{
+              mt: [0],
+              mb: [4, 5, 6, 7],
+              display: ['none', 'block', 'block', 'block'],
+            }}
+          />
+        </Column>
+      </Row>
       <Row sx={{ mb: [8, 8, 9, 10] }}>
         <Column
           start={[1, 1, 2, 2]}
           width={[6, 6, 2, 2]}
           sx={{ display: ['none', 'none', 'initial', 'intial'] }}
         >
-          <Box sx={{ position: 'sticky', top: '76px', height: 'auto' }}>
+          <Box
+            sx={{
+              position: 'sticky',
+              top: ['106px', '106px', '106px', '120px'],
+              height: 'auto',
+            }}
+          >
             <FilterContents />
           </Box>
         </Column>
@@ -192,11 +301,7 @@ function Item({ data, final = false }) {
         >
           <Box
             sx={{
-              color: 'secondary',
-              fontSize: [1, 1, 1, 2],
-              fontFamily: 'mono',
-              letterSpacing: 'mono',
-              textTransform: 'uppercase',
+              ...sx.date,
               mt: '4px',
             }}
           >
