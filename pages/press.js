@@ -12,7 +12,6 @@ import {
   utils,
 } from '@carbonplan/components'
 import { alpha } from '@theme-ui/color'
-import { useBreakpointIndex } from '@theme-ui/match-media'
 import Heading from '../components/heading'
 import { highlights, press } from '../data/press'
 import {
@@ -83,8 +82,6 @@ const Press = () => {
   const [filtered, setFiltered] = useState(press)
   const [expanded, setExpanded] = useState(false)
 
-  const breakpoint = useBreakpointIndex()
-
   useEffect(() => {
     setFiltered(
       press.filter((d) => {
@@ -139,11 +136,11 @@ const Press = () => {
           <Box sx={sx.highlight}>Press highlights</Box>
         </Column>
         {highlights.map((d, i) => {
-          if (breakpoint < 2 && i > 3) return null
           return (
             <Column
               start={[1 + (i % 2) * 3, 1 + i * 2, 2 + i * 2, 2 + i * 2]}
               width={[3, 2, 2, 2]}
+              sx={{display: i < 4 ? 'block' : ['none', 'none', 'block', 'block']}}
             >
               <Link
                 href={d.href}

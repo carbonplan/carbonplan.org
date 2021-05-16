@@ -23,7 +23,6 @@
     "@carbonplan/components": "^7.6.2",
     "@carbonplan/theme": "^5.0.0",
     "@stripe/stripe-js": "^1.13.2",
-    "@theme-ui/match-media": "^0.8.4",
     "d3-array": "^2.12.1",
     "d3-format": "^2.0.0",
     "d3-scale": "^3.3.0",
