@@ -32,6 +32,15 @@ const highlights = [
 
 const press = [
   {
+    source: 'Canary',
+    href:
+      'https://www.canarymedia.com/articles/bootstrapping-the-market-for-high-priced-high-promise-carbon-removal-tech/',
+    title: 'Priming the pump for high-priced, high-promise carbon removal tech',
+    authors: ['Jeff St. John'],
+    date: '05-17-2021',
+    format: 'print',
+  },
+  {
     source: 'Bloomberg',
     href:
       'https://www.bloomberg.com/news/articles/2021-05-13/carbon-offsets-have-a-new-ratings-agency-with-startup-sylvera',

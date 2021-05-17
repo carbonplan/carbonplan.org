@@ -138,6 +138,7 @@ const Press = () => {
         {highlights.map((d, i) => {
           return (
             <Column
+              key={i}
               start={[1 + (i % 2) * 3, 1 + i * 2, 2 + i * 2, 2 + i * 2]}
               width={[3, 2, 2, 2]}
               sx={{
