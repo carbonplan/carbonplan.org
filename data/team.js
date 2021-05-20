@@ -31,7 +31,7 @@ const team = [
   },
   {
     name: 'Freya Chay',
-    role: 'Program Analyst',
+    role: 'Program Associate',
     bio:
       'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University.',
   },
