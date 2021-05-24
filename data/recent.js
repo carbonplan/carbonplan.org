@@ -43,8 +43,7 @@ const highlights = [
 const press = [
   {
     label: 'NPR Planet Money',
-    href:
-      'https://www.npr.org/2021/05/07/994774148/emission-impossible',
+    href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
   },
   {
     label: 'MIT Tech Review',
@@ -52,13 +51,11 @@ const press = [
   },
   {
     label: 'ProPublica',
-    href:
-      'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
+    href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
   },
   {
     label: 'Bloomberg',
-    href:
-      'https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/',
+    href: 'https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/',
   },
 ]
 
