@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: 'Wall Street Journal',
+    href: 'https://www.wsj.com/articles/nonprofit-seeks-to-trap-carbon-in-the-financial-markets-11621762203',
+    title: 'Nonprofit seeks to trap carbon in the financial markets',
+    authors: ['Jenna Telesca'],
+    date: '05-23-2021',
+    format: 'print'
+  },
+  {
     source: 'AP News',
     href: 'https://apnews.com/article/ca-state-wire-business-environment-and-nature-government-and-politics-0e4c3e0bc1815d0380e5dfc04b253be4',
     title: 'Governor caught between key Democratic blocs on oil setbacks',
