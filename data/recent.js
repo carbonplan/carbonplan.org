@@ -23,6 +23,10 @@ const research2 = {
 
 const highlights = [
   {
+    label: 'Forest Risks',
+    href: '/research/forest-risks-explainer',
+  },
+  {
     label: 'CA Forest Offsets',
     href: '/research/forest-offsets-explainer',
   },
@@ -34,31 +38,27 @@ const highlights = [
     label: 'CDR Primer',
     href: 'https://cdrprimer.org/',
   },
-  {
-    label: 'Permanence Calculator',
-    href: '/research/permanence-calculator',
-  },
 ]
 
 const press = [
   {
-    label: 'ProPublica / MIT TR',
+    label: 'NPR Planet Money',
     href:
-      'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
+      'https://www.npr.org/2021/05/07/994774148/emission-impossible',
   },
   {
-    label: 'Financial Times',
-    href: 'https://www.ft.com/content/de5e8631-bdf2-4c2e-8b7f-83c0c80cdea8',
+    label: 'MIT Tech Review',
+    href: 'https://www.technologyreview.com/2021/05/10/1024751/carbon-credits-massachusetts-audubon-california-logging-co2-emissions-increase/',
+  },
+  {
+    label: 'ProPublica',
+    href:
+      'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
   },
   {
     label: 'Bloomberg',
     href:
       'https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/',
-  },
-  {
-    label: 'Grist',
-    href:
-      'https://grist.org/climate/this-oregon-forest-was-supposed-to-store-carbon-for-100-years-now-its-on-fire/',
   },
 ]
 

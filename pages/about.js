@@ -330,9 +330,9 @@ const About = () => {
       <Row sx={{ mt: [4, 4, 5, 6], mb: [8, 8, 9, 10] }}>
         <Column start={[1, 3]} width={[3, 4, 2, 2]} sx={{ mb: [3, 0, 0, 0] }}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <WrappedLink href='/team' sx={sx.link}>
-              <CalloutButton label={'team'}>
-                Read about our team and collaborators
+            <WrappedLink href='https://github.com/carbonplan' sx={sx.link}>
+              <CalloutButton label={'github'}>
+                Check out our open source code
               </CalloutButton>
             </WrappedLink>
           </Box>
@@ -352,9 +352,9 @@ const About = () => {
         </Column>
         <Column start={[1, 7]} width={[3, 4, 2, 2]}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <WrappedLink href='https://github.com/carbonplan' sx={sx.link}>
-              <CalloutButton label={'github'}>
-                Check out our open source code
+            <WrappedLink href='/funding' sx={sx.link}>
+              <CalloutButton label={'funding'}>
+                Learn about our sources of funding
               </CalloutButton>
             </WrappedLink>
           </Box>

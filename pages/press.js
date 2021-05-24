@@ -109,6 +109,7 @@ const Press = () => {
       title={'press / carbonplan'}
       dimmer={'bottom'}
       settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
+      guide={'muted'}
     >
       <Heading
         description={
