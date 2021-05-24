@@ -23,7 +23,7 @@ const research2 = {
 
 const highlights = [
   {
-    label: 'Forest Risks',
+    label: 'US Forest Risks',
     href: '/research/forest-risks-explainer',
   },
   {
