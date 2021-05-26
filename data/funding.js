@@ -60,7 +60,7 @@ const projectSpecific = [
   ],
   [
     'Stripe',
-    <Link href='/research/stripe-2021-insights'>
+    <Link href='https://github.com/carbonplan/carbon-removal-application'>
       Development of carbon removal procurement application
     </Link>,
   ],
