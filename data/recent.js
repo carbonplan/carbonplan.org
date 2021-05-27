@@ -1,5 +1,5 @@
 const research1 = {
-  date: '03-03-2021',
+  date: '0526-2021',
   title: 'CDR Database',
   summary:
     'We have analyzed project proposals submitted to multiple carbon removal procurement programs. Explore our database of project reports and read our articles for takeaways and lessons learned.',
