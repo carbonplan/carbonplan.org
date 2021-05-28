@@ -31,7 +31,7 @@ const press = [
     source: 'MIT Tech Review',
     href: 'https://www.technologyreview.com/2021/05/26/1025402/heirloom-stripe-breakthrough-energy-lowercarbon-carbon-removal/',
     title:
-      "A startup using minerals to draw down CO2 has scored funding — and it's first buyer",
+      "A startup using minerals to draw down CO₂ has scored funding — and its first buyer",
     authors: ['James Temple'],
     date: '05-26-2021',
     format: 'print',
