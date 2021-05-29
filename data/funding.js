@@ -58,6 +58,18 @@ const projectSpecific = [
     'Microsoft AI for Earth',
     <Link href='/research/forest-risks'>Forest carbon risk mapping</Link>,
   ],
+  [
+    'Stripe',
+    <Link href='https://github.com/carbonplan/carbon-removal-application'>
+      Development of carbon removal procurement application
+    </Link>,
+  ],
+  [
+    'ClimateWorks',
+    <Link href='/research/stripe-2021-insights'>
+      Evaluation of technological carbon removal proposals
+    </Link>,
+  ],
 ]
 
 export { unrestricted, projectSpecific }
