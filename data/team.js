@@ -43,8 +43,8 @@ const team = [
 
 const board = [
   ['Jeremy Freeman', 'CarbonPlan'],
-  ['Kelly Gannon', 'Global Fund for Women'],
-  ['Zeke Hausfather', 'CarbonBrief / Breakthrough Institute'],
+  ['Kelly Gannon', 'NDWA Labs'],
+  ['Gernot Wagner', 'New York University'],
 ]
 
 const collaborators = [
