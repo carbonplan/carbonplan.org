@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: 'Bloomberg',
+    href: 'https://www.bloomberg.com/news/articles/2021-06-02/carbon-offsets-turning-co2-offsets-into-catnip-for-commodities-traders',
+    title: 'Turning carbon offsets into catnip for commodities traders',
+    authors: ['Akshat Rathi'],
+    date: '06-01-2021',
+    format: 'print'
+  },
+  {
     source: 'MIT Tech Review',
     href: 'https://www.technologyreview.com/2021/05/26/1025402/heirloom-stripe-breakthrough-energy-lowercarbon-carbon-removal/',
     title:
