@@ -29,6 +29,14 @@ const highlights = [
 const press = [
   {
     source: 'Bloomberg',
+    href: 'https://www.bloomberg.com/news/features/2021-06-02/carbon-offsets-new-100-billion-market-faces-disputes-over-trading-rules',
+    title: "Wall Street’s favorite climate solution is mired in disagreements",
+    authors: ['Jess Shankleman', 'Akshat Rathi'],
+    date: '06-01-2021',
+    format: 'print',
+  },
+  {
+    source: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/articles/2021-06-02/carbon-offsets-turning-co2-offsets-into-catnip-for-commodities-traders',
     title: 'Turning carbon offsets into catnip for commodities traders',
     authors: ['Akshat Rathi'],
