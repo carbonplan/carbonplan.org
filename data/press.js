@@ -28,9 +28,18 @@ const highlights = [
 
 const press = [
   {
+    source: 'KQED',
+    href: 'https://www.bloomberg.com/news/features/2021-06-02/carbon-offsets-new-100-billion-market-faces-disputes-over-trading-rules',
+    title:
+      'California not doing as well as it thinks in reducing carbon, investigation finds',
+    authors: ['Kevin Stark'],
+    date: '06-07-2021',
+    format: 'audio',
+  },
+  {
     source: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/features/2021-06-02/carbon-offsets-new-100-billion-market-faces-disputes-over-trading-rules',
-    title: "Wall Street’s favorite climate solution is mired in disagreements",
+    title: 'Wall Street’s favorite climate solution is mired in disagreements',
     authors: ['Jess Shankleman', 'Akshat Rathi'],
     date: '06-01-2021',
     format: 'print',
