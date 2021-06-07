@@ -34,7 +34,7 @@ const press = [
       'California not doing as well as it thinks in reducing carbon, investigation finds',
     authors: ['Kevin Stark'],
     date: '06-07-2021',
-    format: 'audio',
+    format: 'print',
   },
   {
     source: 'Bloomberg',
