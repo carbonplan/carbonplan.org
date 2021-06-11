@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: 'E&E News',
+    href: 'https://www.eenews.net/climatewire/2021/06/09/stories/1063734519',
+    title: 'California knows how to set climate goals. But can it meet them?',
+    authors: ['Anne C. Mulkern'],
+    date: '06-09-2021',
+    format: 'print'
+  },
+  {
     source: 'KQED',
     href: 'https://www.bloomberg.com/news/features/2021-06-02/carbon-offsets-new-100-billion-market-faces-disputes-over-trading-rules',
     title:
