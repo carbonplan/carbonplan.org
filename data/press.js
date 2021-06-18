@@ -33,7 +33,7 @@ const press = [
     title: 'California knows how to set climate goals. But can it meet them?',
     authors: ['Anne C. Mulkern'],
     date: '06-09-2021',
-    format: 'print'
+    format: 'print',
   },
   {
     source: 'KQED',

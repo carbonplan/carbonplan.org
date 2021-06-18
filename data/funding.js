@@ -70,6 +70,12 @@ const projectSpecific = [
       Evaluation of technological carbon removal proposals
     </Link>,
   ],
+  [
+    'Preston-Werner Foundation',
+    <Link href='/research/soil-depth-sampling'>
+      Soil- and forest-based carbon accounting
+    </Link>,
+  ],
 ]
 
 export { unrestricted, projectSpecific }
