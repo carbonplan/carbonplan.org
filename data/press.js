@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: 'Science Friday',
+    href: 'https://www.sciencefriday.com/segments/california-climate-program-co2/',
+    title: 'California’s climate program is actually adding carbon to the atmosphere',
+    authors: ['Sophie Bushwick'],
+    date: '06-25-2021',
+    format: 'audio'
+  },
+  {
     source: 'E&E News',
     href: 'https://www.eenews.net/climatewire/2021/06/09/stories/1063734519',
     title: 'California knows how to set climate goals. But can it meet them?',
