@@ -43,7 +43,7 @@ const sx = {
 }
 
 const sources = [...new Set(press.map((d) => d.source).flat())].sort((a, b) =>
-  a.localeCompare(b)
+  b.slice(7, 10).localeCompare(a.slice(7, 10))
 )
 
 const logos = {

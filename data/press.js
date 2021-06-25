@@ -30,10 +30,11 @@ const press = [
   {
     source: 'Science Friday',
     href: 'https://www.sciencefriday.com/segments/california-climate-program-co2/',
-    title: 'California’s climate program is actually adding carbon to the atmosphere',
+    title:
+      'California’s climate program is actually adding carbon to the atmosphere',
     authors: ['Sophie Bushwick'],
     date: '06-25-2021',
-    format: 'audio'
+    format: 'audio',
   },
   {
     source: 'E&E News',
