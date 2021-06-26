@@ -46,7 +46,7 @@ const press = [
   },
   {
     source: 'KQED',
-    href: 'https://www.bloomberg.com/news/features/2021-06-02/carbon-offsets-new-100-billion-market-faces-disputes-over-trading-rules',
+    href: 'https://www.kqed.org/science/1975164/california-not-doing-as-well-as-it-thinks-in-reducing-carbon-investigation-finds',
     title:
       'California not doing as well as it thinks in reducing carbon, investigation finds',
     authors: ['Kevin Stark'],
