@@ -33,6 +33,6 @@
     "theme-ui": "^0.8.4"
   },
   "devDependencies": {
-    "prettier": "2.3.1"
+    "prettier": "2.3.2"
   }
 }
