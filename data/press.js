@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: 'Grist',
+    href: 'https://grist.org/agriculture/us-carbon-removal-capture-offset-forests-farms-trees-soil/',
+    title:
+      'The US is about to go all-in on paying farmers and foresters to trap carbon',
+    authors: ['Nathanael Johnson', 'Ysabelle Kempe'],
+    date: '07-07-2021',
+    format: 'print',
+  },
+  {
     source: 'Science Friday',
     href: 'https://www.sciencefriday.com/segments/california-climate-program-co2/',
     title:
