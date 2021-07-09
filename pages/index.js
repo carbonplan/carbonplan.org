@@ -1,12 +1,6 @@
 import { Link, Box } from 'theme-ui'
 import { default as NextLink } from 'next/link'
-import {
-  Layout,
-  Row,
-  Column,
-  Buttons,
-  Links,
-} from '@carbonplan/components'
+import { Layout, Row, Column, Buttons, Links } from '@carbonplan/components'
 import { keyframes } from '@emotion/react'
 import Splash from '../components/splash'
 import Research1Figure from '../components/research-1-figure'
@@ -36,8 +30,10 @@ const sx = {
 }
 
 const Index = () => {
-
-  console.log('process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: ', process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA);
+  console.log(
+    'process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: ',
+    process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
+  )
 
   return (
     <Layout links={'homepage'} title={'carbonplan'}>
