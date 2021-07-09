@@ -31,9 +31,20 @@ const sx = {
 
 const Index = () => {
   console.log(
-    'process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: ',
-    process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
+    'text: ',
+    process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA.substring(0, 7)
   )
+  let url =
+    'https://github.com/' +
+    process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER +
+    '/' +
+    process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG +
+    '/' +
+    process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG +
+    '@' +
+    process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
+
+  console.log('link to url:', url)
 
   return (
     <Layout links={'homepage'} title={'carbonplan'}>
