@@ -39,7 +39,7 @@ const Index = () => {
     process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER +
     '/' +
     process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG +
-    '/commit/' +
+    '/tree/' +
     process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
 
   console.log('link to url:', url)
