@@ -1,14 +1,12 @@
-import { Link, Box, Image } from 'theme-ui'
+import { Link, Box } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import {
-  Guide,
   Layout,
   Row,
   Column,
   Buttons,
   Links,
 } from '@carbonplan/components'
-import { utils } from '@carbonplan/components'
 import { keyframes } from '@emotion/react'
 import Splash from '../components/splash'
 import Research1Figure from '../components/research-1-figure'
@@ -19,7 +17,6 @@ import { research1, research2, highlights, press } from '../data/recent'
 
 const { ArrowButton } = Buttons
 const { WrappedLink } = Links
-const { formatDate } = utils
 
 const sx = {
   borderTop: {
@@ -39,6 +36,9 @@ const sx = {
 }
 
 const Index = () => {
+
+  console.log('process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: ', process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA);
+
   return (
     <Layout links={'homepage'} title={'carbonplan'}>
       <Box
