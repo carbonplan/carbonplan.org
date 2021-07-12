@@ -67,6 +67,7 @@ const collaborators = [
     </span>,
     'University of Pennsylvania',
   ],
+  ['Jane Zelikova', 'University of Wyoming'],
   [
     <span>
       Andrew Bergman

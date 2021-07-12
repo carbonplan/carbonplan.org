@@ -4,13 +4,12 @@ import {
   Tag,
   Row,
   Column,
-  Guide,
   Layout,
-  Arrow,
   Filter,
   Tray,
-  utils,
+  formatDate,
 } from '@carbonplan/components'
+import { Arrow } from '@carbonplan/icons'
 import { alpha } from '@theme-ui/color'
 import Heading from '../components/heading'
 import { highlights, press } from '../data/press'
@@ -21,7 +20,6 @@ import {
   NPR,
   Bloomberg,
 } from '../components/press-logos'
-const { formatDate } = utils
 
 const sx = {
   highlight: {
@@ -109,7 +107,7 @@ const Press = () => {
       title={'press / carbonplan'}
       dimmer={'bottom'}
       settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
-      guide={'muted'}
+      nav={'press'}
     >
       <Heading
         description={

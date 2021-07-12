@@ -1,11 +1,8 @@
-import { Box, Text, Themed, Grid, Link } from 'theme-ui'
-import { default as NextLink } from 'next/link'
-import { Layout, Row, Column, Guide, Links } from '@carbonplan/components'
+import { Box, Themed } from 'theme-ui'
+import { Layout, Row, Column, Link } from '@carbonplan/components'
 import Heading from '../components/heading'
 import AnnotatedTable from '../components/annotated-table'
 import { unrestricted, projectSpecific } from '../data/funding'
-
-const { InternalLink } = Links
 
 const Funding = () => {
   return (
@@ -15,7 +12,7 @@ const Funding = () => {
           sidenote={
             <span>
               Interested in supporting our work? Make a{' '}
-              <InternalLink href='/donate'>donation</InternalLink>.
+              <Link href='/donate'>donation</Link>.
             </span>
           }
         >

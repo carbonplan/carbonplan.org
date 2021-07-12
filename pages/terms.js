@@ -1,5 +1,5 @@
-import { Box, Themed, Link } from 'theme-ui'
-import { Layout, Row, Column, Guide } from '@carbonplan/components'
+import { Box, Themed } from 'theme-ui'
+import { Layout, Row, Column, Link } from '@carbonplan/components'
 import Heading from '../components/heading'
 
 const FAQ = () => {

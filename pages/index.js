@@ -1,14 +1,13 @@
-import { Link, Box, Image } from 'theme-ui'
-import { default as NextLink } from 'next/link'
+import { Box, Image } from 'theme-ui'
 import {
-  Guide,
   Layout,
   Row,
   Column,
-  Buttons,
-  Links,
+  Button,
+  Link,
+  formatDate,
 } from '@carbonplan/components'
-import { utils } from '@carbonplan/components'
+import { RotatingArrow } from '@carbonplan/icons'
 import { keyframes } from '@emotion/react'
 import Splash from '../components/splash'
 import Research1Figure from '../components/research-1-figure'
@@ -16,10 +15,6 @@ import Research2Figure from '../components/research-2-figure'
 import Highlight from '../components/highlight'
 
 import { research1, research2, highlights, press } from '../data/recent'
-
-const { ArrowButton } = Buttons
-const { WrappedLink } = Links
-const { formatDate } = utils
 
 const sx = {
   borderTop: {
@@ -95,7 +90,7 @@ const Index = () => {
                 <InternalNav href={'/about'}>About</InternalNav>
                 <InternalNav href={'/research'}>Research</InternalNav>
                 <InternalNav href={'/team'}>Team</InternalNav>
-                <InternalNav href={'/faq'}>FAQ</InternalNav>
+                <InternalNav href={'/press'}>Press</InternalNav>
                 <InternalNav href={'/donate'} final>
                   Donate
                 </InternalNav>
@@ -146,19 +141,14 @@ const Index = () => {
                 >
                   Annual report
                 </Box>
-                <WrappedLink
-                  href={
-                    'https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'
-                  }
-                  sx={{
-                    display: 'block',
-                    textDecoration: 'none',
-                    mb: [3],
-                    width: 'fit-content',
-                  }}
+                <Button
+                  href='https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'
+                  size='md'
+                  sx={{ mb: [3] }}
+                  suffix={<RotatingArrow />}
                 >
-                  <ArrowButton label={'Our 2020 in review'} size={'md'} />
-                </WrappedLink>
+                  Our 2020 in review
+                </Button>
                 <Box
                   sx={{
                     fontSize: [3, 3, 3, 4],
@@ -183,22 +173,15 @@ const Index = () => {
                   Recent highlights
                 </Box>
                 {highlights.map((d, i) => (
-                  <WrappedLink
+                  <Button
                     key={i}
                     href={d.href}
-                    sx={{
-                      textDecoration: 'none',
-                      display: 'block',
-                      width: 'fit-content',
-                    }}
+                    size='md'
+                    sx={{ mb: [1] }}
+                    suffix={<RotatingArrow />}
                   >
-                    <ArrowButton
-                      key={i}
-                      label={d.label}
-                      size={'md'}
-                      sx={{ mb: [1] }}
-                    />
-                  </WrappedLink>
+                    {d.label}
+                  </Button>
                 ))}
               </Box>
             </Column>
@@ -213,22 +196,15 @@ const Index = () => {
                   Recent press
                 </Box>
                 {press.map((d, i) => (
-                  <WrappedLink
+                  <Button
                     key={i}
                     href={d.href}
-                    sx={{
-                      textDecoration: 'none',
-                      display: 'block',
-                      width: 'fit-content',
-                    }}
+                    size='md'
+                    sx={{ mb: [1] }}
+                    suffix={<RotatingArrow />}
                   >
-                    <ArrowButton
-                      key={i}
-                      label={d.label}
-                      size={'md'}
-                      sx={{ mb: [1] }}
-                    />
-                  </WrappedLink>
+                    {d.label}
+                  </Button>
                 ))}
               </Box>
             </Column>
@@ -241,40 +217,39 @@ const Index = () => {
 
 function InternalNav({ children, href, final = false }) {
   return (
-    <NextLink href={href} passHref>
-      <Link
-        sx={{
-          fontSize: [2, 3, 3, 4],
-          textTransform: 'uppercase',
-          fontFamily: 'heading',
-          display: 'inline-block',
-          letterSpacing: 'smallcaps',
-          borderStyle: 'solid',
-          borderColor: 'primary',
-          borderWidth: '0px',
-          borderBottomWidth: '1px',
-          pb: [1],
-          mr: [final ? 0 : 4],
-          mb: [3, 2, 2, 2],
-          color: 'primary',
-          textDecoration: 'none',
-          transition: 'border-color 0.15s, color 0.15s',
-          '@media (hover: hover) and (pointer: fine)': {
-            '&:hover': {
-              borderColor: 'secondary',
-              color: 'secondary',
-            },
+    <Link
+      href={href}
+      sx={{
+        fontSize: [2, 3, 3, 4],
+        textTransform: 'uppercase',
+        fontFamily: 'heading',
+        display: 'inline-block',
+        letterSpacing: 'smallcaps',
+        borderStyle: 'solid',
+        borderColor: 'primary',
+        borderWidth: '0px',
+        borderBottomWidth: '1px',
+        pb: [1],
+        mr: [final ? 0 : 4],
+        mb: [3, 2, 2, 2],
+        color: 'primary',
+        textDecoration: 'none',
+        transition: 'border-color 0.15s, color 0.15s',
+        '@media (hover: hover) and (pointer: fine)': {
+          '&:hover': {
+            borderColor: 'secondary',
+            color: 'secondary',
           },
-          '@media (hover: none) and (pointer: coarse)': {
-            '&:hover': {
-              color: 'primary',
-            },
+        },
+        '@media (hover: none) and (pointer: coarse)': {
+          '&:hover': {
+            color: 'primary',
           },
-        }}
-      >
-        {children}
-      </Link>
-    </NextLink>
+        },
+      }}
+    >
+      {children}
+    </Link>
   )
 }
 

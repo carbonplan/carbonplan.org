@@ -30,8 +30,7 @@ const press = [
   {
     source: 'MIT Tech Review',
     href: 'https://www.technologyreview.com/2021/07/08/1027908/carbon-removal-hype-is-a-dangerous-distraction-climate-change/',
-    title:
-      'Carbon removal hype is becoming a dangerous distraction',
+    title: 'Carbon removal hype is becoming a dangerous distraction',
     authors: ['James Temple'],
     date: '07-08-2021',
     format: 'print',

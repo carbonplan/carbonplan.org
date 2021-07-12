@@ -1,8 +1,6 @@
-import { Box, Themed, Text, Link } from 'theme-ui'
-import { Layout, Row, Column, Guide, Links } from '@carbonplan/components'
+import { Box, Themed } from 'theme-ui'
+import { Layout, Row, Column, Guide, Link } from '@carbonplan/components'
 import Heading from '../components/heading'
-
-const { InternalLink } = Links
 
 const FAQ = () => {
   return (
@@ -49,8 +47,7 @@ const FAQ = () => {
           project-specific funding, we list as soon as the project, or our
           involvement in the project, becomes public. We also include the terms
           and conditions of our engagements. View{' '}
-          <InternalLink href='/funding'>our list</InternalLink> of funding
-          sources.
+          <Link href='/funding'>our list</Link> of funding sources.
         </Answer>
         <Question>Who designed this website?</Question>
         <Answer>

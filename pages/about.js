@@ -1,19 +1,17 @@
-import { Flex, Grid, Box, Themed, Divider, Text, Link } from 'theme-ui'
+import { Flex, Grid, Box, Themed, Divider, Text } from 'theme-ui'
 import { default as NextLink } from 'next/link'
 import {
   Row,
   Column,
   Layout,
-  Guide,
-  Buttons,
-  Links,
+  Button,
+  Link,
+  Callout,
 } from '@carbonplan/components'
+import { RotatingArrow } from '@carbonplan/icons'
 import Heading from '../components/heading'
 import { highlights, press } from '../data/recent'
 import { keyframes } from '@emotion/react'
-
-const { ArrowButton, CalloutButton } = Buttons
-const { WrappedLink } = Links
 
 const sx = {
   link: {
@@ -225,34 +223,30 @@ const About = () => {
               mb: [2, 0, 0],
             }}
           >
-            <WrappedLink href='/research' sx={sx.link}>
-              <ArrowButton
-                label={
-                  <span>
-                    Browse our
-                    <br />
-                    latest research
-                  </span>
-                }
-                size={'lg'}
-                fill={'red'}
-              />
-            </WrappedLink>
+            <Button
+              href='/research'
+              size={'lg'}
+              suffix={<RotatingArrow sx={{ color: 'red' }} />}
+            >
+              <span>
+                Browse our
+                <br />
+                latest research
+              </span>
+            </Button>
           </Box>
         </Column>
         <Column start={[1, 5, 7, 7]} width={[6, 4, 5, 5]}>
           <Box sx={{ fontSize: [6] }}>
-            <WrappedLink href={'/press'} sx={sx.link}>
-              <ArrowButton
-                size={'lg'}
-                fill={'yellow'}
-                label={
-                  <span>
-                    Read our press <br /> coverage
-                  </span>
-                }
-              />
-            </WrappedLink>
+            <Button
+              href='/press'
+              size={'lg'}
+              suffix={<RotatingArrow sx={{ color: 'yellow' }} />}
+            >
+              <span>
+                Read our press <br /> coverage
+              </span>
+            </Button>
           </Box>
         </Column>
       </Row>
@@ -279,14 +273,15 @@ const About = () => {
               RECENT HIGHLIGHTS
             </Box>
             {highlights.map((d, i) => (
-              <WrappedLink key={i} href={d.href} sx={sx.link}>
-                <ArrowButton
-                  key={i}
-                  label={d.label}
-                  size={'md'}
-                  sx={{ mb: [1] }}
-                />
-              </WrappedLink>
+              <Button
+                key={i}
+                href={d.href}
+                size='md'
+                sx={{ mb: [1] }}
+                suffix={<RotatingArrow />}
+              >
+                {d.label}
+              </Button>
             ))}
           </Box>
         </Column>
@@ -303,14 +298,15 @@ const About = () => {
               RECENT PRESS
             </Box>
             {press.map((d, i) => (
-              <WrappedLink key={i} href={d.href} sx={sx.link}>
-                <ArrowButton
-                  key={i}
-                  label={d.label}
-                  size={'md'}
-                  sx={{ mb: [1] }}
-                />
-              </WrappedLink>
+              <Button
+                key={i}
+                href={d.href}
+                size='md'
+                sx={{ mb: [1] }}
+                suffix={<RotatingArrow />}
+              >
+                {d.label}
+              </Button>
             ))}
           </Box>
         </Column>
@@ -330,42 +326,34 @@ const About = () => {
       <Row sx={{ mt: [4, 4, 5, 6], mb: [8, 8, 9, 10] }}>
         <Column start={[1, 3]} width={[3, 4, 2, 2]} sx={{ mb: [3, 0, 0, 0] }}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <WrappedLink href='https://github.com/carbonplan' sx={sx.link}>
-              <CalloutButton label={'github'}>
-                Check out our open source code
-              </CalloutButton>
-            </WrappedLink>
+            <Callout href='https://github.com/carbonpan' label='github'>
+              Check out our open source code
+            </Callout>
           </Box>
         </Column>
         <Column start={[4, 5, 5, 5]} width={[3, 4, 2, 2]}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <WrappedLink
+            <Callout
               href='https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'
-              sx={sx.link}
+              label='report'
             >
-              <CalloutButton label={'report'}>
-                Read our latest
-                <br /> annual report
-              </CalloutButton>
-            </WrappedLink>
+              Read our latest
+              <br /> annual report
+            </Callout>
           </Box>
         </Column>
         <Column start={[1, 7]} width={[3, 4, 2, 2]}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <WrappedLink href='/funding' sx={sx.link}>
-              <CalloutButton label={'funding'}>
-                Learn about our sources of funding
-              </CalloutButton>
-            </WrappedLink>
+            <Callout href='/funding' label={'funding'}>
+              Learn about our sources of funding
+            </Callout>
           </Box>
         </Column>
         <Column start={[4, 5, 9, 9]} width={[3, 4, 2, 2]}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <WrappedLink href='/donate' sx={sx.link}>
-              <CalloutButton label={'donate'}>
-                Donate to our organization
-              </CalloutButton>
-            </WrappedLink>
+            <Callout href='/donate' label={'donate'}>
+              Donate to our organization
+            </Callout>
           </Box>
         </Column>
       </Row>
