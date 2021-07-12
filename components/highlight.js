@@ -1,9 +1,6 @@
 import { Box } from 'theme-ui'
-import { Row, Column, Links, Buttons, utils } from '@carbonplan/components'
-
-const { ArrowButton } = Buttons
-const { WrappedLink } = Links
-const { formatDate } = utils
+import { Row, Column, Link, Button, formatDate } from '@carbonplan/components'
+import { RotatingArrow } from '@carbonplan/icons'
 
 const Highlight = ({ research }) => {
   return (
@@ -28,20 +25,13 @@ const Highlight = ({ research }) => {
           </Box>
         </Column>
         <Column start={[1, 2, 3, 3]} width={[6, 6, 6, 6]}>
-          <WrappedLink
+          <Button
             href={research.href}
-            sx={{
-              textDecoration: 'none',
-              display: 'block',
-              width: 'fit-content',
-            }}
+            size='lg'
+            suffix={<RotatingArrow sx={{ color: research.color }} />}
           >
-            <ArrowButton
-              label={research.title}
-              size='lg'
-              fill={research.color}
-            />
-          </WrappedLink>
+            {research.title}
+          </Button>
         </Column>
       </Row>
       <Row sx={{ mt: [3] }}>

@@ -1,10 +1,9 @@
 import { useState, useEffect, memo } from 'react'
 import { Box, Themed, Text, Link } from 'theme-ui'
 import { loadStripe } from '@stripe/stripe-js'
-import { Layout, Row, Column, Guide, Buttons } from '@carbonplan/components'
+import { Layout, Row, Column, Button } from '@carbonplan/components'
+import { RotatingArrow } from '@carbonplan/icons'
 import Heading from '../components/heading'
-
-const { ArrowButton } = Buttons
 
 const stripePromise = loadStripe(
   'pk_live_51IhKHNKRZDalHX4oADxXmtkSTQ45IlEKSQsr1fJPysjRPs3EZcm0u5CoqPF3QVqTHVygaFjhx7n2CTPdpFlwCuy800vm5I5c8j'
@@ -62,12 +61,13 @@ const Amount = ({ value, color, onClick }) => {
         cursor: 'pointer',
       }}
     >
-      <ArrowButton
-        size={'xl'}
-        label={'$' + value}
-        fill={color}
+      <Button
+        size='xl'
+        suffix={<RotatingArrow sx={{ color: color }} />}
         sx={{ py: [1, 1, 2, 2], mb: [3, 3, 3, 3] }}
-      />
+      >
+        {'$' + value}
+      </Button>
     </Box>
   )
 }
