@@ -22,7 +22,7 @@
   "dependencies": {
     "@carbonplan/components": "^8.0.0",
     "@carbonplan/icons": "^1.0.0",
-    "@carbonplan/theme": "^6.0.0",
+    "@carbonplan/theme": "^6.0.1",
     "@stripe/stripe-js": "^1.13.2",
     "@theme-ui/color": "^0.10.0",
     "d3-array": "^2.12.1",
