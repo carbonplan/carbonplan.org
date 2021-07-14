@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: 'Bloomberg',
+    href: 'https://www.bloomberg.com/opinion/articles/2021-07-14/the-winklevoss-s-crypto-carbon-capture-conundrum',
+    title: "The Winklevoss's crypto carbon capture conundrum",
+    authors: ['Liam Denning'],
+    date: '07-14-2021',
+    format: 'print',
+  },
+  {
     source: 'MIT Tech Review',
     href: 'https://www.technologyreview.com/2021/07/08/1027908/carbon-removal-hype-is-a-dangerous-distraction-climate-change/',
     title: 'Carbon removal hype is becoming a dangerous distraction',
