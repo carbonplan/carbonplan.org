@@ -34,6 +34,11 @@ const team = [
     role: 'Operations Manager',
     bio: 'Becky has extensive experience in the nonprofit sector, and is energized by operations and project management. She is passionate about creating organizational systems that foster team productivity, and is excited to be involved in climate action. She holds a BA in English Literature from Western Washington University.',
   },
+  {
+    name: 'Kata Martin',
+    role: 'Software Engineer',
+    bio: 'Kata is a software engineer focused on front-end web development. She is excited to build web tools that contribute to conversations about climate. She holds a BA in Chemistry from Reed College.',
+  },
 ]
 
 const board = [
