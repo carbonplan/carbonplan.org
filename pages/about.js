@@ -326,7 +326,7 @@ const About = () => {
       <Row sx={{ mt: [4, 4, 5, 6], mb: [8, 8, 9, 10] }}>
         <Column start={[1, 3]} width={[3, 4, 2, 2]} sx={{ mb: [3, 0, 0, 0] }}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <Callout href='https://github.com/carbonpan' label='github'>
+            <Callout href='https://github.com/carbonplan' label='github'>
               Check out our open source code
             </Callout>
           </Box>
