@@ -23,6 +23,10 @@ const research2 = {
 
 const highlights = [
   {
+    label: 'Soil Protocols',
+    href: '/research/soil-protocols',
+  },
+  {
     label: 'US Forest Risks',
     href: '/research/forest-risks-explainer',
   },
@@ -33,10 +37,6 @@ const highlights = [
   {
     label: 'CDR Database',
     href: '/research/cdr-database',
-  },
-  {
-    label: 'CDR Primer',
-    href: 'https://cdrprimer.org/',
   },
 ]
 
