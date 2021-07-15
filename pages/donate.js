@@ -107,7 +107,13 @@ const CustomAmount = ({ color, onClick }) => {
         onClick(amount)
       }}
     >
-      <Box sx={{ display: 'inline-block', width: '70%' }}>
+      <Box
+        sx={{
+          display: 'inline-block',
+          width: '70%',
+          mt: [3, 3, 3, 4],
+        }}
+      >
         <Input
           size='xl'
           value={formatAmount(amount)}
@@ -141,7 +147,7 @@ const Amount = ({ value, color, onClick }) => {
       onClick={(e) => onClick(e, value)}
       size='xl'
       suffix={<RotatingArrow sx={{ color: color }} />}
-      sx={{ py: [1, 1, 2, 2], mb: [3, 3, 3, 3] }}
+      sx={{ py: [1, 1, 2, 2], mt: [3, 3, 3, 4], mb: [3, 3, 3, 3] }}
     >
       {'$' + value}
     </Button>
