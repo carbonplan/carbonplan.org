@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { Box, IconButton, Link, Text } from 'theme-ui'
+import { Box, Link, Text } from 'theme-ui'
 import { loadStripe } from '@stripe/stripe-js'
 import {
   FadeIn,
@@ -133,30 +133,14 @@ const CustomAmount = ({ color, onClick }) => {
 
 const Amount = ({ value, color, onClick }) => {
   return (
-    <Box
-      as='button'
+    <Button
       onClick={(e) => onClick(e, value)}
-      sx={{
-        mt: [3, 3, 3, 4],
-        mb: [0, 0, 0, 0],
-        textDecoration: 'none',
-        display: 'block',
-        width: 'fit-content',
-        bg: 'transparent',
-        border: 'none',
-        color: 'primary',
-        p: [0],
-        cursor: 'pointer',
-      }}
+      size='xl'
+      suffix={<RotatingArrow sx={{ color: color }} />}
+      sx={{ py: [1, 1, 2, 2], mb: [3, 3, 3, 3] }}
     >
-      <Button
-        size='xl'
-        suffix={<RotatingArrow sx={{ color: color }} />}
-        sx={{ py: [1, 1, 2, 2], mb: [3, 3, 3, 3] }}
-      >
-        {'$' + value}
-      </Button>
-    </Box>
+      {'$' + value}
+    </Button>
   )
 }
 
