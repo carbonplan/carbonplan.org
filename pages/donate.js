@@ -14,7 +14,13 @@ import Heading from '../components/heading'
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
-const priceIds = {
+const TESTMODE_PRICE_IDS = {
+  10: 'price_1IiDHKKRZDalHX4oRO6aOVBQ',
+  20: 'price_1Ii9onKRZDalHX4oTTINKF9F',
+  50: 'price_1Ii9onKRZDalHX4o644Sf3ro',
+  100: 'price_1Ii9onKRZDalHX4o9ovB5nOl',
+}
+const LIVEMODE_PRICE_IDS = {
   10: 'price_1Ij9WVKRZDalHX4o4iM4LUVM',
   20: 'price_1Ij9WVKRZDalHX4oAcqS2EY7',
   50: 'price_1Ij9WVKRZDalHX4oq3aKRZle',
@@ -154,6 +160,10 @@ const Donate = () => {
     }, 1200)
     const stripe = await stripePromise
     try {
+      const priceIds =
+        process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
+          ? LIVEMODE_PRICE_IDS
+          : TESTMODE_PRICE_IDS
       const { error } = await stripe.redirectToCheckout({
         lineItems: [
           {
