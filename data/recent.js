@@ -24,7 +24,7 @@ const research2 = {
 const highlights = [
   {
     label: 'Soil Protocols',
-    href: '/research/soil-protocols',
+    href: '/research/soil-protocols-explainer',
   },
   {
     label: 'US Forest Risks',
