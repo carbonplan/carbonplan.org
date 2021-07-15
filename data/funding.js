@@ -76,6 +76,12 @@ const projectSpecific = [
       Soil- and forest-based carbon accounting
     </Link>,
   ],
+  [
+    'Microsoft',
+    <Link href='/research/soil-protocols-explainer'>
+      Review of soil carbon offset protocols
+    </Link>,
+  ],
 ]
 
 export { unrestricted, projectSpecific }
