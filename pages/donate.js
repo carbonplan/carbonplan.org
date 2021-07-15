@@ -1,13 +1,18 @@
-import { useState, useEffect, memo } from 'react'
-import { Box, Themed, Text, Link } from 'theme-ui'
+import { useCallback, useState } from 'react'
+import { Box, IconButton, Link, Text } from 'theme-ui'
 import { loadStripe } from '@stripe/stripe-js'
-import { Layout, Row, Column, Button } from '@carbonplan/components'
+import {
+  FadeIn,
+  Layout,
+  Row,
+  Column,
+  Button,
+  Input,
+} from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 import Heading from '../components/heading'
 
-const stripePromise = loadStripe(
-  'pk_live_51IhKHNKRZDalHX4oADxXmtkSTQ45IlEKSQsr1fJPysjRPs3EZcm0u5CoqPF3QVqTHVygaFjhx7n2CTPdpFlwCuy800vm5I5c8j'
-)
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
 const priceIds = {
   10: 'price_1Ij9WVKRZDalHX4o4iM4LUVM',
@@ -41,6 +46,89 @@ const sx = {
     pt: [2],
     pb: [5, 5, 0, 0],
   },
+}
+
+const formatAmount = (amount) =>
+  amount
+    ? `$${Number(amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}`
+    : ''
+
+const getErrorMessage = (amount) => {
+  let errorMessage
+  if (Number(amount) < 1) {
+    errorMessage = 'Please enter an amount greater than zero'
+  } else if (Number(amount > 999)) {
+    errorMessage =
+      "Please email us if you're interested in making a larger donation"
+  }
+  return errorMessage
+}
+
+const CustomAmount = ({ color, onClick }) => {
+  const [amount, setAmount] = useState('')
+  const [error, setError] = useState(null)
+
+  const handleChange = useCallback((e) => {
+    const normalizedAmount = e.target.value.replace(/\D/g, '')
+    setAmount(normalizedAmount)
+
+    if (!getErrorMessage(normalizedAmount)) {
+      setError(null)
+    }
+  }, [])
+
+  const handleBlur = useCallback(
+    (e) => {
+      const errorMessage = getErrorMessage(amount)
+
+      if (amount && errorMessage) {
+        setError(errorMessage)
+      }
+    },
+    [amount]
+  )
+
+  return (
+    <form
+      onSubmit={(e) => {
+        e.preventDefault()
+        onClick(amount)
+      }}
+    >
+      <Box sx={{ display: 'inline-block', width: '70%' }}>
+        <Input
+          size='xl'
+          value={formatAmount(amount)}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          placeholder='$'
+          sx={{
+            borderRadius: '0px',
+            borderWidth: '0px',
+            ':focus-visible': {
+              outline: 'none !important',
+              background: 'none !important',
+            },
+          }}
+        />
+      </Box>
+
+      <Button
+        aria-label='Donate custom amount'
+        size='xl'
+        suffix={<RotatingArrow sx={{ color }} />}
+        sx={{
+          ml: ['12px', '16px', '18px', '20px'],
+          display: 'inline-block',
+        }}
+      />
+      {error && (
+        <FadeIn>
+          <Text sx={{ color: 'red' }}>{error}</Text>
+        </FadeIn>
+      )}
+    </form>
+  )
 }
 
 const Amount = ({ value, color, onClick }) => {
@@ -102,6 +190,39 @@ const Donate = () => {
     }
   }
 
+  const onClickCustom = async (amount) => {
+    try {
+      // Create a CheckoutSession with the specified amount
+      const response = await fetch('/api/checkout_sessions', {
+        method: 'POST',
+        cache: 'no-cache',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify({ amount }),
+      })
+      const checkoutSession = await response.json()
+
+      if (checkoutSession.statusCode === 500) {
+        throw new Error(checkoutSession.message)
+      } else {
+        const stripe = await stripePromise
+        // Redirect to created CheckoutSession
+        const { error } = await stripe.redirectToCheckout({
+          sessionId: checkoutSession.id,
+        })
+        console.warn(error.message)
+      }
+    } catch (err) {
+      console.warn(err)
+      setStatus('error')
+      setTimeout(() => {
+        setStatus(null)
+      }, 500)
+    }
+  }
+
   return (
     <Layout links={'homepage'} title={'donate / carbonplan'} status={status}>
       <Box sx={{ mb: [8, 8, 9, 10] }}>
@@ -151,6 +272,9 @@ const Donate = () => {
           </Column>
           <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
             <Amount value={100} color='green' onClick={onClick} />
+          </Column>
+          <Column start={[1, 2, 4, 4]} width={[6, 6, 6, 6]}>
+            <CustomAmount color='teal' onClick={onClickCustom} />
           </Column>
         </Row>
         <Row sx={{ mt: [5, 6, 7, 8] }}>
