@@ -59,36 +59,41 @@ const formatAmount = (amount) =>
     ? `$${Number(amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}`
     : ''
 
-const getErrorMessage = (amount) => {
-  let errorMessage
+const getMessage = (amount) => {
+  let message
   if (Number(amount) < 1) {
-    errorMessage = 'Please enter an amount greater than zero'
+    message = 'Enter a custom donation amount.'
   } else if (Number(amount > 999)) {
-    errorMessage =
-      "Please email us if you're interested in making a larger donation"
+    message = (
+      <span>
+        <Link href='mailto:hello@carbonplan.org' sx={{ color: 'teal' }}>
+          Email us
+        </Link>{' '}
+        if you're interested in making a larger donation.
+      </span>
+    )
   }
-  return errorMessage
+  return message
 }
 
 const CustomAmount = ({ color, onClick }) => {
   const [amount, setAmount] = useState('')
-  const [error, setError] = useState(null)
+  const [message, setMessage] = useState(null)
 
   const handleChange = useCallback((e) => {
     const normalizedAmount = e.target.value.replace(/\D/g, '')
     setAmount(normalizedAmount)
 
-    if (!getErrorMessage(normalizedAmount)) {
-      setError(null)
+    if (!getMessage(normalizedAmount) || !normalizedAmount) {
+      setMessage(null)
     }
   }, [])
 
-  const handleBlur = useCallback(
-    (e) => {
-      const errorMessage = getErrorMessage(amount)
-
-      if (amount && errorMessage) {
-        setError(errorMessage)
+  const validate = useCallback(
+    (showForEmptyString) => {
+      const helpMessage = getMessage(amount)
+      if ((amount || showForEmptyString) && helpMessage) {
+        setMessage(helpMessage)
       }
     },
     [amount]
@@ -98,6 +103,7 @@ const CustomAmount = ({ color, onClick }) => {
     <form
       onSubmit={(e) => {
         e.preventDefault()
+        validate(true)
         onClick(amount)
       }}
     >
@@ -106,16 +112,8 @@ const CustomAmount = ({ color, onClick }) => {
           size='xl'
           value={formatAmount(amount)}
           onChange={handleChange}
-          onBlur={handleBlur}
+          onBlur={() => validate(false)}
           placeholder='$'
-          sx={{
-            borderRadius: '0px',
-            borderWidth: '0px',
-            ':focus-visible': {
-              outline: 'none !important',
-              background: 'none !important',
-            },
-          }}
         />
       </Box>
 
@@ -124,13 +122,13 @@ const CustomAmount = ({ color, onClick }) => {
         size='xl'
         suffix={<RotatingArrow sx={{ color }} />}
         sx={{
-          ml: ['12px', '16px', '18px', '20px'],
+          ml: ['12px', '16px', '18px', '20px'], // to match xl Button suffix margin
           display: 'inline-block',
         }}
       />
-      {error && (
+      {message && (
         <FadeIn>
-          <Text sx={{ color: 'red' }}>{error}</Text>
+          <Text sx={{ color: 'teal' }}>{message}</Text>
         </FadeIn>
       )}
     </form>
