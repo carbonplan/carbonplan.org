@@ -30,7 +30,7 @@ const LIVEMODE_PRICE_IDS = {
 const Sidenote = () => {
   return (
     <span>
-      Looking to make a larger donation?{' '}
+      Looking to make a donation of $1000 or larger?{' '}
       <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
     </span>
   )
@@ -258,7 +258,7 @@ const Donate = () => {
               variant='styles.h2'
               sx={{ mt: [0, 0, 0, 0], mb: [3, 4, 5, 6] }}
             >
-              Select an amount
+              Select or enter an amount
             </Box>
           </Column>
         </Row>
