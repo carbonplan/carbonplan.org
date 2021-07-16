@@ -134,7 +134,7 @@ const CustomAmount = ({ color, onClick }) => {
           display: 'inline-block',
         }}
       />
-      <Box sx={{ minHeight: '30px' }}>
+      <Box sx={{ minHeight: '40px' }}>
         {message && (
           <FadeIn>
             <Box sx={{ color: 'teal', pt: [2, 2, 2, 3] }}>{message}</Box>
