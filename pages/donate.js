@@ -1,15 +1,26 @@
-import { useState, useEffect, memo } from 'react'
-import { Box, Themed, Text, Link } from 'theme-ui'
+import { useCallback, useState } from 'react'
+import { Box, Link } from 'theme-ui'
 import { loadStripe } from '@stripe/stripe-js'
-import { Layout, Row, Column, Button } from '@carbonplan/components'
+import {
+  FadeIn,
+  Layout,
+  Row,
+  Column,
+  Button,
+  Input,
+} from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 import Heading from '../components/heading'
 
-const stripePromise = loadStripe(
-  'pk_live_51IhKHNKRZDalHX4oADxXmtkSTQ45IlEKSQsr1fJPysjRPs3EZcm0u5CoqPF3QVqTHVygaFjhx7n2CTPdpFlwCuy800vm5I5c8j'
-)
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
-const priceIds = {
+const TESTMODE_PRICE_IDS = {
+  10: 'price_1IiDHKKRZDalHX4oRO6aOVBQ',
+  20: 'price_1Ii9onKRZDalHX4oTTINKF9F',
+  50: 'price_1Ii9onKRZDalHX4o644Sf3ro',
+  100: 'price_1Ii9onKRZDalHX4o9ovB5nOl',
+}
+const LIVEMODE_PRICE_IDS = {
   10: 'price_1Ij9WVKRZDalHX4o4iM4LUVM',
   20: 'price_1Ij9WVKRZDalHX4oAcqS2EY7',
   50: 'price_1Ij9WVKRZDalHX4oq3aKRZle',
@@ -19,7 +30,7 @@ const priceIds = {
 const Sidenote = () => {
   return (
     <span>
-      Looking to make a larger donation?{' '}
+      Looking to make a donation of $1000 or larger?{' '}
       <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
     </span>
   )
@@ -43,32 +54,107 @@ const sx = {
   },
 }
 
-const Amount = ({ value, color, onClick }) => {
+const formatAmount = (amount) =>
+  amount
+    ? `$${Number(amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}`
+    : ''
+
+const getMessage = (amount) => {
+  let message
+  if (Number(amount) < 1) {
+    message = 'Enter a custom donation amount.'
+  } else if (Number(amount > 999)) {
+    message = (
+      <span>
+        <Link href='mailto:hello@carbonplan.org' sx={{ color: 'teal' }}>
+          Email us
+        </Link>{' '}
+        if you're interested in making a donation of $1000 or more.
+      </span>
+    )
+  }
+  return message
+}
+
+const CustomAmount = ({ color, onClick }) => {
+  const [amount, setAmount] = useState('')
+  const [message, setMessage] = useState(null)
+
+  const handleChange = useCallback((e) => {
+    const normalizedAmount = e.target.value.replace(/\D/g, '')
+    setAmount(normalizedAmount)
+
+    if (!getMessage(normalizedAmount) || !normalizedAmount) {
+      setMessage(null)
+    }
+  }, [])
+
+  const validate = useCallback(
+    (showForEmptyString) => {
+      const helpMessage = getMessage(amount)
+      if ((amount || showForEmptyString) && helpMessage) {
+        setMessage(helpMessage)
+      }
+    },
+    [amount]
+  )
+
   return (
     <Box
-      as='button'
-      onClick={(e) => onClick(e, value)}
-      sx={{
-        mt: [3, 3, 3, 4],
-        mb: [0, 0, 0, 0],
-        textDecoration: 'none',
-        display: 'block',
-        width: 'fit-content',
-        bg: 'transparent',
-        border: 'none',
-        color: 'primary',
-        p: [0],
-        cursor: 'pointer',
+      as='form'
+      onSubmit={(e) => {
+        e.preventDefault()
+        validate(true)
+        onClick(amount)
       }}
+      sx={{ mb: [2, 2, 2, 3] }}
     >
-      <Button
-        size='xl'
-        suffix={<RotatingArrow sx={{ color: color }} />}
-        sx={{ py: [1, 1, 2, 2], mb: [3, 3, 3, 3] }}
+      <Box
+        sx={{
+          display: 'inline-block',
+          width: '70%',
+          mt: [3, 3, 3, 4],
+        }}
       >
-        {'$' + value}
-      </Button>
+        <Input
+          size='xl'
+          value={formatAmount(amount)}
+          onChange={handleChange}
+          onBlur={() => validate(false)}
+          placeholder='$'
+          sx={{ pb: [2, 2, 2, 3] }}
+        />
+      </Box>
+      <Button
+        aria-label='Donate custom amount'
+        size='xl'
+        suffix={<RotatingArrow sx={{ color }} />}
+        sx={{
+          ml: ['12px', '16px', '18px', '20px'], // to match xl Button suffix margin
+          display: 'inline-block',
+        }}
+      />
+      <Box sx={{ minHeight: '50px' }}>
+        {message && (
+          <FadeIn>
+            <Box sx={{ color: 'teal', pt: [2, 2, 2, 3] }}>{message}</Box>
+          </FadeIn>
+        )}
+      </Box>
     </Box>
+  )
+}
+
+const Amount = ({ value, color, onClick }) => {
+  return (
+    <Button
+      onClick={(e) => onClick(e, value)}
+      size='xl'
+      suffix={<RotatingArrow sx={{ color: color }} />}
+      sx={{ py: [1, 1, 2, 2], mt: [3, 3, 3, 4], mb: [3, 3, 3, 3] }}
+    >
+      {'$' + value}
+    </Button>
   )
 }
 
@@ -82,6 +168,10 @@ const Donate = () => {
     }, 1200)
     const stripe = await stripePromise
     try {
+      const priceIds =
+        process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
+          ? LIVEMODE_PRICE_IDS
+          : TESTMODE_PRICE_IDS
       const { error } = await stripe.redirectToCheckout({
         lineItems: [
           {
@@ -95,6 +185,39 @@ const Donate = () => {
       })
     } catch (err) {
       console.log(err)
+      setStatus('error')
+      setTimeout(() => {
+        setStatus(null)
+      }, 500)
+    }
+  }
+
+  const onClickCustom = async (amount) => {
+    try {
+      // Create a CheckoutSession with the specified amount
+      const response = await fetch('/api/checkout_sessions', {
+        method: 'POST',
+        cache: 'no-cache',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify({ amount }),
+      })
+      const checkoutSession = await response.json()
+
+      if (checkoutSession.statusCode === 500) {
+        throw new Error(checkoutSession.message)
+      } else {
+        const stripe = await stripePromise
+        // Redirect to created CheckoutSession
+        const { error } = await stripe.redirectToCheckout({
+          sessionId: checkoutSession.id,
+        })
+        console.warn(error.message)
+      }
+    } catch (err) {
+      console.warn(err)
       setStatus('error')
       setTimeout(() => {
         setStatus(null)
@@ -135,7 +258,7 @@ const Donate = () => {
               variant='styles.h2'
               sx={{ mt: [0, 0, 0, 0], mb: [3, 4, 5, 6] }}
             >
-              Select an amount
+              Select or enter an amount
             </Box>
           </Column>
         </Row>
@@ -151,6 +274,9 @@ const Donate = () => {
           </Column>
           <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
             <Amount value={100} color='green' onClick={onClick} />
+          </Column>
+          <Column start={[1, 2, 4, 4]} width={[6, 6, 6, 6]}>
+            <CustomAmount color='teal' onClick={onClickCustom} />
           </Column>
         </Row>
         <Row sx={{ mt: [5, 6, 7, 8] }}>

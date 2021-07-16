@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/carbonplan/carbonplan.org#readme",
   "dependencies": {
-    "@carbonplan/components": "^8.0.0",
+    "@carbonplan/components": "^8.1.0",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/theme": "^6.0.1",
     "@stripe/stripe-js": "^1.13.2",
@@ -32,6 +32,7 @@
     "next": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "stripe": "^8.161.0",
     "theme-ui": "^0.10.0"
   },
   "devDependencies": {
