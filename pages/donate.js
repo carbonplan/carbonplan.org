@@ -193,6 +193,7 @@ const Donate = () => {
   }
 
   const onClickCustom = async (amount) => {
+    setStatus('processing')
     try {
       // Create a CheckoutSession with the specified amount
       const response = await fetch('/api/checkout_sessions', {
@@ -211,6 +212,7 @@ const Donate = () => {
       } else {
         const stripe = await stripePromise
         // Redirect to created CheckoutSession
+        setStatus(null)
         const { error } = await stripe.redirectToCheckout({
           sessionId: checkoutSession.id,
         })
