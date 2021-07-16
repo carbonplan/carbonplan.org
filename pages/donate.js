@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { Box, Link, Text } from 'theme-ui'
+import { Box, Link } from 'theme-ui'
 import { loadStripe } from '@stripe/stripe-js'
 import {
   FadeIn,
@@ -69,7 +69,7 @@ const getMessage = (amount) => {
         <Link href='mailto:hello@carbonplan.org' sx={{ color: 'teal' }}>
           Email us
         </Link>{' '}
-        if you're interested in making a larger donation.
+        if you're interested in making a donation of $1000 or more.
       </span>
     )
   }
@@ -100,12 +100,14 @@ const CustomAmount = ({ color, onClick }) => {
   )
 
   return (
-    <form
+    <Box
+      as='form'
       onSubmit={(e) => {
         e.preventDefault()
         validate(true)
         onClick(amount)
       }}
+      sx={{ mb: [2, 2, 2, 3] }}
     >
       <Box
         sx={{
@@ -120,9 +122,9 @@ const CustomAmount = ({ color, onClick }) => {
           onChange={handleChange}
           onBlur={() => validate(false)}
           placeholder='$'
+          sx={{ pb: [2, 2, 2, 3] }}
         />
       </Box>
-
       <Button
         aria-label='Donate custom amount'
         size='xl'
@@ -132,12 +134,14 @@ const CustomAmount = ({ color, onClick }) => {
           display: 'inline-block',
         }}
       />
-      {message && (
-        <FadeIn>
-          <Text sx={{ color: 'teal' }}>{message}</Text>
-        </FadeIn>
-      )}
-    </form>
+      <Box sx={{ minHeight: '30px' }}>
+        {message && (
+          <FadeIn>
+            <Box sx={{ color: 'teal', pt: [2, 2, 2, 3] }}>{message}</Box>
+          </FadeIn>
+        )}
+      </Box>
+    </Box>
   )
 }
 
