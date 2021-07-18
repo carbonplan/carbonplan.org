@@ -30,7 +30,7 @@ const LIVEMODE_PRICE_IDS = {
 const Sidenote = () => {
   return (
     <span>
-      Looking to make a donation of $1000 or larger?{' '}
+      Looking to make a donation of $1000 or more?{' '}
       <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
     </span>
   )
@@ -69,7 +69,7 @@ const getMessage = (amount) => {
         <Link href='mailto:hello@carbonplan.org' sx={{ color: 'teal' }}>
           Email us
         </Link>{' '}
-        if you're interested in making a donation of $1000 or more.
+        for a donation of $1000 or more.
       </span>
     )
   }
@@ -137,7 +137,9 @@ const CustomAmount = ({ color, onClick }) => {
       <Box sx={{ minHeight: '50px' }}>
         {message && (
           <FadeIn>
-            <Box sx={{ color: 'teal', pt: [2, 2, 2, 3] }}>{message}</Box>
+            <Box sx={{ color: 'teal', pt: [2, 2, 2, 3], maxWidth: ['70%'] }}>
+              {message}
+            </Box>
           </FadeIn>
         )}
       </Box>
@@ -254,7 +256,7 @@ const Donate = () => {
           </Column>
         </Row>
         <Row>
-          <Column start={[1, 2]} width={[6, 4]}>
+          <Column start={[1, 2]} width={[6, 5]}>
             <Box
               as='h2'
               variant='styles.h2'
@@ -277,7 +279,7 @@ const Donate = () => {
           <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
             <Amount value={100} color='green' onClick={onClick} />
           </Column>
-          <Column start={[1, 2, 4, 4]} width={[6, 6, 6, 6]}>
+          <Column start={[1, 2, 4, 4]} width={[6, 5, 5, 5]}>
             <CustomAmount color='teal' onClick={onClickCustom} />
           </Column>
         </Row>
