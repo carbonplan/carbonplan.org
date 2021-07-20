@@ -1,6 +1,7 @@
 import { Box, Themed } from 'theme-ui'
 import { Layout, Row, Column, Callout, Link } from '@carbonplan/components'
 import Heading from '../components/heading'
+import { Heart } from '@carbonplan/emoji'
 
 const sx = {
   link: {
@@ -19,7 +20,7 @@ const Thanks = () => {
   return (
     <Layout links={'homepage'} title={'thanks / carbonplan'}>
       <Box sx={{ mb: [8, 8, 9, 10] }}>
-        <Heading>Thank you</Heading>
+        <Heading sx={{ whiteSpace: 'nowrap' }}>Thank you</Heading>
         <Row>
           <Column start={[1, 1, 2, 2]} width={[6, 6, 6, 6]}>
             <Box as='p' variant='styles.p' sx={{ mt: [0] }}>
@@ -33,6 +34,9 @@ const Thanks = () => {
               or come back to this website anytime to see the latest updates on
               our work.
             </Themed.p>
+          </Column>
+          <Column start={[2, 2, 9, 9]} width={[4, 4, 2, 2]}>
+            <Heart sx={{ width: '100%', height: 'auto', mt: [0, 0, -5, -5] }} />
           </Column>
         </Row>
         <Row sx={{ mt: [4, 5, 6, 7] }}>
