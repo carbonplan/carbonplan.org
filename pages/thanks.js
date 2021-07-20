@@ -36,7 +36,14 @@ const Thanks = () => {
             </Themed.p>
           </Column>
           <Column start={[2, 2, 9, 9]} width={[4, 4, 2, 2]}>
-            <Heart sx={{ width: '100%', height: 'auto', mt: [0, 0, -6, -6] }} />
+            <Heart
+              sx={{
+                width: '100%',
+                color: 'pink',
+                height: 'auto',
+                mt: [0, 0, -6, -6],
+              }}
+            />
           </Column>
         </Row>
         <Row sx={{ mt: [4, 5, 6, 7] }}>
