@@ -2,11 +2,11 @@ import { Box } from 'theme-ui'
 import { Row, Column } from '@carbonplan/components'
 import Sidenote from './sidenote'
 
-const Heading = ({ children, sidenote, description }) => {
+const Heading = ({ children, sidenote, description, sx }) => {
   return (
     <Row sx={{ mt: [5, 6, 7, 8], mb: [5, 6, 7, 8] }}>
       <Column start={[1, 1, 2, 2]} width={[6, 2, 3, 3]}>
-        <Box as='h1' variant='styles.h1' sx={{ my: [0, 0, 0, 0] }}>
+        <Box as='h1' variant='styles.h1' sx={{ my: [0, 0, 0, 0], ...sx }}>
           {children}
         </Box>
       </Column>
