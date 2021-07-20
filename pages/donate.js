@@ -122,7 +122,7 @@ const CustomAmount = ({ color, onClick }) => {
           onChange={handleChange}
           onBlur={() => validate(false)}
           placeholder='$'
-          sx={{ pb: [2, 2, 2, 3] }}
+          sx={{ py: [0] }}
         />
       </Box>
       <Button
@@ -137,7 +137,7 @@ const CustomAmount = ({ color, onClick }) => {
       <Box sx={{ minHeight: '50px' }}>
         {message && (
           <FadeIn>
-            <Box sx={{ color: 'teal', pt: [2, 2, 2, 3], maxWidth: ['70%'] }}>
+            <Box sx={{ color: 'teal', pt: [1, 1, 2, 3], maxWidth: ['70%'] }}>
               {message}
             </Box>
           </FadeIn>
