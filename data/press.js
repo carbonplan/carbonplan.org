@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: 'CNBC',
+    href: 'https://www.cnbc.com/video/2021/07/22/carbon-offsets-private-market-is-completely-unregulated-says-policy-expert.html',
+    title:
+      'Carbon offsets private market is completely unregulated, says policy expert',
+    authors: [],
+    date: '07-22-2021',
+    format: 'video',
+  },
+  {
     source: 'Bloomberg',
     href: 'https://www.bloomberg.com/opinion/articles/2021-07-14/the-winklevoss-s-crypto-carbon-capture-conundrum',
     title: "The Winklevoss's crypto carbon capture conundrum",
