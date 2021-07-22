@@ -10,7 +10,6 @@ import {
   formatDate,
 } from '@carbonplan/components'
 import { Arrow } from '@carbonplan/icons'
-import { alpha } from '@theme-ui/color'
 import Heading from '../components/heading'
 import { highlights, press } from '../data/press'
 import {
@@ -248,7 +247,7 @@ const Press = () => {
 }
 
 function Item({ data, final = false }) {
-  const { source, description, title, href, date, authors } = data
+  const { source, title, href, date, authors } = data
 
   const sources = Array.isArray(source) ? source : [source]
 
