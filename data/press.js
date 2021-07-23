@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: 'CNN',
+    href: 'https://www.cnn.com/2021/07/22/weather/bootleg-oregon-fire-carbon-offsets/index.html',
+    title: 'Bootleg Fire is burning up carbon offsets',
+    authors: ['Daniel Wolfe', 'Tal Yellin'],
+    date: '07-22-2021',
+    format: 'print',
+  },
+  {
     source: 'CNBC',
     href: 'https://www.cnbc.com/video/2021/07/22/carbon-offsets-private-market-is-completely-unregulated-says-policy-expert.html',
     title:
