@@ -40,7 +40,7 @@ const press = [
     href: 'https://www.cnbc.com/video/2021/07/22/carbon-offsets-private-market-is-completely-unregulated-says-policy-expert.html',
     title:
       'Carbon offsets private market is completely unregulated, says policy expert',
-    authors: [],
+    authors: ['Kelly Evans'],
     date: '07-22-2021',
     format: 'video',
   },
