@@ -32,15 +32,27 @@ const projectSpecific = [
   ],
   [
     'Stripe',
-    <Link href='/research/stripe-reports-insights'>
-      Negative Emissions Purchase 2020
-    </Link>,
+    <>
+      <Link href='/research/stripe-reports-insights'>
+        Negative Emissions Purchase 2020
+      </Link>
+      <br />
+      <Link href='https://github.com/carbonplan/carbon-removal-application'>
+        Development of carbon removal procurement application
+      </Link>
+    </>,
   ],
   ['WattTime', <Link href='https://www.climatetrace.org'>Climate TRACE</Link>],
   ['Generation IM', 'Guidance on evaluating climate benefits from investments'],
   [
     'ClimateWorks',
-    <Link href='/research/permanence-calculator'>Permanence Calculator</Link>,
+    <>
+      <Link href='/research/permanence-calculator'>Permanence Calculator</Link>
+      <br />
+      <Link href='/research/stripe-2021-insights'>
+        Evaluation of technological carbon removal proposals
+      </Link>
+    </>,
   ],
   [
     <span>
@@ -55,31 +67,19 @@ const projectSpecific = [
     </Link>,
   ],
   [
+    'Microsoft',
+    <Link href='/research/soil-protocols-explainer'>
+      Review of soil carbon offset protocols
+    </Link>,
+  ],
+  [
     'Microsoft AI for Earth',
     <Link href='/research/forest-risks'>Forest carbon risk mapping</Link>,
-  ],
-  [
-    'Stripe',
-    <Link href='https://github.com/carbonplan/carbon-removal-application'>
-      Development of carbon removal procurement application
-    </Link>,
-  ],
-  [
-    'ClimateWorks',
-    <Link href='/research/stripe-2021-insights'>
-      Evaluation of technological carbon removal proposals
-    </Link>,
   ],
   [
     'Preston-Werner Foundation',
     <Link href='/research/soil-depth-sampling'>
       Soil- and forest-based carbon accounting
-    </Link>,
-  ],
-  [
-    'Microsoft',
-    <Link href='/research/soil-protocols-explainer'>
-      Review of soil carbon offset protocols
     </Link>,
   ],
 ]
