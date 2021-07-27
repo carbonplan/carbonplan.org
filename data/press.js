@@ -28,12 +28,13 @@ const highlights = [
 
 const press = [
   {
-    source: 'LA Times',
+    source: 'Los Angeles Times',
     href: 'https://www.latimes.com/opinion/story/2021-07-25/climate-change-renewable-energy-technologies-natural-gas-california',
-    title: 'Op-Ed: How California can lead the way on climate-protecting technologies',
-    authors: ['David G. Victor','Ryan Hanna'],
+    title:
+      'Op-Ed: How California can lead the way on climate-protecting technologies',
+    authors: ['David G. Victor', 'Ryan Hanna'],
     date: '07-25-2021',
-    format: 'print'
+    format: 'print',
   },
   {
     source: 'CNN',
