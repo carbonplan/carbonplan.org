@@ -36,7 +36,7 @@ const press = [
     format: 'print',
   },
   {
-    source: 'MIT Technology Review',
+    source: 'MIT Tech Review',
     href: 'https://www.technologyreview.com/2021/07/27/1030134/west-coast-wildfires-wiped-out-pandemic-emissions-cuts-climate-change',
     title:
       'The pandemic slashed the West Coast’s emissions. Wildfires already reversed it.',
