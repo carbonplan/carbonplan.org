@@ -30,7 +30,8 @@ const press = [
   {
     source: 'Politico',
     href: 'https://www.politico.com/news/2021/07/27/wildfires-rage-carbon-credits-500830',
-    title: 'Wildfires rage and a tool to combat climate change goes up in smoke',
+    title:
+      'Wildfires rage and a tool to combat climate change goes up in smoke',
     authors: ['Debra Kahn'],
     date: '07-27-2021',
     format: 'print',
@@ -38,7 +39,8 @@ const press = [
   {
     source: 'MIT Technology Review',
     href: 'https://www.technologyreview.com/2021/07/27/1030134/west-coast-wildfires-wiped-out-pandemic-emissions-cuts-climate-change',
-    title: 'The pandemic slashed the West Coast’s emissions. Wildfires already reversed it.',
+    title:
+      'The pandemic slashed the West Coast’s emissions. Wildfires already reversed it.',
     authors: ['James Temple'],
     date: '07-27-2021',
     format: 'print',
