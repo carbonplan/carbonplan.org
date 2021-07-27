@@ -30,8 +30,7 @@ const press = [
   {
     source: 'Earther',
     href: 'https://gizmodo.com/western-wildfires-are-sending-carbon-offsets-up-in-smok-1847370861',
-    title:
-      'Western wildfires are sending carbon offsets up in smoke',
+    title: 'Western wildfires are sending carbon offsets up in smoke',
     authors: ['Dharna Noor'],
     date: '07-27-2021',
     format: 'print',
