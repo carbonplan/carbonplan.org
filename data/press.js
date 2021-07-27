@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: 'LA Times',
+    href: 'https://www.latimes.com/opinion/story/2021-07-25/climate-change-renewable-energy-technologies-natural-gas-california',
+    title: 'Op-Ed: How California can lead the way on climate-protecting technologies',
+    authors: ['David G. Victor','Ryan Hanna'],
+    date: '07-25-2021',
+    format: 'print'
+  },
+  {
     source: 'CNN',
     href: 'https://www.cnn.com/2021/07/22/weather/bootleg-oregon-fire-carbon-offsets/index.html',
     title: 'Bootleg Fire is burning up carbon offsets',
