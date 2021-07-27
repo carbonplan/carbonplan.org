@@ -10,7 +10,7 @@
     },
     {
       "source": "/research/forest-offsets",
-      "destination": "https://wonderful-river-0932dae1e.azurestaticapps.net/research/forest-offsets"
+      "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets"
     },
     {
       "source": "/research/carbon-removal-application(.*)",
