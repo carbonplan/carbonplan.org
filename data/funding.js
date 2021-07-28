@@ -28,11 +28,11 @@ const unrestricted = [
       Emily O'Brien
     </span>,
     'Individual',
-    ],
+  ],
   ['Shawn Liu', 'Individual'],
   ['Garon Family Fund', 'Individual'],
   ['John Wolthuis', 'Individual'],
-  ['Zegar Family Fund', 'Individual']
+  ['Zegar Family Fund', 'Individual'],
   ['FTX', 'Corporate']
 ]
 
