@@ -40,6 +40,7 @@ const unrestricted = [
       Balaji Srinivas
     </span>,
     'Individual',
+    ],
 ]
 
 const projectSpecific = [
