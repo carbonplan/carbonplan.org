@@ -17,10 +17,23 @@ const unrestricted = [
     </span>,
     'Individual',
   ],
-  ['Teach a Man to Fish Foundation', 'Individual'],
-  ['Eutopia Foundation', 'Individual'],
+  ['Teach a Man to Fish Foundation', 'Foundation'],
+  ['Eutopia Foundation', 'Foundation'],
   ['Jacob Trefethen', 'Individual'],
   ['Incite labs', 'Corporate'],
+  [
+    <span>
+      Ilya Volodarsky +<br />
+      Mike Volodarsky +<br />
+      Emily O'Brien
+    </span>,
+    'Individual',
+  ],
+  ['Shawn Liu', 'Individual'],
+  ['Garon Family Fund', 'Individual'],
+  ['John Wolthuis', 'Individual'],
+  ['Zegar Family Fund', 'Individual'],
+  ['FTX', 'Corporate'],
 ]
 
 const projectSpecific = [
