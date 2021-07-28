@@ -33,7 +33,7 @@ const unrestricted = [
   ['Garon Family Fund', 'Individual'],
   ['John Wolthuis', 'Individual'],
   ['Zegar Family Fund', 'Individual'],
-  ['FTX', 'Corporate']
+  ['FTX', 'Corporate'],
 ]
 
 const projectSpecific = [
