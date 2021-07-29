@@ -41,6 +41,7 @@ const unrestricted = [
     </span>,
     'Individual',
   ],
+  ['Sergey Brin Family Foundation', 'Foundation'],
 ]
 
 const projectSpecific = [
