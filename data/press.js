@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: 'Fast Company',
+    href: 'https://www.fastcompany.com/90659827/the-bootleg-fire-is-burning-through-trees-that-are-being-used-as-carbon-offsets?',
+    title:
+      'The Bootleg fire is burning through trees that are being used as carbon offsets',
+    authors: ['Adele Peters'],
+    date: '07-28-2021',
+    format: 'print',
+  },
+  {
     source: 'Earther',
     href: 'https://gizmodo.com/western-wildfires-are-sending-carbon-offsets-up-in-smok-1847370861',
     title: 'Western wildfires are sending carbon offsets up in smoke',
