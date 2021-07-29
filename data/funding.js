@@ -32,8 +32,8 @@ const unrestricted = [
   ['Shawn Liu', 'Individual'],
   [
     <span>
-    Ross A. Garon +<br />
-    Hong K. Suh
+      Ross A. Garon +<br />
+      Hong K. Suh
     </span>,
     'Individual',
   ],
