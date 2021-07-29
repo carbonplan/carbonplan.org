@@ -30,7 +30,13 @@ const unrestricted = [
     'Individual',
   ],
   ['Shawn Liu', 'Individual'],
-  ['Garon Family Fund', 'Individual'],
+  [
+    <span>
+      Ross A. Garon +<br />
+      Hong K. Suh
+    </span>,
+    'Individual',
+  ],
   ['John Wolthuis', 'Individual'],
   ['Zegar Family Fund', 'Individual'],
   ['FTX', 'Corporate'],
