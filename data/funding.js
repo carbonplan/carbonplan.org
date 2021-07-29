@@ -34,6 +34,13 @@ const unrestricted = [
   ['John Wolthuis', 'Individual'],
   ['Zegar Family Fund', 'Individual'],
   ['FTX', 'Corporate'],
+  [
+    <span>
+      Venkatesh Srinivas +<br />
+      Balaji Srinivas
+    </span>,
+    'Individual',
+  ],
 ]
 
 const projectSpecific = [
