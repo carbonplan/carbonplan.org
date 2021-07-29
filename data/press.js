@@ -30,7 +30,8 @@ const press = [
   {
     source: 'Fast Company',
     href: 'https://www.fastcompany.com/90659827/the-bootleg-fire-is-burning-through-trees-that-are-being-used-as-carbon-offsets?',
-    title: 'The Bootleg fire is burning through trees that are being used as carbon offsets',
+    title: 
+      'The Bootleg fire is burning through trees that are being used as carbon offsets',
     authors: ['Adele Peters'],
     date: '07-28-2021',
     format: 'print',
