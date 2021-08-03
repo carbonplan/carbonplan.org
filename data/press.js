@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: 'Financial Times',
+    href: 'https://www.ft.com/content/3f89c759-eb9a-4dfb-b768-d4af1ec5aa23',
+    title:
+      'US forest fires threaten carbon offsets as company-linked trees burn',
+    authors: ['Camilla Hodgson'],
+    date: '08-03-2021',
+    format: 'print',
+  },
+  {
     source: 'Fast Company',
     href: 'https://www.fastcompany.com/90659827/the-bootleg-fire-is-burning-through-trees-that-are-being-used-as-carbon-offsets?',
     title:
