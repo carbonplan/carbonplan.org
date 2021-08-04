@@ -43,6 +43,7 @@ const sx = {
     letterSpacing: 'mono',
     textTransform: 'uppercase',
     fontSize: [1, 1, 1, 2],
+    pt: ['9px'],
   },
   bordered: {
     borderStyle: 'solid',
@@ -300,19 +301,19 @@ const Donate = () => {
           <Column start={[1, 7]} width={[4, 4]}>
             <Row columns={[4]}>
               <Column start={[1]} width={[2]}>
-                <Box sx={{ ...sx.details, ...sx.bordered }}>
+                <Box sx={{ ...sx.bordered, ...sx.details }}>
                   Legal name: <br /> carbonplan
                 </Box>
               </Column>
               <Column start={[3]} width={[2]}>
-                <Box sx={{ ...sx.details, ...sx.bordered }}>
+                <Box sx={{ ...sx.bordered, ...sx.details }}>
                   EIN #: <br /> 84-4378880
                 </Box>
               </Column>
             </Row>
             <Row columns={[4]}>
               <Column start={[1]} width={[4]}>
-                <Box sx={{ ...sx.details, ...sx.bordered, mt: [0, 0, 4, 5] }}>
+                <Box sx={{ ...sx.bordered, ...sx.details, mt: [0, 0, 4, 5] }}>
                   Mailing address: <br />
                   2443 Fillmore St{' '}
                   <Box as='br' sx={{ display: ['initial', 'none'] }} />
