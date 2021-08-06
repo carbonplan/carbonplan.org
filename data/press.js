@@ -27,7 +27,7 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: 'Foreign Policy',
     href: 'https://foreignpolicy.com/2021/08/06/climate-conflict-europe-us-green-trade-war/',
     title:
