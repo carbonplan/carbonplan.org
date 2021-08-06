@@ -28,6 +28,24 @@ const highlights = [
 
 const press = [
   {
+    source: 'Foreign Policy',
+    href: 'https://foreignpolicy.com/2021/08/06/climate-conflict-europe-us-green-trade-war/',
+    title:
+      'Present at the creation of a climate alliance—or a climate conflict',
+    authors: ['Adam Tooze'],
+    date: '08-06-2021',
+    format: 'print',
+  },
+  {
+    source: 'The Independent',
+    href: 'https://www.independent.co.uk/climate-change/news/carbon-offsets-microsoft-bp-forests-wildfires-b1897012.html',
+    title:
+      'Carbon offset programs of companies like Microsoft, BP go up in smoke as wildfires decimate forests',
+    authors: ['Sheila Flynn'],
+    date: '08-05-2021',
+    format: 'print',
+  },
+  {
     source: 'Financial Times',
     href: 'https://www.ft.com/content/3f89c759-eb9a-4dfb-b768-d4af1ec5aa23',
     title:
