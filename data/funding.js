@@ -39,7 +39,7 @@ const unrestricted = [
   ],
   ['John Wolthuis', 'Individual'],
   ['Zegar Family Fund', 'Individual'],
-  ['FTX', 'Corporate'],
+  ['FTX Foundation', 'Foundation'],
   [
     <span>
       Venkatesh Srinivas +<br />
