@@ -39,6 +39,11 @@ const team = [
     role: 'Software Engineer',
     bio: 'Kata is a software engineer focused on front-end web development. She is excited to build web tools that contribute to conversations about climate. She holds a BA in Chemistry from Reed College.',
   },
+  {
+    name: 'Raphael Hagen',
+    role: 'Data Engineer',
+    bio: 'Raphael is a data engineer with a background in remote sensing geoscience. He is interested in earth observation and scientific tool building as well as climate outreach. He holds a BS in Geoscience from the University of Montana and has spent several seasons working as a ranger for the National Park Service.',
+  },
 ]
 
 const board = [
