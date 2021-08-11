@@ -28,6 +28,33 @@ const highlights = [
 
 const press = [
   {
+    source: 'Bloomberg Green',
+    href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
+    title:
+      'How to sell \'carbon neutral\' fossil fuel that doesn\'t exist',
+    authors: ['Stephen Stapczynski', 'Akshat Rathi', 'Godfrey Marawanyika'],
+    date: '08-10-2021',
+    format: 'print',
+  },
+  {
+    source: 'The Energy Gang',
+    href: 'https://podcasts.apple.com/us/podcast/as-profits-rise-oil-majors-face-new-pressures/id663379413?i=1000531636031',
+    title:
+      'As profits rise, oil majors face new pressures',
+    authors: ['Stephen Lacey', 'Katherine Hamilton', 'Ed Crooks'],
+    date: '08-10-2021',
+    format: 'audio',
+  },
+  {
+    source: 'River Reporter',
+    href: 'https://riverreporter.com/stories/whom-are-we-trying-to-fool,46718',
+    title:
+      'Whom are we trying to fool?',
+    authors: ['Carol Roig'],
+    date: '08-10-2021',
+    format: 'print',
+  },
+  {
     source: 'Foreign Policy',
     href: 'https://foreignpolicy.com/2021/08/06/climate-conflict-europe-us-green-trade-war/',
     title:
