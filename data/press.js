@@ -39,8 +39,7 @@ const press = [
   {
     source: 'The Energy Gang',
     href: 'https://podcasts.apple.com/us/podcast/as-profits-rise-oil-majors-face-new-pressures/id663379413?i=1000531636031',
-    title:
-      'As profits rise, oil majors face new pressures',
+    title: 'As profits rise, oil majors face new pressures',
     authors: ['Stephen Lacey', 'Katherine Hamilton', 'Ed Crooks'],
     date: '08-10-2021',
     format: 'audio',
@@ -48,8 +47,7 @@ const press = [
   {
     source: 'River Reporter',
     href: 'https://riverreporter.com/stories/whom-are-we-trying-to-fool,46718',
-    title:
-      'Whom are we trying to fool?',
+    title: 'Whom are we trying to fool?',
     authors: ['Carol Roig'],
     date: '08-10-2021',
     format: 'print',
