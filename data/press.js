@@ -30,7 +30,7 @@ const press = [
   {
     source: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
-    title: "How to sell 'carbon neutral' fossil fuel that doesn\'t exist",
+    title: "How to sell 'carbon neutral' fossil fuel that doesn't exist",
     authors: ['Stephen Stapczynski', 'Akshat Rathi', 'Godfrey Marawanyika'],
     date: '08-10-2021',
     format: 'print',
