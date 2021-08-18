@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: 'NPR',
+    href: 'https://www.marketplace.org/shows/marketplace/for-hospitals-covid-surges-mean-staff-and-bed-shortages-yet-again/',
+    title: "Marketplace",
+    authors: ['Amanda Preacher'],
+    date: '08-17-2021',
+    format: 'audio',
+  },
+  {
     source: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
     title: "How to sell 'carbon neutral' fossil fuel that doesn't exist",
