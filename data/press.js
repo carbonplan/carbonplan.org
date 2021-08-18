@@ -30,7 +30,7 @@ const press = [
   {
     source: 'Marketplace',
     href: 'https://www.marketplace.org/2021/08/17/emissions-offsets-ease-travel-guilt-but-do-they-reduce-carbon-footprints/',
-    title: 
+    title:
       'Emissions offsets ease travel guilt, but do they reduce carbon footprints?',
     authors: ['Amanda Peacher'],
     date: '08-17-2021',
