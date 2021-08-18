@@ -30,7 +30,7 @@ const press = [
   {
     source: 'NPR',
     href: 'https://www.marketplace.org/shows/marketplace/for-hospitals-covid-surges-mean-staff-and-bed-shortages-yet-again/',
-    title: "Marketplace",
+    title: 'Marketplace',
     authors: ['Amanda Preacher'],
     date: '08-17-2021',
     format: 'audio',
