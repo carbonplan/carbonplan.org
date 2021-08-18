@@ -29,9 +29,9 @@ const highlights = [
 const press = [
   {
     source: 'Marketplace',
-    href: 'https://www.marketplace.org/shows/marketplace/for-hospitals-covid-surges-mean-staff-and-bed-shortages-yet-again/',
-    title: 'Segment on using carbon offsets for travel',
-    authors: ['Amanda Preacher'],
+    href: 'https://www.marketplace.org/2021/08/17/emissions-offsets-ease-travel-guilt-but-do-they-reduce-carbon-footprints/',
+    title: 'Emissions offsets ease travel guilt, but do they reduce carbon footprints?',
+    authors: ['Amanda Peacher'],
     date: '08-17-2021',
     format: 'audio',
   },
