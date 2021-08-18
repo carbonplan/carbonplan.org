@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: 'Marketplace',
+    href: 'https://www.marketplace.org/2021/08/17/emissions-offsets-ease-travel-guilt-but-do-they-reduce-carbon-footprints/',
+    title:
+      'Emissions offsets ease travel guilt, but do they reduce carbon footprints?',
+    authors: ['Amanda Peacher'],
+    date: '08-17-2021',
+    format: 'audio',
+  },
+  {
     source: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
     title: "How to sell 'carbon neutral' fossil fuel that doesn't exist",
