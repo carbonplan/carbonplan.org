@@ -28,6 +28,24 @@ const highlights = [
 
 const press = [
   {
+    source: ['ProPublica', 'MIT Tech Review'],
+    href: 'https://www.propublica.org/article/lawmakers-question-california-cap-and-trade-policies-citing-propublica-report',
+    title:
+      'Lawmakers question california cap and trade policies, citing ProPublica report',
+    authors: ['Lisa Song', 'James Temple'],
+    date: '08-20-2021',
+    format: 'print',
+  },
+  {
+    source: 'The Guardian',
+    href: 'https://www.theguardian.com/environment/2021/aug/20/leon-carbon-neutral-burgers-restaurant-environmental',
+    title:
+      "Scientists raise doubts over Leon’s ‘carbon-neutral’ burgers",
+    authors: ['Patrick Greenfield'],
+    date: '08-20-2021',
+    format: 'print',
+  },
+  {
     source: 'Marketplace',
     href: 'https://www.marketplace.org/2021/08/17/emissions-offsets-ease-travel-guilt-but-do-they-reduce-carbon-footprints/',
     title:
