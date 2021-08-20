@@ -39,8 +39,7 @@ const press = [
   {
     source: 'The Guardian',
     href: 'https://www.theguardian.com/environment/2021/aug/20/leon-carbon-neutral-burgers-restaurant-environmental',
-    title:
-      "Scientists raise doubts over Leon’s ‘carbon-neutral’ burgers",
+    title: 'Scientists raise doubts over Leon’s ‘carbon-neutral’ burgers',
     authors: ['Patrick Greenfield'],
     date: '08-20-2021',
     format: 'print',
