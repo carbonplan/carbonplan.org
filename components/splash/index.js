@@ -21,7 +21,7 @@ const delay = (i) => {
 
 const SplashRowDesktop = ({ components }) => {
   return (
-    <Row sx={{ height: height, my: [4, 5, 5, 5] }}>
+    <Row sx={{ height: height, my: [4, 5, 5, 6] }}>
       <Column start={[1]} width={[3]}>
         {components[0]}
       </Column>
