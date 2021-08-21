@@ -65,7 +65,14 @@ const Index = () => {
               fontSize: [6, 6, 7, 8],
             }}
           >
-            Data and science for<Box as='span' sx={{display: ['none', 'none', 'none', 'initial']}}><br/></Box>climate action
+            Data and science for
+            <Box
+              as='span'
+              sx={{ display: ['none', 'none', 'none', 'initial'] }}
+            >
+              <br />
+            </Box>
+            climate action
           </Box>
           <Row columns={[6, 5, 6, 6]}>
             <Column start={[1]} width={[5, 4, 4, 4]}>
