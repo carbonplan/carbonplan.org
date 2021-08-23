@@ -23,7 +23,7 @@
     "@carbonplan/components": "^8.1.2",
     "@carbonplan/emoji": "^1.1.0",
     "@carbonplan/icons": "^1.0.0",
-    "@carbonplan/theme": "^7.0.0-alpha.0",
+    "@carbonplan/theme": "^7.0.0",
     "@stripe/stripe-js": "^1.13.2",
     "@theme-ui/color": "^0.10.0",
     "d3-array": "^2.12.1",
