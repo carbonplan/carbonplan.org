@@ -4,6 +4,7 @@ import {
   Tag,
   Row,
   Column,
+  Group,
   Layout,
   Filter,
   Tray,
@@ -91,12 +92,20 @@ const Press = () => {
 
   const FilterContents = () => {
     return (
-      <Filter
-        filters={{ format: format, year: year }}
-        setFilters={{ format: setFormat, year: setYear }}
-        filterLabels={{ format: 'Format', year: 'Year' }}
-        filterList={['year', 'format']}
-      />
+      <Group spacing='md'>
+        <Filter
+          values={year}
+          setValues={setYear}
+          label='Filter by year'
+          showAll
+        />
+        <Filter
+          values={format}
+          setValues={setFormat}
+          label='Filter by format'
+          showAll
+        />
+      </Group>
     )
   }
 
