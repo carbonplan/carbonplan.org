@@ -28,6 +28,24 @@ const highlights = [
 
 const press = [
   {
+    source: ['New York Times'],
+    href: 'https://www.nytimes.com/2021/08/23/us/wildfires-carbon-offsets.html',
+    title:
+      'Wildfires are ravaging forests set aside to soak up greenhouse gases',
+    authors: ['Winston Choi-Schagrin'],
+    date: '08-23-2021',
+    format: 'print',
+  },
+  {
+    source: ['USA Today'],
+    href: 'https://www.usatoday.com/story/news/nation/2021/08/22/wildfires-burning-up-trees-meant-fight-climate-change/8203005002/',
+    title:
+      "Wildfires are burning up trees meant to fight climate change: 'It’s definitely not working'",
+    authors: ['Janet Wilson', 'Christel Hayes'],
+    date: '08-22-2021',
+    format: 'print',
+  },
+  {
     source: ['ProPublica', 'MIT Tech Review'],
     href: 'https://www.propublica.org/article/lawmakers-question-california-cap-and-trade-policies-citing-propublica-report',
     title:
