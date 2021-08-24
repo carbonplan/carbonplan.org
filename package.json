@@ -24,7 +24,7 @@
     "@carbonplan/emoji": "^1.1.0",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
-    "@stripe/stripe-js": "^1.13.2",
+    "@stripe/stripe-js": "^1.17.1",
     "@theme-ui/color": "^0.10.0",
     "d3-array": "^2.12.1",
     "d3-format": "^2.0.0",
