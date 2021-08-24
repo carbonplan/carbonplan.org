@@ -65,7 +65,7 @@ const Index = () => {
               fontSize: [6, 6, 7, 8],
             }}
           >
-            Data and science for
+            Data and science for{' '}
             <Box
               as='span'
               sx={{ display: ['none', 'none', 'none', 'initial'] }}
