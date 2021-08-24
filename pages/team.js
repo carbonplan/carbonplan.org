@@ -123,7 +123,6 @@ function Person({ name, role, bio, penultimate, final, color }) {
       <Column start={[1]} width={[2, 1, 1, 1]}>
         <Box
           sx={{
-            maxWidth: '100px',
             width: '100%',
             height: 'auto',
             borderRadius: '50%',
