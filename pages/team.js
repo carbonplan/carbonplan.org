@@ -124,10 +124,12 @@ function Person({ name, role, bio, penultimate, final, color }) {
         <Box
           sx={{
             width: '100%',
+            maxWidth: '160px',
             height: 'auto',
             borderRadius: '50%',
             position: 'relative',
             bg: color,
+            left: 'max(calc((100% - 160px)/2), 0px)',
           }}
         >
           <Image
