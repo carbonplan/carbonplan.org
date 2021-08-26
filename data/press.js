@@ -28,14 +28,6 @@ const highlights = [
 
 const press = [
   {
-    source: ['Der Tagesspiegel'],
-    href: 'https://background.tagesspiegel.de/energie-klima/bewegung-am-co2-kompensationsmarkt',
-    title: 'Bewegung am CO2-Kompensationsmarkt',
-    authors: ['Alicia Prager'],
-    date: '08-19-2021',
-    format: 'print',
-  },
-  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2021/08/23/us/wildfires-carbon-offsets.html',
     title:
@@ -68,6 +60,14 @@ const press = [
     title: 'Scientists raise doubts over Leon’s ‘carbon-neutral’ burgers',
     authors: ['Patrick Greenfield'],
     date: '08-20-2021',
+    format: 'print',
+  },
+  {
+    source: ['Der Tagesspiegel'],
+    href: 'https://background.tagesspiegel.de/energie-klima/bewegung-am-co2-kompensationsmarkt',
+    title: 'Bewegung am CO2-Kompensationsmarkt',
+    authors: ['Alicia Prager'],
+    date: '08-19-2021',
     format: 'print',
   },
   {
