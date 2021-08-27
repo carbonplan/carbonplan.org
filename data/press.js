@@ -63,6 +63,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['Der Tagesspiegel'],
+    href: 'https://background.tagesspiegel.de/energie-klima/bewegung-am-co2-kompensationsmarkt',
+    title: 'Bewegung am CO2-Kompensationsmarkt',
+    authors: ['Alicia Prager'],
+    date: '08-19-2021',
+    format: 'print',
+  },
+  {
     source: 'Marketplace',
     href: 'https://www.marketplace.org/2021/08/17/emissions-offsets-ease-travel-guilt-but-do-they-reduce-carbon-footprints/',
     title:
