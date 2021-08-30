@@ -82,8 +82,7 @@ const press = [
   {
     source: 'California Legislature',
     href: 'https://www.assembly.ca.gov/media/joint-legislative-committee-climate-change-policies-20210817/video',
-    title:
-      'Joint Legislative Committee on Climate Change Policies testimony',
+    title: 'Joint Legislative Committee on Climate Change Policies testimony',
     authors: ['Danny Cullenward'],
     date: '08-17-2021',
     format: 'video',
