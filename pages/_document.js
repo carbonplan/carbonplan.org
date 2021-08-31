@@ -7,7 +7,7 @@ class MyDocument extends Document {
     return (
       <Html lang='en' className='no-focus-outline'>
         <Head>
-          <Tracking />
+          <Tracking id={process.env.GA_TRACKING_ID} />
         </Head>
         <body>
           <InitializeColorMode />
