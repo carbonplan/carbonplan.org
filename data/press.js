@@ -80,6 +80,14 @@ const press = [
     format: 'audio',
   },
   {
+    source: 'California Legislature',
+    href: 'https://www.assembly.ca.gov/media/joint-legislative-committee-climate-change-policies-20210817/video',
+    title: 'Joint Legislative Committee on Climate Change Policies testimony',
+    authors: ['Danny Cullenward'],
+    date: '08-17-2021',
+    format: 'video',
+  },
+  {
     source: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
     title: "How to sell 'carbon neutral' fossil fuel that doesn't exist",
