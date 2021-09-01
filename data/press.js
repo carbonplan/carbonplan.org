@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Financial Times'],
+    href: 'https://www.ft.com/content/cfaa16bf-ce5d-4543-ac9c-9d9234e10e9d',
+    title:
+      'Carbon offsets: A license to pollute or a path to net zero emissions?',
+    authors: ['Camilla Hodgson', 'Billy Nauman'],
+    date: '08-30-2021',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2021/08/23/us/wildfires-carbon-offsets.html',
     title:
