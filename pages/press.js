@@ -14,11 +14,11 @@ import { Arrow } from '@carbonplan/icons'
 import Heading from '../components/heading'
 import { highlights, press } from '../data/press'
 import {
-  MITTechReview,
-  ProPublica,
-  TheNewRepublic,
-  NPR,
+  NewYorkTimes,
   Bloomberg,
+  CNBC,
+  NPR,
+  ProPublica,
 } from '../components/press-logos'
 
 const sx = {
@@ -46,8 +46,8 @@ const sources = [...new Set(press.map((d) => d.source).flat())].sort((a, b) =>
 
 const logos = {
   ProPublica: <ProPublica />,
-  'The New Republic': <TheNewRepublic />,
-  'MIT Tech Review': <MITTechReview />,
+  CNBC: <CNBC />,
+  'New York Times': <NewYorkTimes />,
   'Planet Money': <NPR />,
   Bloomberg: <Bloomberg />,
 }

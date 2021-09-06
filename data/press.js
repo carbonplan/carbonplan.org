@@ -1,28 +1,28 @@
 const highlights = [
   {
+    source: 'New York Times',
+    href: 'https://www.nytimes.com/2021/08/23/us/wildfires-carbon-offsets.html',
+    date: '08-23-2021',
+  },
+  {
+    source: 'Bloomberg',
+    href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
+    date: '08-10-2021',
+  },
+  {
+    source: 'CNBC',
+    href: 'https://www.cnbc.com/video/2021/07/22/carbon-offsets-private-market-is-completely-unregulated-says-policy-expert.html',
+    date: '07-22-2021',
+  },
+  {
     source: 'Planet Money',
     href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
     date: '05-07-2021',
   },
   {
-    source: 'The New Republic',
-    href: 'https://newrepublic.com/article/162313/bp-carbon-offsets-washington-finite-carbon-carlyle',
-    date: '05-06-2021',
-  },
-  {
-    source: 'MIT Tech Review',
-    href: 'https://www.technologyreview.com/2021/05/10/1024751/carbon-credits-massachusetts-audubon-california-logging-co2-emissions-increase/',
-    date: '05-10-2021',
-  },
-  {
     source: 'ProPublica',
     href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
     date: '04-29-2021',
-  },
-  {
-    source: 'Bloomberg',
-    href: 'https://www.bloomberg.com/news/articles/2021-04-13/how-to-think-about-negative-emissions-in-the-climate-fight',
-    date: '04-13-2021',
   },
 ]
 
