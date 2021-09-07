@@ -14,19 +14,6 @@ import Heading from '../components/heading'
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
-const TESTMODE_PRICE_IDS = {
-  10: 'price_1IiDHKKRZDalHX4oRO6aOVBQ',
-  20: 'price_1Ii9onKRZDalHX4oTTINKF9F',
-  50: 'price_1Ii9onKRZDalHX4o644Sf3ro',
-  100: 'price_1Ii9onKRZDalHX4o9ovB5nOl',
-}
-const LIVEMODE_PRICE_IDS = {
-  10: 'price_1Ij9WVKRZDalHX4o4iM4LUVM',
-  20: 'price_1Ij9WVKRZDalHX4oAcqS2EY7',
-  50: 'price_1Ij9WVKRZDalHX4oq3aKRZle',
-  100: 'price_1Ij9WVKRZDalHX4ouFFcEsR2',
-}
-
 const Sidenote = () => {
   return (
     <span>
@@ -151,7 +138,7 @@ const CustomAmount = ({ color, onClick }) => {
 const Amount = ({ value, color, onClick }) => {
   return (
     <Button
-      onClick={(e) => onClick(e, value)}
+      onClick={(e) => onClick(value)}
       size='xl'
       suffix={<RotatingArrow sx={{ color: color }} />}
       sx={{ py: [1, 1, 2, 2], mt: [3, 3, 3, 4], mb: [3, 3, 3, 3] }}
@@ -164,39 +151,12 @@ const Amount = ({ value, color, onClick }) => {
 const Donate = () => {
   const [status, setStatus] = useState(null)
 
-  const onClick = async (event, price) => {
+  const onClick = async (amount) => {
     setStatus('processing')
     setTimeout(() => {
       setStatus(null)
     }, 1200)
-    const stripe = await stripePromise
-    try {
-      const priceIds =
-        process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
-          ? LIVEMODE_PRICE_IDS
-          : TESTMODE_PRICE_IDS
-      const { error } = await stripe.redirectToCheckout({
-        lineItems: [
-          {
-            price: priceIds[price],
-            quantity: 1,
-          },
-        ],
-        mode: 'payment',
-        successUrl: 'https://carbonplan.org/thanks',
-        cancelUrl: 'https://carbonplan.org/donate',
-      })
-    } catch (err) {
-      console.log(err)
-      setStatus('error')
-      setTimeout(() => {
-        setStatus(null)
-      }, 500)
-    }
-  }
 
-  const onClickCustom = async (amount) => {
-    setStatus('processing')
     try {
       // Create a CheckoutSession with the specified amount
       const response = await fetch('/api/checkout_sessions', {
@@ -281,7 +241,7 @@ const Donate = () => {
             <Amount value={100} color='green' onClick={onClick} />
           </Column>
           <Column start={[1, 2, 4, 4]} width={[6, 5, 5, 5]}>
-            <CustomAmount color='teal' onClick={onClickCustom} />
+            <CustomAmount color='teal' onClick={onClick} />
           </Column>
         </Row>
         <Row sx={{ mt: [5, 6, 7, 8] }}>
