@@ -1,7 +1,7 @@
-import MITTechReview from './mit-tech-review'
-import ProPublica from './pro-publica'
-import TheNewRepublic from './the-new-republic'
-import NPR from './npr'
-import Bloomberg from './bloomberg'
-
-export { MITTechReview, ProPublica, TheNewRepublic, NPR, Bloomberg }
+export { default as NewYorkTimes } from './new-york-times'
+export { default as MITTechReview } from './mit-tech-review'
+export { default as ProPublica } from './pro-publica'
+export { default as TheNewRepublic } from './the-new-republic'
+export { default as NPR } from './npr'
+export { default as Bloomberg } from './bloomberg'
+export { default as CNBC } from './cnbc'
