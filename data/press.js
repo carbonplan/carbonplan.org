@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
+    title:
+      'Burned trees and billions in cash: How a California climate program lets companies keep polluting',
+    authors: ['Evan Halper'],
+    date: '09-08-2021',
+    format: 'print',
+  },
+  {
     source: ['Financial Times'],
     href: 'https://www.ft.com/content/cfaa16bf-ce5d-4543-ac9c-9d9234e10e9d',
     title:
