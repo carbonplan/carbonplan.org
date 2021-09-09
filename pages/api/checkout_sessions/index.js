@@ -1,4 +1,5 @@
 import Stripe from 'stripe'
+import rateLimit from '../../../utils/rate-limit'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
@@ -6,8 +7,20 @@ const MIN_AMOUNT = 1
 const MAX_AMOUNT = 999
 const CURRENCY = 'usd'
 
+const limiter = rateLimit({
+  interval: 60 * 60 * 1000, // 60 minutes
+  uniqueTokenPerInterval: 100, // Max 100 users per hour
+})
+
 export default async function handler(req, res) {
   if (req.method === 'POST') {
+    try {
+      await limiter.check(res, 10, req.connection.remoteAddress) // 10 requests per hour per IP
+    } catch {
+      res.status(429).json({ error: 'Rate limit exceeded' })
+      return
+    }
+
     const amount = req.body.amount
     try {
       // Validate the amount that was passed from the client.

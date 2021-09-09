@@ -172,6 +172,8 @@ const Donate = () => {
 
       if (checkoutSession.statusCode === 500) {
         throw new Error(checkoutSession.message)
+      } else if (checkoutSession.statusCode === 429) {
+        throw new Error('Rate limited')
       } else {
         const stripe = await stripePromise
         // Redirect to created CheckoutSession
