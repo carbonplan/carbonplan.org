@@ -15,6 +15,12 @@ import Heading from '../components/heading'
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
+// Specific errors expected and the corresponding `status` passed to `Layout`
+const ERRORS = [
+  { message: 'Failed Recaptcha', status: 'not available' },
+  { message: 'Rate limited', status: 'not available' },
+]
+
 const Sidenote = () => {
   return (
     <span>
@@ -151,17 +157,20 @@ const Amount = ({ value, color, onClick }) => {
 
 const Donate = () => {
   const [status, setStatus] = useState(null)
+  const [recaptchaCount, setRecaptchaCount] = useState(0)
   const [colorMode] = useColorMode()
   const recaptchaRef = useRef()
 
   useEffect(() => {
     recaptchaRef.current.reset()
-  }, [colorMode])
+  }, [colorMode, recaptchaCount])
 
   const onClick = async (amount) => {
     setStatus('processing')
     setTimeout(() => {
-      setStatus(null)
+      setStatus((prevStatus) =>
+        prevStatus === 'processing' ? null : prevStatus
+      )
     }, 1200)
 
     const token = await recaptchaRef.current.executeAsync()
@@ -179,15 +188,11 @@ const Donate = () => {
       })
 
       const recaptcha = await recaptchaResponse.json()
+      setRecaptchaCount((prev) => prev + 1)
 
       // Show error and return if recaptcha was not successful
       if (recaptcha.statusCode === 400) {
-        console.warn('Failed recaptcha')
-        setStatus('not available')
-        setTimeout(() => {
-          setStatus(null)
-        }, 3000)
-        return
+        throw new Error(ERRORS[0].message)
       }
 
       // Create a CheckoutSession with the specified amount
@@ -205,7 +210,7 @@ const Donate = () => {
       if (checkoutSession.statusCode === 500) {
         throw new Error(checkoutSession.message)
       } else if (checkoutSession.statusCode === 429) {
-        throw new Error('Rate limited')
+        throw new Error(ERRORS[1].message)
       } else {
         const stripe = await stripePromise
         // Redirect to created CheckoutSession
@@ -213,14 +218,15 @@ const Donate = () => {
         const { error } = await stripe.redirectToCheckout({
           sessionId: checkoutSession.id,
         })
-        console.warn(error.message)
+        throw new Error(error.message)
       }
     } catch (err) {
       console.warn(err)
-      setStatus('error')
+      const errorObj = ERRORS.find((error) => error.message === err?.message)
+      setStatus(errorObj?.status || 'error')
       setTimeout(() => {
         setStatus(null)
-      }, 500)
+      }, 3000)
     }
   }
 

@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       if (success) {
         res.status(200).json({ challenge_ts })
       } else {
-        console.log('recaptcha failed', errorCodes)
+        console.warn('recaptcha failed', errorCodes)
         res.status(400).json({ statusCode: 400, message: 'Recaptcha failed' })
       }
     } catch (err) {
