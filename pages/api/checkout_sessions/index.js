@@ -29,6 +29,12 @@ export default async function handler(req, res) {
       if (!(amount >= MIN_AMOUNT && amount <= MAX_AMOUNT)) {
         throw new Error('Invalid amount.')
       }
+
+      if (req.headers['x-vercel-deployment-url'] !== process.env.VERCEL_URL) {
+        console.log('header', req.headers['x-vercel-deployment-url'])
+        console.log('env variable', process.env.VERCEL_URL)
+        throw new Error('Missing Vercel header')
+      }
       // Create Checkout Sessions from body params.
       const params = {
         submit_type: 'donate',
