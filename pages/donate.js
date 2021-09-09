@@ -1,6 +1,7 @@
-import { useCallback, useState } from 'react'
-import { Box, Link } from 'theme-ui'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { Box, Link, useColorMode } from 'theme-ui'
 import { loadStripe } from '@stripe/stripe-js'
+import ReCAPTCHA from 'react-google-recaptcha'
 import {
   FadeIn,
   Layout,
@@ -150,6 +151,12 @@ const Amount = ({ value, color, onClick }) => {
 
 const Donate = () => {
   const [status, setStatus] = useState(null)
+  const [colorMode] = useColorMode()
+  const recaptchaRef = useRef()
+
+  useEffect(() => {
+    recaptchaRef.current.reset()
+  }, [colorMode])
 
   const onClick = async (amount) => {
     setStatus('processing')
@@ -157,7 +164,32 @@ const Donate = () => {
       setStatus(null)
     }, 1200)
 
+    const token = await recaptchaRef.current.executeAsync()
+
     try {
+      // Submit recaptcha
+      const recaptchaResponse = await fetch('/api/recaptcha', {
+        method: 'POST',
+        cache: 'no-cache',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify({ response: token }),
+      })
+
+      const recaptcha = await recaptchaResponse.json()
+
+      // Show error and return if recaptcha was not successful
+      if (recaptcha.statusCode === 400) {
+        console.warn('Failed recaptcha')
+        setStatus('not available')
+        setTimeout(() => {
+          setStatus(null)
+        }, 3000)
+        return
+      }
+
       // Create a CheckoutSession with the specified amount
       const response = await fetch('/api/checkout_sessions', {
         method: 'POST',
@@ -287,6 +319,13 @@ const Donate = () => {
           </Column>
         </Row>
       </Box>
+      <ReCAPTCHA
+        ref={recaptchaRef}
+        size='invisible'
+        badge='bottomleft'
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+        theme={colorMode}
+      />
     </Layout>
   )
 }
