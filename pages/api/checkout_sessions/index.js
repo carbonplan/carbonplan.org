@@ -15,8 +15,6 @@ const limiter = rateLimit({
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
-      console.log('rate limiting by ip', req.headers['x-forwarded-for'])
-
       await limiter.check(res, 10, req.headers['x-forwarded-for']) // 10 requests per hour per IP
     } catch {
       res.status(429).json({ statusCode: 429, error: 'Rate limit exceeded' })
