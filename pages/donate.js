@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { Box, Link, useColorMode } from 'theme-ui'
+import { Box, Link } from 'theme-ui'
 import { loadStripe } from '@stripe/stripe-js'
 import ReCAPTCHA from 'react-google-recaptcha'
 import {
@@ -158,12 +158,11 @@ const Amount = ({ value, color, onClick }) => {
 const Donate = () => {
   const [status, setStatus] = useState(null)
   const [recaptchaCount, setRecaptchaCount] = useState(0)
-  const [colorMode] = useColorMode()
   const recaptchaRef = useRef()
 
   useEffect(() => {
     recaptchaRef.current.reset()
-  }, [colorMode, recaptchaCount])
+  }, [recaptchaCount])
 
   const onClick = async (amount) => {
     setStatus('processing')
@@ -188,7 +187,6 @@ const Donate = () => {
       })
 
       const recaptcha = await recaptchaResponse.json()
-      setRecaptchaCount((prev) => prev + 1)
 
       // Show error and return if recaptcha was not successful
       if (recaptcha.statusCode === 400) {
@@ -222,6 +220,8 @@ const Donate = () => {
       }
     } catch (err) {
       console.warn(err)
+      setRecaptchaCount((prev) => prev + 1)
+
       const errorObj = ERRORS.find((error) => error.message === err?.message)
       setStatus(errorObj?.status || 'error')
       setTimeout(() => {
@@ -296,6 +296,17 @@ const Donate = () => {
               Your gift is tax-deductible to the full extent provided by law.
               Payment services provided through Stripe. All major credit cards
               as well as Apple Pay and Google Pay are accepted.
+              <br />
+              <br />
+              This site is protected by reCAPTCHA and the Google{' '}
+              <Link href='https://policies.google.com/privacy'>
+                Privacy Policy
+              </Link>{' '}
+              and{' '}
+              <Link href='https://policies.google.com/terms'>
+                Terms of Service
+              </Link>{' '}
+              apply.
             </Box>
           </Column>
           <Column start={[1, 7]} width={[4, 4]}>
@@ -326,11 +337,10 @@ const Donate = () => {
         </Row>
       </Box>
       <ReCAPTCHA
+        style={{ visibility: 'hidden' }}
         ref={recaptchaRef}
         size='invisible'
-        badge='bottomleft'
         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-        theme={colorMode}
       />
     </Layout>
   )
