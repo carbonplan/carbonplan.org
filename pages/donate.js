@@ -47,6 +47,20 @@ const sx = {
     pt: [2],
     pb: [5, 5, 0, 0],
   },
+  link: {
+    color: 'secondary',
+    transition: 'color 0.15s',
+    '@media (hover: hover) and (pointer: fine)': {
+      '&:hover': {
+        color: 'primary',
+      },
+    },
+    '@media (hover: none) and (pointer: coarse)': {
+      '&:hover': {
+        color: 'secondary',
+      },
+    },
+  },
 }
 
 const formatAmount = (amount) =>
@@ -295,15 +309,13 @@ const Donate = () => {
             >
               Your gift is tax-deductible to the full extent provided by law.
               Payment services provided through Stripe. All major credit cards
-              as well as Apple Pay and Google Pay are accepted.
-              <br />
-              <br />
-              This site is protected by reCAPTCHA and the Google{' '}
-              <Link href='https://policies.google.com/privacy'>
+              as well as Apple Pay and Google Pay are accepted. This site is
+              protected by reCAPTCHA and the Google{' '}
+              <Link href='https://policies.google.com/privacy' sx={sx.link}>
                 Privacy Policy
               </Link>{' '}
               and{' '}
-              <Link href='https://policies.google.com/terms'>
+              <Link href='https://policies.google.com/terms' sx={sx.link}>
                 Terms of Service
               </Link>{' '}
               apply.
