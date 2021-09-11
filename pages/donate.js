@@ -1,6 +1,7 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { Box, Link } from 'theme-ui'
 import { loadStripe } from '@stripe/stripe-js'
+import ReCAPTCHA from 'react-google-recaptcha'
 import {
   FadeIn,
   Layout,
@@ -14,18 +15,11 @@ import Heading from '../components/heading'
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
-const TESTMODE_PRICE_IDS = {
-  10: 'price_1IiDHKKRZDalHX4oRO6aOVBQ',
-  20: 'price_1Ii9onKRZDalHX4oTTINKF9F',
-  50: 'price_1Ii9onKRZDalHX4o644Sf3ro',
-  100: 'price_1Ii9onKRZDalHX4o9ovB5nOl',
-}
-const LIVEMODE_PRICE_IDS = {
-  10: 'price_1Ij9WVKRZDalHX4o4iM4LUVM',
-  20: 'price_1Ij9WVKRZDalHX4oAcqS2EY7',
-  50: 'price_1Ij9WVKRZDalHX4oq3aKRZle',
-  100: 'price_1Ij9WVKRZDalHX4ouFFcEsR2',
-}
+// Specific errors expected and the corresponding `status` passed to `Layout`
+const ERRORS = [
+  { message: 'Failed Recaptcha', status: 'not available' },
+  { message: 'Rate limited', status: 'not available' },
+]
 
 const Sidenote = () => {
   return (
@@ -52,6 +46,20 @@ const sx = {
     borderTopWidth: '1px',
     pt: [2],
     pb: [5, 5, 0, 0],
+  },
+  link: {
+    color: 'secondary',
+    transition: 'color 0.15s',
+    '@media (hover: hover) and (pointer: fine)': {
+      '&:hover': {
+        color: 'primary',
+      },
+    },
+    '@media (hover: none) and (pointer: coarse)': {
+      '&:hover': {
+        color: 'secondary',
+      },
+    },
   },
 }
 
@@ -151,7 +159,7 @@ const CustomAmount = ({ color, onClick }) => {
 const Amount = ({ value, color, onClick }) => {
   return (
     <Button
-      onClick={(e) => onClick(e, value)}
+      onClick={(e) => onClick(value)}
       size='xl'
       suffix={<RotatingArrow sx={{ color: color }} />}
       sx={{ py: [1, 1, 2, 2], mt: [3, 3, 3, 4], mb: [3, 3, 3, 3] }}
@@ -163,41 +171,42 @@ const Amount = ({ value, color, onClick }) => {
 
 const Donate = () => {
   const [status, setStatus] = useState(null)
+  const [recaptchaCount, setRecaptchaCount] = useState(0)
+  const recaptchaRef = useRef()
 
-  const onClick = async (event, price) => {
+  useEffect(() => {
+    recaptchaRef.current.reset()
+  }, [recaptchaCount])
+
+  const onClick = async (amount) => {
     setStatus('processing')
     setTimeout(() => {
-      setStatus(null)
+      setStatus((prevStatus) =>
+        prevStatus === 'processing' ? null : prevStatus
+      )
     }, 1200)
-    const stripe = await stripePromise
-    try {
-      const priceIds =
-        process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
-          ? LIVEMODE_PRICE_IDS
-          : TESTMODE_PRICE_IDS
-      const { error } = await stripe.redirectToCheckout({
-        lineItems: [
-          {
-            price: priceIds[price],
-            quantity: 1,
-          },
-        ],
-        mode: 'payment',
-        successUrl: 'https://carbonplan.org/thanks',
-        cancelUrl: 'https://carbonplan.org/donate',
-      })
-    } catch (err) {
-      console.log(err)
-      setStatus('error')
-      setTimeout(() => {
-        setStatus(null)
-      }, 500)
-    }
-  }
 
-  const onClickCustom = async (amount) => {
-    setStatus('processing')
+    const token = await recaptchaRef.current.executeAsync()
+
     try {
+      // Submit recaptcha
+      const recaptchaResponse = await fetch('/api/recaptcha', {
+        method: 'POST',
+        cache: 'no-cache',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify({ response: token }),
+      })
+
+      const recaptcha = await recaptchaResponse.json()
+
+      // Show error and return if recaptcha was not successful
+      if (recaptcha.statusCode === 400) {
+        throw new Error(ERRORS[0].message)
+      }
+
       // Create a CheckoutSession with the specified amount
       const response = await fetch('/api/checkout_sessions', {
         method: 'POST',
@@ -212,6 +221,8 @@ const Donate = () => {
 
       if (checkoutSession.statusCode === 500) {
         throw new Error(checkoutSession.message)
+      } else if (checkoutSession.statusCode === 429) {
+        throw new Error(ERRORS[1].message)
       } else {
         const stripe = await stripePromise
         // Redirect to created CheckoutSession
@@ -219,14 +230,17 @@ const Donate = () => {
         const { error } = await stripe.redirectToCheckout({
           sessionId: checkoutSession.id,
         })
-        console.warn(error.message)
+        throw new Error(error.message)
       }
     } catch (err) {
       console.warn(err)
-      setStatus('error')
+      setRecaptchaCount((prev) => prev + 1)
+
+      const errorObj = ERRORS.find((error) => error.message === err?.message)
+      setStatus(errorObj?.status || 'error')
       setTimeout(() => {
         setStatus(null)
-      }, 500)
+      }, 3000)
     }
   }
 
@@ -281,7 +295,7 @@ const Donate = () => {
             <Amount value={100} color='green' onClick={onClick} />
           </Column>
           <Column start={[1, 2, 4, 4]} width={[6, 5, 5, 5]}>
-            <CustomAmount color='teal' onClick={onClickCustom} />
+            <CustomAmount color='teal' onClick={onClick} />
           </Column>
         </Row>
         <Row sx={{ mt: [5, 6, 7, 8] }}>
@@ -295,7 +309,16 @@ const Donate = () => {
             >
               Your gift is tax-deductible to the full extent provided by law.
               Payment services provided through Stripe. All major credit cards
-              as well as Apple Pay and Google Pay are accepted.
+              as well as Apple Pay and Google Pay are accepted. This site is
+              protected by reCAPTCHA and the Google{' '}
+              <Link href='https://policies.google.com/privacy' sx={sx.link}>
+                Privacy Policy
+              </Link>{' '}
+              and{' '}
+              <Link href='https://policies.google.com/terms' sx={sx.link}>
+                Terms of Service
+              </Link>{' '}
+              apply.
             </Box>
           </Column>
           <Column start={[1, 7]} width={[4, 4]}>
@@ -325,6 +348,12 @@ const Donate = () => {
           </Column>
         </Row>
       </Box>
+      <ReCAPTCHA
+        style={{ visibility: 'hidden' }}
+        ref={recaptchaRef}
+        size='invisible'
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+      />
     </Layout>
   )
 }
