@@ -30,12 +30,8 @@ export default async function handler(req, res) {
 
       if (vercel_url !== process.env.VERCEL_URL) {
         throw new Error('Missing Vercel URL')
-      } else {
-        console.log('vercel url matched', {
-          env: process.env.VERCEL_URL,
-          req: vercel_url,
-        })
       }
+
       // Create Checkout Sessions from body params.
       const params = {
         submit_type: 'donate',
