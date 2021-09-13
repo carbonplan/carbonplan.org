@@ -21,19 +21,19 @@ export default async function handler(req, res) {
       return
     }
 
-    const amount = req.body.amount
+    const { amount, vercel_url } = req.body
     try {
       // Validate the amount that was passed from the client.
       if (!(amount >= MIN_AMOUNT && amount <= MAX_AMOUNT)) {
         throw new Error('Invalid amount.')
       }
 
-      if (req.headers['x-vercel-deployment-url'] !== process.env.VERCEL_URL) {
-        throw new Error('Missing Vercel header')
+      if (vercel_url !== process.env.VERCEL_URL) {
+        throw new Error('Missing Vercel URL')
       } else {
-        console.log('vercel header matched', {
+        console.log('vercel url matched', {
           env: process.env.VERCEL_URL,
-          headers: req.headers,
+          req: vercel_url,
         })
       }
       // Create Checkout Sessions from body params.

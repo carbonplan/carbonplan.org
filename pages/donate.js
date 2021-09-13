@@ -215,7 +215,10 @@ const Donate = () => {
           'Content-Type': 'application/json',
         },
         referrerPolicy: 'no-referrer',
-        body: JSON.stringify({ amount }),
+        body: JSON.stringify({
+          amount,
+          vercel_url: process.env.NEXT_PUBLIC_VERCEL_URL,
+        }),
       })
       const checkoutSession = await response.json()
 
