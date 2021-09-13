@@ -29,7 +29,8 @@ export default async function handler(req, res) {
       }
 
       if (vercel_url !== process.env.VERCEL_URL) {
-        throw new Error('Missing Vercel URL')
+        res.status(400).json({ statusCode: 400, error: 'Missing Vercel URL' })
+        return
       }
 
       // Create Checkout Sessions from body params.
