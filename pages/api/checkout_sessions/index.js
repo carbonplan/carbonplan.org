@@ -30,6 +30,8 @@ export default async function handler(req, res) {
 
       if (req.headers['x-vercel-deployment-url'] !== process.env.VERCEL_URL) {
         throw new Error('Missing Vercel header')
+      } else {
+        console.log('vercel header matched', process.env.VERCEL_URL)
       }
       // Create Checkout Sessions from body params.
       const params = {
