@@ -33,7 +33,7 @@ export default async function handler(req, res) {
       } else {
         console.log('vercel header matched', {
           env: process.env.VERCEL_URL,
-          req: req.headers['x-vercel-deployment-url'],
+          headers: req.headers,
         })
       }
       // Create Checkout Sessions from body params.
