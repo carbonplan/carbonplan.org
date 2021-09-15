@@ -21,6 +21,10 @@
       "destination": "https://research.carbonplan.org/research$1"
     },
     {
+      "source": "/blog(.*)",
+      "destination": "https://blog.carbonplan.org/blog$1"
+    },
+    {
       "source": "/data(.*)",
       "destination": "https://data.carbonplan.org/data$1"
     }
