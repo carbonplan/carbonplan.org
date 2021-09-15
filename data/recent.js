@@ -42,20 +42,20 @@ const highlights = [
 
 const press = [
   {
-    label: 'NPR Planet Money',
-    href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
-  },
-  {
-    label: 'MIT Tech Review',
-    href: 'https://www.technologyreview.com/2021/05/10/1024751/carbon-credits-massachusetts-audubon-california-logging-co2-emissions-increase/',
-  },
-  {
-    label: 'ProPublica',
-    href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
+    label: 'New York Times',
+    href: 'https://www.nytimes.com/2021/08/23/us/wildfires-carbon-offsets.html',
   },
   {
     label: 'Bloomberg',
-    href: 'https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/',
+    href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
+  },
+  {
+    label: 'CNBC',
+    href: 'https://www.cnbc.com/video/2021/07/22/carbon-offsets-private-market-is-completely-unregulated-says-policy-expert.html',
+  },
+  {
+    label: 'Planet Money',
+    href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
   },
 ]
 

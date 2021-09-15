@@ -66,12 +66,12 @@ const About = () => {
                 time for approaches that don’t work.
               </Box>
               <Box as='p' variant='styles.p' sx={{ mb: [0] }}>
-                We work collaboratively to build open tools and resources for
-                the evaluation and deployment of robust climate programs. We
-                share what we have learned through public communication and
-                collaboration with journalists. And we help organizations in the
-                public and private sector make better decisions to advance their
-                climate goals.
+                Our <Link href='/team'>team</Link> works collaboratively to
+                build open tools and resources for the evaluation and deployment
+                of robust climate programs. We share what we have learned
+                through public communication and collaboration with journalists.
+                And we help organizations in the public and private sector make
+                better decisions to advance their climate goals.
               </Box>
             </Box>
           </Column>
@@ -124,12 +124,12 @@ const About = () => {
           <Column start={[1, 2, 1, 1]} width={[6, 5, 5, 5]}>
             <Box sx={{ pb: [1] }}>
               <Box as='p' variant='styles.p' sx={{ mb: [2] }}>
-                We work collaboratively to build open tools and resources for
-                the evaluation and deployment of robust climate programs. We
-                share what we have learned through public communication and
-                collaboration with journalists. And we help organizations in the
-                public and private sector make better decisions to advance their
-                climate goals.
+                Our <Link href='/team'>team</Link> works collaboratively to
+                build open tools and resources for the evaluation and deployment
+                of robust climate programs. We share what we have learned
+                through public communication and collaboration with journalists.
+                And we help organizations in the public and private sector make
+                better decisions to advance their climate goals.
               </Box>
             </Box>
           </Column>
@@ -326,19 +326,15 @@ const About = () => {
       <Row sx={{ mt: [4, 4, 5, 6], mb: [8, 8, 9, 10] }}>
         <Column start={[1, 3]} width={[3, 4, 2, 2]} sx={{ mb: [3, 0, 0, 0] }}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <Callout href='https://github.com/carbonplan' label='github'>
-              Check out our open source code
+            <Callout href='/team' label='team'>
+              Read about our team members
             </Callout>
           </Box>
         </Column>
         <Column start={[4, 5, 5, 5]} width={[3, 4, 2, 2]}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
-            <Callout
-              href='https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'
-              label='report'
-            >
-              Read our latest
-              <br /> annual report
+            <Callout href='https://github.com/carbonplan' label='github'>
+              Check out our open source code
             </Callout>
           </Box>
         </Column>
