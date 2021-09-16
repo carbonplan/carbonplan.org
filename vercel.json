@@ -9,6 +9,10 @@
       "destination": "https://victorious-sky-0813bc21e.azurestaticapps.net/research/forest-risks"
     },
     {
+      "source": "/research/forest-carbon",
+      "destination": "https://forest-carbon.carbonplan.org/research/forest-carbon"
+    },
+    {
       "source": "/research/forest-offsets",
       "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets"
     },
