@@ -3,7 +3,7 @@ import rateLimit from '../../../utils/rate-limit'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
-const MIN_AMOUNT = 1
+const MIN_AMOUNT = 5
 const MAX_AMOUNT = 999
 const CURRENCY = 'usd'
 

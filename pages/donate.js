@@ -72,6 +72,8 @@ const getMessage = (amount) => {
   let message
   if (Number(amount) < 1) {
     message = 'Enter a custom donation amount.'
+  } else if (Number(amount) < 5) {
+    message = 'Enter a donation amount of at least $5.'
   } else if (Number(amount > 999)) {
     message = (
       <span>
@@ -104,6 +106,8 @@ const CustomAmount = ({ color, onClick }) => {
       if ((amount || showForEmptyString) && helpMessage) {
         setMessage(helpMessage)
       }
+
+      return !helpMessage
     },
     [amount]
   )
@@ -113,8 +117,8 @@ const CustomAmount = ({ color, onClick }) => {
       as='form'
       onSubmit={(e) => {
         e.preventDefault()
-        validate(true)
-        onClick(amount)
+        const valid = validate(true)
+        if (valid) onClick(amount)
       }}
       sx={{ mb: [2, 2, 2, 3] }}
     >
