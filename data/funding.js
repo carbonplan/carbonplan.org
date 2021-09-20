@@ -49,7 +49,13 @@ const unrestricted = [
   ],
   ['Sergey Brin Family Foundation', 'Foundation'],
   ['Spencer Adler', 'Individual'],
-  ['Lionel Dripps', 'Individual'],
+  [
+    <span>
+      Lionel Dripps +<br />
+      Rebecca Rice
+    </span>,
+    'Individual',
+  ],
 ]
 
 const projectSpecific = [
