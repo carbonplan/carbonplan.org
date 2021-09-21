@@ -1,5 +1,5 @@
 import Stripe from 'stripe'
-import rateLimit from '../../../utils/rate-limit'
+import rateLimit from '../../utils/rate-limit'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
