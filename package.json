@@ -7,6 +7,7 @@
     "dev": "next -p 3000",
     "build": "next build",
     "start": "next start",
+    "test": "jest --watch",
     "format": "prettier --write README.md '{data,components,pages}/**/*.js'"
   },
   "repository": {
@@ -39,6 +40,9 @@
     "theme-ui": "^0.10.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "babel-jest": "^27.2.1",
+    "jest": "^27.2.1",
     "prettier": "2.3.2"
   }
 }
