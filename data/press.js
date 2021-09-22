@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Tech Review'],
+    href: 'https://www.technologyreview.com/2021/09/19/1035889/kelp-carbon-removal-seaweed-sinking-climate-change/',
+    title:
+      'Companies hoping to grow carbon-sucking kelp may be rushing ahead of the science',
+    authors: ['James Temple'],
+    date: '09-19-2021',
+    format: 'print',
+  },
+  {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
     title:
