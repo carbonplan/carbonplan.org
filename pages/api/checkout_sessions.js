@@ -1,7 +1,5 @@
 import Stripe from 'stripe'
-import rateLimit from '../../../utils/rate-limit'
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
+import rateLimit from '../../utils/rate-limit'
 
 const MIN_AMOUNT = 5
 const MAX_AMOUNT = 999
@@ -13,6 +11,8 @@ const limiter = rateLimit({
 })
 
 export default async function handler(req, res) {
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
+
   if (req.method === 'POST') {
     try {
       await limiter.check(res, 10, req.headers['x-forwarded-for']) // 10 requests per hour per IP
@@ -52,7 +52,6 @@ export default async function handler(req, res) {
       const checkoutSession = await stripe.checkout.sessions.create(params)
       res.status(200).json(checkoutSession)
     } catch (err) {
-      console.log(err.message)
       res.status(500).json({ statusCode: 500, message: err.message })
     }
   } else {
