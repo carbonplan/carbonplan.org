@@ -44,6 +44,11 @@ const team = [
     role: 'Data Engineer',
     bio: 'Raphael is a data engineer with a background in remote sensing geoscience. He is interested in earth observation and scientific tool building as well as climate outreach. He holds a BS in Geoscience from the University of Montana and has spent several seasons working as a ranger for the National Park Service.',
   },
+  {
+    name: 'Sadie Frank',
+    role: 'Program Manager',
+    bio: 'Sadie has an interdisciplinary background in climate policy, financial risk, and management. She is most passionate about designing and advocating for climate policy that is grounded in science and responsive to community needs. She holds a Master of Development Practice from the University of California, Berkeley, and a BA in Geography from the University of Washington.',
+  },
 ]
 
 const board = [

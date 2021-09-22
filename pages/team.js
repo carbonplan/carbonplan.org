@@ -58,7 +58,7 @@ const Team = () => {
         </Column>
       </Row>
       <Row>
-        <Column start={[1, 2]} width={[6, 8, 9, 9]}>
+        <Column start={[1, 2]} width={[6, 8, 10, 10]}>
           <Divider sx={{ my: [0] }} />
         </Column>
       </Row>
@@ -66,7 +66,7 @@ const Team = () => {
         <AnnotatedTable heading='Board' data={board} />
       </Box>
       <Row>
-        <Column start={[1, 2]} width={[6, 8, 9, 9]}>
+        <Column start={[1, 2]} width={[6, 8, 10, 10]}>
           <Divider sx={{ my: [0] }} />
         </Column>
       </Row>
