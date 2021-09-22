@@ -5,7 +5,22 @@ import { mockRequest, mockResponse } from './helpers'
 jest.mock('stripe', () => jest.fn())
 
 describe('api/checkout_sessions', () => {
-  test('returns a 405 for non-POST requests', async () => {
+  let mockRequestBody
+  let mockCreate
+  const checkoutSession = { id: 'checkout_session_id' }
+  beforeEach(() => {
+    mockRequestBody = { amount: 20, vercel_url: process.env.VERCEL_URL }
+    mockCreate = jest.fn().mockResolvedValue(checkoutSession)
+    Stripe.mockImplementation(() => ({
+      checkout: {
+        sessions: {
+          create: mockCreate,
+        },
+      },
+    }))
+  })
+
+  it('returns a 405 for non-POST requests', async () => {
     const req = mockRequest({ method: 'GET' })
     const res = mockResponse()
 
@@ -15,7 +30,7 @@ describe('api/checkout_sessions', () => {
     expect(res.status).toHaveBeenCalledWith(405)
   })
 
-  test('throws an error when invalid amount is received', async () => {
+  it('throws an error when amount <5 is received', async () => {
     const req = mockRequest({ body: { amount: 1 } })
     const res = mockResponse()
 
@@ -28,7 +43,7 @@ describe('api/checkout_sessions', () => {
     })
   })
 
-  test('throws an error when invalid amount is received', async () => {
+  it('throws an error when amount >999 is received', async () => {
     const req = mockRequest({ body: { amount: 4000 } })
     const res = mockResponse()
 
@@ -41,7 +56,7 @@ describe('api/checkout_sessions', () => {
     })
   })
 
-  test('throws an error when correct VERCEL_URL is not present', async () => {
+  it('throws an error when VERCEL_URL is not present', async () => {
     const req = mockRequest({ body: { amount: 20 } })
     const res = mockResponse()
 
@@ -54,7 +69,7 @@ describe('api/checkout_sessions', () => {
     })
   })
 
-  test('throws an error when correct VERCEL_URL is not present', async () => {
+  it('throws an error when incorrect VERCEL_URL is provided', async () => {
     const req = mockRequest({
       body: { amount: 20, vercel_url: 'some bad vercel_url' },
     })
@@ -69,24 +84,26 @@ describe('api/checkout_sessions', () => {
     })
   })
 
-  describe('stripe request', () => {
-    let requestBody
-    let mockCreate
-    const checkoutSession = { id: 'checkout_session_id' }
-    beforeEach(() => {
-      requestBody = { amount: 20, vercel_url: process.env.VERCEL_URL }
-      mockCreate = jest.fn().mockResolvedValue(checkoutSession)
-      Stripe.mockImplementation(() => ({
-        checkout: {
-          sessions: {
-            create: mockCreate,
-          },
-        },
-      }))
-    })
+  it('rate limits requests to <10 per ip per hour', async () => {
+    const mockIp = '127.0.0.1'
+    const expectedStatuses = [...Array(9).fill(200), 429]
 
-    test('initializes Stripe with secret key', async () => {
-      const req = mockRequest({ body: requestBody })
+    for (const status of expectedStatuses) {
+      const req = mockRequest({
+        headers: { 'x-forwarded-for': mockIp },
+        body: mockRequestBody,
+      })
+      const res = mockResponse()
+
+      await handler(req, res)
+
+      expect(res.status).toHaveBeenCalledWith(status)
+    }
+  })
+
+  describe('stripe request', () => {
+    it('initializes Stripe with secret key', async () => {
+      const req = mockRequest({ body: mockRequestBody })
       const res = mockResponse()
 
       await handler(req, res)
@@ -94,8 +111,8 @@ describe('api/checkout_sessions', () => {
       expect(Stripe).toHaveBeenCalledWith(process.env.STRIPE_SECRET_KEY)
     })
 
-    test('passes expected parameters to checkoutSession creation request and returns session information', async () => {
-      const req = mockRequest({ body: requestBody })
+    it('passes expected parameters to checkoutSession creation request and returns session information', async () => {
+      const req = mockRequest({ body: mockRequestBody })
       const res = mockResponse()
 
       await handler(req, res)
@@ -119,8 +136,8 @@ describe('api/checkout_sessions', () => {
       expect(res.json).toHaveBeenCalledWith(checkoutSession)
     })
 
-    test('handles errors from checkoutSession creation', async () => {
-      const req = mockRequest({ body: requestBody })
+    it('handles errors from checkoutSession creation', async () => {
+      const req = mockRequest({ body: mockRequestBody })
       const res = mockResponse()
       mockCreate = jest.fn().mockRejectedValue('Error')
 
