@@ -56,6 +56,7 @@ const unrestricted = [
     </span>,
     'Individual',
   ],
+  ['Ernest J. McNabb', 'Individual'],
 ]
 
 const projectSpecific = [
