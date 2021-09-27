@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Fast Company'],
+    href: 'https://www.fastcompany.com/90680321/these-carbon-capturing-robotic-seaweed-farms-are-like-planting-forests-in-the-ocean',
+    title:
+      'These carbon-capturing robotic seaweed farms are like planting forests in the ocean',
+    authors: ['Adele Peters'],
+    date: '09-27-2021',
+    format: 'print',
+  },
+  {
     source: ['MIT Tech Review'],
     href: 'https://www.technologyreview.com/2021/09/19/1035889/kelp-carbon-removal-seaweed-sinking-climate-change/',
     title:
