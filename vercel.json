@@ -29,6 +29,10 @@
       "destination": "https://blog.carbonplan.org/blog$1"
     },
     {
+      "source": "/embed/offset-fires(.*)",
+      "destination": "https://offset-fires-embed.carbonplan.org/embed/offset-fires$1"
+    },
+    {
       "source": "/data(.*)",
       "destination": "https://data.carbonplan.org/data$1"
     }
