@@ -28,12 +28,36 @@ const highlights = [
 
 const press = [
   {
+    source: ['Nature'],
+    href: 'https://www.nature.com/articles/d41586-021-02606-3',
+    title:
+      'Microsoft’s million-tonne CO2-removal purchase — lessons for net zero',
+    authors: [
+      'Lucas Joppa',
+      'Amy Luers',
+      'Elizabeth Willmott',
+      'S. Julio Friedmann',
+      'Steven P. Hamburg',
+      'Rafael Broze',
+    ],
+    date: '09-29-2021',
+    format: 'print',
+  },
+  {
     source: ['Fast Company'],
     href: 'https://www.fastcompany.com/90680321/these-carbon-capturing-robotic-seaweed-farms-are-like-planting-forests-in-the-ocean',
     title:
       'These carbon-capturing robotic seaweed farms are like planting forests in the ocean',
     authors: ['Adele Peters'],
     date: '09-27-2021',
+    format: 'print',
+  },
+  {
+    source: ['Fortune'],
+    href: 'https://fortune.com/2021/09/23/net-zero-emissions-carbon-removal-net-negative-cop26/',
+    title: 'Net zero isn’t enough. We need to get to net negative',
+    authors: ['Noah Deich'],
+    date: '09-23-2021',
     format: 'print',
   },
   {
