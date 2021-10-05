@@ -27,20 +27,26 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: ['Nature'],
     href: 'https://www.nature.com/articles/d41586-021-02606-3',
     title:
       'Microsoft’s million-tonne CO2-removal purchase — lessons for net zero',
-    authors: ['Lucas Joppa', 'Amy Luers', 'Elizabeth Willmott', 'S. Julio Friedmann', 'Steven P. Hamburg', 'Rafael Broze'],
+    authors: [
+      'Lucas Joppa',
+      'Amy Luers',
+      'Elizabeth Willmott',
+      'S. Julio Friedmann',
+      'Steven P. Hamburg',
+      'Rafael Broze',
+    ],
     date: '10-29-2021',
     format: 'print',
   },
   {
     source: ['Fortune'],
     href: 'https://fortune.com/2021/09/23/net-zero-emissions-carbon-removal-net-negative-cop26/',
-    title:
-      'Net zero isn’t enough. We need to get to net negative',
+    title: 'Net zero isn’t enough. We need to get to net negative',
     authors: ['Noah Deich'],
     date: '10-23-2021',
     format: 'print',
