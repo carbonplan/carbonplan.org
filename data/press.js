@@ -40,7 +40,7 @@ const press = [
       'Steven P. Hamburg',
       'Rafael Broze',
     ],
-    date: '10-29-2021',
+    date: '09-29-2021',
     format: 'print',
   },
   {
@@ -48,7 +48,7 @@ const press = [
     href: 'https://fortune.com/2021/09/23/net-zero-emissions-carbon-removal-net-negative-cop26/',
     title: 'Net zero isn’t enough. We need to get to net negative',
     authors: ['Noah Deich'],
-    date: '10-23-2021',
+    date: '09-23-2021',
     format: 'print',
   },
   {
