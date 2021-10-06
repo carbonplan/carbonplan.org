@@ -1,4 +1,5 @@
 export { default as NewYorkTimes } from './new-york-times'
+export { default as LosAngelesTimes } from './los-angeles-times'
 export { default as MITTechReview } from './mit-tech-review'
 export { default as ProPublica } from './pro-publica'
 export { default as TheNewRepublic } from './the-new-republic'
