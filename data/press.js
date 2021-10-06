@@ -31,7 +31,7 @@ const press = [
     source: ['Nature'],
     href: 'https://www.nature.com/articles/d41586-021-02606-3',
     title:
-      'Microsoft’s million-tonne CO2-removal purchase — lessons for net zero',
+      'Microsoft’s million-tonne CO₂-removal purchase — lessons for net zero',
     authors: [
       'Lucas Joppa',
       'Amy Luers',
