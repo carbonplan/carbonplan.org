@@ -16,7 +16,7 @@ import { highlights, press } from '../data/press'
 import {
   NewYorkTimes,
   Bloomberg,
-  CNBC,
+  LosAngelesTimes,
   NPR,
   ProPublica,
 } from '../components/press-logos'
@@ -46,7 +46,7 @@ const sources = [...new Set(press.map((d) => d.source).flat())].sort((a, b) =>
 
 const logos = {
   ProPublica: <ProPublica />,
-  CNBC: <CNBC />,
+  'Los Angeles Times': <LosAngelesTimes />,
   'New York Times': <NewYorkTimes />,
   'Planet Money': <NPR />,
   Bloomberg: <Bloomberg />,

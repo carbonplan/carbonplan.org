@@ -42,16 +42,16 @@ const highlights = [
 
 const press = [
   {
+    label: 'Los Angeles Times',
+    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
+  },
+  {
     label: 'New York Times',
     href: 'https://www.nytimes.com/2021/08/23/us/wildfires-carbon-offsets.html',
   },
   {
     label: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
-  },
-  {
-    label: 'CNBC',
-    href: 'https://www.cnbc.com/video/2021/07/22/carbon-offsets-private-market-is-completely-unregulated-says-policy-expert.html',
   },
   {
     label: 'Planet Money',
