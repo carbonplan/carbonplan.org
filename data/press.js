@@ -27,11 +27,10 @@ const highlights = [
 ]
 
 const press = [
- {
+  {
     source: ['Science News'],
     href: 'https://www.sciencenews.org/article/sn-10-scientists-to-watch-alumni-2021#freeman',
-    title:
-      'How our SN 10 scientists have responded to tumultuous times',
+    title: 'How our SN 10 scientists have responded to tumultuous times',
     authors: ['Science News Staff'],
     date: '10-07-2021',
     format: 'print',
