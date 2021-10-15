@@ -28,6 +28,23 @@ const highlights = [
 
 const press = [
   {
+    source: ['Science News'],
+    href: 'https://www.sciencenews.org/article/sn-10-scientists-to-watch-alumni-2021#freeman',
+    title: 'How our SN 10 scientists have responded to tumultuous times',
+    authors: ['Science News Staff'],
+    date: '10-07-2021',
+    format: 'print',
+  },
+  {
+    source: ['Bloomberg Businessweek'],
+    href: 'https://www.bloomberg.com/news/articles/2021-10-06/climate-crisis-muon-space-uses-satellites-ai-to-identify-polluters',
+    title:
+      'Satellite startup wants to fight climate crisis with next-level data',
+    authors: ['Ashlee Vance'],
+    date: '10-06-2021',
+    format: 'print',
+  },
+  {
     source: ['Nature'],
     href: 'https://www.nature.com/articles/d41586-021-02606-3',
     title:

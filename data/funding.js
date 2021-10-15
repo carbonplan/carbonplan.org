@@ -57,6 +57,7 @@ const unrestricted = [
     'Individual',
   ],
   ['Ernest J. McNabb', 'Individual'],
+  ['Chan Zuckerberg Initiative', 'Foundation'],
 ]
 
 const projectSpecific = [
