@@ -24,7 +24,7 @@ const ERRORS = [
 const Sidenote = () => {
   return (
     <span>
-      Looking to make a donation of $1000 or more?{' '}
+      Looking to donate $1000 or more? Want to donate stock?{' '}
       <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
     </span>
   )
