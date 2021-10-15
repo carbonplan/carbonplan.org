@@ -35,7 +35,11 @@ const Funding = () => {
               in either category. Funding for additional, ongoing projects will
               be listed in the future. Read more in our{' '}
               <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'>
-                2020 annual report
+                2020 Annual Report
+              </Link>{' '}
+              or our{' '}
+              <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Form-990-2020.pdf'>
+                2020 Form 990
               </Link>
               .
             </Box>
