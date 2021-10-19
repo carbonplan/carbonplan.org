@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['BBC'],
+    href: 'https://www.bbc.com/future/article/20211018-climate-change-what-is-the-global-carbon-market',
+    title: 'How trading CO2 could save the climate',
+    authors: ['Isabelle Gerretsen'],
+    date: '10-18-2021',
+    format: 'print',
+  },
+  {
     source: ['Science News'],
     href: 'https://www.sciencenews.org/article/sn-10-scientists-to-watch-alumni-2021#freeman',
     title: 'How our SN 10 scientists have responded to tumultuous times',
