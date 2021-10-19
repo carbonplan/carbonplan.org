@@ -30,7 +30,7 @@ const press = [
   {
     source: ['BBC'],
     href: 'https://www.bbc.com/future/article/20211018-climate-change-what-is-the-global-carbon-market',
-    title: 'How trading CO(2) could save the climate'.sup(),
+    title: 'How trading CO(2) could save the climate'.sub(),
     authors: ['Isabelle Gerretsen'],
     date: '10-18-2021',
     format: 'print',
