@@ -32,8 +32,10 @@ const Funding = () => {
               grants, and project-specific funding through contracts and grants.
               We are incredibly grateful to all of our donors, funders, and
               partners. Here we list all sources of funding greater than $1000
-              in either category. Funding for additional, ongoing projects will
-              be listed in the future. Read more in our{' '}
+              in either category. We have also benefited from sponsored compute
+              credits from Amazon Web Services and Microsoft Azure. Funding for
+              additional, ongoing projects will be listed in the future. Read
+              more in our{' '}
               <Link href='https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'>
                 2020 Annual Report
               </Link>{' '}
