@@ -28,6 +28,30 @@ const highlights = [
 
 const press = [
   {
+    source: ['Marketplace'],
+    href: 'https://www.marketplace.org/2021/10/21/carbon-offsets-are-tough/',
+    title: 'Carbon offsets can be tough to get right',
+    authors: ['Sabri Ben-Achour'],
+    date: '10-21-2021',
+    format: 'audio',
+  },
+  {
+    source: ['Climatewire'],
+    href: 'https://www.eenews.net/articles/dems-seek-to-salvage-climate-goals-with-taxes-regs/',
+    title: 'Dems seek to salvage climate goals with taxes, regs',
+    authors: ['Benjamin Storrow', 'Jean Chemnick'],
+    date: '10-20-2021',
+    format: 'print',
+  },
+  {
+    source: ['BBC'],
+    href: 'https://www.bbc.com/future/article/20211018-climate-change-what-is-the-global-carbon-market',
+    title: 'How trading CO₂ could save the climate',
+    authors: ['Isabelle Gerretsen'],
+    date: '10-18-2021',
+    format: 'print',
+  },
+  {
     source: ['Science News'],
     href: 'https://www.sciencenews.org/article/sn-10-scientists-to-watch-alumni-2021#freeman',
     title: 'How our SN 10 scientists have responded to tumultuous times',
