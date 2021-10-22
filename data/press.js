@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Marketplace'],
+    href: 'https://www.marketplace.org/2021/10/21/carbon-offsets-are-tough/',
+    title: 'Carbon offsets can be tough to get right',
+    authors: ['Sabri Ben-Achour'],
+    date: '10-21-2021',
+    format: 'audio',
+  },
+  {
     source: ['Climatewire'],
     href: 'https://www.eenews.net/articles/dems-seek-to-salvage-climate-goals-with-taxes-regs/',
     title: 'Dems seek to salvage climate goals with taxes, regs',
