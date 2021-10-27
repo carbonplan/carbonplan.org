@@ -28,6 +28,22 @@ const highlights = [
 
 const press = [
   {
+    source: ['Grist'],
+    href: 'https://grist.org/wildfires/california-forests-carbon-offsets-reduce-emissions/',
+    title: 'California is banking on forests to reduce emissions. What happens when they go up in smoke?',
+    authors: ['Emily Pontecorvo', 'Shannon Osaka'],
+    date: '10-27-2021',
+    format: 'print',
+  },
+  {
+    source: ['St. Cloud Times'],
+    href: 'https://www.sctimes.com/in-depth/news/2021/10/24/minnesota-farmers-paid-fight-climate-change-carbon-sequestration-market-cover-crops/5941479001/',
+    title: 'Minnesota farmers are getting paid to fight climate change by cultivating a new cash crop: carbon',
+    authors: ['Nora G. Hertel'],
+    date: '10-24-2021',
+    format: 'print',
+  },
+  {
     source: ['Marketplace'],
     href: 'https://www.marketplace.org/2021/10/21/carbon-offsets-are-tough/',
     title: 'Carbon offsets can be tough to get right',
