@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['New York Times'],
+    href: 'https://www.nytimes.com/2021/10/29/opinion/carbon-trading-emissions-glasgow.html',
+    title: 'If a tree doesn’t fall in the forest...',
+    authors: ['Peter Coy'],
+    date: '10-29-2021',
+    format: 'print',
+  },
+  {
     source: ['Grist'],
     href: 'https://grist.org/wildfires/california-forests-carbon-offsets-reduce-emissions/',
     title:
