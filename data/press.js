@@ -27,7 +27,7 @@ const highlights = [
 ]
 
 const press = [
- {
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2021/10/29/opinion/carbon-trading-emissions-glasgow.html',
     title: 'If a tree doesn’t fall in the forest...',
