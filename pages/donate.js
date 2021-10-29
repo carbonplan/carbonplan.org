@@ -273,7 +273,7 @@ const Donate = () => {
               donation will help us make progress on our mission, with complete
               commitment and responsibility to the public’s interest in a safe
               and stable climate. Our team will do our best to do right by your
-              generosity. .
+              generosity.
             </Box>
           </Column>
         </Row>
