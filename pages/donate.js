@@ -273,7 +273,7 @@ const Donate = () => {
               donation will help us make progress on our mission, with complete
               commitment and responsibility to the public’s interest in a safe
               and stable climate. Our team will do our best to do right by your
-              generosity.
+              generosity. .
             </Box>
           </Column>
         </Row>
@@ -325,7 +325,11 @@ const Donate = () => {
               <Link href='https://policies.google.com/terms' sx={sx.link}>
                 Terms of Service
               </Link>{' '}
-              apply.
+              apply. Please see our state-specific fundraising{' '}
+              <Link href='/disclosures' sx={sx.link}>
+                disclosures
+              </Link>
+              .
             </Box>
           </Column>
           <Column start={[1, 7]} width={[4, 4]}>
