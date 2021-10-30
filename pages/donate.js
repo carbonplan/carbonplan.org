@@ -325,7 +325,11 @@ const Donate = () => {
               <Link href='https://policies.google.com/terms' sx={sx.link}>
                 Terms of Service
               </Link>{' '}
-              apply.
+              apply. Please see our state-specific fundraising{' '}
+              <Link href='/disclosures' sx={sx.link}>
+                disclosures
+              </Link>
+              .
             </Box>
           </Column>
           <Column start={[1, 7]} width={[4, 4]}>
