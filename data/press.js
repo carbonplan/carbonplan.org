@@ -32,7 +32,7 @@ const press = [
     href: 'https://nymag.com/intelligencer/2021/11/climate-change-reparations.html',
     title: 'The case for climate reparations',
     authors: ['David Wallace-Wells'],
-    date: '11-01-2021',
+    date: '11-02-2021',
     format: 'print',
   },
   {
