@@ -28,7 +28,7 @@ const highlights = [
 
 const press = [
   {
-    source: ['Intelligencer'],
+    source: ['New York Magazine'],
     href: 'https://nymag.com/intelligencer/2021/11/climate-change-reparations.html',
     title: 'The case for climate reparations',
     authors: ['David Wallace-Wells'],
