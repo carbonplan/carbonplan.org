@@ -36,6 +36,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['KQED'],
+    href: 'https://dcs.megaphone.fm/KQINC1764485191.mp3?key=1df15657bf1034c9e978be91f956eeb0',
+    title: 'California delegation heads to high stakes UN climate summit',
+    authors: ['Alexis Madrigal'],
+    date: '11-01-2021',
+    format: 'audio',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2021/11/01/us/ca-global-warming-summits.html',
     title: 'Are global warming summits still cool?',
