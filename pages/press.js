@@ -40,10 +40,6 @@ const sx = {
   },
 }
 
-const sources = [...new Set(press.map((d) => d.source).flat())].sort((a, b) =>
-  b.slice(7, 10).localeCompare(a.slice(7, 10))
-)
-
 const logos = {
   ProPublica: <ProPublica />,
   'Los Angeles Times': <LosAngelesTimes />,
@@ -52,16 +48,59 @@ const logos = {
   Bloomberg: <Bloomberg />,
 }
 
-const formats = ['print', 'audio', 'video']
+const getColors = () => {
+  const colorOrder = ['green', 'teal', 'blue', 'purple']
+  const highlightSources = [...new Set(highlights.map((d) => d.source))]
+  const sources = [...new Set(press.map((d) => d.source).flat())]
 
-const sourceColors = {}
+  const highlightColors = highlightSources.reduce((colors, source, i) => {
+    colors[source] = colorOrder[i % 4]
+    return colors
+  }, {})
 
-let count = 0
+  const recentSources = sources.slice(0, 4)
+  const fixedColorCount = recentSources.reduce(
+    (count, s) => {
+      if (highlightColors[s]) count[highlightColors[s]] += 1
+      return count
+    },
+    colorOrder.reduce((a, c) => {
+      a[c] = 0
+      return a
+    }, {})
+  )
 
-for (const key of sources) {
-  sourceColors[key] = ['green', 'teal', 'blue', 'purple'][count % 4]
-  count += 1
+  const recentColors = recentSources.reduce((colors, source, i) => {
+    if (highlightColors[source]) {
+      colors[source] = highlightColors[source]
+    } else {
+      let leastUsedColor
+      let colorUses
+
+      Object.keys(fixedColorCount).forEach((c) => {
+        if (!leastUsedColor || fixedColorCount[c] < colorUses) {
+          leastUsedColor = c
+          colorUses = fixedColorCount[c]
+        }
+      })
+      fixedColorCount[leastUsedColor] += 1
+      colors[source] = leastUsedColor
+    }
+    return colors
+  }, {})
+
+  return sources
+    .sort((a, b) => b.localeCompare(a))
+    .reduce(
+      (colors, source, i) => {
+        colors[source] ||= colorOrder[i % 4]
+        return colors
+      },
+      { ...highlightColors, ...recentColors }
+    )
 }
+
+const SOURCE_COLORS = getColors()
 
 const initFormat = {
   print: true,
@@ -184,7 +223,7 @@ const Press = () => {
                     sx={{
                       opacity: 0.5,
                       position: 'absolute',
-                      bg: sourceColors[d.source],
+                      bg: SOURCE_COLORS[d.source],
                       left: 0,
                       top: 0,
                       width: '100%',
@@ -341,7 +380,7 @@ function Item({ data, final = false }) {
                       textAlign: 'right',
                       width: 'fit-content',
                       display: 'initial',
-                      color: sourceColors[d],
+                      color: SOURCE_COLORS[d],
                     }}
                   >
                     {d}
