@@ -28,6 +28,22 @@ const highlights = [
 
 const press = [
   {
+    source: ['Intelligencer'],
+    href: 'https://nymag.com/intelligencer/2021/11/climate-change-reparations.html',
+    title: 'The case for climate reparations',
+    authors: ['David Wallace-Wells'],
+    date: '11-01-2021',
+    format: 'print',
+  },
+  {
+    source: ['New York Times'],
+    href: 'https://www.nytimes.com/2021/11/01/us/ca-global-warming-summits.html',
+    title: 'Are global warming summits still cool?',
+    authors: ['Shawn Hubler'],
+    date: '11-01-2021',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2021/10/29/opinion/carbon-trading-emissions-glasgow.html',
     title: 'If a tree doesn’t fall in the forest...',
