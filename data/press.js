@@ -28,11 +28,19 @@ const highlights = [
 
 const press = [
   {
+    source: ['NBC Bay Area'],
+    href: 'https://www.nbcbayarea.com/video/a-closer-look-un-climate-summit-in-scotland/2713280/',
+    title: 'A closer look: UN climate summit in Scotland',
+    authors: ['Raj Mathai'],
+    date: '11-01-2021',
+    format: 'video',
+  },
+  {
     source: ['New York Magazine'],
     href: 'https://nymag.com/intelligencer/2021/11/climate-change-reparations.html',
     title: 'The case for climate reparations',
     authors: ['David Wallace-Wells'],
-    date: '11-02-2021',
+    date: '11-01-2021',
     format: 'print',
   },
   {
