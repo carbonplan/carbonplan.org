@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Politico'],
+    href: 'https://www.politico.com/news/2021/11/03/banks-climate-promises-519176',
+    title: 'A $130T climate promise is greeted with suspicion',
+    authors: ['Zack Colman', 'Lorraine Woellert'],
+    date: '11-03-2021',
+    format: 'print',
+  },
+  {
     source: ['NBC Bay Area'],
     href: 'https://www.nbcbayarea.com/video/a-closer-look-un-climate-summit-in-scotland/2713280/',
     title: 'A closer look: UN climate summit in Scotland',
