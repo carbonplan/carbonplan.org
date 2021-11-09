@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Marketplace'],
     href: 'https://www.marketplace.org/2021/11/08/there-isnt-enough-space-for-all-of-the-trees-companies-want-to-plant/',
-    title: 'There isn’t enough space for all of the trees companies want to plant',
+    title:
+      'There isn’t enough space for all of the trees companies want to plant',
     authors: ['Amanda Peacher'],
     date: '11-08-2021',
     format: 'audio',
