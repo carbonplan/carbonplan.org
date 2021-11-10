@@ -16,10 +16,10 @@ import Heading from '../components/heading'
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
 // Specific errors expected and the corresponding `status` passed to `Layout`
-const ERRORS = [
-  { message: 'Failed Recaptcha', status: 'not available' },
-  { message: 'Rate limited', status: 'not available' },
-]
+const STATUSES = {
+  'Recaptcha failed': 'not available',
+  'Rate limit exceeded': 'not available',
+}
 
 const Sidenote = () => {
   return (
@@ -193,25 +193,7 @@ const Donate = () => {
     const token = await recaptchaRef.current.executeAsync()
 
     try {
-      // Submit recaptcha
-      const recaptchaResponse = await fetch('/api/recaptcha', {
-        method: 'POST',
-        cache: 'no-cache',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        referrerPolicy: 'no-referrer',
-        body: JSON.stringify({ response: token }),
-      })
-
-      const recaptcha = await recaptchaResponse.json()
-
-      // Show error and return if recaptcha was not successful
-      if (recaptcha.statusCode === 400) {
-        throw new Error(ERRORS[0].message)
-      }
-
-      // Create a CheckoutSession with the specified amount
+      // Submit recaptcha and create a CheckoutSession with the specified amount
       const response = await fetch('/api/checkout_sessions', {
         method: 'POST',
         cache: 'no-cache',
@@ -220,16 +202,14 @@ const Donate = () => {
         },
         referrerPolicy: 'no-referrer',
         body: JSON.stringify({
+          recaptcha: token,
           amount,
-          vercel_url: process.env.NEXT_PUBLIC_VERCEL_URL,
         }),
       })
       const checkoutSession = await response.json()
 
-      if (checkoutSession.statusCode === 500) {
+      if (checkoutSession.statusCode > 200) {
         throw new Error(checkoutSession.message)
-      } else if (checkoutSession.statusCode === 429) {
-        throw new Error(ERRORS[1].message)
       } else {
         const stripe = await stripePromise
         // Redirect to created CheckoutSession
@@ -243,8 +223,7 @@ const Donate = () => {
       console.warn(err)
       setRecaptchaCount((prev) => prev + 1)
 
-      const errorObj = ERRORS.find((error) => error.message === err?.message)
-      setStatus(errorObj?.status || 'error')
+      setStatus(STATUSES[err?.message] || 'error')
       setTimeout(() => {
         setStatus(null)
       }, 3000)
