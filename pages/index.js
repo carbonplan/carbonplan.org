@@ -150,7 +150,7 @@ const Index = () => {
                   Annual report
                 </Box>
                 <Button
-                  href='https://carbonplan-assets.s3.amazonaws.com/docs/CarbonPlan-Annual-Report-2020.pdf'
+                  href='https://files.carbonplan.org/CarbonPlan-Annual-Report-2020.pdf'
                   size='md'
                   sx={{ mb: [3] }}
                   suffix={<RotatingArrow />}
