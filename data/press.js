@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['The New Republic'],
+    href: 'https://newrepublic.com/article/164376/fossil-fuel-executives-cop26-carbon-offsets-media',
+    title:
+      'Fossil fuel executives at the Glasgow climate talks are miffed with the media',
+    authors: ['Kate Aronoff'],
+    date: '11-11-2021',
+    format: 'print',
+  },
+  {
     source: ['Marketplace'],
     href: 'https://www.marketplace.org/2021/11/08/there-isnt-enough-space-for-all-of-the-trees-companies-want-to-plant/',
     title:
