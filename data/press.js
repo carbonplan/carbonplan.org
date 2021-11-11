@@ -32,7 +32,7 @@ const press = [
     href: 'https://newrepublic.com/article/164376/fossil-fuel-executives-cop26-carbon-offsets-media',
     title:
       'Fossil fuel executives at the Glasgow climate talks are miffed with the media',
-    authors: ['Kate Aronof'],
+    authors: ['Kate Aronoff'],
     date: '11-11-2021',
     format: 'print',
   },
