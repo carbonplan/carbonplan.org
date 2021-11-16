@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['The Guardian'],
+    href: 'https://www.theguardian.com/commentisfree/2021/nov/16/cop-26-big-business-climate-crisis-neoliberal#',
+    title:
+      'The COP26 message? We are trusting big business, not states, to fix the climate crisis',
+    authors: ['Adam Tooze'],
+    date: '11-16-2021',
+    format: 'print',
+  },
+  {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/164376/fossil-fuel-executives-cop26-carbon-offsets-media',
     title:
