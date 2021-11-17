@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Reuters'],
+    href: 'https://www.reuters.com/article/uber-environment-latam/with-limited-ev-options-uber-embraces-carbon-offsets-in-latin-america-idUSKBN2I215M',
+    title:
+      'With limited EV options, Uber embraces carbon offsets in Latin America',
+    authors: ['Cassandra Garrison'],
+    date: '11-17-2021',
+    format: 'print',
+  },
+  {
     source: ['The Guardian'],
     href: 'https://www.theguardian.com/commentisfree/2021/nov/16/cop-26-big-business-climate-crisis-neoliberal#',
     title:
