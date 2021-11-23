@@ -30,8 +30,7 @@ const press = [
   {
     source: ['The New York Times'],
     href: 'https://www.nytimes.com/2021/11/23/business/dealbook/farm-carbon-credits.html',
-    title:
-      'The latest farm product: Carbon credits',
+    title: 'The latest farm product: Carbon credits',
     authors: ['Elizabeth G. Dunn'],
     date: '11-23-2021',
     format: 'print',
