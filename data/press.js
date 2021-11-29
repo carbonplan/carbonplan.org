@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Tech Review'],
+    href: 'https://www.technologyreview.com/2021/11/24/1040568/how-a-new-global-carbon-market-could-exaggerate-climate-progress/',
+    title: 'How a new global carbon market could exaggerate climate progress',
+    authors: ['James Temple'],
+    date: '11-24-2021',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2021/11/23/business/dealbook/farm-carbon-credits.html',
     title: 'The latest farm product: Carbon credits',
