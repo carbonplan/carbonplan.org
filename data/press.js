@@ -49,7 +49,7 @@ const press = [
     title: 'Energy forum: The end of oil?',
     authors: ['Julie Cart'],
     date: '11-17-2021',
-    format: 'print',
+    format: 'video',
   },
   {
     source: ['Reuters'],
