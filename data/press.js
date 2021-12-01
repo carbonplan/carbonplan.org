@@ -44,6 +44,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['Capitol Weekly'],
+    href: 'https://capitolweekly.net/events/an-energy-forum-november-17-2021/',
+    title: 'Energy forum: The end of oil?',
+    authors: ['Julie Cart'],
+    date: '11-17-2021',
+    format: 'video',
+  },
+  {
     source: ['Reuters'],
     href: 'https://www.reuters.com/article/uber-environment-latam/with-limited-ev-options-uber-embraces-carbon-offsets-in-latin-america-idUSKBN2I215M',
     title:
