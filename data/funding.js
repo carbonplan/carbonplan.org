@@ -94,7 +94,7 @@ const projectSpecific = [
   ],
   [
     <span>
-      Lowercase Carbon +<br /> Rio Vista Foundation +<br /> ClimateWorks
+      Lowercarbon Capital +<br /> Rio Vista Foundation +<br /> ClimateWorks
     </span>,
     <Link href='https://cdrprimer.org'>CDR Primer</Link>,
   ],
