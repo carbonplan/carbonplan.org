@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['American Geophysical Union'],
+    href: 'https://youtu.be/7UUN4zq6vSg?t=1201',
+    title: 'AGU TV 2021: Climate change & the anthropocene',
+    authors: ['Nicondra Norwood'],
+    date: '12-17-2021',
+    format: 'video',
+  },
+  {
     source: ['MIT Tech Review'],
     href: 'https://www.technologyreview.com/2021/11/24/1040568/how-a-new-global-carbon-market-could-exaggerate-climate-progress/',
     title: 'How a new global carbon market could exaggerate climate progress',
