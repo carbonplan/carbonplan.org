@@ -70,18 +70,16 @@ const Team = () => {
           <Divider sx={{ my: [0] }} />
         </Column>
       </Row>
-      <Box sx={{ mb: [8, 8, 9, 10] }}>
-        <AnnotatedTable
-          heading='Collaborators'
-          data={collaborators}
-          sidenote={
-            <span>
-              Interested in working together?{' '}
-              <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
-            </span>
-          }
-        />
-      </Box>
+      <AnnotatedTable
+        heading='Collaborators'
+        data={collaborators}
+        sidenote={
+          <span>
+            Interested in working together?{' '}
+            <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
+          </span>
+        }
+      />
     </Layout>
   )
 }

@@ -323,7 +323,7 @@ const About = () => {
           </Box>
         </Column>
       </Row>
-      <Row sx={{ mt: [4, 4, 5, 6], mb: [8, 8, 9, 10] }}>
+      <Row sx={{ mt: [4, 4, 5, 6] }}>
         <Column start={[1, 3]} width={[3, 4, 2, 2]} sx={{ mb: [3, 0, 0, 0] }}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
             <Callout href='/team' label='team'>
