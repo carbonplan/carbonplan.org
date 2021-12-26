@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Box, Grid, Link, Divider } from 'theme-ui'
-import { useBreakpointIndex } from '@theme-ui/match-media'
 import {
   Tag,
   Row,
