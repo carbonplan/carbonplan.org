@@ -232,112 +232,109 @@ const Donate = () => {
 
   return (
     <Layout links={'homepage'} title={'donate / carbonplan'} status={status}>
-      <Box sx={{ mb: [8, 8, 9, 10] }}>
-        <Heading sidenote={<Sidenote />}>Donate</Heading>
-        <Row>
-          <Column
-            start={[1, 1, 2, 2]}
-            width={[6, 6, 6, 6]}
-            sx={{ mb: [5, 6, 7, 8] }}
+      <Heading sidenote={<Sidenote />}>Donate</Heading>
+      <Row>
+        <Column
+          start={[1, 1, 2, 2]}
+          width={[6, 6, 6, 6]}
+          sx={{ mb: [5, 6, 7, 8] }}
+        >
+          <Box
+            sx={{
+              fontSize: [3, 3, 3, 4],
+              fontFamily: 'body',
+              lineHeight: 'body',
+              letterSpacing: 'body',
+            }}
           >
-            <Box
-              sx={{
-                fontSize: [3, 3, 3, 4],
-                fontFamily: 'body',
-                lineHeight: 'body',
-                letterSpacing: 'body',
-              }}
-            >
-              Thank you so much for considering supporting our work. Your
-              donation will help us make progress on our mission, with complete
-              commitment and responsibility to the public’s interest in a safe
-              and stable climate. Our team will do our best to do right by your
-              generosity.
-            </Box>
-          </Column>
-        </Row>
-        <Row>
-          <Column start={[1, 2]} width={[6, 5]}>
-            <Box
-              as='h2'
-              variant='styles.h2'
-              sx={{ mt: [0, 0, 0, 0], mb: [3, 4, 5, 6] }}
-            >
-              Select or enter an amount
-            </Box>
-          </Column>
-        </Row>
-        <Row sx={{ mt: [1], mb: [-1] }}>
-          <Column start={[1, 2, 4, 4]} width={[3, 3, 3, 3]}>
-            <Amount value={10} color='red' onClick={onClick} />
-          </Column>
-          <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
-            <Amount value={50} color='yellow' onClick={onClick} />
-          </Column>
-          <Column start={[1, 2, 4, 4]} width={[3, 3, 3, 3]}>
-            <Amount value={20} color='orange' onClick={onClick} />
-          </Column>
-          <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
-            <Amount value={100} color='green' onClick={onClick} />
-          </Column>
-          <Column start={[1, 2, 4, 4]} width={[6, 5, 5, 5]}>
-            <CustomAmount color='teal' onClick={onClick} />
-          </Column>
-        </Row>
-        <Row sx={{ mt: [5, 6, 7, 8] }}>
-          <Column start={[1, 2]} width={[5, 3]}>
-            <Box
-              sx={{
-                fontSize: [2, 2, 2, 3],
-                color: 'secondary',
-                ...sx.bordered,
-              }}
-            >
-              Your gift is tax-deductible to the full extent provided by law.
-              Payment services provided through Stripe. All major credit cards
-              as well as Apple Pay and Google Pay are accepted. This site is
-              protected by reCAPTCHA and the Google{' '}
-              <Link href='https://policies.google.com/privacy' sx={sx.link}>
-                Privacy Policy
-              </Link>{' '}
-              and{' '}
-              <Link href='https://policies.google.com/terms' sx={sx.link}>
-                Terms of Service
-              </Link>{' '}
-              apply. Please see our state-specific fundraising{' '}
-              <Link href='/disclosures' sx={sx.link}>
-                disclosures
-              </Link>
-              .
-            </Box>
-          </Column>
-          <Column start={[1, 7]} width={[4, 4]}>
-            <Row columns={[4]}>
-              <Column start={[1]} width={[2]}>
-                <Box sx={{ ...sx.bordered, ...sx.details }}>
-                  Legal name: <br /> carbonplan
-                </Box>
-              </Column>
-              <Column start={[3]} width={[2]}>
-                <Box sx={{ ...sx.bordered, ...sx.details }}>
-                  EIN #: <br /> 84-4378880
-                </Box>
-              </Column>
-            </Row>
-            <Row columns={[4]}>
-              <Column start={[1]} width={[4]}>
-                <Box sx={{ ...sx.bordered, ...sx.details, mt: [0, 0, 4, 5] }}>
-                  Mailing address: <br />
-                  2443 Fillmore St{' '}
-                  <Box as='br' sx={{ display: ['initial', 'none'] }} />
-                  #380-6048 <br />
-                  San Francisco, CA 94115
-                </Box>
-              </Column>
-            </Row>
-          </Column>
-        </Row>
-      </Box>
+            Thank you so much for considering supporting our work. Your donation
+            will help us make progress on our mission, with complete commitment
+            and responsibility to the public’s interest in a safe and stable
+            climate. Our team will do our best to do right by your generosity.
+          </Box>
+        </Column>
+      </Row>
+      <Row>
+        <Column start={[1, 2]} width={[6, 5]}>
+          <Box
+            as='h2'
+            variant='styles.h2'
+            sx={{ mt: [0, 0, 0, 0], mb: [3, 4, 5, 6] }}
+          >
+            Select or enter an amount
+          </Box>
+        </Column>
+      </Row>
+      <Row sx={{ mt: [1], mb: [-1] }}>
+        <Column start={[1, 2, 4, 4]} width={[3, 3, 3, 3]}>
+          <Amount value={10} color='red' onClick={onClick} />
+        </Column>
+        <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
+          <Amount value={50} color='yellow' onClick={onClick} />
+        </Column>
+        <Column start={[1, 2, 4, 4]} width={[3, 3, 3, 3]}>
+          <Amount value={20} color='orange' onClick={onClick} />
+        </Column>
+        <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
+          <Amount value={100} color='green' onClick={onClick} />
+        </Column>
+        <Column start={[1, 2, 4, 4]} width={[6, 5, 5, 5]}>
+          <CustomAmount color='teal' onClick={onClick} />
+        </Column>
+      </Row>
+      <Row sx={{ mt: [5, 6, 7, 8] }}>
+        <Column start={[1, 2]} width={[5, 3]}>
+          <Box
+            sx={{
+              fontSize: [2, 2, 2, 3],
+              color: 'secondary',
+              ...sx.bordered,
+            }}
+          >
+            Your gift is tax-deductible to the full extent provided by law.
+            Payment services provided through Stripe. All major credit cards as
+            well as Apple Pay and Google Pay are accepted. This site is
+            protected by reCAPTCHA and the Google{' '}
+            <Link href='https://policies.google.com/privacy' sx={sx.link}>
+              Privacy Policy
+            </Link>{' '}
+            and{' '}
+            <Link href='https://policies.google.com/terms' sx={sx.link}>
+              Terms of Service
+            </Link>{' '}
+            apply. Please see our state-specific fundraising{' '}
+            <Link href='/disclosures' sx={sx.link}>
+              disclosures
+            </Link>
+            .
+          </Box>
+        </Column>
+        <Column start={[1, 7]} width={[4, 4]}>
+          <Row columns={[4]}>
+            <Column start={[1]} width={[2]}>
+              <Box sx={{ ...sx.bordered, ...sx.details }}>
+                Legal name: <br /> carbonplan
+              </Box>
+            </Column>
+            <Column start={[3]} width={[2]}>
+              <Box sx={{ ...sx.bordered, ...sx.details }}>
+                EIN #: <br /> 84-4378880
+              </Box>
+            </Column>
+          </Row>
+          <Row columns={[4]}>
+            <Column start={[1]} width={[4]}>
+              <Box sx={{ ...sx.bordered, ...sx.details, mt: [0, 0, 4, 5] }}>
+                Mailing address: <br />
+                2443 Fillmore St{' '}
+                <Box as='br' sx={{ display: ['initial', 'none'] }} />
+                #380-6048 <br />
+                San Francisco, CA 94115
+              </Box>
+            </Column>
+          </Row>
+        </Column>
+      </Row>
       <ReCAPTCHA
         style={{ visibility: 'hidden' }}
         ref={recaptchaRef}

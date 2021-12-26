@@ -133,7 +133,7 @@ const Index = () => {
       <Box sx={{ display: 'block', height: [4, 5, 6, 7] }} />
       <Highlight research={research1} />
       <Research1Figure />
-      <Row as='section' sx={{ mt: [5, 6, 7, 8], mb: [8, 8, 9, 10], pb: [1] }}>
+      <Row as='section' sx={{ mt: [5, 6, 7, 8], pb: [1] }}>
         <Column
           start={[1, 1, 2, 2]}
           width={[6, 8, 10, 10]}

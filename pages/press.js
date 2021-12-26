@@ -251,7 +251,7 @@ const Press = () => {
           />
         </Column>
       </Row>
-      <Row sx={{ mb: [8, 8, 9, 10] }}>
+      <Row>
         <Column
           start={[1, 1, 2, 2]}
           width={[6, 6, 2, 2]}
