@@ -35,6 +35,10 @@
     {
       "source": "/data(.*)",
       "destination": "https://data.carbonplan.org/data$1"
+    },
+    {
+      "source": "/design(.*)",
+      "destination": "https://design.carbonplan.org/design$1"
     }
   ],
   "redirects": [
