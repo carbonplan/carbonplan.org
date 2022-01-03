@@ -28,6 +28,30 @@ const highlights = [
 
 const press = [
   {
+    source: ['GreenBiz'],
+    href: 'https://www.greenbiz.com/article/trying-be-actually-carbon-neutral-three-lessons',
+    title: 'Trying to be (actually) carbon neutral: Three lessons',
+    authors: ['Julia Reichelstein'],
+    date: '01-03-2022',
+    format: 'print',
+  },
+  {
+    source: ['Wall Street Journal'],
+    href: 'https://www.wsj.com/articles/wildfires-are-hurting-california-program-to-fight-climate-change-11640601002',
+    title: 'Wildfires are hurting California program to fight climate change',
+    authors: ['Jim Carlton'],
+    date: '12-27-2021',
+    format: 'print',
+  },
+  {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/environment/newsletter/2021-12-23/is-tejon-ranch-development-good-for-climate-boiling-point',
+    title: 'Boiling point: If a sprawling suburb ditches natural gas, is it good for the climate?',
+    authors: ['Sammy Roth'],
+    date: '12-23-2021',
+    format: 'print',
+  },
+  {
     source: ['American Geophysical Union'],
     href: 'https://youtu.be/7UUN4zq6vSg?t=1201',
     title: 'AGU TV 2021: Climate change & the anthropocene',
