@@ -60,6 +60,13 @@ const unrestricted = [
   ['Chan Zuckerberg Initiative', 'Foundation'],
   ['New Climate Ventures', 'Corporate'],
   ['Silicon Valley Community Foundation', 'Foundation'],
+  [
+    <span>
+      Ambrose Carr +<br />
+      Sharonmoyee Goswami
+    </span>,
+    'Individual',
+  ],
 ]
 
 const projectSpecific = [
