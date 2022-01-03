@@ -46,7 +46,8 @@ const press = [
   {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/environment/newsletter/2021-12-23/is-tejon-ranch-development-good-for-climate-boiling-point',
-    title: 'Boiling point: If a sprawling suburb ditches natural gas, is it good for the climate?',
+    title:
+      'Boiling point: If a sprawling suburb ditches natural gas, is it good for the climate?',
     authors: ['Sammy Roth'],
     date: '12-23-2021',
     format: 'print',
