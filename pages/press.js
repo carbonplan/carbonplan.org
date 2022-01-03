@@ -111,6 +111,7 @@ const initFormat = {
 const initYear = {
   2020: true,
   2021: true,
+  2022: true,
 }
 
 const Press = () => {
