@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Climatewire'],
+    href: 'https://www.eenews.net/articles/price-hike-marks-new-era-for-calif-cap-and-trade/',
+    title: 'Price hike marks new era for Calif. cap and trade',
+    authors: ['Ben Storrow'],
+    date: '01-03-2022',
+    format: 'print',
+  },
+  {
     source: ['GreenBiz'],
     href: 'https://www.greenbiz.com/article/trying-be-actually-carbon-neutral-three-lessons',
     title: 'Trying to be (actually) carbon neutral: Three lessons',
