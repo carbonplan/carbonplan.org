@@ -5,6 +5,10 @@
       "destination": "https://cdr-database.carbonplan.org/research/cdr-database$1"
     },
     {
+      "source": "/research/compliance-users(.*)",
+      "destination": "https://compliance-users.carbonplan.org/research/compliance-users$1"
+    },
+    {
       "source": "/research/forest-risks",
       "destination": "https://victorious-sky-0813bc21e.azurestaticapps.net/research/forest-risks"
     },
@@ -15,10 +19,6 @@
     {
       "source": "/research/forest-offsets",
       "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets"
-    },
-    {
-      "source": "/research/compliance-users",
-      "destination": "https://compliance-users.carbonplan.org/research/compliance-users"
     },
     {
       "source": "/research/carbon-removal-application(.*)",
