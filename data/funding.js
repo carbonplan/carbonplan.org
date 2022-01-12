@@ -67,6 +67,7 @@ const unrestricted = [
     </span>,
     'Individual',
   ],
+  ['Calvin French-Owen', 'Individual'],
 ]
 
 const projectSpecific = [
