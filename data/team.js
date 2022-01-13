@@ -49,6 +49,11 @@ const team = [
     role: 'Program Manager',
     bio: 'Sadie has an interdisciplinary background in climate policy, financial risk, and management. She is most passionate about designing and advocating for climate policy that is grounded in science and responsive to community needs. She holds a Master of Development Practice from the University of California, Berkeley, and a BA in Geography from the University of Washington.',
   },
+  {
+    name: 'Grayson Badgley',
+    role: 'Research Scientist',
+    bio: 'Grayson is an ecologist dedicated to ensuring a vibrant future where both people and ecosystems thrive. He holds a PhD in Earth System Science from Stanford University.',
+  },
 ]
 
 const board = [
@@ -58,12 +63,6 @@ const board = [
 ]
 
 const collaborators = [
-  [
-    'Grayson Badgley',
-    <span>
-      Black Rock Forest Consortium + <br /> Columbia University
-    </span>,
-  ],
   ['Bill Anderegg', 'University of Utah'],
   ['Anna Trugman', 'UC Santa Barbara'],
   ['Barbara Haya', 'UC Berkeley'],
