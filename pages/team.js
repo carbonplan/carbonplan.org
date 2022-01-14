@@ -50,7 +50,7 @@ const Team = () => {
                     bio={p.bio}
                     final={i == team.length - 1}
                     penultimate={i == team.length - 2}
-                    color={colors[i % 4]}
+                    color={colors[(Math.ceil(i / 2) + i) % 4]}
                   />
                 ))}
             </Grid>
