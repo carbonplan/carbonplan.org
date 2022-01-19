@@ -60,6 +60,8 @@ const board = [
   ['Jeremy Freeman', 'CarbonPlan'],
   ['Kelly Gannon', 'NDWA Labs'],
   ['Gernot Wagner', 'New York University'],
+  ['Arjuna Dibley', 'Pollination / Oxford University / CPD'],
+  ['Tracy Teal', 'RStudio'],
 ]
 
 const collaborators = [
@@ -106,6 +108,7 @@ const collaborators = [
     </span>,
     'Ordinary Things',
   ],
+  ['Jon Wang', 'UC Irvine'],
 ]
 
 export { team, board, collaborators }
