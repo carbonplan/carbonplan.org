@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Canary Media'],
+    href: 'https://www.canarymedia.com/articles/carbon-capture/the-buzz-around-carbon-removal-is-drawing-jobseekers-in-droves',
+    title: 'The buzz around carbon removal is drawing jobseekers in droves',
+    authors: ['Maria Gallucci'],
+    date: '01-24-2022',
+    format: 'print',
+  },
+  {
     source: ['Climatewire'],
     href: 'https://www.eenews.net/articles/price-hike-marks-new-era-for-calif-cap-and-trade/',
     title: 'Price hike marks new era for Calif. cap and trade',
