@@ -33,7 +33,7 @@
     "d3-scale": "^4.0.2",
     "d3-shape": "^3.0.1",
     "lru-cache": "^6.0.0",
-    "next": "^12.0.7",
+    "next": "^12.0.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-google-recaptcha": "^2.1.0",
