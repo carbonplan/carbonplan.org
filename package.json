@@ -27,7 +27,7 @@
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/theme": "^7.0.0",
     "@stripe/stripe-js": "^1.13.2",
-    "@theme-ui/color": "^0.12.1",
+    "@theme-ui/color": "^0.13.1",
     "d3-array": "^3.1.1",
     "d3-format": "^3.1.0",
     "d3-scale": "^4.0.2",
@@ -38,7 +38,7 @@
     "react-dom": "^17.0.2",
     "react-google-recaptcha": "^2.1.0",
     "stripe": "^8.161.0",
-    "theme-ui": "^0.12.1"
+    "theme-ui": "^0.13.1"
   },
   "devDependencies": {
     "babel-jest": "^27.2.1",
