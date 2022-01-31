@@ -68,6 +68,7 @@ const unrestricted = [
     'Individual',
   ],
   ['Calvin French-Owen', 'Individual'],
+  ['Additional Ventures', 'Foundation'],
 ]
 
 const projectSpecific = [
