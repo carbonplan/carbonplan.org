@@ -8,10 +8,10 @@ import {
   Layout,
   Filter,
   Tray,
+  Heading,
   formatDate,
 } from '@carbonplan/components'
 import { Arrow } from '@carbonplan/icons'
-import Heading from '../components/heading'
 import { highlights, press } from '../data/press'
 import {
   NewYorkTimes,

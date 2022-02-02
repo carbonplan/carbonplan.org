@@ -7,9 +7,9 @@ import {
   Button,
   Link,
   Callout,
+  Heading,
 } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
-import Heading from '../components/heading'
 import { highlights, press } from '../data/recent'
 import { keyframes } from '@emotion/react'
 

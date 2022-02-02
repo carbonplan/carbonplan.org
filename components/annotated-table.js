@@ -1,6 +1,5 @@
 import { Box, Themed } from 'theme-ui'
-import { Row, Column, Table } from '@carbonplan/components'
-import Sidenote from './sidenote'
+import { Row, Column, Table, Sidenote } from '@carbonplan/components'
 
 const AnnotatedTable = ({ heading, data, sidenote, children }) => {
   return (

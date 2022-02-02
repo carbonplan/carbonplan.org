@@ -1,6 +1,5 @@
 import { Box, Image, Divider, Link, Grid } from 'theme-ui'
-import { Layout, Row, Column } from '@carbonplan/components'
-import Heading from '../components/heading'
+import { Layout, Row, Column, Heading } from '@carbonplan/components'
 import AnnotatedTable from '../components/annotated-table'
 import { team, board, collaborators } from '../data/team'
 
