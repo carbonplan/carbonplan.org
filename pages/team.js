@@ -1,5 +1,5 @@
 import { Box, Image, Divider, Link, Grid } from 'theme-ui'
-import { Layout, Row, Column, Heading } from '@carbonplan/components'
+import { Layout, Row, Column, Heading, Avatar } from '@carbonplan/components'
 import AnnotatedTable from '../components/annotated-table'
 import { team, board, collaborators } from '../data/team'
 
@@ -118,30 +118,12 @@ function Person({ name, role, bio, penultimate, final, color }) {
   return (
     <Row columns={[6, 4, 5, 5]}>
       <Column start={[1]} width={[2, 1, 1, 1]}>
-        <Box
-          sx={{
-            width: '100%',
-            maxWidth: '160px',
-            height: 'auto',
-            borderRadius: '50%',
-            position: 'relative',
-            bg: color,
-            left: 'max(calc((100% - 160px)/2), 0px)',
-          }}
-        >
-          <Image
-            src={`https://images.carbonplan.org/team/${name
-              .toLowerCase()
-              .replace(' ', '-')}.png`}
-            sx={{
-              opacity: 0.25,
-              filter: 'contrast(200%) brightness(100%)',
-              width: '100%',
-              borderRadius: '50%',
-              display: 'block',
-            }}
-          ></Image>
-        </Box>
+        <Avatar
+          width='100%'
+          maxWidth={['100px', '100px', '100px', '150px']}
+          name={name}
+          color={color}
+        />
       </Column>
       <Column
         start={[3, 2, 2, 2]}
