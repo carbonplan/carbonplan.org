@@ -36,6 +36,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['European Commission'],
+    href: 'https://sustainable-carbon-cycles-conference.b2match.io/page-2491',
+    title: 'Sustainable Carbon Cycles Conference, Plenary Session III: High expectation from society on carbon removals',
+    authors: ['Wijnand Stoefs'],
+    date: '01-31-2022',
+    format: 'video',
+  },
+  {
     source: ['Canary Media'],
     href: 'https://www.canarymedia.com/articles/carbon-capture/the-buzz-around-carbon-removal-is-drawing-jobseekers-in-droves',
     title: 'The buzz around carbon removal is drawing jobseekers in droves',
