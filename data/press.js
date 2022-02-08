@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg Green'],
+    href: 'https://www.bloomberg.com/news/articles/2022-02-08/how-to-avoid-buying-dodgy-carbon-offsets',
+    title: 'How to avoid buying dodgy offsets',
+    authors: ['Akshat Rathi'],
+    date: '02-08-2022',
+    format: 'print',
+  },
+  {
     source: ['Canary Media'],
     href: 'https://www.canarymedia.com/articles/carbon-capture/the-buzz-around-carbon-removal-is-drawing-jobseekers-in-droves',
     title: 'The buzz around carbon removal is drawing jobseekers in droves',
