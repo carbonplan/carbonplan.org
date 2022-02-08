@@ -38,7 +38,8 @@ const press = [
   {
     source: ['European Commission'],
     href: 'https://sustainable-carbon-cycles-conference.b2match.io/page-2491',
-    title: 'Sustainable Carbon Cycles Conference, Plenary Session III: High expectation from society on carbon removals',
+    title:
+      'Sustainable Carbon Cycles Conference, Plenary Session III: High expectation from society on carbon removals',
     authors: ['Wijnand Stoefs'],
     date: '01-31-2022',
     format: 'video',
