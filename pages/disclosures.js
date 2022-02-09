@@ -1,6 +1,5 @@
 import { Box, Themed } from 'theme-ui'
-import { Layout, Row, Column, Link } from '@carbonplan/components'
-import Heading from '../components/heading'
+import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
 
 const Disclosures = () => {
   return (

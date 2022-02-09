@@ -1,6 +1,12 @@
 import { Box, Themed } from 'theme-ui'
-import { Layout, Row, Column, Callout, Link } from '@carbonplan/components'
-import Heading from '../components/heading'
+import {
+  Layout,
+  Row,
+  Column,
+  Callout,
+  Link,
+  Heading,
+} from '@carbonplan/components'
 import { Heart } from '@carbonplan/emoji'
 
 const sx = {
