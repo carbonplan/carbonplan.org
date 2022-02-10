@@ -1,8 +1,18 @@
-import fs from 'fs'
-
 import vercelConfig from '../vercel.json'
 
 const BASE_URL = 'https://carbonplan.org'
+
+const ROUTES = [
+  'about',
+  'disclosures',
+  'donate',
+  'faq',
+  'funding',
+  'press',
+  'team',
+  'terms',
+  'thanks',
+]
 
 function generateSiteMap(pages) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -10,19 +20,25 @@ function generateSiteMap(pages) {
        <url>
          <loc>${BASE_URL}</loc>
        </url>
+       ${ROUTES.map((route) => {
+         return `
+          <url>
+            <loc>${`${BASE_URL}/${route}`}</loc>
+          </url>
+        `
+       }).join('')}
        ${pages
          .map(({ page, date }) => {
            return `
-         <url>
-             <loc>${`${BASE_URL}/${page}`}</loc>${
+            <url>
+              <loc>${`${BASE_URL}/${page}`}</loc>${
              date
                ? `
-             <lastmod>${date}</lastmod>
+              <lastmod>${date}</lastmod>
              `
                : ''
            }
-             
-         </url>
+            </url>
        `
          })
          .join('')}
@@ -35,20 +51,6 @@ function SiteMap() {
 }
 
 export async function getServerSideProps({ res }) {
-  const staticPages = fs
-    .readdirSync('pages')
-    .filter((staticPage) => {
-      return ![
-        '_app.js',
-        '_document.js',
-        'index.js',
-        '404.js',
-        'api',
-        'sitemap.xml.js',
-      ].includes(staticPage)
-    })
-    .map((page) => ({ page: page.replace('.js', '') }))
-
   const requests = await Promise.all([
     fetch(
       'https://research-git-katamartin-contentsjson-carbonplan.vercel.app/research/contents.json'
@@ -68,9 +70,7 @@ export async function getServerSideProps({ res }) {
     }))
     .filter((rewrite) => !['research', 'blog'].includes(rewrite.page))
 
-  const sitemap = generateSiteMap(
-    staticPages.concat(research).concat(blog).concat(rewrites)
-  )
+  const sitemap = generateSiteMap(research.concat(blog).concat(rewrites))
 
   res.setHeader('Content-Type', 'text/xml')
   // we send the XML to the browser
