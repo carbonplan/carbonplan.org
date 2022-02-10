@@ -3,6 +3,8 @@ name: sitemap
 on:
   schedule:
     - cron: '0 0 * * *'
+  push
+
 jobs:
   ping:
     runs-on: ubuntu-latest
