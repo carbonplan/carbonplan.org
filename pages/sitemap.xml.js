@@ -64,7 +64,12 @@ export async function getServerSideProps({ res }) {
     .map(({ source }) => ({
       page: source.replace(/(^\/|\(\.\*\)$)/g, ''),
     }))
-    .filter((rewrite) => !['research', 'blog'].includes(rewrite.page))
+    .filter(
+      (rewrite) =>
+        !['research', 'blog', 'data', 'embed/offset-fires'].includes(
+          rewrite.page
+        )
+    )
 
   const sitemap = generateSiteMap(research.concat(blog).concat(rewrites))
 
