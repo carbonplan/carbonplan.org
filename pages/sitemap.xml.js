@@ -52,12 +52,8 @@ function SiteMap() {
 
 export async function getServerSideProps({ res }) {
   const requests = await Promise.all([
-    fetch(
-      'https://research-git-katamartin-contentsjson-carbonplan.vercel.app/research/contents.json'
-    ),
-    fetch(
-      'https://blog-git-katamartin-contentsjson-carbonplan.vercel.app/blog/contents.json'
-    ),
+    fetch(`${BASE_URL}/research/contents.json`),
+    fetch(`${BASE_URL}/blog/contents.json`),
   ])
 
   const [research, blog] = await Promise.all(
