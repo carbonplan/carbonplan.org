@@ -24,7 +24,13 @@ const sx = {
 
 const Thanks = () => {
   return (
-    <Layout links={'homepage'} title={'thanks / carbonplan'}>
+    <Layout
+      links={'homepage'}
+      title={'Thanks – CarbonPlan'}
+      description={
+        'Thank you for your donation to our organization. We truly appreciate your generosity.'
+      }
+    >
       <Heading sx={{ whiteSpace: 'nowrap' }}>Thank you</Heading>
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 6, 6, 6]}>

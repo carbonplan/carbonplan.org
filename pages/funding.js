@@ -5,7 +5,13 @@ import { unrestricted, projectSpecific } from '../data/funding'
 
 const Funding = () => {
   return (
-    <Layout links={'homepage'} title={'funding / carbonplan'}>
+    <Layout
+      links={'homepage'}
+      title={'Funding – CarbonPlan'}
+      description={
+        'Public list of all our sources of unrestricted or project-specific funding greater than $1000.'
+      }
+    >
       <Heading
         sidenote={
           <span>

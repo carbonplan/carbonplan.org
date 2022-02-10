@@ -35,7 +35,13 @@ const sx = {
 
 const Index = () => {
   return (
-    <Layout links={'homepage'} title={'carbonplan'}>
+    <Layout
+      links={'homepage'}
+      title={'CarbonPlan'}
+      description={
+        'Improving the transparency and scientific integrity of carbon removal and climate solutions through open data and tools.'
+      }
+    >
       <Box
         sx={{
           mt: [-1, 0, 0, 0],

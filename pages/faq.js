@@ -10,7 +10,14 @@ import {
 
 const FAQ = () => {
   return (
-    <Layout links={'homepage'} title={'faq / carbonplan'} nav={'faq'}>
+    <Layout
+      links={'homepage'}
+      title={'FAQ – CarbonPlan'}
+      nav={'faq'}
+      description={
+        'Frequently asked questions about our work and our organization.'
+      }
+    >
       <Heading>FAQ</Heading>
       <Question first>Are you a nonprofit?</Question>
       <Answer>
