@@ -1,9 +1,6 @@
 name: sitemap
 
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  push
+on: push
 
 jobs:
   ping:
