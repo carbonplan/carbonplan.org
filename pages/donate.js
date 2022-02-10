@@ -231,7 +231,14 @@ const Donate = () => {
   }
 
   return (
-    <Layout links={'homepage'} title={'donate / carbonplan'} status={status}>
+    <Layout
+      links={'homepage'}
+      title={'Donate – CarbonPlan'}
+      status={status}
+      description={
+        'Make a donation to support our mission of using data and science for climate action.'
+      }
+    >
       <Heading sidenote={<Sidenote />}>Donate</Heading>
       <Row>
         <Column

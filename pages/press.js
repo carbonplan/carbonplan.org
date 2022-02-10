@@ -152,7 +152,10 @@ const Press = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'press / carbonplan'}
+      title={'Press – CarbonPlan'}
+      description={
+        'Complete list of press that has either covered our work or featured members of our team.'
+      }
       dimmer={'bottom'}
       settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
       nav={'press'}

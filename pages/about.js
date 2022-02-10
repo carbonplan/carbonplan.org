@@ -28,7 +28,14 @@ const sx = {
 
 const About = () => {
   return (
-    <Layout links={'homepage'} title={'about / carbonplan'} nav={'about'}>
+    <Layout
+      links={'homepage'}
+      title={'About – CarbonPlan'}
+      nav={'about'}
+      description={
+        'We’re a non-profit that analyzes climate solutions based on the best available science and data.'
+      }
+    >
       <Heading>About</Heading>
       <Box sx={{ display: ['none', 'none', 'initial', 'initial'] }}>
         <Row sx={{ mb: [5, 6, 7, 8] }}>

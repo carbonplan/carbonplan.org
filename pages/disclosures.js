@@ -3,7 +3,13 @@ import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
 
 const Disclosures = () => {
   return (
-    <Layout links={'homepage'} title={'terms / carbonplan'}>
+    <Layout
+      links={'homepage'}
+      title={'Disclosures – CarbonPlan'}
+      description={
+        'State-specific disclosures for nonprofit organizations soliciting contributions.'
+      }
+    >
       <Heading>Disclosures</Heading>
       <Row>
         <Column start={[2, 2, 3, 3]} width={[5, 5, 6, 6]}>
