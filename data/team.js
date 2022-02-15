@@ -20,11 +20,6 @@ const team = [
     bio: 'Oriana is a climate scientist committed to conducting impactful, equitable science. She is an alum of AmeriCorps, where she worked to support immigrant rights. She holds a PhD in Civil and Environmental Engineering from the University of Washington and a BS in Chemistry from Haverford College.',
   },
   {
-    name: 'Cindy Chiao',
-    role: 'Data Scientist',
-    bio: 'Cindy is a data and environmental scientist. She is passionate about sustainable development and is excited to contribute via data analysis and machine learning. She holds an MSE in Environmental Engineering and an MS in Sustainable Systems from the University of Michigan.',
-  },
-  {
     name: 'Freya Chay',
     role: 'Program Associate',
     bio: 'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University.',
