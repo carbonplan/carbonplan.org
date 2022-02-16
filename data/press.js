@@ -28,7 +28,7 @@ const highlights = [
 
 const press = [
   {
-    source: ['Associated Press'],
+    source: ['AP News'],
     href: 'https://apnews.com/article/climate-business-environment-and-nature-california-pollution-694060aa41a4e78dc8a436a71d57564d',
     title: 'Saved pollution credits may hinder California climate goals',
     authors: ['Kathleen Ronayne'],
