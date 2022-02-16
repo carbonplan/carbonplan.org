@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Associated Press'],
+    href: 'https://apnews.com/article/climate-business-environment-and-nature-california-pollution-694060aa41a4e78dc8a436a71d57564d',
+    title: 'Saved pollution credits may hinder California climate goals',
+    authors: ['Kathleen Ronayne'],
+    date: '02-16-2022',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg Green'],
     href: 'https://www.bloomberg.com/news/articles/2022-02-08/how-to-avoid-buying-dodgy-carbon-offsets',
     title: 'How to avoid buying dodgy offsets',
