@@ -29,6 +29,22 @@ const highlights = [
 const press = [
   {
     source: ['AP News'],
+    href: 'https://apnews.com/article/climate-business-environment-pollution-california-air-resources-board-21d34adf68b5d612fbc37c3f10a13fef',
+    title: 'California won’t immediately change pollution credit program',
+    authors: ['Kathleen Ronayne'],
+    date: '02-24-2022',
+    format: 'print',
+  },
+  {
+    source: ['CalMatters'],
+    href: 'https://calmatters.org/environment/2022/02/california-climate-cap-trade/',
+    title: 'Experts — once again — tell Senate panel that California’s key climate change strategy is flawed',
+    authors: ['Julie Cart'],
+    date: '02-24-2022',
+    format: 'print',
+  },
+  {
+    source: ['AP News'],
     href: 'https://apnews.com/article/climate-business-environment-and-nature-california-pollution-694060aa41a4e78dc8a436a71d57564d',
     title: 'Saved pollution credits may hinder California climate goals',
     authors: ['Kathleen Ronayne'],
