@@ -38,7 +38,8 @@ const press = [
   {
     source: ['CalMatters'],
     href: 'https://calmatters.org/environment/2022/02/california-climate-cap-trade/',
-    title: 'Experts — once again — tell Senate panel that California’s key climate change strategy is flawed',
+    title:
+      'Experts — once again — tell Senate panel that California’s key climate change strategy is flawed',
     authors: ['Julie Cart'],
     date: '02-24-2022',
     format: 'print',
