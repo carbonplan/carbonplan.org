@@ -23,20 +23,20 @@ const research2 = {
 
 const highlights = [
   {
-    label: 'Soil Protocols',
+    label: 'Ton-year accounting',
+    href: '/research/ton-year-explainer',
+  },
+  {
+    label: 'Offset disclosures',
+    href: '/blog/offset-disclosure-needs',
+  },
+  {
+    label: 'Soil protocols',
     href: '/research/soil-protocols-explainer',
   },
   {
-    label: 'US Forest Risks',
-    href: '/research/forest-risks-explainer',
-  },
-  {
-    label: 'CA Forest Offsets',
-    href: '/research/forest-offsets-explainer',
-  },
-  {
-    label: 'CDR Database',
-    href: '/research/cdr-database',
+    label: 'CDR analysis',
+    href: '/research/stripe-2021-insights',
   },
 ]
 
