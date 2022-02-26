@@ -42,12 +42,12 @@ const highlights = [
 
 const press = [
   {
-    label: 'Los Angeles Times',
-    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
+    label: 'Grist',
+    href: 'https://grist.org/wildfires/california-forests-carbon-offsets-reduce-emissions/',
   },
   {
-    label: 'New York Times',
-    href: 'https://www.nytimes.com/2021/08/23/us/wildfires-carbon-offsets.html',
+    label: 'Los Angeles Times',
+    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
   },
   {
     label: 'Bloomberg',
