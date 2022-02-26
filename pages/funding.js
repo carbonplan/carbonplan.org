@@ -39,15 +39,19 @@ const Funding = () => {
             either category. We have also benefited from sponsored compute
             credits from Amazon Web Services and Microsoft Azure. Funding for
             additional, ongoing projects will be listed in the future. Read more
-            in our{' '}
+            in our Annual Reports (
             <Link href='https://files.carbonplan.org/CarbonPlan-Annual-Report-2020.pdf'>
-              2020 Annual Report
-            </Link>{' '}
-            or our{' '}
-            <Link href='https://files.carbonplan.org/CarbonPlan-Form-990-2020.pdf'>
-              2020 Form 990
+              2020
             </Link>
-            .
+            ,{' '}
+            <Link href='https://files.carbonplan.org/CarbonPlan-Annual-Report-2021.pdf'>
+              2021
+            </Link>
+            ) or our Form 990s ({' '}
+            <Link href='https://files.carbonplan.org/CarbonPlan-Form-990-2020.pdf'>
+              2020
+            </Link>
+            ).
           </Box>
         </Column>
       </Row>
