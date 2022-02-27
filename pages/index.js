@@ -131,7 +131,7 @@ const Index = () => {
             ...sx.highlight,
           }}
         >
-          Recent Research
+          Research highlights
         </Column>
       </Row>
       <Highlight research={research2} />
@@ -156,12 +156,12 @@ const Index = () => {
                   Annual report
                 </Box>
                 <Button
-                  href='https://files.carbonplan.org/CarbonPlan-Annual-Report-2020.pdf'
+                  href='https://files.carbonplan.org/CarbonPlan-Annual-Report-2021.pdf'
                   size='md'
                   sx={{ mb: [3] }}
                   suffix={<RotatingArrow />}
                 >
-                  Our 2020 in review
+                  Our 2021 in review
                 </Button>
                 <Box
                   sx={{
@@ -171,8 +171,8 @@ const Index = () => {
                     lineHeight: '1.25',
                   }}
                 >
-                  Read all about the work we did in our first year, and some of
-                  what we're planning to do next.
+                  Read all about the work we did last year, and some of what
+                  we're planning to do next.
                 </Box>
               </Box>
             </Column>
