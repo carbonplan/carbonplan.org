@@ -1,5 +1,3 @@
-import vercelConfig from '../vercel.json'
-
 const BASE_URL = 'https://carbonplan.org'
 
 const ROUTES = [
@@ -12,6 +10,7 @@ const ROUTES = [
   'team',
   'terms',
   'thanks',
+  'design',
 ]
 
 function generateSiteMap(pages) {
@@ -60,18 +59,7 @@ export async function getServerSideProps({ res }) {
     requests.map((request) => request.json())
   )
 
-  const rewrites = vercelConfig.rewrites
-    .map(({ source }) => ({
-      page: source.replace(/(^\/|\(\.\*\)$)/g, ''),
-    }))
-    .filter(
-      (rewrite) =>
-        !['research', 'blog', 'data', 'embed/offset-fires'].includes(
-          rewrite.page
-        )
-    )
-
-  const sitemap = generateSiteMap(research.concat(blog).concat(rewrites))
+  const sitemap = generateSiteMap(research.concat(blog))
 
   res.setHeader('Content-Type', 'text/xml')
   // we send the XML to the browser
