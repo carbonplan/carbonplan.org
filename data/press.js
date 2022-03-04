@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Capital & Main'],
+    href: 'https://capitalandmain.com/as-evidence-of-cap-and-trade-problems-mount-california-air-regulators-remain-defiant',
+    title:
+      'As evidence of cap and trade problems mounts, California air regulators remain defiant',
+    authors: ['Aaron Cantu'],
+    date: '02-24-2022',
+    format: 'print',
+  },
+  {
     source: ['AP News'],
     href: 'https://apnews.com/article/climate-business-environment-pollution-california-air-resources-board-21d34adf68b5d612fbc37c3f10a13fef',
     title: 'California won’t immediately change pollution credit program',
