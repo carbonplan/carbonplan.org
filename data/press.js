@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Protocol'],
+    href: 'https://www.protocol.com/climate/carbon-offsets-shopping-ecommerce',
+    title:
+      'Startups are popping up to offer carbon offsets. It’s raising thorny questions.',
+    authors: ['Michelle Ma'],
+    date: '03-15-2022',
+    format: 'print',
+  },
+  {
     source: ['Capital & Main'],
     href: 'https://capitalandmain.com/as-evidence-of-cap-and-trade-problems-mount-california-air-regulators-remain-defiant',
     title:
