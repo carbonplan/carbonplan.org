@@ -21,6 +21,10 @@
       "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets"
     },
     {
+      "source": "/research/seaweed-farming/embed",
+      "destination": "https://seaweed-farming.carbonplan.org/research/seaweed-farming/embed"
+    },
+    {
       "source": "/research/seaweed-farming",
       "destination": "https://seaweed-farming.carbonplan.org/research/seaweed-farming"
     },
