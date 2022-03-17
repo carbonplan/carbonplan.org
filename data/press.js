@@ -80,7 +80,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['Bloomberg Green'],
+    source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-02-08/how-to-avoid-buying-dodgy-carbon-offsets',
     title: 'How to avoid buying dodgy offsets',
     authors: ['Akshat Rathi'],
