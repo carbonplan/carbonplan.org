@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2022-03-17/timber-ceo-wants-to-reform-flawed-carbon-offset-market',
+    title:
+      'This timber company sold millions of dollars of useless carbon offsets',
+    authors: ['Ben Elgin'],
+    date: '03-17-2022',
+    format: 'print',
+  },
+  {
     source: ['Protocol'],
     href: 'https://www.protocol.com/climate/carbon-offsets-shopping-ecommerce',
     title:
