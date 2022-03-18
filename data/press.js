@@ -304,7 +304,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['Bloomberg Businessweek'],
+    source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2021-10-06/climate-crisis-muon-space-uses-satellites-ai-to-identify-polluters',
     title:
       'Satellite startup wants to fight climate crisis with next-level data',
