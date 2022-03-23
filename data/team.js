@@ -49,6 +49,11 @@ const team = [
     role: 'Research Scientist',
     bio: 'Grayson is an ecologist dedicated to ensuring a vibrant future where both people and ecosystems thrive. He holds a PhD in Earth System Science from Stanford University.',
   },
+  {
+    name: 'Anderson Banihirwe',
+    role: 'Software Engineer',
+    bio: "Anderson is a software engineer and an open-source software advocate and contributor. He's excited to be working at the intersection of data-intensive climate science and software engineering. He holds a BS in Systems Engineering from the University of Arkansas at Little Rock.",
+  },
 ]
 
 const board = [
