@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/california/story/2022-03-22/what-has-california-cap-and-trade-accomplished',
+    title:
+      'Is California’s cap-and-trade program hurting the environment more than helping it?',
+    authors: ['Jonah Valdez'],
+    date: '03-22-2022',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-03-17/timber-ceo-wants-to-reform-flawed-carbon-offset-market',
     title:
