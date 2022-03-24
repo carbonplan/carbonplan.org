@@ -1,4 +1,4 @@
-import { Box, Image } from 'theme-ui'
+import { Box, Image, useColorMode } from 'theme-ui'
 import {
   Layout,
   Row,
@@ -34,6 +34,8 @@ const sx = {
 }
 
 const Index = () => {
+  const [colorMode] = useColorMode()
+
   return (
     <Layout
       links={'homepage'}
@@ -135,10 +137,32 @@ const Index = () => {
         </Column>
       </Row>
       <Highlight research={research2} />
-      <Research2Figure />
+      <Row as='figure' sx={{ mt: [4, 5, 6, 7], mb: [4, 4, 4, 5] }}>
+        <Column start={[1, 1, 2, 3]} width={[6, 8, 10, 8]}>
+          <Image
+            src={
+              colorMode === 'light'
+                ? '/Ton-Year-Light.png'
+                : '/Ton-Year-Dark.png'
+            }
+            sx={{ width: '100%' }}
+          />
+        </Column>
+      </Row>
       <Box sx={{ display: 'block', height: [4, 5, 6, 7] }} />
       <Highlight research={research1} />
-      <Research1Figure />
+      <Row as='figure' sx={{ mt: [5, 6, 6, 7], mb: [4, 4, 4, 5] }}>
+        <Column start={[1, 1, 2, 3]} width={[6, 8, 10, 8]}>
+          <Image
+            src={
+              colorMode === 'light'
+                ? '/Seaweed-Farming-Light.png'
+                : '/Seaweed-Farming-Dark.png'
+            }
+            sx={{ width: '100%' }}
+          />
+        </Column>
+      </Row>
       <Row as='section' sx={{ mt: [5, 6, 7, 8], pb: [1] }}>
         <Column
           start={[1, 1, 2, 2]}

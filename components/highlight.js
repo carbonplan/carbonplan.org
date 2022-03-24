@@ -28,7 +28,7 @@ const Highlight = ({ research }) => {
           <Button
             href={research.href}
             size='lg'
-            suffix={<RotatingArrow sx={{ color: research.color }} />}
+            suffix={<RotatingArrow sx={{ color: 'primary' }} />}
           >
             {research.title}
           </Button>

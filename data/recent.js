@@ -1,24 +1,19 @@
-const research1 = {
-  date: '05-26-2021',
-  title: 'CDR Database',
+const research2 = {
+  date: '01-13-2022',
+  title: 'Ton-year accounting',
   summary:
-    'We have analyzed project proposals submitted to multiple carbon removal procurement programs. Explore our database of project reports and read our articles for takeaways and lessons learned.',
-  color: 'purple',
-  href: '/research/cdr-database',
+    "There's growing interest in methods to value temporary carbon storage. We explain a practice called ton-year accounting, and raise concerns about how it's being used in practice.",
+  color: 'pink',
+  href: '/research/ton-year-explainer',
 }
 
-const research2 = {
-  date: '04-29-2021',
-  title: (
-    <span>
-      {'Systematic over' + '\u2011' + 'crediting'}
-      <br /> of forest offsets
-    </span>
-  ),
+const research1 = {
+  date: '03-16-2022',
+  title: 'Mapping seaweed farming potential',
   summary:
-    "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars.",
-  color: 'green',
-  href: '/research/forest-offsets-explainer',
+    'We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products.',
+  color: 'teal',
+  href: '/research/seaweed-farming',
 }
 
 const highlights = [
