@@ -2,6 +2,10 @@ import { Box, Image, useColorMode } from 'theme-ui'
 import { Row, Column, Link, Button, formatDate } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 
+const highlightImageUrl = (id, mode) => {
+  return `https://images.carbonplan.org/highlights/${id}-${mode}.png`
+}
+
 const Highlight = ({ research, last }) => {
   const [colorMode] = useColorMode()
 
@@ -64,7 +68,9 @@ const Highlight = ({ research, last }) => {
           <Link href={research.href}>
             <Image
               src={
-                colorMode === 'light' ? research.logo.light : research.logo.dark
+                colorMode === 'light'
+                  ? highlightImageUrl(research.id, 'light')
+                  : highlightImageUrl(research.id, 'dark')
               }
               sx={{
                 width: '100%',

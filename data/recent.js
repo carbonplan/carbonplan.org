@@ -1,24 +1,21 @@
 const research1 = {
+  id: 'seaweed-farming',
   date: '03-16-2022',
   title: 'Mapping seaweed farming potential',
   summary:
     'We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products.',
   color: 'teal',
   href: '/research/seaweed-farming',
-  logo: {
-    dark: '/Seaweed-Farming-Dark.png',
-    light: '/Seaweed-Farming-Light.png',
-  },
 }
 
 const research2 = {
+  id: 'ton-year-explainer',
   date: '01-13-2022',
   title: 'Ton-year accounting',
   summary:
     "There's growing interest in methods to value temporary carbon storage. We explain a practice called ton-year accounting, and raise concerns about how it's being used in practice.",
   color: 'pink',
   href: '/research/ton-year-explainer',
-  logo: { dark: '/Ton-Year-Dark.png', light: '/Ton-Year-Light.png' },
 }
 
 const highlights = [
