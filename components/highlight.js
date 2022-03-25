@@ -1,8 +1,10 @@
-import { Box } from 'theme-ui'
+import { Box, Image, useColorMode } from 'theme-ui'
 import { Row, Column, Link, Button, formatDate } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 
-const Highlight = ({ research }) => {
+const Highlight = ({ research, last }) => {
+  const [colorMode] = useColorMode()
+
   return (
     <>
       <Row sx={{ mt: [4, 5, 6, 7] }}>
@@ -57,6 +59,28 @@ const Highlight = ({ research }) => {
           </Box>
         </Column>
       </Row>
+      <Row as='figure' sx={{ mt: [4, 5, 6, 7], mb: [4, 4, 4, 5] }}>
+        <Column start={[1, 1, 2, 3]} width={[6, 8, 10, 8]}>
+          <Link href={research.href}>
+            <Image
+              src={
+                colorMode === 'light' ? research.logo.light : research.logo.dark
+              }
+              sx={{
+                width: '100%',
+                opacity: 1,
+                transition: 'opacity 0.15s',
+                '@media (hover: hover) and (pointer: fine)': {
+                  '&:hover': {
+                    opacity: 0.6,
+                  },
+                },
+              }}
+            />
+          </Link>
+        </Column>
+      </Row>
+      <Box sx={{ display: 'block', height: [4, 5, 6, 7] }} />
     </>
   )
 }

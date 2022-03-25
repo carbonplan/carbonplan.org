@@ -136,33 +136,8 @@ const Index = () => {
           Research highlights
         </Column>
       </Row>
-      <Highlight research={research2} />
-      <Row as='figure' sx={{ mt: [4, 5, 6, 7], mb: [4, 4, 4, 5] }}>
-        <Column start={[1, 1, 2, 3]} width={[6, 8, 10, 8]}>
-          <Image
-            src={
-              colorMode === 'light'
-                ? '/Ton-Year-Light.png'
-                : '/Ton-Year-Dark.png'
-            }
-            sx={{ width: '100%' }}
-          />
-        </Column>
-      </Row>
-      <Box sx={{ display: 'block', height: [4, 5, 6, 7] }} />
       <Highlight research={research1} />
-      <Row as='figure' sx={{ mt: [5, 6, 6, 7], mb: [4, 4, 4, 5] }}>
-        <Column start={[1, 1, 2, 3]} width={[6, 8, 10, 8]}>
-          <Image
-            src={
-              colorMode === 'light'
-                ? '/Seaweed-Farming-Light.png'
-                : '/Seaweed-Farming-Dark.png'
-            }
-            sx={{ width: '100%' }}
-          />
-        </Column>
-      </Row>
+      <Highlight research={research2} />
       <Row as='section' sx={{ mt: [5, 6, 7, 8], pb: [1] }}>
         <Column
           start={[1, 1, 2, 2]}
