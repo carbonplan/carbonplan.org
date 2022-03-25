@@ -23,6 +23,10 @@ const research2 = {
 
 const highlights = [
   {
+    label: 'Seaweed farming',
+    href: '/research/seaweed-farming',
+  },
+  {
     label: 'Ton-year accounting',
     href: '/research/ton-year-explainer',
   },
@@ -33,10 +37,6 @@ const highlights = [
   {
     label: 'Soil protocols',
     href: '/research/soil-protocols-explainer',
-  },
-  {
-    label: 'CDR analysis',
-    href: '/research/stripe-2021-insights',
   },
 ]
 

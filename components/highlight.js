@@ -69,6 +69,7 @@ const Highlight = ({ research, last }) => {
               sx={{
                 width: '100%',
                 opacity: 1,
+                aspectRatio: '4 / 1',
                 transition: 'opacity 0.15s',
                 '@media (hover: hover) and (pointer: fine)': {
                   '&:hover': {

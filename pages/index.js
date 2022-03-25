@@ -10,8 +10,6 @@ import {
 import { RotatingArrow } from '@carbonplan/icons'
 import { keyframes } from '@emotion/react'
 import Splash from '../components/splash'
-import Research1Figure from '../components/research-1-figure'
-import Research2Figure from '../components/research-2-figure'
 import Highlight from '../components/highlight'
 
 import { research1, research2, highlights, press } from '../data/recent'
