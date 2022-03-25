@@ -1,4 +1,4 @@
-import { Box, Image, useColorMode } from 'theme-ui'
+import { Box, Image } from 'theme-ui'
 import {
   Layout,
   Row,
@@ -32,8 +32,6 @@ const sx = {
 }
 
 const Index = () => {
-  const [colorMode] = useColorMode()
-
   return (
     <Layout
       links={'homepage'}
