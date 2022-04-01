@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Stanford Social Innovation Review'],
+    href: 'https://ssir.org/articles/entry/racing_to_net_zero_a_captivating_but_distant_ambition#',
+    title: 'Racing to net-zero: A captivating but distant ambition',
+    authors: ['Daniel Stein', 'Na’im Merchant'],
+    date: '03-30-2022',
+    format: 'print',
+  },
+  {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/california/story/2022-03-22/what-has-california-cap-and-trade-accomplished',
     title:

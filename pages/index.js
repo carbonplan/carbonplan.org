@@ -10,8 +10,6 @@ import {
 import { RotatingArrow } from '@carbonplan/icons'
 import { keyframes } from '@emotion/react'
 import Splash from '../components/splash'
-import Research1Figure from '../components/research-1-figure'
-import Research2Figure from '../components/research-2-figure'
 import Highlight from '../components/highlight'
 
 import { research1, research2, highlights, press } from '../data/recent'
@@ -134,11 +132,8 @@ const Index = () => {
           Research highlights
         </Column>
       </Row>
-      <Highlight research={research2} />
-      <Research2Figure />
-      <Box sx={{ display: 'block', height: [4, 5, 6, 7] }} />
       <Highlight research={research1} />
-      <Research1Figure />
+      <Highlight research={research2} />
       <Row as='section' sx={{ mt: [5, 6, 7, 8], pb: [1] }}>
         <Column
           start={[1, 1, 2, 2]}
