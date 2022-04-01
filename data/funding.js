@@ -127,9 +127,11 @@ const projectSpecific = [
   ],
   [
     'Preston-Werner Foundation',
-    <Link href='/research/soil-depth-sampling'>
-      Soil- and forest-based carbon accounting
-    </Link>,
+    <>
+      Soil- and forest-based carbon accounting (
+      <Link href='/research/soil-depth-sampling'>Soil depth</Link>,{' '}
+      <Link href='/research/fire-forests-inventories'>Fires and forests</Link>)
+    </>,
   ],
 ]
 
