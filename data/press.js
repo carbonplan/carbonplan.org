@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Stanford Social Innovation Review'],
     href: 'https://ssir.org/articles/entry/racing_to_net_zero_a_captivating_but_distant_ambition#',
-    title:
-      'Racing to net-zero: A captivating but distant ambition',
+    title: 'Racing to net-zero: A captivating but distant ambition',
     authors: ['Daniel Stein', 'Na’im Merchant'],
     date: '03-30-2022',
     format: 'print',
