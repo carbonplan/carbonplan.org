@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Inside Climate News'],
     href: 'https://insideclimatenews.org/news/06042022/occidental-is-eyeing-californias-clean-fuels-market-to-fund-texas-carbon-removal-plant/',
-    title: 'Occidental is eyeing California’s clean fuels market to fund Texas carbon removal plant',
+    title:
+      'Occidental is eyeing California’s clean fuels market to fund Texas carbon removal plant',
     authors: ['Nicholas Kusnetz'],
     date: '04-06-2022',
     format: 'print',
