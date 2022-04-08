@@ -36,11 +36,10 @@ const press = [
     date: '04-07-2022',
     format: 'print',
   },
-    {
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/opinion/articles/2022-04-07/distressed-debt-deal-makes-people-mad',
-    title:
-      'Distressed-debt deal makes people mad',
+    title: 'Distressed-debt deal makes people mad',
     authors: ['Matt Levine'],
     date: '04-07-2022',
     format: 'print',
