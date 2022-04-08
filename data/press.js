@@ -28,6 +28,23 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=premium',
+    title:
+      'The biggest crypto effort to end useless carbon offsets is backfiring',
+    authors: ['Akshat Rathi', 'Natasha White'],
+    date: '04-07-2022',
+    format: 'print',
+  },
+  {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/opinion/articles/2022-04-07/distressed-debt-deal-makes-people-mad',
+    title: 'Distressed-debt deal makes people mad',
+    authors: ['Matt Levine'],
+    date: '04-07-2022',
+    format: 'print',
+  },
+  {
     source: ['Inside Climate News'],
     href: 'https://insideclimatenews.org/news/06042022/occidental-is-eyeing-californias-clean-fuels-market-to-fund-texas-carbon-removal-plant/',
     title:
