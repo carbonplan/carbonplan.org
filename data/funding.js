@@ -101,6 +101,10 @@ const projectSpecific = [
       <Link href='/research/stripe-2021-insights'>
         Evaluation of technological carbon removal proposals
       </Link>
+      <br />
+      <Link href='/research/seaweed-farming'>
+        Mapping seaweed farming potential
+      </Link>
     </>,
   ],
   [
