@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Politico'],
     href: 'https://www.politico.com/newsletters/the-long-game/2022/04/15/navigating-the-net-zero-thicket-00025511',
-    title:
-      'Navigating the net-zero thicket',
+    title: 'Navigating the net-zero thicket',
     authors: ['Debra Kahn', 'Jordan Wolman'],
     date: '04-15-2022',
     format: 'print',
