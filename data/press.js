@@ -36,6 +36,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['CarbonPulse'],
+    href: 'https://carbon-pulse.com/156755',
+    title: 'Counting the carbon costs of Verra’s shift to the short term',
+    authors: ['Roy Manuell'],
+    date: '04-14-2022',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=premium',
     title:
