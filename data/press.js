@@ -36,7 +36,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['CarbonPulse'],
+    source: ['Carbon Pulse'],
     href: 'https://carbon-pulse.com/156755',
     title: 'Counting the carbon costs of Verra’s shift to the short term',
     authors: ['Roy Manuell'],
