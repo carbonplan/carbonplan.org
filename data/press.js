@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Protocol'],
+    href: 'https://www.protocol.com/climate/carbon-dioxide-removal-needs',
+    title: 'How much carbon dioxide removal do we actually need?',
+    authors: ['Brian Kahn'],
+    date: '04-22-2022',
+    format: 'print',
+  },
+  {
     source: ['Talk Python Podcast'],
     href: 'https://talkpython.fm/episodes/show/361/pangeo-data-ecosystem',
     title: 'Pangeo data ecosystem',
