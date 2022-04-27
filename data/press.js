@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Talk Python Podcast'],
+    href: 'https://talkpython.fm/episodes/show/361/pangeo-data-ecosystem',
+    title: 'Pangeo data ecosystem',
+    authors: ['Michael Kennedy'],
+    date: '04-16-2022',
+    format: 'audio',
+  },
+  {
     source: ['Politico'],
     href: 'https://www.politico.com/newsletters/the-long-game/2022/04/15/navigating-the-net-zero-thicket-00025511',
     title: 'Navigating the net-zero thicket',
@@ -76,6 +84,14 @@ const press = [
     authors: ['Daniel Stein', 'Na’im Merchant'],
     date: '03-30-2022',
     format: 'print',
+  },
+  {
+    source: ['Podcast.__init__'],
+    href: 'https://www.pythonpodcast.com/pangeo-big-data-geoscience-episode-358/',
+    title: 'Building a community and technology stack for scalable big data geoscience at Pangeo — Episode 358',
+    authors: ['Tobias Macey'],
+    date: '03-28-2022',
+    format: 'audio',
   },
   {
     source: ['Los Angeles Times'],
