@@ -88,7 +88,8 @@ const press = [
   {
     source: ['Podcast.__init__'],
     href: 'https://www.pythonpodcast.com/pangeo-big-data-geoscience-episode-358/',
-    title: 'Building a community and technology stack for scalable big data geoscience at Pangeo — Episode 358',
+    title:
+      'Building a community and technology stack for scalable big data geoscience at Pangeo — Episode 358',
     authors: ['Tobias Macey'],
     date: '03-28-2022',
     format: 'audio',
