@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg Green Summit'],
+    href: 'https://www.youtube.com/watch?v=37B_up-zsvM',
+    title: 'The next era of carbon removal',
+    authors: ['Akshat Rathi'],
+    date: '04-27-2022',
+    format: 'video',
+  },
+  {
     source: ['Protocol'],
     href: 'https://www.protocol.com/climate/carbon-dioxide-removal-needs',
     title: 'How much carbon dioxide removal do we actually need?',
