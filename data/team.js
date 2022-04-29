@@ -54,6 +54,11 @@ const team = [
     role: 'Software Engineer',
     bio: "Anderson is a software engineer and an open-source software advocate and contributor. He's excited to be working at the intersection of data-intensive climate science and software engineering. He holds a BS in Systems Engineering from the University of Arkansas at Little Rock.",
   },
+  {
+    name: 'Max Jones',
+    role: 'Software Engineer',
+    bio: 'Max is a data scientist focused on machine learning, cloud computing, and open source software development. They are excited to build tools that enable climate action. Max holds a PhD from the Massachusetts Institute of Technology — Woods Hole Oceanographic Institution Joint Program in Oceanography.',
+  },
 ]
 
 const board = [
