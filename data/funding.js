@@ -137,6 +137,10 @@ const projectSpecific = [
       <Link href='/research/fire-forests-inventories'>Fires and forests</Link>)
     </>,
   ],
+  [
+    'XPRIZE',
+    <Link href='https://www.xprize.org/prizes/elonmusk/articles/introducing-the-xprize-carbon-removal-expert-reviewers'>Carbon removal expert reviewer</Link>,
+  ],
 ]
 
 export { unrestricted, projectSpecific }
