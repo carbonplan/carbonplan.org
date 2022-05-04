@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['National Geographic'],
+    href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
+    title: 'Polluters are using forests as ‘carbon offsets.’ Climate change has other plans.',
+    authors: ['Craig Welch'],
+    date: '05-04-2022',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg Green Summit'],
     href: 'https://www.youtube.com/watch?v=37B_up-zsvM',
     title: 'The next era of carbon removal',
