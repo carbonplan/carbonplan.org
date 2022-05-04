@@ -14,9 +14,9 @@ import {
 import { Arrow } from '@carbonplan/icons'
 import { highlights, press } from '../data/press'
 import {
-  NewYorkTimes,
   Bloomberg,
   LosAngelesTimes,
+  NationalGeographic,
   NPR,
   ProPublica,
 } from '../components/press-logos'
@@ -43,9 +43,9 @@ const sx = {
 const logos = {
   ProPublica: <ProPublica />,
   'Los Angeles Times': <LosAngelesTimes />,
-  'New York Times': <NewYorkTimes />,
   'Planet Money': <NPR />,
   Bloomberg: <Bloomberg />,
+  'National Geographic': <NationalGeographic />,
 }
 
 const getColors = () => {
