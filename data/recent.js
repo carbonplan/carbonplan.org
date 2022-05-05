@@ -47,12 +47,12 @@ const press = [
     href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
   },
   {
-    label: 'Planet Money',
-    href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
-  },
-  {
     label: 'Grist',
     href: 'https://grist.org/wildfires/california-forests-carbon-offsets-reduce-emissions/',
+  },
+  {
+    label: 'Planet Money',
+    href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
   },
 ]
 
