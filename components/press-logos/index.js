@@ -1,3 +1,4 @@
+export { default as NationalGeographic } from './national-geographic'
 export { default as NewYorkTimes } from './new-york-times'
 export { default as LosAngelesTimes } from './los-angeles-times'
 export { default as MITTechReview } from './mit-tech-review'

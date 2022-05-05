@@ -1,18 +1,18 @@
 const highlights = [
   {
-    source: 'Los Angeles Times',
-    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
-    date: '09-08-2021',
-  },
-  {
-    source: 'New York Times',
-    href: 'https://www.nytimes.com/2021/08/23/us/wildfires-carbon-offsets.html',
-    date: '08-23-2021',
+    source: 'National Geographic',
+    href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
+    date: '05-04-2022',
   },
   {
     source: 'Bloomberg',
-    href: 'https://www.bloomberg.com/news/features/2021-08-11/the-fictitious-world-of-carbon-neutral-fossil-fuel?srnd=green',
-    date: '08-10-2021',
+    href: 'https://www.youtube.com/watch?v=37B_up-zsvM',
+    date: '04-27-2022',
+  },
+  {
+    source: 'Los Angeles Times',
+    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
+    date: '09-08-2021',
   },
   {
     source: 'Planet Money',
