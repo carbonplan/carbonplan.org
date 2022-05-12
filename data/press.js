@@ -28,6 +28,24 @@ const highlights = [
 
 const press = [
   {
+    source: ['Eos'],
+    href: 'https://eos.org/articles/wildfire-drought-and-insects-threaten-forests-in-the-united-states',
+    title:
+      'Wildfire, drought, and insects threaten forests in the United States',
+    authors: ['Rishika Pardikar'],
+    date: '05-12-2022',
+    format: 'print',
+  },
+  {
+    source: ['CalMatters'],
+    href: 'https://calmatters.org/environment/2022/05/climate-change-strategy-california/',
+    title:
+      'State unveils new climate change blueprint packed with strategies tackling fossil fuels',
+    authors: ['Nadia Lopez'],
+    date: '05-11-2022',
+    format: 'print',
+  },
+  {
     source: ['National Geographic'],
     href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
     title:
