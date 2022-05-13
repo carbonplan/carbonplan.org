@@ -70,6 +70,7 @@ const unrestricted = [
   ['Calvin French-Owen', 'Individual'],
   ['Additional Ventures', 'Foundation'],
   ['Rovere O’Kelley Family Fund', 'Individual'],
+  ['Robert and Martha Parke', 'Individual'],
 ]
 
 const projectSpecific = [
