@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['New York Times'],
+    href: 'https://www.nytimes.com/2022/05/18/climate/offset-carbon-footprint-air-travel.html',
+    title:
+      'Do airline climate offsets really work? Here’s the good news, and the bad.',
+    authors: ['Maggie Astor'],
+    date: '05-18-2022',
+    format: 'print',
+  },
+  {
     source: ['Eos'],
     href: 'https://eos.org/articles/wildfire-drought-and-insects-threaten-forests-in-the-united-states',
     title:
