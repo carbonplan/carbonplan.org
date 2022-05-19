@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Grist'],
+    href: 'https://grist.org/accountability/california-methane-digesters-low-carbon-fuel-standard/',
+    title: 'Is California giving its methane digesters too much credit?',
+    authors: ['Jessica Fu'],
+    date: '05-19-2022',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2022/05/18/climate/offset-carbon-footprint-air-travel.html',
     title:
