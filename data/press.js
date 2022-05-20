@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['The American Prospect'],
+    href: 'https://prospect.org/environment/california-might-pass-its-own-personal-build-back-better/',
+    title: 'California might pass its own personal build back better',
+    authors: ['Lee Harris'],
+    date: '05-20-2022',
+    format: 'print',
+  },
+  {
     source: ['Grist'],
     href: 'https://grist.org/accountability/california-methane-digesters-low-carbon-fuel-standard/',
     title: 'Is California giving its methane digesters too much credit?',
