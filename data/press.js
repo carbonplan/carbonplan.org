@@ -30,7 +30,8 @@ const press = [
   {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2022/05/26/1052671/charm-industrials-carbon-removal-corn/',
-    title: 'Inside Charm Industrial’s big bet on corn stalks for carbon removal',
+    title:
+      'Inside Charm Industrial’s big bet on corn stalks for carbon removal',
     authors: ['James Temple'],
     date: '05-26-2022',
     format: 'print',
