@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Tech Review'],
+    href: 'https://www.technologyreview.com/2022/05/26/1052671/charm-industrials-carbon-removal-corn/',
+    title:
+      'Inside Charm Industrial’s big bet on corn stalks for carbon removal',
+    authors: ['James Temple'],
+    date: '05-26-2022',
+    format: 'print',
+  },
+  {
     source: ['The American Prospect'],
     href: 'https://prospect.org/environment/california-might-pass-its-own-personal-build-back-better/',
     title: 'California might pass its own personal build back better',
