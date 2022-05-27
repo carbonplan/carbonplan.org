@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Time'],
+    href: 'https://time.com/6181907/crypto-carbon-credits/',
+    title:
+      'The crypto industry was on its way to changing the carbon-credit market, until it hit a major roadblock',
+    authors: ['Andrew R. Chow'],
+    date: '05-26-2022',
+    format: 'print',
+  },
+  {
     source: ['MIT Tech Review'],
     href: 'https://www.technologyreview.com/2022/05/26/1052671/charm-industrials-carbon-removal-corn/',
     title:
