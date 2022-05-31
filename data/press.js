@@ -48,8 +48,7 @@ const press = [
   {
     source: ['Now This'],
     href: 'https://nowthisnews.com/videos/earth/can-carbon-offsets-save-the-planet',
-    title:
-      'Can carbon offsets save the planet?',
+    title: 'Can carbon offsets save the planet?',
     authors: ['Alejandro Alba'],
     date: '05-23-2022',
     format: 'video',
