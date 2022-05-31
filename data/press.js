@@ -46,6 +46,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['Now This'],
+    href: 'https://nowthisnews.com/videos/earth/can-carbon-offsets-save-the-planet',
+    title: 'Can carbon offsets save the planet?',
+    authors: ['Alejandro Alba'],
+    date: '05-23-2022',
+    format: 'video',
+  },
+  {
     source: ['The American Prospect'],
     href: 'https://prospect.org/environment/california-might-pass-its-own-personal-build-back-better/',
     title: 'California might pass its own personal build back better',
