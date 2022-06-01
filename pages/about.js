@@ -275,9 +275,10 @@ const About = () => {
                 fontFamily: 'heading',
                 letterSpacing: 'smallcaps',
                 color: 'teal',
+                textTransform: 'uppercase',
               }}
             >
-              RECENT HIGHLIGHTS
+              Research highlights
             </Box>
             {highlights.map((d, i) => (
               <Button
@@ -299,10 +300,11 @@ const About = () => {
                 mb: [3],
                 fontFamily: 'heading',
                 letterSpacing: 'smallcaps',
+                textTransform: 'uppercase',
                 color: 'red',
               }}
             >
-              RECENT PRESS
+              Press highlights
             </Box>
             {press.map((d, i) => (
               <Button

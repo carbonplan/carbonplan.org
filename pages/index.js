@@ -179,7 +179,7 @@ const Index = () => {
                     mt: [6, 6, 0, 0],
                   }}
                 >
-                  Recent highlights
+                  Research highlights
                 </Box>
                 {highlights.map((d, i) => (
                   <Button
@@ -202,7 +202,7 @@ const Index = () => {
                     mt: [6, 6, 0, 0],
                   }}
                 >
-                  Recent press
+                  Press highlights
                 </Box>
                 {press.map((d, i) => (
                   <Button
