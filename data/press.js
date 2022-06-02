@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Volts'],
+    href: 'https://www.volts.wtf/p/volts-podcast-danny-cullenward-on?s=r#details',
+    title: 'Danny Cullenward on California’s shaky climate plans',
+    authors: ['David Roberts'],
+    date: '06-01-2022',
+    format: 'audio',
+  },
+  {
     source: ['Time'],
     href: 'https://time.com/6181907/crypto-carbon-credits/',
     title:
