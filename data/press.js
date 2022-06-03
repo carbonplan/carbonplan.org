@@ -28,6 +28,24 @@ const highlights = [
 
 const press = [
   {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/opinion/story/2022-06-03/california-climate-plan-net-zero-emissions',
+    title:
+      'Editorial: California needs to slash carbon pollution. Its pie-in-the-sky plan falls short.',
+    authors: ['Editorial Board'],
+    date: '06-03-2022',
+    format: 'print',
+  },
+  {
+    source: ['CalMatters'],
+    href: 'https://calmatters.org/environment/2022/06/california-climate-change-plan-flawed/',
+    title:
+      'Climate controversy: California’s plan for handling crisis is flawed, advisors say',
+    authors: ['Nadia Lopez'],
+    date: '06-03-2022',
+    format: 'print',
+  },
+  {
     source: ['Volts'],
     href: 'https://www.volts.wtf/p/volts-podcast-danny-cullenward-on?s=r#details',
     title: 'Danny Cullenward on California’s shaky climate plans',
@@ -360,7 +378,7 @@ const press = [
     source: ['The Guardian'],
     href: 'https://www.theguardian.com/commentisfree/2021/nov/16/cop-26-big-business-climate-crisis-neoliberal#',
     title:
-      'The COP26 message? We are trusting big business, not states, to fix the climate crisis',
+      'The COP26 message? We are trusting big business, not states, to fix the climate crisis.',
     authors: ['Adam Tooze'],
     date: '11-16-2021',
     format: 'print',
@@ -518,7 +536,7 @@ const press = [
   {
     source: ['Fortune'],
     href: 'https://fortune.com/2021/09/23/net-zero-emissions-carbon-removal-net-negative-cop26/',
-    title: 'Net zero isn’t enough. We need to get to net negative',
+    title: 'Net zero isn’t enough. We need to get to net negative.',
     authors: ['Noah Deich'],
     date: '09-23-2021',
     format: 'print',
@@ -1000,7 +1018,7 @@ const press = [
     source: 'E&E News',
     href: 'https://www.eenews.net/climatewire/stories/1063723085/',
     date: '01-21-2021',
-    title: 'Does carbon pricing work? Researchers are skeptical',
+    title: 'Does carbon pricing work? Researchers are skeptical.',
     authors: ['Chelsea Harvey'],
     format: 'print',
   },
@@ -1056,7 +1074,8 @@ const press = [
     source: 'Ars Technica',
     href: 'https://arstechnica.com/science/2020/11/want-to-offset-your-carbon-footprint-heres-what-you-need-to-know/',
     date: '11-25-2020',
-    title: 'Want to offset your carbon footprint? Here’s what you need to know',
+    title:
+      'Want to offset your carbon footprint? Here’s what you need to know.',
     authors: ['Scott K. Johnson'],
     format: 'print',
   },
