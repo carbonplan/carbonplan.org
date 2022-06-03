@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/opinion/story/2022-06-03/california-climate-plan-net-zero-emissions',
-    title: 'Editorial: California needs to slash carbon pollution. Its pie-in-the-sky plan falls short.',
+    title:
+      'Editorial: California needs to slash carbon pollution. Its pie-in-the-sky plan falls short.',
     authors: ['Editorial Board'],
     date: '06-03-2022',
     format: 'print',
@@ -38,7 +39,8 @@ const press = [
   {
     source: ['CalMatters'],
     href: 'https://calmatters.org/environment/2022/06/california-climate-change-plan-flawed/',
-    title: 'Climate controversy: California’s plan for handling crisis is flawed, advisors say',
+    title:
+      'Climate controversy: California’s plan for handling crisis is flawed, advisors say',
     authors: ['Nadia Lopez'],
     date: '06-03-2022',
     format: 'print',
@@ -1072,7 +1074,8 @@ const press = [
     source: 'Ars Technica',
     href: 'https://arstechnica.com/science/2020/11/want-to-offset-your-carbon-footprint-heres-what-you-need-to-know/',
     date: '11-25-2020',
-    title: 'Want to offset your carbon footprint? Here’s what you need to know.',
+    title:
+      'Want to offset your carbon footprint? Here’s what you need to know.',
     authors: ['Scott K. Johnson'],
     format: 'print',
   },
