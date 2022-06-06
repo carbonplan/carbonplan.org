@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['New York Times'],
+    href: 'https://www.nytimes.com/2022/06/04/opinion/environment/climate-change-trees-carbon-removal.html?smid=url-share',
+    title: 'Let’s not pretend planting trees is a permanent climate solution',
+    authors: ['Zeke Hausfather'],
+    date: '06-04-2022',
+    format: 'print',
+  },
+  {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/opinion/story/2022-06-03/california-climate-plan-net-zero-emissions',
     title:
