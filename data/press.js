@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2022-06-07/wildfires-will-burn-more-forest-in-us-west-as-planet-warms',
+    title: 'Wildfires in US west match climate projections ‘eerily’ well',
+    authors: ['Eric Roston'],
+    date: '06-07-2022',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2022/06/04/opinion/environment/climate-change-trees-carbon-removal.html?smid=url-share',
     title: 'Let’s not pretend planting trees is a permanent climate solution',
