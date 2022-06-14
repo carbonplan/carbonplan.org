@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-06-14/carbon-offset-claims-watchdog-vcmi-aims-for-net-zero-clarity-risks-confusion?sref=jjXJRDFv',
-    title: 'Offsets watchdog aiming for clarity on net zero risks creating confusion',
+    title:
+      'Offsets watchdog aiming for clarity on net zero risks creating confusion',
     authors: ['Natasha White', 'Akshat Rathi'],
     date: '06-14-2022',
     format: 'print',
