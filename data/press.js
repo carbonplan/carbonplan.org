@@ -31,7 +31,7 @@ const press = [
     source: ['The Atlantic'],
     href: 'https://www.theatlantic.com/science/archive/2022/06/congress-climate-change-infrastructure-policy/661293/',
     title: 'A hotter, poorer, and less free America',
-    authors: ['Natasha White', 'Robinson Meyer'],
+    authors: ['Robinson Meyer'],
     date: '06-15-2022',
     format: 'print',
   },
