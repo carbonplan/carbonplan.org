@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['The Atlantic'],
+    href: 'https://www.theatlantic.com/science/archive/2022/06/congress-climate-change-infrastructure-policy/661293/',
+    title: 'A hotter, poorer, and less free America',
+    authors: ['Robinson Meyer'],
+    date: '06-15-2022',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-06-14/carbon-offset-claims-watchdog-vcmi-aims-for-net-zero-clarity-risks-confusion?sref=jjXJRDFv',
     title:
