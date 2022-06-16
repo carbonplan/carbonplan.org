@@ -21,12 +21,12 @@
       "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets"
     },
     {
-      "source": "/research/forest-offsets-fires(.*)",
-      "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-fires$1"
-    },
-    {
       "source": "/research/forest-offsets-crediting(.*)",
       "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-crediting$1"
+    },
+    {
+      "source": "/research/forest-offsets-fires(.*)",
+      "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-fires$1"
     },
     {
       "source": "/research/seaweed-farming/embed",
