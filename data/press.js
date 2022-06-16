@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Tech Review'],
+    href: 'https://www.technologyreview.com/2022/06/16/1053758/running-tide-seaweed-kelp-scientist-departures-ecological-concerns-climate-carbon-removal/',
+    title:
+      'Running Tide is facing scientist departures and growing concerns over seaweed sinking for carbon removal',
+    authors: ['James Temple'],
+    date: '06-16-2022',
+    format: 'print',
+  },
+  {
     source: ['The Atlantic'],
     href: 'https://www.theatlantic.com/science/archive/2022/06/congress-climate-change-infrastructure-policy/661293/',
     title: 'A hotter, poorer, and less free America',
