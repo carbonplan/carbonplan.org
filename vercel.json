@@ -81,6 +81,22 @@
     {
       "source": "/reports",
       "destination": "https://carbonplan.org/research/cdr-database"
+    },
+    {
+      "source": "/blog/scoping-plan-comments",
+      "destination": "https://carbonplan.org/research/scoping-plan-comments"
+    },
+    {
+      "source": "/blog/offset-disclosure-needs",
+      "destination": "https://carbonplan.org/research/offset-disclosure-needs"
+    },
+    {
+      "source": "/blog/ton-year-ncx",
+      "destination": "https://carbonplan.org/research/ton-year-ncx"
+    },
+    {
+      "source": "/blog/climate-financial-risks",
+      "destination": "https://carbonplan.org/research/climate-financial-risks"
     }
   ]
 }

@@ -29,7 +29,7 @@ const highlights = [
   },
   {
     label: 'Offset disclosures',
-    href: '/blog/offset-disclosure-needs',
+    href: '/research/offset-disclosure-needs',
   },
   {
     label: 'Soil protocols',
