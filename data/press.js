@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Associated Press'],
+    href: 'https://apnews.com/article/climate-technology-pollution-carbon-neutrality-california-air-resources-board-b48aab405c161597e622962beebf9f09',
+    title:
+      'California emissions, carbon neutrality plan draws criticism',
+    authors: ['Kathleen Ronayne'],
+    date: '06-23-2022',
+    format: 'print',
+  },
+  {
     source: ['MIT Tech Review'],
     href: 'https://www.technologyreview.com/2022/06/16/1053758/running-tide-seaweed-kelp-scientist-departures-ecological-concerns-climate-carbon-removal/',
     title:
@@ -68,6 +77,15 @@ const press = [
     authors: ['Zeke Hausfather'],
     date: '06-04-2022',
     format: 'print',
+  },
+  {
+    source: ['Wendover Productions'],
+    href: 'https://www.youtube.com/watch?v=AW3gaelBypY',
+    title:
+      'The carbon offset problem',
+    authors: ['Sam Denby', 'Tristan Purdy'],
+    date: '06-03-2022',
+    format: 'video',
   },
   {
     source: ['Los Angeles Times'],
