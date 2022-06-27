@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Popular Science'],
     href: 'https://www.popsci.com/environment/crypto-carbon-credit-tokens/',
-    title: 'Crypto companies are getting into carbon credits. But can they actually help the climate?',
+    title:
+      'Crypto companies are getting into carbon credits. But can they actually help the climate?',
     authors: ['Kristine Liao'],
     date: '06-27-2022',
     format: 'print',
