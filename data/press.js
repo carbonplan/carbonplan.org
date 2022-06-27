@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Associated Press'],
     href: 'https://apnews.com/article/climate-technology-pollution-carbon-neutrality-california-air-resources-board-b48aab405c161597e622962beebf9f09',
-    title:
-      'California emissions, carbon neutrality plan draws criticism',
+    title: 'California emissions, carbon neutrality plan draws criticism',
     authors: ['Kathleen Ronayne'],
     date: '06-23-2022',
     format: 'print',
@@ -81,8 +80,7 @@ const press = [
   {
     source: ['Wendover Productions'],
     href: 'https://www.youtube.com/watch?v=AW3gaelBypY',
-    title:
-      'The carbon offset problem',
+    title: 'The carbon offset problem',
     authors: ['Sam Denby', 'Tristan Purdy'],
     date: '06-03-2022',
     format: 'video',
