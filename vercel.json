@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/research/cmip6-downscaling(.*)",
+      "destination": "https://cmip6-downscaling.carbonplan.org/research/cmip6-downscaling$1"
+    },
+    {
       "source": "/research/cdr-database(.*)",
       "destination": "https://cdr-database.carbonplan.org/research/cdr-database$1"
     },
