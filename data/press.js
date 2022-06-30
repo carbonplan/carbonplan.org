@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Wirecutter'],
     href: 'https://www.nytimes.com/wirecutter/blog/does-buying-carbon-offset-help-the-planet/',
-    title: 'Does buying a carbon offset for your laptop really help the planet?',
+    title:
+      'Does buying a carbon offset for your laptop really help the planet?',
     authors: ['Kimber Streams'],
     date: '06-30-2022',
     format: 'print',
