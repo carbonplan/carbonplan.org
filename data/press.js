@@ -37,6 +37,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['Popular Science'],
+    href: 'https://www.popsci.com/environment/crypto-carbon-credit-tokens/',
+    title: 'Crypto companies are getting into carbon credits. But can they actually help the climate?',
+    authors: ['Kristine Liao'],
+    date: '06-27-2022',
+    format: 'print',
+  },
+  {
     source: ['Associated Press'],
     href: 'https://apnews.com/article/climate-technology-pollution-carbon-neutrality-california-air-resources-board-b48aab405c161597e622962beebf9f09',
     title: 'California emissions, carbon neutrality plan draws criticism',
