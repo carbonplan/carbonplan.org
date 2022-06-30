@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Wirecutter'],
+    href: 'https://www.nytimes.com/wirecutter/blog/does-buying-carbon-offset-help-the-planet/',
+    title: 'Does buying a carbon offset for your laptop really help the planet?',
+    authors: ['Kimber Streams'],
+    date: '06-30-2022',
+    format: 'print',
+  },
+  {
     source: ['Associated Press'],
     href: 'https://apnews.com/article/climate-technology-pollution-carbon-neutrality-california-air-resources-board-b48aab405c161597e622962beebf9f09',
     title: 'California emissions, carbon neutrality plan draws criticism',
