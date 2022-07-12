@@ -144,6 +144,12 @@ const projectSpecific = [
       Carbon removal expert review
     </Link>,
   ],
+  [
+    'Additional Ventures',
+    <Link href='https://carbonplan.org/research/cdr-scale-barriers'>
+      Barriers to scaling the long-duration carbon dioxide removal industry
+    </Link>,
+  ],
 ]
 
 export { unrestricted, projectSpecific }
