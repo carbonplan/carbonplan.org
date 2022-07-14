@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['How to save a planet'],
+    href: 'https://open.spotify.com/episode/6Msfjv021Y6S3Usa1ZupZW',
+    title:
+      'Air conditioned stadiums. Cruise ships. New hotels. Can the World Cup in Qatar really be carbon neutral?',
+    authors: ['Alex Bloomberg'],
+    date: '07-07-2022',
+    format: 'audio',
+  },
+  {
     source: ['Wirecutter'],
     href: 'https://www.nytimes.com/wirecutter/blog/does-buying-carbon-offset-help-the-planet/',
     title:
