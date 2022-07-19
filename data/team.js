@@ -64,7 +64,7 @@ const team = [
 const board = [
   ['Jeremy Freeman', 'CarbonPlan'],
   ['Kelly Gannon', 'NDWA Labs'],
-  ['Gernot Wagner', 'New York University'],
+  ['Gernot Wagner', 'Columbia Business School'],
   ['Arjuna Dibley', 'Pollination / Oxford University / CPD'],
   ['Tracy Teal', 'RStudio'],
 ]
