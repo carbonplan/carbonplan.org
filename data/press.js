@@ -39,8 +39,7 @@ const press = [
   {
     source: ['Yahoo!'],
     href: 'https://www.yahoo.com/lifestyle/people-swearing-off-air-travel-climate-anxiety-191928068.html?_guc_consent_skip=1658345180',
-    title:
-      'People are swearing off air travel because of climate anxiety',
+    title: 'People are swearing off air travel because of climate anxiety',
     authors: ['Jasmin Singer'],
     date: '07-19-2022',
     format: 'print',
