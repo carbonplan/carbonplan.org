@@ -28,6 +28,23 @@ const highlights = [
 
 const press = [
   {
+    source: ['Grist'],
+    href: 'https://grist.org/technology/carbon-removal-business-council-trade-group-launches-with-ethical-oath/',
+    title:
+      'Carbon removal trade group launches with ‘Hippocratic oath‘ for the industry',
+    authors: ['Emily Pontecorvo'],
+    date: '07-19-2022',
+    format: 'print',
+  },
+  {
+    source: ['Yahoo!'],
+    href: 'https://www.yahoo.com/lifestyle/people-swearing-off-air-travel-climate-anxiety-191928068.html?_guc_consent_skip=1658345180',
+    title: 'People are swearing off air travel because of climate anxiety',
+    authors: ['Jasmin Singer'],
+    date: '07-19-2022',
+    format: 'print',
+  },
+  {
     source: ['How to save a planet'],
     href: 'https://open.spotify.com/episode/6Msfjv021Y6S3Usa1ZupZW',
     title:
