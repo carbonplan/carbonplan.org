@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Wall Street Journal'],
+    href: 'https://www.wsj.com/articles/carbon-offsets-climate-change-explained-11658347808?mod=hp_listb_pos3',
+    title:
+      'What are carbon offsets, and can they combat climate change?',
+    authors: ['Eric Niiler'],
+    date: '07-21-2022',
+    format: 'print',
+  },
+  {
     source: ['Grist'],
     href: 'https://grist.org/technology/carbon-removal-business-council-trade-group-launches-with-ethical-oath/',
     title:
