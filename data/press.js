@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/environment/story/2022-07-25/is-carbon-capture-and-storage-a-cover-for-oil-production',
+    title:
+      'California hopes to fight global warming by pumping CO2 underground. Some call it a ruse.',
+    authors: ['Tony Briscoe'],
+    date: '07-25-2022',
+    format: 'print',
+  },
+  {
     source: ['Wall Street Journal'],
     href: 'https://www.wsj.com/articles/carbon-offsets-climate-change-explained-11658347808?mod=hp_listb_pos3',
     title: 'What are carbon offsets, and can they combat climate change?',
