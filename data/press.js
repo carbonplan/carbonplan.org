@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/environment/story/2022-07-25/is-carbon-capture-and-storage-a-cover-for-oil-production',
-    title: 'California hopes to fight global warming by pumping CO2 underground. Some call it a ruse.',
+    title:
+      'California hopes to fight global warming by pumping CO2 underground. Some call it a ruse.',
     authors: ['Tony Briscoe'],
     date: '07-25-2022',
     format: 'print',
