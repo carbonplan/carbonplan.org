@@ -59,6 +59,11 @@ const team = [
     role: 'Machine Learning Engineer',
     bio: 'Max is a data scientist focused on machine learning, cloud computing, and open source software development. They are excited to build tools that enable climate action. Max holds a PhD from the Massachusetts Institute of Technology — Woods Hole Oceanographic Institution Joint Program in Oceanography.',
   },
+  {
+    name: 'Sage Ortiz',
+    role: 'Operations Associate',
+    bio: "Sage is a committed social and climate justice advocate with over a decade of experience working with global nonprofits, including the United Nations and UNHCR. They hold a BA in Cultural Anthropology from Hawai'i Pacific University, an MA in Art and Design from NC State University's College of Design, and are working on their MSW from Boston University.",
+  },
 ]
 
 const board = [
