@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Sacramento Bee'],
+    href: 'https://www.sacbee.com/news/politics-government/capitol-alert/article263804918.html',
+    title:
+      'Gavin Newsom tells California air pollution agency to ‘up our game’ on climate, carbon',
+    authors: ['Dale Kasler'],
+    date: '07-25-2022',
+    format: 'print',
+  },
+  {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/environment/story/2022-07-25/is-carbon-capture-and-storage-a-cover-for-oil-production',
     title:
