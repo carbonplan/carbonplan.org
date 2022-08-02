@@ -1,21 +1,18 @@
 const research1 = {
-  id: 'seaweed-farming',
-  date: '03-16-2022',
-  title: 'Mapping seaweed farming potential',
-  summary:
-    'We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products.',
-  color: 'teal',
-  href: '/research/seaweed-farming',
+    id: 'cmip6-downscaling',
+    date: '06-30-2022',
+    title: 'CMIP6 downscaling',
+    summary: 'TK',
+    href: '/research/cmip6-downscaling',
 }
 
 const research2 = {
-  id: 'ton-year-explainer',
-  date: '01-13-2022',
-  title: 'Ton-year accounting',
+  id: 'cdr-scale-barriers',
+  date: '07-12-2022',
+  href: '/research/cdr-scale-barriers',
+  title: 'Barriers to scaling the long-duration carbon dioxide removal industry',
   summary:
-    "There's growing interest in methods to value temporary carbon storage. We explain a practice called ton-year accounting, and raise concerns about how it's being used in practice.",
-  color: 'pink',
-  href: '/research/ton-year-explainer',
+    'TK',
 }
 
 const highlights = [
