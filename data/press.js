@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-08-02/now-is-your-chance-to-fix-the-carbon-offset-market',
-    title:
-      'Now is your chance to fix the carbon offset market',
+    title: 'Now is your chance to fix the carbon offset market',
     authors: ['Akshat Rathi', 'Natasha White'],
     date: '08-02-2022',
     format: 'print',
