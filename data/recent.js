@@ -1,24 +1,28 @@
 const research1 = {
-    id: 'cmip6-downscaling',
-    date: '06-30-2022',
-    title: 'CMIP6 downscaling',
-    summary: 'TK',
-    href: '/research/cmip6-downscaling',
+  id: 'cmip6-downscaling',
+  date: '06-30-2022',
+  title: 'CMIP6 downscaling',
+  summary: 'TK',
+  href: '/research/cmip6-downscaling',
 }
 
 const research2 = {
   id: 'cdr-scale-barriers',
   date: '07-12-2022',
   href: '/research/cdr-scale-barriers',
-  title: 'Barriers to scaling the long-duration carbon dioxide removal industry',
-  summary:
-    'TK',
+  title:
+    'Barriers to scaling the long-duration carbon dioxide removal industry',
+  summary: 'TK',
 }
 
 const highlights = [
   {
-    label: 'Seaweed farming',
-    href: '/research/seaweed-farming',
+    label: 'CMIP6 downscaling',
+    href: '/research/cmip6-downscaling',
+  },
+  {
+    label: 'CDR scale barriers',
+    href: '/research/cdr-scale-barriers',
   },
   {
     label: 'Ton-year accounting',
@@ -27,10 +31,6 @@ const highlights = [
   {
     label: 'Offset disclosures',
     href: '/research/offset-disclosure-needs',
-  },
-  {
-    label: 'Soil protocols',
-    href: '/research/soil-protocols-explainer',
   },
 ]
 
