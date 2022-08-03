@@ -2,7 +2,8 @@ const research1 = {
   id: 'cmip6-downscaling',
   date: '06-30-2022',
   title: 'CMIP6 downscaling',
-  summary: 'TK',
+  summary:
+    'A new data release and interactive mapping tool for globally downscaled climate data spanning multiple downscaling methods.',
   href: '/research/cmip6-downscaling',
 }
 
@@ -12,7 +13,8 @@ const research2 = {
   href: '/research/cdr-scale-barriers',
   title:
     'Barriers to scaling the long-duration carbon dioxide removal industry',
-  summary: 'TK',
+  summary:
+    'A survey of carbon removal stakeholders to better understand priorities, perceptions, and challenges facing the industry.',
 }
 
 const highlights = [
