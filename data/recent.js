@@ -1,27 +1,30 @@
 const research1 = {
-  id: 'seaweed-farming',
-  date: '03-16-2022',
-  title: 'Mapping seaweed farming potential',
+  id: 'cmip6-downscaling',
+  date: '06-30-2022',
+  title: 'CMIP6 downscaling',
   summary:
-    'We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products.',
-  color: 'teal',
-  href: '/research/seaweed-farming',
+    'A new data release and interactive mapping tool for globally downscaled climate data spanning multiple downscaling methods.',
+  href: '/research/cmip6-downscaling',
 }
 
 const research2 = {
-  id: 'ton-year-explainer',
-  date: '01-13-2022',
-  title: 'Ton-year accounting',
+  id: 'cdr-scale-barriers',
+  date: '07-12-2022',
+  href: '/research/cdr-scale-barriers',
+  title:
+    'Barriers to scaling the long-duration carbon dioxide removal industry',
   summary:
-    "There's growing interest in methods to value temporary carbon storage. We explain a practice called ton-year accounting, and raise concerns about how it's being used in practice.",
-  color: 'pink',
-  href: '/research/ton-year-explainer',
+    'A survey of carbon removal stakeholders to better understand priorities, perceptions, and challenges facing the industry.',
 }
 
 const highlights = [
   {
-    label: 'Seaweed farming',
-    href: '/research/seaweed-farming',
+    label: 'CMIP6 downscaling',
+    href: '/research/cmip6-downscaling',
+  },
+  {
+    label: 'CDR scale barriers',
+    href: '/research/cdr-scale-barriers',
   },
   {
     label: 'Ton-year accounting',
@@ -30,10 +33,6 @@ const highlights = [
   {
     label: 'Offset disclosures',
     href: '/research/offset-disclosure-needs',
-  },
-  {
-    label: 'Soil protocols',
-    href: '/research/soil-protocols-explainer',
   },
 ]
 
