@@ -29,6 +29,10 @@
       "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-crediting$1"
     },
     {
+      "source": "/research/forest-offsets-fires-2021(.*)",
+      "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-fires-2021$1"
+    },
+    {
       "source": "/research/forest-offsets-fires(.*)",
       "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-fires$1"
     },
