@@ -79,6 +79,12 @@ const Disclosures = () => {
         Street, New York, NY 10005, 1-212-416-8686 or{' '}
         <Link href='https://www.charitiesnys.com'>www.charitiesnys.com</Link>.
       </Content>
+      <Label>North Carolina</Label>
+      <Content>
+        Financial information about this organization and a copy of its license
+        are available from the State Solicitation Licensing Branch at
+        919-814-5400. The license is not an endorsement by the State.
+      </Content>
       <Label>Washington</Label>
       <Content>
         From the Secretary of State at 1-800-332-4483 or{' '}
