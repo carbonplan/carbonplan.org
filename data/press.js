@@ -28,6 +28,22 @@ const highlights = [
 
 const press = [
   {
+    source: ['Vice'],
+    href: 'https://www.vice.com/en/article/88qqjx/wildfires-have-burned-through-californias-100-year-carbon-insurance-in-10-years-study-finds',
+    title: 'Wildfires have burned through California‘s 100-year carbon insurance in 10 years, study finds',
+    authors: ['Aaron Gordon'],
+    date: '08-05-2022',
+    format: 'print',
+  },
+  {
+    source: ['Financial Times'],
+    href: 'https://www.ft.com/content/d54d5526-6f56-4c01-8207-7fa7e532fa09',
+    title: 'Wildfires destroy almost all forest carbon offsets in 100-year reserve, study says',
+    authors: ['Camilla Hodges'],
+    date: '08-04-2022',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-08-02/now-is-your-chance-to-fix-the-carbon-offset-market',
     title: 'Now is your chance to fix the carbon offset market',
