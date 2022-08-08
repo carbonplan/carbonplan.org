@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['The Hill'],
+    href: 'https://thehill.com/policy/equilibrium-sustainability/3589562-fires-put-californias-forest-offset-program-at-risk-of-collapse/',
+    title: 'Fires put California’s forest offset program at risk of collapse',
+    authors: ['Saul Elbein'],
+    date: '08-05-2022',
+    format: 'print',
+  },
+  {
     source: ['Vice'],
     href: 'https://www.vice.com/en/article/88qqjx/wildfires-have-burned-through-californias-100-year-carbon-insurance-in-10-years-study-finds',
     title: 'Wildfires have burned through California‘s 100-year carbon insurance in 10 years, study finds',
