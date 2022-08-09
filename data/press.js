@@ -30,8 +30,9 @@ const press = [
   {
     source: ['CalMatters'],
     href: 'https://calmatters.org/environment/2022/08/climate-change-newsom-legislature/',
-    title:'Newsom to Legislature: Act fast to enact new climate change targets',
-    authors: ['Rachel Becker','Julie Cart'],
+    title:
+      'Newsom to Legislature: Act fast to enact new climate change targets',
+    authors: ['Rachel Becker', 'Julie Cart'],
     date: '08-09-2022',
     format: 'print',
   },
