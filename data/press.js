@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Reuters'],
     href: 'https://www.reuters.com/world/us/wildfires-are-destroying-californias-forest-carbon-credit-reserves-study-2022-08-05/',
-    title: 'Wildfires are destroyinh California’s forest carbon credit reserves, study says',
+    title:
+      'Wildfires are destroyinh California’s forest carbon credit reserves, study says',
     authors: ['Nichola Groom'],
     date: '08-08-2022',
     format: 'print',
