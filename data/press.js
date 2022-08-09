@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['CalMatters'],
+    href: 'https://calmatters.org/environment/2022/08/climate-change-newsom-legislature/',
+    title:'Newsom to Legislature: Act fast to enact new climate change targets',
+    authors: ['Rachel Becker','Julie Cart'],
+    date: '08-09-2022',
+    format: 'print',
+  },
+  {
     source: ['Reuters'],
     href: 'https://www.reuters.com/world/us/wildfires-are-destroying-californias-forest-carbon-credit-reserves-study-2022-08-05/',
     title:
