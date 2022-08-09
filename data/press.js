@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Reuters'],
+    href: 'https://www.reuters.com/world/us/wildfires-are-destroying-californias-forest-carbon-credit-reserves-study-2022-08-05/',
+    title: 'Wildfires are destroying California’s forest carbon credit reserves, study says',
+    authors: ['Nichola Groom'],
+    date: '08-08-2022',
+    format: 'print',
+  },
+  {
     source: ['The Hill'],
     href: 'https://thehill.com/policy/equilibrium-sustainability/3589562-fires-put-californias-forest-offset-program-at-risk-of-collapse/',
     title: 'Fires put California’s forest offset program at risk of collapse',
