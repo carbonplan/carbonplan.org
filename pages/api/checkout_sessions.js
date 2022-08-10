@@ -47,6 +47,7 @@ async function checkoutHandler(amount) {
   const params = {
     submit_type: 'donate',
     payment_method_types: ['card'],
+    billing_address_collection: 'required',
     line_items: [
       {
         name: 'Donation',

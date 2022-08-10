@@ -167,6 +167,7 @@ describe('api/checkout_sessions', () => {
         expect(mockCreate).toHaveBeenCalledWith({
           submit_type: 'donate',
           payment_method_types: ['card'],
+          billing_address_collection: 'required',
           line_items: [
             {
               name: 'Donation',
