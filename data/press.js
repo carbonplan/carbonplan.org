@@ -39,8 +39,7 @@ const press = [
   {
     source: ['AP News'],
     href: 'https://apnews.com/article/california-gavin-newsom-state-budgets-carbon-neutrality-e7141d94b8cba46c7bdce862764af62f',
-    title:
-      'California’s Newsom wants to accelerate key cliamte goals',
+    title: 'California’s Newsom wants to accelerate key cliamte goals',
     authors: ['Kathleen Ronayne', 'Adam Beam'],
     date: '08-09-2022',
     format: 'print',
