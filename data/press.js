@@ -28,6 +28,23 @@ const highlights = [
 
 const press = [
   {
+    source: ['The American Prospect'],
+    href: 'https://prospect.org/environment/corn-ethanol-investors-poised-to-profit-from-inflation-reduction-act/',
+    title:
+      'Corn ethanol investors poised to profit from inflation reduction act',
+    authors: ['Lee Harris'],
+    date: '08-11-2022',
+    format: 'print',
+  },
+  {
+    source: ['AP News'],
+    href: 'https://apnews.com/article/california-gavin-newsom-state-budgets-carbon-neutrality-e7141d94b8cba46c7bdce862764af62f',
+    title: 'California’s Newsom wants to accelerate key climate goals',
+    authors: ['Kathleen Ronayne', 'Adam Beam'],
+    date: '08-09-2022',
+    format: 'print',
+  },
+  {
     source: ['CalMatters'],
     href: 'https://calmatters.org/environment/2022/08/climate-change-newsom-legislature/',
     title:
