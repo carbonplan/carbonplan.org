@@ -30,8 +30,7 @@ const press = [
   {
     source: ['CBS Saturday Morning'],
     href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
-    title:
-      'Western wildfires threaten carbon offsets',
+    title: 'Western wildfires threaten carbon offsets',
     authors: ['Ben Tracy'],
     date: '08-13-2022',
     format: 'video',
