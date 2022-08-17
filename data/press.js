@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['New York Times'],
+    href: 'https://www.nytimes.com/2022/08/17/opinion/environment/inflation-reduction-act-climate-change-cost.html?partner=slack&smid=sl-share',
+    title:
+      'The green transition is happening fast. The climate bill will only speed it up.',
+    authors: ['David Wallace-Wells'],
+    date: '08-17-2022',
+    format: 'print',
+  },
+  {
     source: ['CBS Saturday Morning'],
     href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
     title: 'Western wildfires threaten carbon offsets',
