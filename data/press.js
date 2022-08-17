@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Financial Times'],
     href: 'https://www.ft.com/content/8f1dca1d-6b81-4f13-9ad5-e0058eeba808',
-    title:
-      'The utopian world where carbon and crypto meet',
+    title: 'The utopian world where carbon and crypto meet',
     authors: ['Kenza Bryan'],
     date: '08-17-2022',
     format: 'print',
