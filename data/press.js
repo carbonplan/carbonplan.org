@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Financial Times'],
+    href: 'https://www.ft.com/content/8f1dca1d-6b81-4f13-9ad5-e0058eeba808',
+    title: 'The utopian world where carbon and crypto meet',
+    authors: ['Kenza Bryan'],
+    date: '08-17-2022',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2022/08/17/opinion/environment/inflation-reduction-act-climate-change-cost.html?partner=slack&smid=sl-share',
     title:
