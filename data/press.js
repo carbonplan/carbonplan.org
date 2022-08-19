@@ -28,6 +28,23 @@ const highlights = [
 
 const press = [
   {
+    source: ['Roll Call'],
+    href: 'https://rollcall.com/2022/08/18/forest-service-to-aid-private-owners-on-carbon-markets-climate/',
+    title: 'Forest Service to aid private owners on carbon markets, climate',
+    authors: ['Ellyn Ferguson'],
+    date: '08-18-2022',
+    format: 'print',
+  },
+  {
+    source: ['The Verge'],
+    href: 'https://www.theverge.com/2022/8/18/23310254/carbon-offset-credits-crypto-tokens-adam-neumann-wework',
+    title:
+      'Crypto can’t fix carbon offsets - but crypto fans are trying anyway',
+    authors: ['Justine Calma'],
+    date: '08-18-2022',
+    format: 'print',
+  },
+  {
     source: ['Financial Times'],
     href: 'https://www.ft.com/content/8f1dca1d-6b81-4f13-9ad5-e0058eeba808',
     title: 'The utopian world where carbon and crypto meet',
