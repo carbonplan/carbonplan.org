@@ -27,7 +27,6 @@ const highlights = [
 ]
 
 const press = [
-  
   {
     source: ['HBO'],
     href: 'https://www.youtube.com/watch?v=6p8zAbFKpW0',
