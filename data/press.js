@@ -37,7 +37,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['MIT Technology Review'],
+    source: ['MIT Tech Review'],
     href: 'https://www.technologyreview.com/2022/08/24/1058459/we-must-fundamentally-rethink-net-zero-climate-plans-here-are-six-ways-how/',
     title:
       'We must fundamentally rethink "net-zero" climate plans. Here are six ways.',
