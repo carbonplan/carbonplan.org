@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Fast Company'],
+    href: 'https://www.fastcompany.com/90781647/carbon-offsets-have-serious-issues-is-it-even-possible-to-fix-them',
+    title:
+      'Carbon offsets have serious issues. Is it even possible to fix them?',
+    authors: ['Adele Peters'],
+    date: '08-24-2022',
+    format: 'print',
+  },
+  {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2022/08/24/1058459/we-must-fundamentally-rethink-net-zero-climate-plans-here-are-six-ways-how/',
     title:
