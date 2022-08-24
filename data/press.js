@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2022/08/24/1058459/we-must-fundamentally-rethink-net-zero-climate-plans-here-are-six-ways-how/',
+    title:
+      'We must fundamentally rethink "net-zero" climate plans. Here are six ways.',
+    authors: ['James Temple'],
+    date: '08-24-2022',
+    format: 'print',
+  },
+  {
     source: ['HBO'],
     href: 'https://www.youtube.com/watch?v=6p8zAbFKpW0',
     title: 'Last Week Tonight: Carbon Offsets',
