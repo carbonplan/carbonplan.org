@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Catalyst'],
+    href: 'https://podcasts.apple.com/us/podcast/id1593204897?i=1000577311067',
+    title:
+      'The dirt on soil carbon credits',
+    authors: ['Shayle Kann'],
+    date: '08-25-2022',
+    format: 'audio',
+  },
+  {
     source: ['Fast Company'],
     href: 'https://www.fastcompany.com/90781647/carbon-offsets-have-serious-issues-is-it-even-possible-to-fix-them',
     title:
