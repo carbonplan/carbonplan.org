@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Catalyst'],
     href: 'https://podcasts.apple.com/us/podcast/id1593204897?i=1000577311067',
-    title:
-      'The dirt on soil carbon credits',
+    title: 'The dirt on soil carbon credits',
     authors: ['Shayle Kann'],
     date: '08-25-2022',
     format: 'audio',
