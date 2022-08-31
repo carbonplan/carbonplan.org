@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Climate Risk Podcast'],
+    href: 'https://www.garp.org/podcast/political-climate-landscape-cr-220826',
+    title:
+      'How politics shapes climate policy: insights for risk professionals',
+    authors: ['Jo Paisley'],
+    date: '09-08-2022',
+    format: 'audio',
+  },
+  {
     source: ['Catalyst'],
     href: 'https://podcasts.apple.com/us/podcast/id1593204897?i=1000577311067',
     title: 'The dirt on soil carbon credits',
