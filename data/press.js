@@ -37,6 +37,14 @@ const press = [
     format: 'audio',
   },
   {
+    source: ['New York Times'],
+    href: 'https://www.nytimes.com/2022/09/01/climate/california-lawmakers-climate-legislation.html?partner=slack&smid=sl-share',
+    title: 'California approves a wave of aggressive new climate measures',
+    authors: ['Brad Plumer'],
+    date: '09-01-2022',
+    format: 'print',
+  },
+  {
     source: ['Catalyst'],
     href: 'https://podcasts.apple.com/us/podcast/id1593204897?i=1000577311067',
     title: 'The dirt on soil carbon credits',
