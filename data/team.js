@@ -5,11 +5,6 @@ const team = [
     bio: 'Jeremy is a scientist with a passion for open science, open source software, and bringing cross-disciplinary teams together to tackle big problems. He holds a PhD in Neural Science from New York University and a BA in Neuroscience from Swarthmore College.',
   },
   {
-    name: 'Joe Hamman',
-    role: 'Technology Director',
-    bio: 'Joe is a climate scientist and engineer. He is passionate about open science and his work has long focused on the development of open data and software tools for basic and applied research. He holds an MS and PhD in Civil Engineering from the University of Washington and a PE in Washington State.',
-  },
-  {
     name: 'Danny Cullenward',
     role: 'Policy Director',
     bio: 'Danny is an energy economist and lawyer focused on the design and implementation of scientifically grounded climate policy. He holds a JD and PhD from Stanford University, where he teaches classes on energy law and climate policy.',
@@ -119,6 +114,7 @@ const collaborators = [
     'Ordinary Things',
   ],
   ['Jon Wang', 'UC Irvine'],
+  ['Joe Hamman', 'NCAR'],
 ]
 
 export { team, board, collaborators }
