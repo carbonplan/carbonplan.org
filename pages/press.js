@@ -18,7 +18,7 @@ import {
   LosAngelesTimes,
   NationalGeographic,
   NPR,
-  ProPublica,
+  CBSNews,
 } from '../components/press-logos'
 
 const sx = {
@@ -41,11 +41,11 @@ const sx = {
 }
 
 const logos = {
-  ProPublica: <ProPublica />,
   'Los Angeles Times': <LosAngelesTimes />,
   'Planet Money': <NPR />,
   Bloomberg: <Bloomberg />,
   'National Geographic': <NationalGeographic />,
+  'CBS News': <CBSNews />,
 }
 
 const getColors = () => {
