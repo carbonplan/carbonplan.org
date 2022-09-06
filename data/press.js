@@ -1,13 +1,18 @@
 const highlights = [
   {
+    source: 'CBS News',
+    href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
+    date: '08-13-2022',
+  },
+  {
     source: 'National Geographic',
     href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
     date: '05-04-2022',
   },
   {
     source: 'Bloomberg',
-    href: 'https://www.youtube.com/watch?v=37B_up-zsvM',
-    date: '04-27-2022',
+    href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=premium',
+    date: '04-07-2022',
   },
   {
     source: 'Los Angeles Times',
@@ -18,11 +23,6 @@ const highlights = [
     source: 'Planet Money',
     href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
     date: '05-07-2021',
-  },
-  {
-    source: 'ProPublica',
-    href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
-    date: '04-29-2021',
   },
 ]
 
