@@ -37,6 +37,15 @@ const press = [
     format: 'audio',
   },
   {
+    source: ['Los Amgeles Times'],
+    href: 'https://www.latimes.com/environment/story/2022-09-06/can-california-deliver-on-its-zero-emission-car-goal',
+    title:
+      'California vows to ban gas-fueled cars. But its record on big climate promises is mixed',
+    authors: ['Hayley Smith', 'Tony Briscoe'],
+    date: '09-06-2022',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2022/09/01/climate/california-lawmakers-climate-legislation.html?partner=slack&smid=sl-share',
     title: 'California approves a wave of aggressive new climate measures',
