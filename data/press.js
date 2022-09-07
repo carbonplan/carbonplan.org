@@ -36,7 +36,7 @@ const press = [
     date: '09-08-2022',
     format: 'audio',
   },
-    {
+  {
     source: ['Los Amgeles Times'],
     href: 'https://www.latimes.com/environment/story/2022-09-06/can-california-deliver-on-its-zero-emission-car-goal',
     title:
