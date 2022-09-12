@@ -27,6 +27,24 @@ const highlights = [
 ]
 
 const press = [
+   {
+    source: ['New York Times'],
+    href: 'https://www.nytimes.com/2022/09/11/opinion/biden-climate-congress-infrastructure.html?partner=slack&smid=sl-share',
+    title:
+      'All Biden has to do now is change the way we live',
+    authors: ['Ezra Klein'],
+    date: '09-11-2022',
+    format: 'print',
+  },
+  {
+    source: ['CalMatters'],
+    href: 'https://calmatters.org/environment/2022/09/california-climate-change-plan/',
+    title:
+      'Facing criticism, state amps up its climate change blueprint',
+    authors: ['Nadia Lopez'],
+    date: '09-09-2022',
+    format: 'print',
+  },
   {
     source: ['Climate Risk Podcast'],
     href: 'https://www.garp.org/podcast/political-climate-landscape-cr-220826',
