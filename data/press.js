@@ -30,7 +30,7 @@ const press = [
   {
     source: ['Thomas Reuters Foundation'],
     href: 'https://longreads.trust.org/item/Fears-subprime-carbon-credits-stall-crypto-rainforest-mission',
-    title: 'Fears of ’subprime’ carbon assets stall crypto rainforest mission',
+    title: 'Fears of ‘subprime’ carbon assets stall crypto rainforest mission',
     authors: ['Fabio Teixeira', 'Avi Asher-Schapiro'],
     date: '09-13-2022',
     format: 'print',
