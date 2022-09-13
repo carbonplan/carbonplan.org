@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Thomas Reuters Foundation'],
+    href: 'https://longreads.trust.org/item/Fears-subprime-carbon-credits-stall-crypto-rainforest-mission',
+    title: 'Fears of ’subprime’ carbon assets stall crypto rainforest mission',
+    authors: ['Fabio Teixeira', 'Avi Asher-Schapiro'],
+    date: '09-13-2022',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2022/09/11/opinion/biden-climate-congress-infrastructure.html?partner=slack&smid=sl-share',
     title: 'All Biden has to do now is change the way we live',
