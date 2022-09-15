@@ -28,7 +28,24 @@ const highlights = [
 
 const press = [
   {
-    source: ['Thomas Reuters Foundation'],
+    source: ['The New Republic'],
+    href: 'https://newrepublic.com/article/167738/resolving-democrats-internal-war-climate-policy-will-hard',
+    title:
+      'Why resolving Democrats’ internal war on climate policy will be hard',
+    authors: ['Kate Aronoff'],
+    date: '09-15-2022',
+    format: 'print',
+  },
+  {
+    source: ['Thomson Reuters Foundation'],
+    href: 'https://news.trust.org/item/20220913084445-bwrof/',
+    title: 'What happened when crypto companies entered the carbon market?',
+    authors: ['Fabio Teixeira', 'Avi Asher-Schapiro'],
+    date: '09-14-2022',
+    format: 'print',
+  },
+  {
+    source: ['Thomson Reuters Foundation'],
     href: 'https://longreads.trust.org/item/Fears-subprime-carbon-credits-stall-crypto-rainforest-mission',
     title: 'Fears of ‘subprime’ carbon assets stall crypto rainforest mission',
     authors: ['Fabio Teixeira', 'Avi Asher-Schapiro'],
