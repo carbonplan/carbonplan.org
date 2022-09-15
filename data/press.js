@@ -30,7 +30,8 @@ const press = [
   {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/167738/resolving-democrats-internal-war-climate-policy-will-hard',
-    title: 'Why resolving Democrats’ internal war on climate policy will be hard',
+    title:
+      'Why resolving Democrats’ internal war on climate policy will be hard',
     authors: ['Kate Aronoff'],
     date: '09-15-2022',
     format: 'print',
