@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/research/cdr-verification-(.*)",
+      "destination": "https://research.carbonplan.org/research/cdr-verification-$1"
+    },
+    {
+      "source": "/research/cdr-verification(.*)",
+      "destination": "https://cdr-verification.carbonplan.org/research/cdr-verification$1"
+    },
+    {
       "source": "/research/cmip6-downscaling",
       "destination": "https://cmip6-downscaling.carbonplan.org/research/cmip6-downscaling"
     },
