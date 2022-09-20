@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Nature'],
+    href: 'https://www.nature.com/articles/d41586-022-02963-7#author-0',
+    title:
+      'A cleaner future for flight — aviation needs a radical redesign',
+    authors: ['Steffen Kallbekken', 'David G. Victor'],
+    date: '09-16-2022',
+    format: 'print',
+  },
+  {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/167738/resolving-democrats-internal-war-climate-policy-will-hard',
     title:
