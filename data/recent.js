@@ -1,4 +1,13 @@
 const research1 = {
+  id: 'cdr-verification',
+  date: '09-19-2022',
+  href: '/research/cdr-verification',
+  title: 'CDR verification framework',
+  summary:
+    'An interactive tool to map quantification capacity and uncertainty across CDR pathways.',
+}
+
+const research2 = {
   id: 'cmip6-downscaling',
   date: '06-30-2022',
   title: 'CMIP6 downscaling',
@@ -7,47 +16,37 @@ const research1 = {
   href: '/research/cmip6-downscaling',
 }
 
-const research2 = {
-  id: 'cdr-scale-barriers',
-  date: '07-12-2022',
-  href: '/research/cdr-scale-barriers',
-  title:
-    'Barriers to scaling the long-duration carbon dioxide removal industry',
-  summary:
-    'A survey of carbon removal stakeholders to better understand priorities, perceptions, and challenges facing the industry.',
-}
-
 const highlights = [
   {
-    label: 'CMIP6 downscaling',
-    href: '/research/cmip6-downscaling',
+    label: 'CDR verification',
+    href: '/research/cdr-verification',
   },
   {
     label: 'CDR scale barriers',
     href: '/research/cdr-scale-barriers',
   },
   {
-    label: 'Ton-year accounting',
-    href: '/research/ton-year-explainer',
+    label: 'CMIP6 downscaling',
+    href: '/research/cmip6-downscaling',
   },
   {
-    label: 'Offset disclosures',
-    href: '/research/offset-disclosure-needs',
+    label: 'Climate-related financial risk',
+    href: '/research/data-financial-risk',
   },
 ]
 
 const press = [
   {
+    label: 'CBS News',
+    href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
+  },
+  {
     label: 'National Geographic',
     href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
   },
   {
-    label: 'Los Angeles Times',
-    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
-  },
-  {
-    label: 'Grist',
-    href: 'https://grist.org/wildfires/california-forests-carbon-offsets-reduce-emissions/',
+    label: 'Bloomberg',
+    href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=premium',
   },
   {
     label: 'Planet Money',
