@@ -86,7 +86,7 @@ const press = [
     format: 'audio',
   },
   {
-    source: ['Los Amgeles Times'],
+    source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/environment/story/2022-09-06/can-california-deliver-on-its-zero-emission-car-goal',
     title:
       'California vows to ban gas-fueled cars. But its record on big climate promises is mixed',
