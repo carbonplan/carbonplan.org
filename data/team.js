@@ -1,3 +1,5 @@
+import { Link } from '@carbonplan/components'
+
 const team = [
   {
     name: 'Jeremy Freeman',
@@ -7,7 +9,18 @@ const team = [
   {
     name: 'Danny Cullenward',
     role: 'Policy Director',
-    bio: 'Danny is an energy economist and lawyer focused on the design and implementation of scientifically grounded climate policy. He holds a JD and PhD from Stanford University, where he teaches classes on energy law and climate policy.',
+    bio: (
+      <span>
+        Danny is a climate economist and lawyer focused on the design and
+        implementation of scientifically grounded climate policy. He holds a JD
+        and PhD in Environment and Resources from Stanford University, wrote a{' '}
+        <Link href='https://politybooks.com/bookdetail/?isbn=9781509541799'>
+          book on climate policy
+        </Link>{' '}
+        with David G. Victor, and enjoys collaborating with researchers who get
+        to spend time outside.
+      </span>
+    ),
   },
   {
     name: 'Oriana Chegwidden',
