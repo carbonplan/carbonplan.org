@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Climatewire'],
+    href: 'https://www.eenews.net/articles/without-manchin-deal-can-u-s-develop-enough-clean-energy/',
+    title: 'Without Manchin deal, can U.S. develop enough clean energy?',
+    authors: ['Benjamin Storrow'],
+    date: '09-28-2022',
+    format: 'print',
+  },
+  {
     source: ['Nature'],
     href: 'https://www.nature.com/articles/d41586-022-02963-7#author-0',
     title: 'A cleaner future for flight — aviation needs a radical redesign',
