@@ -38,7 +38,8 @@ const press = [
   {
     source: ['China Dialogue'],
     href: 'https://chinadialogue.net/en/nature/offsets-aflame-the-risk-of-wildfires-to-tree-planting-carbon-credits/',
-    title: 'Offsets aflame: The risk of wildfires to tree-planting carbon credits',
+    title:
+      'Offsets aflame: The risk of wildfires to tree-planting carbon credits',
     authors: ['Fred Pearce'],
     date: '09-21-2022',
     format: 'print',
