@@ -36,6 +36,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['China Dialogue'],
+    href: 'https://chinadialogue.net/en/nature/offsets-aflame-the-risk-of-wildfires-to-tree-planting-carbon-credits/',
+    title: 'Offsets aflame: The risk of wildfires to tree-planting carbon credits',
+    authors: ['Fred Pearce'],
+    date: '09-21-2022',
+    format: 'print',
+  },
+  {
     source: ['Nature'],
     href: 'https://www.nature.com/articles/d41586-022-02963-7#author-0',
     title: 'A cleaner future for flight — aviation needs a radical redesign',
