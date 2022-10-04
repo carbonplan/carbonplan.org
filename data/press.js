@@ -29,6 +29,14 @@ const highlights = [
 const press = [
   {
     source: ['Protocol'],
+    href: 'https://www.protocol.com/bulletins/carbon-removal-cost-per-ton',
+    title: 'Why $100 per ton is the carbon removal industry’s holy grail',
+    authors: ['Michelle Ma'],
+    date: '10-04-2022',
+    format: 'print',
+  },
+  {
+    source: ['Protocol'],
     href: 'https://www.protocol.com/climate/verra-voluntary-carbon-offset-market',
     title: 'The fight to define the carbon offset market’s future',
     authors: ['Lisa Martine Jenkins'],
