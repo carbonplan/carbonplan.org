@@ -79,7 +79,7 @@ const board = [
   ['Kelly Gannon', 'NDWA Labs'],
   ['Gernot Wagner', 'Columbia Business School'],
   ['Arjuna Dibley', 'Pollination / Oxford University / CPD'],
-  ['Tracy Teal', 'RStudio'],
+  ['Tracy Teal', 'Posit'],
 ]
 
 const collaborators = [
