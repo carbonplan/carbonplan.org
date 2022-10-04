@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Protocol'],
+    href: 'https://www.protocol.com/climate/verra-voluntary-carbon-offset-market',
+    title: 'The fight to define the carbon offset market’s future',
+    authors: ['Lisa Martine Jenkins'],
+    date: '10-04-2022',
+    format: 'print',
+  },
+  {
     source: ['Climatewire'],
     href: 'https://www.eenews.net/articles/without-manchin-deal-can-u-s-develop-enough-clean-energy/',
     title: 'Without Manchin deal, can U.S. develop enough clean energy?',
