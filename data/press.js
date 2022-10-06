@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Northcoast Environmental Center'],
+    href: 'https://www.yournec.org/new-research-calls-into-question-carbon-offsets-from-northwest-california-forests/',
+    title:
+      'New research calls into question carbon offsets from northwest California forests',
+    authors: [''],
+    date: '09-24-2022',
+    format: 'audio',
+  },
+  {
     source: ['Protocol'],
     href: 'https://www.protocol.com/bulletins/carbon-removal-cost-per-ton',
     title: 'Why $100 per ton is the carbon removal industry’s holy grail',
