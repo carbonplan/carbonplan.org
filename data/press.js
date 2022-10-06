@@ -28,13 +28,13 @@ const highlights = [
 
 const press = [
   {
-    source: ['Northcoast Environmental Center'],
-    href: 'https://www.yournec.org/new-research-calls-into-question-carbon-offsets-from-northwest-california-forests/',
+    source: ['Yale Environment 360'],
+    href: 'https://e360.yale.edu/features/phantom-forests-tree-planting-climate-change',
     title:
-      'New research calls into question carbon offsets from northwest California forests',
-    authors: [''],
-    date: '09-24-2022',
-    format: 'audio',
+      'Phantom forests: why ambitious tree planting projects are failing',
+    authors: ['Fred Pearce'],
+    date: '10-6-2022',
+    format: 'print',
   },
   {
     source: ['Protocol'],
@@ -59,6 +59,15 @@ const press = [
     authors: ['Benjamin Storrow'],
     date: '09-28-2022',
     format: 'print',
+  },
+  {
+    source: ['Northcoast Environmental Center'],
+    href: 'https://www.yournec.org/new-research-calls-into-question-carbon-offsets-from-northwest-california-forests/',
+    title:
+      'New research calls into question carbon offsets from northwest California forests',
+    authors: ['Outside News Source'],
+    date: '09-24-2022',
+    format: 'audio',
   },
   {
     source: ['China Dialogue'],
