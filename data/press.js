@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Yale Environment 360'],
     href: 'https://e360.yale.edu/features/phantom-forests-tree-planting-climate-change',
-    title:
-      'Phantom forests: why ambitious tree planting projects are failing',
+    title: 'Phantom forests: why ambitious tree planting projects are failing',
     authors: ['Fred Pearce'],
     date: '10-6-2022',
     format: 'print',
