@@ -27,10 +27,11 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: ['Northcoast Environmental Center'],
     href: 'https://www.yournec.org/new-research-calls-into-question-carbon-offsets-from-northwest-california-forests/',
-    title: 'New research calls into question carbon offsets from northwest California forests',
+    title:
+      'New research calls into question carbon offsets from northwest California forests',
     authors: [''],
     date: '09-24-2022',
     format: 'audio',
