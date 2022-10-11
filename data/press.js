@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/business/story/2022-10-07/2020-california-election-proposition-30-voters',
+    title:
+      'Proposition 30 has voters deciding on a tax for zero-emission vehicles. What you need to know',
+    authors: ['Russ Mitchell'],
+    date: '10-7-2022',
+    format: 'print',
+  },
+  {
     source: ['Yale Environment 360'],
     href: 'https://e360.yale.edu/features/phantom-forests-tree-planting-climate-change',
     title: 'Phantom forests: why ambitious tree planting projects are failing',
