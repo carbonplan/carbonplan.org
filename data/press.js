@@ -27,6 +27,16 @@ const highlights = [
 ]
 
 const press = [
+
+  {
+    source: ['Context'],
+    href: 'https://www.context.news/net-zero/video/can-you-fight-the-climate-crisis-with-crypto',
+    title:
+      'Can you fight the climate crisis with crypto?',
+    authors: ['Ashley Jiang', 'Fabio Teixeira', 'Avi Asher-Schapiro'],
+    date: '10-19-2022',
+    format: 'video',
+  }, 
   {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/business/story/2022-10-07/2020-california-election-proposition-30-voters',
