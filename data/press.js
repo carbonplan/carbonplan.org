@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['GreenBiz'],
+    href: 'https://www.greenbiz.com/article/infighting-among-carbon-credit-verification-bodies',
+    title: 'Infighting among carbon credit verification bodies',
+    authors: ['Jesse Klein'],
+    date: '10-19-2022',
+    format: 'print',
+  },
+  {
     source: ['Context'],
     href: 'https://www.context.news/net-zero/video/can-you-fight-the-climate-crisis-with-crypto',
     title: 'Can you fight the climate crisis with crypto?',
