@@ -67,18 +67,19 @@ const About = () => {
             <Box>
               <Box as='p' variant='styles.p' sx={{ mt: [0] }}>
                 Addressing the climate crisis requires action on several fronts.
-                We need critical reductions in emissions. We also need
-                large-scale deployment of carbon removal. Our solutions need to
-                respect science and support just outcomes. And we no longer have
-                time for approaches that don’t work.
+                In addition to rapidly achieving deep emission reductions, we
+                also need gigaton-scale carbon removal and sound strategies for
+                adapting to climate change. Our solutions must respect science
+                and support just outcomes. We no longer have time for approaches
+                that don’t work.
               </Box>
               <Box as='p' variant='styles.p' sx={{ mb: [0] }}>
-                Our <Link href='/team'>team</Link> works collaboratively to
-                build open tools and resources for the evaluation and deployment
-                of robust climate programs. We share what we have learned
-                through public communication and collaboration with journalists.
-                And we help organizations in the public and private sector make
-                better decisions to advance their climate goals.
+                Our <Link href='/team'>team</Link> analyzes the design and
+                implementation of climate programs across the public and private
+                sectors. Our work focuses primarily on carbon offsets, carbon
+                removal, and climate risks. In all three areas, we aim to ensure
+                the scientific integrity and transparency of climate services
+                and solutions.
               </Box>
             </Box>
           </Column>
@@ -101,10 +102,11 @@ const About = () => {
             <Box sx={{ pb: [1] }}>
               <Box as='p' variant='styles.p' sx={{ mb: [4, 5, 6, 7] }}>
                 Addressing the climate crisis requires action on several fronts.
-                We need critical reductions in emissions. We also need
-                large-scale deployment of carbon removal. Our solutions need to
-                respect science and support just outcomes. And we no longer have
-                time for approaches that don't work.
+                In addition to rapidly achieving deep emission reductions, we
+                also need gigaton-scale carbon removal and sound strategies for
+                adapting to climate change. Our solutions must respect science
+                and support just outcomes. We no longer have time for approaches
+                that don’t work.
               </Box>
             </Box>
           </Column>
@@ -131,12 +133,12 @@ const About = () => {
           <Column start={[1, 2, 1, 1]} width={[6, 5, 5, 5]}>
             <Box sx={{ pb: [1] }}>
               <Box as='p' variant='styles.p' sx={{ mb: [2] }}>
-                Our <Link href='/team'>team</Link> works collaboratively to
-                build open tools and resources for the evaluation and deployment
-                of robust climate programs. We share what we have learned
-                through public communication and collaboration with journalists.
-                And we help organizations in the public and private sector make
-                better decisions to advance their climate goals.
+                Our <Link href='/team'>team</Link> analyzes the design and
+                implementation of climate programs across the public and private
+                sectors. Our work focuses primarily on carbon offsets, carbon
+                removal, and climate risks. In all three areas, we aim to ensure
+                the scientific integrity and transparency of climate services
+                and solutions.
               </Box>
             </Box>
           </Column>
@@ -147,10 +149,15 @@ const About = () => {
           <Divider sx={{ width: '100%', my: [0] }}></Divider>
         </Column>
       </Row>
+      <Row>
+        <Column start={[1, 2]} width={[6, 8, 10, 10]}>
+          <Divider sx={{ width: '100%', my: [0] }}></Divider>
+        </Column>
+      </Row>
       <Row sx={{ mt: [4, 5, 6, 7] }}>
         <Column start={[1, 2]} width={[6, 3]}>
           <Box as='h2' variant='styles.h2' sx={{ my: [0, 0, 0] }}>
-            Our work
+            How we work
           </Box>
         </Column>
       </Row>
@@ -168,9 +175,9 @@ const About = () => {
               RESEARCH
             </Box>
             <Box as='p'>
-              We collaborate with researchers to build open source data and
-              tools. Through this work we produce datasets and models that
-              directly inform decision making across a range of sectors.
+              We study fundamental climate science topics relevant to both
+              mitigation and adaptation, and we analyze the implementation of
+              climate programs to ensure that they line up with the science.
             </Box>
           </Box>
         </Column>
@@ -184,12 +191,12 @@ const About = () => {
                 color: 'yellow',
               }}
             >
-              COMMUNICATION
+              POLICY
             </Box>
             <Box as='p'>
-              We combine scientific storytelling and modern web technology to
-              explain complex concepts with interactive data and visuals, and
-              provide timely commentary on newsworthy events.
+              We work with companies, non-profits, and government organizations
+              to develop robust climate programs, and we collaborate with
+              journalists to raise public awareness and promote accountability.
             </Box>
           </Box>
         </Column>
@@ -203,12 +210,13 @@ const About = () => {
                 color: 'teal',
               }}
             >
-              ENGAGEMENT
+              SOFTWARE
             </Box>
             <Box>
-              We work with companies, non-profits, and government organizations
-              to help analyze climate programs. We focus on transparency and
-              quality, bringing rigorous science to complex problems.
+              We build open tools and resources to surface critical dimensions
+              of climate solutions with interactive data and visuals, and we
+              contribute to high-leverage open science and open source
+              ecosystems.
             </Box>
           </Box>
         </Column>
