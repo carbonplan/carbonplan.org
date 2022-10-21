@@ -37,7 +37,7 @@ const Index = () => {
       links={'homepage'}
       title={'CarbonPlan'}
       description={
-        'Improving the transparency and scientific integrity of carbon removal and climate solutions through open data and tools.'
+        'Improving the transparency and scientific integrity of climate solutions with open data and tools.'
       }
     >
       <Box
@@ -90,8 +90,8 @@ const Index = () => {
                   mt: [3, 4, 4, 5],
                 }}
               >
-                Improving the transparency and scientific integrity of carbon
-                removal and climate solutions through open data and tools
+                Improving the transparency and scientific integrity of climate
+                solutions with open data and tools
               </Box>
             </Column>
           </Row>
