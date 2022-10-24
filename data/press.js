@@ -27,10 +27,11 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: ['Time'],
     href: 'https://time.com/6213470/offsets-donate-climate-action/',
-    title: 'Donating to climate charities might be better than buying carbon offsets',
+    title:
+      'Donating to climate charities might be better than buying carbon offsets',
     authors: ['Alastair Bland'],
     date: '10-21-2022',
     format: 'print',
