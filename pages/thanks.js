@@ -1,4 +1,5 @@
-import { Box, Themed } from 'theme-ui'
+import { Box } from 'theme-ui'
+import { Themed } from '@theme-ui/mdx'
 import {
   Layout,
   Row,
