@@ -1,5 +1,4 @@
 import { Box } from 'theme-ui'
-import { Themed } from '@theme-ui/mdx'
 
 import {
   Layout,
@@ -106,7 +105,9 @@ function Answer({ children }) {
   return (
     <Row>
       <Column start={[2, 3]} width={[5, 5, 6, 6]}>
-        <Themed.p>{children}</Themed.p>
+        <Box as='p' variant='styles.p'>
+          {children}
+        </Box>
       </Column>
     </Row>
   )
