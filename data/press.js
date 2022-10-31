@@ -28,6 +28,22 @@ const highlights = [
 
 const press = [
   {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/environment/story/2022-10-30/californias-greenhouse-gas-emissions-drop-9-in-2020',
+    title: 'California set a record for greenhouse gas reductions in 2020, but it means nothing',
+    authors: ['Tony Briscoe'],
+    date: '10-30-2022',
+    format: 'print',
+  },
+  {
+    source: ['Time'],
+    href: 'https://time.com/6213480/carbon-offsets-bold-promises-climate-change/',
+    title: 'Here’s how carbon offsets can live up to their bold promises',
+    authors: ['Taylor Moore'],
+    date: '10-28-2022',
+    format: 'print',
+  },
+  {
     source: ['GreenBiz'],
     href: 'https://www.greenbiz.com/article/infighting-among-carbon-credit-verification-bodies',
     title: 'Infighting among carbon credit verification bodies',
