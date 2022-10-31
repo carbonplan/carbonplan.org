@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/environment/story/2022-10-30/californias-greenhouse-gas-emissions-drop-9-in-2020',
-    title: 'California set a record for greenhouse gas reductions in 2020, but it means nothing',
+    title:
+      'California set a record for greenhouse gas reductions in 2020, but it means nothing',
     authors: ['Tony Briscoe'],
     date: '10-30-2022',
     format: 'print',
