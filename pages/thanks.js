@@ -1,4 +1,4 @@
-import { Box, Themed } from 'theme-ui'
+import { Box } from 'theme-ui'
 import {
   Layout,
   Row,
@@ -37,12 +37,12 @@ const Thanks = () => {
           <Box as='p' variant='styles.p' sx={{ mt: [0] }}>
             We truly appreciate your generosity.
           </Box>
-          <Themed.p>
+          <Box as='p' variant='styles.p'>
             Follow us on{' '}
             <Link href='https://twitter.com/carbonplanorg'>@carbonplanorg</Link>{' '}
             or come back to this website anytime to see the latest updates on
             our work.
-          </Themed.p>
+          </Box>
         </Column>
         <Column start={[2, 2, 9, 9]} width={[4, 4, 2, 2]}>
           <Heart

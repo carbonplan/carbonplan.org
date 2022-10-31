@@ -1,5 +1,4 @@
-import { Flex, Grid, Box, Themed, Divider, Text } from 'theme-ui'
-import { default as NextLink } from 'next/link'
+import { Flex, Grid, Box, Divider } from 'theme-ui'
 import {
   Row,
   Column,

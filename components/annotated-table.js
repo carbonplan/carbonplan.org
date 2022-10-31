@@ -1,4 +1,4 @@
-import { Box, Themed } from 'theme-ui'
+import { Box } from 'theme-ui'
 import { Row, Column, Table, Heading } from '@carbonplan/components'
 
 const AnnotatedTable = ({ heading, data, sidenote, children }) => {
