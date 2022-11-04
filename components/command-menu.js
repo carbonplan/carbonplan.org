@@ -2,7 +2,7 @@ import { Global } from '@emotion/react'
 import { useState, useEffect, useMemo } from 'react'
 import { Command } from 'cmdk'
 import { Box, Flex } from 'theme-ui'
-import { Down, Left, Up } from '@carbonplan/icons'
+import { Down, Left, Search, Up } from '@carbonplan/icons'
 import { useRouter } from 'next/router'
 
 import contents from '../data/contents.json'
@@ -143,45 +143,63 @@ const CommandMenu = () => {
           },
         }}
       >
-        <Box
-          as={Command.Input}
-          placeholder='Search'
-          value={search}
-          onValueChange={setSearch}
-          sx={{
-            fontSize: [2, 2, 2, 3],
-            fontFamily: 'body',
-            letterSpacing: 'body',
-            lineHeight: [1.2],
-            border: 'none',
-            width: '100%',
-            pt: 3,
-            pb: 2,
-            px: [4, 5, 5, 6],
-            outline: 'none',
-            background: 'background',
-            color: 'primary',
-            borderWidth: 0,
-            borderBottomWidth: '1px',
-            borderColor: 'muted',
-            borderStyle: 'solid',
-            '&::placeholder': {
-              color: 'secondary',
-            },
-            'input::-webkit-outer-spin-button': {
-              WebkitAppearance: 'none',
-              margin: 0,
-            },
-            'input::-webkit-inner-spin-button': {
-              WebkitAppearance: 'none',
-              margin: 0,
-            },
-            ':focus-visible': {
-              outline: 'none !important',
-              background: 'none !important',
-            },
-          }}
-        />
+        <Box>
+          <Box
+            as={Command.Input}
+            placeholder='Search'
+            value={search}
+            onValueChange={setSearch}
+            sx={{
+              fontSize: [3, 3, 3, 4],
+              fontFamily: 'body',
+              letterSpacing: 'body',
+              lineHeight: [1.2],
+              border: 'none',
+              width: '100%',
+              pt: 3,
+              pb: 2,
+              px: [4, 5, 5, 6],
+              outline: 'none',
+              background: 'background',
+              color: 'primary',
+              borderWidth: 0,
+              borderBottomWidth: '1px',
+              borderColor: 'muted',
+              borderStyle: 'solid',
+              '& + svg': {
+                stroke: 'secondary',
+              },
+              '&:focus + svg': {
+                stroke: 'primary',
+              },
+              '&::placeholder': {
+                color: 'secondary',
+              },
+              'input::-webkit-outer-spin-button': {
+                WebkitAppearance: 'none',
+                margin: 0,
+              },
+              'input::-webkit-inner-spin-button': {
+                WebkitAppearance: 'none',
+                margin: 0,
+              },
+              ':focus-visible': {
+                outline: 'none !important',
+                background: 'none !important',
+              },
+            }}
+          />
+          <Search
+            sx={{
+              position: 'absolute',
+              left: ['6px', '11px', '11px', '18px'],
+              top: '15px',
+              width: '10px',
+              transition: '0.2s',
+            }}
+          />
+        </Box>
+
         <Box
           as={Command.List}
           sx={{
