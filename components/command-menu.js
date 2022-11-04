@@ -1,11 +1,16 @@
 import { Global } from '@emotion/react'
 import { useState, useEffect, useMemo } from 'react'
 import { Command } from 'cmdk'
-import { Box, Container } from 'theme-ui'
-import { Column, Row } from '@carbonplan/components'
+import { Box, Flex } from 'theme-ui'
+import { Down, Left, Up } from '@carbonplan/icons'
+import { useRouter } from 'next/router'
+
 import contents from '../data/contents.json'
 
+const COLUMNS = 4
+
 const Item = ({ date, page, summary, title }) => {
+  const router = useRouter()
   return (
     <Box
       as={Command.Item}
@@ -19,6 +24,8 @@ const Item = ({ date, page, summary, title }) => {
         willChange: 'background, color',
         transition: 'all 150ms ease',
         transitionProperty: 'none',
+        py: 2,
+        px: [4, 5, 5, 6],
         '& .summary': {
           display: 'none',
         },
@@ -32,6 +39,8 @@ const Item = ({ date, page, summary, title }) => {
           '& .summary': {
             display: 'block',
           },
+          px: (theme) =>
+            [4, 5, 5, 6].map((i) => `calc(${theme.space[i]}px - 3px)`),
         },
 
         "&[aria-disabled='true']": {
@@ -39,11 +48,11 @@ const Item = ({ date, page, summary, title }) => {
           cursor: 'not-allowed',
         },
       }}
-      onSelect={(value) => console.log('Selected', value)}
+      onSelect={() => router.push(`https://carbonplan.org/${page}`)}
       value={page}
     >
       {title}
-      <Box className='summary' sx={{ fontSize: 0 }}>
+      <Box className='summary' sx={{ width: '100%', fontSize: 0, mt: 1 }}>
         {summary}
       </Box>
     </Box>
@@ -70,6 +79,7 @@ const CommandMenu = () => {
     const regexp = new RegExp(search.trim(), 'i')
 
     return contents
+      .filter((c) => c.title)
       .filter(
         ({ title, summary, page }) =>
           title?.match(regexp) ||
@@ -80,7 +90,7 @@ const CommandMenu = () => {
   }, [search])
 
   return (
-    <Box id='testing'>
+    <>
       <Global
         styles={(theme) => ({
           '[cmdk-overlay]': {
@@ -104,12 +114,18 @@ const CommandMenu = () => {
         label='Global Command Menu'
         sx={{
           // [cmdk-root]
-          width: '437.336px', // temporarily hardcode 4 column width
+          width: [
+            `calc(${COLUMNS} * (100vw - 7 * 24px) / 6 + ${COLUMNS + 1} * 24px)`,
+            `calc(${COLUMNS} * (100vw - 9 * 32px) / 8 + ${COLUMNS + 1} * 32px)`,
+            `calc(${COLUMNS} * (100vw - 13 * 32px) / 12 + ${
+              COLUMNS + 1
+            } * 32px)`,
+            `calc(${COLUMNS} * (100vw - 13 * 48px) / 12 + ${
+              COLUMNS + 1
+            } * 48px)`,
+          ],
           background: 'background',
-          padding: '8px 0',
-          fontFamily: 'body',
           position: 'relative',
-          //
 
           // [cmdk-dialog]
           zIndex: 2000,
@@ -118,7 +134,7 @@ const CommandMenu = () => {
           top: '56px',
           transform: 'translateX(-50%)',
           '& [cmdk]': {
-            width: '640px',
+            width: '100%',
             transformOrigin: 'center center',
             animation: 'dialogIn var(--transition-fast) forwards',
           },
@@ -127,19 +143,21 @@ const CommandMenu = () => {
           },
         }}
       >
-        {/* <Row>
-          <Column start={[1, 2, 5, 5]} columns={[6, 6, 4, 4]}> */}
         <Box
           as={Command.Input}
           placeholder='Search'
           value={search}
           onValueChange={setSearch}
           sx={{
+            fontSize: [2, 2, 2, 3],
             fontFamily: 'body',
+            letterSpacing: 'body',
+            lineHeight: [1.2],
             border: 'none',
             width: '100%',
-            fontSize: '15px',
-            padding: '8px 16px',
+            pt: 3,
+            pb: 2,
+            px: [4, 5, 5, 6],
             outline: 'none',
             background: 'background',
             color: 'primary',
@@ -149,6 +167,18 @@ const CommandMenu = () => {
             borderStyle: 'solid',
             '&::placeholder': {
               color: 'secondary',
+            },
+            'input::-webkit-outer-spin-button': {
+              WebkitAppearance: 'none',
+              margin: 0,
+            },
+            'input::-webkit-inner-spin-button': {
+              WebkitAppearance: 'none',
+              margin: 0,
+            },
+            ':focus-visible': {
+              outline: 'none !important',
+              background: 'none !important',
             },
           }}
         />
@@ -163,7 +193,17 @@ const CommandMenu = () => {
             height: 'var(--cmdk-list-height)',
           }}
         >
-          <Command.Empty>No results found.</Command.Empty>
+          <Box
+            as={Command.Empty}
+            sx={{
+              p: [4, 5, 5, 6],
+              fontFamily: 'mono',
+              letterSpacing: 'mono',
+              color: 'secondary',
+            }}
+          >
+            No results found.
+          </Box>
 
           {
             /* TODO: replace with fetched contents.json files */
@@ -172,10 +212,33 @@ const CommandMenu = () => {
             ))
           }
         </Box>
-        {/* </Column>
-        </Row> */}
+        <Flex
+          sx={{
+            justifyContent: 'flex-end',
+            gap: 3,
+            pr: [4, 5, 5, 6],
+            py: 2,
+            borderWidth: 0,
+            borderTopWidth: '1px',
+            borderColor: 'muted',
+            borderStyle: 'solid',
+            fontSize: 0,
+          }}
+        >
+          <Flex sx={{ gap: 2, alignItems: 'center' }}>
+            Navigate
+            <Box sx={{ mt: 1 }}>
+              <Up sx={{ width: '10px' }} />
+              <Down sx={{ width: '10px' }} />
+            </Box>
+          </Flex>
+          <Flex sx={{ gap: 2, alignItems: 'center' }}>
+            Open link
+            <Left sx={{ width: '10px' }} />
+          </Flex>
+        </Flex>
       </Box>
-    </Box>
+    </>
   )
 }
 
