@@ -1,10 +1,11 @@
 import { Global } from '@emotion/react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { Command } from 'cmdk'
 import { Box, Container } from 'theme-ui'
 import { Column, Row } from '@carbonplan/components'
+import contents from '../data/contents.json'
 
-const Item = ({ children }) => {
+const Item = ({ date, page, summary, title }) => {
   return (
     <Box
       as={Command.Item}
@@ -12,14 +13,15 @@ const Item = ({ children }) => {
         width: '100%',
         cursor: 'pointer',
         color: 'secondary',
-        height: '40px',
         fontSize: 2,
-
         padding: '0 8px',
         userSelect: 'none',
         willChange: 'background, color',
         transition: 'all 150ms ease',
         transitionProperty: 'none',
+        '& .summary': {
+          display: 'none',
+        },
 
         "&[aria-selected='true']": {
           border: 0,
@@ -27,6 +29,9 @@ const Item = ({ children }) => {
           borderColor: 'primary',
           borderStyle: 'solid',
           color: 'primary',
+          '& .summary': {
+            display: 'block',
+          },
         },
 
         "&[aria-disabled='true']": {
@@ -34,8 +39,13 @@ const Item = ({ children }) => {
           cursor: 'not-allowed',
         },
       }}
+      onSelect={(value) => console.log('Selected', value)}
+      value={page}
     >
-      {children}
+      {title}
+      <Box className='summary' sx={{ fontSize: 0 }}>
+        {summary}
+      </Box>
     </Box>
   )
 }
@@ -48,7 +58,6 @@ const CommandMenu = () => {
   useEffect(() => {
     const down = (e) => {
       if (e.key === 'k' && e.metaKey) {
-        console.log('in here')
         setOpen((open) => !open)
       }
     }
@@ -56,6 +65,19 @@ const CommandMenu = () => {
     document.addEventListener('keydown', down)
     return () => document.removeEventListener('keydown', down)
   }, [])
+
+  const filteredItems = useMemo(() => {
+    const regexp = new RegExp(search.trim(), 'i')
+
+    return contents
+      .filter(
+        ({ title, summary, page }) =>
+          title?.match(regexp) ||
+          page.replace('-', ' ').match(regexp) ||
+          summary?.match(regexp)
+      )
+      .slice(0, 5)
+  }, [search])
 
   return (
     <Box id='testing'>
@@ -77,11 +99,12 @@ const CommandMenu = () => {
       <Box
         as={Command.Dialog}
         open={open}
-        // onOpenChange={setOpen}
+        onOpenChange={setOpen}
+        shouldFilter={false}
         label='Global Command Menu'
         sx={{
           // [cmdk-root]
-          width: '100%',
+          width: '437.336px', // temporarily hardcode 4 column width
           background: 'background',
           padding: '8px 0',
           fontFamily: 'body',
@@ -93,7 +116,6 @@ const CommandMenu = () => {
           position: 'fixed',
           left: '50%',
           top: '56px',
-          width: '300px',
           transform: 'translateX(-50%)',
           '& [cmdk]': {
             width: '640px',
@@ -105,6 +127,8 @@ const CommandMenu = () => {
           },
         }}
       >
+        {/* <Row>
+          <Column start={[1, 2, 5, 5]} columns={[6, 6, 4, 4]}> */}
         <Box
           as={Command.Input}
           placeholder='Search'
@@ -136,15 +160,20 @@ const CommandMenu = () => {
             overscrollBehavior: 'contain',
             transition: '100ms ease',
             transitionProperty: 'height',
+            height: 'var(--cmdk-list-height)',
           }}
         >
           <Command.Empty>No results found.</Command.Empty>
 
-          <Item>a</Item>
-          <Item>b</Item>
-          <Item>c</Item>
-          <Item>Apple</Item>
+          {
+            /* TODO: replace with fetched contents.json files */
+            filteredItems.map((c) => (
+              <Item key={c.page} {...c} />
+            ))
+          }
         </Box>
+        {/* </Column>
+        </Row> */}
       </Box>
     </Box>
   )
