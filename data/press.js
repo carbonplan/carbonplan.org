@@ -27,7 +27,7 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: ['AP News'],
     href: 'https://apnews.com/article/world-cup-soccer-sports-qatar-climate-and-environment-4c43ac9ab4b960e4c8e13f20cde4640d',
     title: 'Qatar’s promise of ‘carbon-neutral’ World Cup raises doubts',
