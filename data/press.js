@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['AP News'],
+    href: 'https://apnews.com/article/world-cup-soccer-sports-qatar-climate-and-environment-4c43ac9ab4b960e4c8e13f20cde4640d',
+    title: 'Qatar’s promise of ‘carbon-neutral’ World Cup raises doubts',
+    authors: ['Suman Naishadham'],
+    date: '11-07-2022',
+    format: 'print',
+  },
+  {
     source: ['The Washington Post'],
     href: 'https://www.washingtonpost.com/politics/2022/11/02/cop27-carbon-offsets-markets-climate/',
     title: 'Are carbon markets helping to slow climate change? Maybe.',
