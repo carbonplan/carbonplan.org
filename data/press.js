@@ -30,8 +30,7 @@ const press = [
   {
     source: ['The Washington Post'],
     href: 'https://www.washingtonpost.com/politics/2022/11/02/cop27-carbon-offsets-markets-climate/',
-    title:
-      'Are carbon markets helping to slow climate change? Maybe.',
+    title: 'Are carbon markets helping to slow climate change? Maybe.',
     authors: ['Jessica F. Greena'],
     date: '11-02-2022',
     format: 'print',
