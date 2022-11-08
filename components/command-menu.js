@@ -89,7 +89,6 @@ const CommandMenu = () => {
           page.replace('-', ' ').match(regexp) ||
           summary?.match(regexp)
       )
-      .slice(0, 5)
   }, [search])
 
   return (
@@ -211,7 +210,7 @@ const CommandMenu = () => {
             overscrollBehavior: 'contain',
             transition: '100ms ease',
             transitionProperty: 'height',
-            height: 'var(--cmdk-list-height)',
+            maxHeight: ['300px'],
           }}
         >
           <Box
