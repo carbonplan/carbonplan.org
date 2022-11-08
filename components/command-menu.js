@@ -78,6 +78,9 @@ const CommandMenu = () => {
   const filteredItems = useMemo(() => {
     const regexp = new RegExp(search.trim(), 'i')
 
+    if (!search.trim()) {
+      return []
+    }
     return contents
       .filter((c) => c.title)
       .filter(
@@ -214,13 +217,13 @@ const CommandMenu = () => {
           <Box
             as={Command.Empty}
             sx={{
-              p: [4, 5, 5, 6],
+              p: search ? [4, 5, 5, 6] : 0,
               fontFamily: 'mono',
               letterSpacing: 'mono',
               color: 'secondary',
             }}
           >
-            No results found.
+            {search ? 'No results found.' : ''}
           </Box>
 
           {
