@@ -211,6 +211,10 @@ const CommandMenu = () => {
             transition: '100ms ease',
             transitionProperty: 'height',
             maxHeight: ['300px'],
+            borderWidth: 0,
+            borderBottomWidth: search ? '1px' : 0,
+            borderColor: 'muted',
+            borderStyle: 'solid',
           }}
         >
           <Box
@@ -238,11 +242,7 @@ const CommandMenu = () => {
             gap: 3,
             pr: [4, 5, 5, 6],
             py: 2,
-            borderWidth: 0,
-            borderTopWidth: '1px',
-            borderColor: 'muted',
-            borderStyle: 'solid',
-            fontSize: 0,
+            fontSize: 1,
           }}
         >
           <Flex sx={{ gap: 2, alignItems: 'center' }}>
