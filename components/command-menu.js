@@ -3,13 +3,14 @@ import { useState, useEffect, useMemo } from 'react'
 import { Command } from 'cmdk'
 import { Box, Flex } from 'theme-ui'
 import { Down, Left, Search, Up } from '@carbonplan/icons'
+import { Badge } from '@carbonplan/components'
 import { useRouter } from 'next/router'
 
 import contents from '../data/contents.json'
 
 const COLUMNS = 4
 
-const Item = ({ date, page, summary, title }) => {
+const Item = ({ date, type, page, summary, title }) => {
   const router = useRouter()
   return (
     <Box
@@ -39,7 +40,10 @@ const Item = ({ date, page, summary, title }) => {
           '& .summary': {
             display: 'block',
           },
-          px: (theme) =>
+          '& .title': {
+            whiteSpace: 'normal',
+          },
+          pl: (theme) =>
             [4, 5, 5, 6].map((i) => `calc(${theme.space[i]}px - 3px)`),
         },
 
@@ -51,7 +55,29 @@ const Item = ({ date, page, summary, title }) => {
       onSelect={() => router.push(`https://carbonplan.org/${page}`)}
       value={page}
     >
-      {title}
+      <Flex sx={{ justifyContent: 'space-between', gap: 3 }}>
+        <Box
+          className='title'
+          sx={{
+            whiteSpace: 'nowrap',
+            textOverflow: 'ellipsis',
+            overflow: 'hidden',
+          }}
+        >
+          {title}
+        </Box>
+        <Badge
+          sx={{
+            mt: 1,
+            fontSize: 0,
+            height: '20px',
+            flexShrink: 0,
+            '&::first-letter': { textTransform: 'capitalize' },
+          }}
+        >
+          {type}
+        </Badge>
+      </Flex>
       <Box className='summary' sx={{ width: '100%', fontSize: 0, mt: 1 }}>
         {summary}
       </Box>

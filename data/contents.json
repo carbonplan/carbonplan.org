@@ -4,226 +4,266 @@
   },
   {
     "page": "research/cdr-verification-explainer",
+    "type": "article",
     "date": "2022-09-19",
     "title": "Verification Confidence Levels for carbon dioxide removal",
     "summary": "We developed an interactive tool to map quantification capacity and uncertainty across CDR pathways. Read this article, explore the interactive tool, or read Frontier’s post to learn more."
   },
   {
     "page": "research/cdr-scale-barriers",
+    "type": "article",
     "date": "2022-07-12",
     "title": "Barriers to scaling the long-duration carbon dioxide removal industry",
     "summary": "What are the key challenges facing the carbon removal industry? We conducted structured interviews with 37 stakeholders to understand how they perceive market barriers."
   },
   {
     "page": "research/cmip6-downscaling-explainer",
+    "type": "article",
     "date": "2022-06-30",
     "title": "Open data and tools for multiple methods of global climate downscaling",
     "summary": "Downscaled datasets form the basis of climate impacts and risk analysis, but there are many ways to downscale. We’re releasing data and tools for this foundational step in the climate change planning process."
   },
   {
     "page": "research/toucan-crypto-offsets",
+    "type": "article",
     "date": "2022-04-07",
     "title": "Zombies on the blockchain",
     "summary": "We analyzed the flow of carbon offset credits from conventional registries to the blockchain. Our work shows that nearly all of these credits have been excluded from conventional markets."
   },
   {
     "page": "research/fire-forests-inventories",
+    "type": "article",
     "date": "2022-03-30",
     "title": "Fire, forests, and greenhouse gas inventories in California",
     "summary": "Should policymakers track net greenhouse gas emissions across the energy and lands sectors, and if so, how? We explored the complex choices required to account for forests and power plants in the same emissions inventory."
   },
   {
     "page": "research/seaweed-farming-explainer",
+    "type": "article",
     "date": "2022-03-16",
     "title": "Mapping seaweed farming potential",
     "summary": "We developed an interactive tool for mapping the potential of seaweed farming for carbon removal and biomass products. Read this article, explore the interactive map, or read the associated preprints to learn more."
   },
   {
     "page": "research/ton-year-explainer",
+    "type": "article",
     "date": "2022-01-31",
     "title": "Unpacking ton-year accounting",
     "summary": "Ton-year accounting is used to quantify the value of temporary carbon storage — a task for which we lack a clear intellectual framework. We explain how ton-year accounting methods work and highlight crucial differences between prominent ton-year accounting methods."
   },
   {
     "page": "research/soil-protocols-explainer",
+    "type": "article",
     "date": "2021-07-15",
     "title": "A buyer’s guide to soil carbon offsets",
     "summary": "We systematically reviewed protocols used to credit soil carbon in voluntary markets. Explore our database of protocols or read the article for key takeaways."
   },
   {
     "page": "research/soil-depth-sampling",
+    "type": "article",
     "date": "2021-06-17",
     "title": "Depth matters for soil carbon accounting",
     "summary": "Estimating soil carbon based on samples is tricky to get right. We explored the role of sampling depth when estimating soil carbon, to show why it matters, and how to avoid common pitfalls."
   },
   {
     "page": "research/stripe-2021-insights",
+    "type": "article",
     "date": "2021-05-26",
     "title": "New lessons from reviewing carbon removal proposals",
     "summary": "We analyzed project proposals submitted for Stripe's Spring 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned."
   },
   {
     "page": "research/forest-risks-explainer",
+    "type": "article",
     "date": "2021-05-20",
     "title": "Risks to forest carbon in a changing climate",
     "summary": "Forests in the United States are already at risk from wildfire, drought, and insects, and climate change is making it worse. We combined satellite and ecological data with climate models to project future risks to forest carbon. Along with a preprint, we are releasing open data, open software, and an interactive web map."
   },
   {
     "page": "research/forest-offsets-explainer",
+    "type": "article",
     "date": "2021-04-29",
     "title": "Systematic over-crediting of forest offsets",
     "summary": "California's forest offset program is worth over $2 billion. We analyzed detailed public records to show how statistical flaws in the program's design have led to over-crediting — at a scale of tens of millions of tCO₂ and hundreds of millions of dollars."
   },
   {
     "page": "research/microsoft-2021-insights",
+    "type": "article",
     "date": "2021-03-17",
     "title": "Insights from analyzing a new round of carbon removal projects",
     "summary": "We analyzed project proposals submitted for Microsoft's 2021 Carbon Removal Purchase. Read this article or explore our updated database of project reports for our takeaways and lessons learned."
   },
   {
     "page": "research/dac-calculator-explainer",
+    "type": "article",
     "date": "2021-02-01",
     "title": "The cost of direct air capture",
     "summary": "We developed an interactive tool for exploring the cost of direct air capture (DAC) coupled to stand alone energy sources. Read this article, explore the calculator tool, or read the associated publication to learn more."
   },
   {
     "page": "research/permanence-calculator-explainer",
+    "type": "article",
     "date": "2020-12-09",
     "title": "The cost of temporary carbon removal",
     "summary": "We built an interactive tool to help compare the long-term cost of temporary and permanent carbon removal. Read this article or try the calculator tool to learn about the methods and implications."
   },
   {
     "page": "research/offset-project-fire",
+    "type": "article",
     "date": "2020-09-17",
     "title": "Carbon offsets burning",
     "summary": "Fire poses a key risk to the permanence of forest carbon. We analyzed a large fire during the 2020 fire season and analyzed its impact on a forest carbon offset project."
   },
   {
     "page": "research/carbon-removal-mechanisms",
+    "type": "article",
     "date": "2020-07-24",
     "title": "Carbon removal mechanisms",
     "summary": "Carbon removal is confusing because there are many approaches, and all affect the carbon cycle in different ways. In this article we develop and explain a typology for comparing approaches."
   },
   {
     "page": "research/soil-carbon-comment",
+    "type": "article",
     "date": "2020-06-01",
     "title": "Getting soil carbon right",
     "summary": "There are good reasons to be excited about soil carbon sequestration, but rigorous quantification remains a challenge. We analyzed a carbon offset protocol and wrote multiple letters raising concerns related to program design and scientific integrity."
   },
   {
     "page": "research/stripe-2020-insights",
+    "type": "article",
     "date": "2020-05-18",
     "title": "Insights from our first project reports",
     "summary": "We analyzed project proposals submitted for Stripe's 2020 Negative Emissions Purchase. Read this article or explore our database of project reports for our main takeaways and lessons learned."
   },
   {
     "page": "research/verra-integrity-council",
+    "type": "commentary",
     "date": "2022-09-29",
     "title": "Verra’s broadside against the Integrity Council props up the status quo",
     "summary": "A blistering critique from the carbon offset registry with a dominant ⅔ market share says more about its opposition to independent standards than the best way to pursue them."
   },
   {
     "page": "research/data-financial-risk",
+    "type": "commentary",
     "date": "2022-08-01",
     "title": "Why climate data matters to climate-related financial risk assessments",
     "summary": "Companies, government agencies, and consumers increasingly seek data on future physical climate risks. Better communication, transparency, and accessibility would help improve these physical financial risk assessments."
   },
   {
     "page": "research/scoping-plan-comments",
+    "type": "commentary",
     "date": "2022-05-17",
     "title": "California’s draft climate change scoping plan is incomplete",
     "summary": "California’s net-zero climate plan is long on carbon removal, short on details, and based on flawed analysis."
   },
   {
     "page": "research/offset-disclosure-needs",
+    "type": "commentary",
     "date": "2022-02-08",
     "title": "Why carbon offset disclosure matters",
     "summary": "Voluntary carbon markets don't provide investors with adequate data about who is using offset credits, nor what kinds of climate claims those credits justify. Simple disclosures would fix this gap."
   },
   {
     "page": "research/ton-year-ncx",
+    "type": "commentary",
     "date": "2022-01-31",
     "title": "A critique of NCX’s carbon accounting methods",
     "summary": "We review concerns with NCX’s use of discounted ton-year accounting methods to credit short-term timber harvests delays."
   },
   {
     "page": "research/climate-financial-risks",
+    "type": "commentary",
     "date": "2021-11-01",
     "title": "Climate-related financial risk and corporate net-zero commitments",
     "summary": "We discuss tensions and considerations at the nexus of climate risk disclosure and corporate net-zero strategies."
   },
   {
     "page": "research/cdr-verification",
+    "type": "tool",
     "title": "CDR Verification Framework",
     "summary": "Interactive tool for understanding Verification Confidence Levels (VCLs) for carbon removal."
   },
   {
     "page": "research/cmip6-downscaling",
+    "type": "tool",
     "title": "CMIP6 Downscaling",
     "summary": "Interactive mapping tool for global downscaled climate data."
   },
   {
     "page": "research/seaweed-farming",
+    "type": "tool",
     "title": "Seaweed Farming",
     "summary": "Mapping the costs and climate benefits of farming seaweed."
   },
   {
     "page": "research/cdr-database",
+    "type": "tool",
     "title": "CDR Database",
     "summary": "A database of reports on carbon dioxide removal project proposals."
   },
   {
     "page": "research/permanence-calculator",
+    "type": "tool",
     "title": "Permanence Calculator",
     "summary": "Comparing costs for temporary and permanent carbon removal."
   },
   {
     "page": "research/compliance-users",
+    "type": "tool",
     "title": "Compliance users",
     "summary": "Tracking the users of compliance offsets."
   },
   {
     "page": "research/soil-protocols",
+    "type": "tool",
     "title": "Soil Protocols",
     "summary": "A database of protocols used to credit soil carbon."
   },
   {
     "page": "research/forest-offsets-fires",
+    "type": "tool",
     "title": "Offsets Fires",
     "summary": "Mapping forest carbon offset projects and their intersections with fires."
   },
   {
     "page": "research/forest-offsets-crediting",
+    "type": "tool",
     "title": "Offsets Crediting",
     "summary": "Mapping our over-crediting analysis of forest carbon offset projects."
   },
   {
     "page": "research/forest-risks",
+    "type": "tool",
     "title": "Forest Risks",
     "summary": "Mapping risks to forest carbon under a changing climate"
   },
   {
     "page": "research/forest-carbon",
+    "type": "tool",
     "title": "Forest Carbon",
     "summary": "Mapping emissions related to forest carbon."
   },
   {
     "page": "research/dac-calculator",
+    "type": "tool",
     "title": "DAC Cost Calculator",
     "summary": "Explore key parameters affecting the cost of direct air capture."
   },
   {
     "page": "research/cdr-verification-methods",
+    "type": "supplement",
     "date": "2022-09-19",
     "title": "CDR Verification Framework — Methods"
   },
   {
     "page": "research/forest-offsets-explainer-faq",
+    "type": "supplement",
     "date": "2021-05-12",
     "title": "Systematic over-crediting of forest offsets FAQ"
   },
   {
     "page": "research/soil-protocols-explainer-gold-standard-response",
+    "type": "supplement",
     "date": "2021-08-04",
     "title": "Response to Gold Standard"
   },
@@ -231,134 +271,134 @@
     "page": "blog"
   },
   {
-    "type": "post",
     "page": "blog/cdr-database-archived",
+    "type": "blog",
     "date": "2022-09-20",
     "title": "Archiving the CDR Database",
     "summary": "Why we are archiving the CDR Database and shifting our attention to other priorities in the carbon removal ecosystem."
   },
   {
-    "type": "post",
     "page": "blog/klimadao-bct-response",
+    "type": "blog",
     "date": "2022-09-14",
     "title": "A response to KlimaDAO’s analysis of Base Carbon Tonne tokens",
     "summary": "KlimaDAO sidesteps CarbonPlan’s criticisms of offset credit quality."
   },
   {
-    "type": "post",
     "page": "blog/cloud-downscaling-pipelines",
+    "type": "blog",
     "date": "2022-09-02",
     "title": "Building open source downscaling pipelines for the cloud",
     "summary": "We describe our experiences building cloud-based data analysis pipelines for climate model downscaling, including specific challenges we faced and lessons we learned."
   },
   {
-    "type": "post",
     "page": "blog/physical-risk-workshop",
+    "type": "blog",
     "date": "2022-08-19",
     "title": "An interdisciplinary workshop on climate risk and financial regulation",
     "summary": "We hosted a workshop with the Environmental Defense Fund (EDF) and the Initiative on Climate Risk and Resilience Law (ICRRL) on physical climate risk and financial regulation."
   },
   {
-    "type": "post",
     "page": "blog/scipy-conference-2022",
+    "type": "blog",
     "date": "2022-08-08",
     "title": "Highlights from attending SciPy 2022",
     "summary": "We recently attended the 21st annual Scientific Computing with Python conference. Here we share highlights from the tutorials and presentations."
   },
   {
-    "type": "post",
     "page": "blog/sec-offset-disclosure",
+    "type": "blog",
     "date": "2022-06-24",
     "title": "Comments to the Securities and Exchange Commission on carbon offset disclosure",
     "summary": "We summarize our comments to the SEC on the agency's proposed climate-risk disclosure rule. In our comments, we commend the rule's robust approach to carbon offsets and encourage the SEC to strengthen the proposed provisions for carbon removal."
   },
   {
-    "type": "post",
     "page": "blog/offsets-fires-update",
+    "type": "blog",
     "date": "2022-06-16",
     "title": "Monitoring forest carbon offsets for the 2022 fire season",
     "summary": "We have updated our wildfire monitoring tool in preparation for the 2022 fire season."
   },
   {
-    "type": "post",
     "page": "blog/seaweed-farming-clarifications",
+    "type": "blog",
     "date": "2022-05-20",
     "title": "Scope, goals, and implications of our recent seaweed farming modeling work",
     "summary": "Relying on public data, our recent seaweed farming modeling work made key assumptions about seaweed cultivation. We summarize why making these assumptions was necessary, and why as a result the modeled costs may not capture current advances taking place in the field."
   },
   {
-    "type": "post",
     "page": "blog/ton-year-verra",
+    "type": "blog",
     "date": "2022-04-25",
     "title": "Comments to Verra on ton-year accounting and NCX’s harvest deferral methodology",
     "summary": "We summarize two recent comment letters about Verra’s proposed use of ton-year accounting to issue carbon offset credits — including via a proposed methodology developed by NCX which would credit harvest deferrals as short as a single year."
   },
   {
-    "type": "post",
     "page": "blog/occ-risk-comment",
+    "type": "blog",
     "date": "2022-02-18",
     "title": "Comments to the Office of the Comptroller of the Currency on climate-related financial risk",
     "summary": "We welcome the OCC's draft climate-related financial risk management principles and point out core tensions that could arise in implementation."
   },
   {
-    "type": "post",
     "page": "blog/open-lidar-biomass",
+    "type": "blog",
     "date": "2022-02-16",
     "title": "Using LiDAR to estimate forest biomass",
     "summary": "An open source implementation of forest biomass estimation using LiDAR."
   },
   {
-    "type": "post",
     "page": "blog/compliance-users-release",
+    "type": "blog",
     "date": "2022-01-05",
     "title": "Who is using which offsets in California?",
     "summary": "A new tool for tracking the use of carbon offsets for compliance in California's cap-and-trade program."
   },
   {
-    "type": "post",
     "page": "blog/stripe-2021-additions",
+    "type": "blog",
     "date": "2021-12-15",
     "title": "Additions to our CDR database",
     "summary": "Analysis of 11 new proposals from Stripe’s Fall 2021 CDR procurement."
   },
   {
-    "type": "post",
     "page": "blog/usda-csaf-comment",
+    "type": "blog",
     "date": "2021-11-10",
     "title": "Comments to the United States Department of Agriculture on climate-smart commodity markets",
     "summary": "We encourage the USDA to directly procure \"climate-smart\" commodities instead of subsidizing carbon offsets."
   },
   {
-    "type": "post",
     "page": "blog/fsoc-open-data",
+    "type": "blog",
     "date": "2021-11-04",
     "title": "Open data and the Financial Stability Oversight Council",
     "summary": "Why open data and analytics matter in addressing climate-related financial risk."
   },
   {
-    "type": "post",
     "page": "blog/soil-protocols-added",
+    "type": "blog",
     "date": "2021-10-13",
     "title": "Additions to our analysis of soil carbon protocols",
     "summary": "We analyzed three new soil carbon protocols and added them our interactive database."
   },
   {
-    "type": "post",
     "page": "blog/maps-library-release",
+    "type": "blog",
     "date": "2021-09-27",
     "title": "A new toolkit for data-driven maps",
     "summary": "Why rendering scientific data in web maps is so tough, and how we’re trying to solve it."
   },
   {
-    "type": "post",
     "page": "blog/climate-trace-release",
+    "type": "blog",
     "date": "2021-09-16",
     "title": "Climate TRACE release",
     "summary": "Our contributions to the initial Climate TRACE data release, and what’s coming next."
   },
   {
-    "type": "post",
     "page": "blog/first-post-welcome",
+    "type": "blog",
     "date": "2021-09-14",
     "title": "Welcome to the blog",
     "summary": "Why we made this and what you'll find here."
