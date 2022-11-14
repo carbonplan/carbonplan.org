@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-11-09/kerry-s-climate-credit-plan-risks-payouts-for-carbon-cutting-mirage?leadSource=uverify%20wall',
-    title: 'Kerry’s climate credit plan risks payouts for carbon-cutting mirage',
+    title:
+      'Kerry’s climate credit plan risks payouts for carbon-cutting mirage',
     authors: ['Jennifer A Dlouhy', 'Akshat Rathi'],
     date: '11-09-2022',
     format: 'print',
@@ -38,7 +39,8 @@ const press = [
   {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/168579/us-presenting-bad-distracting-plan-un-climate-talks',
-    title: 'The U.S. is presenting a bad, distracting plan at U.N. climate talks',
+    title:
+      'The U.S. is presenting a bad, distracting plan at U.N. climate talks',
     authors: ['Kate Aronoff'],
     date: '11-09-2022',
     format: 'print',
