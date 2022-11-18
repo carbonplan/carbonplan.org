@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['CalMatters'],
+    href: 'https://calmatters.org/environment/2022/11/california-revises-climate-change-plan/',
+    title:
+      'Slashing greenhouse gases: California revises climate change strategy',
+    authors: ['Nadia Lopez'],
+    date: '11-16-2022',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2022-11-09/kerry-s-climate-credit-plan-risks-payouts-for-carbon-cutting-mirage?leadSource=uverify%20wall',
     title:
