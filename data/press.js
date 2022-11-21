@@ -39,8 +39,7 @@ const press = [
   {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/environment/story/2022-11-16/carlifornia-unveils-plan-to-reach-carbon-neutrailty-by-2045?utm_id=76164&sfmc_id=2383114',
-    title:
-      'California unveils plan to reach carbon neutrality by 2045',
+    title: 'California unveils plan to reach carbon neutrality by 2045',
     authors: ['Tony Briscoe'],
     date: '11-16-2022',
     format: 'print',
