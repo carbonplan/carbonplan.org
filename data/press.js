@@ -28,6 +28,41 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/graphics/2022-carbon-offsets-renewable-energy/?srnd=green&leadSource=uverify%20wall',
+    title:
+      'Junk carbon offsets are what make these big companies ‘carbon neutral’',
+    authors: ['Akshat Rathi', 'Natasha White', 'Demetrios Pogkas'],
+    date: '11-20-2022',
+    format: 'print',
+  },
+  {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/environment/story/2022-11-16/carlifornia-unveils-plan-to-reach-carbon-neutrailty-by-2045?utm_id=76164&sfmc_id=2383114',
+    title: 'California unveils plan to reach carbon neutrality by 2045',
+    authors: ['Tony Briscoe'],
+    date: '11-16-2022',
+    format: 'print',
+  },
+  {
+    source: ['Fast Company'],
+    href: 'https://www.fastcompany.com/90796487/is-regenerative-agriculture-the-future-of-farming-or-the-next-greenwashing-fad',
+    title:
+      'Is regenerative agriculture the future of farming or the next greenwashing fad?',
+    authors: ['Adele Peters'],
+    date: '11-15-2022',
+    format: 'print',
+  },
+  {
+    source: ['The Verge'],
+    href: 'https://www.theverge.com/2022/11/14/23451865/occidental-oil-direct-air-capture-carbon-texas',
+    title:
+      'Oil giant Occidental wants to remake itself as a climate tech leader in Texas',
+    authors: ['Justine Calma'],
+    date: '11-14-2022',
+    format: 'print',
+  },
+  {
     source: ['CalMatters'],
     href: 'https://calmatters.org/environment/2022/11/california-revises-climate-change-plan/',
     title:
