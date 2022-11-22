@@ -1,4 +1,4 @@
-import { Box, Themed } from 'theme-ui'
+import { Box } from 'theme-ui'
 import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
 import AnnotatedTable from '../components/annotated-table'
 import { unrestricted, projectSpecific } from '../data/funding'

@@ -28,6 +28,126 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/graphics/2022-carbon-offsets-renewable-energy/?srnd=green&leadSource=uverify%20wall',
+    title:
+      'Junk carbon offsets are what make these big companies ‘carbon neutral’',
+    authors: ['Akshat Rathi', 'Natasha White', 'Demetrios Pogkas'],
+    date: '11-20-2022',
+    format: 'print',
+  },
+  {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/environment/story/2022-11-16/carlifornia-unveils-plan-to-reach-carbon-neutrailty-by-2045?utm_id=76164&sfmc_id=2383114',
+    title: 'California unveils plan to reach carbon neutrality by 2045',
+    authors: ['Tony Briscoe'],
+    date: '11-16-2022',
+    format: 'print',
+  },
+  {
+    source: ['Fast Company'],
+    href: 'https://www.fastcompany.com/90796487/is-regenerative-agriculture-the-future-of-farming-or-the-next-greenwashing-fad',
+    title:
+      'Is regenerative agriculture the future of farming or the next greenwashing fad?',
+    authors: ['Adele Peters'],
+    date: '11-15-2022',
+    format: 'print',
+  },
+  {
+    source: ['The Verge'],
+    href: 'https://www.theverge.com/2022/11/14/23451865/occidental-oil-direct-air-capture-carbon-texas',
+    title:
+      'Oil giant Occidental wants to remake itself as a climate tech leader in Texas',
+    authors: ['Justine Calma'],
+    date: '11-14-2022',
+    format: 'print',
+  },
+  {
+    source: ['CalMatters'],
+    href: 'https://calmatters.org/environment/2022/11/california-revises-climate-change-plan/',
+    title:
+      'Slashing greenhouse gases: California revises climate change strategy',
+    authors: ['Nadia Lopez'],
+    date: '11-16-2022',
+    format: 'print',
+  },
+  {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2022-11-09/kerry-s-climate-credit-plan-risks-payouts-for-carbon-cutting-mirage?leadSource=uverify%20wall',
+    title:
+      'Kerry’s climate credit plan risks payouts for carbon-cutting mirage',
+    authors: ['Jennifer A Dlouhy', 'Akshat Rathi'],
+    date: '11-09-2022',
+    format: 'print',
+  },
+  {
+    source: ['The New Republic'],
+    href: 'https://newrepublic.com/article/168579/us-presenting-bad-distracting-plan-un-climate-talks',
+    title:
+      'The U.S. is presenting a bad, distracting plan at U.N. climate talks',
+    authors: ['Kate Aronoff'],
+    date: '11-09-2022',
+    format: 'print',
+  },
+  {
+    source: ['AP News'],
+    href: 'https://apnews.com/article/world-cup-soccer-sports-qatar-climate-and-environment-4c43ac9ab4b960e4c8e13f20cde4640d',
+    title: 'Qatar’s promise of ‘carbon-neutral’ World Cup raises doubts',
+    authors: ['Suman Naishadham'],
+    date: '11-07-2022',
+    format: 'print',
+  },
+  {
+    source: ['The Washington Post'],
+    href: 'https://www.washingtonpost.com/politics/2022/11/02/cop27-carbon-offsets-markets-climate/',
+    title: 'Are carbon markets helping to slow climate change? Maybe.',
+    authors: ['Jessica F. Green'],
+    date: '11-02-2022',
+    format: 'print',
+  },
+  {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/environment/story/2022-10-30/californias-greenhouse-gas-emissions-drop-9-in-2020',
+    title:
+      'California set a record for greenhouse gas reductions in 2020, but it means nothing',
+    authors: ['Tony Briscoe'],
+    date: '10-30-2022',
+    format: 'print',
+  },
+  {
+    source: ['Time'],
+    href: 'https://time.com/6213480/carbon-offsets-bold-promises-climate-change/',
+    title: 'Here’s how carbon offsets can live up to their bold promises',
+    authors: ['Taylor Moore'],
+    date: '10-28-2022',
+    format: 'print',
+  },
+  {
+    source: ['GreenBiz'],
+    href: 'https://www.greenbiz.com/article/infighting-among-carbon-credit-verification-bodies',
+    title: 'Infighting among carbon credit verification bodies',
+    authors: ['Jesse Klein'],
+    date: '10-19-2022',
+    format: 'print',
+  },
+  {
+    source: ['Context'],
+    href: 'https://www.context.news/net-zero/video/can-you-fight-the-climate-crisis-with-crypto',
+    title: 'Can you fight the climate crisis with crypto?',
+    authors: ['Ashley Jiang', 'Fabio Teixeira', 'Avi Asher-Schapiro'],
+    date: '10-19-2022',
+    format: 'video',
+  },
+  {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/business/story/2022-10-07/2020-california-election-proposition-30-voters',
+    title:
+      'Proposition 30 has voters deciding on a tax for zero-emission vehicles. What you need to know',
+    authors: ['Russ Mitchell'],
+    date: '10-7-2022',
+    format: 'print',
+  },
+  {
     source: ['Yale Environment 360'],
     href: 'https://e360.yale.edu/features/phantom-forests-tree-planting-climate-change',
     title: 'Phantom forests: why ambitious tree planting projects are failing',
