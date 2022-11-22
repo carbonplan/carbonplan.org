@@ -9,7 +9,7 @@
 
 **main carbonplan website**
 
-[![Checks status](https://img.shields.io/github/checks-status/carbonplan/carbonplan.org/main?style=flat)](https://github.com/carbonplan/carbonplan.org/actions/workflows/main.yml)
+![Checks status](https://github.com/carbonplan/carbonplan.org/actions/workflows/main.yml/badge.svg)
 [![Deployments](https://img.shields.io/github/deployments/carbonplan/carbonplan.org/production?label=vercel&style=flat)](https://github.com/carbonplan/carbonplan.org/deployments)
 [![License](https://img.shields.io/github/license/carbonplan/carbonplan.org?style=flat)](https://github.com/carbonplan/carbonplan.org/blob/main/LICENSE)
 
