@@ -9,9 +9,9 @@
 
 **main carbonplan website**
 
-![Checks status](https://img.shields.io/github/checks-status/carbonplan/carbonplan.org/main?style=flat)
-![Deployments](https://img.shields.io/github/deployments/carbonplan/carbonplan.org/production?label=vercel&style=flat)
-![License](https://img.shields.io/github/license/carbonplan/carbonplan.org?style=flat)
+[![Checks status](https://img.shields.io/github/checks-status/carbonplan/carbonplan.org/main?style=flat)](https://github.com/carbonplan/carbonplan.org/actions/workflows/main.yml)
+[![Deployments](https://img.shields.io/github/deployments/carbonplan/carbonplan.org/production?label=vercel&style=flat)](https://github.com/carbonplan/carbonplan.org/deployments)
+[![License](https://img.shields.io/github/license/carbonplan/carbonplan.org?style=flat)](https://github.com/carbonplan/carbonplan.org/blob/main/LICENSE)
 
 This repository includes the source code for the [carbonplan.org](https://carbonplan.org/) landing page. The site is a [Next.js](https://nextjs.org/) project, deployed on [Vercel](https://vercel.com/).
 
