@@ -1,21 +1,17 @@
-<img
-  src='https://carbonplan-assets.s3.amazonaws.com/monogram/dark-small.png'
-  height='48'
-/>
+<p align="left" >
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://carbonplan-assets.s3.amazonaws.com/monogram/light-small.png">
+  <img alt="CarbonPlan monogram." height="48" src="https://carbonplan-assets.s3.amazonaws.com/monogram/dark-small.png">
+</picture>
+</p>
 
 # carbonplan / carbonplan.org
 
 **main carbonplan website**
 
-[![GitHub][github-badge]][github]
-[![Build Status]][actions]
-![MIT License][]
-
-[github]: https://github.com/carbonplan/carbonplan.org
-[github-badge]: https://badgen.net/badge/-/github?icon=github&label
-[build status]: https://github.com/carbonplan/carbonplan.org/actions/workflows/main.yml/badge.svg
-[actions]: https://github.com/carbonplan/carbonplan.org/actions/workflows/main.yml
-[mit license]: https://badgen.net/badge/license/MIT/blue
+![Checks status](https://img.shields.io/github/checks-status/carbonplan/carbonplan.org/main?style=flat-square)
+![Deployments](https://img.shields.io/github/deployments/carbonplan/carbonplan.org/production?label=vercel&style=flat-square)
+![License](https://img.shields.io/github/license/carbonplan/carbonplan.org?style=flat-square)
 
 This repository includes the source code for the [carbonplan.org](https://carbonplan.org/) landing page. The site is a [Next.js](https://nextjs.org/) project, deployed on [Vercel](https://vercel.com/).
 
