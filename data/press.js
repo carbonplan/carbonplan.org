@@ -36,6 +36,14 @@ const press = [
     format: 'video',
   },
   {
+    source: ['Wirecutter'],
+    href: 'https://www.nytimes.com/wirecutter/blog/what-is-carbon-neutral-shipping/?partner=slack&smid=sl-share',
+    title: 'Don’t be fooled by ‘carbon neutral’ shipping',
+    authors: ['Katie Okamoto'],
+    date: '11-21-2022',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/graphics/2022-carbon-offsets-renewable-energy/?srnd=green&leadSource=uverify%20wall',
     title:

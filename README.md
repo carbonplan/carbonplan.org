@@ -17,13 +17,7 @@
 [actions]: https://github.com/carbonplan/carbonplan.org/actions/workflows/main.yml
 [mit license]: https://badgen.net/badge/license/MIT/blue
 
-This repository includes the source code for the [carbonplan.org](https://carbonplan.org/) landing page. The site is a [Next.js](https://nextjs.org/) project, deployed on [Vercel](https://vercel.com/). The research, cdr-database, and data pages referenced here are built and deployed separately and can be found in separate repositories:
-
-| Site         | GitHub Repo                                                                              | URL                                                                    |
-| ------------ | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| research     | [https://github.com/carbonplan/research](https://github.com/carbonplan/research)         | [carbonplan.org/research](https://carbonplan.org/research)             |
-| cdr-database | [https://github.com/carbonplan/cdr-database](https://github.com/carbonplan/cdr-database) | [carbonplan.org/research/cdr-database](https://carbonplan.org/reports) |
-| data         | [https://github.com/carbonplan/data](https://github.com/carbonplan/data)                 | [carbonplan.org/data](https://carbonplan.org/data)                     |
+This repository includes the source code for the [carbonplan.org](https://carbonplan.org/) landing page. The site is a [Next.js](https://nextjs.org/) project, deployed on [Vercel](https://vercel.com/).
 
 ## to build the site locally
 
