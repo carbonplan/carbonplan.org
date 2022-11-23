@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Semafor'],
+    href: 'https://www.youtube.com/watch?v=6khZTL_UCeQ',
+    title: 'FIFA claims the world cup in Qatar is "carbon neutral" 🤔',
+    authors: ['Caresse Haaser'],
+    date: '11-23-2022',
+    format: 'video',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/graphics/2022-carbon-offsets-renewable-energy/?srnd=green&leadSource=uverify%20wall',
     title:
