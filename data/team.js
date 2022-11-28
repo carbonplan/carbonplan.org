@@ -39,7 +39,7 @@ const team = [
   },
   {
     name: 'Kata Martin',
-    role: 'Software Engineer',
+    role: 'Product Lead',
     bio: 'Kata is a software engineer focused on front-end web development. She is excited to build web tools that contribute to conversations about climate. She holds a BA in Chemistry from Reed College.',
   },
   {
