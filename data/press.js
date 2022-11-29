@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Los Angeles Times'],
+    href: 'https://www.latimes.com/opinion/story/2022-11-29/california-carbon-offset-forest-satellite-climate-change',
+    title:
+      'Op-Ed: California’s carbon-offset forests aren’t trapping much carbon. Here’s how to do better',
+    authors: ['Shane Coffield', 'James Randerson'],
+    date: '11-29-2022',
+    format: 'print',
+  },
+  {
     source: ['Semafor'],
     href: 'https://www.youtube.com/watch?v=6khZTL_UCeQ',
     title: 'FIFA claims the world cup in Qatar is "carbon neutral" 🤔',
