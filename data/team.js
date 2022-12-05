@@ -65,7 +65,7 @@ const team = [
   {
     name: 'Max Jones',
     role: 'Machine Learning Engineer',
-    bio: 'Max is a data scientist focused on machine learning, cloud computing, and open source software development. They are excited to build tools that enable climate action. Max holds a PhD from the Massachusetts Institute of Technology — Woods Hole Oceanographic Institution Joint Program in Oceanography.',
+    bio: 'Max is a data scientist focused on machine learning, cloud computing, and open source software development. He is excited to build tools that enable climate action. Max holds a PhD from the Massachusetts Institute of Technology — Woods Hole Oceanographic Institution Joint Program in Oceanography.',
   },
   {
     name: 'Sage Ortiz',
