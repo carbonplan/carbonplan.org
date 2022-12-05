@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Inside Climate News'],
+    href: 'https://insideclimatenews.org/news/04122022/carbon-removal-fossil-fuels-wyoming/',
+    title:
+      'Carbon removal is coming to fossil fuel country. Can it bring jobs and climate action?',
+    authors: ['Nicholas Kusnetz'],
+    date: '12-04-2022',
+    format: 'print',
+  },
+  {
     source: ['Los Angeles Times'],
     href: 'https://www.latimes.com/opinion/story/2022-11-29/california-carbon-offset-forest-satellite-climate-change',
     title:
