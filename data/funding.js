@@ -150,6 +150,10 @@ const projectSpecific = [
       Barriers to scaling the long-duration carbon dioxide removal industry
     </Link>,
   ],
+  [
+    'Linden Trust for Conservation',
+    'Technical guidance on carbon removal policy development',
+  ],
 ]
 
 export { unrestricted, projectSpecific }
