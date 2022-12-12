@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Context'],
     href: 'https://www.context.news/net-zero/us-carbon-farming-takes-root-but-do-the-economics-add-up',
-    title:
-      'U.S. carbon farming takes root - but do the economics add up?',
+    title: 'U.S. carbon farming takes root - but do the economics add up?',
     authors: ['Carey L. Biron'],
     date: '12-12-2022',
     format: 'print',
