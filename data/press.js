@@ -1586,7 +1586,8 @@ const press = [
     source: 'Columbia Insight',
     href: 'https://columbiainsight.org/warm-springs-evaluates-carbon-sequester-project-natural-resources-3/',
     date: '01-21-2021',
-    title: 'Warm Springs evaluates carbon sequester project in wake of wildfire',
+    title:
+      'Warm Springs evaluates carbon sequester project in wake of wildfire',
     authors: ['Michael Kohn'],
     format: 'print',
   },
