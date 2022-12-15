@@ -71,6 +71,7 @@ const unrestricted = [
   ['Additional Ventures', 'Foundation'],
   ['Rovere O’Kelley Family Fund', 'Individual'],
   ['Robert and Martha Parke', 'Individual'],
+  ['Preston-Werner Foundation', 'Foundation'],
 ]
 
 const projectSpecific = [
@@ -153,6 +154,10 @@ const projectSpecific = [
   [
     'Linden Trust for Conservation',
     'Technical guidance on carbon removal policy development',
+  ],
+  [
+    'Columbia University',
+    'Data analysis and visualization work with the Center for Learning the Earth with Artificial Intelligence and Physics (LEAP)',
   ],
 ]
 
