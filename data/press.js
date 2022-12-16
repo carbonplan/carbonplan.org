@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['AP News'],
+    href: 'https://apnews.com/article/what-would-sustainable-world-cup-look-like-5d50c60a6df122d01135c64ba9ae863c',
+    title: 'What would a more sustainable World Cup look like?',
+    authors: ['Suman Naishadham'],
+    date: '12-16-2022',
+    format: 'print',
+  },
+  {
     source: ['Context'],
     href: 'https://www.context.news/net-zero/us-carbon-farming-takes-root-but-do-the-economics-add-up',
     title: 'U.S. carbon farming takes root - but do the economics add up?',
