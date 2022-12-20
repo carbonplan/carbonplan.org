@@ -72,6 +72,7 @@ const unrestricted = [
   ['Rovere O’Kelley Family Fund', 'Individual'],
   ['Robert and Martha Parke', 'Individual'],
   ['Preston-Werner Foundation', 'Foundation'],
+  ['Climate Cousins Foundation', 'Foundation'],
 ]
 
 const projectSpecific = [
