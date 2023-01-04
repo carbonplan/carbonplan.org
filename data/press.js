@@ -29,6 +29,30 @@ const highlights = [
 const press = [
   {
     source: ['AP News'],
+    href: 'https://apnews.com/article/business-forests-trees-climate-and-environment-8aaa798d422857b660954379690d42fd',
+    title: 'EXPLAINER: Forest carbon credits aim to offset pollution',
+    authors: ['Suman Naishadham'],
+    date: '12-22-2022',
+    format: 'print',
+  },
+  {
+    source: ['NewScientist'],
+    href: 'https://www.newscientist.com/article/2352926-californias-carbon-offsetting-may-actually-be-increasing-emissions/',
+    title: 'California’s carbon offsetting may actually be increasing emissions',
+    authors: ['Lois Parshley'],
+    date: '12-22-2022',
+    format: 'print',
+  },
+  {
+    source: ['The Sacramento Bee'],
+    href: 'https://www.sacbee.com/news/politics-government/capitol-alert/article270033542.html',
+    title: 'California approves sweeping climate change strategy that’s short on details',
+    authors: ['Ari Plachta'],
+    date: '12-16-2022',
+    format: 'print',
+  },
+  {
+    source: ['AP News'],
     href: 'https://apnews.com/article/what-would-sustainable-world-cup-look-like-5d50c60a6df122d01135c64ba9ae863c',
     title: 'What would a more sustainable World Cup look like?',
     authors: ['Suman Naishadham'],
