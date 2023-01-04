@@ -38,7 +38,8 @@ const press = [
   {
     source: ['NewScientist'],
     href: 'https://www.newscientist.com/article/2352926-californias-carbon-offsetting-may-actually-be-increasing-emissions/',
-    title: 'California’s carbon offsetting may actually be increasing emissions',
+    title:
+      'California’s carbon offsetting may actually be increasing emissions',
     authors: ['Lois Parshley'],
     date: '12-22-2022',
     format: 'print',
@@ -46,7 +47,8 @@ const press = [
   {
     source: ['The Sacramento Bee'],
     href: 'https://www.sacbee.com/news/politics-government/capitol-alert/article270033542.html',
-    title: 'California approves sweeping climate change strategy that’s short on details',
+    title:
+      'California approves sweeping climate change strategy that’s short on details',
     authors: ['Ari Plachta'],
     date: '12-16-2022',
     format: 'print',
