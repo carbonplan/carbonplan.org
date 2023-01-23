@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Climatewire'],
+    href: 'https://www.eenews.net/articles/heres-what-we-know-about-kerrys-offset-gambit/',
+    title: 'Here’s what we know about Kerry’s offset gambit',
+    authors: ['Jean Chemnick', 'Sara Schonhardt'],
+    date: '01-23-2023',
+    format: 'print',
+  },
+  {
     source: ['AP News'],
     href: 'https://apnews.com/article/business-forests-trees-climate-and-environment-8aaa798d422857b660954379690d42fd',
     title: 'EXPLAINER: Forest carbon credits aim to offset pollution',
