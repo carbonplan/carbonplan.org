@@ -112,6 +112,7 @@ const initYear = {
   2020: true,
   2021: true,
   2022: true,
+  2023: true,
 }
 
 const Press = () => {
