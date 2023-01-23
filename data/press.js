@@ -31,7 +31,7 @@ const press = [
     source: ['Climatewire'],
     href: 'https://www.eenews.net/articles/heres-what-we-know-about-kerrys-offset-gambit/',
     title: 'Here’s what we know about Kerry’s offset gambit',
-    authors: ['Jean Chemnick','Sara Schonhardt'],
+    authors: ['Jean Chemnick', 'Sara Schonhardt'],
     date: '01-23-2023',
     format: 'print',
   },
