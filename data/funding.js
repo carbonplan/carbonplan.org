@@ -62,7 +62,7 @@ const unrestricted = [
   ['Silicon Valley Community Foundation', 'Foundation'],
   [
     <span>
-      Ambrose Carr +<br />
+      Ambrose Carr* +<br />
       Sharonmoyee Goswami
     </span>,
     'Individual',
@@ -73,6 +73,7 @@ const unrestricted = [
   ['Robert and Martha Parke', 'Individual'],
   ['Preston-Werner Foundation', 'Foundation'],
   ['Climate Cousins Foundation', 'Foundation'],
+  ['Michael Harm*', 'Individual'],
 ]
 
 const projectSpecific = [
