@@ -28,6 +28,22 @@ const highlights = [
 
 const press = [
   {
+    source: ['Le Devoir'],
+    href: 'https://www.ledevoir.com/environnement/780744/environnement-les-pollueurs-du-quebec-utilisent-des-credits-carbone-dont-les-benefices-climatiques-seraient-exageres',
+    title: 'Les pollueurs du Québec utilisent des crédits carbone dont les bénéfices climatiques seraient exagérés',
+    authors: ['Alexis Riopel'],
+    date: '02-07-2023',
+    format: 'print',
+  },
+  {
+    source: ['Neue Zürcher Zeitung'],
+    href: 'https://www.nzz.ch/international/zertifikate-retten-den-wald-und-die-welt-die-hoffnung-platzt-ld.1723224',
+    title: 'Mit Zertifikaten den Wald und die Welt retten? Diese Hoffnung zerplatzt',
+    authors: ['Kalina Oroschakoff'],
+    date: '01-30-2023',
+    format: 'print',
+  },
+  {
     source: ['Climatewire'],
     href: 'https://www.eenews.net/articles/heres-what-we-know-about-kerrys-offset-gambit/',
     title: 'Here’s what we know about Kerry’s offset gambit',
