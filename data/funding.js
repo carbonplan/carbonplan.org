@@ -100,7 +100,7 @@ const projectSpecific = [
   [
     'ClimateWorks',
     <>
-      <Link href='/research/permanence-calculator'>Permanence Calculator</Link>
+      <Link href='/research/permanence-calculator'>Permanence calculator</Link>
       <br />
       <Link href='/research/stripe-2021-insights'>
         Evaluation of technological carbon removal proposals
@@ -131,7 +131,11 @@ const projectSpecific = [
   ],
   [
     'Microsoft AI for Earth',
-    <Link href='/research/forest-risks'>Forest carbon risk mapping</Link>,
+    <>
+      <Link href='/research/forest-risks'>Forest carbon risk mapping</Link>
+      <br />
+      <Link href='/research/cmip6-downscaling'>CMIP6 downscaling</Link>
+    </>,
   ],
   [
     'Preston-Werner Foundation',
