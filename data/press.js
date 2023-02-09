@@ -1546,7 +1546,7 @@ const press = [
   {
     source: 'The New Republic',
     href: 'https://newrepublic.com/article/162313/bp-carbon-offsets-washington-finite-carbon-carlyle',
-    title: 'BP’s suspicious support for a carbon market in washington state',
+    title: 'BP’s suspicious support for a carbon market in Washington state',
     authors: ['Kate Aronoff'],
     date: '05-06-2021',
     format: 'print',
@@ -1713,7 +1713,7 @@ const press = [
     href: 'https://time.com/collection/best-inventions-2020/5911362/climate-trace/',
     date: '11-19-2020',
     title: 'The best inventions of 2020: The climate cop',
-    authors: [],
+    authors: ['J.R. Sullivan'],
     format: 'print',
   },
   {
