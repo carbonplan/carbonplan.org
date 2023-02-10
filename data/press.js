@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Axios'],
+    href: 'https://www.axios.com/newsletters/axios-generate-a8675a3b-6d27-4e0a-aea5-482f15b25269.html?chunk=0%26utm_term%3Dlisocialshare%23story0',
+    title:
+      '1 big thing: The growing push to ensure carbon removal has integrity',
+    authors: ['Ben Gemen', 'Andrew Freedman'],
+    date: '02-10-2023',
+    format: 'print',
+  },
+  {
     source: ['Le Devoir'],
     href: 'https://www.ledevoir.com/environnement/780744/environnement-les-pollueurs-du-quebec-utilisent-des-credits-carbone-dont-les-benefices-climatiques-seraient-exageres',
     title:
