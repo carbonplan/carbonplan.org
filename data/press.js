@@ -37,6 +37,15 @@ const press = [
     format: 'print',
   },
   {
+    source: ['The Seattle Times'],
+    href: 'https://www.seattletimes.com/seattle-news/environment/was-dnr-wants-in-on-emerging-carbon-market-to-sell-credits-instead-of-timber/',
+    title:
+      'DNR wants in on WA’s emerging carbon-credit market',
+    authors: ['Isabella Breda'],
+    date: '02-09-2023',
+    format: 'print',
+  },
+  {
     source: ['Le Devoir'],
     href: 'https://www.ledevoir.com/environnement/780744/environnement-les-pollueurs-du-quebec-utilisent-des-credits-carbone-dont-les-benefices-climatiques-seraient-exageres',
     title:
