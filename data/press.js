@@ -39,8 +39,7 @@ const press = [
   {
     source: ['The Seattle Times'],
     href: 'https://www.seattletimes.com/seattle-news/environment/was-dnr-wants-in-on-emerging-carbon-market-to-sell-credits-instead-of-timber/',
-    title:
-      'DNR wants in on WA’s emerging carbon-credit market',
+    title: 'DNR wants in on WA’s emerging carbon-credit market',
     authors: ['Isabella Breda'],
     date: '02-09-2023',
     format: 'print',
