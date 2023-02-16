@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Grist'],
+    href: 'https://grist.org/agriculture/usda-to-help-farmers-navigate-the-murky-world-of-soil-carbon-offsets/',
+    title:
+      'USDA to help farmers navigate the murky world of soil carbon offsets',
+    authors: ['Emily Pontecorvo'],
+    date: '02-13-2023',
+    format: 'print',
+  },
+  {
     source: ['Axios'],
     href: 'https://www.axios.com/newsletters/axios-generate-a8675a3b-6d27-4e0a-aea5-482f15b25269.html?chunk=0%26utm_term%3Dlisocialshare%23story0',
     title:
