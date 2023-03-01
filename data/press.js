@@ -29,6 +29,15 @@ const highlights = [
 const press = [
   {
     source: ['Grist'],
+    href: 'https://grist.org/technology/a-new-alliance-for-high-quality-carbon-removal-highlights-tensions-within-the-industry/',
+    title:
+      'A new alliance for ‘high quality’ carbon removal highlights tensions within the industry',
+    authors: ['Emily Pontecorvo'],
+    date: '02-28-2023',
+    format: 'print',
+  },
+  {
+    source: ['Grist'],
     href: 'https://grist.org/agriculture/usda-to-help-farmers-navigate-the-murky-world-of-soil-carbon-offsets/',
     title:
       'USDA to help farmers navigate the murky world of soil carbon offsets',
