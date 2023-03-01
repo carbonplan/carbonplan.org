@@ -7,22 +7,6 @@ const team = [
     bio: 'Jeremy is a scientist with a passion for open science, open source software, and bringing cross-disciplinary teams together to tackle big problems. He holds a PhD in Neural Science from New York University and a BA in Neuroscience from Swarthmore College.',
   },
   {
-    name: 'Danny Cullenward',
-    role: 'Policy Director',
-    bio: (
-      <span>
-        Danny is a climate economist and lawyer focused on the design and
-        implementation of scientifically grounded climate policy. He holds a JD
-        and PhD in Environment and Resources from Stanford University, wrote a{' '}
-        <Link href='https://politybooks.com/bookdetail/?isbn=9781509541799'>
-          book on climate policy
-        </Link>{' '}
-        with David G. Victor, and enjoys collaborating with researchers who get
-        to spend time outside.
-      </span>
-    ),
-  },
-  {
     name: 'Oriana Chegwidden',
     role: 'Research Scientist',
     bio: 'Oriana is a climate scientist committed to conducting impactful, equitable science. She is an alum of AmeriCorps, where she worked to support immigrant rights. She holds a PhD in Civil and Environmental Engineering from the University of Washington and a BS in Chemistry from Haverford College.',
@@ -46,11 +30,6 @@ const team = [
     name: 'Raphael Hagen',
     role: 'Data Engineer',
     bio: 'Raphael is a data engineer with a background in remote sensing geoscience. He is interested in earth observation and scientific tool building as well as climate outreach. He holds a BS in Geoscience from the University of Montana and has spent several seasons working as a ranger for the National Park Service.',
-  },
-  {
-    name: 'Sadie Frank',
-    role: 'Program Manager',
-    bio: 'Sadie has an interdisciplinary background in climate policy, financial risk, and management. She is most passionate about designing and advocating for climate policy that is grounded in science and responsive to community needs. She holds a Master of Development Practice from the University of California, Berkeley, and a BA in Geography from the University of Washington.',
   },
   {
     name: 'Grayson Badgley',
