@@ -34,7 +34,7 @@ const team = [
   {
     name: 'Grayson Badgley',
     role: 'Research Scientist',
-    bio: 'Grayson is an ecologist dedicated to ensuring a vibrant future where both people and ecosystems thrive. He holds a PhD in Earth System Science from Stanford University.',
+    bio: 'Grayson is an ecologist dedicated to ensuring a vibrant future where both people and the planet thrive. He received a PhD in Earth System Science from Stanford University.',
   },
   {
     name: 'Anderson Banihirwe',
