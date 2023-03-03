@@ -74,6 +74,7 @@ const unrestricted = [
   ['Preston-Werner Foundation', 'Foundation'],
   ['Climate Cousins Foundation', 'Foundation'],
   ['Michael Harm*', 'Individual'],
+  ['Nicholas Sofroniew', 'Individual'],
 ]
 
 const projectSpecific = [
