@@ -106,7 +106,6 @@ const collaborators = [
     'Ordinary Things',
   ],
   ['Jon Wang', 'UC Irvine'],
-  ['Joe Hamman', 'NCAR'],
 ]
 
 export { team, board, collaborators }
