@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Politico'],
+    href: 'https://www.politico.com/newsletters/the-long-game/2023/04/04/what-taylor-swift-and-offsets-have-in-common-00090351',
+    title:
+      'A Taylor Swift moment for carbon markets',
+    authors: ['Debra Kahn','Allison Prang', 'Jordan Wolman'],
+    date: '04-04-2023',
+    format: 'print',
+  },
+  {
     source: ['Grist'],
     href: 'https://grist.org/technology/a-new-alliance-for-high-quality-carbon-removal-highlights-tensions-within-the-industry/',
     title:
