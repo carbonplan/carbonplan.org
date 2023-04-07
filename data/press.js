@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Vox'],
+    href: 'https://www.youtube.com/watch?v=kfNr2zUDEZc',
+    title: 'Welp, we gotta start pulling CO2 out of the air',
+    authors: ['Joss Fong'],
+    date: '04-07-2023',
+    format: 'video',
+  },
+  {
     source: ['Politico'],
     href: 'https://www.politico.com/newsletters/the-long-game/2023/04/04/what-taylor-swift-and-offsets-have-in-common-00090351',
     title: 'A Taylor Swift moment for carbon markets',
