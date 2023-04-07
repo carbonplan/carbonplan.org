@@ -32,7 +32,7 @@ const press = [
     href: 'https://www.youtube.com/watch?v=kfNr2zUDEZc',
     title: 'Welp, we gotta start pulling CO2 out of the air',
     authors: ['Joss Fong'],
-    date: '04-07-2023',
+    date: '04-06-2023',
     format: 'video',
   },
   {
