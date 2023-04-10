@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/research/cdr-verification-(.*)",
-      "destination": "https://research.carbonplan.org/research/cdr-verification-$1"
+      "source": "/research/cdr-verification-explainer",
+      "destination": "https://research.carbonplan.org/research/cdr-verification-explainer"
     },
     {
       "source": "/research/cdr-verification(.*)",
