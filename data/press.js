@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Tech Review'],
+    href: 'https://www.technologyreview.com/2023/05/16/1073064/inside-the-little-known-group-setting-the-corporate-climate-agenda',
+    title: 'Inside the little-known group setting the corporate climate agenda',
+    authors: ['Ian Morse'],
+    date: '05-16-2023',
+    format: 'print',
+  },
+  {
     source: ['Vox'],
     href: 'https://www.youtube.com/watch?v=kfNr2zUDEZc',
     title: 'Welp, we gotta start pulling CO2 out of the air',
