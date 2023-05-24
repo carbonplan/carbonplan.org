@@ -1,7 +1,7 @@
 import { Box } from 'theme-ui'
 import { Row, Column, Table, Heading } from '@carbonplan/components'
 
-const AnnotatedTable = ({ heading, data, sidenote, children }) => {
+const AnnotatedTable = ({ heading, data, sidenote, widths = [3, 3] }) => {
   return (
     <Box>
       <Heading sx={{ mb: [4, 5, 6, 7] }} variant='h2' sidenote={sidenote}>
@@ -14,11 +14,11 @@ const AnnotatedTable = ({ heading, data, sidenote, children }) => {
             columns={[6]}
             start={[
               [1, 1, 1, 1],
-              [1, 4, 4, 4],
+              [1, widths[0] + 1, widths[0] + 1, widths[0] + 1],
             ]}
             width={[
-              [6, 3, 3, 3],
-              [6, 3, 3, 3],
+              [6, widths[0], widths[0], widths[0]],
+              [6, widths[1], widths[1], widths[1]],
             ]}
             borderBottom={false}
             borderTop={false}
