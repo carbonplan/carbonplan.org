@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Alaska News Nightly'],
     href: 'https://alaskapublic.org/2023/05/23/alaska-news-nightly-tuesday-may-23-2023/',
-    title:
-      'Alaska News Nightly: Tuesday, May 23, 2023',
+    title: 'Alaska News Nightly: Tuesday, May 23, 2023',
     authors: ['Tim Rockey', 'Alaska Public Radio - Anchorage'],
     date: '05-23-2023',
     format: 'audio',
