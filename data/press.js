@@ -30,8 +30,9 @@ const press = [
   {
     source: ['Alaska Public Radio'],
     href: 'https://alaskapublic.org/2023/05/23/alaska-is-getting-into-the-carbon-market-what-does-that-mean-for-the-budget-and-the-climate/',
-    title: 'Alaska is getting into the carbon market. What does that mean for the budget – and the climate?',
-    authors: ['Kavitha George','Alaska Public Radio - Anchorage'],
+    title:
+      'Alaska is getting into the carbon market. What does that mean for the budget – and the climate?',
+    authors: ['Kavitha George', 'Alaska Public Radio - Anchorage'],
     date: '05-23-2023',
     format: 'print',
   },
