@@ -1,4 +1,5 @@
 import { Link } from 'theme-ui'
+import { OnePercent } from '../components/partner-logos'
 
 const unrestricted = [
   ['Pamela Mensch', 'Individual'],
@@ -169,4 +170,11 @@ const projectSpecific = [
   ],
 ]
 
-export { unrestricted, projectSpecific }
+const partners = [
+  [
+    <OnePercent sx={{ width: ['35%', '75%', '65%', '65%'] }} />,
+    'As an Environmental Partner with 1% For the Planet, we are eligible to receive monetary donations, volunteer time, and in-kind donations from participating businesses.',
+  ],
+]
+
+export { unrestricted, projectSpecific, partners }

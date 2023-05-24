@@ -1,7 +1,7 @@
 import { Box } from 'theme-ui'
 import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
 import AnnotatedTable from '../components/annotated-table'
-import { unrestricted, projectSpecific } from '../data/funding'
+import { unrestricted, projectSpecific, partners } from '../data/funding'
 
 const Funding = () => {
   return (
@@ -67,10 +67,10 @@ const Funding = () => {
       <Box sx={{ mb: [2, 3, 4, 5] }}>
         <AnnotatedTable heading='Unrestricted donations' data={unrestricted} />
       </Box>
+      <AnnotatedTable heading='Partners' data={partners} widths={[2, 4]} />
       <AnnotatedTable
         heading='Project-specific funding'
         data={projectSpecific}
-        variant='narrow'
       />
     </Layout>
   )
