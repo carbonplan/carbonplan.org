@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Politico'],
+    href: 'https://www.politico.com/newsletters/the-long-game/2023/05/26/insurers-retreat-under-anti-esg-fire-00099007',
+    title: 'Insurers retreat under anti-ESG fire',
+    authors: ['Debra Kahn', 'Jordan Wolman'],
+    date: '05-26-2023',
+    format: 'print',
+  },
+  {
     source: ['Alaska News Nightly'],
     href: 'https://alaskapublic.org/2023/05/23/alaska-news-nightly-tuesday-may-23-2023/',
     title: 'Alaska News Nightly: Tuesday, May 23, 2023',
