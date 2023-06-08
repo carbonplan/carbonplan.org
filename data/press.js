@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2023/06/08/1074287/inside-the-quest-to-engineer-climate-saving-super-trees/',
+    title: 'Inside the quest to engineer climate-saving “super trees”',
+    authors: ['Boyce Upholt'],
+    date: '06-08-2023',
+    format: 'print',
+  },
+  {
     source: ['Politico'],
     href: 'https://www.politico.com/newsletters/the-long-game/2023/05/26/insurers-retreat-under-anti-esg-fire-00099007',
     title: 'Insurers retreat under anti-ESG fire',
