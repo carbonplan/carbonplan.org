@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Fast Company'],
+    href: 'https://www.fastcompany.com/90906093/climate-science-art-book',
+    title: 'This climate science guide looks like an art book for a reason”',
+    authors: ['Zachary Petit'],
+    date: '06-09-2023',
+    format: 'print',
+  },
+  {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2023/06/08/1074287/inside-the-quest-to-engineer-climate-saving-super-trees/',
     title: 'Inside the quest to engineer climate-saving “super trees”',
