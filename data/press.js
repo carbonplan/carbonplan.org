@@ -30,7 +30,7 @@ const press = [
   {
     source: ['Fast Company'],
     href: 'https://www.fastcompany.com/90906093/climate-science-art-book',
-    title: 'This climate science guide looks like an art book for a reason”',
+    title: 'This climate science guide looks like an art book for a reason',
     authors: ['Zachary Petit'],
     date: '06-09-2023',
     format: 'print',
