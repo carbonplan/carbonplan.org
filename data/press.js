@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2023/06/12/1074410/rivian-hopes-to-earn-carbon-credits-for-its-home-ev-chargers/',
+    title:
+      'Rivian hopes to earn carbon credits for its home electric vehicle chargers',
+    authors: ['James Temple'],
+    date: '06-12-2023',
+    format: 'print',
+  },
+  {
     source: ['Fast Company'],
     href: 'https://www.fastcompany.com/90906093/climate-science-art-book',
     title: 'This climate science guide looks like an art book for a reason',
