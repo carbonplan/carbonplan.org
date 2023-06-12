@@ -30,7 +30,8 @@ const press = [
   {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2023/06/12/1074410/rivian-hopes-to-earn-carbon-credits-for-its-home-ev-chargers/',
-    title: 'Rivian hopes to earn carbon credits for its home electric vehicle chargers',
+    title:
+      'Rivian hopes to earn carbon credits for its home electric vehicle chargers',
     authors: ['James Temple'],
     date: '06-12-2023',
     format: 'print',
