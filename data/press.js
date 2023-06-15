@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2023-06-13/a-greenwashing-lawsuit-against-delta-aims-to-set-a-precedent',
+    title: 'A Greenwashing Lawsuit Against Delta Aims to Set a Precedent',
+    authors: ['Kendra Pierre-Louis'],
+    date: '06-13-2023',
+    format: 'print',
+  },
+  {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2023/06/12/1074410/rivian-hopes-to-earn-carbon-credits-for-its-home-ev-chargers/',
     title:
