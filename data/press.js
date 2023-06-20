@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['The New Republic'],
+    href: 'https://newrepublic.com/article/173297/climate-fraud-americas-last-frontier',
+    title: 'Climate Fraud on America’s Last Frontier',
+    authors: ['Stephen Lezak'],
+    date: '06-15-2023',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2023-06-13/a-greenwashing-lawsuit-against-delta-aims-to-set-a-precedent',
     title: 'A Greenwashing Lawsuit Against Delta Aims to Set a Precedent',
