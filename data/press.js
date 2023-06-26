@@ -28,9 +28,17 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2023-06-26/canada-wildfire-season-burns-forest-set-aside-for-carbon-offsets?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTY4Nzc4MjkzOSwiZXhwIjoxNjg4Mzg3NzM5LCJhcnRpY2xlSWQiOiJSV1VVRzVEV1JHRzAwMSIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.OpliV2gw0Zf7tKQHQs75QCDHu6ZDuIPBu7JFgFi3YCY',
+    title: 'Canada’s explosive wildfires have damaged a forest carbon offset project',
+    authors: ['Natasha White', 'Zahra Hirji'],
+    date: '06-26-2023',
+    format: 'print',
+  },
+  {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/173297/climate-fraud-americas-last-frontier',
-    title: 'Climate Fraud on America’s Last Frontier',
+    title: 'Climate fraud on America’s last frontier',
     authors: ['Stephen Lezak'],
     date: '06-15-2023',
     format: 'print',
@@ -38,7 +46,7 @@ const press = [
   {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2023-06-13/a-greenwashing-lawsuit-against-delta-aims-to-set-a-precedent',
-    title: 'A Greenwashing Lawsuit Against Delta Aims to Set a Precedent',
+    title: 'A greenwashing lawsuit against Delta aims to set a precedent',
     authors: ['Kendra Pierre-Louis'],
     date: '06-13-2023',
     format: 'print',
