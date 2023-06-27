@@ -29,8 +29,17 @@ const highlights = [
 const press = [
   {
     source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/opinion/articles/2023-06-27/carbon-removal-industry-really-wants-to-be-regulated?leadSource=uverify%20wall#xj4y7vzkg',
+    title: 'An industry that actually welcomes regulation',
+    authors: ['Lara Williams'],
+    date: '06-26-2023',
+    format: 'print',
+  },
+  {
+    source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2023-06-26/canada-wildfire-season-burns-forest-set-aside-for-carbon-offsets?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTY4Nzc4MjkzOSwiZXhwIjoxNjg4Mzg3NzM5LCJhcnRpY2xlSWQiOiJSV1VVRzVEV1JHRzAwMSIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.OpliV2gw0Zf7tKQHQs75QCDHu6ZDuIPBu7JFgFi3YCY',
-    title: 'Canada’s explosive wildfires have damaged a forest carbon offset project',
+    title:
+      'Canada’s explosive wildfires have damaged a forest carbon offset project',
     authors: ['Natasha White', 'Zahra Hirji'],
     date: '06-26-2023',
     format: 'print',
