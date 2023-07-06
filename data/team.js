@@ -2,6 +2,11 @@ import { Link } from '@carbonplan/components'
 
 const team = [
   {
+    name: 'Claire Zarakas',
+    role: 'Research Scientist',
+    bio: 'Claire is an atmospheric scientist committed to applying climate science research to advance climate action. Her background spans climate research and environmental policy. She is an Atmospheric Sciences PhD student at the University of Washington, and she holds a BA in Geosciences from Princeton University.',
+  },
+  {
     name: 'Jeremy Freeman',
     role: 'Executive Director',
     bio: 'Jeremy is a scientist with a passion for open science, open source software, and bringing cross-disciplinary teams together to tackle big problems. He holds a PhD in Neural Science from New York University and a BA in Neuroscience from Swarthmore College.',
@@ -13,7 +18,7 @@ const team = [
   },
   {
     name: 'Freya Chay',
-    role: 'Program Manager',
+    role: 'Program Lead',
     bio: 'Freya has an interdisciplinary background in decarbonization. She’s particularly interested in how climate-forced transformations will impact culture and communities. She holds an MS in Earth Systems and a BS in Computer Science from Stanford University.',
   },
   {

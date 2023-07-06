@@ -28,6 +28,72 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/opinion/articles/2023-06-27/carbon-removal-industry-really-wants-to-be-regulated?leadSource=uverify%20wall#xj4y7vzkg',
+    title: 'An industry that actually welcomes regulation',
+    authors: ['Lara Williams'],
+    date: '06-26-2023',
+    format: 'print',
+  },
+  {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2023-06-26/canada-wildfire-season-burns-forest-set-aside-for-carbon-offsets?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTY4Nzc4MjkzOSwiZXhwIjoxNjg4Mzg3NzM5LCJhcnRpY2xlSWQiOiJSV1VVRzVEV1JHRzAwMSIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.OpliV2gw0Zf7tKQHQs75QCDHu6ZDuIPBu7JFgFi3YCY',
+    title:
+      'Canada’s explosive wildfires have damaged a forest carbon offset project',
+    authors: ['Natasha White', 'Zahra Hirji'],
+    date: '06-26-2023',
+    format: 'print',
+  },
+  {
+    source: ['The New Republic'],
+    href: 'https://newrepublic.com/article/173297/climate-fraud-americas-last-frontier',
+    title: 'Climate fraud on America’s last frontier',
+    authors: ['Stephen Lezak'],
+    date: '06-15-2023',
+    format: 'print',
+  },
+  {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2023-06-13/a-greenwashing-lawsuit-against-delta-aims-to-set-a-precedent',
+    title: 'A greenwashing lawsuit against Delta aims to set a precedent',
+    authors: ['Kendra Pierre-Louis'],
+    date: '06-13-2023',
+    format: 'print',
+  },
+  {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2023/06/12/1074410/rivian-hopes-to-earn-carbon-credits-for-its-home-ev-chargers/',
+    title:
+      'Rivian hopes to earn carbon credits for its home electric vehicle chargers',
+    authors: ['James Temple'],
+    date: '06-12-2023',
+    format: 'print',
+  },
+  {
+    source: ['Fast Company'],
+    href: 'https://www.fastcompany.com/90906093/climate-science-art-book',
+    title: 'This climate science guide looks like an art book for a reason',
+    authors: ['Zachary Petit'],
+    date: '06-09-2023',
+    format: 'print',
+  },
+  {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2023/06/08/1074287/inside-the-quest-to-engineer-climate-saving-super-trees/',
+    title: 'Inside the quest to engineer climate-saving “super trees”',
+    authors: ['Boyce Upholt'],
+    date: '06-08-2023',
+    format: 'print',
+  },
+  {
+    source: ['Politico'],
+    href: 'https://www.politico.com/newsletters/the-long-game/2023/05/26/insurers-retreat-under-anti-esg-fire-00099007',
+    title: 'Insurers retreat under anti-ESG fire',
+    authors: ['Debra Kahn', 'Jordan Wolman'],
+    date: '05-26-2023',
+    format: 'print',
+  },
+  {
     source: ['Alaska News Nightly'],
     href: 'https://alaskapublic.org/2023/05/23/alaska-news-nightly-tuesday-may-23-2023/',
     title: 'Alaska News Nightly: Tuesday, May 23, 2023',

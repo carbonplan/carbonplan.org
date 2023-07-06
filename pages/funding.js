@@ -60,6 +60,10 @@ const Funding = () => {
             <Link href='https://files.carbonplan.org/CarbonPlan-Form-990-2021.pdf'>
               2021
             </Link>
+            ,{' '}
+            <Link href='https://files.carbonplan.org/CarbonPlan-Form-990-2022.pdf'>
+              2022
+            </Link>
             ).
           </Box>
         </Column>
