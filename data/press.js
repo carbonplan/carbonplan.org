@@ -88,7 +88,8 @@ const press = [
   {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2023/06/06/1074124/metas-former-cto-has-a-new-50-million-project-ocean-based-carbon-removal/',
-    title: 'Meta’s former CTO has a new $50 million project: ocean-based carbon removal',
+    title:
+      'Meta’s former CTO has a new $50 million project: ocean-based carbon removal',
     authors: ['James Temple'],
     date: '06-06-2023',
     format: 'print',
