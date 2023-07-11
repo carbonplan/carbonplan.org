@@ -86,6 +86,15 @@ const press = [
     format: 'print',
   },
   {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2023/06/06/1074124/metas-former-cto-has-a-new-50-million-project-ocean-based-carbon-removal/',
+    title:
+      'Meta’s former CTO has a new $50 million project: ocean-based carbon removal',
+    authors: ['James Temple'],
+    date: '06-06-2023',
+    format: 'print',
+  },
+  {
     source: ['Politico'],
     href: 'https://www.politico.com/newsletters/the-long-game/2023/05/26/insurers-retreat-under-anti-esg-fire-00099007',
     title: 'Insurers retreat under anti-ESG fire',
