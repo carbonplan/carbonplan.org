@@ -78,6 +78,7 @@ const unrestricted = [
   ['Nicholas Sofroniew', 'Individual'],
   ['Jandon Foundation', 'Foundation'],
   ['Vanguard Charitable', 'Nonprofit'],
+  ['Benificus Foundation', 'Foundation'],
 ]
 
 const projectSpecific = [
