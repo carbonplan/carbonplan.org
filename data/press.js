@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Grist'],
+    href: 'https://grist.org/regulation/this-little-known-federal-regulator-could-crack-down-on-fraudulent-carbon-offsets/',
+    title: 'This little-known federal regulator could crack down on fraudulent carbon offsets',
+    authors: ['Joseph Winters'],
+    date: '07-21-2023',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/opinion/articles/2023-06-27/carbon-removal-industry-really-wants-to-be-regulated?leadSource=uverify%20wall#xj4y7vzkg',
     title: 'An industry that actually welcomes regulation',
