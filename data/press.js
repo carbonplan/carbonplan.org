@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Grist'],
     href: 'https://grist.org/regulation/this-little-known-federal-regulator-could-crack-down-on-fraudulent-carbon-offsets/',
-    title: 'This little-known federal regulator could crack down on fraudulent carbon offsets',
+    title:
+      'This little-known federal regulator could crack down on fraudulent carbon offsets',
     authors: ['Joseph Winters'],
     date: '07-21-2023',
     format: 'print',
