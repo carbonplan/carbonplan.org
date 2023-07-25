@@ -56,6 +56,11 @@ const team = [
     role: 'Operations Associate',
     bio: 'Sage is a committed social and climate justice advocate with over a decade of experience working with global nonprofits. Sage brings a passion and dedication for all things operations at CarbonPlan.',
   },
+  {
+    name: 'Tyler Kukla',
+    role: 'Research Scientist',
+    bio: 'Tyler is a geochemist and climate scientist passionate about climate action that is rooted in a deep understanding of Earth system dynamics. He holds a PhD in Geological Sciences from Stanford University and a BA in Earth and Planetary Sciences from Northwestern University.',
+  },
 ]
 
 const board = [
