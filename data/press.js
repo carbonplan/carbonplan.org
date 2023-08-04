@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['OPB'],
+    href: 'https://www.opb.org/article/2023/08/02/climate-change-carbon-offset-oregon/',
+    title:
+      'A giant Oregon wildfire shows the limits of carbon offsets in fighting climate change',
+    authors: ['Hal Bernton'],
+    date: '08-02-2023',
+    format: 'print',
+  },
+  {
     source: ['Grist'],
     href: 'https://grist.org/regulation/this-little-known-federal-regulator-could-crack-down-on-fraudulent-carbon-offsets/',
     title:
