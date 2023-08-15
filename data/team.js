@@ -44,7 +44,7 @@ const team = [
   {
     name: 'Anderson Banihirwe',
     role: 'Software Engineer',
-    bio: "Anderson is a software engineer and an open-source software advocate and contributor. He's excited to be working at the intersection of data-intensive climate science and software engineering. He holds a BS in Systems Engineering from the University of Arkansas at Little Rock.",
+    bio: 'Anderson is a software engineer and an open-source software advocate and contributor. He’s excited to be working at the intersection of data-intensive climate science and software engineering. He holds a BS in Systems Engineering from the University of Arkansas at Little Rock.',
   },
   {
     name: 'Max Jones',
@@ -60,6 +60,11 @@ const team = [
     name: 'Tyler Kukla',
     role: 'Research Scientist',
     bio: 'Tyler is a geochemist and climate scientist passionate about climate action that is rooted in a deep understanding of Earth system dynamics. He holds a PhD in Geological Sciences from Stanford University and a BA in Earth and Planetary Sciences from Northwestern University.',
+  },
+  {
+    name: 'Maggie Koerth',
+    role: 'Editorial Lead',
+    bio: 'Maggie is an award-winning journalist with 20 years’ experience covering the intersection of science and society for such publications as FiveThirtyEight.com and The New York Times Magazine. She is a Harvard Nieman Fellow (’15) and Berkman Klein Fellow and a member of the board at the Council for the Advancement of Science Writing.',
   },
 ]
 
