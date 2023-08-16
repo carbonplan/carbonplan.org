@@ -21,7 +21,7 @@ const unrestricted = [
   ['Teach a Man to Fish Foundation', 'Foundation'],
   ['Eutopia Foundation', 'Foundation'],
   ['Jacob Trefethen', 'Individual'],
-  ['Incite labs', 'Corporate'],
+  ['Incite labs', 'Foundation'],
   [
     <span>
       Ilya Volodarsky +<br />
