@@ -28,6 +28,33 @@ const highlights = [
 
 const press = [
   {
+    source: ['Washington Post'],
+    href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/pakistan-extreme-heat-health-impacts-death/',
+    title:
+      'Climate-linked ills threaten humanity',
+    authors: ['Annie Gowen', 'Niko Kommenda', 'Saiyna Bashir'],
+    date: '09-06-2023',
+    format: 'print',
+  },
+  {
+    source: ['Washington Post'],
+    href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
+    title:
+      'Where dangerous heat is surging',
+    authors: ['Niko Kommenda', 'Shannon Osaka', 'Simon Ducroquet', 'Veronica Penney'],
+    date: '09-06-2023',
+    format: 'print',
+  },
+  {
+    source: ['Adirondack Explorer'],
+    href: 'https://www.adirondackexplorer.org/stories/carbon-offsets-and-the-value-of-adirondack-trees',
+    title:
+      'Carbon offsets and the value of Adirondack trees',
+    authors: ['Chloe Bennett'],
+    date: '09-03-2023',
+    format: 'print',
+  },
+  {
     source: ['OPB'],
     href: 'https://www.opb.org/article/2023/08/02/climate-change-carbon-offset-oregon/',
     title:
