@@ -32,7 +32,7 @@ const press = [
     href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/pakistan-extreme-heat-health-impacts-death/',
     title: 'Climate-linked ills threaten humanity',
     authors: ['Annie Gowen', 'Niko Kommenda', 'Saiyna Bashir'],
-    date: '09-06-2023',
+    date: '09-05-2023',
     format: 'print',
   },
   {
@@ -45,7 +45,7 @@ const press = [
       'Simon Ducroquet',
       'Veronica Penney',
     ],
-    date: '09-06-2023',
+    date: '09-05-2023',
     format: 'print',
   },
   {
