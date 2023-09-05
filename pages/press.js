@@ -17,8 +17,8 @@ import {
   Bloomberg,
   LosAngelesTimes,
   NationalGeographic,
-  NPR,
   CBSNews,
+  WashingtonPost,
 } from '../components/press-logos'
 
 const sx = {
@@ -42,10 +42,10 @@ const sx = {
 
 const logos = {
   'Los Angeles Times': <LosAngelesTimes />,
-  'Planet Money': <NPR />,
   Bloomberg: <Bloomberg />,
   'National Geographic': <NationalGeographic />,
   'CBS News': <CBSNews />,
+  'Washington Post': <WashingtonPost />,
 }
 
 const getColors = () => {

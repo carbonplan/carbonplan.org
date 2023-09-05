@@ -1,5 +1,10 @@
 const highlights = [
   {
+    source: 'Washington Post',
+    href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
+    date: '09-05-2023',
+  },
+  {
     source: 'CBS News',
     href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
     date: '08-13-2022',
@@ -18,11 +23,6 @@ const highlights = [
     source: 'Los Angeles Times',
     href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
     date: '09-08-2021',
-  },
-  {
-    source: 'Planet Money',
-    href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
-    date: '05-07-2021',
   },
 ]
 
