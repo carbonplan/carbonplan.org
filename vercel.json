@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/research/ew-quantification-explainer",
+      "destination": "https://research.carbonplan.org/research/ew-quantification-explainer"
+    },
+    {
+      "source": "/research/ew-quantification(.*)",
+      "destination": "https://ew-quantification.carbonplan.org/research/ew-quantification$1"
+    },
+    {
       "source": "/research/cdr-verification-explainer",
       "destination": "https://research.carbonplan.org/research/cdr-verification-explainer"
     },
