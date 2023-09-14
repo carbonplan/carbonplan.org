@@ -170,6 +170,10 @@ const projectSpecific = [
     'Columbia University',
     'Data analysis and visualization work with the Center for Learning the Earth with Artificial Intelligence and Physics (LEAP)',
   ],
+  [
+    'Patrick J McGovern Foundation',
+    'Projects to increase accountability in the voluntary carbon market and tie CDR policy and investments to the best available science',
+  ],
 ]
 
 const partners = [
