@@ -114,6 +114,10 @@ const projectSpecific = [
       <Link href='/research/seaweed-farming'>
         Mapping seaweed farming potential
       </Link>
+      <br />
+      <Link href='/research/cdr-timescale-accounting'>
+        CDR timescale accounting
+      </Link>
     </>,
   ],
   [
