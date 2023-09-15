@@ -599,14 +599,6 @@ const press = [
     format: 'print',
   },
   {
-    source: ['HBO'],
-    href: 'https://www.youtube.com/watch?v=6p8zAbFKpW0',
-    title: 'Last Week Tonight: Carbon Offsets',
-    authors: ['John Oliver'],
-    date: '08-21-2022',
-    format: 'video',
-  },
-  {
     source: ['Roll Call'],
     href: 'https://rollcall.com/2022/08/18/forest-service-to-aid-private-owners-on-carbon-markets-climate/',
     title: 'Forest Service to aid private owners on carbon markets, climate',
