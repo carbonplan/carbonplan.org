@@ -29,6 +29,14 @@ const highlights = [
 const press = [
   {
     source: ['Washington Post'],
+    href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/india-deadly-extreme-heat-poverty/',
+    title: 'The inequality of heat',
+    authors: ['Annie Gowen', 'Niko Kommenda', 'Simon Ducroquet', 'Anant Gupta', 'Atul Loke'],
+    date: '09-22-2023',
+    format: 'print',
+  },
+  {
+    source: ['Washington Post'],
     href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/pakistan-extreme-heat-health-impacts-death/',
     title: 'Climate-linked ills threaten humanity',
     authors: ['Annie Gowen', 'Niko Kommenda', 'Saiyna Bashir'],
