@@ -36,6 +36,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['CarbonBrief'],
+    href: 'https://interactive.carbonbrief.org/carbon-offsets-2023/',
+    title: 'In-depth Q&A: Can ‘carbon offsets’ help to tackle climate change?',
+    authors: ['Josh Gabbatiss et al.,'],
+    date: '09-24-2023',
+    format: 'print',
+  },
+  {
     source: ['Washington Post'],
     href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/india-deadly-extreme-heat-poverty/',
     title: 'The inequality of heat',
