@@ -27,7 +27,7 @@ const highlights = [
 ]
 
 const press = [
- {
+  {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/175773/popular-climate-solution-tank-progress',
     title: 'How this popular climate “solution” could tank our progress',
