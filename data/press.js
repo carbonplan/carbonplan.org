@@ -27,6 +27,14 @@ const highlights = [
 ]
 
 const press = [
+ {
+    source: ['The New Republic'],
+    href: 'https://newrepublic.com/article/175773/popular-climate-solution-tank-progress',
+    title: 'How this popular climate “solution” could tank our progress',
+    authors: ['Kate Aronoff'],
+    date: '09-27-2023',
+    format: 'print',
+  },
   {
     source: ['Washington Post'],
     href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/india-deadly-extreme-heat-poverty/',
