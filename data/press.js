@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Washington Post'],
+    href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/yemen-extreme-heat-hunger-malnourishment/',
+    title: 'Where heat worsens hunger',
+    authors: ['Kareem Fahim', 'Ali Al-Mujahed', 'Lorenzo Tugnoli'],
+    date: '10-12-2023',
+    format: 'print',
+  },
+  {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/175773/popular-climate-solution-tank-progress',
     title: 'How this popular climate “solution” could tank our progress',
