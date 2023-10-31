@@ -28,6 +28,22 @@ const highlights = [
 
 const press = [
   {
+    source: ['Financial Times'],
+    href: 'https://www.ft.com/content/9b062158-3807-43d4-810f-643dc8b7cc59',
+    title: 'Letter: Why car­bon off­sets are no answer to the cli­mate crisis',
+    authors: ['Grayson Badgley'],
+    date: '10-30-2023',
+    format: 'print',
+  },
+  {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2023-10-27/shaky-zimbabwe-project-puts-whole-carbon-market-at-risk?leadSource=uverify%20wall',
+    title: 'Carbon offset market faces chaos as African mega-project collapses',
+    authors: ['Ben Elgin', 'Natasha White'],
+    date: '10-27-2023',
+    format: 'print',
+  },
+  {
     source: ['Washington Post'],
     href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/yemen-extreme-heat-hunger-malnourishment/',
     title: 'Where heat worsens hunger',
