@@ -179,6 +179,18 @@ const projectSpecific = [
     'Patrick J McGovern Foundation',
     'Projects to increase accountability in the voluntary carbon market and tie CDR policy and investments to the best available science',
   ],
+  [
+    'Earth Science Information Partners',
+    <Link href='https://carbonplan.org/blog/forest-offsets-firms'>
+      Fire monitoring improvements
+    </Link>,
+  ],
+  [
+    'Development Seed',
+    <Link href='https://nasa-impact.github.io/zarr-visualization-report/'>
+      Zarr visualization tooling and benchmarking
+    </Link>,
+  ],
 ]
 
 const partners = [
