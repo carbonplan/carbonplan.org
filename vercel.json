@@ -96,7 +96,7 @@
     },
     {
       "source": "/newsletter",
-      "destination": "http://eepurl.com/iAJcMs"
+      "destination": "https://mailchi.mp/carbonplan.org/signup"
     },
     {
       "source": "/research/forest-offsets-map",
