@@ -162,14 +162,16 @@ const Press = () => {
       nav={'press'}
     >
       <Heading
-        description={
+        sidenote={
           <span>
-            A complete list of press that has either covered
-            <Box
-              as='br'
-              sx={{ display: ['none', 'initial', 'initial', 'initial'] }}
-            />{' '}
-            our work or featured members of our team.
+            For media inquiries,{' '}
+            <Box as='span' sx={{ whiteSpace: 'nowrap' }}>
+              contact{' '}
+              <Link href='mailto:press@carbonplan.org'>
+                press@carbonplan.org
+              </Link>
+            </Box>
+            .
           </span>
         }
       >
