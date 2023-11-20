@@ -95,6 +95,10 @@
       "destination": "https://apply.workable.com/carbonplan/"
     },
     {
+      "source": "/newsletter",
+      "destination": "http://eepurl.com/iAJcMs"
+    },
+    {
       "source": "/research/forest-offsets-map",
       "destination": "https://carbonplan.org/research/forest-offsets-crediting"
     },
