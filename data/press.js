@@ -27,6 +27,14 @@ const highlights = [
 ]
 
 const press = [
+ {
+    source: ['Chicago Tribune'],
+    href: 'https://www.chicagotribune.com/news/environment/ct-concrete-farms-carbon-removal-illinois-20231126-ngkvab3cfjaotnfzwqbjftsjca-story.html',
+    title: 'Concrete dust spread on Illinois farm field to remove CO2',
+    authors: ['Adriana Pérez'],
+    date: '11-26-2023',
+    format: 'print',
+  },
   {
     source: ['Financial Times'],
     href: 'https://www.ft.com/content/9b062158-3807-43d4-810f-643dc8b7cc59',
