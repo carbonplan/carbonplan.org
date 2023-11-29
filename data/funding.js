@@ -80,6 +80,7 @@ const unrestricted = [
   ['Vanguard Charitable', 'Nonprofit'],
   ['Benificus Foundation', 'Foundation'],
   ['William Harrington', 'Individual'],
+  ['Joshua Monrad', 'Individual'],
 ]
 
 const projectSpecific = [
