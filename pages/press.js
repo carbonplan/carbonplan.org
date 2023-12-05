@@ -108,11 +108,11 @@ const initFormat = {
   video: true,
 }
 
-const initYear = {
-  2020: true,
-  2021: true,
-  2022: true,
-  2023: true,
+const currentYear = new Date().getFullYear()
+const initYear = {}
+
+for (let year = 2020; year <= currentYear; year++) {
+  initYear[year] = true
 }
 
 const Press = () => {
