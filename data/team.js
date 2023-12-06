@@ -1,5 +1,3 @@
-import { Link } from '@carbonplan/components'
-
 const team = [
   {
     name: 'Jeremy Freeman',
@@ -60,6 +58,11 @@ const team = [
     name: 'Maggie Koerth',
     role: 'Editorial Lead',
     bio: 'Maggie is an award-winning journalist with 20 years’ experience covering the intersection of science and society for such publications as FiveThirtyEight.com and The New York Times Magazine. She is a Harvard Nieman Fellow (’15) and Berkman Klein Fellow and a member of the board at the Council for the Advancement of Science Writing.',
+  },
+  {
+    name: 'Shane Loeffler',
+    role: 'Software Engineer',
+    bio: 'Shane is a software engineer with a background in the Earth Sciences. He’s excited to make maps, visualizations, and tools that aid in fights for environmental justice and climate action. He holds an MS in Earth Sciences from the University of Minnesota.',
   },
 ]
 
