@@ -61,7 +61,7 @@ const team = [
   },
   {
     name: 'Shane Loeffler',
-    role: 'Front-end Software Engineer',
+    role: 'Software Engineer',
     bio: 'Shane is a software engineer with a background in the Earth Sciences. He’s excited to make maps, visualizations, and tools that aid in fights for environmental justice and climate action. He holds an MS in Earth Sciences from the University of Minnesota.',
   },
 ]
