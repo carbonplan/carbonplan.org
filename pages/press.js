@@ -108,35 +108,37 @@ const initFormat = {
   video: true,
 }
 
-const currentYear = new Date().getFullYear()
-const initYear = {}
-
-for (let year = 2020; year <= currentYear; year++) {
-  initYear[year] = true
-}
+const getCurrentYear = () => new Date().getFullYear()
 
 const Press = () => {
   const [format, setFormat] = useState(initFormat)
-  const [year, setYear] = useState(initYear)
+  const [years, setYears] = useState(() => {
+    const currentYear = getCurrentYear()
+    const initYear = {}
+    for (let year = 2020; year <= currentYear; year++) {
+      initYear[year] = true
+    }
+    return initYear
+  })
   const [filtered, setFiltered] = useState(press)
   const [expanded, setExpanded] = useState(false)
 
   useEffect(() => {
     setFiltered(
       press.filter((d) => {
-        const inYear = year[new Date(d.date.replace(/-/g, '/')).getFullYear()]
+        const inYear = years[new Date(d.date.replace(/-/g, '/')).getFullYear()]
         const inFormat = format[d.format]
         return inYear && inFormat
       })
     )
-  }, [year, format])
+  }, [years, format])
 
   const FilterContents = () => {
     return (
       <Group spacing='md'>
         <Filter
-          values={year}
-          setValues={setYear}
+          values={years}
+          setValues={setYears}
           label='Filter by year'
           showAll
         />
