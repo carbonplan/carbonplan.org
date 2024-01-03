@@ -76,7 +76,14 @@ const board = [
 
 const collaborators = [
   ['Bill Anderegg', 'University of Utah'],
-  ['Anna Trugman', 'UC Santa Barbara'],
+  [
+    <span>
+      Anna Trugman
+      <br />
+      Iris Holzer
+    </span>,
+    'UC Santa Barbara',
+  ],
   ['Barbara Haya', 'UC Berkeley'],
   [
     <span>
@@ -107,6 +114,8 @@ const collaborators = [
       Jennifer Pett-Ridge
       <br />
       Eric Slessarev
+      <br />
+      Noah Sokol
     </span>,
     'Lawrence Livermore National Laboratory',
   ],
@@ -118,7 +127,16 @@ const collaborators = [
     </span>,
     'Ordinary Things',
   ],
-  ['Jon Wang', 'UC Irvine'],
+  [
+    <span>
+      Jon Wang
+      <br />
+      Julianne DeAngelo
+      <br />
+      Steven Davis
+    </span>,
+    'UC Irvine',
+  ],
 ]
 
 export { team, board, collaborators }
