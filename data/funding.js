@@ -194,7 +194,8 @@ const projectSpecific = [
   ],
   [
     <span>
-      Grantham Foundation +<br /> Adam Winkel
+      Adam Winkel +<br />
+      Grantham Foundation
       <br />
     </span>,
     <Link href='https://www.energy.gov/technologytransitions/articles/doe-selects-four-national-laboratory-led-teams-accelerate'>
