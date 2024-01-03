@@ -192,6 +192,15 @@ const projectSpecific = [
       Zarr visualization tooling and benchmarking
     </Link>,
   ],
+  [
+    <span>
+      Grantham Foundation +<br /> Adam Winkel
+      <br />
+    </span>,
+    <Link href='https://www.energy.gov/technologytransitions/articles/doe-selects-four-national-laboratory-led-teams-accelerate'>
+      Technical foundations for CDR MRV standards
+    </Link>,
+  ],
 ]
 
 const partners = [
