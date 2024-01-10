@@ -22,7 +22,7 @@ const FAQ = () => {
       <Heading>FAQ</Heading>
       <Question first>Are you a nonprofit?</Question>
       <Answer>
-        Yes. We are a registered non-profit public benefit corporation in
+        Yes. We are a registered nonprofit public benefit corporation in
         California that is recognized by the IRS as a 501(c)(3) tax-exempt
         public charity. Our commitment and responsibility is to the public's
         interest in a safe and stable climate, not to shareholders.

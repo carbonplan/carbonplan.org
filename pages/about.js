@@ -32,7 +32,7 @@ const About = () => {
       title={'About – CarbonPlan'}
       nav={'about'}
       description={
-        'We’re a non-profit that analyzes climate solutions based on the best available science and data.'
+        'We’re a nonprofit that analyzes climate solutions based on the best available science and data.'
       }
     >
       <Heading>About</Heading>
@@ -57,7 +57,7 @@ const About = () => {
                   lineHeight: 'heading',
                 }}
               >
-                We’re a non-profit that analyzes climate solutions based on the
+                We’re a nonprofit that analyzes climate solutions based on the
                 best available science and data.
               </Box>
             </Flex>
@@ -123,7 +123,7 @@ const About = () => {
                 lineHeight: 'heading',
               }}
             >
-              We’re a non-profit that analyzes climate solutions based on the
+              We’re a nonprofit that analyzes climate solutions based on the
               best available science and data.
             </Box>
           </Column>
@@ -193,7 +193,7 @@ const About = () => {
               POLICY
             </Box>
             <Box as='p'>
-              We work with companies, non-profits, and government organizations
+              We work with companies, nonprofits, and government organizations
               to develop robust climate programs, and we collaborate with
               journalists to raise public awareness and promote accountability.
             </Box>
