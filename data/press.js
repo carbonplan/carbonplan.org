@@ -27,6 +27,14 @@ const highlights = [
 ]
 
 const press = [
+    {
+    source: ['The New Republic'],
+    href: 'https://newrepublic.com/article/178100/carbon-offsets-taylors-version',
+    title: 'Carbon Offsets (Taylor’s Version)',
+    authors: ['Kate Aranoff'],
+    date: '10-30-2023',
+    format: 'print',
+  },
   {
     source: ['Financial Times'],
     href: 'https://www.ft.com/content/9b062158-3807-43d4-810f-643dc8b7cc59',
