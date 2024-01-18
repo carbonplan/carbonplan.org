@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['The New Republic'],
+    href: 'https://newrepublic.com/article/178100/carbon-offsets-taylors-version',
+    title: 'Carbon Offsets (Taylor’s Version)',
+    authors: ['Kate Aronoff'],
+    date: '01-15-2024',
+    format: 'print',
+  },
+  {
     source: ['Financial Times'],
     href: 'https://www.ft.com/content/9b062158-3807-43d4-810f-643dc8b7cc59',
     title: 'Letter: Why car­bon off­sets are no answer to the cli­mate crisis',
