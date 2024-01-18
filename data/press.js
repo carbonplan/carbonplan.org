@@ -36,6 +36,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['Chicago Tribune'],
+    href: 'https://www.chicagotribune.com/news/environment/ct-concrete-farms-carbon-removal-illinois-20231126-ngkvab3cfjaotnfzwqbjftsjca-story.html',
+    title: 'In 1st trial of its kind in the U.S., Irish startup spreads concrete dust on Illinois farm field to remove CO2 from the air',
+    authors: ['Adriana Pérez'],
+    date: '11-26-2023',
+    format: 'print',
+  },
+  {
     source: ['Financial Times'],
     href: 'https://www.ft.com/content/9b062158-3807-43d4-810f-643dc8b7cc59',
     title: 'Letter: Why car­bon off­sets are no answer to the cli­mate crisis',
@@ -134,6 +142,23 @@ const press = [
       'This little-known federal regulator could crack down on fraudulent carbon offsets',
     authors: ['Joseph Winters'],
     date: '07-21-2023',
+    format: 'print',
+  },
+  {
+    source: ['CNBC'],
+    href: 'https://www.cnbc.com/2023/07/11/alaska-americas-worst-state-for-business-bets-on-a-new-carbon-boom-.html',
+    title:
+      'With oil production in freefall, Alaska, America’s worst state for business, chases a new carbon boom',
+    authors: ['Scott Cohn'],
+    date: '07-11-2023',
+    format: 'print',
+  },
+  {
+    source: ['The Columbian'],
+    href: 'https://www.columbian.com/news/2023/jun/27/climate-in-the-gorge-4-ways-emissions-warming-hurt-national-scenic-area/',
+    title: 'Climate in the Gorge: 4 ways emissions, warming hurt national scenic area',
+    authors: ['Jim Drake'],
+    date: '06-27-2023',
     format: 'print',
   },
   {
@@ -258,6 +283,15 @@ const press = [
     title:
       'A new alliance for ‘high quality’ carbon removal highlights tensions within the industry',
     authors: ['Emily Pontecorvo'],
+    date: '02-28-2023',
+    format: 'print',
+  },
+   {
+    source: ['Public News Service'],
+    href: 'https://www.publicnewsservice.org/2023-02-28/environment/u-s-carbon-farming-takes-root-but-do-economics-add-up/a83092-1',
+    title:
+      'U.S. Carbon Farming Takes Root, but Do Economics Add Up?',
+    authors: ['Brett Peveto'],
     date: '02-28-2023',
     format: 'print',
   },
