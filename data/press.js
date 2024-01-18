@@ -27,7 +27,7 @@ const highlights = [
 ]
 
 const press = [
-    {
+  {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/178100/carbon-offsets-taylors-version',
     title: 'Carbon Offsets (Taylor’s Version)',
