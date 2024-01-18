@@ -38,7 +38,8 @@ const press = [
   {
     source: ['Chicago Tribune'],
     href: 'https://www.chicagotribune.com/news/environment/ct-concrete-farms-carbon-removal-illinois-20231126-ngkvab3cfjaotnfzwqbjftsjca-story.html',
-    title: 'In 1st trial of its kind in the U.S., Irish startup spreads concrete dust on Illinois farm field to remove CO2 from the air',
+    title:
+      'In 1st trial of its kind in the U.S., Irish startup spreads concrete dust on Illinois farm field to remove CO2 from the air',
     authors: ['Adriana Pérez'],
     date: '11-26-2023',
     format: 'print',
@@ -156,7 +157,8 @@ const press = [
   {
     source: ['The Columbian'],
     href: 'https://www.columbian.com/news/2023/jun/27/climate-in-the-gorge-4-ways-emissions-warming-hurt-national-scenic-area/',
-    title: 'Climate in the Gorge: 4 ways emissions, warming hurt national scenic area',
+    title:
+      'Climate in the Gorge: 4 ways emissions, warming hurt national scenic area',
     authors: ['Jim Drake'],
     date: '06-27-2023',
     format: 'print',
@@ -286,11 +288,10 @@ const press = [
     date: '02-28-2023',
     format: 'print',
   },
-   {
+  {
     source: ['Public News Service'],
     href: 'https://www.publicnewsservice.org/2023-02-28/environment/u-s-carbon-farming-takes-root-but-do-economics-add-up/a83092-1',
-    title:
-      'U.S. Carbon Farming Takes Root, but Do Economics Add Up?',
+    title: 'U.S. Carbon Farming Takes Root, but Do Economics Add Up?',
     authors: ['Brett Peveto'],
     date: '02-28-2023',
     format: 'print',
