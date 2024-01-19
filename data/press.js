@@ -36,6 +36,15 @@ const press = [
     format: 'print',
   },
   {
+    source: ['McKinsey Sustainability'],
+    href: 'https://www.mckinsey.com/capabilities/sustainability/our-insights/carbon-removals-how-to-scale-a-new-gigaton-industry#/l',
+    title:
+      'Carbon removals: How to scale a new gigaton industry',
+    authors: ['Peter Mannion', 'Emma Parry', 'Jonathan Scott', 'Mark Patel', 'Erik Ringvold'],
+    date: '12-04-2023',
+    format: 'print',
+  },
+  {
     source: ['Chicago Tribune'],
     href: 'https://www.chicagotribune.com/news/environment/ct-concrete-farms-carbon-removal-illinois-20231126-ngkvab3cfjaotnfzwqbjftsjca-story.html',
     title:
