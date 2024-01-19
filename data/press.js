@@ -36,7 +36,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['McKinsey Sustainability'],
+    source: ['McKinsey & Company'],
     href: 'https://www.mckinsey.com/capabilities/sustainability/our-insights/carbon-removals-how-to-scale-a-new-gigaton-industry#/l',
     title: 'Carbon removals: How to scale a new gigaton industry',
     authors: [
