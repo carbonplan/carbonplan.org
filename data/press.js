@@ -38,9 +38,14 @@ const press = [
   {
     source: ['McKinsey Sustainability'],
     href: 'https://www.mckinsey.com/capabilities/sustainability/our-insights/carbon-removals-how-to-scale-a-new-gigaton-industry#/l',
-    title:
-      'Carbon removals: How to scale a new gigaton industry',
-    authors: ['Peter Mannion', 'Emma Parry', 'Jonathan Scott', 'Mark Patel', 'Erik Ringvold'],
+    title: 'Carbon removals: How to scale a new gigaton industry',
+    authors: [
+      'Peter Mannion',
+      'Emma Parry',
+      'Jonathan Scott',
+      'Mark Patel',
+      'Erik Ringvold',
+    ],
     date: '12-04-2023',
     format: 'print',
   },
