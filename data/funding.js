@@ -202,6 +202,10 @@ const projectSpecific = [
       Technical foundations for CDR MRV standards
     </Link>,
   ],
+  [
+    'Quadrature Foundation',
+    'Research synthesis on the monitoring, reporting, and verification of carbon removal',
+  ],
 ]
 
 const partners = [
