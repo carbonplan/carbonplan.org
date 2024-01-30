@@ -203,7 +203,7 @@ const projectSpecific = [
     </Link>,
   ],
   [
-    'Quadrature Foundation',
+    'Quadrature Climate Foundation',
     'Research synthesis on the monitoring, reporting, and verification of carbon removal',
   ],
 ]
