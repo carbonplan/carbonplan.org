@@ -71,7 +71,14 @@ const unrestricted = [
   ['Calvin French-Owen', 'Individual'],
   ['Additional Ventures', 'Foundation'],
   ['Rovere O’Kelley Family Fund', 'Individual'],
-  ['Robert and Martha Parke', 'Individual'],
+  [
+    <span>
+      Robert Parke +<br />
+      Martha Parke
+    </span>,
+    ,
+    'Individual',
+  ],
   ['Preston-Werner Foundation', 'Foundation'],
   ['Climate Cousins Foundation', 'Foundation'],
   ['Michael Harm*', 'Individual'],
