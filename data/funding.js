@@ -81,6 +81,13 @@ const unrestricted = [
   ['Benificus Foundation', 'Foundation'],
   ['William Harrington', 'Individual'],
   ['Joshua Monrad', 'Individual'],
+  [
+    <span>
+      Adam Winkel +<br />
+      Abigail Winkel
+    </span>,
+    'Individual',
+  ],
 ]
 
 const projectSpecific = [
@@ -195,6 +202,7 @@ const projectSpecific = [
   [
     <span>
       Adam Winkel +<br />
+      Abigail Winkel +<br />
       Grantham Foundation
       <br />
     </span>,
