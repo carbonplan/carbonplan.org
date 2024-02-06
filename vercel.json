@@ -10,7 +10,7 @@
     },
     {
       "source": "/research/offsets-db(.*)",
-      "destination": "https://offsets-db.carbonplan.org/research/offsets-db$1"
+      "destination": "https://offsets-db-b1ws2t6xe-carbonplan.vercel.app/research/offsets-db$1"
     },
     {
       "source": "/research/ew-quantification-explainer",
