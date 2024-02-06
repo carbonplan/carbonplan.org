@@ -1,6 +1,18 @@
 {
   "rewrites": [
     {
+      "source": "/research/offsets-db-explainer",
+      "destination": "https://research.carbonplan.org/research/offsets-db-explainer"
+    },
+    {
+      "source": "/research/offsets-db-methods",
+      "destination": "https://research.carbonplan.org/research/offsets-db-methods"
+    },
+    {
+      "source": "/research/offsets-db(.*)",
+      "destination": "https://offsets-db.carbonplan.org/research/offsets-db$1"
+    },
+    {
       "source": "/research/ew-quantification-explainer",
       "destination": "https://research.carbonplan.org/research/ew-quantification-explainer"
     },
