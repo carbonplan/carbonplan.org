@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Carbon Pulse'],
+    href: 'https://carbon-pulse.com/258173/',
+    title:
+      'Analysis: New review for zero-rated BC forest carbon project after key data surfaces',
+    authors: ['Allison Gacad'],
+    date: '02-07-2024',
+    format: 'print',
+  },
+  {
     source: ['The New Republic'],
     href: 'https://newrepublic.com/article/178100/carbon-offsets-taylors-version',
     title: 'Carbon offsets (Taylor’s version)',
