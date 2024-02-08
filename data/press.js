@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Carbon Pulse'],
     href: 'https://carbon-pulse.com/258173/',
-    title: 'Analysis: New review for zero-rated BC forest carbon project after key data surfaces',
+    title:
+      'Analysis: New review for zero-rated BC forest carbon project after key data surfaces',
     authors: ['Allison Gacad'],
     date: '02-07-2024',
     format: 'print',
