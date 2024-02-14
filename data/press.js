@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Plan Sea'],
+    href: 'https://www.buzzsprout.com/2141111/14447172?trk=public_post_comment-text',
+    title: 'Ocean Interventions to Address Climate Change',
+    authors: ['Wil Burns', 'Anna Madlener'],
+    date: '02-13-2024',
+    format: 'audio',
+  },
+  {
     source: ['Carbon Pulse'],
     href: 'https://carbon-pulse.com/258173/',
     title:
