@@ -166,8 +166,8 @@ const Index = () => {
                     lineHeight: '1.25',
                   }}
                 >
-                  Read all about the work we did last year, and some of what
-                  we're planning to do next.
+                  Read all about our work and impact from last year and learn
+                  more about our organization.
                 </Box>
               </Box>
             </Column>
