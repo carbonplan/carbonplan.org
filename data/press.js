@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['The Guardian'],
+    href: 'https://www.theguardian.com/australia-news/2024/mar/02/rupert-murdoch-son-in-law-alasdair-macleod-wilmot-cattle-co',
+    title: 'Rupert Murdoch’s son-in-law and the soil carbon revolution',
+    authors: ['Aston Brown'],
+    date: '03-01-2024',
+    format: 'print',
+  },
+  {
     source: ['Plan Sea'],
     href: 'https://www.buzzsprout.com/2141111/14447172?trk=public_post_comment-text',
     title: 'Ocean Interventions to Address Climate Change',
