@@ -7,7 +7,7 @@ const FAQ = () => {
     <Layout
       links={'homepage'}
       title={'Terms – CarbonPlan'}
-      description={'Overview of terms related to code, data, and reuse.'}
+      description={'Terms of use related to our website, code, data, and content.'}
     >
       <Heading>Terms</Heading>
       <Row>
