@@ -10,7 +10,7 @@ const FAQ = () => {
     >
       <Heading>Terms of use</Heading>
       <Row>
-        <Column start={[1, 1, 3, 3]} width={[6, 6, 6, 6]}>
+        <Column start={[1, 2, 3, 3]} width={[6, 5, 6, 6]}>
           <Box
             sx={{
               fontSize: [3, 3, 3, 4],
