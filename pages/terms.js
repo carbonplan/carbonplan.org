@@ -6,7 +6,9 @@ const Terms = () => {
     <Layout
       links={'homepage'}
       title={'Terms – CarbonPlan'}
-      description={'Terms of use related to our website, code, data, and content.'}
+      description={
+        'Terms of use related to our website, code, data, and content.'
+      }
     >
       <Heading>Terms of use</Heading>
       <Row>
