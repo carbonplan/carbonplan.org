@@ -278,86 +278,88 @@ const FAQ = () => {
             Violating laws and rights:
           </Box>
           <Box as='span' variant='styles.p'>
-          <ul>
-            <li>
-              You may not (a) use any Service for any illegal purpose or in
-              violation of any local, state, national, or international laws,
-              (b) violate or encourage others to violate any right of or
-              obligation to a third party, including by infringing,
-              misappropriating, or violating intellectual property,
-              confidentiality, or privacy rights.
-            </li>
-          </ul>
+            <ul>
+              <li>
+                You may not (a) use any Service for any illegal purpose or in
+                violation of any local, state, national, or international laws,
+                (b) violate or encourage others to violate any right of or
+                obligation to a third party, including by infringing,
+                misappropriating, or violating intellectual property,
+                confidentiality, or privacy rights.
+              </li>
+            </ul>
           </Box>
           <Box as='span' variant='styles.h3'>
             Solicitation:
           </Box>
           <Box as='span' variant='styles.p'>
-          <ul>
-            <li>
-              You may not use the Services or any information provided through
-              the Services for the transmission of advertising or promotional
-              materials, including junk mail, spam, chain letters, pyramid
-              schemes, or any other form of unsolicited or unwelcome
-              solicitation.
-            </li>
-          </ul>
+            <ul>
+              <li>
+                You may not use the Services or any information provided through
+                the Services for the transmission of advertising or promotional
+                materials, including junk mail, spam, chain letters, pyramid
+                schemes, or any other form of unsolicited or unwelcome
+                solicitation.
+              </li>
+            </ul>
           </Box>
           <Box as='span' variant='styles.h3'>
             Disruption:
           </Box>
           <Box as='span' variant='styles.p'>
-          <ul>
-            <li>
-              You may not use the Services in any manner that could disable,
-              overburden, damage, or impair the Services, or interfere with any
-              other party’s use and enjoyment of the Services; including by (a)
-              uploading or otherwise disseminating any virus, adware, spyware,
-              worm or other malicious code, or (b) interfering with or
-              disrupting any network, equipment, or server connected to or used
-              to provide any of the Services, or violating any regulation,
-              policy, or procedure of any network, equipment, or server.
-            </li>
-          </ul>
+            <ul>
+              <li>
+                You may not use the Services in any manner that could disable,
+                overburden, damage, or impair the Services, or interfere with
+                any other party’s use and enjoyment of the Services; including
+                by (a) uploading or otherwise disseminating any virus, adware,
+                spyware, worm or other malicious code, or (b) interfering with
+                or disrupting any network, equipment, or server connected to or
+                used to provide any of the Services, or violating any
+                regulation, policy, or procedure of any network, equipment, or
+                server.
+              </li>
+            </ul>
           </Box>
           <Box as='span' variant='styles.h3'>
             Harming others:
           </Box>
           <Box as='span' variant='styles.p'>
-          <ul>
-            <li>
-              You may not post or transmit Content on or through the Services
-              that is harmful, offensive, obscene, abusive, invasive of privacy,
-              defamatory, hateful or otherwise discriminatory, false or
-              misleading, or incites an illegal act;
-            </li>
-            <li>
-              You may not intimidate or harass another through the Services;
-              and, you may not post or transmit any personally identifiable
-              information about persons under 13 years of age on or through the
-              Services.
-            </li>
-          </ul>
+            <ul>
+              <li>
+                You may not post or transmit Content on or through the Services
+                that is harmful, offensive, obscene, abusive, invasive of
+                privacy, defamatory, hateful or otherwise discriminatory, false
+                or misleading, or incites an illegal act;
+              </li>
+              <li>
+                You may not intimidate or harass another through the Services;
+                and, you may not post or transmit any personally identifiable
+                information about persons under 13 years of age on or through
+                the Services.
+              </li>
+            </ul>
           </Box>
           <Box as='span' variant='styles.h3'>
             Impersonation or unauthorized access:
           </Box>
           <Box as='span' variant='styles.p'>
-          <ul>
-            <li>
-              You may not impersonate another person or entity, or misrepresent
-              your affiliation with a person or entity when using the Services;
-            </li>
-            <li>
-              You may not use or attempt to use another’s account or personal
-              information without authorization; and
-            </li>
-            <li>
-              You may not attempt to gain unauthorized access to the Services,
-              or the computer systems or networks connected to the Services,
-              through hacking, password mining, or any other means.
-            </li>
-          </ul>
+            <ul>
+              <li>
+                You may not impersonate another person or entity, or
+                misrepresent your affiliation with a person or entity when using
+                the Services;
+              </li>
+              <li>
+                You may not use or attempt to use another’s account or personal
+                information without authorization; and
+              </li>
+              <li>
+                You may not attempt to gain unauthorized access to the Services,
+                or the computer systems or networks connected to the Services,
+                through hacking, password mining, or any other means.
+              </li>
+            </ul>
           </Box>
           <Box as='p' variant='styles.p'>
             <i>
@@ -498,35 +500,35 @@ const FAQ = () => {
             our Designated Agent, containing each of the following:
           </Box>
           <Box as='span' variant='styles.p'>
-          <ol>
-            <li>
-              Reasonably sufficient details to enable us to identify the work
-              claimed to be infringed or, if multiple works are claimed to be
-              infringed, a representative list of such works (for example:
-              title, author, any registration or tracking number, URL);
-            </li>
-            <li>
-              Reasonably sufficient detail to enable us to identify and locate
-              the material that is claimed to be infringing (for example a link
-              to the page that contains the material);
-            </li>
-            <li>
-              Your contact information so that we can contact you (for example,
-              your address, telephone number, email address);
-            </li>
-            <li>
-              A statement that you have a good faith belief that the use of the
-              material identified in (2) is not authorized by the copyright
-              owner, its agent, or the law;
-            </li>
-            <li>
-              A statement, under penalty of perjury, that the information in the
-              notification is accurate and that you are authorized to act on
-              behalf of the owner of the exclusive right that is alleged to be
-              infringed.
-            </li>
-            <li>Your physical or electronic signature.</li>
-          </ol>
+            <ol>
+              <li>
+                Reasonably sufficient details to enable us to identify the work
+                claimed to be infringed or, if multiple works are claimed to be
+                infringed, a representative list of such works (for example:
+                title, author, any registration or tracking number, URL);
+              </li>
+              <li>
+                Reasonably sufficient detail to enable us to identify and locate
+                the material that is claimed to be infringing (for example a
+                link to the page that contains the material);
+              </li>
+              <li>
+                Your contact information so that we can contact you (for
+                example, your address, telephone number, email address);
+              </li>
+              <li>
+                A statement that you have a good faith belief that the use of
+                the material identified in (2) is not authorized by the
+                copyright owner, its agent, or the law;
+              </li>
+              <li>
+                A statement, under penalty of perjury, that the information in
+                the notification is accurate and that you are authorized to act
+                on behalf of the owner of the exclusive right that is alleged to
+                be infringed.
+              </li>
+              <li>Your physical or electronic signature.</li>
+            </ol>
           </Box>
           <Box as='p' variant='styles.p'>
             Our Designated Agent may be reached at:
