@@ -1,7 +1,7 @@
 import { Box } from 'theme-ui'
 import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
 
-const FAQ = () => {
+const Terms = () => {
   return (
     <Layout
       links={'homepage'}
@@ -637,4 +637,4 @@ const FAQ = () => {
   )
 }
 
-export default FAQ
+export default Terms
