@@ -71,7 +71,7 @@ const board = [
   ['Kelly Gannon', 'NDWA Labs'],
   ['Gernot Wagner', 'Columbia Business School'],
   ['Arjuna Dibley', 'University of Melbourne / University of Oxford'],
-  ['Tracy Teal', 'Posit'],
+  ['Tracy Teal', 'Nixtla'],
 ]
 
 const collaborators = [
