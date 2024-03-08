@@ -31,6 +31,7 @@
     "@mdx-js/react": "^2.1.5",
     "@stripe/stripe-js": "^1.13.2",
     "@theme-ui/color": "^0.15.3",
+    "cmdk": "^0.1.20",
     "d3-array": "^3.1.1",
     "d3-format": "^3.1.0",
     "d3-scale": "^4.0.2",
