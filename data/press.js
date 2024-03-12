@@ -30,7 +30,8 @@ const press = [
   {
     source: ['Bloomberg'],
     href: 'hhttps://www.bloomberg.com/news/articles/2024-03-12/texas-wildfire-smokehouse-creek-fire-burned-ranch-tied-to-soil-carbon-credits?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcxMDI2NTA1NCwiZXhwIjoxNzEwODY5ODU0LCJhcnRpY2xlSWQiOiJTQThXQ0pUMEcxS1cwMCIsImJjb25uZWN0SWQiOiJFMkUzODg2QzgzREM0NTUxOEVFM0M2MDRGN0ZBRTlGMyJ9.23bLRBV4NywZ7x0QgdQZjXj1CBMNMvu7LBvK0hLdIH8',
-    title: 'The Texas wildfire burned surprising source of carbon credits: soil',
+    title:
+      'The Texas wildfire burned surprising source of carbon credits: soil',
     authors: ['Zahra Hirji'],
     date: '03-12-2024',
     format: 'print',
