@@ -30,8 +30,7 @@ const press = [
   {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2024/03/17/opinion/solar-geoengineering-risks-research.html',
-    title:
-      'The best way to find out if we can cool the planet',
+    title: 'The best way to find out if we can cool the planet',
     authors: ['Jeremy Freeman'],
     date: '03-17-2024',
     format: 'print',
