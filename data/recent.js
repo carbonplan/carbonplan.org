@@ -1,5 +1,5 @@
 const research1 = {
-  id: 'offsets-db-test',
+  id: 'offsets-db',
   date: '03-08-2024',
   href: '/research/offsets-db-explainer',
   title: 'OffsetsDB',
