@@ -1,19 +1,19 @@
 const research1 = {
+  id: 'offsets-db-test',
+  date: '03-08-2024',
+  href: '/research/offsets-db-explainer',
+  title: 'OffsetsDB',
+  summary:
+    'A regularly-updating, harmonized database of carbon offset projects and credits for download and interactive exploration.',
+}
+
+const research2 = {
   id: 'extreme-heat',
   date: '09-05-2023',
   title: 'Modeling extreme heat',
   summary:
-    'We developed a new dataset modeling humid heat now and into the future, in collaboration with The Washington Post.',
+    'A new dataset modeling humid heat now and into the future, developed in collaboration with The Washington Post.',
   href: '/research/extreme-heat-explainer',
-}
-
-const research2 = {
-  id: 'cdr-verification',
-  date: '09-19-2022',
-  href: '/research/cdr-verification',
-  title: 'CDR verification framework',
-  summary:
-    'An interactive tool to map quantification capacity and uncertainty across CDR pathways.',
 }
 
 const highlights = [
