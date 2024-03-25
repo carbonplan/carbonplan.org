@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['CBC'],
+    href: 'https://www.cbc.ca/news/canada/north/climate-change-artic-winter-games-green-energy-1.7151747',
+    title:
+      'With climate change affecting the Arctic Winter Games, how can the event itself be greener?',
+    authors: ['Luke Carroll'],
+    date: '03-23-2024',
+    format: 'print',
+  },
+  {
     source: ['New York Times'],
     href: 'https://www.nytimes.com/2024/03/17/opinion/solar-geoengineering-risks-research.html',
     title: 'The best way to find out if we can cool the planet',
