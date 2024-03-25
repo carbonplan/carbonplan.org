@@ -30,7 +30,8 @@ const press = [
   {
     source: ['CBC'],
     href: 'https://www.cbc.ca/news/canada/north/climate-change-artic-winter-games-green-energy-1.7151747',
-    title: 'With climate change affecting the Arctic Winter Games, how can the event itself be greener?',
+    title:
+      'With climate change affecting the Arctic Winter Games, how can the event itself be greener?',
     authors: ['Luke Carroll'],
     date: '03-23-2024',
     format: 'print',
