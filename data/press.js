@@ -70,6 +70,14 @@ const press = [
     format: 'audio',
   },
   {
+    source: ['Slate'],
+    href: 'https://slate.com/technology/2024/02/carbon-offsets-california-fire-neutral-shipping-climate-change.html',
+    title: 'Carbon offsets have a fatal flaw',
+    authors: ['Grayson Badgley'],
+    date: '02-08-2024',
+    format: 'print',
+  },
+  {
     source: ['Carbon Pulse'],
     href: 'https://carbon-pulse.com/258173/',
     title:
