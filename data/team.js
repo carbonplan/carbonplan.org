@@ -64,6 +64,11 @@ const team = [
     role: 'Software Engineer',
     bio: 'Shane is a software engineer with a background in the Earth Sciences. He’s excited to make maps, visualizations, and tools that aid in fights for environmental justice and climate action. He holds an MS in Earth Sciences from the University of Minnesota.',
   },
+  {
+    name: 'Chris Allen',
+    role: 'Policy Analyst',
+    bio: 'Chris is a lawyer specializing in administrative law and regulatory policy. He works on policy applications for CarbonPlan’s research and tools. He holds a JD from New York University, an MA from the University of Chicago, and a BA from Berkeley.',
+  },
 ]
 
 const board = [
