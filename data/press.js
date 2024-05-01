@@ -28,6 +28,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2024-04-30/world-s-largest-forestry-offsets-project-has-license-revoked',
+    title:
+      'World’s largest forestry offsets project has license revoked',
+    authors: ['Sheryl Tian Tong Lee'],
+    date: '04-29-2024',
+    format: 'print',
+  },
+  {
     source: ['CBC'],
     href: 'https://www.cbc.ca/news/canada/north/climate-change-artic-winter-games-green-energy-1.7151747',
     title:
