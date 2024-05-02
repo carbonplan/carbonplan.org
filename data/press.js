@@ -29,7 +29,7 @@ const highlights = [
 const press = [
   {
     source: ['Heatmap'],
-    href: 'https://www.technologyreview.com/2024/05/01/1091988/a-us-push-to-use-ethanol-as-aviation-fuel-raises-major-climate-concerns/',
+    href: 'https://heatmap.news/technology/vaulted-deep-carbon-removal',
     title: 'Does darbon removal need to be dumb to work?',
     authors: ['Emily Pontecorvo'],
     date: '05-01-2024',
