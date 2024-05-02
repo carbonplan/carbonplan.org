@@ -30,8 +30,7 @@ const press = [
   {
     source: ['Heatmap'],
     href: 'https://www.technologyreview.com/2024/05/01/1091988/a-us-push-to-use-ethanol-as-aviation-fuel-raises-major-climate-concerns/',
-    title:
-      'Does darbon removal need to be dumb to work?',
+    title: 'Does darbon removal need to be dumb to work?',
     authors: ['Emily Pontecorvo'],
     date: '05-01-2024',
     format: 'print',
@@ -48,8 +47,7 @@ const press = [
   {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2024-04-30/world-s-largest-forestry-offsets-project-has-license-revoked',
-    title:
-      'World’s largest forestry offsets project has license revoked',
+    title: 'World’s largest forestry offsets project has license revoked',
     authors: ['Sheryl Tian Tong Lee'],
     date: '04-29-2024',
     format: 'print',
