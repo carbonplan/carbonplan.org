@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Canary Media'],
+    href: 'https://www.canarymedia.com/articles/air-travel/can-corn-ethanol-really-help-decarbonize-u.s.-air-travel',
+    title: 'Can corn ethanol really help decarbonize US air travel?',
+    authors: ['Maria Gallucci'],
+    date: '05-06-2024',
+    format: 'print',
+  },
+  {
     source: ['Heatmap'],
     href: 'https://heatmap.news/technology/vaulted-deep-carbon-removal',
     title: 'Does darbon removal need to be dumb to work?',
