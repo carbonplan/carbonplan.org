@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Heatmap'],
+    href: 'https://heatmap.news/technology/biochar-carbon-removal-microsoft',
+    title: 'Biochar is dominating the carbon removal market — but no one seems to care',
+    authors: ['Katie Brigham'],
+    date: '05-15-2024',
+    format: 'print',
+  },
+  {
     source: ['Canary Media'],
     href: 'https://www.canarymedia.com/articles/air-travel/can-corn-ethanol-really-help-decarbonize-u.s.-air-travel',
     title: 'Can corn ethanol really help decarbonize US air travel?',
