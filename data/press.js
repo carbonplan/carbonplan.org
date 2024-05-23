@@ -28,7 +28,7 @@ const highlights = [
 
 const press = [
   {
-    source: ['OSS for Climate],
+    source: ['OSS for Climate'],
     href: 'https://ossforclimate.sustainoss.org/2',
     title: 'Max Jones on CarbonPlan',
     authors: ['Richard Littauer'],
