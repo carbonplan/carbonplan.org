@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['OSS for Climate],
+    href: 'https://ossforclimate.sustainoss.org/2',
+    title: 'Max Jones on CarbonPlan',
+    authors: ['Maria Gallucci'],
+    date: '05-23-2024',
+    format: 'audio',
+  },
+  {
     source: ['Canary Media'],
     href: 'https://www.canarymedia.com/articles/air-travel/can-corn-ethanol-really-help-decarbonize-u.s.-air-travel',
     title: 'Can corn ethanol really help decarbonize US air travel?',
