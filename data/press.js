@@ -34,7 +34,7 @@ const press = [
     authors: ['Kale Williams'],
     date: '05-24-2024',
     format: 'print',
-  }, 
+  },
   {
     source: ['OSS for Climate'],
     href: 'https://ossforclimate.sustainoss.org/2',
@@ -47,10 +47,15 @@ const press = [
     source: ['Politico'],
     href: 'https://www.politico.com/newsletters/california-climate/2024/05/13/what-a-less-buttery-biscuit-means-for-late-session-jams-00157762',
     title: 'What a less-buttery biscuit means for late-session jams',
-    authors: ['Debra Kahn', 'Alex Nieves', 'Blanca Begert', 'Camille Von Kaenel'],
+    authors: [
+      'Debra Kahn',
+      'Alex Nieves',
+      'Blanca Begert',
+      'Camille Von Kaenel',
+    ],
     date: '05-13-2024',
     format: 'print',
-  }, 
+  },
   {
     source: ['Canary Media'],
     href: 'https://www.canarymedia.com/articles/air-travel/can-corn-ethanol-really-help-decarbonize-u.s.-air-travel',
