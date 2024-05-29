@@ -28,12 +28,33 @@ const highlights = [
 
 const press = [
   {
+    source: ['KGW'],
+    href: 'https://www.kgw.com/article/tech/science/environment/northwest-wildfire-reforestation-recovery-carbon-credits-seed/283-0d3d309b-7857-4cd7-bee4-5ecaa839717f',
+    title: 'Carbon credits fuel wildfire restoration in Northwest forests',
+    authors: ['Kale Williams'],
+    date: '05-24-2024',
+    format: 'print',
+  },
+  {
     source: ['OSS for Climate'],
     href: 'https://ossforclimate.sustainoss.org/2',
     title: 'Max Jones on CarbonPlan',
     authors: ['Richard Littauer'],
     date: '05-23-2024',
     format: 'audio',
+  },
+  {
+    source: ['Politico'],
+    href: 'https://www.politico.com/newsletters/california-climate/2024/05/13/what-a-less-buttery-biscuit-means-for-late-session-jams-00157762',
+    title: 'What a less-buttery biscuit means for late-session jams',
+    authors: [
+      'Debra Kahn',
+      'Alex Nieves',
+      'Blanca Begert',
+      'Camille Von Kaenel',
+    ],
+    date: '05-13-2024',
+    format: 'print',
   },
   {
     source: ['Canary Media'],
