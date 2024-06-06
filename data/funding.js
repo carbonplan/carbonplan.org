@@ -217,8 +217,19 @@ const projectSpecific = [
     </Link>,
   ],
   [
-    'Quadrature Climate Foundation',
-    'Research synthesis on the monitoring, reporting, and verification of carbon removal',
+    'NASA / University of Washington',
+    'Enhancing the open-source Python Xarray library with new data model abstractions',
+  ],
+  [
+    'World Bank',
+    'Extreme heat dataset extension',
+  ],
+  [
+    <span>
+      NASA +<br />
+      University of Washington
+    </span>,
+    'Enhancing the open-source Python Xarray library with new data model abstractions',
   ],
 ]
 
