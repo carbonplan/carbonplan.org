@@ -216,9 +216,13 @@ const projectSpecific = [
       Technical foundations for CDR MRV standards
     </Link>,
   ],
+  ['World Bank', 'Extreme heat dataset extension'],
   [
-    'Quadrature Climate Foundation',
-    'Research synthesis on the monitoring, reporting, and verification of carbon removal',
+    <span>
+      NASA +<br />
+      University of Washington
+    </span>,
+    'Enhancing the open-source Python Xarray library with new data model abstractions',
   ],
 ]
 
