@@ -220,10 +220,7 @@ const projectSpecific = [
     'NASA / University of Washington',
     'Enhancing the open-source Python Xarray library with new data model abstractions',
   ],
-  [
-    'World Bank',
-    'Extreme heat dataset extension',
-  ],
+  ['World Bank', 'Extreme heat dataset extension'],
   [
     <span>
       NASA +<br />
