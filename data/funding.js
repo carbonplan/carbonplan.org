@@ -216,10 +216,6 @@ const projectSpecific = [
       Technical foundations for CDR MRV standards
     </Link>,
   ],
-  [
-    'NASA / University of Washington',
-    'Enhancing the open-source Python Xarray library with new data model abstractions',
-  ],
   ['World Bank', 'Extreme heat dataset extension'],
   [
     <span>
