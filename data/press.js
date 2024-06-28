@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Heatmap'],
+    href: 'https://heatmap.news/climate/what-is-carbon-removal',
+    title: 'Carbon removal's existential question',
+    authors: ['Emily Pontecorvo'],
+    date: '06-27-2024',
+    format: 'print',
+  },
+  {
     source: ['KGW'],
     href: 'https://www.kgw.com/article/tech/science/environment/northwest-wildfire-reforestation-recovery-carbon-credits-seed/283-0d3d309b-7857-4cd7-bee4-5ecaa839717f',
     title: 'Carbon credits fuel wildfire restoration in Northwest forests',
