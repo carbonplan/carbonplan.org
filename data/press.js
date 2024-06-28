@@ -30,7 +30,7 @@ const press = [
   {
     source: ['Heatmap'],
     href: 'https://heatmap.news/climate/what-is-carbon-removal',
-    title: 'Carbon removal's existential question',
+    title: 'Carbon removal’s existential question',
     authors: ['Emily Pontecorvo'],
     date: '06-28-2024',
     format: 'print',
