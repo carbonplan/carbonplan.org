@@ -69,6 +69,11 @@ const team = [
     role: 'Policy Analyst',
     bio: 'Chris is a lawyer specializing in administrative law and regulatory policy. He works on policy applications for CarbonPlan’s research and tools. He holds a JD from New York University, an MA from the University of Chicago, and a BA from Berkeley.',
   },
+  {
+    name: 'Tracy Aquino Anderson',
+    role: 'Deputy Director',
+    bio: 'Tracy is an experienced leader of high-impact teams working at the intersection of social purpose, culture, and technology. Previously a program director at National Domestic Workers Alliance, she is excited to help build CarbonPlan’s capacity to advance effective climate solutions. She holds a BA from Yale College.',
+  },
 ]
 
 const board = [

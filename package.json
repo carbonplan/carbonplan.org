@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/carbonplan/carbonplan.org#readme",
   "dependencies": {
-    "@carbonplan/components": "^12.5.0",
+    "@carbonplan/components": "^12.6.2",
     "@carbonplan/emoji": "^2.0.0",
     "@carbonplan/icons": "^2.0.0",
     "@carbonplan/theme": "^7.0.0",
