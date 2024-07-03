@@ -28,6 +28,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2024-07-03/carbon-offsets-blessed-by-key-oversight-body-face-scrutiny?srnd=green',
+    title: 'Carbon offsets endorsed by key oversight body questioned by NGO',
+    authors: ['Natasha White'],
+    date: '07-02-2024',
+    format: 'print',
+  },
+  {
     source: ['Heatmap'],
     href: 'https://heatmap.news/climate/what-is-carbon-removal',
     title: 'Carbon removal’s existential question',
