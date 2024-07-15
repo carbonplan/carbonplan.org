@@ -40,11 +40,6 @@ const team = [
     bio: 'Anderson is a software engineer and an open-source software advocate and contributor. He’s excited to be working at the intersection of data-intensive climate science and software engineering. He holds a BS in Systems Engineering from the University of Arkansas at Little Rock.',
   },
   {
-    name: 'Max Jones',
-    role: 'Open Source Lead',
-    bio: 'Max is a data scientist focused on machine learning, cloud computing, and open source software development. He is excited to build tools that enable climate action. Max holds a PhD from the Massachusetts Institute of Technology — Woods Hole Oceanographic Institution Joint Program in Oceanography.',
-  },
-  {
     name: 'Sage',
     role: 'Operations Associate',
     bio: 'Sage is a committed social and climate justice advocate with over a decade of experience working with global nonprofits. Sage brings a passion and dedication for all things operations at CarbonPlan.',
