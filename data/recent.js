@@ -1,4 +1,13 @@
 const research1 = {
+  id: 'oae-efficiency',
+  date: '07-16-2024',
+  href: '/research/oae-efficiency-explainer',
+  title: 'Mapping the efficiency of ocean alkalinity enhancement',
+  summary:
+    'We developed a tool to explore a new dataset that makes it easier to see how the efficiency of ocean alkalinity enhancement varies around the world, in collaboration with [C]Worthy.',
+}
+
+const research2 = {
   id: 'offsets-db',
   date: '03-08-2024',
   href: '/research/offsets-db-explainer',
@@ -7,16 +16,15 @@ const research1 = {
     'A regularly-updating, harmonized database of carbon offset projects and credits for download and interactive exploration.',
 }
 
-const research2 = {
-  id: 'extreme-heat',
-  date: '09-05-2023',
-  title: 'Modeling extreme heat',
-  summary:
-    'A new dataset modeling humid heat now and into the future, developed in collaboration with The Washington Post.',
-  href: '/research/extreme-heat-explainer',
-}
-
 const highlights = [
+  {
+    label: 'OAE Efficiency',
+    href: '/research/oae-efficiency',
+  },
+  {
+    label: 'OffsetsDB',
+    href: '/research/offsets-db',
+  },
   {
     label: 'Extreme heat',
     href: '/research/extreme-heat-explainer',
@@ -24,14 +32,6 @@ const highlights = [
   {
     label: 'CDR verification',
     href: '/research/cdr-verification',
-  },
-  {
-    label: 'CDR scale barriers',
-    href: '/research/cdr-scale-barriers',
-  },
-  {
-    label: 'CMIP6 downscaling',
-    href: '/research/cmip6-downscaling',
   },
 ]
 
