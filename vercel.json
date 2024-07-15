@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/research/oae-efficiency-explainer",
+      "destination": "https://research.carbonplan.org/research/oae-efficiency-explainer"
+    },
+    {
+      "source": "/research/oae-efficiency(.*)",
+      "destination": "https://oae-efficiency.carbonplan.org/research/oae-efficiency$1"
+    },
+    {
       "source": "/research/offsets-db-explainer",
       "destination": "https://research.carbonplan.org/research/offsets-db-explainer"
     },
