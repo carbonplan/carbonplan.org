@@ -32,6 +32,7 @@ const press = [
     href: 'https://www.straitstimes.com/asia/se-asia/carbon-credit-project-half-the-size-of-singapore-wins-court-reprieve',
     title:
       'Carbon credit project half the size of Singapore wins court reprieve',
+    authors: [],
     date: '07-12-2024',
     format: 'print',
   },
