@@ -30,14 +30,16 @@ const press = [
   {
     source: ['The Straits Times'],
     href: 'https://www.straitstimes.com/asia/se-asia/carbon-credit-project-half-the-size-of-singapore-wins-court-reprieve',
-    title: 'Carbon credit project half the size of Singapore wins court reprieve',
+    title:
+      'Carbon credit project half the size of Singapore wins court reprieve',
     date: '07-12-2024',
     format: 'print',
   },
   {
     source: ['The Guardian'],
     href: 'https://www.theguardian.com/environment/article/2024/jul/11/finite-carbon-forest-offsets-analysis',
-    title: 'BP-owned company is selling carbon credits on trees that aren’t in danger, analysis finds',
+    title:
+      'BP-owned company is selling carbon credits on trees that aren’t in danger, analysis finds',
     authors: ['Luke Barratt', 'Miranda Green'],
     date: '07-11-2024',
     format: 'print',
