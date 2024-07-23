@@ -30,9 +30,8 @@ const press = [
   {
     source: ['The Journalist’s Resource'],
     href: 'https://journalistsresource.org/home/carbon-offsets-4-things-journalists-need-to-understand/',
-    title:
-      'Carbon offsets: 4 things journalists need to understand',
-    authors: [Clark Merrefield],
+    title: 'Carbon offsets: 4 things journalists need to understand',
+    authors: ['Clark Merrefield'],
     date: '07-22-2024',
     format: 'print',
   },
