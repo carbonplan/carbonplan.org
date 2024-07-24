@@ -30,7 +30,7 @@ const press = [
   {
     source: ['Axios'],
     href: 'https://www.axios.com/visuals/olympics-2024-paris-heat-climate',
-    title: 'Extreme heat threatens future summer olympics',
+    title: 'Extreme heat threatens future summer Olympics',
     authors: [
       'Rahul Mukherjee',
       'Erin Davis',
