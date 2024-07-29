@@ -319,12 +319,9 @@ function Item({ data, final = false }) {
           '&:hover > #container > #title > #span-1 > #span-2 > #arrow': {
             transform: 'rotate(45deg)',
           },
-          '&:hover #title, &:hover #metadata': {
+          '&:hover': {
             opacity: 0.6,
             color: 'primary',
-          },
-          '&:hover #authors': {
-            opacity: 0.6,
           },
         },
         '@media (hover: none) and (pointer: coarse)': {
