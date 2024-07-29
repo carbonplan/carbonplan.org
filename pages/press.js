@@ -304,7 +304,7 @@ const Press = () => {
 }
 
 function Item({ data, final = false }) {
-  const { source, title, href, date, authors } = data
+  const { source, title, href, date, authors, subtitle } = data
 
   const sources = Array.isArray(source) ? source : [source]
 
@@ -319,7 +319,6 @@ function Item({ data, final = false }) {
           '&:hover > #container > #title > #span-1 > #span-2 > #arrow': {
             transform: 'rotate(45deg)',
           },
-          '&:hover > #container': {},
           '&:hover': {
             opacity: 0.6,
             color: 'primary',
@@ -352,6 +351,7 @@ function Item({ data, final = false }) {
         }}
       >
         <Grid
+          id='metadata'
           columns={['100px 1fr', '100px 1fr', '100px 1fr', '120px 1fr']}
           gap={[0]}
           sx={{ mt: ['-1px'] }}
@@ -433,28 +433,50 @@ function Item({ data, final = false }) {
             </Box>
           </span>
         </Box>
-        {authors.length > 0 && (
+
+        {(authors?.length > 0 || subtitle) && (
           <Box
-            id='authors'
             sx={{
               mt: [2, 2, 2, '10px'],
               mb: [2],
               pb: [1],
-              color: 'text',
             }}
           >
-            <Box
-              as='span'
-              id='authors-span'
-              sx={{
-                letterSpacing: 'body',
-                fontFamily: 'body',
-                fontSize: [2, 2, 2, 3],
-                color: 'secondary',
-              }}
-            >
-              by {authors.join(' + ')}
-            </Box>
+            {authors?.length > 0 && !subtitle && (
+              <Box
+                as='span'
+                id='authors'
+                sx={{
+                  letterSpacing: 'body',
+                  fontFamily: 'body',
+                  fontSize: [2, 2, 2, 3],
+                  color: 'secondary',
+                }}
+              >
+                by {authors.join(' + ')}
+              </Box>
+            )}
+
+            {subtitle && (
+              <Box
+                as='span'
+                id='subtitle'
+                sx={{
+                  letterSpacing: 'body',
+                  fontFamily: 'body',
+                  fontSize: [2, 2, 2, 3],
+                  color: 'secondary',
+                  '& a': {
+                    color: 'secondary',
+                  },
+                  '& a:hover': {
+                    color: 'primary',
+                  },
+                }}
+              >
+                {subtitle}
+              </Box>
+            )}
           </Box>
         )}
       </Box>
