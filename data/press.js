@@ -31,14 +31,14 @@ const highlights = [
 const press = [
   {
     source: ['Axios Local'],
-    href: 'https://www.axios.com/local/raleigh/2024/07/24/cancel-activity-2050-summer-temperatures-nc',
+    href: 'https://www.axios.com/local/washington-dc/2024/07/26/olympics-climate-change-heat-waves',
     title:
       'Extreme heat may prevent D.C. area from hosting future Summer Olympics',
     subtitle: (
       <>
         Also posted on Axis Local sites in{' '}
-        <Link href='https://www.axios.com/local/washington-dc/2024/07/26/olympics-climate-change-heat-waves'>
-          Virginia
+        <Link href='https://www.axios.com/local/raleigh/2024/07/24/cancel-activity-2050-summer-temperatures-nc'>
+          North Carolina
         </Link>{' '}
         and{' '}
         <Link href='https://www.axios.com/local/atlanta/2024/07/26/georgia-heat-summer-olympics'>
