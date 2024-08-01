@@ -36,7 +36,7 @@ const press = [
       'Extreme heat may prevent D.C. area from hosting future Summer Olympics',
     subtitle: (
       <>
-        Also posted on Axis Local sites in{' '}
+        Also posted on Axios Local sites in{' '}
         <Link href='https://www.axios.com/local/raleigh/2024/07/24/cancel-activity-2050-summer-temperatures-nc'>
           North Carolina
         </Link>{' '}
