@@ -303,136 +303,144 @@ const Press = () => {
   )
 }
 
-function Item({ data, final = false }) {
+const LinkContainer = (props) => (
+  <Link
+    sx={{
+      textDecoration: 'none',
+      display: 'block',
+      transition: 'opacity 0.15s',
+      opacity: 1,
+      '@media (hover: hover) and (pointer: fine)': {
+        '&:hover > #title > #span-1 > #span-2 > #arrow': {
+          transform: 'rotate(45deg)',
+        },
+        '&:hover': {
+          opacity: 0.6,
+          color: 'primary',
+        },
+      },
+      '@media (hover: none) and (pointer: coarse)': {
+        '&:hover': {
+          color: 'primary',
+        },
+      },
+    }}
+    {...props}
+  />
+)
+
+function Item({ data }) {
   const { source, title, href, date, authors, subtitle } = data
 
   const sources = Array.isArray(source) ? source : [source]
 
+  const OuterContainer = subtitle ? Box : LinkContainer
+  const InnerContainer = !subtitle ? Box : LinkContainer
+
   return (
-    <Link
+    <Box
       sx={{
-        textDecoration: 'none',
-        display: 'block',
-        transition: 'opacity 0.15s',
-        opacity: 1,
-        '@media (hover: hover) and (pointer: fine)': {
-          '&:hover > #container > #title > #span-1 > #span-2 > #arrow': {
-            transform: 'rotate(45deg)',
-          },
-          '&:hover': {
-            opacity: 0.6,
-            color: 'primary',
-          },
-        },
-        '@media (hover: none) and (pointer: coarse)': {
-          '&:hover': {
-            color: 'primary',
-          },
-        },
+        ml: [0, -5, -5, -6],
+        mr: [0, 0, 0, 0],
+        pr: [0, 0, 0, 0],
+        pl: [0, 5, 5, 6],
+        pt: [3, 0, 0, 0],
+        mb: [0, 5, 6, 7],
+        pb: [2, 0, 0, 0],
+        transition: 'border-color 0.15s',
+        borderStyle: 'solid',
+        borderWidth: '0px',
+        borderLeftWidth: ['0px', '1px', '1px', '1px'],
+        borderTopWidth: ['1px', '0px', '0px', '0px'],
+        borderColor: 'muted',
       }}
-      href={href}
     >
-      <Box
-        id='container'
-        sx={{
-          ml: [0, -5, -5, -6],
-          mr: [0, 0, 0, 0],
-          pr: [0, 0, 0, 0],
-          pl: [0, 5, 5, 6],
-          pt: [3, 0, 0, 0],
-          mb: [0, 5, 6, 7],
-          pb: [2, 0, 0, 0],
-          transition: 'border-color 0.15s',
-          borderStyle: 'solid',
-          borderWidth: '0px',
-          borderLeftWidth: ['0px', '1px', '1px', '1px'],
-          borderTopWidth: ['1px', '0px', '0px', '0px'],
-          borderColor: 'muted',
-        }}
-      >
-        <Grid
-          id='metadata'
-          columns={['100px 1fr', '100px 1fr', '100px 1fr', '120px 1fr']}
-          gap={[0]}
-          sx={{ mt: ['-1px'] }}
-        >
-          <Box
-            sx={{
-              ...sx.date,
-              mt: '4px',
-            }}
+      <OuterContainer href={href}>
+        <InnerContainer href={href}>
+          <Grid
+            id='metadata'
+            columns={['100px 1fr', '100px 1fr', '100px 1fr', '120px 1fr']}
+            gap={[0]}
+            sx={{ mt: ['-1px'] }}
           >
-            {formatDate(date)}
-          </Box>
-          <Box
-            sx={{
-              mt: ['1px', '1px', '1px', '2px'],
-              textAlign: 'right',
-              width: '100%',
-            }}
-          >
-            {sources.map((d, i) => {
-              return (
-                <Box
-                  key={i}
-                  sx={{
-                    display: 'inline-block',
-                    ml: [3],
-                    mb: [1],
-                    mt: ['-1px'],
-                  }}
-                >
-                  <Tag
+            <Box
+              sx={{
+                ...sx.date,
+                mt: '4px',
+              }}
+            >
+              {formatDate(date)}
+            </Box>
+            <Box
+              sx={{
+                mt: ['1px', '1px', '1px', '2px'],
+                textAlign: 'right',
+                width: '100%',
+              }}
+            >
+              {sources.map((d, i) => {
+                return (
+                  <Box
+                    key={i}
                     sx={{
-                      pb: ['3px'],
-                      lineHeight: 1.8,
-                      textAlign: 'right',
-                      width: 'fit-content',
-                      display: 'initial',
-                      color: SOURCE_COLORS[d],
+                      display: 'inline-block',
+                      ml: [3],
+                      mb: [1],
+                      mt: ['-1px'],
                     }}
                   >
-                    {d}
-                  </Tag>
-                </Box>
-              )
-            })}
-          </Box>
-        </Grid>
-        <Box
-          id='title'
-          sx={{
-            fontSize: [2, 2, 2, 3],
-            mt: ['9px', '9px', '9px', '12px'],
-            pb: [2],
-            mb: [1],
-            lineHeight: 'body',
-          }}
-        >
-          <span id='span-1'>
-            {title
-              .split(' ')
-              .slice(0, title.split(' ').length - 1)
-              .join(' ')}{' '}
-            <Box as='span' id='span-2' sx={{ whiteSpace: 'nowrap' }}>
+                    <Tag
+                      sx={{
+                        pb: ['3px'],
+                        lineHeight: 1.8,
+                        textAlign: 'right',
+                        width: 'fit-content',
+                        display: 'initial',
+                        color: SOURCE_COLORS[d],
+                      }}
+                    >
+                      {d}
+                    </Tag>
+                  </Box>
+                )
+              })}
+            </Box>
+          </Grid>
+          <Box
+            id='title'
+            sx={{
+              fontSize: [2, 2, 2, 3],
+              mt: ['9px', '9px', '9px', '12px'],
+              pb: [2],
+              mb: [1],
+              lineHeight: 'body',
+            }}
+          >
+            <span id='span-1'>
               {title
                 .split(' ')
-                .slice(title.split(' ').length - 1, title.split(' ').length)}
-              <Arrow
-                id='arrow'
-                sx={{
-                  transition: '0.15s',
-                  position: 'relative',
-                  top: ['2px', '2px', '2px', '2px'],
-                  ml: [2],
-                  width: ['12px', '12px', '12px', '13px'],
-                  height: ['12px', '12px', '12px', '13px'],
-                  fill: 'primary',
-                }}
-              />
-            </Box>
-          </span>
-        </Box>
+                .slice(0, title.split(' ').length - 1)
+                .join(' ')}{' '}
+              <Box as='span' id='span-2' sx={{ whiteSpace: 'nowrap' }}>
+                {title
+                  .split(' ')
+                  .slice(title.split(' ').length - 1, title.split(' ').length)}
+                <Arrow
+                  id='arrow'
+                  sx={{
+                    transition: '0.15s',
+                    position: 'relative',
+                    top: ['2px', '2px', '2px', '2px'],
+                    ml: [2],
+                    width: ['12px', '12px', '12px', '13px'],
+                    height: ['12px', '12px', '12px', '13px'],
+                    fill: 'primary',
+                  }}
+                />
+              </Box>
+            </span>
+          </Box>
+        </InnerContainer>
 
         {(authors?.length > 0 || subtitle) && (
           <Box
@@ -479,8 +487,8 @@ function Item({ data, final = false }) {
             )}
           </Box>
         )}
-      </Box>
-    </Link>
+      </OuterContainer>
+    </Box>
   )
 }
 
