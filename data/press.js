@@ -54,13 +54,13 @@ const press = [
       <>
         Also posted on Axios Local sites in{' '}
         <Link href='https://www.axios.com/local/raleigh/2024/07/24/cancel-activity-2050-summer-temperatures-nc'>
-          North Carolina
+          North Carolina,
         </Link>{' '}
-        ,{' '}
+        {' '}
         <Link href='https://www.axios.com/local/atlanta/2024/07/26/georgia-heat-summer-olympics'>
           Georgia
         </Link>
-        and{' '}
+        , and{' '}
         <Link href='https://www.axios.com/local/san-diego/2024/08/06/california-heat-host-future-olympics'>
           California
         </Link>
