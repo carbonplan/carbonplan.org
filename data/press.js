@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Heatmap'],
+    href: 'https://heatmap.news/climate/carbon-removal-standard-crsi',
+    title:
+      'Toward a more perfect carbon removal standard',
+    authors: ['Emily Pontecorvo'],
+    date: '08-06-2024',
+    format: 'print',
+  },
+  {
     source: ['Axios Local'],
     href: 'https://www.axios.com/local/washington-dc/2024/07/26/olympics-climate-change-heat-waves',
     title:
