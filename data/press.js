@@ -32,8 +32,7 @@ const press = [
   {
     source: ['Heatmap'],
     href: 'https://heatmap.news/climate/carbon-removal-standard-crsi',
-    title:
-      'Toward a more perfect carbon removal standard',
+    title: 'Toward a more perfect carbon removal standard',
     authors: ['Emily Pontecorvo'],
     date: '08-06-2024',
     format: 'print',
