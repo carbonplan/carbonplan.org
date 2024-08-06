@@ -33,7 +33,7 @@ const press = [
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2024-08-06/a-third-of-all-carbon-credits-fail-to-get-key-stamp-of-approval?srnd=green',
     title: 'Carbon market faces upheaval as 32% of all credits fail test',
-    authors: ['Natasha White','Akshat Rathi'],
+    authors: ['Natasha White', 'Akshat Rathi'],
     date: '08-06-2024',
     format: 'print',
   },
