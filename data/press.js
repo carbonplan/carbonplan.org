@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2024-08-06/a-third-of-all-carbon-credits-fail-to-get-key-stamp-of-approval?srnd=green',
+    title: 'Carbon market faces upheaval as 32% of all credits fail test',
+    authors: ['Natasha White', 'Akshat Rathi'],
+    date: '08-06-2024',
+    format: 'print',
+  },
+  {
     source: ['Heatmap'],
     href: 'https://heatmap.news/climate/carbon-removal-standard-crsi',
     title: 'Toward a more perfect carbon removal standard',
