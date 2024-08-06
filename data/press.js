@@ -60,6 +60,10 @@ const press = [
         <Link href='https://www.axios.com/local/atlanta/2024/07/26/georgia-heat-summer-olympics'>
           Georgia
         </Link>
+        and{' '}
+        <Link href='https://www.axios.com/local/san-diego/2024/08/06/california-heat-host-future-olympics'>
+          California
+        </Link>
         .
       </>
     ),
