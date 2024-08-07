@@ -205,8 +205,8 @@ const projectSpecific = [
       Zarr visualization tooling and benchmarking
     </Link>,
     <br />
-    </span>,
-    ‘Scalable, open-source Zarr pyramid generation’,
+    Scalable, open-source Zarr pyramid generation
+    <br />
   ],
   [
     <span>
