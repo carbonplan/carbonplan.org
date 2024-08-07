@@ -204,9 +204,7 @@ const projectSpecific = [
     <Link href='https://nasa-impact.github.io/zarr-visualization-report/'>
       Zarr visualization tooling and benchmarking
     </Link>,
-    <div>
-      Scalable, open-source Zarr pyramid generation
-    </div>
+    <div>Scalable, open-source Zarr pyramid generation</div>,
   ],
   [
     <span>
