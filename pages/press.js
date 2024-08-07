@@ -14,9 +14,11 @@ import {
 import { Arrow } from '@carbonplan/icons'
 import { highlights, press } from '../data/press'
 import {
+  Axios,
   Bloomberg,
   LosAngelesTimes,
   NationalGeographic,
+  Politico,
   CBSNews,
   WashingtonPost,
 } from '../components/press-logos'
@@ -46,6 +48,8 @@ const logos = {
   'National Geographic': <NationalGeographic />,
   'CBS News': <CBSNews />,
   'Washington Post': <WashingtonPost />,
+  Axios: <Axios />,
+  Politico: <Politico />,
 }
 
 const getColors = () => {

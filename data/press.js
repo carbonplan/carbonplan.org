@@ -2,6 +2,16 @@ import { Link } from '@carbonplan/components'
 
 const highlights = [
   {
+    source: 'Politico',
+    href: 'https://www.politico.com/newsletters/california-climate/2024/08/06/offsets-on-fire-00172970',
+    date: '08-06-2024',
+  },
+  {
+    source: 'Axios',
+    href: 'https://www.axios.com/visuals/olympics-2024-paris-heat-climate',
+    date: '07-24-2024',
+  },
+  {
     source: 'Washington Post',
     href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
     date: '09-05-2023',
@@ -15,16 +25,6 @@ const highlights = [
     source: 'National Geographic',
     href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
     date: '05-04-2022',
-  },
-  {
-    source: 'Bloomberg',
-    href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=premium',
-    date: '04-07-2022',
-  },
-  {
-    source: 'Los Angeles Times',
-    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
-    date: '09-08-2021',
   },
 ]
 
