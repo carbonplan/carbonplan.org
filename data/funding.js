@@ -199,14 +199,13 @@ const projectSpecific = [
       Fire monitoring improvements
     </Link>,
   ],
-  [
+    [
     'Development Seed',
-    <Link href='https://nasa-impact.github.io/zarr-visualization-report/'>
-      Zarr visualization tooling and benchmarking
-    </Link>,
-    <br />
-    Scalable, open-source Zarr pyramid generation
-    <br />
+    <>
+      <Link href='https://nasa-impact.github.io/zarr-visualization-report/'>Zarr visualization tooling and benchmarking</Link>
+      <br />
+      <span>Scalable, open-source Zarr pyramid generation</span>
+    </>,
   ],
   [
     <span>
