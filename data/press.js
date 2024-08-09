@@ -3,7 +3,7 @@ import { Link } from '@carbonplan/components'
 const highlights = [
   {
     source: 'Bloomberg',
-    href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models',
+    href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
     date: '08-09-2024',
   },
   {
@@ -31,7 +31,7 @@ const highlights = [
 const press = [
   {
     source: ['Bloomberg'],
-    href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models',
+    href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
     title: 'Clashing risk predictions cast doubt on black box climate models',
     authors: ['Eric Roston'],
     date: '08-09-2024',
@@ -39,7 +39,7 @@ const press = [
   },
   {
     source: ['Bloomberg'],
-    href: 'https://www.bloomberg.com/graphics/2024-flood-fire-climate-risk-analytics/',
+    href: 'https://www.bloomberg.com/graphics/2024-flood-fire-climate-risk-analytics/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTgwOCwiZXhwIjoxNzIzODI0NjA4LCJhcnRpY2xlSWQiOiJTSFlLR0VEV1gyUFMwMCIsImJjb25uZWN0SWQiOiI5RjJFMEMxNDRGQkY0Q0M1OUJCRDA3MzQ0QkI2RUZDNCJ9.v2mR0nS7tJbnNJ23UVEKn98Ev917FWYgcoWm7TttUJ4',
     title: 'The risky business of predicting where climate disaster will hit',
     authors: [
       'Eric Roston',
