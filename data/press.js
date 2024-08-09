@@ -143,6 +143,15 @@ const press = [
     format: 'audio',
   },
   {
+    source: ['Heatmap'],
+    href: 'https://heatmap.news/technology/biochar-carbon-removal-microsoft',
+    title:
+      'Biochar is dominating the carbon removal market — but no one seems to care',
+    authors: ['Katie Brigham'],
+    date: '05-15-2024',
+    format: 'print',
+  },
+  {
     source: ['Politico'],
     href: 'https://www.politico.com/newsletters/california-climate/2024/05/13/what-a-less-buttery-biscuit-means-for-late-session-jams-00157762',
     title: 'What a less-buttery biscuit means for late-session jams',
