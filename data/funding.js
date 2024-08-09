@@ -201,9 +201,15 @@ const projectSpecific = [
   ],
   [
     'Development Seed',
-    <Link href='https://nasa-impact.github.io/zarr-visualization-report/'>
-      Zarr visualization tooling and benchmarking
-    </Link>,
+    <>
+      <Link href='https://nasa-impact.github.io/zarr-visualization-report/'>
+        Zarr visualization tooling and benchmarking
+      </Link>
+      <br />
+      <Link href='https://medium.com/pangeo/zarr-pyramids-at-scale-4c252fff3d86'>
+        Scalable, open-source Zarr pyramid generation
+      </Link>
+    </>,
   ],
   [
     <span>
