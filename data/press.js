@@ -51,6 +51,14 @@ const press = [
     format: 'print',
   },
   {
+    source: ['Financial Times'],
+    href: 'https://www.ft.com/content/a3eb4cd4-b9df-458a-83c0-9a38d5202a48',
+    title: 'Californian fires burn trees in company carbon schemes',
+    authors: ['Aime Williams', 'Kenza Bryan'],
+    date: '08-08-2024',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2024-08-06/a-third-of-all-carbon-credits-fail-to-get-key-stamp-of-approval?srnd=green',
     title: 'Carbon market faces upheaval as 32% of all credits fail test',
