@@ -2,6 +2,21 @@ import { Link } from '@carbonplan/components'
 
 const highlights = [
   {
+    source: 'Bloomberg',
+    href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
+    date: '08-09-2024',
+  },
+  {
+    source: 'Politico',
+    href: 'https://www.politico.com/newsletters/california-climate/2024/08/06/offsets-on-fire-00172970',
+    date: '08-06-2024',
+  },
+  {
+    source: 'Axios',
+    href: 'https://www.axios.com/visuals/olympics-2024-paris-heat-climate',
+    date: '07-24-2024',
+  },
+  {
     source: 'Washington Post',
     href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
     date: '09-05-2023',
@@ -11,24 +26,30 @@ const highlights = [
     href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
     date: '08-13-2022',
   },
-  {
-    source: 'National Geographic',
-    href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
-    date: '05-04-2022',
-  },
-  {
-    source: 'Bloomberg',
-    href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=premium',
-    date: '04-07-2022',
-  },
-  {
-    source: 'Los Angeles Times',
-    href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
-    date: '09-08-2021',
-  },
 ]
 
 const press = [
+  {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
+    title: 'Clashing risk predictions cast doubt on black box climate models',
+    authors: ['Eric Roston'],
+    date: '08-09-2024',
+    format: 'print',
+  },
+  {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/graphics/2024-flood-fire-climate-risk-analytics/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTgwOCwiZXhwIjoxNzIzODI0NjA4LCJhcnRpY2xlSWQiOiJTSFlLR0VEV1gyUFMwMCIsImJjb25uZWN0SWQiOiI5RjJFMEMxNDRGQkY0Q0M1OUJCRDA3MzQ0QkI2RUZDNCJ9.v2mR0nS7tJbnNJ23UVEKn98Ev917FWYgcoWm7TttUJ4',
+    title: 'The risky business of predicting where climate disaster will hit',
+    authors: [
+      'Eric Roston',
+      'Krishna Karra',
+      'Leslie Kaufman',
+      'Sinduja Rangarajan',
+    ],
+    date: '08-09-2024',
+    format: 'print',
+  },
   {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2024-08-06/a-third-of-all-carbon-credits-fail-to-get-key-stamp-of-approval?srnd=green',
