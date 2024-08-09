@@ -55,10 +55,14 @@ const press = [
         Also posted on Axios Local sites in{' '}
         <Link href='https://www.axios.com/local/raleigh/2024/07/24/cancel-activity-2050-summer-temperatures-nc'>
           North Carolina
-        </Link>{' '}
-        and{' '}
+        </Link>
+        ,{' '}
         <Link href='https://www.axios.com/local/atlanta/2024/07/26/georgia-heat-summer-olympics'>
           Georgia
+        </Link>
+        , and{' '}
+        <Link href='https://www.axios.com/local/san-diego/2024/08/06/california-heat-host-future-olympics'>
+          California
         </Link>
         .
       </>
@@ -78,6 +82,14 @@ const press = [
       'Gabriella Turrisi',
     ],
     date: '07-24-2024',
+    format: 'print',
+  },
+  {
+    source: ['The Journalist’s Resource'],
+    href: 'https://journalistsresource.org/home/carbon-offsets-4-things-journalists-need-to-understand/',
+    title: 'Carbon offsets: 4 things journalists need to understand',
+    authors: ['Clark Merrefield'],
+    date: '07-22-2024',
     format: 'print',
   },
   {
