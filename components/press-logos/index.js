@@ -1,13 +1,33 @@
-export { default as NationalGeographic } from './national-geographic'
-export { default as NewYorkTimes } from './new-york-times'
-export { default as LosAngelesTimes } from './los-angeles-times'
-export { default as MITTechReview } from './mit-tech-review'
-export { default as ProPublica } from './pro-publica'
-export { default as TheNewRepublic } from './the-new-republic'
-export { default as NPR } from './npr'
-export { default as Bloomberg } from './bloomberg'
-export { default as CNBC } from './cnbc'
-export { default as CBSNews } from './cbs-news'
-export { default as WashingtonPost } from './washington-post'
-export { default as Axios } from './axios'
-export { default as Politico } from './politico'
+import NationalGeographic from './national-geographic'
+import NewYorkTimes from './new-york-times'
+import LosAngelesTimes from './los-angeles-times'
+import MITTechReview from './mit-tech-review'
+import ProPublica from './pro-publica'
+import TheNewRepublic from './the-new-republic'
+import NPR from './npr'
+import Bloomberg from './bloomberg'
+import CNBC from './cnbc'
+import CBSNews from './cbs-news'
+import WashingtonPost from './washington-post'
+import Axios from './axios'
+import Politico from './politico'
+import CNN from './cnn'
+
+const LOGOS = {
+  'National Geographic': NationalGeographic,
+  'New York Times': NewYorkTimes,
+  'Los Angeles Times': LosAngelesTimes,
+  'MIT Tech Review': MITTechReview,
+  ProPublica,
+  'The New Republic': TheNewRepublic,
+  NPR,
+  Bloomberg,
+  CNBC,
+  'CBS News': CBSNews,
+  'Washington Post': WashingtonPost,
+  Axios,
+  Politico,
+  CNN,
+}
+
+export default LOGOS

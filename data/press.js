@@ -2,6 +2,11 @@ import { Link } from '@carbonplan/components'
 
 const highlights = [
   {
+    source: 'CNN',
+    href: 'https://edition.cnn.com/2024/08/11/climate/olympics-cities-extreme-heat/index.html',
+    date: '08-12-2024',
+  },
+  {
     source: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
     date: '08-09-2024',
@@ -20,11 +25,6 @@ const highlights = [
     source: 'Washington Post',
     href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
     date: '09-05-2023',
-  },
-  {
-    source: 'CBS News',
-    href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
-    date: '08-13-2022',
   },
 ]
 
