@@ -37,20 +37,20 @@ const highlights = [
 
 const press = [
   {
-    label: 'Washington Post',
-    href: 'https://www.washingtonpost.com/climate-environment/interactive/2023/extreme-heat-wet-bulb-globe-temperature/',
-  },
-  {
-    label: 'CBS News',
-    href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
-  },
-  {
-    label: 'National Geographic',
-    href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
+    label: 'CNN',
+    href: 'https://edition.cnn.com/2024/08/11/climate/olympics-cities-extreme-heat/index.html',
   },
   {
     label: 'Bloomberg',
-    href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=premium',
+    href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
+  },
+  {
+    label: 'Politico',
+    href: 'https://www.politico.com/newsletters/california-climate/2024/08/06/offsets-on-fire-00172970',
+  },
+  {
+    label: 'Axios',
+    href: 'https://www.axios.com/visuals/olympics-2024-paris-heat-climate',
   },
 ]
 
