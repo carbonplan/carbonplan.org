@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['CNN'],
+    href: 'https://edition.cnn.com/2024/08/11/climate/olympics-cities-extreme-heat/index.html',
+    title: 'These cities will be too hot for the Olympics by 2050',
+    authors: ['Lou Robinson', 'Angela Dewan'],
+    date: '08-12-2024',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2024-08-09/clashing-risk-predictions-cast-doubt-on-black-box-climate-models?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTcyMzIxOTI5MiwiZXhwIjoxNzIzODI0MDkyLCJhcnRpY2xlSWQiOiJTSFlLR0JEV1gyUFMwMCIsImJjb25uZWN0SWQiOiJGMkY1NTFERTc4ODA0RkJBOTk5NEFBMTQ5RTM1NjQ3RCJ9.EbJ-4RSfCLQYocKlLXB1r7Qbo_KKYYNHtobrtIELL_g',
     title: 'Clashing risk predictions cast doubt on black box climate models',
