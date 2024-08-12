@@ -13,16 +13,7 @@ import {
 } from '@carbonplan/components'
 import { Arrow } from '@carbonplan/icons'
 import { highlights, press } from '../data/press'
-import {
-  Axios,
-  Bloomberg,
-  LosAngelesTimes,
-  NationalGeographic,
-  Politico,
-  CBSNews,
-  WashingtonPost,
-  CNN,
-} from '../components/press-logos'
+import LOGOS from '../components/press-logos'
 
 const sx = {
   highlight: {
@@ -41,17 +32,6 @@ const sx = {
     textTransform: 'uppercase',
     transition: 'opacity 0.15s',
   },
-}
-
-const logos = {
-  'Los Angeles Times': <LosAngelesTimes />,
-  Bloomberg: <Bloomberg />,
-  'National Geographic': <NationalGeographic />,
-  'CBS News': <CBSNews />,
-  'Washington Post': <WashingtonPost />,
-  Axios: <Axios />,
-  Politico: <Politico />,
-  CNN: <CNN />,
 }
 
 const getColors = () => {
@@ -197,6 +177,7 @@ const Press = () => {
           <Box sx={sx.highlight}>Press highlights</Box>
         </Column>
         {highlights.map((d, i) => {
+          const Logo = LOGOS[d.source]
           return (
             <Column
               key={i}
@@ -245,7 +226,7 @@ const Press = () => {
                       height: '100%',
                     }}
                   />
-                  {logos[d.source]}
+                  <Logo />
                 </Box>
                 <Box id='date' sx={{ ...sx.date, mt: [2, 2, 2, 3] }}>
                   {formatDate(d.date)}
