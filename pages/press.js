@@ -21,6 +21,7 @@ import {
   Politico,
   CBSNews,
   WashingtonPost,
+  CNN,
 } from '../components/press-logos'
 
 const sx = {
@@ -50,6 +51,7 @@ const logos = {
   'Washington Post': <WashingtonPost />,
   Axios: <Axios />,
   Politico: <Politico />,
+  CNN: <CNN />,
 }
 
 const getColors = () => {
