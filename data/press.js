@@ -32,7 +32,8 @@ const press = [
   {
     source: ['Fortune'],
     href: 'https://fortune.com/2024/08/12/carbon-credits-california-wildfires-park-fire-forest-offset-projects-buffer-pool/',
-    title: 'Carbon credits are literally going up in smoke as wildfires threaten their sustainability',
+    title:
+      'Carbon credits are literally going up in smoke as wildfires threaten their sustainability',
     authors: ['Seamus Webster'],
     date: '08-12-2024',
     format: 'print',
