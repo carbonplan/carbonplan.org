@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Business Insider'],
+    href: 'https://www.businessinsider.com/the-truth-about-climate-risk-models-that-investors-dont-know-2024-8',
+    title:
+      'The inside truth about climate risk models that investors and companies don’t know, and how it’s impacting valuations',
+    authors: ['Laila Maidan'],
+    date: '08-15-2024',
+    format: 'print',
+  },
+  {
     source: ['Fortune'],
     href: 'https://fortune.com/2024/08/12/carbon-credits-california-wildfires-park-fire-forest-offset-projects-buffer-pool/',
     title:
