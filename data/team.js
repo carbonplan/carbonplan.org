@@ -67,7 +67,7 @@ const team = [
   {
     name: 'Tracy Aquino Anderson',
     role: 'Deputy Director',
-    bio: 'Tracy is an experienced leader of high-impact teams working at the intersection of social purpose, culture, and technology. Previously a program director at National Domestic Workers Alliance, she is excited to help build CarbonPlan’s capacity to advance effective climate solutions. She holds a BA from Yale College.',
+    bio: 'Tracy’s had the opportunity to support, and learn from, a range of high-impact, purpose-driven organizations. Previously a program leader at the National Domestic Workers Alliance, she’s helping build CarbonPlan’s capacity and is excited to advance real climate solutions. She earned a BA from Yale University.',
   },
 ]
 
