@@ -69,6 +69,11 @@ const team = [
     role: 'Deputy Director',
     bio: 'Tracy’s had the opportunity to support, and learn from, a range of high-impact, purpose-driven organizations. Previously a program leader at the National Domestic Workers Alliance, she’s helping build CarbonPlan’s capacity and is excited to advance real climate solutions. She earned a BA from Yale University.',
   },
+  {
+    name: 'Claire Zarakas',
+    role: 'Research Scientist',
+    bio: 'Claire is a climate scientist committed to applying research to advance climate solutions. She joins CarbonPlan as a Schmidt Science Fellow, through which she has a joint postdoctoral appointment at the University of California, Irvine. Her background spans climate science research and environmental policy. She holds a PhD in Atmospheric Sciences from the University of Washington and a BA in Geosciences from Princeton University.',
+  },
 ]
 
 const board = [
