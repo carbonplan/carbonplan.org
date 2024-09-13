@@ -30,6 +30,23 @@ const highlights = [
 
 const press = [
   {
+    source: ['NPR'],
+    href: 'https://www.npr.org/2024/09/10/g-s1-17179/regenerative-agriculture-climate-change-soil-carbon',
+    title:
+      'Regenerative agriculture is sold as a climate solution. Can it do all it says?',
+    authors: ['Julia Simon'],
+    date: '09-10-2024',
+    format: 'print',
+  },
+  {
+    source: ['Heatmap'],
+    href: 'https://heatmap.news/technology/google-carbon-100-ton',
+    title: 'Google locks in carbon removal at a milestone price: $100 a ton',
+    authors: ['Emily Pontecorvo'],
+    date: '09-10-2024',
+    format: 'print',
+  },
+  {
     source: ['Business Insider'],
     href: 'https://www.businessinsider.com/the-truth-about-climate-risk-models-that-investors-dont-know-2024-8',
     title:
