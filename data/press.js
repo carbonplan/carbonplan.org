@@ -41,8 +41,7 @@ const press = [
   {
     source: ['Heatmap'],
     href: 'https://heatmap.news/technology/google-carbon-100-ton',
-    title:
-      'Google locks in carbon removal at a milestone price: $100 a ton',
+    title: 'Google locks in carbon removal at a milestone price: $100 a ton',
     authors: ['Emily Pontecorvo'],
     date: '09-10-2024',
     format: 'print',
