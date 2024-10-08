@@ -247,7 +247,7 @@ const press = [
   {
     source: ['Heatmap'],
     href: 'https://heatmap.news/technology/vaulted-deep-carbon-removal',
-    title: 'Does darbon removal need to be dumb to work?',
+    title: 'Does carbon removal need to be dumb to work?',
     authors: ['Emily Pontecorvo'],
     date: '05-01-2024',
     format: 'print',
