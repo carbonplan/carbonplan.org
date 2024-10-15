@@ -12,7 +12,7 @@ const research2 = {
   date: '08-09-2024',
   title: 'Risk (dis)agreement',
   summary:
-    'Climate analytics companies agree that climate change is increasing risks, but analysis shows that at the level of individual addresses their estimates differ.',
+    'Climate analytics companies agree that climate change is increasing risks, but at the level of individual addresses their estimates differ.',
   href: '/research/climate-risk-comparison',
 }
 
