@@ -1,37 +1,37 @@
 const research1 = {
-  id: 'offsets-db',
-  date: '03-08-2024',
-  href: '/research/offsets-db-explainer',
-  title: 'OffsetsDB',
+  id: 'oae-efficiency',
+  date: '10-15-2024',
+  href: '/research/oae-efficiency-explainer',
+  title: 'OAE efficiency',
   summary:
-    'A regularly-updating, harmonized database of carbon offset projects and credits for download and interactive exploration.',
+    'An interactive tool for exploring the efficiency of ocean alkalinity enhancement (OAE), developed in collaboration with [C]Worthy.',
 }
 
 const research2 = {
-  id: 'extreme-heat',
-  date: '09-05-2023',
-  title: 'Modeling extreme heat',
+  id: 'climate-risk-comparison',
+  date: '08-09-2024',
+  title: 'Risk (dis)agreement',
   summary:
-    'A new dataset modeling humid heat now and into the future, developed in collaboration with The Washington Post.',
-  href: '/research/extreme-heat-explainer',
+    'Climate analytics companies agree that climate change is increasing risks, but analysis shows that at the level of individual addresses their estimates differ.',
+  href: '/research/climate-risk-comparison',
 }
 
 const highlights = [
   {
+    label: 'OAE efficiency',
+    href: '/research/oae-efficiency-explainer',
+  },
+  {
+    label: 'Risk (dis)agreement',
+    href: '/research/climate-risk-comparison',
+  },
+  {
+    label: 'OffsetsDB',
+    href: '/research/offsets-db',
+  },
+  {
     label: 'Extreme heat',
     href: '/research/extreme-heat-explainer',
-  },
-  {
-    label: 'CDR verification',
-    href: '/research/cdr-verification',
-  },
-  {
-    label: 'CDR scale barriers',
-    href: '/research/cdr-scale-barriers',
-  },
-  {
-    label: 'CMIP6 downscaling',
-    href: '/research/cmip6-downscaling',
   },
 ]
 
