@@ -78,7 +78,7 @@ const team = [
 
 const board = [
   ['Jeremy Freeman', 'CarbonPlan'],
-  ['Kelly Gannon', 'NDWA Labs'],
+  ['Kelly Gannon', 'National Domestic Workers Alliance'],
   ['Gernot Wagner', 'Columbia Business School'],
   ['Arjuna Dibley', 'University of Melbourne / University of Oxford'],
   ['Tracy Teal', 'Nixtla'],
