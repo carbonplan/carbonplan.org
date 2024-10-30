@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/features/2024-10-29/vintage-nike-air-shoes-expose-flaw-in-700-million-carbon-market?srnd=phx-green&embedded-checkout=true',
+    title:
+      'How vintage Nike Airs exposed a flaw in a $700 million carbon market',
+    authors: ['Ben Elgin'],
+    date: '10-29-2024',
+    format: 'print',
+  },
+  {
     source: ['NPR'],
     href: 'https://www.npr.org/2024/09/10/g-s1-17179/regenerative-agriculture-climate-change-soil-carbon',
     title:
