@@ -230,6 +230,15 @@ const projectSpecific = [
     </span>,
     'Enhancing the open-source Python Xarray library with new data model abstractions',
   ],
+  [
+    <span>
+      [C]Worthy +<br />
+      Windward Fund
+    </span>,
+    <Link href='https://carbonplan.org/research/oae-efficiency'>
+      Mapping the efficiency of ocean alkalinity enhancement
+    </Link>,
+  ],
 ]
 
 const partners = [
