@@ -109,7 +109,7 @@ const CustomAmount = ({ color, onClick }) => {
 
       return !helpMessage
     },
-    [amount]
+    [amount],
   )
 
   return (
@@ -186,7 +186,7 @@ const Donate = () => {
     setStatus('processing')
     setTimeout(() => {
       setStatus((prevStatus) =>
-        prevStatus === 'processing' ? null : prevStatus
+        prevStatus === 'processing' ? null : prevStatus,
       )
     }, 1200)
 
