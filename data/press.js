@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Trellis'],
+    href: 'https://trellis.net/article/carbon-markets-look-to-put-a-turbulent-2024-behind-with-signs-pointing-to-an-uptick/',
+    title:
+      'Carbon markets look to put a turbulent 2024 behind with signs pointing to an uptick',
+    authors: ['Jim Giles'],
+    date: '12-17-2024',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/features/2024-10-29/vintage-nike-air-shoes-expose-flaw-in-700-million-carbon-market?srnd=phx-green&embedded-checkout=true',
     title:
