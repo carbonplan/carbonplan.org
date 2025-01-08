@@ -31,6 +31,15 @@ const highlights = [
 const press = [
   {
     source: ['Trellis'],
+    href: 'https://trellis.net/article/tech-giants-latest-carbon-removal-bet-enhanced-rock-weathering/',
+    title:
+      'Google, Microsoft, others invest $300 million in crushed rocks as CO2 removal solution',
+    authors: ['Jim Giles'],
+    date: '01-07-25',
+    format: 'print',
+  },
+  {
+    source: ['Trellis'],
     href: 'https://trellis.net/article/carbon-markets-look-to-put-a-turbulent-2024-behind-with-signs-pointing-to-an-uptick/',
     title:
       'Carbon markets look to put a turbulent 2024 behind with signs pointing to an uptick',
