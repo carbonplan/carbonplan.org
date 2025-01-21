@@ -32,8 +32,7 @@ const press = [
   {
     source: ['Politico Pro'],
     href: 'https://subscriber.politicopro.com/article/eenews/2025/01/15/wildfires-threaten-climate-efforts-in-california-and-globally-00198307',
-    title:
-      'Wildfires threaten climate efforts in California and globally',
+    title: 'Wildfires threaten climate efforts in California and globally',
     authors: ['Anne C. Mulkern'],
     date: '01-15-25',
     format: 'print',
