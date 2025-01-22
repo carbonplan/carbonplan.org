@@ -32,7 +32,8 @@ const press = [
   {
     source: ['Oregon Capital Chronicle'],
     href: 'https://oregoncapitalchronicle.com/2025/01/21/forest-owner-wants-to-put-burned-acreage-back-into-carbon-offset-market-but-critics-skeptical/',
-    title: 'Forest owner wants to put burned acreage back into carbon offset market, but critics skeptical',
+    title:
+      'Forest owner wants to put burned acreage back into carbon offset market, but critics skeptical',
     authors: ['Alex Baumhardt'],
     date: '01-21-25',
     format: 'print',
