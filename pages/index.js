@@ -1,12 +1,5 @@
-import { Box, Image } from 'theme-ui'
-import {
-  Layout,
-  Row,
-  Column,
-  Button,
-  Link,
-  formatDate,
-} from '@carbonplan/components'
+import { Box } from 'theme-ui'
+import { Layout, Row, Column, Button, Link } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 import { keyframes } from '@emotion/react'
 import Splash from '../components/splash'
