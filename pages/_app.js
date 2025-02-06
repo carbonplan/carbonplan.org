@@ -9,8 +9,8 @@ export default function App({ Component, pageProps }) {
   return (
     <PlausibleProvider
       domain='carbonplan.org'
-      trackOutboundLinks={true}
-      trackFileDownloads={true}
+      trackOutboundLinks
+      trackFileDownloads
     >
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
