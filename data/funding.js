@@ -89,8 +89,15 @@ const unrestricted = [
   ['Joshua Monrad', 'Individual'],
   [
     <span>
-      Adam Winkel +<br />
-      Abigail Winkel
+      Elizabeth Batson +<br />
+      James Batson Fund
+    </span>,
+    'Individual',
+  ],
+  [
+    <span>
+      Michael Tucker +<br />
+      Rachel Tucker
     </span>,
     'Individual',
   ],
