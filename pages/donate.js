@@ -13,8 +13,6 @@ import {
 } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
 
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
-
 // Specific errors expected and the corresponding `status` passed to `Layout`
 const STATUSES = {
   'Recaptcha failed': 'not available',
@@ -211,7 +209,9 @@ const Donate = () => {
       if (checkoutSession.statusCode > 200) {
         throw new Error(checkoutSession.message)
       } else {
-        const stripe = await stripePromise
+        const stripe = await loadStripe(
+          process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+        )
         // Redirect to created CheckoutSession
         setStatus(null)
         const { error } = await stripe.redirectToCheckout({
