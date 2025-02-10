@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Box, Link } from 'theme-ui'
-import { loadStripe } from '@stripe/stripe-js'
+import { loadStripe } from '@stripe/stripe-js/pure'
 import ReCAPTCHA from 'react-google-recaptcha'
 import {
   FadeIn,
@@ -12,8 +12,6 @@ import {
   Heading,
 } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
-
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
 
 // Specific errors expected and the corresponding `status` passed to `Layout`
 const STATUSES = {
@@ -211,7 +209,9 @@ const Donate = () => {
       if (checkoutSession.statusCode > 200) {
         throw new Error(checkoutSession.message)
       } else {
-        const stripe = await stripePromise
+        const stripe = await loadStripe(
+          process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+        )
         // Redirect to created CheckoutSession
         setStatus(null)
         const { error } = await stripe.redirectToCheckout({
