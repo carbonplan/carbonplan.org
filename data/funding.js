@@ -96,8 +96,9 @@ const unrestricted = [
   ],
   [
     <span>
-      Elizabeth Batson +<br />
-      James Batson Fund
+      Elizabeth + James
+      <br />
+      Batson Fund
     </span>,
     'Individual',
   ],
