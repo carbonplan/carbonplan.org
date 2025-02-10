@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Box, Link } from 'theme-ui'
-import { loadStripe } from '@stripe/stripe-js'
+import { loadStripe } from '@stripe/stripe-js/pure'
 import ReCAPTCHA from 'react-google-recaptcha'
 import {
   FadeIn,
