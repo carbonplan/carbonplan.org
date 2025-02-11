@@ -174,16 +174,18 @@ const Amount = ({ value, color, onClick }) => {
 const Donate = () => {
   const [status, setStatus] = useState(null)
   const [recaptchaCount, setRecaptchaCount] = useState(0)
+  const [initialized, setInitialized] = useState(false)
   const recaptchaRef = useRef()
 
   useEffect(() => {
     window.recaptchaOptions = {
       useRecaptchaNet: true,
     }
-  })
+    setInitialized(true)
+  }, [])
 
   useEffect(() => {
-    recaptchaRef.current.reset()
+    recaptchaRef.current?.reset()
   }, [recaptchaCount])
 
   const onClick = async (amount) => {
@@ -348,12 +350,14 @@ const Donate = () => {
           </Row>
         </Column>
       </Row>
-      <ReCAPTCHA
-        style={{ visibility: 'hidden' }}
-        ref={recaptchaRef}
-        size='invisible'
-        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-      />
+      {initialized && (
+        <ReCAPTCHA
+          style={{ visibility: 'hidden' }}
+          ref={recaptchaRef}
+          size='invisible'
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+        />
+      )}
     </Layout>
   )
 }
