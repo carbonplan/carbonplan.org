@@ -177,6 +177,12 @@ const Donate = () => {
   const recaptchaRef = useRef()
 
   useEffect(() => {
+    window.recaptchaOptions = {
+      useRecaptchaNet: true,
+    }
+  })
+
+  useEffect(() => {
     recaptchaRef.current.reset()
   }, [recaptchaCount])
 
