@@ -39,6 +39,15 @@ const press = [
     format: 'print',
   },
   {
+    source: ['Oregon Capital Chronicle'],
+    href: 'https://oregoncapitalchronicle.com/2025/01/21/forest-owner-wants-to-put-burned-acreage-back-into-carbon-offset-market-but-critics-skeptical/',
+    title:
+      'Forest owner wants to put burned acreage back into carbon offset market, but critics skeptical',
+    authors: ['Alex Baumhardt'],
+    date: '01-21-25',
+    format: 'print',
+  },
+  {
     source: ['Politico Pro'],
     href: 'https://subscriber.politicopro.com/article/eenews/2025/01/15/wildfires-threaten-climate-efforts-in-california-and-globally-00198307',
     title: 'Wildfires threaten climate efforts in California and globally',
