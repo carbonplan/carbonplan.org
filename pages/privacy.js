@@ -107,7 +107,7 @@ const Privacy = () => {
               <i>Device/Usage information</i>
             </Box>
             <Box as='p' variant='styles.p'>
-              We, and our third party service providers, may automatically
+              We, and our third-party service providers, may automatically
               collect certain information about the computer or devices
               (including mobile devices or tablets) you use to access the
               Services. As described further below, we may collect and analyze
@@ -248,7 +248,7 @@ const Privacy = () => {
               services
             </Box>
             <Box as='p' variant='styles.p'>
-              Our third party service and hosting providers may collect
+              Our third-party service and hosting providers may collect
               information about you or others through or in connection with your
               use of the Services, including as described in their own terms and
               privacy policies, and as described in the “Information that Is
@@ -409,7 +409,7 @@ const Privacy = () => {
             </Box>
             <Box as='p' variant='styles.p'>
               Similarly, when you register for an event, we may share your
-              information with vendors, third party contractors, partner
+              information with vendors, third-party contractors, partner
               organizations, and volunteers for the purpose of organizing and
               running the event and related activities.
             </Box>
@@ -618,9 +618,9 @@ const Privacy = () => {
               disclose your information not just to those third-parties, but
               also to their users and the public more generally depending on how
               their services function. CarbonPlan is not responsible for the
-              content or privacy practices of such third party websites or
+              content or privacy practices of such third-party websites or
               services. The collection, use and disclosure of your information
-              will be subject to the privacy policies of the third party
+              will be subject to the privacy policies of the third-party
               websites or services, and not this Privacy Policy. We encourage
               you to read the privacy statements of each and every site you
               visit.

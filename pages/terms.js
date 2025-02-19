@@ -145,20 +145,20 @@ const Terms = () => {
             for specific license information.
             <br />
             <br />
-            <i>Licensing of Third Party Content</i>: We may link to or publish
+            <i>Licensing of Third-Party Content</i>: We may link to or publish
             content, information, tools, data, and/or software on our Websites
-            that belong to or originate from third parties (the “Third Party
+            that belong to or originate from third parties (the “Third-Party
             Content”). We may indicate on the Websites which licensing terms we
-            believe apply to such Third Party Content, but we cannot guarantee
+            believe apply to such Third-Party Content, but we cannot guarantee
             that such indications are accurate. You agree to independently
             verify the terms of the license and other copyright and attribution
-            information associated with any Third Party Content you intend to
-            use. You agree that you are solely responsible for your use of Third
-            Party Content made available through the Services, including
-            independently verifying the license that applies to such Third Party
+            information associated with any Third-Party Content you intend to
+            use. You agree that you are solely responsible for your use of
+            Third-Party Content made available through the Services, including
+            independently verifying the license that applies to such Third-Party
             Content, and complying with such license, including by providing
             proper attribution when required. You should review the terms of the
-            applicable license before you use any Third Party Content so that
+            applicable license before you use any Third-Party Content so that
             you know what you can and cannot do.
           </Box>
           <Box as='p' variant='styles.p'>
