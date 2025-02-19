@@ -22,7 +22,7 @@ const Terms = () => {
             }}
           >
             <Box as='p' variant='styles.p'>
-              Effective as of March 07, 2024
+              Updated as of February 19, 2025
             </Box>
             <Box as='h2' variant='styles.h2'>
               01 — General information regarding these terms of use
@@ -38,26 +38,27 @@ const Terms = () => {
               (collectively, the “Websites”). These Master Terms also apply to
               all content, data, software, products, functionality, and/or
               services provided through the Websites (together with the
-              Websites, the “Services”). Additional terms: In addition to the
-              Master Terms, your use of any Services may also be subject to
-              specific terms applicable to a particular Service (“Additional
-              Terms”). If there is any conflict between the Additional Terms and
-              the Master Terms, then the Additional Terms apply in relation to
-              the relevant Service. Collectively, the Terms: The Master Terms,
-              together with any Additional Terms, form a binding legal agreement
-              between you and CarbonPlan in relation to your use of the
-              Services. Collectively, this legal agreement is referred to below
-              as the “Terms.”
+              Websites, the “Services”). Additional terms: These Master Terms
+              specifically include and incorporate our Privacy Policy. In
+              addition to the Master Terms, your use of any Services may also be
+              subject to specific terms applicable to a particular Service
+              (“Additional Terms”). If there is any conflict between the
+              Additional Terms and the Master Terms, then the Additional Terms
+              apply in relation to the relevant Service. Collectively, the
+              Terms: The Master Terms, together with our Privacy Policy and any
+              Additional Terms, form a binding legal agreement between you and
+              CarbonPlan in relation to your use of the Services. Collectively,
+              this legal agreement is referred to below as the “Terms.”
             </Box>
             <Box as='p' variant='styles.p'>
               <i>
                 Human-readable summary of Section 01: These terms, together with
-                any special terms for particular websites, create a contract
-                between you and CarbonPlan. The contract governs your use of all
-                websites operated by CarbonPlan that reference these terms,
-                including our Github account. These human-readable summaries of
-                each section are not part of the contract, but are intended to
-                help you understand its terms.
+                our Privacy Policy and any special terms for particular
+                websites, create a contract between you and CarbonPlan. The
+                contract governs your use of all websites operated by CarbonPlan
+                that reference these terms, including our Github account. These
+                human-readable summaries of each section are not part of the
+                contract, but are intended to help you understand its terms.
               </i>
             </Box>
           </Box>
@@ -619,11 +620,11 @@ const Terms = () => {
             the Services.
             <br />
             <br />
-            Integration: These Master Terms and any applicable Additional Terms
-            constitute the entire agreement between you and CarbonPlan relating
-            to this subject matter and supersede any and all prior
-            communications and/or agreements between you and CarbonPlan relating
-            to access and use of the Services.
+            Integration: These Master Terms together with our Privacy Policy and
+            any applicable Additional Terms constitute the entire agreement
+            between you and CarbonPlan relating to this subject matter and
+            supersede any and all prior communications and/or agreements between
+            you and CarbonPlan relating to access and use of the Services.
           </Box>
           <Box as='p' variant='styles.p'>
             <i>
