@@ -28,7 +28,6 @@
     "@carbonplan/theme": "^7.0.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@mdx-js/react": "^2.1.5",
     "@stripe/stripe-js": "^1.13.2",
     "@theme-ui/color": "^0.15.3",
     "d3-array": "^3.1.1",
