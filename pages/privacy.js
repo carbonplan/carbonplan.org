@@ -22,31 +22,34 @@ const Privacy = () => {
             }}
           >
             <Box as='p' variant='styles.p'>
-              Last Updated: February 19, 2025
+              Updated as of February 20, 2025
             </Box>
             <Box as='p' variant='styles.p'>
               This Privacy Policy (“Policy”) explains the information
               collection, use, and sharing practices of CarbonPlan, a California
               nonprofit corporation (“CarbonPlan,” “we,” “our,” or “us”). This
               Policy is expressly incorporated into and part of the CarbonPlan
-              Terms of Use (“Terms of Use”) located at
-              https://carbonplan.org/terms. Unless otherwise noted on a
-              particular website or service hosted by CarbonPlan, this Policy
-              describes and governs the information collection, use, and sharing
-              practices of CarbonPlan with respect to your use of our
-              https://carbonplan.org domain and all subdomains thereof and our
-              Github account (https://github.com/carbonplan) (collectively, the
-              “Websites”), and the content, data, software, products,
-              functionality, and/or services we provide through our Websites
-              (together with the Websites, the “Services”) Please note that this
-              policy does <b>not</b> apply to the CDRXIV service
-              (https://cdrxiv.org) operated by CarbonPlan, which is governed by
-              its own terms and privacy policy. Before you use or submit any
-              information through or in connection with the Services, please
-              carefully review this Privacy Policy. By using any part of the
-              Services, you understand that your information will be collected,
-              used, and disclosed as outlined in this Privacy Policy. IF YOU DO
-              NOT AGREE TO THIS PRIVACY POLICY, PLEASE DO NOT USE THE SERVICES.
+              Terms of Use (“Terms of Use”) located at{' '}
+              <Link href='https://carbonplan.org/terms'>
+                https://carbonplan.org/terms
+              </Link>
+              . Unless otherwise noted on a particular website or service hosted
+              by CarbonPlan, this Policy describes and governs the information
+              collection, use, and sharing practices of CarbonPlan with respect
+              to your use of our https://carbonplan.org domain and all
+              subdomains thereof and our Github account
+              (https://github.com/carbonplan) (collectively, the “Websites”),
+              and the content, data, software, products, functionality, and/or
+              services we provide through our Websites (together with the
+              Websites, the “Services”) Please note that this policy does{' '}
+              <b>not</b> apply to the CDRXIV service (https://cdrxiv.org)
+              operated by CarbonPlan, which is governed by its own terms and
+              privacy policy. Before you use or submit any information through
+              or in connection with the Services, please carefully review this
+              Privacy Policy. By using any part of the Services, you understand
+              that your information will be collected, used, and disclosed as
+              outlined in this Privacy Policy. IF YOU DO NOT AGREE TO THIS
+              PRIVACY POLICY, PLEASE DO NOT USE THE SERVICES.
             </Box>
             <Box as='h2' variant='styles.h2'>
               01 — Our principles

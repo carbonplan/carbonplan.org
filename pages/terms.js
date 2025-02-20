@@ -22,7 +22,7 @@ const Terms = () => {
             }}
           >
             <Box as='p' variant='styles.p'>
-              Updated as of February 19, 2025
+              Updated as of February 20, 2025
             </Box>
             <Box as='h2' variant='styles.h2'>
               01 — General information regarding these terms of use
@@ -39,9 +39,10 @@ const Terms = () => {
               all content, data, software, products, functionality, and/or
               services provided through the Websites (together with the
               Websites, the “Services”). Additional terms: These Master Terms
-              specifically include and incorporate our Privacy Policy. In
-              addition to the Master Terms, your use of any Services may also be
-              subject to specific terms applicable to a particular Service
+              specifically include and incorporate our{' '}
+              <Link href='https://carbonplan.org/privacy'>Privacy Policy</Link>.
+              In addition to the Master Terms, your use of any Services may also
+              be subject to specific terms applicable to a particular Service
               (“Additional Terms”). If there is any conflict between the
               Additional Terms and the Master Terms, then the Additional Terms
               apply in relation to the relevant Service. Collectively, the
