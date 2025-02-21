@@ -7,10 +7,10 @@ const Privacy = () => {
       links={'homepage'}
       title={'Privacy – CarbonPlan'}
       description={
-        'Privacy Policy that explains our information collection, use, and sharing practices.'
+        'Privacy policy that explains our information collection, use, and sharing practices.'
       }
     >
-      <Heading>CarbonPlan Privacy Policy</Heading>
+      <Heading>Privacy policy</Heading>
       <Row>
         <Column start={[1, 2, 3, 3]} width={[6, 5, 6, 6]}>
           <Box
