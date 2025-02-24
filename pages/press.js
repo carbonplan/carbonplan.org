@@ -53,7 +53,7 @@ const getColors = () => {
     colorOrder.reduce((a, c) => {
       a[c] = 0
       return a
-    }, {})
+    }, {}),
   )
 
   const recentColors = recentSources.reduce((colors, source, i) => {
@@ -82,7 +82,7 @@ const getColors = () => {
         colors[source] ||= colorOrder[i % 4]
         return colors
       },
-      { ...highlightColors, ...recentColors }
+      { ...highlightColors, ...recentColors },
     )
 }
 
@@ -115,7 +115,7 @@ const Press = () => {
         const inYear = years[new Date(d.date.replace(/-/g, '/')).getFullYear()]
         const inFormat = format[d.format]
         return inYear && inFormat
-      })
+      }),
     )
   }, [years, format])
 

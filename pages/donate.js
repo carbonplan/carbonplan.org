@@ -107,7 +107,7 @@ const CustomAmount = ({ color, onClick }) => {
 
       return !helpMessage
     },
-    [amount]
+    [amount],
   )
 
   return (
@@ -192,7 +192,7 @@ const Donate = () => {
     setStatus('processing')
     setTimeout(() => {
       setStatus((prevStatus) =>
-        prevStatus === 'processing' ? null : prevStatus
+        prevStatus === 'processing' ? null : prevStatus,
       )
     }, 1200)
 
@@ -218,7 +218,7 @@ const Donate = () => {
         throw new Error(checkoutSession.message)
       } else {
         const stripe = await loadStripe(
-          process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+          process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
         )
         // Redirect to created CheckoutSession
         setStatus(null)
