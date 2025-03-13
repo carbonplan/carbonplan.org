@@ -237,7 +237,12 @@ const projectSpecific = [
       Technical foundations for CDR MRV standards
     </Link>,
   ],
-  ['World Bank', 'Extreme heat dataset extension'],
+  [
+    'World Bank',
+    <Link href='https://github.com/carbonplan/extreme-heat-extension'>
+      Extreme heat dataset extensions
+    </Link>,
+  ],
   [
     <span>
       NASA +<br />
@@ -253,6 +258,10 @@ const projectSpecific = [
     <Link href='https://carbonplan.org/research/oae-efficiency'>
       Mapping the efficiency of ocean alkalinity enhancement
     </Link>,
+  ],
+  [
+    'Carbon Market Watch',
+    'Carbon Removal Certification Framework methodologies review',
   ],
 ]
 
