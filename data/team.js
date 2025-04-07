@@ -40,11 +40,6 @@ const team = [
     bio: 'Anderson is a software engineer and an open-source software advocate and contributor. He’s excited to be working at the intersection of data-intensive climate science and software engineering. He holds a BS in Systems Engineering from the University of Arkansas at Little Rock.',
   },
   {
-    name: 'Sage',
-    role: 'Operations Associate',
-    bio: 'Sage is a committed social and climate justice advocate with over a decade of experience working with global nonprofits. Sage brings a passion and dedication for all things operations at CarbonPlan.',
-  },
-  {
     name: 'Tyler Kukla',
     role: 'Research Scientist',
     bio: 'Tyler is a geochemist and climate scientist passionate about climate action that is rooted in a deep understanding of Earth system dynamics. He holds a PhD in Geological Sciences from Stanford University and a BA in Earth and Planetary Sciences from Northwestern University.',
