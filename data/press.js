@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Trellis'],
+    href: 'https://trellis.net/article/microsoft-co280-carbon-removal-pulp-paper/',
+    title: 'Why Microsoft is buying carbon credits from a pulp and paper mill',
+    authors: ['Jim Giles'],
+    date: '04-11-25',
+    format: 'print',
+  },
+  {
     source: ['Oregon Capital Chronicle'],
     href: 'https://oregoncapitalchronicle.com/2025/01/21/forest-owner-wants-to-put-burned-acreage-back-into-carbon-offset-market-but-critics-skeptical/',
     title:
