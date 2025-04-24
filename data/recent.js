@@ -1,4 +1,13 @@
 const research1 = {
+  id: 'offsets-db',
+  date: '04-23-2025',
+  title: 'OffsetsDB',
+  summary:
+    'We’ve expanded our database of offset data with searchable project types and details about who is using offset credits.',
+  href: '/research/offsets-db',
+}
+
+const research2 = {
   id: 'oae-efficiency',
   date: '10-15-2024',
   href: '/research/oae-efficiency-explainer',
@@ -7,16 +16,11 @@ const research1 = {
     'An interactive tool for exploring the efficiency of ocean alkalinity enhancement (OAE), developed in collaboration with [C]Worthy.',
 }
 
-const research2 = {
-  id: 'climate-risk-comparison',
-  date: '08-09-2024',
-  title: 'Risk (dis)agreement',
-  summary:
-    'Climate analytics companies agree that climate change is increasing risks, but at the level of individual addresses their estimates differ.',
-  href: '/research/climate-risk-comparison',
-}
-
 const highlights = [
+  {
+    label: 'OffsetsDB',
+    href: '/research/offsets-db',
+  },
   {
     label: 'OAE efficiency',
     href: '/research/oae-efficiency-explainer',
@@ -24,10 +28,6 @@ const highlights = [
   {
     label: 'Risk (dis)agreement',
     href: '/research/climate-risk-comparison',
-  },
-  {
-    label: 'OffsetsDB',
-    href: '/research/offsets-db',
   },
   {
     label: 'Extreme heat',
