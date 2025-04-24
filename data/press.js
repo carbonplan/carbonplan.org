@@ -29,7 +29,7 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: ['Heatmap'],
     href: 'https://heatmap.news/carbon-removal/xprize-mati-carbon',
     title: 'And the winner of Elon Musk’s carbon removal XPRIZE is ...',
