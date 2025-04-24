@@ -29,6 +29,14 @@ const highlights = [
 ]
 
 const press = [
+   {
+    source: ['Heatmap'],
+    href: 'https://heatmap.news/carbon-removal/xprize-mati-carbon',
+    title: 'And the winner of Elon Musk's carbon removal XPRIZE is ...',
+    authors: ['Emily Pontecorvo'],
+    date: '04-23-25',
+    format: 'print',
+  },
   {
     source: ['Trellis'],
     href: 'https://trellis.net/article/microsoft-co280-carbon-removal-pulp-paper/',
