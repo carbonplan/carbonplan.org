@@ -45,11 +45,10 @@ const press = [
     date: '04-11-25',
     format: 'print',
   },
-   {
+  {
     source: ['Jacobin'],
     href: 'https://jacobin.com/2025/03/can-we-engineer-a-livable-future/',
-    title:
-      'Can we engineer a livable future?',
+    title: 'Can we engineer a livable future?',
     authors: ['Jeremy Freeman'],
     date: '03-24-25',
     format: 'print',
