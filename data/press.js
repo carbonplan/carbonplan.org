@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Reversing Climate Change'],
+    href: 'https://open.spotify.com/episode/75fDQlDxvXVknZLFF3YFFg?si=00066a09c6494a76',
+    title: 'Is a lack of open science holding carbon removal back?',
+    authors: ['Ross Kenyon'],
+    date: '05-14-25',
+    format: 'audio',
+  },
+  {
     source: ['Heatmap'],
     href: 'https://heatmap.news/carbon-removal/xprize-mati-carbon',
     title: 'And the winner of Elon Musk’s carbon removal XPRIZE is ...',
