@@ -29,7 +29,7 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: ['Reversing Climate Change'],
     href: 'https://open.spotify.com/episode/75fDQlDxvXVknZLFF3YFFg?si=00066a09c6494a76',
     title: 'Is a lack of open science holding carbon removal back?',
