@@ -29,7 +29,7 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: ['The Journalist’s Resource'],
     href: 'https://journalistsresource.org/home/climate-risk-data-companies/',
     title: 'A journalist’s guide to the climate risk data market',
