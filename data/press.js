@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['The Journalist’s Resource'],
+    href: 'https://journalistsresource.org/home/climate-risk-data-companies/',
+    title: 'A journalist’s guide to the climate risk data market',
+    authors: ['Clark Merrefield'],
+    date: '05-20-25',
+    format: 'print',
+  },
+  {
     source: ['Reversing Climate Change'],
     href: 'https://open.spotify.com/episode/75fDQlDxvXVknZLFF3YFFg?si=00066a09c6494a76',
     title: 'Is a lack of open science holding carbon removal back?',
