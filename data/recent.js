@@ -1,19 +1,19 @@
 const research1 = {
+  id: 'dor-efficiency',
+  date: '06-04-2025',
+  href: '/research/dor-explainer',
+  title: 'DOR efficiency',
+  summary:
+    'An interactive tool for exploring the efficiency of direct ocean removal (DOR), developed in collaboration with [C]Worthy.',
+}
+
+const research2 = {
   id: 'offsets-db',
   date: '04-23-2025',
   title: 'OffsetsDB',
   summary:
     'We’ve expanded our database of offset data with searchable project types and details about who is using offset credits.',
   href: '/research/offsets-db',
-}
-
-const research2 = {
-  id: 'oae-efficiency',
-  date: '10-15-2024',
-  href: '/research/oae-efficiency-explainer',
-  title: 'OAE efficiency',
-  summary:
-    'An interactive tool for exploring the efficiency of ocean alkalinity enhancement (OAE), developed in collaboration with [C]Worthy.',
 }
 
 const highlights = [
