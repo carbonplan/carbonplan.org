@@ -1,7 +1,7 @@
 const research1 = {
   id: 'dor-efficiency',
   date: '06-04-2025',
-  href: '/research/dor-explainer',
+  href: '/research/dor-efficiency-explainer',
   title: 'DOR efficiency',
   summary:
     'An interactive tool for exploring the efficiency of direct ocean removal (DOR), developed in collaboration with [C]Worthy.',
