@@ -5,8 +5,20 @@
       "destination": "https://research.carbonplan.org/research/oae-efficiency-explainer"
     },
     {
+      "source": "/research/dor-efficiency-explainer",
+      "destination": "https://research.carbonplan.org/research/dor-efficiency-explainer"
+    },
+    {
       "source": "/research/oae-efficiency(.*)",
       "destination": "https://mcdr-tools.carbonplan.org/research/oae-efficiency$1"
+    },
+    {
+      "source": "/research/dor-efficiency(.*)",
+      "destination": "https://mcdr-tools.carbonplan.org/research/dor-efficiency$1"
+    },
+    {
+      "source": "/research/mcdr-tools(.*)",
+      "destination": "https://mcdr-tools.carbonplan.org/research/mcdr-tools$1"
     },
     {
       "source": "/research/offsets-db-explainer",
