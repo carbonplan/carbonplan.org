@@ -18,12 +18,12 @@ const research2 = {
 
 const highlights = [
   {
-    label: 'OffsetsDB',
-    href: '/research/offsets-db',
+    label: 'DOR efficiency',
+    href: '/research/dor-efficiency-explainer',
   },
   {
-    label: 'OAE efficiency',
-    href: '/research/oae-efficiency-explainer',
+    label: 'OffsetsDB',
+    href: '/research/offsets-db',
   },
   {
     label: 'Risk (dis)agreement',
