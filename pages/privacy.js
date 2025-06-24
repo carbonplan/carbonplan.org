@@ -22,7 +22,7 @@ const Privacy = () => {
             }}
           >
             <Box as='p' variant='styles.p'>
-              Updated as of February 20, 2025
+              Updated as of June 24, 2025
             </Box>
             <Box as='p' variant='styles.p'>
               This Privacy Policy (“Policy”) explains the information
@@ -297,6 +297,11 @@ const Privacy = () => {
               We use Plausible (https://plausible.io/privacy) for analytics;
               they handle the data they collect in accordance with their data
               policy: https://plausible.io/data-policy.
+            </Box>
+            <Box as='p' variant='styles.p'>
+              We use Vercel (https://vercel.com) to host our services; they
+              handle the data they collect in accordance with their privacy
+              policy: https://vercel.com/legal/privacy-policy.
             </Box>
             <Box as='h2' variant='styles.h2'>
               03 — How we use your information
