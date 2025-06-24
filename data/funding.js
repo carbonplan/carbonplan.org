@@ -260,6 +260,12 @@ const projectSpecific = [
     </Link>,
   ],
   [
+    <span>[C]Worthy</span>,
+    <Link href='https://carbonplan.org/research/dor-efficiency'>
+      Mapping the efficiency of direct ocean removal
+    </Link>,
+  ],
+  [
     'Carbon Market Watch',
     'Carbon Removal Certification Framework methodologies review',
   ],
