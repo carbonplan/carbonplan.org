@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Heatmap'],
+    href: 'https://heatmap.news/carbon-removal/ocean-alkalinity-carbon-credit',
+    title: 'Is it too soon for ocean-based carbon credits?',
+    authors: ['Katie Brigham'],
+    date: '06-25-25',
+    format: 'print',
+  },
+  {
     source: ['The Journalist’s Resource'],
     href: 'https://journalistsresource.org/home/climate-risk-data-companies/',
     title: 'A journalist’s guide to the climate risk data market',
