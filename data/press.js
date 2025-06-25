@@ -121,6 +121,15 @@ const press = [
     date: '10-29-2024',
     format: 'print',
   },
+   {
+    source: ['Oregon Capital Chronicle'],
+    href: 'https://oregoncapitalchronicle.com/2024/10/23/banking-on-oregon-forests-in-spite-of-flaws-carbon-markets-put-a-price-on-climate-pollution/',
+    title:
+      'Banking on Oregon forests: In spite of flaws, carbon markets put a price on climate pollution',
+    authors: ['Alex Baumhardt'],
+    date: '10-23-2024',
+    format: 'print',
+  },
   {
     source: ['NPR'],
     href: 'https://www.npr.org/2024/09/10/g-s1-17179/regenerative-agriculture-climate-change-soil-carbon',
