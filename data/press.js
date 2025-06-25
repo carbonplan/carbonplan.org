@@ -121,7 +121,7 @@ const press = [
     date: '10-29-2024',
     format: 'print',
   },
-   {
+  {
     source: ['Oregon Capital Chronicle'],
     href: 'https://oregoncapitalchronicle.com/2024/10/23/banking-on-oregon-forests-in-spite-of-flaws-carbon-markets-put-a-price-on-climate-pollution/',
     title:
