@@ -29,7 +29,7 @@ const highlights = [
 ]
 
 const press = [
-   {
+  {
     source: ['Heatmap'],
     href: 'https://heatmap.news/carbon-removal/ocean-alkalinity-carbon-credit',
     title: 'Is it too soon for ocean-based carbon credits?',
