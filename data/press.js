@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Trellis'],
+    href: 'https://trellis.net/article/mckinsey-google-others-invest-41million-next-gen-carbon-removal-project/',
+    title:
+      'McKinsey, Google and others make $41 million credit purchase from Louisiana carbon removal project',
+    authors: ['Jim Giles'],
+    date: '07-08-25',
+    format: 'print',
+  },
+  {
     source: ['Heatmap'],
     href: 'https://heatmap.news/carbon-removal/ocean-alkalinity-carbon-credit',
     title: 'Is it too soon for ocean-based carbon credits?',
