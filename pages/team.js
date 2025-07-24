@@ -1,7 +1,7 @@
 import { Box, Image, Divider, Link, Grid } from 'theme-ui'
 import { Layout, Row, Column, Heading, Avatar } from '@carbonplan/components'
 import AnnotatedTable from '../components/annotated-table'
-import { team, board, collaborators } from '../data/team'
+import { team, board } from '../data/team'
 
 const colors = ['red', 'orange', 'yellow', 'pink']
 
@@ -11,9 +11,7 @@ const Team = () => {
       links={'homepage'}
       title={'Team – CarbonPlan'}
       nav={'team'}
-      description={
-        'Meet our core team, our Board of Directors, and our collaborators.'
-      }
+      description={'Meet our core team and our Board of Directors.'}
     >
       <Heading
         sidenote={
@@ -71,21 +69,6 @@ const Team = () => {
       <Box sx={{ mb: [3, 4, 5, 6] }}>
         <AnnotatedTable heading='Board' data={board} />
       </Box>
-      <Row>
-        <Column start={[1, 2]} width={[6, 8, 10, 10]}>
-          <Divider sx={{ my: [0] }} />
-        </Column>
-      </Row>
-      <AnnotatedTable
-        heading='Collaborators'
-        data={collaborators}
-        sidenote={
-          <span>
-            Interested in working together?{' '}
-            <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
-          </span>
-        }
-      />
     </Layout>
   )
 }
