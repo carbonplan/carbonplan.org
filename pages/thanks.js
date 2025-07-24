@@ -80,7 +80,7 @@ const Thanks = () => {
         <Column start={[1, 7]} width={[3, 4, 2, 2]}>
           <Box sx={{ fontSize: [3, 3, 3, 4], mb: [3, 3, 0] }}>
             <Callout href='/team' label='team'>
-              Read about our team and collaborators
+              Read about our team
             </Callout>
           </Box>
         </Column>
