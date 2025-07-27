@@ -23,7 +23,7 @@ const rateLimit = (options) => {
         res.setHeader('X-RateLimit-Limit', limit)
         res.setHeader(
           'X-RateLimit-Remaining',
-          isRateLimited ? 0 : limit - currentUsage
+          isRateLimited ? 0 : limit - currentUsage,
         )
 
         return isRateLimited ? reject() : resolve()
