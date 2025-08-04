@@ -31,12 +31,12 @@ function generateSiteMap(pages) {
            return `
             <url>
               <loc>${`${BASE_URL}/${page}`}</loc>${
-             date
-               ? `
+                date
+                  ? `
               <lastmod>${date}</lastmod>
              `
-               : ''
-           }
+                  : ''
+              }
             </url>
        `
          })
@@ -56,7 +56,7 @@ export async function getServerSideProps({ res }) {
   ])
 
   const [research, blog] = await Promise.all(
-    requests.map((request) => request.json())
+    requests.map((request) => request.json()),
   )
 
   const sitemap = generateSiteMap(research.concat(blog))
