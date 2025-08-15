@@ -4,7 +4,6 @@ import {
   Row,
   Column,
   Link,
-  Heading,
   Filter,
   formatDate,
   Input,
@@ -70,11 +69,24 @@ const Search = ({ contents }) => {
         'Public list of all our sources of unrestricted or project-specific funding greater than $1000.'
       }
     >
-      <Heading
-        description={`There ${results.length} results that match your search.`}
-      >
-        Search
-      </Heading>
+      <Row sx={{ mt: [5, 6, 7, 8], mb: [5, 6, 7, 8], ...sx }}>
+        <Column start={[1, 1, 2, 2]} width={[6, 6, 3, 3]}>
+          <Box as='h1' variant='styles.h1' sx={{ my: [0, 0, 0, 0] }}>
+            Search
+          </Box>
+        </Column>
+        <Column start={[1, 1, 5, 5]} width={[6]}>
+          <Flex
+            sx={{
+              height: '100%',
+              alignItems: 'flex-end',
+              pb: '4px',
+            }}
+          >
+            There {results.length} results that match your search.
+          </Flex>
+        </Column>
+      </Row>
       <Row>
         <Column start={[1, 1, 2, 2]} width={[6, 6, 2, 2]}>
           <Flex sx={{ flexDirection: 'column', gap: 5 }}>
