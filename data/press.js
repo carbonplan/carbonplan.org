@@ -31,6 +31,15 @@ const highlights = [
 const press = [
   {
     source: ['Trellis'],
+    href: 'https://trellis.net/article/rmi-taking-aim-messy-data-plague-carbon-markets/',
+    title:
+      'RMI takes aim at the messy data that plague carbon markets',
+    authors: ['Jim Giles'],
+    date: '07-31-25',
+    format: 'print',
+  },
+  {
+    source: ['Trellis'],
     href: 'https://trellis.net/article/mckinsey-google-others-invest-41million-next-gen-carbon-removal-project/',
     title:
       'McKinsey, Google and others make $41 million credit purchase from Louisiana carbon removal project',
