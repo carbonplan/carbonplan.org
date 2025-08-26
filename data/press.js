@@ -32,8 +32,7 @@ const press = [
   {
     source: ['Trellis'],
     href: 'https://trellis.net/article/rmi-taking-aim-messy-data-plague-carbon-markets/',
-    title:
-      'RMI takes aim at the messy data that plague carbon markets',
+    title: 'RMI takes aim at the messy data that plague carbon markets',
     authors: ['Jim Giles'],
     date: '07-31-25',
     format: 'print',
