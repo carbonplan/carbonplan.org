@@ -206,7 +206,12 @@ const projectSpecific = [
   ],
   [
     'Patrick J McGovern Foundation',
-    'Projects to increase accountability in the voluntary carbon market and tie CDR policy and investments to the best available science',
+    <>
+      Projects to increase accountability in the voluntary carbon market and tie
+      CDR policy and investments to the best available science, including{' '}
+      <Link href='https://carbonplan.org/research/offsets-db'>OffsetsDB</Link>{' '}
+      and <Link href='https://cdrxiv.org'>CDRXIV</Link>
+    </>,
   ],
   [
     'Earth Science Information Partners',
@@ -279,6 +284,10 @@ const projectSpecific = [
     <Link href='https://carbonplan.org/research/carbonate-silicate-swap'>
       Moving CDR beyond the market assumption
     </Link>,
+  ],
+  [
+    'Sergey Brin Family Foundation',
+    <Link href='https://cdrxiv.org'>CDRXIV</Link>,
   ],
 ]
 
