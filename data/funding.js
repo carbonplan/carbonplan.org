@@ -269,6 +269,17 @@ const projectSpecific = [
     'Carbon Market Watch',
     'Carbon Removal Certification Framework methodologies review',
   ],
+  [
+    <span>
+      Adam Winkel +<br />
+      Abigail Winkel +<br />
+      Giving Green (via Giving What We Can)
+      <br />
+    </span>,
+    <Link href='https://carbonplan.org/research/carbonate-silicate-swap'>
+      Moving CDR beyond the market assumption
+    </Link>,
+  ],
 ]
 
 const partners = [
