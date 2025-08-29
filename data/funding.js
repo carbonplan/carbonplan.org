@@ -264,19 +264,18 @@ const projectSpecific = [
     'Enhancing the open-source Python Xarray library with new data model abstractions',
   ],
   [
-    <span>
-      [C]Worthy +<br />
-      Carbon to Sea (via Windward Fund)
-    </span>,
-    <Link href='https://carbonplan.org/research/oae-efficiency'>
-      Mapping the efficiency of ocean alkalinity enhancement
-    </Link>,
-  ],
-  [
     <span>[C]Worthy</span>,
-    <Link href='https://carbonplan.org/research/dor-efficiency'>
-      Mapping the efficiency of direct ocean removal
-    </Link>,
+    <>
+      <Link href='https://carbonplan.org/research/oae-efficiency'>
+        Mapping the efficiency of ocean alkalinity enhancement
+      </Link>
+      <br />
+      <Link href='https://carbonplan.org/research/dor-efficiency'>
+        Mapping the efficiency of direct ocean removal
+      </Link>
+      <br />
+      (with Carbon to Sea via Windward Fund)
+    </>,
   ],
   [
     'Carbon Market Watch',
