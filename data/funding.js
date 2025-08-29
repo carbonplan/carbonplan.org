@@ -238,9 +238,17 @@ const projectSpecific = [
       Grantham Foundation
       <br />
     </span>,
-    <Link href='https://www.energy.gov/technologytransitions/articles/doe-selects-four-national-laboratory-led-teams-accelerate'>
-      Technical foundations for CDR MRV standards
-    </Link>,
+    <>
+      <Link href='https://www.energy.gov/technologytransitions/articles/doe-selects-four-national-laboratory-led-teams-accelerate'>
+        Technical foundations for CDR MRV standards
+      </Link>
+      <br />
+      <Link href='https://carbonplan.org/research/carbonate-silicate-swap'>
+        Moving CDR beyond the market assumption
+      </Link>
+      <br />
+      (with Giving Green via Giving What We Can)
+    </>,
   ],
   [
     'World Bank',
@@ -273,17 +281,6 @@ const projectSpecific = [
   [
     'Carbon Market Watch',
     'Carbon Removal Certification Framework methodologies review',
-  ],
-  [
-    <span>
-      Adam Winkel +<br />
-      Abigail Winkel +<br />
-      Giving Green (via Giving What We Can)
-      <br />
-    </span>,
-    <Link href='https://carbonplan.org/research/carbonate-silicate-swap'>
-      Moving CDR beyond the market assumption
-    </Link>,
   ],
   [
     'Sergey Brin Family Foundation',
