@@ -29,7 +29,6 @@ const highlights = [
 ]
 
 const press = [
-
   {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2025-10-17/majority-of-carbon-credits-from-tarnished-project-deemed-bogus/',
