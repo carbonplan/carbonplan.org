@@ -29,13 +29,14 @@ const highlights = [
 ]
 
 const press = [
+
   {
-    source: ['Trellis'],
-    href: 'https://trellis.net/article/verra-kariba-investigation-risk-volkswagen-totalenergies-carbon-neutral-claims/',
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2025-10-17/majority-of-carbon-credits-from-tarnished-project-deemed-bogus/',
     title:
-      'Volkswagen, TotalEnergies and others face risks over “limbo” credits',
-    authors: ['Jim Giles'],
-    date: '10-09-25',
+      'Majority of Carbon Credits From Tarnished Project Deemed Bogus',
+    authors: ['Ben Elgin'],
+    date: '10-17-25',
     format: 'print',
   },
   {
