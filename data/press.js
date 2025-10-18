@@ -40,7 +40,8 @@ const press = [
   {
     source: ['Trellis'],
     href: 'https://trellis.net/article/verra-kariba-investigation-risk-volkswagen-totalenergies-carbon-neutral-claims/',
-    title: 'Volkswagen, TotalEnergies and others face risks over “limbo” credits',
+    title:
+      'Volkswagen, TotalEnergies and others face risks over “limbo” credits',
     authors: ['Jim Giles'],
     date: '10-09-25',
     format: 'print',
