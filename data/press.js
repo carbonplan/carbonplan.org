@@ -39,6 +39,14 @@ const press = [
   },
   {
     source: ['Trellis'],
+    href: 'https://trellis.net/article/verra-kariba-investigation-risk-volkswagen-totalenergies-carbon-neutral-claims/',
+    title: 'Volkswagen, TotalEnergies and others face risks over “limbo” credits',
+    authors: ['Jim Giles'],
+    date: '10-09-25',
+    format: 'print',
+  },
+  {
+    source: ['Trellis'],
     href: 'https://trellis.net/article/rmi-taking-aim-messy-data-plague-carbon-markets/',
     title: 'RMI takes aim at the messy data that plague carbon markets',
     authors: ['Jim Giles'],
