@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Bloomberg'],
+    href: 'https://www.bloomberg.com/news/articles/2025-10-17/majority-of-carbon-credits-from-tarnished-project-deemed-bogus/',
+    title: 'Majority of carbon credits from tarnished project deemed bogus',
+    authors: ['Ben Elgin'],
+    date: '10-17-25',
+    format: 'print',
+  },
+  {
     source: ['Trellis'],
     href: 'https://trellis.net/article/verra-kariba-investigation-risk-volkswagen-totalenergies-carbon-neutral-claims/',
     title:
