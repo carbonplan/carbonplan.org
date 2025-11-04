@@ -52,7 +52,7 @@ const team = [
   {
     name: 'Tracy Aquino Anderson',
     role: 'Interim Executive Director',
-    bio: 'Tracy joined CarbonPlan in 2024, as Deputy Director, and has supported a range of high-impact, cross-disciplinary teams during her years as a nonprofit leader. She holds a BA from Yale University.',
+    bio: 'Tracy joined CarbonPlan in 2024 as Deputy Director, and has supported a range of high-impact, cross-disciplinary teams during her years as a nonprofit leader. She holds a BA from Yale University.',
   },
   {
     name: 'Claire Zarakas',
