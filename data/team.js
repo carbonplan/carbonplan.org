@@ -1,10 +1,5 @@
 const team = [
   {
-    name: 'Jeremy Freeman',
-    role: 'Executive Director',
-    bio: 'Jeremy is a scientist with a passion for open science, open source software, and bringing cross-disciplinary teams together to tackle big problems. He holds a PhD in Neural Science from New York University and a BA in Neuroscience from Swarthmore College.',
-  },
-  {
     name: 'Oriana Chegwidden',
     role: 'Research Scientist',
     bio: 'Oriana is a climate scientist committed to conducting impactful, equitable science. She is an alum of AmeriCorps, where she worked to support immigrant rights. She holds a PhD in Civil and Environmental Engineering from the University of Washington and a BS in Chemistry from Haverford College.',
@@ -17,12 +12,12 @@ const team = [
   {
     name: 'Becky Hurst',
     role: 'Operations Lead',
-    bio: 'Becky has extensive experience in the nonprofit sector, and is energized by operations and project management. She is passionate about creating organizational systems that foster team productivity, and is excited to be involved in climate action. She holds a BA in English Literature from Western Washington University.',
+    bio: 'Becky has extensive experience in the nonprofit sector, and is energized by operations and project management. She is passionate about creating organizational systems that foster team productivity, and is excited to be involved in climate action. She holds a BA from Western Washington University.',
   },
   {
     name: 'Kata Martin',
     role: 'Product Lead',
-    bio: 'Kata is a software engineer focused on front-end web development. She is excited to build web tools that contribute to conversations about climate. She holds a BA in Chemistry from Reed College.',
+    bio: 'Kata is a software engineer and designer with a background in front-end web development. She works on web tools and graphics that support CarbonPlan’s research. She holds a BA from Reed College.',
   },
   {
     name: 'Raphael Hagen',
@@ -56,8 +51,8 @@ const team = [
   },
   {
     name: 'Tracy Aquino Anderson',
-    role: 'Deputy Director',
-    bio: 'Tracy’s had the opportunity to support, and learn from, a range of high-impact, purpose-driven organizations. Previously a program leader at the National Domestic Workers Alliance, she’s helping build CarbonPlan’s capacity and is excited to advance real climate solutions. She earned a BA from Yale University.',
+    role: 'Interim Executive Director',
+    bio: 'Tracy joined CarbonPlan in 2024, as Deputy Director, and has supported a range of high-impact, cross-disciplinary teams during her years as a nonprofit leader. She holds a BA from Yale University.',
   },
   {
     name: 'Claire Zarakas',
@@ -67,11 +62,11 @@ const team = [
 ]
 
 const board = [
-  ['Jeremy Freeman', 'CarbonPlan'],
+  ['Jeremy Freeman', 'CarbonPlan Co-founder'],
   ['Kelly Gannon', 'National Domestic Workers Alliance'],
   ['Gernot Wagner', 'Columbia Business School'],
   ['Arjuna Dibley', 'University of Melbourne / University of Oxford'],
-  ['Tracy Teal', 'Nixtla'],
+  ['Tracy Teal', 'OpenRxiv'],
 ]
 
 export { team, board }
