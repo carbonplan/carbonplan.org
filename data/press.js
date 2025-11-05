@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['The Globe'],
+    href: 'https://oglobo.globo.com/brasil/cop-30-amazonia/noticia/2025/10/31/calor-intenso-desafia-adaptacao-climatica-em-belem.ghtml',
+    title: 'Intense heat challenges climate adaptation in Bethlehem',
+    authors: ['Rafael Vazquez'],
+    date: '10-31-25',
+    format: 'print',
+  },
+  {
     source: ['Bloomberg'],
     href: 'https://www.bloomberg.com/news/articles/2025-10-17/majority-of-carbon-credits-from-tarnished-project-deemed-bogus/',
     title: 'Majority of carbon credits from tarnished project deemed bogus',
