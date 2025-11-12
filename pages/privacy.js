@@ -22,7 +22,7 @@ const Privacy = () => {
             }}
           >
             <Box as='p' variant='styles.p'>
-              Updated as of June 24, 2025
+              Updated as of November 12, 2025
             </Box>
             <Box as='p' variant='styles.p'>
               This Privacy Policy (“Policy”) explains the information
@@ -302,6 +302,20 @@ const Privacy = () => {
               We use Vercel (https://vercel.com) to host our services; they
               handle the data they collect in accordance with their privacy
               policy: https://vercel.com/legal/privacy-policy.
+            </Box>
+            <Box as='p' variant='styles.p'>
+              We use Amazon Web Services (AWS) to serve data to our frontend
+              applications. Some user data, such as IP addresses, may be shared
+              with AWS. Their privacy policy is https://aws.amazon.com/privacy/.
+            </Box>
+            <Box as='p' variant='styles.p'>
+              We use HERE Maps to provide geocoding for our Open Climate Risk
+              platform. HERE Maps receives some specific data, such as text
+              typed into our address lookup input, as well as location
+              (latitude, longitude) information for any structures clicked while
+              using the application. HERE Maps does not receive user IP
+              addresses. Their privacy policy is
+              https://legal.here.com/en-gb/privacy.
             </Box>
             <Box as='h2' variant='styles.h2'>
               03 — How we use your information
