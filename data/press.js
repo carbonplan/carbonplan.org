@@ -32,11 +32,12 @@ const press = [
   {
     source: ['Jornal o Sul'],
     href: 'https://www.osul.com.br/capital-da-cop30-belem-ferve-e-ja-vive-o-futuro-de-altas-temperaturas-que-o-mundo-tenta-evitar/',
-    title: 'Capital of COP30, Belém boils and already lives the future of the high temperatures that the world tries to avoid',
+    title:
+      'Capital of COP30, Belém boils and already lives the future of the high temperatures that the world tries to avoid',
     authors: ['Redação O Sul'],
     date: '11-09-25',
     format: 'print',
-  }, 
+  },
   {
     source: ['The Globe'],
     href: 'https://oglobo.globo.com/brasil/cop-30-amazonia/noticia/2025/10/31/calor-intenso-desafia-adaptacao-climatica-em-belem.ghtml',
