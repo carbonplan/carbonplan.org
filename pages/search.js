@@ -65,9 +65,7 @@ const Search = ({ contents }) => {
     <Layout
       links={'homepage'}
       title={'Search – CarbonPlan'}
-      description={
-        'Public list of all our sources of unrestricted or project-specific funding greater than $1000.'
-      }
+      description={'TK.'}
     >
       <Row sx={{ mt: [5, 6, 7, 8], mb: [5, 6, 7, 8], ...sx }}>
         <Column start={[1, 1, 2, 2]} width={[6, 6, 3, 3]}>
@@ -83,7 +81,7 @@ const Search = ({ contents }) => {
               pb: '4px',
             }}
           >
-            There {results.length} results that match your search.
+            There are {results.length} results that match your search.
           </Flex>
         </Column>
       </Row>
@@ -130,10 +128,14 @@ const Search = ({ contents }) => {
           </Flex>
         </Column>
         <Column start={[1, 1, 5, 5]} width={[6, 5, 5, 5]}>
-          {results.map(({ page, date, metadata }) => (
+          {results.map(({ page, date, metadata }, i) => (
             <Box key={page}>
+              {i > 0 && <Divider sx={{ my: 4 }} />}
               <Box sx={sx.label}>
-                {date && formatDate(date)} / {metadata.type}
+                {date && formatDate(date)} /{' '}
+                {page.includes('research/cdr-verification/')
+                  ? 'Verification Framework Tool'
+                  : metadata.type}
               </Box>
               <Box sx={{ variant: 'styles.h3', mt: 4, mb: 3 }}>
                 <Link
@@ -143,9 +145,14 @@ const Search = ({ contents }) => {
                   {metadata.title}
                 </Link>
               </Box>
-              <Box sx={{ mb: 3 }}>{metadata.summary}</Box>
-              <Box sx={sx.label}>{metadata.authors?.join(' + ')}</Box>
-              <Divider sx={{ my: 4 }} />
+
+              <Box>{metadata.summary}</Box>
+
+              {metadata.authors?.length > 0 && (
+                <Box sx={{ ...sx.label, mt: 3 }}>
+                  {metadata.authors?.join(' + ')}
+                </Box>
+              )}
             </Box>
           ))}
         </Column>
@@ -157,16 +164,19 @@ const Search = ({ contents }) => {
 export default Search
 
 export const getStaticProps = async () => {
-  const [research, blog] = await Promise.all([
+  const [research, blog, vcl] = await Promise.all([
     fetch(
       'https://research-git-katamartin-metadata-carbonplan.vercel.app/research/contents.json'
     ).then((res) => res.json()),
     fetch(
       'https://blog-git-katamartin-metadata-carbonplan.vercel.app/blog/contents.json'
     ).then((res) => res.json()),
+    fetch(
+      'https://cdr-mrv-git-katamartin-metadata-carbonplan.vercel.app/research/cdr-verification/contents.json'
+    ).then((res) => res.json()),
   ])
 
-  const contents = [...research, ...blog]
+  const contents = [...research, ...blog, ...vcl]
     .filter((el) => el.metadata)
     .map((el) =>
       el.metadata.authors
