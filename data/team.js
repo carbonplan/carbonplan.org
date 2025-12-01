@@ -65,8 +65,8 @@ const board = [
   ['Jeremy Freeman', 'CarbonPlan Co-founder'],
   ['Kelly Gannon', 'National Domestic Workers Alliance'],
   ['Gernot Wagner', 'Columbia Business School'],
-  ['Arjuna Dibley', 'University of Melbourne / University of Oxford'],
-  ['Tracy Teal', 'OpenRxiv'],
+  ['Arjuna Dibley', 'University of Singapore'],
+  ['Tracy Teal', 'openRxiv'],
 ]
 
 export { team, board }
