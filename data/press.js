@@ -3,8 +3,8 @@ import { Link } from '@carbonplan/components'
 const highlights = [
   {
     source: 'CNN',
-    href: 'https://edition.cnn.com/2024/08/11/climate/olympics-cities-extreme-heat/index.html',
-    date: '08-12-2024',
+    href: 'https://www.cnn.com/2025/12/02/climate/zillow-climate-data-extreme-weather-first-street-redfin',
+    date: '12-02-2025',
   },
   {
     source: 'Bloomberg',
@@ -29,6 +29,15 @@ const highlights = [
 ]
 
 const press = [
+  {
+    source: ['CNN'],
+    href: 'https://www.cnn.com/2025/12/02/climate/zillow-climate-data-extreme-weather-first-street-redfin',
+    title:
+      'The real estate industry is pressuring Zillow and other sites to nix extreme weather risk data buyers have come to rely on',
+    authors: ['Ella Nilsen'],
+    date: '12-02-25',
+    format: 'print',
+  },
   {
     source: ['Jornal o Sul'],
     href: 'https://www.osul.com.br/capital-da-cop30-belem-ferve-e-ja-vive-o-futuro-de-altas-temperaturas-que-o-mundo-tenta-evitar/',
