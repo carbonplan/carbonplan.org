@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Climate Home News'],
+    href: 'https://www.climatechangenews.com/2025/12/18/house-of-cards-verra-used-junk-carbon-credits-to-fix-shells-offsetting-scandal/',
+    title:
+      '“House of cards”: Verra used junk carbon credits to fix Shell’s offsetting scandal',
+    authors: ['Matteo Civillini'],
+    date: '12-18-25',
+    format: 'print',
+  },
+  {
     source: ['CNN'],
     href: 'https://www.cnn.com/2025/12/02/climate/zillow-climate-data-extreme-weather-first-street-redfin',
     title:
