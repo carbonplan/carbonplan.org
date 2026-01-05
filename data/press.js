@@ -32,7 +32,8 @@ const press = [
   {
     source: ['Boston Globe'],
     href: 'https://www.bostonglobe.com/2025/12/25/science/fall-river-carbon-removal-startup/',
-    title: 'Could your city’s sewage capture carbon? A New Haven startup is putting it to the test.',
+    title:
+      'Could your city’s sewage capture carbon? A New Haven startup is putting it to the test.',
     authors: ['Kate Selig'],
     date: '12-25-25',
     format: 'print',
