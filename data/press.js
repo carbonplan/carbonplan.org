@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Boston Globe'],
+    href: 'https://www.bostonglobe.com/2025/12/25/science/fall-river-carbon-removal-startup/',
+    title:
+      'Could your city’s sewage capture carbon? A New Haven startup is putting it to the test.',
+    authors: ['Kate Selig'],
+    date: '12-25-25',
+    format: 'print',
+  },
+  {
     source: ['Climate Home News'],
     href: 'https://www.climatechangenews.com/2025/12/18/house-of-cards-verra-used-junk-carbon-credits-to-fix-shells-offsetting-scandal/',
     title: 'Verra used junk carbon credits to fix Shell’s offsetting scandal',
