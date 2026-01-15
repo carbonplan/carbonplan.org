@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['Reversing Climate Change'],
+    href: 'https://podcasts.apple.com/us/podcast/382-silicates-vs-carbonates-how-the-1996-ipcc-report/id1321759767?i=1000745262429',
+    title:
+      'Silicates vs. Carbonates: How the 1996 IPCC Report created enhanced rock weathering path dependency',
+    authors: ['Ross Kenyon'],
+    date: '01-15-26',
+    format: 'audio',
+  },
+  {
     source: ['Boston Globe'],
     href: 'https://www.bostonglobe.com/2025/12/25/science/fall-river-carbon-removal-startup/',
     title:
