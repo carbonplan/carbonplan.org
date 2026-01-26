@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['QuiFinanza Green'],
+    href: 'https://quifinanza.it/green/olimpiadi-invernali-citta-cambiamento-climatico/954734/',
+    title:
+      'Winter Olympics: Which cities won’t be able to host them due to the climate',
+    authors: ['Giorgia Bonamoneta'],
+    date: '01-26-26',
+    format: 'print',
+  },
+  {
     source: ['Reversing Climate Change'],
     href: 'https://podcasts.apple.com/us/podcast/382-silicates-vs-carbonates-how-the-1996-ipcc-report/id1321759767?i=1000745262429',
     title:
