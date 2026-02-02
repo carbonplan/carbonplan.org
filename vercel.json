@@ -98,11 +98,11 @@
     },
     {
       "source": "/research/climate-risk",
-      "destination": "https://ocr.carbonplan.org/research/climate-risk"
+      "destination": "https://ocr-web-prod-git-shane98c-rm-auth-carbonplan.vercel.app/research/climate-risk"
     },
     {
       "source": "/research/climate-risk/(.*)",
-      "destination": "https://ocr.carbonplan.org/research/climate-risk/$1"
+      "destination": "https://ocr-web-prod-git-shane98c-rm-auth-carbonplan.vercel.app/research/climate-risk/$1"
     },
     {
       "source": "/research(.*)",
