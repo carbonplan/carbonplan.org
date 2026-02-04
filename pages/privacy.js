@@ -389,7 +389,7 @@ const Privacy = () => {
               <Link href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement'>
                 https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
               </Link>
-              ;
+              ;{' '}
               <Link href='https://about.readthedocs.com/privacy-policy'>
                 https://about.readthedocs.com/privacy-policy
               </Link>
