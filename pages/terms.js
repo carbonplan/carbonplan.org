@@ -22,7 +22,7 @@ const Terms = () => {
             }}
           >
             <Box as='p' variant='styles.p'>
-              Updated as of February 20, 2025
+              Updated as of February 4, 2026
             </Box>
             <Box as='h2' variant='styles.h2'>
               01 — General information regarding these terms of use
@@ -34,12 +34,13 @@ const Terms = () => {
               these master terms of use (“Master Terms”) apply to your use of
               all the websites that CarbonPlan operates that reference these
               Master Terms, including https://carbonplan.org and all subdomains
-              thereof, and our Github account (https://github.com/carbonplan)
-              (collectively, the “Websites”). These Master Terms also apply to
-              all content, data, software, products, functionality, and/or
-              services provided through the Websites (together with the
-              Websites, the “Services”). Additional terms: These Master Terms
-              specifically include and incorporate our{' '}
+              thereof, our content hosted at Read the Docs, including various
+              subdomains of readthedocs.io, and our Github account
+              (https://github.com/carbonplan) (collectively, the “Websites”).
+              These Master Terms also apply to all content, data, software,
+              products, functionality, and/or services provided through the
+              Websites (together with the Websites, the “Services”). Additional
+              terms: These Master Terms specifically include and incorporate our{' '}
               <Link href='https://carbonplan.org/privacy'>Privacy Policy</Link>.
               In addition to the Master Terms, your use of any Services may also
               be subject to specific terms applicable to a particular Service
@@ -92,7 +93,7 @@ const Terms = () => {
             <i>
               Human-readable summary of Section 02: Please read these terms and
               only use our sites and services if you agree to them. If you are
-              under 18, please get consent from a parent or guardian that agrees
+              under 18, please get consent from a parent or guardian who agrees
               to these terms. If you are under 13, you cannot use our sites and
               services.
             </i>
@@ -138,7 +139,7 @@ const Terms = () => {
             Services.
             <br />
             <br />
-            <i>Licensing of CarbonPlan-Owned</i> Content: Consistent with our
+            <i>Licensing of CarbonPlan-Owned Content</i>: Consistent with our
             charitable mission to build open tools and resources for the
             evaluation and deployment of climate solutions, we aim to release
             software, articles, models, and datasets under maximally permissive
@@ -196,9 +197,9 @@ const Terms = () => {
             code, content, data, suggestion, feedback, or any other information)
             to us, including through our Services, you will and hereby do grant
             us a worldwide, nonexclusive, royalty-free, perpetual, irrevocable
-            license to copy, modify, distribute, publicly display and publicly
+            license to copy, modify, distribute, publicly display, and publicly
             perform Your Content in all forms of media for the purpose of
-            providing the Services, including without limitation sharing Your
+            providing the Services, including, without limitation, sharing Your
             Content with other users, analyzing it on our servers, making
             production, archival and backup copies, and improving the Services
             over time. <br />
@@ -206,7 +207,7 @@ const Terms = () => {
             <i>Licensing Your Content to Other Users</i>: If you post Your
             Content such that it is viewable by other users, you grant to such
             other users a worldwide, nonexclusive, royalty-free license to copy,
-            use, display and perform Your Content, as permitted through the
+            use, display, and perform Your Content, as permitted through the
             functionality of the Service. If you contribute Your Content to any
             portion of the Services that requires you to grant a specific
             additional license to other users, such as a public license, you
@@ -217,7 +218,7 @@ const Terms = () => {
             contributor license agreement that specifies different terms. In
             addition, we may specify that submissions to certain portions of our
             Websites must be made pursuant a public license, such as CC-BY 4.0,
-            and when you make such a submission then Your Content shall be, and
+            and when you make such a submission, then Your Content shall be, and
             is, licensed under the terms of the license we specify. If you do
             not want to license Your Content under the specified license, then
             you should not submit Your Content.
@@ -286,7 +287,7 @@ const Terms = () => {
               <li>
                 You may not (a) use any Service for any illegal purpose or in
                 violation of any local, state, national, or international laws,
-                (b) violate or encourage others to violate any right of or
+                or (b) violate or encourage others to violate any right of or
                 obligation to a third party, including by infringing,
                 misappropriating, or violating intellectual property,
                 confidentiality, or privacy rights.
@@ -621,9 +622,9 @@ const Terms = () => {
             the Services.
             <br />
             <br />
-            Integration: These Master Terms together with our Privacy Policy and
-            any applicable Additional Terms constitute the entire agreement
-            between you and CarbonPlan relating to this subject matter and
+            Integration: These Master Terms, together with our Privacy Policy
+            and any applicable Additional Terms, constitute the entire agreement
+            between you and CarbonPlan relating to this subject matter, and
             supersede any and all prior communications and/or agreements between
             you and CarbonPlan relating to access and use of the Services.
           </Box>
