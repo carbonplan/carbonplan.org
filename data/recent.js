@@ -1,22 +1,26 @@
 const research1 = {
-  id: 'dor-efficiency',
-  date: '06-04-2025',
-  href: '/research/dor-efficiency-explainer',
-  title: 'DOR efficiency',
+  id: 'climate-risk',
+  date: '02-04-2026',
+  href: '/research/climate-risk',
+  title: 'Open Climate Risk',
   summary:
-    'An interactive tool for exploring the efficiency of direct ocean removal (DOR), developed in collaboration with [C]Worthy.',
+    'We developed a tool to explore a new, open source dataset of wildfire risk estimates across the contiguous United States.',
 }
 
 const research2 = {
   id: 'offsets-db',
-  date: '04-23-2025',
+  date: '01-14-2026',
   title: 'OffsetsDB',
   summary:
-    'We’ve expanded our database of offset data with searchable project types and details about who is using offset credits.',
+    'We’ve added project boundary data from 500 forest offset projects to our database of offset data.',
   href: '/research/offsets-db',
 }
 
 const highlights = [
+  {
+    label: 'Open Climate Risk',
+    href: '/research/climate-risk',
+  },
   {
     label: 'DOR efficiency',
     href: '/research/dor-efficiency-explainer',
@@ -28,10 +32,6 @@ const highlights = [
   {
     label: 'Risk (dis)agreement',
     href: '/research/climate-risk-comparison',
-  },
-  {
-    label: 'Extreme heat',
-    href: '/research/extreme-heat-explainer',
   },
 ]
 
