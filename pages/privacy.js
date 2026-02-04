@@ -531,7 +531,7 @@ const Privacy = () => {
               present, or future information that we hold about you, such as
               your name, contact details and other information involving
               analysis of data relating to you as an applicant for employment.
-              Indeed’s Privacy Notice concerning such data is available at
+              Indeed’s Privacy Notice concerning such data is available at{' '}
               <Link href='https://hrtechprivacy.com/brands/indeed'>
                 https://hrtechprivacy.com/brands/indeed
               </Link>
