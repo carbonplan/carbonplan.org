@@ -22,7 +22,7 @@ const Privacy = () => {
             }}
           >
             <Box as='p' variant='styles.p'>
-              Updated as of November 12, 2025
+              Updated as of February 4, 2026
             </Box>
             <Box as='p' variant='styles.p'>
               This Privacy Policy (“Policy”) explains the information
@@ -36,13 +36,19 @@ const Privacy = () => {
               . Unless otherwise noted on a particular website or service hosted
               by CarbonPlan, this Policy describes and governs the information
               collection, use, and sharing practices of CarbonPlan with respect
-              to your use of our https://carbonplan.org domain and all
-              subdomains thereof and our Github account
-              (https://github.com/carbonplan) (collectively, the “Websites”),
-              and the content, data, software, products, functionality, and/or
-              services we provide through our Websites (together with the
-              Websites, the “Services”) Please note that this policy does{' '}
-              <b>not</b> apply to the CDRXIV service (https://cdrxiv.org)
+              to your use of our{' '}
+              <Link href='https://carbonplan.org'>https://carbonplan.org</Link>{' '}
+              domain and all subdomains thereof, our content hosted at Read the
+              Docs, including various subdomains of readthedocs.io, and our
+              Github account (
+              <Link href='https://github.com/carbonplan'>
+                https://github.com/carbonplan
+              </Link>
+              ) (collectively, the “Websites”), and the content, data, software,
+              products, functionality, and/or services we provide through our
+              Websites (together with the Websites, the “Services”) Please note
+              that this policy does <b>not</b> apply to the CDRXIV service (
+              <Link href='https://cdrxiv.org'>https://cdrxiv.org</Link>)
               operated by CarbonPlan, which is governed by its own terms and
               privacy policy. Before you use or submit any information through
               or in connection with the Services, please carefully review this
@@ -92,22 +98,23 @@ const Privacy = () => {
               Services, (c) make a donation or purchase, (d) participate in or
               register for our online or in-person meetings, events, or
               discussion fora, (e) apply for a job with us, (f) contact us or
-              provide feedback, or (g) interact with our Github repository. This
-              information may include but is not limited to your first and last
-              name, email address, phone number, mailing address, geographic
-              location, content, code, data, feedback, institutional
-              affiliation, social media,and if you apply for a job with us your
-              qualifications and experience, and employment history. We may also
-              collect additional information about you in connection with our
-              conferences and events (e.g., dietary and other preferences), and
-              the provision of this information to us by you is optional.
+              provide feedback, or (g) access our documentation at Read the
+              Docs, or (h) interact with our Github repository. This information
+              may include but is not limited to your first and last name, email
+              address, phone number, mailing address, geographic location,
+              content, code, data, feedback, institutional affiliation, social
+              media,and if you apply for a job with us, your qualifications,
+              experience, and employment history. We may also collect additional
+              information about you in connection with our conferences and
+              events (e.g., dietary and other preferences), and the provision of
+              this information to us by you is optional.
             </Box>
             <Box as='h3' variant='styles.h3'>
               Information that is automatically collected
             </Box>
 
             <Box as='p' variant='styles.p'>
-              <i>Device/Usage information</i>
+              <i>Device/usage information</i>
             </Box>
             <Box as='p' variant='styles.p'>
               We, and our third-party service providers, may automatically
@@ -130,26 +137,34 @@ const Privacy = () => {
               <i>Cookies and other tracking technologies</i>
             </Box>
             <Box as='p' variant='styles.p'>
-              CarbonPlan does not set any direct cookies but our third-party
-              service providers (which allow us to receive donations, and
-              newsletter sign-ups, for example) collect data about your use of
-              the Services through the use of Internet server logs and online
-              tracking technologies, including cookies and/or tracking pixels. A
-              web server log is a file where website activity is stored. A
-              cookie is a small text file that is placed on your computer when
-              you visit a website, and in some cases when you receive an email,
-              that enables us and/or our service providers to: (a) recognize
-              your computer; (b) store your preferences and settings; (c)
-              understand the web pages of the Services you have visited and the
-              referral sites that have led you to our Services; (d) perform
-              searches and analytics; and (e) assist with security,
-              authentication, and other administrative functions. Tracking
-              pixels (sometimes referred to as web beacons or clear GIFs) are
-              tiny electronic tags with a unique identifier embedded in
-              websites, online ads and/or email, that are designed to provide
-              usage information like impressions or clicks, measure popularity
-              of the Services and associated advertising or content, and to
-              access user cookies.
+              When users access Open Climate Risk and agree to CarbonPlan’s
+              Terms of Use and Privacy Policy, CarbonPlan uses a browser-based
+              storage technology (
+              <Link href='https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage'>
+                localStorage
+              </Link>
+              ) to remember whether you have accepted our terms. CarbonPlan
+              collects data through the use of server logs and other
+              technologies as described herein, but does not otherwise set
+              first-party cookies. CarbonPlan’s third-party service providers
+              (which allow us to receive donations, and newsletter sign-ups, for
+              example) collect data about your use of the Services through the
+              use of server logs and online tracking technologies, including
+              cookies and/or tracking pixels. A web server log is a file where
+              website activity is stored. A cookie is a small text file that is
+              placed on your computer when you visit a website, and in some
+              cases when you receive an email, that enables us and/or our
+              service providers to: (a) recognize your computer; (b) store your
+              preferences and settings; (c) understand the web pages of the
+              Services you have visited and the referral sites that have led you
+              to our Services; (d) perform searches and analytics; and (e)
+              assist with security, authentication, and other administrative
+              functions. Tracking pixels (sometimes referred to as web beacons
+              or clear GIFs) are tiny electronic tags with a unique identifier
+              embedded in websites, online ads and/or email, that are designed
+              to provide usage information like impressions or clicks, measure
+              popularity of the Services and associated advertising or content,
+              and to access user cookies.
             </Box>
             <Box as='p' variant='styles.p'>
               These are examples of the sources of cookies and/or tracking
@@ -157,31 +172,50 @@ const Privacy = () => {
             </Box>
             <ul>
               <li>
-                We use Plausible for analytics, which minimizes use of cookies:
-                https://plausible.io/data-policy.
+                We use Plausible for analytics, which minimizes use of cookies:{' '}
+                <Link href='https://plausible.io/data-policy'>
+                  https://plausible.io/data-policy
+                </Link>
+                .
               </li>
               <li>
                 If you sign up for or receive our email newsletter, Mailchimp
-                uses cookies and/or tracking pixels, including via sign-up form
-                on our website, and to recognize when recipients have opened an
-                email or clicked certain links. These technologies record
-                information including your form submissions, email address, IP
-                address, date, and time associated with each open and click.
-                More information about the cookies used by Mailchimp can be
-                found here: https://mailchimp.com/legal/cookies.
+                uses cookies and/or tracking pixels, including via a sign-up
+                form on our website, and to recognize when recipients have
+                opened an email or clicked certain links. These technologies
+                record information including your form submissions, email
+                address, IP address, date, and time associated with each open
+                and click. More information about the cookies used by Mailchimp
+                can be found here:{' '}
+                <Link href='https://mailchimp.com/legal/cookies'>
+                  https://mailchimp.com/legal/cookies
+                </Link>
+                .
               </li>
               <li>
                 If you choose to visit our job openings page, it is hosted at
-                workable.com, whose cookie disclosure and list are available at
-                https://www.workable.com/cookies and
-                https://www.workable.com/cookies-list, respectively.
+                workable.com, whose cookie disclosure and list are available at{' '}
+                <Link href='https://www.workable.com/cookies'>
+                  https://www.workable.com/cookies
+                </Link>{' '}
+                and{' '}
+                <Link href='https://www.workable.com/cookies-list'>
+                  https://www.workable.com/cookies-list
+                </Link>
+                , respectively.
               </li>
               <li>
                 If you choose to donate money through our Website, you will be
                 directed to our payment processor, Stripe, who will use cookies
-                as described in their cookie policy:
-                https://stripe.com/legal/cookies-policy and cookie settings:
-                https://stripe.com/cookie-settings.
+                as described in their cookie policy:{' '}
+                <Link href='https://stripe.com/legal/cookies-policy'>
+                  https://stripe.com/legal/cookies-policy
+                </Link>{' '}
+                and cookie settings:{' '}
+                <Link href='https://stripe.com/cookie-settings'>
+                  https://stripe.com/cookie-settings
+                </Link>
+                .
               </li>
               <li>
                 We use Google reCAPTCHA to fight spam and abuse on the Services,
@@ -194,16 +228,33 @@ const Privacy = () => {
                 <Link href='https://policies.google.com/terms?hl=en-US'>
                   Terms of Use
                 </Link>
-                . Their cookies policy is available at:
-                https://policies.google.com/technologies/cookies.
+                . Their cookies policy is available at:{' '}
+                <Link href='https://policies.google.com/technologies/cookies'>
+                  https://policies.google.com/technologies/cookies
+                </Link>
+                .
               </li>
               <li>
                 If you view content from our Github page, then Github will set
                 cookies while you use their site, as described in their privacy
-                policy:
-                https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
-                and in their cookies disclosure:
-                https://github.com/privacy/cookies.
+                policy:{' '}
+                <Link href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement'>
+                  https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+                </Link>{' '}
+                and in their cookies disclosure:{' '}
+                <Link href='https://github.com/privacy/cookies'>
+                  https://github.com/privacy/cookies
+                </Link>
+                .
+              </li>
+              <li>
+                If you view content on our documentation sites hosted by Read
+                the Docs, then Read the Docs will set cookies while you use
+                their site, as described in their privacy policy:{' '}
+                <Link href='https://about.readthedocs.com/privacy-policy'>
+                  https://about.readthedocs.com/privacy-policy
+                </Link>
+                .
               </li>
             </ul>
             <Box as='p' variant='styles.p'>
@@ -262,9 +313,15 @@ const Privacy = () => {
               information you submit to the newsletter sign-up form on our
               website, and information related to emails you receive, including
               as discussed above concerning cookies and tracking technologies,
-              and in Mailchimp’s terms and privacy policy
-              (https://www.intuit.com/privacy/statement/;
-              https://mailchimp.com/legal/terms/).
+              and in Mailchimp’s terms and privacy policy (
+              <Link href='https://www.intuit.com/privacy/statement/'>
+                https://www.intuit.com/privacy/statement/
+              </Link>
+              ;{' '}
+              <Link href='https://mailchimp.com/legal/terms/'>
+                https://mailchimp.com/legal/terms/
+              </Link>
+              ).
             </Box>
             <Box as='p' variant='styles.p'>
               We use Workable, an online application provided by Workable
@@ -274,16 +331,29 @@ const Privacy = () => {
               personal data in accordance with our instructions. Workable may
               retain your personal data and may also collect data from us in
               respect of the progress of your application. Any use by Workable
-              of your data will be in accordance with their privacy policy
-              (https://www.workable.com/privacy).
+              of your data will be in accordance with their privacy policy (
+              <Link href='https://www.workable.com/privacy'>
+                https://www.workable.com/privacy
+              </Link>
+              ).
             </Box>
             <Box as='p' variant='styles.p'>
               Our donation processor, Stripe, will collect information you
-              submit to them in accordance with their terms and privacy policy
-              (https://stripe.com/legal/consumer; https://stripe.com/privacy),
-              and if you choose to pay via Stripe’s Link service, also in
-              accordance with the Link terms and privacy policy
-              (https://link.com/terms; https://link.com/privacy).
+              submit to them in accordance with their terms and privacy policy (
+              <Link href='https://stripe.com/legal/consumer'>
+                https://stripe.com/legal/consumer
+              </Link>
+              ;{' '}
+              <Link href='https://stripe.com/privacy'>
+                https://stripe.com/privacy
+              </Link>
+              ), and if you choose to pay via Stripe’s Link service, also in
+              accordance with the Link terms and privacy policy (
+              <Link href='https://link.com/terms'>https://link.com/terms</Link>;{' '}
+              <Link href='https://link.com/privacy'>
+                https://link.com/privacy
+              </Link>
+              ).
             </Box>
             <Box as='p' variant='styles.p'>
               As discussed above, we use Google reCAPTCHA to fight spam and
@@ -291,31 +361,66 @@ const Privacy = () => {
               Google’s Privacy Policy and Terms of Use. Similarly, your use of
               all third-party services, whether or not offered through the
               Services, is subject to that third party’s terms and privacy
-              policies, including without limitation Github.
+              policies, including without limitation Github and Read the Docs.
             </Box>
             <Box as='p' variant='styles.p'>
-              We use Plausible (https://plausible.io/privacy) for analytics;
-              they handle the data they collect in accordance with their data
-              policy: https://plausible.io/data-policy.
+              We use Plausible (
+              <Link href='https://plausible.io/privacy'>
+                https://plausible.io/privacy
+              </Link>
+              ) for analytics; they handle the data they collect in accordance
+              with their data policy:{' '}
+              <Link href='https://plausible.io/data-policy'>
+                https://plausible.io/data-policy
+              </Link>
+              .
             </Box>
             <Box as='p' variant='styles.p'>
-              We use Vercel (https://vercel.com) to host our services; they
-              handle the data they collect in accordance with their privacy
-              policy: https://vercel.com/legal/privacy-policy.
+              We use Vercel (
+              <Link href='https://vercel.com'>https://vercel.com</Link>) to host
+              certain of our services; they handle the data they collect in
+              accordance with their privacy policy:{' '}
+              <Link href='https://vercel.com/legal/privacy-policy'>
+                https://vercel.com/legal/privacy-policy
+              </Link>
+              . Some of our software and/or content is hosted on Github and Read
+              the Docs, which handle information in accordance with their
+              privacy policies (
+              <Link href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement'>
+                https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+              </Link>
+              ;
+              <Link href='https://about.readthedocs.com/privacy-policy'>
+                https://about.readthedocs.com/privacy-policy
+              </Link>
+              ).
             </Box>
             <Box as='p' variant='styles.p'>
               We use Amazon Web Services (AWS) to serve data to our frontend
-              applications. Some user data, such as IP addresses, may be shared
-              with AWS. Their privacy policy is https://aws.amazon.com/privacy/.
+              applications. In doing so, AWS may process certain technical data
+              (e.g., user IP address and request metadata) as our service
+              provider. AWS provides information about data privacy on its
+              website at:{' '}
+              <Link href='https://aws.amazon.com/compliance/data-privacy-faq'>
+                https://aws.amazon.com/compliance/data-privacy-faq
+              </Link>
+              .
             </Box>
             <Box as='p' variant='styles.p'>
               We use HERE Maps to provide geocoding for our Open Climate Risk
-              platform. HERE Maps receives some specific data, such as text
+              platform. HERE Maps may receive some specific data, such as text
               typed into our address lookup input, as well as location
-              (latitude, longitude) information for any structures clicked while
-              using the application. HERE Maps does not receive user IP
-              addresses. Their privacy policy is
-              https://legal.here.com/en-gb/privacy.
+              information (e.g., latitude, longitude) for any locations selected
+              while using the application. HERE publishes End User Terms (
+              <Link href='https://legal.here.com/en-gb/terms/here-end-user-terms'>
+                https://legal.here.com/en-gb/terms/here-end-user-terms
+              </Link>
+              ) that describe restrictions applicable to end users of HERE
+              products and services, and a Privacy Policy (
+              <Link href='https://legal.here.com/en-gb/privacy'>
+                https://legal.here.com/en-gb/privacy
+              </Link>
+              ) concerning HERE's handling of personal data.
             </Box>
             <Box as='h2' variant='styles.h2'>
               03 — How we use your information
@@ -427,7 +532,10 @@ const Privacy = () => {
               your name, contact details and other information involving
               analysis of data relating to you as an applicant for employment.
               Indeed’s Privacy Notice concerning such data is available at
-              https://hrtechprivacy.com/brands/indeed.
+              <Link href='https://hrtechprivacy.com/brands/indeed'>
+                https://hrtechprivacy.com/brands/indeed
+              </Link>
+              .
             </Box>
             <Box as='p' variant='styles.p'>
               Similarly, when you register for an event, we may share your
@@ -479,7 +587,7 @@ const Privacy = () => {
               your consent to do so.
             </Box>
             <Box as='h3' variant='styles.h3'>
-              Aggregate/De-identified information
+              Aggregate/de-identified information
             </Box>
             <Box as='p' variant='styles.p'>
               We may disclose de-identified and/or aggregated data for any
@@ -500,13 +608,13 @@ const Privacy = () => {
             </Box>
             <ul>
               <li>
-                To Honor Our Contractual Commitments to You – Much of our
+                To Honor Our Contractual Commitments to You — Much of our
                 processing of information is to provide services to our users
                 pursuant to our Terms of Use or other agreements we may have
                 with you.
               </li>
               <li>
-                Legitimate Interests – In many cases, we handle information on
+                Legitimate Interests — In many cases, we handle information on
                 the ground that it furthers our legitimate interests in ways
                 that are not overridden by the interests or fundamental rights
                 and freedoms of the affected individuals, these include:
@@ -527,11 +635,11 @@ const Privacy = () => {
             </Box>
             <ul>
               <li>
-                Legal Compliance – We may need to use and disclose information
+                Legal Compliance — We may need to use and disclose information
                 in certain ways to comply with our legal obligations.
               </li>
               <li>
-                Consent – Where required by law, and in some other cases where
+                Consent — Where required by law, and in some other cases where
                 legally permissible, we handle information on the basis of
                 consent. Where we handle your information on the basis of
                 consent, you have the right to withdraw your consent, in
@@ -548,7 +656,7 @@ const Privacy = () => {
             </Box>
             <ul>
               <li>
-                Email Unsubscribe – You may unsubscribe from our marketing
+                Email Unsubscribe — You may unsubscribe from our marketing
                 emails at any time by clicking on the “unsubscribe” link at the
                 bottom of each newsletter or by emailing hello@carbonplan.org
                 with your request.
@@ -561,11 +669,18 @@ const Privacy = () => {
                 Please review their privacy policies for more information. In
                 addition, you can opt out of receiving targeted ads from members
                 of the Network Advertising Initiative (“NAI”) on the NAI's
-                website at https://thenai.org/opt-out, and from the Digital
-                Advertising Alliance (“DAA”) at https://optout.aboutads.info.
+                website at{' '}
+                <Link href='https://thenai.org/opt-out'>
+                  https://thenai.org/opt-out
+                </Link>
+                , and from the Digital Advertising Alliance (“DAA”) at{' '}
+                <Link href='https://optout.aboutads.info'>
+                  https://optout.aboutads.info
+                </Link>
+                .
               </li>
               <li>
-                EU Data Subject Rights – Individuals in the European Economic
+                EU Data Subject Rights — Individuals in the European Economic
                 Area (“EEA”) and other jurisdictions, including the UK, have
                 certain legal rights (subject to applicable exceptions and
                 limitations) to obtain confirmation of whether we hold certain
@@ -641,7 +756,7 @@ const Privacy = () => {
               also to their users and the public more generally depending on how
               their services function. CarbonPlan is not responsible for the
               content or privacy practices of such third-party websites or
-              services. The collection, use and disclosure of your information
+              services. The collection, use, and disclosure of your information
               will be subject to the privacy policies of the third-party
               websites or services, and not this Privacy Policy. We encourage
               you to read the privacy statements of each and every site you
@@ -655,7 +770,7 @@ const Privacy = () => {
               expand our Services, and we may make changes to the Privacy Policy
               accordingly. We will post any changes here and revise the date
               last updated above. We encourage you to check this page
-              periodically for updates to stay informed on how we collect, use
+              periodically for updates to stay informed on how we collect, use,
               and share your information. If we make material changes to this
               Privacy Policy, we will provide you with notice as required by
               law.
