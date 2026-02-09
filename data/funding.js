@@ -289,6 +289,10 @@ const projectSpecific = [
     'Sergey Brin Family Foundation',
     <Link href='https://cdrxiv.org'>CDRXIV</Link>,
   ],
+  [
+    'Schmidt Science Fellows (via Rhodes Trust)',
+    'Schmidt Science Fellow Claire Zarakas',
+  ],
 ]
 
 const partners = [
