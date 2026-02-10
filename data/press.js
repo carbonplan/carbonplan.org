@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Heatmap'],
+    href: 'https://heatmap.news/adaptation/carbonplan-fire-risk',
+    title: 'This new wildfire risk model has no secrets',
+    authors: ['Emily Pontecorvo'],
+    date: '02-10-26',
+    format: 'print',
+  },
+  {
     source: ['QuiFinanza Green'],
     href: 'https://quifinanza.it/green/olimpiadi-invernali-citta-cambiamento-climatico/954734/',
     title:
