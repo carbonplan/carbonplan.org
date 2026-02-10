@@ -97,6 +97,14 @@
       "destination": "https://carbon-removal-application.carbonplan.org/research/carbon-removal-application$1"
     },
     {
+      "source": "/research/climate-risk",
+      "destination": "https://ocr.carbonplan.org/research/climate-risk"
+    },
+    {
+      "source": "/research/climate-risk/(.*)",
+      "destination": "https://ocr.carbonplan.org/research/climate-risk/$1"
+    },
+    {
       "source": "/research(.*)",
       "destination": "https://research.carbonplan.org/research$1"
     },
