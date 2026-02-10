@@ -32,8 +32,7 @@ const press = [
   {
     source: ['Heatmap'],
     href: 'https://heatmap.news/adaptation/carbonplan-fire-risk',
-    title:
-      'This new wildfire risk model has no secrets',
+    title: 'This new wildfire risk model has no secrets',
     authors: ['Emily Pontecorvo'],
     date: '02-10-26',
     format: 'print',
