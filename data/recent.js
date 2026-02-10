@@ -1,6 +1,6 @@
 const research1 = {
   id: 'climate-risk',
-  date: '02-04-2026',
+  date: '02-10-2026',
   href: '/research/climate-risk',
   title: 'Open Climate Risk',
   summary:
