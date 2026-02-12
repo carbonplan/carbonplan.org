@@ -32,7 +32,8 @@ const press = [
   {
     source: ['Inside Climate News'],
     href: 'https://insideclimatenews.org/news/10022026/todays-climate-risks-buying-homes-flooding-wildfire/',
-    title: 'Choosing the right home is tough. Climate change is making it harder.',
+    title:
+      'Choosing the right home is tough. Climate change is making it harder.',
     authors: ['Kiley Price'],
     date: '02-12-26',
     format: 'print',
