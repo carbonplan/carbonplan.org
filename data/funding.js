@@ -207,10 +207,14 @@ const projectSpecific = [
   [
     'Patrick J McGovern Foundation',
     <>
-      Projects to increase accountability in the voluntary carbon market and tie
-      CDR policy and investments to the best available science, including{' '}
-      <Link href='https://carbonplan.org/research/offsets-db'>OffsetsDB</Link>{' '}
-      and <Link href='https://cdrxiv.org'>CDRXIV</Link>
+      Projects to increase accountability in the voluntary carbon market, tie
+      CDR policy and investments to the best available science, and democratize
+      access to climate risk data and analysis, including{' '}
+      <Link href='https://carbonplan.org/research/offsets-db'>OffsetsDB</Link>,{' '}
+      <Link href='https://cdrxiv.org'>CDRXIV</Link>, and{' '}
+      <Link href='https://carbonplan.org/research/climate-risk'>
+        Open Climate Risk
+      </Link>
     </>,
   ],
   [
