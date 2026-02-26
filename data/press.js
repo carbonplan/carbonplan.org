@@ -32,8 +32,7 @@ const press = [
   {
     source: ['Boston Globe'],
     href: 'https://www.bostonglobe.com/2026/02/26/science/ocean-geoengineering-trial-results-whoi/',
-    title:
-      'Can giving the ocean antacid really reverse climate change?',
+    title: 'Can giving the ocean antacid really reverse climate change?',
     authors: ['Kate Selig'],
     date: '02-26-26',
     format: 'print',
