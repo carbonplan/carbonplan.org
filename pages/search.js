@@ -202,6 +202,22 @@ const EXTRA_CONTENT = [
       summary: 'Notes on accessing datasets stored in Zarr format.',
     },
   },
+  {
+    page: 'https://carbonplan.org/research/mcdr-tools',
+    date: '2025-06-04',
+    metadata: {
+      title: 'Index of tools visualizing marine CDR efficiency and dynamics',
+      summary: 'Notes on accessing datasets stored in Zarr format.',
+    },
+  },
+  {
+    page: 'https://carbonplan.org/research/mcdr-tools-about',
+    date: '2025-06-04',
+    metadata: {
+      title: 'About the Marine CDR Tools',
+      summary: 'Information about mCDR Efficiency Tools.',
+    },
+  },
 ]
 
 export const getStaticProps = async () => {
