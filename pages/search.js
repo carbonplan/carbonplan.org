@@ -22,6 +22,18 @@ const sx = {
   },
 }
 
+const getType = (page, metadata) => {
+  let type = 'other'
+  if (page.includes('research/cdr-verification/')) {
+    return 'Verification Framework Tool'
+  } else if (metadata.type === 'commentary' && page.includes('files.')) {
+    type = 'comment letter'
+  } else if (metadata.type) {
+    type = metadata.type
+  }
+  return type
+}
+
 const Search = ({ contents }) => {
   const router = useRouter()
   const [sort, setSort] = useState({
@@ -132,10 +144,7 @@ const Search = ({ contents }) => {
             <Box key={page}>
               {i > 0 && <Divider sx={{ my: 4 }} />}
               <Box sx={sx.label}>
-                {date && formatDate(date)} /{' '}
-                {page.includes('research/cdr-verification/')
-                  ? 'Verification Framework Tool'
-                  : metadata.type ?? 'Other'}
+                {date && formatDate(date)} / {getType(page, metadata)}
               </Box>
               <Box sx={{ variant: 'styles.h3', mt: 4, mb: 3 }}>
                 <Link
