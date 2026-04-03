@@ -1,0 +1,65 @@
+[
+  {
+    "label": "Carbon accounting",
+    "links": [
+      {
+        "label": "OffsetsDB",
+        "href": "https://carbonplan.org/research/offsets-db"
+      },
+      {
+        "label": "VCL tool",
+        "href": "https://carbonplan.org/research/cdr-verification"
+      },
+      {
+        "label": "Fires and forest offsets",
+        "href": "https://carbonplan.org/research/forest-offsets-fires"
+      },
+      {
+        "label": "mCDR tools",
+        "href": "https://carbonplan.org/research/mcdr-tools"
+      }
+    ]
+  },
+  {
+    "label": "Climate impacts",
+    "links": [
+      {
+        "label": "Open Climate Risk",
+        "href": "https://carbonplan.org/research/climate-risk"
+      },
+      {
+        "label": "Extreme heat",
+        "href": "https://carbonplan.org/research/extreme-heat-explainer"
+      },
+      {
+        "label": "Risk (dis)agreement",
+        "href": "https://carbonplan.org/research/climate-risk-comparison"
+      },
+      {
+        "label": "CMIP6 downscaling",
+        "href": "https://carbonplan.org/research/cmip6-downscaling"
+      }
+    ]
+  },
+  {
+    "label": "Organization",
+    "links": [
+      {
+        "label": "Team",
+        "href": "https://carbonplan.org/team"
+      },
+      {
+        "label": "Funding",
+        "href": "https://carbonplan.org/funding"
+      },
+      {
+        "label": "Press",
+        "href": "https://carbonplan.org/press"
+      },
+      {
+        "label": "Annual report",
+        "href": "https://files.carbonplan.org/CarbonPlan-Annual-Report-2025.pdf"
+      }
+    ]
+  }
+]
