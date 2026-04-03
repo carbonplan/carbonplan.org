@@ -8,7 +8,7 @@ import {
   formatDate,
   Input,
 } from '@carbonplan/components'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
 
 const sx = {
@@ -36,6 +36,7 @@ const getType = (page, metadata) => {
 
 const Search = ({ contents }) => {
   const router = useRouter()
+  const [query, setQuery] = useState(router.query.query ?? null)
   const [sort, setSort] = useState({
     newest: true,
     oldest: false,
@@ -52,15 +53,13 @@ const Search = ({ contents }) => {
     return contents
       .filter((c) => c.date)
       .filter((c) =>
-        router.query.query
+        query
           ? [
               c.page,
               c.metadata.title,
               c.metadata.summary,
               ...(c.metadata.authors ? c.metadata.authors : []),
-            ].some((text) =>
-              text?.toLowerCase().includes(router.query.query.toLowerCase())
-            )
+            ].some((text) => text?.toLowerCase().includes(query.toLowerCase()))
           : false
       )
       .filter((c) =>
@@ -71,7 +70,29 @@ const Search = ({ contents }) => {
       .sort(
         (a, b) => (new Date(b.date) - new Date(a.date)) * (sort.oldest ? -1 : 1)
       )
-  }, [contents, sort, filter, router.query.query])
+  }, [contents, sort, filter, query])
+
+  useEffect(() => {
+    if (router.isReady && router.query.query && typeof query !== 'string') {
+      setQuery(router.query.query)
+    }
+  }, [router])
+
+  useEffect(() => {
+    if (typeof query === 'string') {
+      router.replace(
+        {
+          pathname: '/search',
+          query: { query },
+        },
+        undefined,
+        {
+          scroll: false,
+          shallow: true,
+        }
+      )
+    }
+  }, [query])
 
   return (
     <Layout
@@ -95,7 +116,7 @@ const Search = ({ contents }) => {
               pb: '4px',
             }}
           >
-            {router.query.query
+            {query
               ? `There are ${results.length} results that match your search.`
               : 'Enter a search query below to view results.'}
           </Flex>
@@ -108,20 +129,8 @@ const Search = ({ contents }) => {
               <Box as='label' sx={sx.label}>
                 Query
                 <Input
-                  value={router.query.query ?? ''}
-                  onChange={(e) =>
-                    router.replace(
-                      {
-                        pathname: '/search',
-                        query: { query: e.target.value },
-                      },
-                      undefined,
-                      {
-                        scroll: false,
-                        shallow: true,
-                      }
-                    )
-                  }
+                  value={query ?? ''}
+                  onChange={(e) => setQuery(e.target.value)}
                   size='xs'
                   sx={{
                     mt: 3,
