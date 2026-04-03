@@ -60,7 +60,7 @@ const Search = ({ contents }) => {
               c.metadata.summary,
               ...(c.metadata.authors ? c.metadata.authors : []),
             ].some((text) => text?.toLowerCase().includes(query.toLowerCase()))
-          : false
+          : true
       )
       .filter((c) =>
         filter.hasOwnProperty(c.metadata.type)
@@ -103,37 +103,44 @@ const Search = ({ contents }) => {
       }
     >
       <Row sx={{ mt: [5, 6, 7, 8], mb: [5, 6, 7, 8], ...sx }}>
-        <Column start={[1, 1, 2, 2]} width={[6, 6, 3, 3]}>
+        <Column start={[1, 2, 2, 2]} width={[6, 2, 3, 3]}>
           <Box as='h1' variant='styles.h1' sx={{ my: [0, 0, 0, 0] }}>
             Search
           </Box>
         </Column>
-        <Column start={[1, 1, 5, 5]} width={[6]}>
+        <Column start={[1, 4, 5, 5]} width={[4, 4, 6, 6]}>
           <Flex
             sx={{
+              display: ['none', 'flex', 'flex', 'flex'],
               height: '100%',
               alignItems: 'flex-end',
               pb: '4px',
             }}
           >
-            {query
-              ? `There are ${results.length} results that match your search.`
-              : 'Enter a search query below to view results.'}
+            There are {results.length} results that match your search.
           </Flex>
         </Column>
       </Row>
       <Row>
-        <Column start={[1, 1, 2, 2]} width={[6, 6, 2, 2]}>
+        <Column start={[1, 2, 2, 2]} width={[6, 2, 2, 2]}>
           <Flex sx={{ flexDirection: 'column', gap: 5 }}>
             <Box>
-              <Box as='label' sx={sx.label}>
-                Query
+              <Box as='label'>
+                <Box
+                  as='span'
+                  sx={{
+                    ...sx.label,
+                    display: ['none', 'inherit', 'inherit', 'inherit'],
+                  }}
+                >
+                  Query
+                </Box>
                 <Input
                   value={query ?? ''}
                   onChange={(e) => setQuery(e.target.value)}
                   size='xs'
                   sx={{
-                    mt: 3,
+                    mt: ['-12px', 3, 3, 3],
                     width: '100%',
                     fontFamily: 'mono',
                     letterSpacing: 'mono',
@@ -152,7 +159,13 @@ const Search = ({ contents }) => {
             />
           </Flex>
         </Column>
-        <Column start={[1, 1, 5, 5]} width={[6, 5, 5, 5]}>
+        <Column start={[1, 4, 5, 5]} width={[6, 4, 5, 5]}>
+          <Divider
+            sx={{ my: 4, display: ['inherit', 'none', 'none', 'none'] }}
+          />
+          {results.length === 0 && (
+            <Box sx={{ ...sx.label }}>No results found</Box>
+          )}
           {results.map(({ page, date, metadata }, i) => (
             <Box key={page}>
               {i > 0 && <Divider sx={{ my: 4 }} />}
