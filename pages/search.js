@@ -135,7 +135,7 @@ const Search = ({ contents }) => {
                 {date && formatDate(date)} /{' '}
                 {page.includes('research/cdr-verification/')
                   ? 'Verification Framework Tool'
-                  : metadata.type}
+                  : metadata.type ?? 'Other'}
               </Box>
               <Box sx={{ variant: 'styles.h3', mt: 4, mb: 3 }}>
                 <Link
@@ -163,6 +163,34 @@ const Search = ({ contents }) => {
 
 export default Search
 
+const EXTRA_CONTENT = [
+  {
+    page: 'https://docs.carbonplan.org',
+    date: '2021-10-29',
+    metadata: {
+      title: 'CarbonPlan Docs',
+      summary: "Documentation for the software projects we're building.",
+    },
+  },
+  {
+    page: 'https://carbonplan.org/data',
+    date: '2024-03-08',
+    metadata: {
+      title: 'CarbonPlan datasets',
+      summary:
+        'A catalog of public datasets produced throughout our work. Not a frequently updated resource.',
+    },
+  },
+  {
+    page: 'https://carbonplan.org/data/zarr-access',
+    date: '2023-10-23',
+    metadata: {
+      title: 'Working with Zarr data',
+      summary: 'Notes on accessing datasets stored in Zarr format.',
+    },
+  },
+]
+
 export const getStaticProps = async () => {
   const [research, blog, vcl] = await Promise.all([
     fetch(
@@ -176,7 +204,7 @@ export const getStaticProps = async () => {
     ).then((res) => res.json()),
   ])
 
-  const contents = [...research, ...blog, ...vcl]
+  const contents = [...research, ...blog, ...vcl, ...EXTRA_CONTENT]
     .filter((el) => el.metadata)
     .map((el) =>
       el.metadata.authors
@@ -184,6 +212,7 @@ export const getStaticProps = async () => {
             ...el,
             metadata: {
               ...el.metadata,
+              // normalize authors to remove collaborator avatar configuration
               authors: el.metadata.authors.map((a) =>
                 typeof a === 'string' ? a : a.name
               ),
