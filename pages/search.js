@@ -61,7 +61,7 @@ const Search = ({ contents }) => {
             ].some((text) =>
               text?.toLowerCase().includes(router.query.query.toLowerCase())
             )
-          : true
+          : false
       )
       .filter((c) =>
         filter.hasOwnProperty(c.metadata.type)
@@ -77,7 +77,9 @@ const Search = ({ contents }) => {
     <Layout
       links={'homepage'}
       title={'Search – CarbonPlan'}
-      description={'TK.'}
+      description={
+        'Search for research and other resources across the CarbonPlan website.'
+      }
     >
       <Row sx={{ mt: [5, 6, 7, 8], mb: [5, 6, 7, 8], ...sx }}>
         <Column start={[1, 1, 2, 2]} width={[6, 6, 3, 3]}>
@@ -93,7 +95,9 @@ const Search = ({ contents }) => {
               pb: '4px',
             }}
           >
-            There are {results.length} results that match your search.
+            {router.query.query
+              ? `There are ${results.length} results that match your search.`
+              : 'Enter a search query below to view results.'}
           </Flex>
         </Column>
       </Row>
