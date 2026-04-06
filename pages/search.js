@@ -125,7 +125,8 @@ const Search = ({ contents }) => {
               pb: '4px',
             }}
           >
-            There are {results.length} results that match your search.
+            {typeof query === 'string' &&
+              `There are ${results.length} results that match your search.`}
           </Flex>
         </Column>
       </Row>
@@ -174,34 +175,35 @@ const Search = ({ contents }) => {
           {results.length === 0 && (
             <Box sx={{ ...sx.label }}>No results found</Box>
           )}
-          {results.map(({ page, date, metadata }, i) => (
-            <Box key={page}>
-              {i > 0 && <Divider sx={{ my: 4 }} />}
-              <Box sx={sx.label}>
-                {date && formatDate(date)} / {getType(page, metadata)}
-              </Box>
-              <Box sx={{ variant: 'styles.h3', mt: 4, mb: 3 }}>
-                <Link
-                  href={
-                    page.includes('https://')
-                      ? page
-                      : `https://carbonplan.org/${page}`
-                  }
-                  sx={{ textDecoration: 'none' }}
-                >
-                  {metadata.title}
-                </Link>
-              </Box>
-
-              <Box>{metadata.summary}</Box>
-
-              {metadata.authors?.length > 0 && (
-                <Box sx={{ ...sx.label, mt: 3 }}>
-                  {metadata.authors?.join(' + ')}
+          {typeof query === 'string' &&
+            results.map(({ page, date, metadata }, i) => (
+              <Box key={page}>
+                {i > 0 && <Divider sx={{ my: 4 }} />}
+                <Box sx={sx.label}>
+                  {date && formatDate(date)} / {getType(page, metadata)}
                 </Box>
-              )}
-            </Box>
-          ))}
+                <Box sx={{ variant: 'styles.h3', mt: 4, mb: 3 }}>
+                  <Link
+                    href={
+                      page.includes('https://')
+                        ? page
+                        : `https://carbonplan.org/${page}`
+                    }
+                    sx={{ textDecoration: 'none' }}
+                  >
+                    {metadata.title}
+                  </Link>
+                </Box>
+
+                <Box>{metadata.summary}</Box>
+
+                {metadata.authors?.length > 0 && (
+                  <Box sx={{ ...sx.label, mt: 3 }}>
+                    {metadata.authors?.join(' + ')}
+                  </Box>
+                )}
+              </Box>
+            ))}
         </Column>
       </Row>
     </Layout>
