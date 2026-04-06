@@ -34,6 +34,11 @@ const getType = (page, metadata) => {
   return type
 }
 
+const normalizeText = (str) => {
+  if (!str) return ''
+  return str?.toLowerCase()?.replace(/-/g, ' ')
+}
+
 const Search = ({ contents }) => {
   const router = useRouter()
   const [query, setQuery] = useState(router.query.query ?? null)
@@ -52,16 +57,19 @@ const Search = ({ contents }) => {
   const results = useMemo(() => {
     return contents
       .filter((c) => c.date)
-      .filter((c) =>
-        query
-          ? [
-              c.page,
-              c.metadata.title,
-              c.metadata.summary,
-              ...(c.metadata.authors ? c.metadata.authors : []),
-            ].some((text) => text?.toLowerCase().includes(query.toLowerCase()))
-          : true
-      )
+      .filter((c) => {
+        if (!query) return true
+        const terms = normalizeText(query).split(/\s+/).filter(Boolean)
+        const result = [
+          c.page,
+          c.metadata.title,
+          c.metadata.summary,
+          ...(c.metadata.authors ?? []),
+        ]
+          .map(normalizeText)
+          .join(' ')
+        return terms.every((term) => result.includes(term))
+      })
       .filter((c) =>
         filter.hasOwnProperty(c.metadata.type)
           ? filter[c.metadata.type]
