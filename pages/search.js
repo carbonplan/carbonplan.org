@@ -174,7 +174,11 @@ const Search = ({ contents }) => {
               </Box>
               <Box sx={{ variant: 'styles.h3', mt: 4, mb: 3 }}>
                 <Link
-                  href={`https://carbonplan.org/${page}`}
+                  href={
+                    page.includes('https://')
+                      ? page
+                      : `https://carbonplan.org/${page}`
+                  }
                   sx={{ textDecoration: 'none' }}
                 >
                   {metadata.title}
