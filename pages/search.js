@@ -218,7 +218,10 @@ const Search = ({ contents }) => {
                     }
                     sx={{
                       textDecoration: 'none',
-                      color: metadata.color ?? 'primary',
+                      color:
+                        metadata.color && metadata.color !== 'secondary'
+                          ? metadata.color
+                          : 'primary',
                     }}
                   >
                     {metadata.title}
