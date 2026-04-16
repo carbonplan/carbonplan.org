@@ -216,7 +216,10 @@ const Search = ({ contents }) => {
                         ? page
                         : `https://carbonplan.org/${page}`
                     }
-                    sx={{ textDecoration: 'none' }}
+                    sx={{
+                      textDecoration: 'none',
+                      color: metadata.color ?? 'primary',
+                    }}
                   >
                     {metadata.title}
                   </Link>
