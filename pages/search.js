@@ -1,4 +1,4 @@
-import { Box, Divider, Flex } from 'theme-ui'
+import { Box, Divider, Flex, IconButton } from 'theme-ui'
 import {
   Layout,
   Row,
@@ -8,7 +8,8 @@ import {
   formatDate,
   Input,
 } from '@carbonplan/components'
-import { useEffect, useMemo, useState } from 'react'
+import { X } from '@carbonplan/icons'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 
 const sx = {
@@ -41,6 +42,7 @@ const normalizeText = (str) => {
 
 const Search = ({ contents }) => {
   const router = useRouter()
+  const inputRef = useRef(null)
   const [query, setQuery] = useState(router.query.query ?? null)
   const [sort, setSort] = useState({
     newest: true,
@@ -144,19 +146,44 @@ const Search = ({ contents }) => {
                 >
                   Query
                 </Box>
-                <Input
-                  value={query ?? ''}
-                  onChange={(e) => setQuery(e.target.value)}
-                  size='xs'
-                  sx={{
-                    mt: ['-12px', 3, 3, 3],
-                    width: '100%',
-                    fontFamily: 'mono',
-                    letterSpacing: 'mono',
-                    fontSize: [1, 1, 1, 2],
-                    textTransform: 'uppercase',
-                  }}
-                />
+                <Box sx={{ position: 'relative' }}>
+                  <Input
+                    ref={inputRef}
+                    value={query ?? ''}
+                    onChange={(e) => setQuery(e.target.value)}
+                    size='xs'
+                    sx={{
+                      mt: ['-12px', 3, 3, 3],
+                      width: '100%',
+                      fontFamily: 'mono',
+                      letterSpacing: 'mono',
+                      fontSize: [1, 1, 1, 2],
+                      textTransform: 'uppercase',
+                    }}
+                  />
+                  <IconButton
+                    onClick={() => {
+                      setQuery('')
+                      inputRef.current?.focus()
+                    }}
+                    aria-label='Clear search'
+                    sx={{
+                      p: 0,
+                      position: 'absolute',
+                      right: [-2, -2, -5, -5],
+                      top: [-2, -1, 0, 0],
+                      cursor: 'pointer',
+                      color: 'secondary',
+                      opacity: query ? 1 : 0,
+                      transition: 'all 0.2s',
+                      '&:hover': {
+                        color: 'primary',
+                      },
+                    }}
+                  >
+                    <X sx={{ width: 16 }} />
+                  </IconButton>
+                </Box>
               </Box>
             </Box>
             <Filter values={sort} setValues={setSort} label='Sort by' />
