@@ -186,13 +186,13 @@ const Search = ({ contents }) => {
                 </Box>
               </Box>
             </Box>
-            <Filter values={sort} setValues={setSort} label='Sort by' />
             <Filter
               values={filter}
               setValues={setFilter}
               label='Filter by type'
               showAll
             />
+            <Filter values={sort} setValues={setSort} label='Sort by' />
           </Flex>
         </Column>
         <Column start={[1, 4, 5, 5]} width={[6, 4, 5, 5]}>
@@ -207,7 +207,8 @@ const Search = ({ contents }) => {
               <Box key={page}>
                 {i > 0 && <Divider sx={{ my: 4 }} />}
                 <Box sx={sx.label}>
-                  {date && formatDate(date)} / {getType(page, metadata)}
+                  {date && `${formatDate(date)} / `}
+                  {getType(page, metadata)}
                 </Box>
                 <Box sx={{ variant: 'styles.h3', mt: 4, mb: 3 }}>
                   <Link
