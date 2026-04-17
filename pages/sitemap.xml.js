@@ -27,6 +27,7 @@ function generateSiteMap(pages) {
         `
        }).join('')}
        ${pages
+         .filter(({ page }) => !page.startsWith('http'))
          .map(({ page, date }) => {
            return `
             <url>
