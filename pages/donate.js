@@ -12,6 +12,7 @@ import {
   Heading,
 } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
+import { PAGES } from '../data/pages'
 
 // Specific errors expected and the corresponding `status` passed to `Layout`
 const STATUSES = {
@@ -241,11 +242,9 @@ const Donate = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'Donate – CarbonPlan'}
+      title={PAGES.donate.title}
       status={status}
-      description={
-        'Make a donation to support our mission of using data and science for climate action.'
-      }
+      description={PAGES.donate.description}
     >
       <Heading sidenote={<Sidenote />}>Donate</Heading>
       <Row>

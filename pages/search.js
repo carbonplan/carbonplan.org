@@ -11,6 +11,7 @@ import {
 import { X } from '@carbonplan/icons'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
+import { PAGES } from '../data/pages'
 
 const sx = {
   label: {
@@ -40,6 +41,8 @@ const normalizeText = (str) => {
   return str?.toLowerCase()?.replace(/-/g, ' ')
 }
 
+const { search, ...STATIC_PAGES } = PAGES
+
 const Search = ({ contents }) => {
   const router = useRouter()
   const inputRef = useRef(null)
@@ -58,7 +61,6 @@ const Search = ({ contents }) => {
 
   const results = useMemo(() => {
     return contents
-      .filter((c) => c.date)
       .filter((c) => {
         if (!query) return true
         const terms = normalizeText(query).split(/\s+/).filter(Boolean)
@@ -107,10 +109,8 @@ const Search = ({ contents }) => {
   return (
     <Layout
       links={'homepage'}
-      title={'Search – CarbonPlan'}
-      description={
-        'Search for research and other resources across the CarbonPlan website.'
-      }
+      title={search.title}
+      description={search.description}
     >
       <Row sx={{ mt: [5, 6, 7, 8], mb: [5, 6, 7, 8], ...sx }}>
         <Column start={[1, 2, 2, 2]} width={[6, 2, 3, 3]}>
@@ -249,15 +249,6 @@ const EXTRA_CONTENT = [
     },
   },
   {
-    page: 'https://carbonplan.org/data',
-    date: '2024-03-08',
-    metadata: {
-      title: 'CarbonPlan datasets',
-      summary:
-        'A catalog of public datasets produced throughout our work. Not a frequently updated resource.',
-    },
-  },
-  {
     page: 'https://carbonplan.org/data/zarr-access',
     date: '2023-10-23',
     metadata: {
@@ -296,7 +287,16 @@ export const getStaticProps = async () => {
     ).then((res) => res.json()),
   ])
 
-  const contents = [...research, ...blog, ...vcl, ...EXTRA_CONTENT]
+  const contents = [
+    ...research,
+    ...blog,
+    ...vcl,
+    ...Object.entries(STATIC_PAGES).map(([page, { title, description }]) => ({
+      page,
+      metadata: { title, summary: description },
+    })),
+    ...EXTRA_CONTENT,
+  ]
     .filter((el) => el.metadata)
     .map((el) =>
       el.metadata.authors

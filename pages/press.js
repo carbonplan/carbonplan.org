@@ -13,6 +13,7 @@ import {
 } from '@carbonplan/components'
 import { Arrow } from '@carbonplan/icons'
 import { highlights, press } from '../data/press'
+import { PAGES } from '../data/pages'
 import LOGOS from '../components/press-logos'
 
 const sx = {
@@ -141,10 +142,8 @@ const Press = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'Press – CarbonPlan'}
-      description={
-        'Complete list of press that has either covered our work or featured members of our team.'
-      }
+      title={PAGES.press.title}
+      description={PAGES.press.description}
       dimmer={'bottom'}
       settings={{ value: expanded, onClick: () => setExpanded(!expanded) }}
       nav={'press'}

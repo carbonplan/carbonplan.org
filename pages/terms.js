@@ -1,14 +1,13 @@
 import { Box } from 'theme-ui'
 import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
+import { PAGES } from '../data/pages'
 
 const Terms = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'Terms – CarbonPlan'}
-      description={
-        'Terms of use related to our website, code, data, and content.'
-      }
+      title={PAGES.terms.title}
+      description={PAGES.terms.description}
     >
       <Heading>Terms of use</Heading>
       <Row>
