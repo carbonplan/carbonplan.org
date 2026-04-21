@@ -32,8 +32,7 @@ const press = [
   {
     source: ['Dialogue Earth'],
     href: 'https://dialogue.earth/en/climate/doubts-cast-over-pig-farm-methane-credits-in-china/',
-    title:
-      'Doubts cast over pig farm methane credits in China',
+    title: 'Doubts cast over pig farm methane credits in China',
     authors: ['Christian Shepherd'],
     date: '04-21-26',
     format: 'print',
