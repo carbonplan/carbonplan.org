@@ -17,7 +17,10 @@ const Team = () => {
         sidenote={
           <span>
             Interested in joining our team? Check out our{' '}
-            <Link href='https://carbonplan.org/jobs'>job openings</Link>.
+            <Link href='https://www.goodcitizen.com/executive-search/carbonplan-executive-director/'>
+              job opening
+            </Link>
+            .
           </span>
         }
       >
