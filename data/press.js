@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Dialogue Earth'],
+    href: 'https://dialogue.earth/en/climate/doubts-cast-over-pig-farm-methane-credits-in-china/',
+    title: 'Doubts cast over pig farm methane credits in China',
+    authors: ['Christian Shepherd'],
+    date: '04-21-26',
+    format: 'print',
+  },
+  {
     source: ['Boston Globe'],
     href: 'https://www.bostonglobe.com/2026/02/26/science/ocean-geoengineering-trial-results-whoi/',
     title:
