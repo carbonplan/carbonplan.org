@@ -201,13 +201,14 @@ const Search = ({ contents }) => {
             sx={{ my: 4, display: ['inherit', 'none', 'none', 'none'] }}
           />
           {results.length === 0 && (
-            <Box sx={{ ...sx.label }}>No results found</Box>
+            <Box as='span' sx={{ ...sx.label }}>
+              No results found
+            </Box>
           )}
-
           {results.map(({ page, date, metadata }, i) => (
             <Box key={page}>
               {i > 0 && <Divider sx={{ my: 4 }} />}
-              <Box sx={sx.label}>
+              <Box as='span' sx={sx.label}>
                 {date && `${formatDate(date)} / `}
                 {getType(page, metadata)}
               </Box>
@@ -227,9 +228,7 @@ const Search = ({ contents }) => {
                   {metadata.title}
                 </Link>
               </Box>
-
               <Box>{metadata.summary}</Box>
-
               {metadata.authors?.length > 0 && (
                 <Box sx={{ ...sx.label, mt: 3 }}>
                   {metadata.authors?.join(' + ')}
