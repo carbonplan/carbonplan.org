@@ -46,7 +46,7 @@ const { search, ...STATIC_PAGES } = PAGES
 const Search = ({ contents }) => {
   const router = useRouter()
   const inputRef = useRef(null)
-  const [query, setQuery] = useState(router.query.query ?? null)
+  const [query, setQuery] = useState(null)
   const [sort, setSort] = useState({
     newest: true,
     oldest: false,
@@ -59,11 +59,17 @@ const Search = ({ contents }) => {
     other: true,
   })
 
+  let effectiveQuery = query
+  if (!query && router.isReady) {
+    effectiveQuery = router.query.query ?? ''
+  }
+
   const results = useMemo(() => {
+    if (effectiveQuery === null) return []
     return contents
       .filter((c) => {
-        if (!query) return true
-        const terms = normalizeText(query).split(/\s+/).filter(Boolean)
+        if (!effectiveQuery) return true
+        const terms = normalizeText(effectiveQuery).split(/\s+/).filter(Boolean)
         const result = [
           c.page,
           c.metadata.title,
@@ -82,13 +88,7 @@ const Search = ({ contents }) => {
       .sort(
         (a, b) => (new Date(b.date) - new Date(a.date)) * (sort.oldest ? -1 : 1)
       )
-  }, [contents, sort, filter, query])
-
-  useEffect(() => {
-    if (router.isReady && router.query.query && typeof query !== 'string') {
-      setQuery(router.query.query)
-    }
-  }, [router])
+  }, [contents, sort, filter, effectiveQuery])
 
   useEffect(() => {
     if (typeof query === 'string') {
@@ -127,9 +127,10 @@ const Search = ({ contents }) => {
               pb: '4px',
             }}
           >
-            {typeof query === 'string'
-              ? `There are ${results.length} results that match your search.`
-              : 'Enter a query to filter results.'}
+            {typeof effectiveQuery === 'string' &&
+              (effectiveQuery
+                ? `There are ${results.length} results that match your search.`
+                : 'Enter a query to filter results.')}
           </Flex>
         </Column>
       </Row>
@@ -150,7 +151,7 @@ const Search = ({ contents }) => {
                 <Box sx={{ position: 'relative' }}>
                   <Input
                     ref={inputRef}
-                    value={query ?? ''}
+                    value={effectiveQuery ?? ''}
                     onChange={(e) => setQuery(e.target.value)}
                     size='xs'
                     sx={{
@@ -175,7 +176,7 @@ const Search = ({ contents }) => {
                       top: [-2, -1, 0, 0],
                       cursor: 'pointer',
                       color: 'secondary',
-                      opacity: query ? 1 : 0,
+                      opacity: effectiveQuery ? 1 : 0,
                       transition: 'all 0.2s',
                       '&:hover': {
                         color: 'primary',
@@ -200,7 +201,7 @@ const Search = ({ contents }) => {
           <Divider
             sx={{ my: 4, display: ['inherit', 'none', 'none', 'none'] }}
           />
-          {results.length === 0 && (
+          {typeof effectiveQuery === 'string' && results.length === 0 && (
             <Box as='span' sx={{ ...sx.label }}>
               No results found
             </Box>
