@@ -1,4 +1,4 @@
-const { PAGES } = require('../data/pages')
+import { PAGES } from '../data/pages'
 
 const BASE_URL = 'https://carbonplan.org'
 
