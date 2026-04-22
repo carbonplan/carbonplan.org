@@ -59,14 +59,13 @@ const Search = ({ contents }) => {
     other: true,
   })
 
-  const effectiveQuery =
-    query ??
-    (router.isReady && typeof router.query.query === 'string'
-      ? router.query.query
-      : null)
+  let effectiveQuery = query
+  if (!query && router.isReady) {
+    effectiveQuery = router.query.query ?? ''
+  }
 
   const results = useMemo(() => {
-    if (!router.isReady) return []
+    if (effectiveQuery === null) return []
     return contents
       .filter((c) => {
         if (!effectiveQuery) return true
@@ -89,7 +88,7 @@ const Search = ({ contents }) => {
       .sort(
         (a, b) => (new Date(b.date) - new Date(a.date)) * (sort.oldest ? -1 : 1)
       )
-  }, [contents, sort, filter, effectiveQuery, router.isReady])
+  }, [contents, sort, filter, effectiveQuery])
 
   useEffect(() => {
     if (typeof query === 'string') {
@@ -128,8 +127,8 @@ const Search = ({ contents }) => {
               pb: '4px',
             }}
           >
-            {router.isReady &&
-              (typeof effectiveQuery === 'string'
+            {typeof effectiveQuery === 'string' &&
+              (effectiveQuery
                 ? `There are ${results.length} results that match your search.`
                 : 'Enter a query to filter results.')}
           </Flex>
