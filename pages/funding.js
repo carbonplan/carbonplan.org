@@ -2,15 +2,14 @@ import { Box } from 'theme-ui'
 import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
 import AnnotatedTable from '../components/annotated-table'
 import { unrestricted, projectSpecific, partners } from '../data/funding'
+import { PAGES } from '../data/pages'
 
 const Funding = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'Funding – CarbonPlan'}
-      description={
-        'Public list of all our sources of unrestricted or project-specific funding greater than $1000.'
-      }
+      title={PAGES.funding.title}
+      description={PAGES.funding.description}
     >
       <Heading
         sidenote={

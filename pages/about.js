@@ -9,8 +9,9 @@ import {
   Heading,
 } from '@carbonplan/components'
 import { RotatingArrow } from '@carbonplan/icons'
-import { highlights, press } from '../data/recent'
 import { keyframes } from '@emotion/react'
+import { highlights, press } from '../data/recent'
+import { PAGES } from '../data/pages'
 
 const sx = {
   link: {
@@ -29,11 +30,9 @@ const About = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'About – CarbonPlan'}
+      title={PAGES.about.title}
       nav={'about'}
-      description={
-        'We’re a nonprofit that analyzes climate solutions based on the best available science and data.'
-      }
+      description={PAGES.about.description}
     >
       <Heading>About</Heading>
       <Box sx={{ display: ['none', 'none', 'initial', 'initial'] }}>

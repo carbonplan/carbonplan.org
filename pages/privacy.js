@@ -1,14 +1,13 @@
 import { Box } from 'theme-ui'
 import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
+import { PAGES } from '../data/pages'
 
 const Privacy = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'Privacy – CarbonPlan'}
-      description={
-        'Privacy policy that explains our information collection, use, and sharing practices.'
-      }
+      title={PAGES.privacy.title}
+      description={PAGES.privacy.description}
     >
       <Heading>Privacy policy</Heading>
       <Row>

@@ -8,16 +8,15 @@ import {
   Link,
   Heading,
 } from '@carbonplan/components'
+import { PAGES } from '../data/pages'
 
 const FAQ = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'FAQ – CarbonPlan'}
+      title={PAGES.faq.title}
       nav={'faq'}
-      description={
-        'Frequently asked questions about our work and our organization.'
-      }
+      description={PAGES.faq.description}
     >
       <Heading>FAQ</Heading>
       <Question first>Are you a nonprofit?</Question>

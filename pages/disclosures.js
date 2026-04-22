@@ -1,15 +1,14 @@
 import { Box } from 'theme-ui'
 
 import { Layout, Row, Column, Link, Heading } from '@carbonplan/components'
+import { PAGES } from '../data/pages'
 
 const Disclosures = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'Disclosures – CarbonPlan'}
-      description={
-        'State-specific disclosures for nonprofit organizations soliciting contributions.'
-      }
+      title={PAGES.disclosures.title}
+      description={PAGES.disclosures.description}
     >
       <Heading>Disclosures</Heading>
       <Row>

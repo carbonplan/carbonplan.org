@@ -2,6 +2,7 @@ import { Box, Image, Divider, Link, Grid } from 'theme-ui'
 import { Layout, Row, Column, Heading, Avatar } from '@carbonplan/components'
 import AnnotatedTable from '../components/annotated-table'
 import { team, board } from '../data/team'
+import { PAGES } from '../data/pages'
 
 const colors = ['red', 'orange', 'yellow', 'pink']
 
@@ -9,9 +10,9 @@ const Team = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'Team – CarbonPlan'}
+      title={PAGES.team.title}
       nav={'team'}
-      description={'Meet our core team and our Board of Directors.'}
+      description={PAGES.team.description}
     >
       <Heading
         sidenote={

@@ -1,17 +1,6 @@
-const BASE_URL = 'https://carbonplan.org'
+import { PAGES } from '../data/pages'
 
-const ROUTES = [
-  'about',
-  'disclosures',
-  'donate',
-  'faq',
-  'funding',
-  'press',
-  'team',
-  'terms',
-  'thanks',
-  'design',
-]
+const BASE_URL = 'https://carbonplan.org'
 
 function generateSiteMap(pages) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -19,13 +8,15 @@ function generateSiteMap(pages) {
        <url>
          <loc>${BASE_URL}</loc>
        </url>
-       ${ROUTES.map((route) => {
-         return `
+       ${Object.keys(PAGES)
+         .map((route) => {
+           return `
           <url>
             <loc>${`${BASE_URL}/${route}`}</loc>
           </url>
         `
-       }).join('')}
+         })
+         .join('')}
        ${pages
          .filter(({ page }) => !page.startsWith('http'))
          .map(({ page, date }) => {
