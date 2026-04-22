@@ -266,8 +266,8 @@ const EXTRA_CONTENT = [
     page: 'https://carbonplan.org/research/mcdr-tools',
     date: '2025-06-04',
     metadata: {
-      title: 'Index of tools visualizing marine CDR efficiency and dynamics',
-      summary: 'Notes on accessing datasets stored in Zarr format.',
+      title: 'Mapping Marine CDR',
+      summary: 'Index of tools visualizing marine CDR efficiency and dynamics.',
     },
   },
   {
