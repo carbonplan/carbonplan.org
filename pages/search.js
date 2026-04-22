@@ -282,14 +282,14 @@ const EXTRA_CONTENT = [
 
 export const getStaticProps = async () => {
   const [research, blog, vcl] = await Promise.all([
+    fetch('https://carbonplan.org/research/contents.json').then((res) =>
+      res.json()
+    ),
+    fetch('https://carbonplan.org/blog/contents.json').then((res) =>
+      res.json()
+    ),
     fetch(
-      'https://research-git-katamartin-metadata-carbonplan.vercel.app/research/contents.json'
-    ).then((res) => res.json()),
-    fetch(
-      'https://blog-git-katamartin-metadata-carbonplan.vercel.app/blog/contents.json'
-    ).then((res) => res.json()),
-    fetch(
-      'https://cdr-mrv-git-katamartin-metadata-carbonplan.vercel.app/research/cdr-verification/contents.json'
+      'https://carbonplan.org/research/cdr-verification/contents.json'
     ).then((res) => res.json()),
   ])
 
