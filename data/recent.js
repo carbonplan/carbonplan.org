@@ -1,4 +1,13 @@
 const research1 = {
+  id: 'modeling-bytes',
+  date: '05-07-2026',
+  title: 'Introducing Modeling Bytes',
+  summary:
+    'A series of posts examining in-the-weeds modeling decisions that matter when applying reactive transport models to enhanced weathering.',
+  href: '/research/modeling-bytes-series',
+}
+
+const research2 = {
   id: 'climate-risk',
   date: '02-10-2026',
   href: '/research/climate-risk',
@@ -7,16 +16,15 @@ const research1 = {
     'We developed a tool to explore a new, open source dataset of wildfire risk estimates across the contiguous United States.',
 }
 
-const research2 = {
-  id: 'offsets-db',
-  date: '01-14-2026',
-  title: 'OffsetsDB',
-  summary:
-    'We’ve added project boundary data from 500 forest offset projects to our database of offset data.',
-  href: '/research/offsets-db',
-}
-
 const highlights = [
+  {
+    label: 'OffsetsDB',
+    href: '/research/offsets-db',
+  },
+  {
+    label: 'Modeling Bytes',
+    href: '/research/modeling-bytes-series',
+  },
   {
     label: 'Open Climate Risk',
     href: '/research/climate-risk',
@@ -24,14 +32,6 @@ const highlights = [
   {
     label: 'DOR efficiency',
     href: '/research/dor-efficiency-explainer',
-  },
-  {
-    label: 'OffsetsDB',
-    href: '/research/offsets-db',
-  },
-  {
-    label: 'Risk (dis)agreement',
-    href: '/research/climate-risk-comparison',
   },
 ]
 
