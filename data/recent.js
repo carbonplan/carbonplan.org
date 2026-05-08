@@ -1,7 +1,7 @@
 const research1 = {
   id: 'modeling-bytes',
   date: '05-07-2026',
-  title: 'Introducing Modeling Bytes',
+  title: 'Modeling Bytes',
   summary:
     'A series of posts examining in-the-weeds modeling decisions that matter when applying reactive transport models to enhanced weathering.',
   href: '/research/modeling-bytes-series',
