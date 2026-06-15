@@ -59,6 +59,11 @@ const team = [
     role: 'Research Scientist',
     bio: 'Claire is a climate scientist committed to applying research to advance climate solutions. She joins CarbonPlan as a Schmidt Science Fellow, through which she has a joint postdoctoral appointment at the University of California, Irvine. Her background spans climate science research and environmental policy. She holds a PhD in Atmospheric Sciences from the University of Washington and a BA in Geosciences from Princeton University.',
   },
+  {
+    name: 'Zach Perzan',
+    role: 'Research Fellow',
+    bio: 'Zach is an environmental geochemist who uses numerical tools to better understand the world around us, with the goal of supporting future climate solutions. He holds a PhD in Earth System Science from Stanford University and a BS in Geology from Middlebury College.',
+  },
 ]
 
 const board = [
