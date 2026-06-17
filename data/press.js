@@ -32,7 +32,8 @@ const press = [
   {
     source: ['Inc.'],
     href: 'https://www.inc.com/georgia-fearn/ai-power-demands-soar-anthropic-makes-unprecedented-sustainability-move/91362422',
-    title: 'As AI power demands soar, Anthropic makes an unprecedented sustainability move',
+    title:
+      'As AI power demands soar, Anthropic makes an unprecedented sustainability move',
     authors: ['Georgia Fern'],
     date: '06-17-26',
     format: 'print',
