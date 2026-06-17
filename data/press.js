@@ -30,6 +30,14 @@ const highlights = [
 
 const press = [
   {
+    source: ['Inc.'],
+    href: 'https://www.inc.com/georgia-fearn/ai-power-demands-soar-anthropic-makes-unprecedented-sustainability-move/91362422',
+    title: 'As AI power demands soar, Anthropic makes an unprecedented sustainability move',
+    authors: ['Georgia Fern'],
+    date: '06-17-26',
+    format: 'print',
+  },
+  {
     source: ['Dialogue Earth'],
     href: 'https://dialogue.earth/en/climate/doubts-cast-over-pig-farm-methane-credits-in-china/',
     title: 'Doubts cast over pig farm methane credits in China',
