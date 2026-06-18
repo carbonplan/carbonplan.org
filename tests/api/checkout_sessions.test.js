@@ -60,7 +60,7 @@ describe('api/checkout_sessions', () => {
       expect(fetch).toHaveBeenCalledTimes(1)
       expect(fetch).toHaveBeenCalledWith(
         `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=recaptcha_response`,
-        expect.anything()
+        expect.anything(),
       )
     })
 
