@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2026/07/07/1140142/why-worms-and-microbes-are-catching-on-as-a-manure-pollution-solution/',
+    title:
+      'Why worms (and microbes) are catching on as a manure pollution solution',
+    authors: ['James Temple'],
+    date: '07-07-26',
+    format: 'print',
+  },
+  {
     source: ['Inc.'],
     href: 'https://www.inc.com/georgia-fearn/ai-power-demands-soar-anthropic-makes-unprecedented-sustainability-move/91362422',
     title:
