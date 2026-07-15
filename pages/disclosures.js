@@ -75,8 +75,9 @@ const Disclosures = () => {
       </Content>
       <Label>New York</Label>
       <Content>
-        Upon request, from the Attorney General's Charities Bureau, 28 Liberty
-        Street, New York, NY 10005, 1-212-416-8686 or{' '}
+        Financial information about this organization is available upon request,
+        from the Attorney General's Charities Bureau, 28 Liberty Street, New
+        York, NY 10005, 1-212-416-8686 or{' '}
         <Link href='https://www.charitiesnys.com'>www.charitiesnys.com</Link>.
       </Content>
       <Label>North Carolina</Label>
@@ -87,7 +88,8 @@ const Disclosures = () => {
       </Content>
       <Label>Washington</Label>
       <Content>
-        From the Secretary of State at 1-800-332-4483 or{' '}
+        Financial information about this organization is available from the
+        Secretary of State at 1-800-332-4483 or{' '}
         <Link href='http://www.sos.wa.gov/charities/'>
           http://www.sos.wa.gov/charities/
         </Link>
