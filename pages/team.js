@@ -19,7 +19,11 @@ const Team = () => {
           <span>
             Interested in joining our team? Check out our{' '}
             <Link href='https://www.goodcitizen.com/executive-search/carbonplan-executive-director/'>
-              job opening
+              Executive Director search
+            </Link>{' '}
+            and other{' '}
+            <Link href='https://apply.workable.com/carbonplan/'>
+              job openings
             </Link>
             .
           </span>
