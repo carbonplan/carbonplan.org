@@ -34,7 +34,7 @@ const press = [
     href: 'https://www.duurzaamnieuws.nl/deze-bossen-zouden-honderd-jaar-lang-co2-opslaan-sommige-brandden-binnen-enkele-jaren-af-91839/',
     title:
       'These forests would store CO2 for a hundred years. Some burned down within a few years',
-    authors: ['The editors'],
+    authors: ['the editors'],
     date: '08-01-26',
     format: 'print',
   },
