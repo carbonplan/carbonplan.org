@@ -30,15 +30,6 @@ const highlights = [
 
 const press = [
   {
-    source: ['Duurzaam Nieuws'],
-    href: 'https://www.duurzaamnieuws.nl/deze-bossen-zouden-honderd-jaar-lang-co2-opslaan-sommige-brandden-binnen-enkele-jaren-af-91839/',
-    title:
-      'These forests would store CO2 for a hundred years. Some burned down within a few years',
-    authors: ['the editors'],
-    date: '08-01-26',
-    format: 'print',
-  },
-  {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2026/07/07/1140142/why-worms-and-microbes-are-catching-on-as-a-manure-pollution-solution/',
     title:
