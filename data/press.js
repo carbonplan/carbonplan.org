@@ -30,6 +30,15 @@ const highlights = [
 
 const press = [
   {
+    source: ['MPR News'],
+    href: 'https://www.mprnews.org/story/2026/08/06/bois-forte-band-of-ojibwe-reclaims-land-through-carbon-credits',
+    title:
+      'A tribal nation reclaims reservation land through much-debated carbon credits',
+    authors: ['Melissa Olson'],
+    date: '08-06-26',
+    format: 'print',
+  },
+  {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2026/07/07/1140142/why-worms-and-microbes-are-catching-on-as-a-manure-pollution-solution/',
     title:
