@@ -28,7 +28,7 @@ async function recaptchaHandler(response) {
         'Content-Type': 'application/json',
       },
       referrerPolicy: 'no-referrer',
-    }
+    },
   )
   const { success, 'error-codes': errorCodes } = await result.json()
 

@@ -51,11 +51,11 @@ const Dots = ({ playState, color }) => {
     for (col = 0; col < ncols; col++) {
       if (random() > 0.3) {
         dots1.push(
-          <Dot key={row + '-' + col} y={row * 21 + 10} x={col * 5.1 + 2} />
+          <Dot key={row + '-' + col} y={row * 21 + 10} x={col * 5.1 + 2} />,
         )
       } else {
         dots2.push(
-          <Dot key={row + '-' + col} y={row * 21 + 10} x={col * 5.1 + 2} />
+          <Dot key={row + '-' + col} y={row * 21 + 10} x={col * 5.1 + 2} />,
         )
       }
     }
