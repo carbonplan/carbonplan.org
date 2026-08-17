@@ -32,7 +32,7 @@ const team = [
   {
     name: 'Anderson Banihirwe',
     role: 'Software Engineer',
-    bio: 'Anderson is a software engineer and open-source contributor working at the intersection of data-intensive climate science and software engineering. He holds an MS in Data Science from the university of Colorado Boulder and a BS in Systems Engineering from the University of Arkansas at Little Rock.',
+    bio: 'Anderson is a software engineer and open-source contributor working at the intersection of data-intensive climate science and software engineering. He holds an MS in Data Science from the University of Colorado Boulder and a BS in Systems Engineering from the University of Arkansas at Little Rock.',
   },
   {
     name: 'Tyler Kukla',
