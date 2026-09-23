@@ -32,8 +32,7 @@ const press = [
   {
     source: ['City Journal'],
     href: 'https://www.city-journal.org/article/california-carbon-credits-forest-wildfires',
-    title:
-      'California’s climate offsets go up in smoke',
+    title: 'California’s climate offsets go up in smoke',
     authors: ['Shawn Regan'],
     date: '09-22-26',
     format: 'print',
