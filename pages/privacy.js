@@ -21,7 +21,7 @@ const Privacy = () => {
             }}
           >
             <Box as='p' variant='styles.p'>
-              Updated as of February 4, 2026
+              Updated as of September 25, 2026
             </Box>
             <Box as='p' variant='styles.p'>
               This Privacy Policy (“Policy”) explains the information
@@ -243,6 +243,15 @@ const Privacy = () => {
                 and in their cookies disclosure:{' '}
                 <Link href='https://github.com/privacy/cookies'>
                   https://github.com/privacy/cookies
+                </Link>
+                .
+              </li>
+              <li>
+                If you view content on our Source Cooperative pages, then
+                Radiant Earth, the owner of Source Cooperative, will set cookies
+                while you use their sites, as described in their privacy policy:{' '}
+                <Link href='https://radiant.earth/privacy'>
+                  https://radiant.earth/privacy
                 </Link>
                 .
               </li>
