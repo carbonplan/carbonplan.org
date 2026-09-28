@@ -24,20 +24,20 @@
     "label": "Climate impacts",
     "links": [
       {
-        "label": "Open Climate Risk",
-        "href": "https://carbonplan.org/research/climate-risk"
+        "label": "SAI Downscaling",
+        "href": "https://carbonplan.org/research/sai-downscaling-explainer"
       },
       {
-        "label": "Extreme heat",
-        "href": "https://carbonplan.org/research/extreme-heat-explainer"
+        "label": "Open Climate Risk",
+        "href": "https://carbonplan.org/research/climate-risk"
       },
       {
         "label": "Risk (dis)agreement",
         "href": "https://carbonplan.org/research/climate-risk-comparison"
       },
       {
-        "label": "CMIP6 downscaling",
-        "href": "https://carbonplan.org/research/cmip6-downscaling"
+        "label": "Extreme heat",
+        "href": "https://carbonplan.org/research/extreme-heat-explainer"
       }
     ]
   },

@@ -30,8 +30,8 @@ const highlights = [
     href: '/research/climate-risk',
   },
   {
-    label: 'DOR efficiency',
-    href: '/research/dor-efficiency-explainer',
+    label: 'SAI Downscaling',
+    href: '/research/sai-downscaling-explainer',
   },
 ]
 
