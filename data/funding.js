@@ -283,7 +283,6 @@ const projectSpecific = [
       Adam Winkel +<br />
       Abigail Winkel +<br />
       Giving Green (via Giving What We Can)
-      <br />
     </span>,
     <Link href='https://carbonplan.org/research/carbonate-silicate-swap'>
       Moving CDR beyond the market assumption
@@ -298,7 +297,10 @@ const projectSpecific = [
     'Schmidt Science Fellow Claire Zarakas',
   ],
   [
-    'Bernard and Anne Spitzer Charitable Trust and The Navigation Fund',
+    <span>
+      Bernard and Anne Spitzer Charitable Trust +<br />
+      The Navigation Fund
+    </span>,
     <Link href='https://carbonplan.org/research/sai-downscaling-explainer'>
       Data to evaluate the regional impacts of stratospheric aerosol injection
     </Link>,
