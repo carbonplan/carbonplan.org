@@ -297,6 +297,12 @@ const projectSpecific = [
     'Schmidt Science Fellows (via Rhodes Trust)',
     'Schmidt Science Fellow Claire Zarakas',
   ],
+  [
+    'Bernard and Anne Spitzer Charitable Trust and The Navigation Fund',
+    <Link href='https://carbonplan.org/research/sai-downscaling-explainer'>
+      Data to evaluate the regional impacts of stratospheric aerosol injection
+    </Link>,
+  ],
 ]
 
 const partners = [
