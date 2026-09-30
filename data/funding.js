@@ -305,6 +305,12 @@ const projectSpecific = [
       Data to evaluate the regional impacts of stratospheric aerosol injection
     </Link>,
   ],
+  [
+    'Chan Zuckerberg Initiative (via Silicon Valley Community Foundation)',
+    <Link href='https://carbonplan.org/research/modeling-bytes-series'>
+      Modeling Bytes series
+    </Link>,
+  ],
 ]
 
 const partners = [
