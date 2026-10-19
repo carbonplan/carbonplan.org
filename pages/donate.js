@@ -23,8 +23,8 @@ const STATUSES = {
 const Sidenote = () => {
   return (
     <span>
-      Looking to donate $1000 or more? Want to donate stock?{' '}
-      <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
+      Looking to donate $1000 or more, set up a recurring donation, or donate
+      stock? <Link href='mailto:hello@carbonplan.org'>Email us</Link>.
     </span>
   )
 }
