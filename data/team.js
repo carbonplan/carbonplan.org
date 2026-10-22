@@ -16,7 +16,7 @@ const team = [
   },
   {
     name: 'Kata Martin',
-    role: 'Product Lead',
+    role: 'Technology Lead',
     bio: 'Kata is a software engineer and designer with a background in front-end web development. She works on web tools and graphics that support CarbonPlan’s research. She holds a BA from Reed College.',
   },
   {
