@@ -20,6 +20,11 @@ const team = [
     bio: 'Kata is a software engineer and designer with a background in front-end web development. She works on web tools and graphics that support CarbonPlan’s research. She holds a BA from Reed College.',
   },
   {
+    name: 'Kathryn Wheeler',
+    role: 'Research Associate',
+    bio: 'Kathryn is an ecologist with a background in plant seasonality and how it relates to climate and the carbon cycle. She holds a PhD in Earth and the Environment from Boston University and a BS in Environmental Science from the University of Delaware. She completed a NOAA Climate and Global Change Postdoctoral Fellowship at MIT, and worked as an environmental consultant before joining CarbonPlan.',
+  },
+  {
     name: 'Raphael Hagen',
     role: 'Data Engineer',
     bio: 'Raphael is a data engineer with a background in remote sensing geoscience. He is interested in earth observation and scientific tool building as well as climate outreach. He holds a BS in Geoscience from the University of Montana and has spent several seasons working as a ranger for the National Park Service.',
