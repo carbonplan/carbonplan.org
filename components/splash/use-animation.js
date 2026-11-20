@@ -16,7 +16,7 @@ const useAnimation = ({ duration = 4000, delay = 0 } = {}) => {
       clearInterval(tick)
       const interval = setInterval(
         () => setRepeating((prev) => !prev),
-        duration
+        duration,
       )
       setTick(interval)
     }
