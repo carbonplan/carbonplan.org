@@ -56,6 +56,7 @@ const Search = ({ contents }) => {
     tool: true,
     blog: true,
     commentary: true,
+    publication: true,
     other: true,
   })
 
