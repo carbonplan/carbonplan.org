@@ -17,7 +17,7 @@ const LOGOS = {
   'National Geographic': NationalGeographic,
   'New York Times': NewYorkTimes,
   'Los Angeles Times': LosAngelesTimes,
-  'MIT Tech Review': MITTechReview,
+  'MIT Technology Review': MITTechReview,
   ProPublica,
   'The New Republic': TheNewRepublic,
   NPR,

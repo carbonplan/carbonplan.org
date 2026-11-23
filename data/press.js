@@ -2,9 +2,9 @@ import { Link } from '@carbonplan/components'
 
 const highlights = [
   {
-    source: 'CNN',
-    href: 'https://www.cnn.com/2025/12/02/climate/zillow-climate-data-extreme-weather-first-street-redfin',
-    date: '12-02-2025',
+    source: 'MIT Technology Review',
+    href: 'https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/',
+    date: '11-23-2026',
   },
   {
     source: 'Bloomberg',
@@ -29,6 +29,15 @@ const highlights = [
 ]
 
 const press = [
+  {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/',
+    title:
+      'Why using rocks for carbon removal could eventually reduce crop growth',
+    authors: ['James Temple'],
+    date: '11-23-26',
+    format: 'print',
+  },
   {
     source: ['City Journal'],
     href: 'https://www.city-journal.org/article/california-carbon-credits-forest-wildfires',
@@ -844,7 +853,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['MIT Tech Review'],
+    source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2023/05/16/1073064/inside-the-little-known-group-setting-the-corporate-climate-agenda',
     title: 'Inside the little-known group setting the corporate climate agenda',
     authors: ['Ian Morse'],
@@ -1275,7 +1284,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['MIT Tech Review'],
+    source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2022/08/24/1058459/we-must-fundamentally-rethink-net-zero-climate-plans-here-are-six-ways-how/',
     title:
       'We must fundamentally rethink "net-zero" climate plans. Here are six ways.',
@@ -1473,7 +1482,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['MIT Tech Review'],
+    source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2022/06/16/1053758/running-tide-seaweed-kelp-scientist-departures-ecological-concerns-climate-carbon-removal/',
     title:
       'Running Tide is facing scientist departures and growing concerns over seaweed sinking for carbon removal',
@@ -1558,7 +1567,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['MIT Tech Review'],
+    source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2022/05/26/1052671/charm-industrials-carbon-removal-corn/',
     title:
       'Inside Charm Industrial’s big bet on corn stalks for carbon removal',
@@ -1837,7 +1846,7 @@ const press = [
     format: 'video',
   },
   {
-    source: ['MIT Tech Review'],
+    source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2021/11/24/1040568/how-a-new-global-carbon-market-could-exaggerate-climate-progress/',
     title: 'How a new global carbon market could exaggerate climate progress',
     authors: ['James Temple'],
@@ -2037,7 +2046,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['MIT Tech Review'],
+    source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2021/09/19/1035889/kelp-carbon-removal-seaweed-sinking-climate-change/',
     title:
       'Companies hoping to grow carbon-sucking kelp may be rushing ahead of the science',
@@ -2082,7 +2091,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['ProPublica', 'MIT Tech Review'],
+    source: ['ProPublica', 'MIT Technology Review'],
     href: 'https://www.propublica.org/article/lawmakers-question-california-cap-and-trade-policies-citing-propublica-report',
     title:
       'Lawmakers question california cap and trade policies, citing ProPublica report',
@@ -2192,7 +2201,7 @@ const press = [
     format: 'print',
   },
   {
-    source: 'MIT Tech Review',
+    source: 'MIT Technology Review',
     href: 'https://www.technologyreview.com/2021/07/27/1030134/west-coast-wildfires-wiped-out-pandemic-emissions-cuts-climate-change',
     title:
       'The pandemic slashed the West Coast’s emissions. Wildfires already reversed it.',
@@ -2244,7 +2253,7 @@ const press = [
     format: 'print',
   },
   {
-    source: 'MIT Tech Review',
+    source: 'MIT Technology Review',
     href: 'https://www.technologyreview.com/2021/07/08/1027908/carbon-removal-hype-is-a-dangerous-distraction-climate-change/',
     title: 'Carbon removal hype is becoming a dangerous distraction',
     authors: ['James Temple'],
@@ -2303,7 +2312,7 @@ const press = [
     format: 'print',
   },
   {
-    source: 'MIT Tech Review',
+    source: 'MIT Technology Review',
     href: 'https://www.technologyreview.com/2021/05/26/1025402/heirloom-stripe-breakthrough-energy-lowercarbon-carbon-removal/',
     title:
       'A startup using minerals to draw down CO₂ has scored funding — and its first buyer',
@@ -2402,7 +2411,7 @@ const press = [
     format: 'audio',
   },
   {
-    source: ['MIT Tech Review', 'ProPublica'],
+    source: ['MIT Technology Review', 'ProPublica'],
     href: 'https://www.propublica.org/article/a-nonprofit-promised-to-preserve-wildlife-then-it-made-millions-claiming-it-could-cut-down-trees',
     title:
       'A nonprofit promised to preserve wildlife. Then it made millions claiming it could cut down trees.',
@@ -2452,7 +2461,7 @@ const press = [
     format: 'print',
   },
   {
-    source: ['MIT Tech Review', 'ProPublica'],
+    source: ['MIT Technology Review', 'ProPublica'],
     href: 'https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere',
     title:
       'The climate solution actually adding millions of tons of CO₂ into the atmosphere',
@@ -2617,7 +2626,7 @@ const press = [
     format: 'print',
   },
   {
-    source: 'MIT Tech Review',
+    source: 'MIT Technology Review',
     href: 'https://www.technologyreview.com/2020/06/03/1002484/why-we-cant-count-on-carbon-sucking-farms-to-slow-climate-change/',
     date: '06-03-2020',
     title: 'Why we can’t count on carbon-sucking farms to slow climate change',
