@@ -32,7 +32,8 @@ const press = [
   {
     source: ['MIT Technology Review'],
     href: 'https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/',
-    title: 'Why using rocks for carbon removal could eventually reduce crop growth',
+    title:
+      'Why using rocks for carbon removal could eventually reduce crop growth',
     authors: ['James Temple'],
     date: '11-23-26',
     format: 'print',
