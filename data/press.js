@@ -2,9 +2,9 @@ import { Link } from '@carbonplan/components'
 
 const highlights = [
   {
-    source: 'CNN',
-    href: 'https://www.cnn.com/2025/12/02/climate/zillow-climate-data-extreme-weather-first-street-redfin',
-    date: '12-02-2025',
+    source: 'MIT Technology Review',
+    href: 'https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/',
+    date: '11-23-2026',
   },
   {
     source: 'Bloomberg',
@@ -29,6 +29,14 @@ const highlights = [
 ]
 
 const press = [
+  {
+    source: ['MIT Technology Review'],
+    href: 'https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/',
+    title: 'Why using rocks for carbon removal could eventually reduce crop growth',
+    authors: ['James Temple'],
+    date: '11-23-26',
+    format: 'print',
+  },
   {
     source: ['City Journal'],
     href: 'https://www.city-journal.org/article/california-carbon-credits-forest-wildfires',
